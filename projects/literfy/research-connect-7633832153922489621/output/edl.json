@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "sources": {
+    "00_google_scholar_hook": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/00_google_scholar_hook.mov",
+    "01_literfy_landing_page": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/01_literfy_landing_page.mov",
+    "01_dashboard_review_button": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/01_dashboard_review_button.mov",
+    "02_review_input_topic": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/02_review_input_topic.mov",
+    "03_paper_list_results": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/03_paper_list_results.mov",
+    "04_select_papers_to_outline": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/04_select_papers_to_outline.mov",
+    "05_click_generate_outline": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/05_click_generate_outline.mov",
+    "06_literature_review_outline": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/06_literature_review_outline.mov",
+    "07_click_generate_review": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/07_click_generate_review.mov",
+    "08_generated_review": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/08_generated_review.mov"
+  },
+  "ranges": [
+    {
+      "source": "00_google_scholar_hook",
+      "start": 0.3,
+      "end": 3.3,
+      "beat": "hook",
+      "quote": "How to start your literature review like a PhD/Master student (The easy way)",
+      "reason": "Matches visual need with score 50: Google Scholar or familiar academic search screen as trust object."
+    },
+    {
+      "source": "01_literfy_landing_page",
+      "start": 0.3,
+      "end": 2.3,
+      "beat": "strong_cta",
+      "quote": "Just go to this website!",
+      "reason": "Matches visual need with score 92: Literfy landing page or website homepage with Literature Review button visible."
+    },
+    {
+      "source": "01_dashboard_review_button",
+      "start": 0.3,
+      "end": 3.3,
+      "beat": "product_reveal",
+      "quote": "Click Literature Review",
+      "reason": "Matches visual need with score 39: Literfy dashboard with Literature Review or review button visible."
+    },
+    {
+      "source": "02_review_input_topic",
+      "start": 0.3,
+      "end": 3.3,
+      "beat": "input_topic",
+      "quote": "Type your literature review topic",
+      "reason": "Matches visual need with score 45: Screen recording of typing a research topic."
+    },
+    {
+      "source": "03_paper_list_results",
+      "start": 0.3,
+      "end": 4.3,
+      "beat": "real_papers",
+      "quote": "It finds real papers for your topic",
+      "reason": "Matches visual need with score 82: Paper results list, related papers, ranked papers, or real academic paper cards."
+    },
+    {
+      "source": "04_select_papers_to_outline",
+      "start": 0.3,
+      "end": 3.3,
+      "beat": "select_papers",
+      "quote": "Pro tip! select the papers first",
+      "reason": "Matches visual need with score 91: Selecting or filtering papers before generating an outline."
+    },
+    {
+      "source": "05_click_generate_outline",
+      "start": 0.3,
+      "end": 4.3,
+      "beat": "generate_outline",
+      "quote": "Then generate the outline",
+      "reason": "Matches visual need with score 45: Click generate outline button or outline generation action."
+    },
+    {
+      "source": "06_literature_review_outline",
+      "start": 0.3,
+      "end": 4.3,
+      "beat": "outline_proof",
+      "quote": "It's done! let's see...",
+      "reason": "Matches visual need with score 89: Generated literature review outline with sections."
+    },
+    {
+      "source": "07_click_generate_review",
+      "start": 0.3,
+      "end": 4.3,
+      "beat": "generate_review",
+      "quote": "Now turn it into a review draft",
+      "reason": "Matches visual need with score 60: Click generate full review button."
+    },
+    {
+      "source": "08_generated_review",
+      "start": 0.3,
+      "end": 5.3,
+      "beat": "result_cta",
+      "quote": "A review draft based on real papers!",
+      "reason": "Matches visual need with score 107: Generated literature review draft based on selected papers."
+    }
+  ],
+  "subtitles": "master.srt",
+  "overlays": [],
+  "total_duration_s": 35.0
+}

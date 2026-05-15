@@ -1,0 +1,21 @@
+{
+  "status": "final_delivery_cleaned",
+  "delivery_rule": "Only cover image + corresponding captioned video. No 35s drafts. No generated voice/BGM workmix.",
+  "publishing_note": "Upload captioned video to TikTok, select matching cover image, add TikTok trending music inside TikTok.",
+  "variants": {
+    "a_reference_faithful": {
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/covers/cover_style_a_reference_faithful.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/a_reference_faithful_25s_captioned.mp4"
+    },
+    "b_problem_question": {
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/covers/cover_style_b_problem_question.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/b_problem_question_25s_captioned.mp4"
+    },
+    "c_workflow_direct": {
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/covers/cover_style_c_workflow_direct.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/c_workflow_direct/c_workflow_direct_25s_captioned.mp4"
+    }
+  },
+  "publishing_copy_card": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/publishing_copy_card.json",
+  "publishing_copy_delivery": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/publishing_copy_delivery.md"
+}

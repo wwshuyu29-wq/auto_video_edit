@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shot Matching Plan",
+  "type": "object",
+  "required": ["edit_plan", "missing_assets", "risk_notes", "scores"],
+  "properties": {
+    "edit_plan": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["beat", "time", "clip_id", "reason", "on_screen_text"],
+        "properties": {
+          "beat": {"type": "string"},
+          "time": {"type": "string"},
+          "voiceover": {"type": "string"},
+          "clip_id": {"type": "string"},
+          "clip_start": {"type": "number"},
+          "clip_end": {"type": "number"},
+          "reason": {"type": "string"},
+          "on_screen_text": {"type": "string"},
+          "transition": {"type": "string"},
+          "subtitle_priority": {"type": "string"}
+        }
+      }
+    },
+    "missing_assets": {"type": "array"},
+    "risk_notes": {"type": "array"},
+    "needs_script_revision": {"type": "boolean"},
+    "scores": {"type": "object"}
+  }
+}

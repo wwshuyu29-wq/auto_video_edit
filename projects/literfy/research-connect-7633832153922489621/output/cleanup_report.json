@@ -1,0 +1,16 @@
+{
+  "project_dir": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621",
+  "mode": "normal",
+  "dry_run": true,
+  "candidate_count": 0,
+  "reclaimable_bytes": 0,
+  "reclaimable_human": "0.0 B",
+  "candidates": [],
+  "removed": [],
+  "protected_policy": {
+    "keeps_raw_materials": true,
+    "keeps_structured_json_and_markdown": true,
+    "keeps_cover_images": true,
+    "keeps_manifest_outputs": true
+  }
+}

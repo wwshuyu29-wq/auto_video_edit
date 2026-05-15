@@ -1,0 +1,78 @@
+{
+  "account_url": "https://www.tiktok.com/@research.connect",
+  "target_platform": "TikTok",
+  "analysis_goal": "Extract reusable product-marketing video structures",
+  "video_list": [
+    {
+      "video_url": "https://www.tiktok.com/@research.connect/video/7633832153922489621",
+      "views": 5443,
+      "likes": 203,
+      "comments": 2,
+      "caption": "How to write a research paper like a phd/master student!!!",
+      "transcript": "How to write your thesis paper like a PhD/Master student. Just go to this website. Click researcher. Type your research paper topic. Use latex for PDFs. Then watch it do its magic in 2-3 mins. A complete research paper with meaningful visualizations.",
+      "frames_summary": "Handheld Google Scholar page, product website reveal, researcher mode, topic input, generated research paper pages, charts and visualizations."
+    }
+  ],
+  "platform": "TikTok",
+  "video_length": "25-35s",
+  "tone": "native creator style, casual, not too salesy",
+  "product": {
+    "name": "Literfy",
+    "category": "AI literature review tool",
+    "target_user": "students and researchers",
+    "core_features": [
+      "find relevant papers",
+      "organize paper insights",
+      "generate structured literature review drafts"
+    ],
+    "main_pain_points": [
+      "opening too many research tabs"
+    ],
+    "proof_points": [
+      "a structured review starting point"
+    ],
+    "forbidden_claims": [
+      "do not claim it replaces human research",
+      "do not claim 100% accuracy"
+    ],
+    "cta": "try Literfy"
+  },
+  "asset_library": [
+    {
+      "clip_id": "handheld_tabs_001",
+      "file_path": "/assets/handheld_tabs_001.mp4",
+      "duration": 6.0,
+      "orientation": "vertical",
+      "quality_score": 8,
+      "shot_type": "handheld laptop shot",
+      "camera_motion": "slow push in",
+      "scene": "desk study room",
+      "visible_objects": ["laptop", "tabs", "notebook"],
+      "emotion": "focused",
+      "best_use": ["opening hook", "study pain point"],
+      "usable_segments": [{"start": 1.0, "end": 4.0, "reason": "stable laptop screen"}],
+      "text_overlay_safe_area": "top and center"
+    },
+    {
+      "clip_id": "product_workflow_001",
+      "file_path": "/assets/product_workflow_001.mp4",
+      "duration": 12.0,
+      "orientation": "vertical",
+      "quality_score": 9,
+      "shot_type": "product screen recording",
+      "camera_motion": "static",
+      "scene": "product interface",
+      "visible_objects": ["product UI", "search", "papers"],
+      "emotion": "clear",
+      "best_use": ["solution", "product proof", "final CTA"],
+      "usable_segments": [{"start": 0.5, "end": 8.5, "reason": "clear product workflow"}],
+      "text_overlay_safe_area": "center"
+    }
+  ],
+  "editing_style": {
+    "pace": "fast",
+    "average_clip_duration": "1.5-2.5s",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16"
+  }
+}

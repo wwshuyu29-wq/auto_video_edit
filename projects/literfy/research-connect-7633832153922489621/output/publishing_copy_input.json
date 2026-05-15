@@ -1,0 +1,99 @@
+{
+  "platform": "TikTok",
+  "product": {
+    "product_name": "Literfy",
+    "one_liner": "Literfy is an AI academic research tool that helps students and researchers find papers, organize sources, and start literature reviews faster.",
+    "target_users": [
+      "graduate students",
+      "PhD students",
+      "Master students",
+      "researchers",
+      "students writing literature reviews",
+      "academic writers"
+    ],
+    "core_features": [
+      {
+        "feature_name": "Find Papers",
+        "description": "Search and discover academic papers based on a research topic.",
+        "user_benefit": "Helps users find relevant papers faster instead of opening many random tabs.",
+        "visual_need": "Screen recording of typing a research topic and getting paper results."
+      },
+      {
+        "feature_name": "Paper Discovery / Related Papers",
+        "description": "Help users discover relevant or related papers for a research topic.",
+        "user_benefit": "Helps users avoid missing useful papers during early research.",
+        "visual_need": "Screen recording of paper result list, related papers, or ranked results."
+      },
+      {
+        "feature_name": "Literature Review Outline",
+        "description": "Generate a structured outline for a literature review based on selected papers.",
+        "user_benefit": "Helps users stop staring at a blank page and start with a clear structure.",
+        "visual_need": "Screen recording of selected papers turning into an outline."
+      },
+      {
+        "feature_name": "AI Literature Review Draft",
+        "description": "Generate a structured literature review draft based on collected papers.",
+        "user_benefit": "Helps users move from paper collection to a draftable structure faster.",
+        "visual_need": "Screen recording of a review draft or editable review sections."
+      },
+      {
+        "feature_name": "Citation / Export Workflow",
+        "description": "Export citations or research materials into downstream writing workflows.",
+        "user_benefit": "Helps users organize and move research materials into writing tools.",
+        "visual_need": "Screen recording of export options, citation export, or document export."
+      }
+    ],
+    "most_painful_user_scenarios": [
+      "A student starts a literature review and opens 30-50 random tabs.",
+      "A PhD or Master student does not know which papers are worth reading first.",
+      "A researcher has papers but does not know how to organize them into a review structure.",
+      "A student wastes hours before actually writing anything."
+    ],
+    "forbidden_claims": [
+      "Do not say Literfy writes a perfect literature review.",
+      "Do not say Literfy replaces real research.",
+      "Do not say citations are always 100% correct.",
+      "Do not tell users to submit AI output directly.",
+      "Do not claim guaranteed acceptance by journals or professors.",
+      "Do not claim the output is publication-ready without human review."
+    ],
+    "good_tiktok_angles": [
+      "If your literature review starts with 50 random tabs open, this is for you.",
+      "This is how I start a literature review now.",
+      "I stopped staring at a blank page before writing my literature review.",
+      "Stop searching papers manually like this."
+    ],
+    "source_grounding_note": "Literfy generates literature review outlines and drafts based on real academic papers selected or discovered in the workflow.",
+    "allowed_claim_boundaries": [
+      "Can say Literfy works from real academic papers in the workflow.",
+      "Can say Literfy helps generate a structured literature review draft based on selected/collected papers.",
+      "Can say Literfy helps users move from real papers to an organized review starting point.",
+      "Should still say users need to review, edit, and verify the output."
+    ],
+    "cta": "try Literfy"
+  },
+  "viral_pattern_card_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/viral_pattern_card.json",
+  "reference_post": {
+    "caption": "How to write a research paper like a phd/master student!!! #research #phd #literaturereview #citation #researchpaper"
+  },
+  "variants": [
+    {
+      "id": "a_reference_faithful",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/a_reference_faithful_25s_captioned.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/covers/cover_style_a_reference_faithful.jpg",
+      "captions_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/captions.json"
+    },
+    {
+      "id": "b_problem_question",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/b_problem_question_25s_captioned.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/covers/cover_style_b_problem_question.jpg",
+      "captions_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/captions.json"
+    },
+    {
+      "id": "c_workflow_direct",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/c_workflow_direct/c_workflow_direct_25s_captioned.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/covers/cover_style_c_workflow_direct.jpg",
+      "captions_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/c_workflow_direct/captions.json"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/shot_matching_plan_25s.json",
+    "asset_library": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/a_reference_faithful_25s_captioned.mp4",
+    "preview_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/a_reference_faithful_25s_captioned_sheet.jpg",
+    "preview_midpoint_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/a_reference_faithful_25s_captioned_midpoint_sheet.jpg",
+    "captions": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/captions.json",
+    "srt": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/master.srt",
+    "render_report": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/render_report_25s.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "24.732682",
+      "size": "28905309"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

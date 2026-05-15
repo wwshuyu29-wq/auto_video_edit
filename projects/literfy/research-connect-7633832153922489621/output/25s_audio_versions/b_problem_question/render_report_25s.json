@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/shot_matching_plan_25s.json",
+    "asset_library": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/b_problem_question_25s_captioned.mp4",
+    "preview_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/b_problem_question_25s_captioned_sheet.jpg",
+    "preview_midpoint_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/b_problem_question_25s_captioned_midpoint_sheet.jpg",
+    "captions": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/captions.json",
+    "srt": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/master.srt",
+    "render_report": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/render_report_25s.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "24.732031",
+      "size": "28995162"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

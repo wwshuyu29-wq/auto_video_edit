@@ -1,0 +1,322 @@
+{
+  "product": "Citely",
+  "template": "research_connect_google_scholar",
+  "project_dir": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template",
+  "asset_count": 8,
+  "notes": [
+    "These assets are indexed only for footage matching. Subtitle copy is intentionally not finalized yet.",
+    "Use Google Scholar as the academic-trust opening, then move into Citely as the product workflow.",
+    "Treat clips as action segments. Trim and speed up by caption beat; do not loop clips to fill time."
+  ],
+  "assets": [
+    {
+      "clip_id": "00_google_scholar_hook",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/00_google_scholar_hook.mov",
+      "duration": 4.673,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "handheld Google Scholar screen",
+      "camera_motion": "small handheld movement",
+      "scene": "laptop / academic search page",
+      "visible_objects": [
+        "Google Scholar logo",
+        "search bar",
+        "laptop edge"
+      ],
+      "emotion": "academic trust / research context",
+      "best_use": [
+        "opening hook",
+        "cover background",
+        "academic trust doorway"
+      ],
+      "not_good_for": [
+        "product proof",
+        "feature demonstration",
+        "final CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 4.4,
+          "reason": "Google Scholar remains readable and supports the reference-template hook."
+        }
+      ],
+      "text_overlay_safe_area": "center; avoid covering search bar if possible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.0,
+      "notes": "Keep native handheld imperfection. Do not over-correct the Google Scholar logo to perfect center for video."
+    },
+    {
+      "clip_id": "01_citely_landing_page",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/01_citely_landing_page.mov",
+      "duration": 3.118,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Citely landing page reveal",
+      "camera_motion": "handheld hold",
+      "scene": "Citely homepage / landing page",
+      "visible_objects": [
+        "Citely page",
+        "Find Sources CTA",
+        "Verify References CTA"
+      ],
+      "emotion": "website reveal / CTA",
+      "best_use": [
+        "strong CTA",
+        "website reveal",
+        "Just go to this website style beat"
+      ],
+      "not_good_for": [
+        "source result proof",
+        "citation verification result proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 3.0,
+          "reason": "Landing page and Citely feature entry points are visible long enough for CTA."
+        }
+      ],
+      "text_overlay_safe_area": "center or lower center; preserve top-left logo/brand when visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.0,
+      "notes": "Hold this beat long enough for the Citely brand/page context before cutting."
+    },
+    {
+      "clip_id": "02_click_find_sources",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/02_click_find_sources.mov",
+      "duration": 3.587,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 7,
+      "shot_type": "click Find Sources workflow entry",
+      "camera_motion": "handheld click action",
+      "scene": "Citely landing page to Find Sources",
+      "visible_objects": [
+        "Find Sources button",
+        "Citely interface"
+      ],
+      "emotion": "action / workflow start",
+      "best_use": [
+        "Click Find Sources",
+        "product workflow transition",
+        "feature entry"
+      ],
+      "not_good_for": [
+        "final proof",
+        "verification results"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 3.3,
+          "reason": "Shows the feature entry click and transition into the source-finding workflow."
+        }
+      ],
+      "text_overlay_safe_area": "center; keep CTA button visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "speed_reason": "Click/transition can be slightly faster to match short TikTok command beats."
+    },
+    {
+      "clip_id": "03_find_sources_input_claim",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/03_find_sources_input_claim.mov",
+      "duration": 6.022,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Find Sources input claim or citation",
+      "camera_motion": "handheld hold with form interaction",
+      "scene": "Citely Find Sources page",
+      "visible_objects": [
+        "input field",
+        "claim or citation text",
+        "Find Sources action"
+      ],
+      "emotion": "practical verification workflow",
+      "best_use": [
+        "paste claim",
+        "paste citation-like text",
+        "find original sources",
+        "AI citation risk setup"
+      ],
+      "not_good_for": [
+        "landing CTA",
+        "final verification proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 5.8,
+          "reason": "Shows the actual Find Sources input step and enough context to understand what is being checked."
+        }
+      ],
+      "text_overlay_safe_area": "upper center or lower center depending on input field location",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.5,
+      "speed_reason": "Input/paste steps should be compressed so the video does not feel like a screen recording tutorial."
+    },
+    {
+      "clip_id": "04_find_sources_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/04_find_sources_results.mov",
+      "duration": 3.072,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Find Sources results proof",
+      "camera_motion": "handheld hold",
+      "scene": "Citely source results page",
+      "visible_objects": [
+        "source result cards",
+        "paper/source details",
+        "research result list"
+      ],
+      "emotion": "proof / source traceability",
+      "best_use": [
+        "source result proof",
+        "trace claim to sources",
+        "find original sources"
+      ],
+      "not_good_for": [
+        "click Find Sources",
+        "verify references input"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 3.0,
+          "reason": "Results are visible and directly prove the Find Sources feature."
+        }
+      ],
+      "text_overlay_safe_area": "center top; avoid covering result cards if possible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.0,
+      "notes": "Use as a distinct proof beat. Do not reuse Find Sources input footage for this result line."
+    },
+    {
+      "clip_id": "05_click_verify_references",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/05_click_verify_references.mov",
+      "duration": 6.408,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 7,
+      "shot_type": "click Verify References workflow entry",
+      "camera_motion": "handheld click and navigation",
+      "scene": "Citely interface / Verify References entry",
+      "visible_objects": [
+        "Verify References option",
+        "navigation/sidebar",
+        "verification page transition"
+      ],
+      "emotion": "workflow switch / second feature reveal",
+      "best_use": [
+        "Click Verify References",
+        "switch from source-finding to reference checking",
+        "feature entry"
+      ],
+      "not_good_for": [
+        "Find Sources proof",
+        "final results proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 6.1,
+          "reason": "Shows navigation into Verify References; can be split or sped up if only the click is needed."
+        }
+      ],
+      "text_overlay_safe_area": "center; keep clicked menu/button visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.5,
+      "speed_reason": "Navigation footage is longer than a typical command beat and should be compressed."
+    },
+    {
+      "clip_id": "06_verify_references_input",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/06_verify_references_input.mov",
+      "duration": 4.542,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Verify References input",
+      "camera_motion": "handheld hold with text/reference entry",
+      "scene": "Citely Verify References page",
+      "visible_objects": [
+        "reference text",
+        "verification input",
+        "submit/check action"
+      ],
+      "emotion": "citation checking setup",
+      "best_use": [
+        "paste reference",
+        "check AI-generated reference",
+        "verify before submission"
+      ],
+      "not_good_for": [
+        "source search result",
+        "landing page CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 4.4,
+          "reason": "Shows the reference-checking input step clearly."
+        }
+      ],
+      "text_overlay_safe_area": "upper center or lower center depending on visible reference text",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "speed_reason": "Input/readability needs some time, but still should move faster than raw screen recording."
+    },
+    {
+      "clip_id": "07_verify_references_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/07_verify_references_results.mov",
+      "duration": 5.297,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Verify References result proof",
+      "camera_motion": "handheld hold and slight movement",
+      "scene": "Citely verification results page",
+      "visible_objects": [
+        "verification results",
+        "citation metadata",
+        "source/reference status"
+      ],
+      "emotion": "proof / risk check",
+      "best_use": [
+        "verification result proof",
+        "citation metadata checking",
+        "catch fake or mismatched references"
+      ],
+      "not_good_for": [
+        "opening hook",
+        "landing page CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 5.1,
+          "reason": "Shows final verification output and metadata/result context."
+        }
+      ],
+      "text_overlay_safe_area": "center top; avoid blocking status/result area",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "speed_reason": "Result proof should stay readable but can be lightly sped up for 25s pacing.",
+      "notes": "Do not claim 100% accuracy. Phrase proof as checking, tracing, or catching risk."
+    }
+  ],
+  "missing_assets": [
+    {
+      "need": "Optional stronger close-up of citation metadata comparison",
+      "reason": "Current verification result clip is usable, but a tighter close-up could make the proof more obvious."
+    },
+    {
+      "need": "Optional final clean CTA shot",
+      "reason": "Landing page can serve as CTA, but a final button-hover or final result-to-CTA shot would support endings."
+    }
+  ],
+  "matching_rules": [
+    "opening_hook must use 00_google_scholar_hook unless the user provides a new reference opening.",
+    "strong_cta should use 01_citely_landing_page and hold long enough for Citely page context.",
+    "find_sources_input should use 03_find_sources_input_claim, not 04_find_sources_results.",
+    "find_sources_result_proof should use 04_find_sources_results, not repeated input footage.",
+    "verify_references_input should use 06_verify_references_input.",
+    "verify_references_result_proof should use 07_verify_references_results.",
+    "Use playback_speed for slow operation clips; never loop any clip to fill time."
+  ]
+}

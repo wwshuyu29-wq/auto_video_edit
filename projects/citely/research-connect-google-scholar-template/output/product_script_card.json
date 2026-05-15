@@ -1,0 +1,365 @@
+{
+  "viral_pattern_card_ref": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/viral_pattern_card.json",
+  "reference_caption_logic_ref": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/reference_caption_logic_7556287949361450248.json",
+  "platform": "TikTok",
+  "video_length": "24-26s",
+  "tone": "native creator style, casual disbelief, not salesy",
+  "product": {
+    "product_name": "Citely",
+    "one_liner": "Citely is an AI citation checker and source finder that helps users verify references, detect fake citations, and trace claims back to real sources.",
+    "target_users": [
+      "students",
+      "researchers",
+      "academic writers",
+      "people using AI-generated references",
+      "people checking references before submission"
+    ],
+    "allowed_features": [
+      "Find Sources",
+      "Verify References",
+      "Citation Metadata Checking",
+      "AI Citation Risk Check"
+    ],
+    "forbidden_claims": [
+      "Do not say Citely guarantees 100% citation accuracy.",
+      "Do not say Citely replaces human academic judgment.",
+      "Do not say Citely guarantees manuscript acceptance.",
+      "Do not say Citely can verify every possible source in the world.",
+      "Do not encourage users to submit unchecked AI-generated work.",
+      "Do not claim that a verified citation automatically means the argument is correct."
+    ]
+  },
+  "scripts": [
+    {
+      "type": "reference_faithful_version",
+      "style": "closest to the reference video's subtitles, lowercase, ellipses, casual disbelief",
+      "script_title": "so you're telling me after I almost trusted an AI-generated reference without checking......",
+      "script_angle": "AI citation risk check before trusting a reference",
+      "target_viewer": "students and researchers checking AI-generated references",
+      "version": "TikTok native creator style",
+      "caption_adaptation": {
+        "reference_video": "https://www.tiktok.com/@research.connect/video/7556287949361450248",
+        "preserved_logic": [
+          "so you're telling me after...",
+          "that this website could've...",
+          "just...",
+          "wait for...",
+          "its as easy as that....",
+          "no cuz wdym...",
+          "And you can...",
+          "for ... just wow smh..."
+        ],
+        "safety_changes": [
+          "Removed fixed speed claims like less than 5 mins or 3 mins.",
+          "Changed completion claims into checking/tracing language.",
+          "Avoided saying Citely proves every citation is correct."
+        ]
+      },
+      "full_script": [
+        {
+          "time": "0-4s",
+          "beat": "hook",
+          "voiceover": "so you're telling me after I almost trusted an AI-generated reference without checking......",
+          "on_screen_text": "so you're telling me after I almost trusted an AI-generated reference without checking......",
+          "visual_need": "Google Scholar / academic search screen as familiar research context.",
+          "preferred_clip_id": "00_google_scholar_hook",
+          "product_feature": ""
+        },
+        {
+          "time": "4-6.5s",
+          "beat": "strong_cta",
+          "voiceover": "that this website could've helped me check the source first.....",
+          "on_screen_text": "that this website could've helped me check the source first.....",
+          "visual_need": "Citely landing page with product identity visible.",
+          "preferred_clip_id": "01_citely_landing_page",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "6.5-8.5s",
+          "beat": "feature_entry",
+          "voiceover": "open find sources",
+          "on_screen_text": "open find sources",
+          "visual_need": "Click Find Sources button or workflow entry.",
+          "preferred_clip_id": "02_click_find_sources",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "8.5-11s",
+          "beat": "input",
+          "voiceover": "just paste your claim",
+          "on_screen_text": "just paste your claim",
+          "visual_need": "Input or paste a claim/citation-like text.",
+          "preferred_clip_id": "03_find_sources_input_claim",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "11-13s",
+          "beat": "load",
+          "voiceover": "wait for the sources to load",
+          "on_screen_text": "wait for the sources to load",
+          "visual_need": "Transition from input to source results.",
+          "preferred_clip_id": "04_find_sources_results",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "13-15s",
+          "beat": "ease_reinforcement",
+          "voiceover": "its as easy as that....",
+          "on_screen_text": "its as easy as that....",
+          "visual_need": "Source results visible on screen.",
+          "preferred_clip_id": "04_find_sources_results",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "15-18s",
+          "beat": "result_shock",
+          "voiceover": "no cuz wdym it finds papers connected to the claim smh...",
+          "on_screen_text": "no cuz wdym it finds papers connected to the claim smh...",
+          "visual_need": "Source result cards or paper/source details.",
+          "preferred_clip_id": "04_find_sources_results",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "18-20s",
+          "beat": "bonus_feature",
+          "voiceover": "And you can check the reference too...",
+          "on_screen_text": "And you can check the reference too...",
+          "visual_need": "Click or open Verify References.",
+          "preferred_clip_id": "05_click_verify_references",
+          "product_feature": "Verify References"
+        },
+        {
+          "time": "20-22.5s",
+          "beat": "metadata_proof",
+          "voiceover": "and it shows citation details...",
+          "on_screen_text": "and it shows citation details...",
+          "visual_need": "Verification results or citation metadata details.",
+          "preferred_clip_id": "07_verify_references_results",
+          "product_feature": "Citation Metadata Checking"
+        },
+        {
+          "time": "22.5-25s",
+          "beat": "ending",
+          "voiceover": "for checking AI references..... just wow smh...",
+          "on_screen_text": "for checking AI references..... just wow smh...",
+          "visual_need": "Final verification result or clean Citely result screen.",
+          "preferred_clip_id": "07_verify_references_results",
+          "product_feature": "AI Citation Risk Check"
+        }
+      ],
+      "caption": "Before trusting an AI-generated reference, check where it actually comes from.",
+      "hashtags": [
+        "#aitools",
+        "#researchtools",
+        "#citationcheck",
+        "#gradstudent",
+        "#academictok"
+      ],
+      "compliance_notes": [
+        "Does not claim 100% citation accuracy.",
+        "Does not say Citely replaces human academic judgment.",
+        "Does not encourage submitting unchecked AI-generated references.",
+        "Frames Citely as a checking and tracing workflow."
+      ]
+    },
+    {
+      "type": "verify_reference_focus",
+      "style": "same reference rhythm, more focused on fake/AI reference risk",
+      "script_title": "so you're telling me after I almost submitted a reference that just looked real......",
+      "script_angle": "check fake-looking-real references before submission",
+      "target_viewer": "students and academic writers verifying references before submission",
+      "version": "TikTok native creator style",
+      "full_script": [
+        {
+          "time": "0-4s",
+          "beat": "hook",
+          "voiceover": "so you're telling me after I almost submitted a reference that just looked real......",
+          "on_screen_text": "so you're telling me after I almost submitted a reference that just looked real......",
+          "visual_need": "Google Scholar or academic reference/search context.",
+          "preferred_clip_id": "00_google_scholar_hook",
+          "product_feature": ""
+        },
+        {
+          "time": "4-6.5s",
+          "beat": "strong_cta",
+          "voiceover": "that this website could've helped me check it first.....",
+          "on_screen_text": "that this website could've helped me check it first.....",
+          "visual_need": "Citely landing page with logo/page visible.",
+          "preferred_clip_id": "01_citely_landing_page",
+          "product_feature": "Verify References"
+        },
+        {
+          "time": "6.5-9s",
+          "beat": "feature_entry",
+          "voiceover": "open verify references",
+          "on_screen_text": "open verify references",
+          "visual_need": "Click Verify References.",
+          "preferred_clip_id": "05_click_verify_references",
+          "product_feature": "Verify References"
+        },
+        {
+          "time": "9-12s",
+          "beat": "input",
+          "voiceover": "just paste the reference",
+          "on_screen_text": "just paste the reference",
+          "visual_need": "Reference input field.",
+          "preferred_clip_id": "06_verify_references_input",
+          "product_feature": "Verify References"
+        },
+        {
+          "time": "12-15s",
+          "beat": "ease_reinforcement",
+          "voiceover": "its as easy as that....",
+          "on_screen_text": "its as easy as that....",
+          "visual_need": "Verification workflow moving to results.",
+          "preferred_clip_id": "07_verify_references_results",
+          "product_feature": "Verify References"
+        },
+        {
+          "time": "15-19s",
+          "beat": "result_shock",
+          "voiceover": "no cuz wdym it shows whether the details actually match smh...",
+          "on_screen_text": "no cuz wdym it shows whether the details actually match smh...",
+          "visual_need": "Verification results / citation metadata.",
+          "preferred_clip_id": "07_verify_references_results",
+          "product_feature": "Citation Metadata Checking"
+        },
+        {
+          "time": "19-22s",
+          "beat": "bonus_feature",
+          "voiceover": "And you can trace the source too...",
+          "on_screen_text": "And you can trace the source too...",
+          "visual_need": "Find Sources result or source details.",
+          "preferred_clip_id": "04_find_sources_results",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "22-25s",
+          "beat": "ending",
+          "voiceover": "before trusting AI citations..... just wow smh...",
+          "on_screen_text": "before trusting AI citations..... just wow smh...",
+          "visual_need": "Verification result screen.",
+          "preferred_clip_id": "07_verify_references_results",
+          "product_feature": "AI Citation Risk Check"
+        }
+      ],
+      "caption": "A citation can look real and still need checking.",
+      "hashtags": [
+        "#citationcheck",
+        "#researchtools",
+        "#aitools",
+        "#studenttok",
+        "#academicwriting"
+      ],
+      "compliance_notes": [
+        "Uses 'helped me check' instead of guaranteed verification.",
+        "Does not claim universal source coverage.",
+        "Keeps human review implied."
+      ]
+    },
+    {
+      "type": "find_sources_focus",
+      "style": "same reference rhythm, more focused on tracing claims to sources",
+      "script_title": "so you're telling me after I spent forever trying to find where this claim came from......",
+      "script_angle": "trace claim to sources",
+      "target_viewer": "students and researchers trying to find original sources behind claims",
+      "version": "TikTok native creator style",
+      "full_script": [
+        {
+          "time": "0-4s",
+          "beat": "hook",
+          "voiceover": "so you're telling me after I spent forever trying to find where this claim came from......",
+          "on_screen_text": "so you're telling me after I spent forever trying to find where this claim came from......",
+          "visual_need": "Google Scholar or manual source-search context.",
+          "preferred_clip_id": "00_google_scholar_hook",
+          "product_feature": ""
+        },
+        {
+          "time": "4-6.5s",
+          "beat": "strong_cta",
+          "voiceover": "that this website could've helped me trace it first.....",
+          "on_screen_text": "that this website could've helped me trace it first.....",
+          "visual_need": "Citely landing page reveal.",
+          "preferred_clip_id": "01_citely_landing_page",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "6.5-9s",
+          "beat": "feature_entry",
+          "voiceover": "open find sources",
+          "on_screen_text": "open find sources",
+          "visual_need": "Click Find Sources.",
+          "preferred_clip_id": "02_click_find_sources",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "9-12s",
+          "beat": "input",
+          "voiceover": "just paste the claim",
+          "on_screen_text": "just paste the claim",
+          "visual_need": "Claim input screen.",
+          "preferred_clip_id": "03_find_sources_input_claim",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "12-15s",
+          "beat": "ease_reinforcement",
+          "voiceover": "wait for the sources to show",
+          "on_screen_text": "wait for the sources to show",
+          "visual_need": "Source results appear.",
+          "preferred_clip_id": "04_find_sources_results",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "15-19s",
+          "beat": "result_shock",
+          "voiceover": "no cuz wdym it gives me papers to check from the claim smh...",
+          "on_screen_text": "no cuz wdym it gives me papers to check from the claim smh...",
+          "visual_need": "Source result cards.",
+          "preferred_clip_id": "04_find_sources_results",
+          "product_feature": "Find Sources"
+        },
+        {
+          "time": "19-22s",
+          "beat": "bonus_feature",
+          "voiceover": "And you can verify references too...",
+          "on_screen_text": "And you can verify references too...",
+          "visual_need": "Verify References entry or result screen.",
+          "preferred_clip_id": "05_click_verify_references",
+          "product_feature": "Verify References"
+        },
+        {
+          "time": "22-25s",
+          "beat": "ending",
+          "voiceover": "for checking sources before I trust them..... just wow smh...",
+          "on_screen_text": "for checking sources before I trust them..... just wow smh...",
+          "visual_need": "Source or verification result screen.",
+          "preferred_clip_id": "07_verify_references_results",
+          "product_feature": "AI Citation Risk Check"
+        }
+      ],
+      "caption": "Finding the source behind a claim should not be a guessing game.",
+      "hashtags": [
+        "#researchtools",
+        "#sourcetracing",
+        "#aitools",
+        "#gradstudent",
+        "#academictok"
+      ],
+      "compliance_notes": [
+        "Frames results as papers to check, not guaranteed truth.",
+        "Does not claim Citely can find every source.",
+        "Avoids direct submission encouragement."
+      ]
+    }
+  ],
+  "recommended_first_test": "reference_faithful_version",
+  "scores": {
+    "hook_strength": 9,
+    "product_fit": 8,
+    "native_tiktok_feel": 9,
+    "clarity": 8,
+    "conversion_potential": 8,
+    "claim_safety": 8
+  }
+}

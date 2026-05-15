@@ -1,0 +1,72 @@
+{
+  "reference_video_url": "https://www.tiktok.com/@research.connect/video/7556287949361450248",
+  "local_reference_video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/references/7556287949361450248/reference.mp4",
+  "account": "research.connect",
+  "duration_seconds": 25.4,
+  "extraction_method": "yt-dlp download plus visual frame review",
+  "visible_sequence": [
+    {
+      "time": "0-4s",
+      "text": "so you're telling me after I just finished writing my RRL/literature review for hours......",
+      "role": "painful wasted-effort hook"
+    },
+    {
+      "time": "4-7s",
+      "text": "that this website could've done it for me in less than 5 mins.....",
+      "role": "strong website CTA / disbelief"
+    },
+    {
+      "time": "7-9s",
+      "text": "just type your topic",
+      "role": "simple input instruction"
+    },
+    {
+      "time": "9-11s",
+      "text": "wait for it to load (2-3 mins)",
+      "role": "waiting / generation expectation"
+    },
+    {
+      "time": "11-13s",
+      "text": "its as easy as that....",
+      "role": "ease reinforcement"
+    },
+    {
+      "time": "13-17s",
+      "text": "no cuz wdym 23 references in 3 mins when i only found 3 for 4 hours looking smh...",
+      "role": "result shock / social proof through number contrast"
+    },
+    {
+      "time": "17-20s",
+      "text": "And you can hover in text see cited papers...",
+      "role": "bonus feature proof"
+    },
+    {
+      "time": "20-22s",
+      "text": "and it has export too...",
+      "role": "bonus workflow proof"
+    },
+    {
+      "time": "22-25s",
+      "text": "for editability..... just wow smh...",
+      "role": "casual ending / benefit reinforcement"
+    }
+  ],
+  "caption_grammar": {
+    "voice": "casual disbelief, student/research creator tone",
+    "case_style": "mostly lowercase",
+    "punctuation": "heavy ellipses, occasional parentheses, casual 'smh'",
+    "hook_shape": "so you're telling me after [painful manual effort]......",
+    "cta_shape": "that this website could've [helped with outcome].....",
+    "instruction_shape": "just [simple action]",
+    "proof_shape": "no cuz wdym [specific result contrast] smh...",
+    "bonus_shape": "And you can [extra capability]...",
+    "ending_shape": "for [practical benefit]..... just wow smh..."
+  },
+  "reuse_rules_for_citely": [
+    "Preserve the disbelief hook and casual lowercase rhythm.",
+    "Replace speed claims with safer checking/tracing language unless product evidence supports a timed claim.",
+    "Do not say Citely guarantees 100% citation accuracy.",
+    "Do not imply Citely replaces academic judgment.",
+    "Use Find Sources and Verify References as the product-proof beats."
+  ]
+}

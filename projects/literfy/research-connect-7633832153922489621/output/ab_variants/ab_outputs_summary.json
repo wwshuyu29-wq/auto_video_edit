@@ -1,0 +1,19 @@
+{
+  "status": "ab_variants_ready",
+  "baseline_variant_a": {
+    "id": "variant_a_reference_faithful",
+    "file": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/final_video_captioned_v2.mp4",
+    "hypothesis": "Closest imitation of research.connect caption rhythm."
+  },
+  "variant_b": {
+    "id": "variant_b_problem_question",
+    "file": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/final_video_captioned_ab_b.mp4",
+    "hypothesis": "Pain-question hook may improve first-3-second retention."
+  },
+  "variant_c": {
+    "id": "variant_c_workflow_direct",
+    "file": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/final_video_captioned_ab_c.mp4",
+    "hypothesis": "Clear workflow hook may improve saves and clarity."
+  },
+  "test_plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/ab_test_plan.md"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Product Script Card",
+  "type": "object",
+  "required": ["product", "scripts", "scores"],
+  "properties": {
+    "product": {"type": "object"},
+    "scripts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "style", "script_title", "script_angle", "target_viewer", "version", "full_script", "caption", "hashtags", "compliance_notes"],
+        "properties": {
+          "type": {"type": "string"},
+          "style": {"type": "string"},
+          "script_title": {"type": "string"},
+          "script_angle": {"type": "string"},
+          "target_viewer": {"type": "string"},
+          "version": {"type": "string"},
+          "full_script": {"type": "array"},
+          "caption": {"type": "string"},
+          "hashtags": {"type": "array", "items": {"type": "string"}},
+          "compliance_notes": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "scores": {"type": "object"}
+  }
+}

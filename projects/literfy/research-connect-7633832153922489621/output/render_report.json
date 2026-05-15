@@ -1,0 +1,39 @@
+{
+  "status": "approved_captioned_cut_v1",
+  "inputs": {
+    "shot_matching_plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/shot_matching_plan.json",
+    "asset_library": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/preview.mp4",
+    "preview_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/preview_sheet.jpg",
+    "preview_midpoint_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/preview_midpoint_sheet.jpg",
+    "captions": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/captions.json",
+    "srt": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/master.srt",
+    "render_report": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/render_report.json",
+    "approved_captioned_video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/final_video_captioned_v1.mp4"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "34.666667",
+      "size": "30094020"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass.",
+    "User approved the visual preview as usable; copied preview to final_video_captioned_v1.mp4 as the current captioned cut."
+  ],
+  "next_steps": [
+    "Decide whether to add voiceover, background music, or keep this as caption-first TikTok creative.",
+    "Optional: re-record Google Scholar opening with fuller centered framing for closer reference imitation."
+  ]
+}

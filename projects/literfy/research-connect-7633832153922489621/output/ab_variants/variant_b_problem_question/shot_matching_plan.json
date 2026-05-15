@@ -1,0 +1,146 @@
+{
+  "editing_style": {
+    "pace": "fast",
+    "average_clip_duration": "1.5-2.5s",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-3s",
+      "voiceover": "Still starting your literature review with random Google Scholar tabs?",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.3,
+      "clip_end": 3.3,
+      "reason": "Matches visual need with score 50: Google Scholar or familiar academic search screen as trust object.",
+      "on_screen_text": "Still starting your literature review with random Google Scholar tabs?",
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "strong_cta",
+      "time": "3-6s",
+      "voiceover": "Try this website instead!",
+      "clip_id": "01_literfy_landing_page",
+      "clip_start": 1.1,
+      "clip_end": 4.1,
+      "reason": "Extended CTA hold so the full landing page and Literfy logo appear before cutting.",
+      "on_screen_text": "Try this website instead!",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "product_reveal",
+      "time": "6-8.5s",
+      "voiceover": "Click Literature Review",
+      "clip_id": "01_dashboard_review_button",
+      "clip_start": 0.2,
+      "clip_end": 2.6,
+      "reason": "Matches visual need with score 39: Literfy dashboard with Literature Review or review button visible.",
+      "on_screen_text": "Click Literature Review",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "input_topic",
+      "time": "8.5-11.5s",
+      "voiceover": "Type your topic",
+      "clip_id": "02_review_input_topic",
+      "clip_start": 0.3,
+      "clip_end": 3.3,
+      "reason": "Matches visual need with score 45: Screen recording of typing a research topic.",
+      "on_screen_text": "Type your topic",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "real_papers",
+      "time": "11.5-14s",
+      "voiceover": "It finds real papers for your topic",
+      "clip_id": "03_paper_list_results",
+      "clip_start": 0.5,
+      "clip_end": 3.0,
+      "reason": "Use only the paper-list portion before the selection menu appears.",
+      "on_screen_text": "It finds real papers for your topic",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "select_papers",
+      "time": "14-17s",
+      "voiceover": "Pro tip! select the papers you actually need",
+      "clip_id": "04_select_papers_to_outline",
+      "clip_start": 3.0,
+      "clip_end": 6.0,
+      "reason": "Use the later portion of the duplicate source file where selection options and selected papers appear, avoiding repeated paper-list frames.",
+      "on_screen_text": "Pro tip! select the papers you actually need",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "generate_outline",
+      "time": "17-20s",
+      "voiceover": "Then generate your outline",
+      "clip_id": "05_click_generate_outline",
+      "clip_start": 0.5,
+      "clip_end": 3.5,
+      "reason": "Matches visual need with score 45: Click generate outline button or outline generation action.",
+      "on_screen_text": "Then generate your outline",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "outline_proof",
+      "time": "20-23s",
+      "voiceover": "It's done! let's see...",
+      "clip_id": "06_literature_review_outline",
+      "clip_start": 0.2,
+      "clip_end": 3.2,
+      "reason": "Matches visual need with score 89: Generated literature review outline with sections.",
+      "on_screen_text": "It's done! let's see...",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "generate_review",
+      "time": "23-26s",
+      "voiceover": "Now turn it into a review draft",
+      "clip_id": "07_click_generate_review",
+      "clip_start": 0.3,
+      "clip_end": 3.6,
+      "reason": "Matches visual need with score 60: Click generate full review button.",
+      "on_screen_text": "Now turn it into a review draft",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "result_cta",
+      "time": "26-35s",
+      "voiceover": "A draft based on real papers!",
+      "clip_id": "08_generated_review",
+      "clip_start": 1.6,
+      "clip_end": 14.7,
+      "playback_speed": 1.45,
+      "reason": "Use a longer accelerated range so the generated literature review draft is shown more completely.",
+      "on_screen_text": "A draft based on real papers!",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [],
+  "needs_script_revision": false,
+  "scores": {
+    "visual_match": 10,
+    "pace_match": 7,
+    "asset_quality": 8,
+    "opening_strength": 8,
+    "product_proof_strength": 8
+  },
+  "variant": {
+    "id": "variant_b_problem_question",
+    "purpose": "A/B test caption angle while preserving approved V2 footage and timing",
+    "changed_surface": "captions only"
+  }
+}

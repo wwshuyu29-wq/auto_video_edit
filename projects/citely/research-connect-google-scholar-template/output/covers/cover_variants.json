@@ -1,0 +1,58 @@
+{
+  "reference_faithful": {
+    "text": "so you're telling me after I almost trusted an AI-generated reference without checking......",
+    "style": {
+      "lines": [
+        "so you're telling me after I",
+        "almost trusted an",
+        "AI-generated reference",
+        "without checking......"
+      ],
+      "font_size": 62,
+      "line_gap": 6,
+      "y_ratio": 0.405,
+      "max_width": 900,
+      "highlight": [
+        "ai-generated",
+        "reference"
+      ],
+      "highlight_fill": [
+        255,
+        235,
+        112,
+        255
+      ]
+    }
+  },
+  "verify_reference_focus": {
+    "text": "so you're telling me after I almost submitted a reference that just looked real......",
+    "style": {
+      "lines": [
+        "so you're telling me after I",
+        "almost submitted a reference",
+        "that just looked real......"
+      ],
+      "font_size": 60,
+      "line_gap": 18,
+      "y_ratio": 0.382,
+      "max_width": 840,
+      "highlight": []
+    }
+  },
+  "find_sources_focus": {
+    "text": "so you're telling me after I spent forever trying to find where this claim came from......",
+    "style": {
+      "lines": [
+        "so you're telling me after I",
+        "spent forever trying to find",
+        "where this claim",
+        "came from......"
+      ],
+      "font_size": 56,
+      "line_gap": 2,
+      "y_ratio": 0.455,
+      "max_width": 760,
+      "highlight": []
+    }
+  }
+}

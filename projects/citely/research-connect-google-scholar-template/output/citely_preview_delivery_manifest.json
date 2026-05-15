@@ -1,0 +1,44 @@
+{
+  "project": "Citely Google Scholar template",
+  "reference_video": "https://www.tiktok.com/@research.connect/video/7556287949361450248",
+  "status": "preview_rendered_v4_with_restrained_emoji_markers",
+  "duration_seconds": {
+    "reference_faithful": 24.799349,
+    "verify_reference_focus": 24.8,
+    "find_sources_focus": 24.799349
+  },
+  "variants": [
+    {
+      "type": "reference_faithful_version",
+      "purpose": "Closest imitation of the reference video's casual disbelief caption rhythm.",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/previews/citely_reference_faithful_preview_v4.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/covers/cover_style_reference_faithful.jpg",
+      "midpoint_sheet": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/previews/citely_reference_faithful_preview_v4_midpoint_sheet.jpg",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/shot_matching_plan.json"
+    },
+    {
+      "type": "verify_reference_focus",
+      "purpose": "More focused on checking references that look real before trusting or submitting them.",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/verify_reference_focus/citely_verify_reference_focus_preview_v4.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/covers/cover_style_verify_reference_focus.jpg",
+      "midpoint_sheet": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/verify_reference_focus/citely_verify_reference_focus_preview_v4_midpoint_sheet.jpg",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/verify_reference_focus/shot_matching_plan.json"
+    },
+    {
+      "type": "find_sources_focus",
+      "purpose": "More focused on tracing where a claim/source came from.",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/citely_find_sources_focus_preview_v4.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/covers/cover_style_find_sources_focus.jpg",
+      "midpoint_sheet": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/citely_find_sources_focus_preview_v4_midpoint_sheet.jpg",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/shot_matching_plan.json"
+    }
+  ],
+  "qa_notes": [
+    "All three videos are around 24.8 seconds.",
+    "No voiceover or BGM is added; user will add TikTok trending music later.",
+    "Covers are separate JPGs and are not prepended into the videos.",
+    "Cover base was corrected to keep Google Scholar fully visible.",
+    "V3 removes blue/green highlights. Only the reference-faithful version keeps one restrained warm/yellow highlight; the other variants rely on layout differences.",
+    "V4 adds exactly one restrained emotion marker per variant in the video subtitles and uses the custom PNG renderer so markers do not render as square tofu glyphs."
+  ]
+}

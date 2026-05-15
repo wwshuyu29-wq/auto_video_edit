@@ -1,0 +1,16 @@
+{
+  "account_url": "https://www.tiktok.com/@research.connect",
+  "target_platform": "TikTok",
+  "analysis_goal": "Extract reusable product-marketing video structures",
+  "video_list": [
+    {
+      "video_url": "https://www.tiktok.com/@research.connect/video/7633832153922489621",
+      "views": 5443,
+      "likes": 203,
+      "comments": 2,
+      "caption": "How to write a research paper like a phd/master student!!!",
+      "transcript": "How to write your thesis paper like a PhD/Master student. Just go to this website. Click researcher. Type your research paper topic. Use latex for PDFs. Then watch it do its magic in 2-3 mins. A complete research paper with meaningful visualizations.",
+      "frames_summary": "Handheld Google Scholar page, product website reveal, researcher mode, topic input, generated research paper pages, charts and visualizations."
+    }
+  ]
+}

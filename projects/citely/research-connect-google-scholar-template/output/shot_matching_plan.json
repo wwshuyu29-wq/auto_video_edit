@@ -1,0 +1,204 @@
+{
+  "source_script_card": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/product_script_card.json",
+  "selected_script_type": "reference_faithful_version",
+  "editing_style": {
+    "pace": "fast",
+    "average_clip_duration": "2.0-4.0s",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "caption_style": "PNG overlays, bold white text with black outline, reference-style lower-center placement"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-4s",
+      "voiceover": "so you're telling me after I almost trusted an AI-generated reference without checking......",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.2,
+      "clip_end": 4.4,
+      "playback_speed": 1.05,
+      "speed_reason": "Slight speed-up keeps the handheld Google Scholar hook within the 4s caption beat without looping.",
+      "reason": "Google Scholar creates the same academic trust doorway as the reference video before revealing Citely.",
+      "on_screen_text": "so you're telling me after I almost trusted an AI-generated reference without checking...... 😭",
+      "caption_style": {
+        "lines": [
+          "so you're telling me after I",
+          "almost trusted an",
+          "AI-generated reference",
+          "without checking...... 😭"
+        ],
+        "font_size": 62,
+        "line_gap": 6,
+        "y_ratio": 0.405,
+        "max_width": 900,
+        "highlight_terms": [
+          "ai-generated",
+          "reference"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "strong_cta",
+      "time": "4-6.5s",
+      "voiceover": "that this website could've helped me check the source first.....",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.0,
+      "speed_reason": "Hold the landing page long enough for Citely identity and CTA context to be readable.",
+      "reason": "This maps the reference video's 'that this website could've...' line to the Citely landing page reveal.",
+      "on_screen_text": "that this website could've helped me check the source first.....",
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "feature_entry",
+      "time": "6.5-8.5s",
+      "voiceover": "open find sources",
+      "clip_id": "02_click_find_sources",
+      "clip_start": 0.2,
+      "clip_end": 3.3,
+      "playback_speed": 1.5,
+      "speed_reason": "The click/navigation action is longer than the subtitle beat, so it should feel snappy.",
+      "reason": "Shows the exact feature entry for Find Sources.",
+      "on_screen_text": "open find sources",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "input",
+      "time": "8.5-11s",
+      "voiceover": "just paste your claim",
+      "clip_id": "03_find_sources_input_claim",
+      "clip_start": 0.2,
+      "clip_end": 4.0,
+      "playback_speed": 1.5,
+      "speed_reason": "Input footage needs compression so it reads as one simple action, not a tutorial screen recording.",
+      "reason": "The visible input field supports the 'just paste your claim' line.",
+      "on_screen_text": "just paste your claim",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "load",
+      "time": "11-13s",
+      "voiceover": "wait for the sources to load",
+      "clip_id": "03_find_sources_input_claim",
+      "clip_start": 4.0,
+      "clip_end": 5.8,
+      "playback_speed": 1.0,
+      "speed_reason": "Use the later part of the input clip instead of looping the results clip.",
+      "reason": "This bridges the input action into the upcoming source results without reusing the result proof too early.",
+      "on_screen_text": "wait for the sources to load",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ease_reinforcement",
+      "time": "13-15s",
+      "voiceover": "its as easy as that....",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0.0,
+      "clip_end": 1.8,
+      "playback_speed": 1.0,
+      "speed_reason": "Short results reveal gives a quick payoff before the stronger result-shock beat.",
+      "reason": "Shows the first visible source results as the ease reinforcement line appears.",
+      "on_screen_text": "its as easy as that....",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "result_shock",
+      "time": "15-18s",
+      "voiceover": "no cuz wdym it finds papers connected to the claim smh...",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 1.2,
+      "clip_end": 3.0,
+      "playback_speed": 0.75,
+      "speed_reason": "Slight slow-down/freeze tail lets the source results remain visible for the longer shock caption without looping.",
+      "reason": "This is the core proof beat for Find Sources: source results connected to the pasted claim.",
+      "on_screen_text": "no cuz wdym it finds papers connected to the claim smh...",
+      "caption_style": {
+        "lines": [
+          "no cuz wdym it finds",
+          "papers connected",
+          "to the claim smh..."
+        ],
+        "font_size": 58,
+        "line_gap": 10,
+        "y_ratio": 0.435,
+        "highlight_terms": []
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "bonus_feature",
+      "time": "18-20s",
+      "voiceover": "And you can check the reference too...",
+      "clip_id": "05_click_verify_references",
+      "clip_start": 0.2,
+      "clip_end": 3.2,
+      "playback_speed": 1.5,
+      "speed_reason": "The navigation action is compressed to keep the bonus feature beat short.",
+      "reason": "Switches from Find Sources to Verify References, matching the reference video's bonus-feature move.",
+      "on_screen_text": "And you can check the reference too...",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "metadata_proof",
+      "time": "20-22.5s",
+      "voiceover": "and it shows citation details...",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 3.2,
+      "playback_speed": 1.25,
+      "speed_reason": "Verification results stay readable while fitting the 2.5s caption beat.",
+      "reason": "Shows citation verification result context and details.",
+      "on_screen_text": "and it shows citation details...",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "22.5-25s",
+      "voiceover": "for checking AI references..... just wow smh...",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 3.0,
+      "clip_end": 5.1,
+      "playback_speed": 1.0,
+      "speed_reason": "Use a later segment of the verification results as the ending proof, avoiding a jump back to the first frame.",
+      "reason": "Keeps final frame on the Citely proof surface while preserving the reference video's casual ending.",
+      "on_screen_text": "for checking AI references..... just wow smh...",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    }
+  ],
+  "missing_assets": [
+    {
+      "need": "A tighter close-up of citation metadata or verify status",
+      "suggestion": "Optional: record one close-up result clip where the status and metadata details are very obvious."
+    }
+  ],
+  "risk_notes": [
+    "Find Sources result footage is short, so the result proof uses two different ranges and a slight slow-down/freeze tail.",
+    "This is a first preview plan; final caption wording and style can still be revised after watching."
+  ],
+  "needs_script_revision": false,
+  "scores": {
+    "visual_match": 8,
+    "pace_match": 8,
+    "asset_quality": 8,
+    "opening_strength": 8,
+    "product_proof_strength": 8
+  }
+}

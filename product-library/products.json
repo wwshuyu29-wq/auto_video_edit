@@ -1,0 +1,205 @@
+{
+  "active_product": "Literfy",
+  "rules": [
+    "Only use products listed in this file.",
+    "Start with Literfy and do not generate scripts for Citely or FigPad until explicitly requested.",
+    "Do not invent product features, integrations, claims, or guarantees.",
+    "Scripts must sound like TikTok creator workflow sharing, not homepage advertising.",
+    "Avoid exaggerated claims: no 100% accuracy, no paper ghostwriting, no guaranteed publication, no replacement for human judgment."
+  ],
+  "products": [
+    {
+      "product_name": "Literfy",
+      "one_liner": "Literfy is an AI academic research tool that helps students and researchers find papers, organize sources, and start literature reviews faster.",
+      "target_users": [
+        "graduate students",
+        "PhD students",
+        "Master students",
+        "researchers",
+        "students writing literature reviews",
+        "academic writers"
+      ],
+      "core_features": [
+        {
+          "feature_name": "Find Papers",
+          "description": "Search and discover academic papers based on a research topic.",
+          "user_benefit": "Helps users find relevant papers faster instead of opening many random tabs.",
+          "visual_need": "Screen recording of typing a research topic and getting paper results."
+        },
+        {
+          "feature_name": "Paper Discovery / Related Papers",
+          "description": "Help users discover relevant or related papers for a research topic.",
+          "user_benefit": "Helps users avoid missing useful papers during early research.",
+          "visual_need": "Screen recording of paper result list, related papers, or ranked results."
+        },
+        {
+          "feature_name": "Literature Review Outline",
+          "description": "Generate a structured outline for a literature review based on selected papers.",
+          "user_benefit": "Helps users stop staring at a blank page and start with a clear structure.",
+          "visual_need": "Screen recording of selected papers turning into an outline."
+        },
+        {
+          "feature_name": "AI Literature Review Draft",
+          "description": "Generate a structured literature review draft based on collected papers.",
+          "user_benefit": "Helps users move from paper collection to a draftable structure faster.",
+          "visual_need": "Screen recording of a review draft or editable review sections."
+        },
+        {
+          "feature_name": "Citation / Export Workflow",
+          "description": "Export citations or research materials into downstream writing workflows.",
+          "user_benefit": "Helps users organize and move research materials into writing tools.",
+          "visual_need": "Screen recording of export options, citation export, or document export."
+        }
+      ],
+      "most_painful_user_scenarios": [
+        "A student starts a literature review and opens 30-50 random tabs.",
+        "A PhD or Master student does not know which papers are worth reading first.",
+        "A researcher has papers but does not know how to organize them into a review structure.",
+        "A student wastes hours before actually writing anything."
+      ],
+      "forbidden_claims": [
+        "Do not say Literfy writes a perfect literature review.",
+        "Do not say Literfy replaces real research.",
+        "Do not say citations are always 100% correct.",
+        "Do not tell users to submit AI output directly.",
+        "Do not claim guaranteed acceptance by journals or professors.",
+        "Do not claim the output is publication-ready without human review."
+      ],
+      "good_tiktok_angles": [
+        "If your literature review starts with 50 random tabs open, this is for you.",
+        "This is how I start a literature review now.",
+        "I stopped staring at a blank page before writing my literature review.",
+        "Stop searching papers manually like this."
+      ],
+      "source_grounding_note": "Literfy generates literature review outlines and drafts based on real academic papers selected or discovered in the workflow.",
+      "allowed_claim_boundaries": [
+        "Can say Literfy works from real academic papers in the workflow.",
+        "Can say Literfy helps generate a structured literature review draft based on selected/collected papers.",
+        "Can say Literfy helps users move from real papers to an organized review starting point.",
+        "Should still say users need to review, edit, and verify the output."
+      ]
+    },
+    {
+      "product_name": "Citely",
+      "one_liner": "Citely is an AI citation checker and source finder that helps users verify references, detect fake citations, and trace claims back to real sources.",
+      "target_users": [
+        "students",
+        "researchers",
+        "academic writers",
+        "journal editors",
+        "people using AI-generated references",
+        "people checking references before submission"
+      ],
+      "core_features": [
+        {
+          "feature_name": "Find Sources",
+          "description": "Find original sources behind claims, references, or citation-like text.",
+          "user_benefit": "Helps users trace claims back to real sources instead of trusting vague citations.",
+          "visual_need": "Screen recording of pasting a claim or citation and getting source results."
+        },
+        {
+          "feature_name": "Verify References",
+          "description": "Check whether references correspond to real published sources.",
+          "user_benefit": "Helps users catch fake, incorrect, or mismatched references before submission.",
+          "visual_need": "Screen recording of checking a reference list and seeing verification results."
+        },
+        {
+          "feature_name": "Citation Metadata Checking",
+          "description": "Compare title, authors, year, journal, DOI, and other citation metadata.",
+          "user_benefit": "Helps users identify references that look real but contain wrong details.",
+          "visual_need": "Close-up screen recording of citation metadata comparison."
+        },
+        {
+          "feature_name": "AI Citation Risk Check",
+          "description": "Check citations that may have been generated by AI tools.",
+          "user_benefit": "Helps users avoid trusting AI-generated citations just because they look formatted.",
+          "visual_need": "Screen recording of an AI-generated reference being checked."
+        }
+      ],
+      "most_painful_user_scenarios": [
+        "A student uses AI to generate references but is not sure whether they are real.",
+        "A citation looks real but points to the wrong paper.",
+        "A researcher needs to verify references before submitting a manuscript.",
+        "A user wants to find the original source behind a claim."
+      ],
+      "forbidden_claims": [
+        "Do not say Citely guarantees 100% citation accuracy.",
+        "Do not say Citely replaces human academic judgment.",
+        "Do not say Citely guarantees manuscript acceptance.",
+        "Do not say Citely can verify every possible source in the world.",
+        "Do not encourage users to submit unchecked AI-generated work.",
+        "Do not claim that a verified citation automatically means the argument is correct."
+      ],
+      "good_tiktok_angles": [
+        "Before you trust an AI-generated reference, check this.",
+        "A citation can look real and still be fake.",
+        "This is the last step before I trust any AI-written research draft.",
+        "Don’t submit references before checking this."
+      ]
+    },
+    {
+      "product_name": "FigPad",
+      "one_liner": "FigPad is an AI scientific figure tool that helps researchers turn text prompts, sketches, and references into cleaner scientific visuals.",
+      "target_users": [
+        "researchers",
+        "PhD students",
+        "Master students",
+        "lab members",
+        "science communicators",
+        "people making figures for papers or slides",
+        "people creating graphical abstracts"
+      ],
+      "core_features": [
+        {
+          "feature_name": "Text to Figure",
+          "description": "Generate a scientific figure from a natural-language prompt.",
+          "user_benefit": "Helps users turn a research concept into a visual draft quickly.",
+          "visual_need": "Screen recording of entering a prompt and generating a scientific figure."
+        },
+        {
+          "feature_name": "Sketch to Image",
+          "description": "Turn a rough sketch into a cleaner scientific illustration.",
+          "user_benefit": "Helps users transform an imperfect drawing into a more polished figure.",
+          "visual_need": "Before-after shot of a hand sketch becoming a clean scientific figure."
+        },
+        {
+          "feature_name": "Image to Image",
+          "description": "Use a reference image to guide scientific figure generation.",
+          "user_benefit": "Helps users improve or restyle an existing scientific visual.",
+          "visual_need": "Screen recording of uploading a reference and generating a refined visual."
+        },
+        {
+          "feature_name": "Vectorizer",
+          "description": "Convert raster images into cleaner vector-style outputs.",
+          "user_benefit": "Helps users get more editable and presentation-ready scientific visuals.",
+          "visual_need": "Screen recording of raster image converting into SVG or vector-like output."
+        },
+        {
+          "feature_name": "Export Formats",
+          "description": "Export scientific visuals in formats such as SVG, PPTX, and PNG.",
+          "user_benefit": "Helps users use outputs in papers, slides, and further editing workflows.",
+          "visual_need": "Screen recording of export options."
+        }
+      ],
+      "most_painful_user_scenarios": [
+        "A researcher has a rough idea but cannot make a clean figure.",
+        "A PhD student draws an ugly sketch and wants to turn it into a polished diagram.",
+        "A lab member needs figures for slides or papers but does not want to start from scratch.",
+        "A user wants editable scientific visuals instead of static AI images."
+      ],
+      "forbidden_claims": [
+        "Do not say FigPad guarantees journal-ready figures without editing.",
+        "Do not say FigPad replaces professional scientific illustration in all cases.",
+        "Do not say every generated figure is scientifically accurate by default.",
+        "Do not claim users never need to review labels, structures, or details.",
+        "Do not claim it can perfectly generate every scientific figure type."
+      ],
+      "good_tiktok_angles": [
+        "I turned this ugly research sketch into a clean scientific figure.",
+        "I described my experiment and got a figure draft in seconds.",
+        "Making research figures doesn’t have to start from a blank canvas.",
+        "This is how I make scientific figures faster."
+      ]
+    }
+  ]
+}

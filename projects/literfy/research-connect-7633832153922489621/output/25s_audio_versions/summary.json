@@ -1,0 +1,17 @@
+[
+  {
+    "id": "a_reference_faithful",
+    "plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/shot_matching_plan_25s.json",
+    "target_duration_s": 25
+  },
+  {
+    "id": "b_problem_question",
+    "plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/shot_matching_plan_25s.json",
+    "target_duration_s": 25
+  },
+  {
+    "id": "c_workflow_direct",
+    "plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/c_workflow_direct/shot_matching_plan_25s.json",
+    "target_duration_s": 25
+  }
+]

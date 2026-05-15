@@ -1,0 +1,99 @@
+{
+  "project_dir": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template",
+  "mode": "normal",
+  "dry_run": false,
+  "candidate_count": 9,
+  "reclaimable_bytes": 65646726,
+  "reclaimable_human": "62.6 MB",
+  "candidates": [
+    {
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/find_sources_workdir/overlays",
+      "relative_path": "output/final_delivery/find_sources_workdir/overlays",
+      "reason": "temporary directory `overlays`",
+      "bytes": 339081,
+      "size": "331.1 KB",
+      "type": "directory"
+    },
+    {
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/find_sources_workdir/qa_frames",
+      "relative_path": "output/final_delivery/find_sources_workdir/qa_frames",
+      "reason": "temporary directory `qa_frames`",
+      "bytes": 704742,
+      "size": "688.2 KB",
+      "type": "directory"
+    },
+    {
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/find_sources_workdir/segments",
+      "relative_path": "output/final_delivery/find_sources_workdir/segments",
+      "reason": "temporary directory `segments`",
+      "bytes": 21568660,
+      "size": "20.6 MB",
+      "type": "directory"
+    },
+    {
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/reference_workdir/overlays",
+      "relative_path": "output/final_delivery/reference_workdir/overlays",
+      "reason": "temporary directory `overlays`",
+      "bytes": 396324,
+      "size": "387.0 KB",
+      "type": "directory"
+    },
+    {
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/reference_workdir/qa_frames",
+      "relative_path": "output/final_delivery/reference_workdir/qa_frames",
+      "reason": "temporary directory `qa_frames`",
+      "bytes": 877553,
+      "size": "857.0 KB",
+      "type": "directory"
+    },
+    {
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/reference_workdir/segments",
+      "relative_path": "output/final_delivery/reference_workdir/segments",
+      "reason": "temporary directory `segments`",
+      "bytes": 19986343,
+      "size": "19.1 MB",
+      "type": "directory"
+    },
+    {
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/verify_workdir/overlays",
+      "relative_path": "output/final_delivery/verify_workdir/overlays",
+      "reason": "temporary directory `overlays`",
+      "bytes": 277717,
+      "size": "271.2 KB",
+      "type": "directory"
+    },
+    {
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/verify_workdir/qa_frames",
+      "relative_path": "output/final_delivery/verify_workdir/qa_frames",
+      "reason": "temporary directory `qa_frames`",
+      "bytes": 727281,
+      "size": "710.2 KB",
+      "type": "directory"
+    },
+    {
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/verify_workdir/segments",
+      "relative_path": "output/final_delivery/verify_workdir/segments",
+      "reason": "temporary directory `segments`",
+      "bytes": 20769025,
+      "size": "19.8 MB",
+      "type": "directory"
+    }
+  ],
+  "removed": [
+    "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/find_sources_workdir/overlays",
+    "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/find_sources_workdir/qa_frames",
+    "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/find_sources_workdir/segments",
+    "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/reference_workdir/overlays",
+    "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/reference_workdir/qa_frames",
+    "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/reference_workdir/segments",
+    "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/verify_workdir/overlays",
+    "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/verify_workdir/qa_frames",
+    "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/verify_workdir/segments"
+  ],
+  "protected_policy": {
+    "keeps_raw_materials": true,
+    "keeps_structured_json_and_markdown": true,
+    "keeps_cover_images": true,
+    "keeps_manifest_outputs": true
+  }
+}

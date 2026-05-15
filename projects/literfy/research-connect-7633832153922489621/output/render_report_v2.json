@@ -1,0 +1,39 @@
+{
+  "status": "revised_captioned_cut_v2",
+  "inputs": {
+    "shot_matching_plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/shot_matching_plan.json",
+    "asset_library": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/preview_v2.mp4",
+    "preview_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/preview_v2_sheet.jpg",
+    "preview_midpoint_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/preview_v2_midpoint_sheet.jpg",
+    "captions": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/captions.json",
+    "srt": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/master.srt",
+    "render_report": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/render_report_v2.json",
+    "approved_captioned_video_v2": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/final_video_captioned_v2.mp4",
+    "boundary_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/preview_v2_boundary_sheet.jpg"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "34.732682",
+      "size": "37892958"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass.",
+    "Fixed preview renderer to stop looping source clips; short source ranges now freeze on the last frame instead of jumping back to the first frame.",
+    "Extended landing page CTA from 2s to 3s and shifted source range so the Literfy logo appears before the cut.",
+    "Split duplicate paper-list/select-paper source into different time ranges to reduce repeated frames.",
+    "Extended final generated-review beat to 9s with 1.45x playback speed to show more of the full review draft."
+  ]
+}

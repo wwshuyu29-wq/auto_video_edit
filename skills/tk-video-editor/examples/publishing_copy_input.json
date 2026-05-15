@@ -1,0 +1,26 @@
+{
+  "platform": "TikTok",
+  "product": {
+    "product_name": "Literfy",
+    "forbidden_claims": [
+      "Do not say Literfy writes a perfect literature review.",
+      "Do not say Literfy replaces real research.",
+      "Do not say citations are always 100% correct.",
+      "Do not tell users to submit AI output directly."
+    ]
+  },
+  "reference_post": {
+    "caption": "How to write a research paper like a phd/master student!!! #research #phd #literaturereview #citation #researchpaper"
+  },
+  "variants": [
+    {
+      "id": "a_reference_faithful",
+      "video": "/abs/video.mp4",
+      "cover": "/abs/cover.jpg",
+      "captions": [
+        "How to start your literature review like a PhD/Master student (The easy way)",
+        "Just go to this website!"
+      ]
+    }
+  ]
+}

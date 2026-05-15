@@ -1,0 +1,27 @@
+{
+  "viral_pattern_card_ref": "output/viral_pattern_card.json",
+  "platform": "TikTok",
+  "video_length": "25-35s",
+  "tone": "native creator style, casual, not too salesy",
+  "product": {
+    "name": "Literfy",
+    "category": "AI literature review tool",
+    "target_user": "students and researchers",
+    "core_features": [
+      "find relevant papers",
+      "organize paper insights",
+      "generate structured literature review drafts"
+    ],
+    "main_pain_points": [
+      "opening too many research tabs"
+    ],
+    "proof_points": [
+      "a structured review starting point"
+    ],
+    "forbidden_claims": [
+      "do not claim it replaces human research",
+      "do not claim 100% accuracy"
+    ],
+    "cta": "try Literfy"
+  }
+}

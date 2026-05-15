@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Viral Pattern Card",
+  "type": "object",
+  "required": ["account_positioning", "main_content_logic", "caption_logic", "viral_patterns", "recommended_templates", "scores"],
+  "properties": {
+    "account_positioning": {"type": "string"},
+    "main_content_logic": {"type": "string"},
+    "caption_logic": {
+      "type": "object",
+      "properties": {
+        "visible_sequence": {"type": "array", "items": {"type": "string"}},
+        "sentence_roles": {"type": "array", "items": {"type": "string"}},
+        "punctuation_pattern": {"type": "string"},
+        "reuse_rule": {"type": "string"}
+      }
+    },
+    "viral_patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pattern_name", "hook_type", "hook_examples", "opening_0_3s", "middle_structure", "ending_cta", "visual_style", "why_it_works", "reuse_risk"],
+        "properties": {
+          "pattern_name": {"type": "string"},
+          "hook_type": {"type": "string"},
+          "hook_examples": {"type": "array", "items": {"type": "string"}},
+          "opening_0_3s": {"type": "string"},
+          "middle_structure": {"type": "array", "items": {"type": "string"}},
+          "ending_cta": {"type": "string"},
+          "visual_style": {"type": "object"},
+          "why_it_works": {"type": "array", "items": {"type": "string"}},
+          "reuse_risk": {"type": "string"}
+        }
+      }
+    },
+    "recommended_templates": {"type": "array"},
+    "scores": {"type": "object"},
+    "source_videos": {"type": "array"}
+  }
+}

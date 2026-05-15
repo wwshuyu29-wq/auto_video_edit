@@ -1,0 +1,34 @@
+[
+  {
+    "id": "variant_b_problem_question",
+    "shot_matching_plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/ab_variants/variant_b_problem_question/shot_matching_plan.json",
+    "captions": [
+      "Still starting your literature review with random Google Scholar tabs?",
+      "Try this website instead!",
+      "Click Literature Review",
+      "Type your topic",
+      "It finds real papers for your topic",
+      "Pro tip! select the papers you actually need",
+      "Then generate your outline",
+      "It's done! let's see...",
+      "Now turn it into a review draft",
+      "A draft based on real papers!"
+    ]
+  },
+  {
+    "id": "variant_c_workflow_direct",
+    "shot_matching_plan": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/ab_variants/variant_c_workflow_direct/shot_matching_plan.json",
+    "captions": [
+      "How to start a literature review without opening 50 tabs",
+      "Just go to Literfy!",
+      "Click Literature Review",
+      "Type your research topic",
+      "Find real papers first",
+      "Select the papers you want to use",
+      "Then generate the outline",
+      "No more blank page",
+      "Turn the outline into a review draft",
+      "Keep writing from real papers"
+    ]
+  }
+]

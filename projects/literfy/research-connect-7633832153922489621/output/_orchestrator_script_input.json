@@ -1,0 +1,195 @@
+{
+  "viral_pattern_card_ref": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/viral_pattern_card.json",
+  "viral_pattern_card": {
+    "account_url": "https://www.tiktok.com/@research.connect",
+    "target_platform": "TikTok",
+    "analysis_goal": "提炼可复用的产品营销视频结构，重点模仿 Google Scholar 学术信任封面、PhD/Master 身份钩子和工具演示节奏。",
+    "account_positioning": "Needs analyst refinement: describe the account's audience, pain category, and creator voice.",
+    "main_content_logic": "Pain or status-gap hook -> tool/workflow reveal -> concrete demo -> visible result -> soft CTA.",
+    "caption_logic": {
+      "visible_sequence": [
+        "How to write your thesis paper like a PhD/Master student (The easy way)",
+        "Just go to this website!",
+        "Click researcher",
+        "Type your research paper topic",
+        "Pro tip! use latex for pdfs",
+        "Then watch it do its magic in 2-3 mins",
+        "It's done! let's see...",
+        "A complete research paper!",
+        "With meaningful visualizations!"
+      ],
+      "sentence_roles": [
+        "hook",
+        "strong_cta",
+        "command",
+        "command",
+        "pro_tip",
+        "time_promise",
+        "reveal_setup",
+        "result_proof",
+        "bonus_proof"
+      ],
+      "punctuation_pattern": "How to... (The easy way), exclamation CTA, short commands, Pro tip!, Then..., ellipsis before reveal, exclamation result proof",
+      "reuse_rule": "Preserve rhythm, sentence roles, and punctuation; replace claims with product-safe equivalents."
+    },
+    "viral_patterns": [
+      {
+        "pattern_name": "Workflow shortcut demo",
+        "hook_type": "Pain/status gap/result promise",
+        "hook_examples": [
+          "How to write a research paper like a phd/master student!!! #research #phd #literaturereview #citation #researchpaper"
+        ],
+        "opening_0_3s": "Open with a specific user pain, status upgrade, or visible result. Avoid slow context.",
+        "middle_structure": [
+          "Name the inefficient current workflow.",
+          "Reveal one specific tool or workflow.",
+          "Show 2-3 concrete steps with screen or handheld proof.",
+          "Show the finished output instead of only describing benefits."
+        ],
+        "ending_cta": "Prompt viewers to try, save, comment a keyword, or visit the tool.",
+        "visual_style": {
+          "camera": "Handheld screen footage and/or screen recording",
+          "pace": "One information beat every 1-3 seconds",
+          "subtitle_style": "Large short captions, high contrast, platform-safe placement",
+          "music": "Light background music that does not compete with voice or captions"
+        },
+        "why_it_works": [
+          "The pain is concrete.",
+          "The workflow feels immediately usable.",
+          "The result is visible.",
+          "The viewer can imagine using the same shortcut."
+        ],
+        "reuse_risk": "Do not copy exact wording, brand identity, or unsupported claims. Reuse only the structure."
+      }
+    ],
+    "recommended_templates": [
+      {
+        "template_name": "Problem-Solution-Demo-CTA",
+        "timeline": [
+          {
+            "time": "0-2s",
+            "purpose": "hook",
+            "content": "State a high-frequency pain or status gap."
+          },
+          {
+            "time": "2-6s",
+            "purpose": "product appears",
+            "content": "Reveal the tool, interface, or result."
+          },
+          {
+            "time": "6-15s",
+            "purpose": "proof",
+            "content": "Show 2-3 key workflow steps."
+          },
+          {
+            "time": "15-22s",
+            "purpose": "result",
+            "content": "Show before/after or finished output."
+          },
+          {
+            "time": "22-28s",
+            "purpose": "CTA",
+            "content": "Invite trial, save, or comment."
+          }
+        ]
+      }
+    ],
+    "scores": {
+      "hook_clarity": 7,
+      "structure_reusability": 8,
+      "product_adaptability": 7,
+      "copy_risk": 3,
+      "evidence_strength": 7
+    },
+    "source_videos": [
+      {
+        "video_url": "https://www.tiktok.com/@research.connect/video/7633832153922489621",
+        "views": 5443,
+        "likes": 203,
+        "comments": 2,
+        "caption": "How to write a research paper like a phd/master student!!! #research #phd #literaturereview #citation #researchpaper",
+        "available_signals": {
+          "has_transcript": true,
+          "has_frames_summary": true,
+          "has_metrics": true
+        }
+      }
+    ]
+  },
+  "product": {
+    "product_name": "Literfy",
+    "one_liner": "Literfy is an AI academic research tool that helps students and researchers find papers, organize sources, and start literature reviews faster.",
+    "target_users": [
+      "graduate students",
+      "PhD students",
+      "Master students",
+      "researchers",
+      "students writing literature reviews",
+      "academic writers"
+    ],
+    "core_features": [
+      {
+        "feature_name": "Find Papers",
+        "description": "Search and discover academic papers based on a research topic.",
+        "user_benefit": "Helps users find relevant papers faster instead of opening many random tabs.",
+        "visual_need": "Screen recording of typing a research topic and getting paper results."
+      },
+      {
+        "feature_name": "Paper Discovery / Related Papers",
+        "description": "Help users discover relevant or related papers for a research topic.",
+        "user_benefit": "Helps users avoid missing useful papers during early research.",
+        "visual_need": "Screen recording of paper result list, related papers, or ranked results."
+      },
+      {
+        "feature_name": "Literature Review Outline",
+        "description": "Generate a structured outline for a literature review based on selected papers.",
+        "user_benefit": "Helps users stop staring at a blank page and start with a clear structure.",
+        "visual_need": "Screen recording of selected papers turning into an outline."
+      },
+      {
+        "feature_name": "AI Literature Review Draft",
+        "description": "Generate a structured literature review draft based on collected papers.",
+        "user_benefit": "Helps users move from paper collection to a draftable structure faster.",
+        "visual_need": "Screen recording of a review draft or editable review sections."
+      },
+      {
+        "feature_name": "Citation / Export Workflow",
+        "description": "Export citations or research materials into downstream writing workflows.",
+        "user_benefit": "Helps users organize and move research materials into writing tools.",
+        "visual_need": "Screen recording of export options, citation export, or document export."
+      }
+    ],
+    "most_painful_user_scenarios": [
+      "A student starts a literature review and opens 30-50 random tabs.",
+      "A PhD or Master student does not know which papers are worth reading first.",
+      "A researcher has papers but does not know how to organize them into a review structure.",
+      "A student wastes hours before actually writing anything."
+    ],
+    "forbidden_claims": [
+      "Do not say Literfy writes a perfect literature review.",
+      "Do not say Literfy replaces real research.",
+      "Do not say citations are always 100% correct.",
+      "Do not tell users to submit AI output directly.",
+      "Do not claim guaranteed acceptance by journals or professors.",
+      "Do not claim the output is publication-ready without human review."
+    ],
+    "good_tiktok_angles": [
+      "If your literature review starts with 50 random tabs open, this is for you.",
+      "This is how I start a literature review now.",
+      "I stopped staring at a blank page before writing my literature review.",
+      "Stop searching papers manually like this."
+    ],
+    "source_grounding_note": "Literfy generates literature review outlines and drafts based on real academic papers selected or discovered in the workflow.",
+    "allowed_claim_boundaries": [
+      "Can say Literfy works from real academic papers in the workflow.",
+      "Can say Literfy helps generate a structured literature review draft based on selected/collected papers.",
+      "Can say Literfy helps users move from real papers to an organized review starting point.",
+      "Should still say users need to review, edit, and verify the output."
+    ],
+    "cta": "try Literfy"
+  },
+  "platform": "TikTok",
+  "video_length": "25-35s",
+  "tone": "native creator style, casual, not too salesy",
+  "cta": ""
+}

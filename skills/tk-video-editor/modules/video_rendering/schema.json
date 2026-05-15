@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Render Report",
+  "type": "object",
+  "required": ["status", "inputs", "outputs", "notes"],
+  "properties": {
+    "status": {"type": "string"},
+    "inputs": {"type": "object"},
+    "outputs": {"type": "object"},
+    "notes": {"type": "array", "items": {"type": "string"}}
+  }
+}

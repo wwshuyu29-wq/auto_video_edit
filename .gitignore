@@ -1,0 +1,42 @@
+# Local/editor
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+
+# Raw and downloaded media
+**/materials/raw/**
+**/materials/contact_sheets/**
+**/references/**/*.mp4
+**/references/**/*.mov
+**/references/**/*.jpg
+**/references/**/*.jpeg
+**/references/**/*.png
+**/references/**/frames/**
+*.mov
+*.m4v
+
+# Generated video artifacts
+**/output/**/preview_render/**
+**/output/**/segments/**
+**/output/**/overlays/**
+**/output/**/qa_frames/**
+**/output/**/*_workdir/**
+**/output/**/*.mp4
+**/output/**/*.mov
+**/output/**/*.jpg
+**/output/**/*.jpeg
+**/output/**/*.png
+
+# Avoid committing nested source repo metadata as submodules.
+source-skills/**/.git/
+
+# Keep structured project artifacts in Git when needed.
+!**/output/**/*.json
+!**/output/**/*.md
+
+# Final media should live in object storage, not Git.
+**/output/final_delivery/*.mp4
+**/output/final_delivery/*.jpg
+**/output/final_delivery/*.png

@@ -1,0 +1,174 @@
+{
+  "footage_dir": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw",
+  "count": 8,
+  "items": [
+    {
+      "id": "00_google_scholar_hook",
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/00_google_scholar_hook.mov",
+      "relative_path": "00_google_scholar_hook.mov",
+      "duration_s": 4.673,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 56.89655172413793,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "01_citely_landing_page",
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/01_citely_landing_page.mov",
+      "relative_path": "01_citely_landing_page.mov",
+      "duration_s": 3.118,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.93589743589744,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "02_click_find_sources",
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/02_click_find_sources.mov",
+      "relative_path": "02_click_find_sources.mov",
+      "duration_s": 3.587,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.94423791821561,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "03_find_sources_input_claim",
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/03_find_sources_input_claim.mov",
+      "relative_path": "03_find_sources_input_claim.mov",
+      "duration_s": 6.022,
+      "width": 1786,
+      "height": 1024,
+      "orientation": "landscape",
+      "fps": 59.950179905895375,
+      "has_audio": true,
+      "codec": "hevc",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "04_find_sources_results",
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/04_find_sources_results.mov",
+      "relative_path": "04_find_sources_results.mov",
+      "duration_s": 3.072,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 55.7683325548809,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "05_click_verify_references",
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/05_click_verify_references.mov",
+      "relative_path": "05_click_verify_references.mov",
+      "duration_s": 6.408,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 60.07802340702211,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "06_verify_references_input",
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/06_verify_references_input.mov",
+      "relative_path": "06_verify_references_input.mov",
+      "duration_s": 4.542,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 56.53021442495127,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "07_verify_references_results",
+      "path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/07_verify_references_results.mov",
+      "relative_path": "07_verify_references_results.mov",
+      "duration_s": 5.297,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 57.05417607223476,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    }
+  ]
+}

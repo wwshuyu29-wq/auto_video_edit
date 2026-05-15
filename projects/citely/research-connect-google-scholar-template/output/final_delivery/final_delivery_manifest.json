@@ -1,0 +1,40 @@
+{
+  "project": "citely/research-connect-google-scholar-template",
+  "delivery_date": "2026-05-16",
+  "status": "ready",
+  "notes": [
+    "No voiceover or BGM is included. Add TikTok trending music during publishing.",
+    "Captions use PNG overlays. Emoji variants are rendered through native macOS emoji overlay rendering.",
+    "All three videos are approximately 25 seconds."
+  ],
+  "deliverables": [
+    {
+      "variant": "reference_faithful",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_reference_faithful_final.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_reference_faithful_cover.jpg",
+      "duration_seconds": 24.8,
+      "style_notes": "Closest to the reference caption logic, with one restrained warm highlight and native emoji."
+    },
+    {
+      "variant": "verify_reference_focus",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_verify_reference_focus_final.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_verify_reference_focus_cover.jpg",
+      "duration_seconds": 24.8,
+      "style_notes": "Verify-reference angle, no emoji, differentiated through layout and line breaks."
+    },
+    {
+      "variant": "find_sources_focus",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_find_sources_focus_final.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_find_sources_focus_cover.jpg",
+      "duration_seconds": 24.8,
+      "style_notes": "Find-sources angle, narrower text block and one native emoji on the result-shock beat."
+    }
+  ],
+  "qa": {
+    "duration_checked": true,
+    "midpoint_sheets_checked": true,
+    "native_emoji_overlay_size_checked": true,
+    "native_emoji_overlay_size": "1080x1920",
+    "cleanup_safe_to_run": true
+  }
+}

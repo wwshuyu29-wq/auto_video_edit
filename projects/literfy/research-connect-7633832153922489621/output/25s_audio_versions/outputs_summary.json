@@ -1,0 +1,27 @@
+{
+  "status": "25s_caption_and_voice_bgm_workmix_ready",
+  "notes": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/delivery_notes.md",
+  "variants": [
+    {
+      "id": "a_reference_faithful",
+      "captioned_video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/a_reference_faithful_25s_captioned.mp4",
+      "voice_bgm_workmix": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/a_reference_faithful_25s_voice_bgm_workmix.mp4",
+      "midpoint_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/a_reference_faithful_25s_captioned_midpoint_sheet.jpg",
+      "audio_report": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/a_reference_faithful/a_reference_faithful_25s_voice_bgm_workmix.audio_report.json"
+    },
+    {
+      "id": "b_problem_question",
+      "captioned_video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/b_problem_question_25s_captioned.mp4",
+      "voice_bgm_workmix": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/b_problem_question_25s_voice_bgm_workmix.mp4",
+      "midpoint_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/b_problem_question_25s_captioned_midpoint_sheet.jpg",
+      "audio_report": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/b_problem_question/b_problem_question_25s_voice_bgm_workmix.audio_report.json"
+    },
+    {
+      "id": "c_workflow_direct",
+      "captioned_video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/c_workflow_direct/c_workflow_direct_25s_captioned.mp4",
+      "voice_bgm_workmix": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/c_workflow_direct/c_workflow_direct_25s_voice_bgm_workmix.mp4",
+      "midpoint_sheet": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/c_workflow_direct/c_workflow_direct_25s_captioned_midpoint_sheet.jpg",
+      "audio_report": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/25s_audio_versions/c_workflow_direct/c_workflow_direct_25s_voice_bgm_workmix.audio_report.json"
+    }
+  ]
+}

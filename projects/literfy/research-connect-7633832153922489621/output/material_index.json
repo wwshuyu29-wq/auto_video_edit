@@ -1,0 +1,279 @@
+{
+  "footage_dir": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw",
+  "count": 13,
+  "items": [
+    {
+      "id": "00_google_scholar_hook",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/00_google_scholar_hook.mov",
+      "relative_path": "00_google_scholar_hook.mov",
+      "duration_s": 4.673,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 56.89655172413793,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "01_dashboard_review_button",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/01_dashboard_review_button.mov",
+      "relative_path": "01_dashboard_review_button.mov",
+      "duration_s": 2.698,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 60.03705991352687,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "01_literfy_landing_page",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/01_literfy_landing_page.mov",
+      "relative_path": "01_literfy_landing_page.mov",
+      "duration_s": 4.137,
+      "width": 1856,
+      "height": 1078,
+      "orientation": "landscape",
+      "fps": 59.951651893634164,
+      "has_audio": true,
+      "codec": "hevc",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "02_review_input_topic",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/02_review_input_topic.mov",
+      "relative_path": "02_review_input_topic.mov",
+      "duration_s": 8.307,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.951845906902086,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "03_paper_list_results",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/03_paper_list_results.mov",
+      "relative_path": "03_paper_list_results.mov",
+      "duration_s": 6.205,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.93555316863588,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "04_select_papers_to_outline",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/04_select_papers_to_outline.mov",
+      "relative_path": "04_select_papers_to_outline.mov",
+      "duration_s": 6.205,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.93555316863588,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "05_click_generate_outline",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/05_click_generate_outline.mov",
+      "relative_path": "05_click_generate_outline.mov",
+      "duration_s": 4.883,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 56.665654418463404,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "06_literature_review_outline",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/06_literature_review_outline.mov",
+      "relative_path": "06_literature_review_outline.mov",
+      "duration_s": 3.253,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.93852459016394,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "07_click_generate_review",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/07_click_generate_review.mov",
+      "relative_path": "07_click_generate_review.mov",
+      "duration_s": 3.89,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 60.15424164524421,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "08_generated_review",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/08_generated_review.mov",
+      "relative_path": "08_generated_review.mov",
+      "duration_s": 14.915,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.93965806235334,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "09_click_find_papers_button",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/09_click_find_papers_button.mov",
+      "relative_path": "09_click_find_papers_button.mov",
+      "duration_s": 2.12,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 52.3094688221709,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "10_find_papers_search_topic",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/10_find_papers_search_topic.mov",
+      "relative_path": "10_find_papers_search_topic.mov",
+      "duration_s": 13.697,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.94159162813337,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "12_save_and_citation_export_workflow",
+      "path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/12_save_and_citation_export_workflow.mov",
+      "relative_path": "12_save_and_citation_export_workflow.mov",
+      "duration_s": 17.95,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.94428969359331,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    }
+  ]
+}

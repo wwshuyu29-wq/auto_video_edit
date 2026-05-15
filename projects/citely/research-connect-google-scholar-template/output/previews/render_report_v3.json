@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/shot_matching_plan.json",
+    "asset_library": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/previews/citely_reference_faithful_preview_v3.mp4",
+    "preview_sheet": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/previews/citely_reference_faithful_preview_v3_sheet.jpg",
+    "preview_midpoint_sheet": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/previews/citely_reference_faithful_preview_v3_midpoint_sheet.jpg",
+    "captions": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/previews/captions.json",
+    "srt": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/previews/master.srt",
+    "render_report": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/previews/render_report_v3.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "24.799349",
+      "size": "19947561"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

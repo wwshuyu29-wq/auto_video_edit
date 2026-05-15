@@ -1,0 +1,4 @@
+interface:
+  display_name: "TK Video Editor"
+  short_description: "TikTok workflow for product videos"
+  default_prompt: "Analyze my TikTok reference videos, rewrite scripts for my product, match my footage, and render captioned vertical edits."

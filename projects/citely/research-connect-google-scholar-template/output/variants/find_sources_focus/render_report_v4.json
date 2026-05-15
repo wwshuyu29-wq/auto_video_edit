@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/shot_matching_plan.json",
+    "asset_library": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/citely_find_sources_focus_preview_v4.mp4",
+    "preview_sheet": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/citely_find_sources_focus_preview_v4_sheet.jpg",
+    "preview_midpoint_sheet": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/citely_find_sources_focus_preview_v4_midpoint_sheet.jpg",
+    "captions": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/captions.json",
+    "srt": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/master.srt",
+    "render_report": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/variants/find_sources_focus/render_report_v4.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "24.799349",
+      "size": "21625381"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Publishing Copy Card",
+  "type": "object",
+  "required": ["platform", "product_name", "reference_post", "publishing_variants", "global_rules"],
+  "properties": {
+    "platform": {"type": "string"},
+    "product_name": {"type": "string"},
+    "reference_post": {
+      "type": "object",
+      "required": ["caption", "rewrite_rule"],
+      "properties": {
+        "caption": {"type": "string"},
+        "rewrite_rule": {"type": "string"}
+      }
+    },
+    "publishing_variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["variant_id", "title_options", "recommended_title", "caption_options", "recommended_caption", "hashtags", "scores"],
+        "properties": {
+          "variant_id": {"type": "string"},
+          "video": {"type": "string"},
+          "cover": {"type": "string"},
+          "source_hook": {"type": "string"},
+          "reference_adaptation": {"type": "object"},
+          "title_options": {"type": "array", "items": {"type": "string"}},
+          "recommended_title": {"type": "string"},
+          "caption_options": {"type": "array", "items": {"type": "string"}},
+          "recommended_caption": {"type": "string"},
+          "hashtags": {"type": "array", "items": {"type": "string"}},
+          "posting_notes": {"type": "array", "items": {"type": "string"}},
+          "compliance_notes": {"type": "array", "items": {"type": "string"}},
+          "scores": {"type": "object"}
+        }
+      }
+    },
+    "global_rules": {"type": "array", "items": {"type": "string"}}
+  }
+}
