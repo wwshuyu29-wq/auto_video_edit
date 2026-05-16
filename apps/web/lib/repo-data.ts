@@ -1,6 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { PROJECTS_ROOT, projectDirFromSlug, projectFromSlug, slugFor } from "@/lib/project-paths";
+import { runProjectPreflight, type PreflightReport } from "@/lib/project-preflight";
 import { readWorkerStatus } from "@/lib/worker-status";
 
 export type StageMode = "run" | "reuse_existing";
@@ -133,6 +134,7 @@ export type ProjectDetail = {
   deliverables: DeliveryVariant[];
   previewVideo?: string;
   renderReport?: string;
+  preflight: PreflightReport;
   assetLibrary: {
     status: string;
     assetCount: number;
@@ -325,6 +327,7 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
   const delivery = deliveryPath ? await readJson<any>(deliveryPath) : null;
   const deliverables = normalizeDeliverables(projectDir, delivery);
   const workerStatus = await readWorkerStatus(projectDir);
+  const preflight = await runProjectPreflight(projectDir);
   const configuredPreviewVideo = normalizeArtifactPath(projectDir, job?.delivery?.preview_video);
   const previewVideo =
     configuredPreviewVideo && (await pathExists(configuredPreviewVideo))
@@ -375,6 +378,7 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
     deliverables,
     previewVideo,
     renderReport,
+    preflight,
     assetLibrary: {
       status: assetLibrary?.status || "not_indexed",
       assetCount: assetLibrary?.assets?.length || 0,

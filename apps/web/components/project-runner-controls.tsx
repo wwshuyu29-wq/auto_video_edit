@@ -21,9 +21,23 @@ type WorkerStatus = {
   }>;
 };
 
+type PreflightReport = {
+  status: "ready" | "blocked";
+  blockerCount: number;
+  warningCount: number;
+  checkedAt: string;
+  checks: Array<{
+    id: string;
+    label: string;
+    severity: "pass" | "warning" | "blocker";
+    message: string;
+  }>;
+};
+
 type Props = {
   slug: string;
   workerStatus: WorkerStatus;
+  preflight: PreflightReport;
 };
 
 function stateLabel(state: WorkerStatus["state"]) {
@@ -49,10 +63,21 @@ function formatDate(value?: string | null) {
   return value.replace("T", " ").replace(/\.\d+/, "").replace("+00:00", " UTC").replace("Z", " UTC");
 }
 
-export function ProjectRunnerControls({ slug, workerStatus }: Props) {
+function preflightClassName(severity: PreflightReport["checks"][number]["severity"]) {
+  if (severity === "pass") return "border-black/10 bg-[#f8f8f4] text-black/64";
+  if (severity === "warning") return "border-[#d9c58f] bg-[#fffaf0] text-[#735b16]";
+  return "border-[#d5a6a6] bg-[#fff6f6] text-[#8d2d2d]";
+}
+
+function preflightLabel(status: PreflightReport["status"]) {
+  return status === "ready" ? "Ready" : "Blocked";
+}
+
+export function ProjectRunnerControls({ slug, workerStatus, preflight }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState("");
+  const hasBlockers = preflight.status === "blocked";
 
   useEffect(() => {
     if (workerStatus.state !== "running") return;
@@ -92,12 +117,40 @@ export function ProjectRunnerControls({ slug, workerStatus }: Props) {
         </div>
         <button
           type="button"
-          disabled={isPending || workerStatus.state === "running"}
+          disabled={isPending || workerStatus.state === "running" || hasBlockers}
           onClick={runProject}
           className="rounded-md border border-black bg-black px-4 py-2 text-sm font-medium text-white transition disabled:cursor-not-allowed disabled:opacity-60"
         >
           {workerStatus.state === "running" ? "Worker Running..." : isPending ? "Starting..." : "Run Worker"}
         </button>
+      </div>
+
+      <div className="mt-5 border border-black/10 bg-white p-4">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">Preflight</div>
+            <div className="mt-1 text-lg font-semibold tracking-[-0.03em]">{preflightLabel(preflight.status)}</div>
+          </div>
+          <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-black/48">
+            {preflight.blockerCount} blockers / {preflight.warningCount} warnings
+          </div>
+        </div>
+        <div className="mt-3 grid gap-2">
+          {preflight.checks.map((check) => (
+            <div key={check.id} className={`border px-3 py-2 text-sm ${preflightClassName(check.severity)}`}>
+              <div className="flex items-center justify-between gap-3">
+                <div className="font-medium">{check.label}</div>
+                <div className="font-mono text-[10px] uppercase tracking-[0.18em]">{check.severity}</div>
+              </div>
+              <div className="mt-1 leading-5 opacity-80">{check.message}</div>
+            </div>
+          ))}
+        </div>
+        {hasBlockers ? (
+          <div className="mt-3 border border-[#d5a6a6] bg-[#fff6f6] px-3 py-2 text-sm text-[#8d2d2d]">
+            Fix the blocker checks before running the worker.
+          </div>
+        ) : null}
       </div>
 
       <div className="mt-4 space-y-2 text-sm text-black/64">

@@ -94,7 +94,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         <div className="space-y-6">
           <ProjectAssetsPanel slug={project.slug} assetLibrary={project.assetLibrary} />
 
-          <ProjectRunnerControls slug={project.slug} workerStatus={project.workerStatus} />
+          <ProjectRunnerControls slug={project.slug} workerStatus={project.workerStatus} preflight={project.preflight} />
 
           <div className="border border-black/10 bg-panel p-6 shadow-panel">
             <div className="flex items-end justify-between">

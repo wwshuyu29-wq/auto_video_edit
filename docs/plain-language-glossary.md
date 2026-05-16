@@ -140,3 +140,20 @@ Examples:
 - `text_overlay_safe_area`: upper center
 
 These labels make asset matching more reliable because the system can choose footage from your judgment, not only from file names.
+
+## Preflight
+
+Preflight means checking whether a project is ready before the worker starts.
+
+Plain meaning: the checklist before the backstage assistant begins editing.
+
+It checks things such as:
+
+- whether FFmpeg and ffprobe are installed
+- whether the project has a valid work order
+- whether the product is one of Literfy, Citely, or FigPad
+- whether footage has been indexed
+- whether indexed footage files still exist
+- whether required reused artifacts exist
+
+If there is a blocker, the web page disables `Run Worker` and the API refuses to start the worker. Warnings do not stop the run, but they tell us quality may be weaker.

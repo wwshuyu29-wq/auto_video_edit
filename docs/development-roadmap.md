@@ -24,13 +24,14 @@
 - [x] Add first-pass artifact viewers for viral pattern card, product script card, and shot matching plan.
 - [x] Add thumbnail/contact-sheet review for uploaded footage.
 - [x] Add first-pass manual labeling for uploaded footage.
+- [x] Add worker preflight checks before running a project.
 - [ ] Add editable artifact review screens before each worker stage.
 
 ## Phase 3: Worker MVP
 
 - [x] Scaffold worker service in `apps/worker`.
 - [x] Add local job runner.
-- [ ] Add FFmpeg availability check.
+- [x] Add FFmpeg availability check.
 - [ ] Add object storage download/upload adapter.
 - [ ] Add render result manifest output.
 - [ ] Add cleanup policy for temporary files.
