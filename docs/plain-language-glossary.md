@@ -157,3 +157,25 @@ It checks things such as:
 - whether required reused artifacts exist
 
 If there is a blocker, the web page disables `Run Worker` and the API refuses to start the worker. Warnings do not stop the run, but they tell us quality may be weaker.
+
+## Artifact
+
+An artifact is a saved middle result from the workflow.
+
+Plain meaning: one checkpoint file.
+
+In this project, the most important editable artifacts are:
+
+- `viral_pattern_card.json`: why the reference video/account works
+- `product_script_card.json`: product-safe TikTok script variants
+- `shot_matching_plan.json`: which clip supports each script beat
+
+These are deliberately separate. If a video feels wrong, we can inspect the checkpoint and see whether the issue came from viral logic, product script, or footage matching.
+
+## Editable Artifact Review
+
+Editable artifact review means checking and editing those checkpoint files before the worker renders the video.
+
+Plain meaning: human approval before the machine starts cutting.
+
+The first web version edits raw JSON. That is useful for flexibility and debugging. Later, we can build more friendly form editors for script lines, subtitles, clip choices, and timing.

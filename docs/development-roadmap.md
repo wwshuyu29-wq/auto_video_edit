@@ -25,7 +25,8 @@
 - [x] Add thumbnail/contact-sheet review for uploaded footage.
 - [x] Add first-pass manual labeling for uploaded footage.
 - [x] Add worker preflight checks before running a project.
-- [ ] Add editable artifact review screens before each worker stage.
+- [x] Add editable artifact review screens before each worker stage.
+- [ ] Add structured form editors for scripts and shot plans beyond raw JSON.
 
 ## Phase 3: Worker MVP
 

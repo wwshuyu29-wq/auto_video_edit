@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ArtifactReviewPanel } from "@/components/artifact-review-panel";
 import { ProjectAssetsPanel } from "@/components/project-assets-panel";
 import { ProjectRunnerControls } from "@/components/project-runner-controls";
 import { getProjectDetail, mediaUrl } from "@/lib/repo-data";
@@ -64,6 +65,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
       <section className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="space-y-6">
+          <ArtifactReviewPanel slug={project.slug} artifacts={project.editableArtifacts} />
+
           <div className="border border-black/10 bg-panel p-6 shadow-panel">
             <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">Viral Logic</div>
             <div className="mt-4 text-lg font-semibold tracking-[-0.03em]">{project.viralGoal}</div>
