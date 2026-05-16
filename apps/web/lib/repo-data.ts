@@ -118,6 +118,15 @@ export type ProjectDetail = {
     finishedAt?: string | null;
     logPath?: string | null;
     error?: string | null;
+    stages: Array<{
+      name: string;
+      mode?: string;
+      state: "pending" | "running" | "completed" | "failed";
+      startedAt?: string | null;
+      finishedAt?: string | null;
+      output?: string | null;
+      report?: string | null;
+    }>;
   };
 };
 
@@ -340,7 +349,17 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
       startedAt: workerStatus.started_at,
       finishedAt: workerStatus.finished_at,
       logPath: workerStatus.log_path,
-      error: workerStatus.error
+      error: workerStatus.error,
+      stages:
+        workerStatus.stages?.map((stage) => ({
+          name: stage.name,
+          mode: stage.mode,
+          state: stage.state,
+          startedAt: stage.started_at,
+          finishedAt: stage.finished_at,
+          output: stage.output,
+          report: stage.report
+        })) || []
     }
   };
 }

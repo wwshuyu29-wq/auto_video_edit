@@ -9,6 +9,15 @@ type WorkerStatus = {
   finishedAt?: string | null;
   logPath?: string | null;
   error?: string | null;
+  stages: Array<{
+    name: string;
+    mode?: string;
+    state: "pending" | "running" | "completed" | "failed";
+    startedAt?: string | null;
+    finishedAt?: string | null;
+    output?: string | null;
+    report?: string | null;
+  }>;
 };
 
 type Props = {
@@ -21,6 +30,17 @@ function stateLabel(state: WorkerStatus["state"]) {
   if (state === "completed") return "Completed";
   if (state === "failed") return "Failed";
   return "Idle";
+}
+
+function stageLabel(name: string) {
+  return name.replaceAll("_", " ");
+}
+
+function stageStateClassName(state: WorkerStatus["stages"][number]["state"]) {
+  if (state === "completed") return "border-black bg-black text-white";
+  if (state === "running") return "border-black bg-[#f8f8f4] text-black";
+  if (state === "failed") return "border-[#d5a6a6] bg-[#fff6f6] text-[#8d2d2d]";
+  return "border-black/10 bg-[#f8f8f4] text-black/58";
 }
 
 function formatDate(value?: string | null) {
@@ -87,6 +107,30 @@ export function ProjectRunnerControls({ slug, workerStatus }: Props) {
         <div>Log: {workerStatus.logPath || "Not created yet"}</div>
         {workerStatus.state === "running" ? <div>Auto refresh: every 3 seconds</div> : null}
       </div>
+
+      {workerStatus.stages.length > 0 ? (
+        <div className="mt-5 grid gap-2">
+          {workerStatus.stages.map((stage, index) => (
+            <div
+              key={stage.name}
+              className={`flex items-center justify-between border px-3 py-2 text-sm transition ${stageStateClassName(stage.state)}`}
+            >
+              <div className="min-w-0">
+                <div className="truncate font-medium">
+                  {index + 1}. {stageLabel(stage.name)}
+                </div>
+                <div className={`mt-1 font-mono text-[11px] uppercase tracking-[0.2em] ${stage.state === "completed" ? "text-white/55" : "text-black/45"}`}>
+                  {stage.mode || "run"}
+                </div>
+              </div>
+              <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em]">
+                {stage.state === "running" ? <span className="h-2 w-2 rounded-full bg-black animate-pulse" /> : null}
+                {stage.state}
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : null}
 
       {workerStatus.error ? (
         <div className="mt-4 border border-[#d5a6a6] bg-[#fff6f6] px-4 py-3 text-sm text-[#8d2d2d]">

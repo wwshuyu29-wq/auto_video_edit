@@ -7,6 +7,17 @@ const PYTHON_BIN = "python3";
 const BACKGROUND_RUNNER = path.join(REPO_ROOT, "apps", "worker", "run_project_background.py");
 
 export type WorkerRunState = "idle" | "running" | "completed" | "failed";
+export type WorkerStageState = "pending" | "running" | "completed" | "failed";
+
+export type WorkerStageStatus = {
+  name: string;
+  mode?: string;
+  state: WorkerStageState;
+  started_at?: string | null;
+  finished_at?: string | null;
+  output?: string | null;
+  report?: string | null;
+};
 
 export type WorkerRunStatus = {
   state: WorkerRunState;
@@ -17,6 +28,7 @@ export type WorkerRunStatus = {
   return_code?: number | null;
   log_path?: string | null;
   error?: string | null;
+  stages?: WorkerStageStatus[];
 };
 
 function statusFilePath(projectDir: string) {
@@ -39,7 +51,7 @@ async function pathExists(target: string) {
 export async function readWorkerStatus(projectDir: string): Promise<WorkerRunStatus> {
   const target = statusFilePath(projectDir);
   if (!(await pathExists(target))) {
-    return { state: "idle", project_dir: projectDir, log_path: logFilePath(projectDir) };
+    return { state: "idle", project_dir: projectDir, log_path: logFilePath(projectDir), stages: [] };
   }
 
   try {
@@ -53,14 +65,16 @@ export async function readWorkerStatus(projectDir: string): Promise<WorkerRunSta
       finished_at: data.finished_at || null,
       return_code: typeof data.return_code === "number" ? data.return_code : null,
       log_path: data.log_path || logFilePath(projectDir),
-      error: data.error || null
+      error: data.error || null,
+      stages: Array.isArray(data.stages) ? data.stages : []
     };
   } catch {
     return {
       state: "failed",
       project_dir: projectDir,
       log_path: logFilePath(projectDir),
-      error: "Could not read worker status file."
+      error: "Could not read worker status file.",
+      stages: []
     };
   }
 }
@@ -91,7 +105,7 @@ export async function startWorkerRun(projectDir: string) {
     finished_at: null,
     return_code: null,
     log_path: logFilePath(projectDir),
-    error: null
+    error: null,
+    stages: current.stages || []
   };
 }
-

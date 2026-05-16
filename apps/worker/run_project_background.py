@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import sys
 import traceback
@@ -20,6 +21,7 @@ from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 WORKER_CLI = REPO_ROOT / "apps" / "worker" / "worker_cli.py"
+STAGE_NAMES = ("viral_deconstruction", "product_script_rewrite", "asset_matching", "video_rendering")
 
 
 def utc_now() -> str:
@@ -47,6 +49,74 @@ def build_paths(job_file: Path) -> tuple[Path, Path, Path]:
     return project_dir, status_path, log_path
 
 
+def build_initial_stages(job_file: Path) -> list[dict[str, Any]]:
+    job = load_json(job_file)
+    configured = {stage.get("name"): stage.get("mode", "run") for stage in job.get("stages", [])}
+    return [
+        {
+            "name": name,
+            "mode": configured.get(name, "run"),
+            "state": "pending",
+            "started_at": None,
+            "finished_at": None,
+            "output": None,
+            "report": None,
+        }
+        for name in STAGE_NAMES
+    ]
+
+
+def update_stage(
+    stages: list[dict[str, Any]],
+    stage_name: str,
+    *,
+    state: str | None = None,
+    output: str | None = None,
+    report: str | None = None,
+) -> None:
+    for stage in stages:
+        if stage["name"] != stage_name:
+            continue
+        if state:
+            stage["state"] = state
+            if state == "running" and not stage.get("started_at"):
+                stage["started_at"] = utc_now()
+            if state in {"completed", "failed"} and not stage.get("finished_at"):
+                stage["finished_at"] = utc_now()
+        if output:
+            stage["output"] = output
+        if report:
+            stage["report"] = report
+        return
+
+
+def complete_running_stage(stages: list[dict[str, Any]]) -> None:
+    for stage in stages:
+        if stage.get("state") == "running":
+            update_stage(stages, stage["name"], state="completed")
+
+
+def parse_stage_line(line: str) -> tuple[str, str | None, str | None] | None:
+    if line.startswith("stage: "):
+        stage_name = line.removeprefix("stage: ").split(" ", 1)[0].strip()
+        if stage_name in STAGE_NAMES:
+            return ("start", stage_name, None)
+
+    if line.startswith("reused: "):
+        return ("complete_current", line.removeprefix("reused: ").strip(), None)
+
+    if line.startswith("wrote: "):
+        return ("complete_current", line.removeprefix("wrote: ").strip(), None)
+
+    if line.startswith("preview: "):
+        return ("output_current", line.removeprefix("preview: ").strip(), None)
+
+    if line.startswith("report: "):
+        return ("report_current", line.removeprefix("report: ").strip(), None)
+
+    return None
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--job-file", required=True, type=Path)
@@ -54,6 +124,7 @@ def main() -> None:
 
     job_file = args.job_file.resolve()
     project_dir, status_path, log_path = build_paths(job_file)
+    stages = build_initial_stages(job_file)
 
     running_state = {
         "state": "running",
@@ -65,6 +136,7 @@ def main() -> None:
         "return_code": None,
         "log_path": str(log_path),
         "error": None,
+        "stages": stages,
     }
     write_json(status_path, running_state)
 
@@ -74,29 +146,68 @@ def main() -> None:
             log_handle.write(f"job_file={job_file}\n")
             log_handle.flush()
 
-            command = [sys.executable, str(WORKER_CLI), "run-project", "--job-file", str(job_file)]
-            process = subprocess.run(
+            command = [sys.executable, "-u", str(WORKER_CLI), "run-project", "--job-file", str(job_file)]
+            process = subprocess.Popen(
                 command,
                 cwd=project_dir,
-                stdout=log_handle,
+                env={**os.environ, "PYTHONUNBUFFERED": "1"},
+                stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 text=True,
-                check=False,
+                bufsize=1,
             )
+            running_state["pid"] = process.pid
+            write_json(status_path, running_state)
 
-            state = "completed" if process.returncode == 0 else "failed"
+            current_stage: str | None = None
+            assert process.stdout is not None
+            for line in process.stdout:
+                log_handle.write(line)
+                log_handle.flush()
+
+                parsed = parse_stage_line(line.strip())
+                if not parsed:
+                    continue
+
+                action, value, _extra = parsed
+                if action == "start":
+                    complete_running_stage(stages)
+                    current_stage = value
+                    update_stage(stages, current_stage, state="running")
+                elif action == "complete_current" and current_stage:
+                    update_stage(stages, current_stage, state="completed", output=value)
+                elif action == "output_current" and current_stage:
+                    update_stage(stages, current_stage, output=value)
+                elif action == "report_current" and current_stage:
+                    update_stage(stages, current_stage, state="completed", report=value)
+
+                write_json(status_path, running_state)
+
+            return_code = process.wait()
+
+            if return_code == 0:
+                complete_running_stage(stages)
+                state = "completed"
+            else:
+                state = "failed"
+                for stage in stages:
+                    if stage.get("state") == "running":
+                        update_stage(stages, stage["name"], state="failed")
             write_json(
                 status_path,
                 {
                     **running_state,
                     "state": state,
                     "finished_at": utc_now(),
-                    "return_code": process.returncode,
-                    "error": None if process.returncode == 0 else f"Worker exited with code {process.returncode}",
+                    "return_code": return_code,
+                    "error": None if return_code == 0 else f"Worker exited with code {return_code}",
                 },
             )
-            log_handle.write(f"[{utc_now()}] finished worker run with code={process.returncode}\n")
+            log_handle.write(f"[{utc_now()}] finished worker run with code={return_code}\n")
     except Exception as error:  # pragma: no cover - defensive bridge
+        for stage in stages:
+            if stage.get("state") == "running":
+                update_stage(stages, stage["name"], state="failed")
         write_json(
             status_path,
             {
@@ -113,4 +224,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
