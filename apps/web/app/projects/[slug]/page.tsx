@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getProjectDetail, mediaUrl } from "@/lib/repo-data";
 
+export const dynamic = "force-dynamic";
+
 function stageState(mode: string) {
   return mode === "run" ? "Run" : "Reuse";
 }

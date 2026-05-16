@@ -40,6 +40,21 @@ type ViralCard = {
   };
 };
 
+type FullWorkflowInput = {
+  analysis_goal?: string;
+  tone?: string;
+  video_length?: string;
+  product?: {
+    product_name?: string;
+    one_liner?: string;
+    good_tiktok_angles?: string[];
+  };
+  intake?: {
+    notes?: string;
+    template_name?: string;
+  };
+};
+
 type MatchingPlan = {
   scores?: Record<string, number>;
   missing_assets?: unknown[];
@@ -250,6 +265,7 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
   if (!(await pathExists(projectDir))) return null;
 
   const job = await readJson<ProjectJob>(path.join(projectDir, "project_job.json"));
+  const full = await readJson<FullWorkflowInput>(path.join(projectDir, "full_workflow_input.json"));
   const script = await readJson<ScriptCard>(path.join(projectDir, "output", "product_script_card.json"));
   const viral = await readJson<ViralCard>(path.join(projectDir, "output", "viral_pattern_card.json"));
   const shotPlan = await readJson<MatchingPlan>(path.join(projectDir, "output", "shot_matching_plan.json"));
@@ -277,11 +293,15 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
     headline:
       script?.scripts?.find((item) => item.type === "native_creator_version")?.script_title ||
       script?.scripts?.[0]?.script_title ||
-      "No script headline yet",
-    tone: script?.tone || "Not set",
-    videoLength: script?.video_length || "Not set",
-    viralGoal: viral?.analysis_goal || "Not set",
-    contentLogic: viral?.main_content_logic || "Not set",
+      full?.product?.good_tiktok_angles?.[0] ||
+      `${job?.product_name || full?.product?.product_name || "Project"} intake scaffold ready`,
+    tone: script?.tone || full?.tone || "Not set",
+    videoLength: script?.video_length || full?.video_length || "Not set",
+    viralGoal: viral?.analysis_goal || full?.analysis_goal || "Not set",
+    contentLogic:
+      viral?.main_content_logic ||
+      full?.product?.one_liner ||
+      "Project scaffold created. Index assets first, then run the worker pipeline.",
     captionSequence: viral?.caption_logic?.visible_sequence?.slice(0, 6) || [],
     scripts:
       script?.scripts?.map((item) => ({

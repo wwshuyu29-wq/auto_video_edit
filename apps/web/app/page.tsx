@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { getDashboardMetrics } from "@/lib/repo-data";
 
+export const dynamic = "force-dynamic";
+
 function metricLabel(value: number, label: string) {
   return (
     <div className="border-t border-black/8 py-5 first:border-t-0 lg:border-t-0 lg:border-l lg:px-6 lg:first:border-l-0">
