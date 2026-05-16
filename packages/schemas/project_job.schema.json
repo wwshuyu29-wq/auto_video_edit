@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auto-video.local/schemas/project_job.schema.json",
+  "title": "ProjectJob",
+  "type": "object",
+  "required": ["project_id", "project_dir", "workflow_mode", "artifacts", "stages"],
+  "properties": {
+    "project_id": { "type": "string" },
+    "project_dir": { "type": "string" },
+    "product_name": { "type": "string" },
+    "workflow_mode": {
+      "type": "string",
+      "enum": ["fresh", "mixed"]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "full_workflow_input": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "artifacts": {
+      "type": "object",
+      "required": ["viral_pattern_card", "product_script_card", "shot_matching_plan", "asset_library"],
+      "properties": {
+        "viral_pattern_card": { "type": "string" },
+        "product_script_card": { "type": "string" },
+        "shot_matching_plan": { "type": "string" },
+        "asset_library": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "mode"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": ["viral_deconstruction", "product_script_rewrite", "asset_matching"]
+          },
+          "mode": {
+            "type": "string",
+            "enum": ["run", "reuse_existing"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "defaults": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,35 @@
+{
+  "project_id": "research-connect-google-scholar-template",
+  "project_dir": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template",
+  "product_name": "Citely",
+  "workflow_mode": "mixed",
+  "source": {},
+  "artifacts": {
+    "viral_pattern_card": "output/viral_pattern_card.json",
+    "product_script_card": "output/product_script_card.json",
+    "shot_matching_plan": "output/shot_matching_plan.json",
+    "asset_library": "output/asset_library.json"
+  },
+  "stages": [
+    {
+      "name": "viral_deconstruction",
+      "mode": "reuse_existing"
+    },
+    {
+      "name": "product_script_rewrite",
+      "mode": "reuse_existing"
+    },
+    {
+      "name": "asset_matching",
+      "mode": "run"
+    }
+  ],
+  "defaults": {
+    "editing_style": {
+      "pace": "fast",
+      "average_clip_duration": "1.5-2.5s",
+      "platform": "TikTok",
+      "aspect_ratio": "9:16"
+    }
+  }
+}

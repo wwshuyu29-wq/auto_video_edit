@@ -9,7 +9,8 @@
 - [x] Add `packages/schemas`.
 - [x] Add cloud architecture docs.
 - [x] Add a minimal worker CLI that can inspect one project and dry-run one stage.
-- [ ] Extend the worker CLI to run a full local project workflow.
+- [x] Extend the worker CLI to run a full local project workflow.
+- [x] Add a standard `project_job.json` work-order file for worker execution.
 
 ## Phase 2: Web MVP
 

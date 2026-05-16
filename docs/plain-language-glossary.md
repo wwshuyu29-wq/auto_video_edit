@@ -54,6 +54,25 @@ Plain meaning: a form template.
 
 For example, a project schema says every project should have a project id, product name, status, asset ids, and delivery information.
 
+## Project Job
+
+A project job is the worker's work order.
+
+Plain meaning: one instruction sheet that tells the backstage assistant what project to open, which steps to run, which files to reuse, and where outputs belong.
+
+In this repo, that file is usually:
+
+```text
+project_job.json
+```
+
+Example ideas inside it:
+
+- which project is being processed
+- whether the worker should run a step again
+- whether the worker should reuse an existing result
+- where the main JSON outputs live
+
 ## Object Storage
 
 Object storage is cloud storage for large files.

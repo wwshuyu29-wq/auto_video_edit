@@ -34,6 +34,21 @@ python3 apps/worker/worker_cli.py run-stage \
   --dry-run
 ```
 
+Create a standard project job file:
+
+```bash
+python3 apps/worker/worker_cli.py init-job \
+  --project-dir projects/literfy/research-connect-7633832153922489621
+```
+
+Run a whole project from the job file:
+
+```bash
+python3 apps/worker/worker_cli.py run-project \
+  --job-file projects/literfy/research-connect-7633832153922489621/project_job.json \
+  --dry-run
+```
+
 Supported stages:
 
 - `viral_deconstruction`
@@ -42,3 +57,10 @@ Supported stages:
 
 Rendering is intentionally not wired into this first CLI because video export is
 heavier and needs stricter storage cleanup rules.
+
+## Plain-Language Meaning
+
+- `init-job`: make one standard work order for the project.
+- `run-project`: let the worker follow that work order step by step.
+- `reuse_existing`: do not recalculate this step, just use the file already on disk.
+- `dry-run`: rehearse without overwriting the approved project outputs.

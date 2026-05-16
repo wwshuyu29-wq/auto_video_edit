@@ -31,6 +31,8 @@ STAGES = ("viral_deconstruction", "product_script_rewrite", "asset_matching")
 class ProjectFiles:
     project_dir: Path
     output_dir: Path
+    full_workflow_input: Path
+    project_job: Path
     viral_pattern_card: Path
     product_script_card: Path
     shot_matching_plan: Path
@@ -71,6 +73,8 @@ def project_files(project_dir: Path) -> ProjectFiles:
     return ProjectFiles(
         project_dir=project_dir,
         output_dir=output_dir,
+        full_workflow_input=project_dir / "full_workflow_input.json",
+        project_job=project_dir / "project_job.json",
         viral_pattern_card=output_dir / "viral_pattern_card.json",
         product_script_card=output_dir / "product_script_card.json",
         shot_matching_plan=output_dir / "shot_matching_plan.json",
@@ -85,12 +89,30 @@ def require_file(path: Path, label: str) -> None:
         raise SystemExit(f"Missing {label}: {path}")
 
 
+def relative_to_project(project_dir: Path, path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(project_dir.resolve()))
+    except ValueError:
+        return str(path.resolve())
+
+
+def resolve_project_path(project_dir: Path, value: str | None) -> Path | None:
+    if not value:
+        return None
+    path = Path(value)
+    if path.is_absolute():
+        return path
+    return project_dir / path
+
+
 def inspect_project(args: argparse.Namespace) -> None:
     files = project_files(args.project_dir.resolve())
     summary = {
         "project_dir": str(files.project_dir),
         "output_dir_exists": files.output_dir.exists(),
         "artifacts": {
+            "full_workflow_input": files.full_workflow_input.exists(),
+            "project_job": files.project_job.exists(),
             "viral_pattern_card": files.viral_pattern_card.exists(),
             "product_script_card": files.product_script_card.exists(),
             "shot_matching_plan": files.shot_matching_plan.exists(),
@@ -100,6 +122,219 @@ def inspect_project(args: argparse.Namespace) -> None:
         },
     }
     print(json.dumps(summary, ensure_ascii=False, indent=2))
+
+
+def build_project_job(project_dir: Path) -> dict[str, Any]:
+    files = project_files(project_dir)
+    if files.full_workflow_input.exists():
+        full = load_json(files.full_workflow_input)
+        product = full.get("product", {})
+        return {
+            "project_id": files.project_dir.name,
+            "project_dir": str(files.project_dir),
+            "product_name": product.get("product_name", product.get("name", "")),
+            "workflow_mode": "fresh",
+            "source": {
+                "full_workflow_input": relative_to_project(files.project_dir, files.full_workflow_input),
+            },
+            "artifacts": {
+                "viral_pattern_card": relative_to_project(files.project_dir, files.viral_pattern_card),
+                "product_script_card": relative_to_project(files.project_dir, files.product_script_card),
+                "shot_matching_plan": relative_to_project(files.project_dir, files.shot_matching_plan),
+                "asset_library": relative_to_project(files.project_dir, files.asset_library),
+            },
+            "stages": [
+                {"name": "viral_deconstruction", "mode": "run"},
+                {"name": "product_script_rewrite", "mode": "run"},
+                {"name": "asset_matching", "mode": "run"},
+            ],
+        }
+
+    require_file(files.viral_pattern_card, "existing viral pattern card")
+    require_file(files.product_script_card, "existing product script card")
+    require_file(files.asset_library, "existing asset library")
+
+    product_name = ""
+    try:
+        product_name = load_json(files.product_script_card).get("product", {}).get("product_name", "")
+    except Exception:
+        product_name = ""
+
+    return {
+        "project_id": files.project_dir.name,
+        "project_dir": str(files.project_dir),
+        "product_name": product_name,
+        "workflow_mode": "mixed",
+        "source": {},
+        "artifacts": {
+            "viral_pattern_card": relative_to_project(files.project_dir, files.viral_pattern_card),
+            "product_script_card": relative_to_project(files.project_dir, files.product_script_card),
+            "shot_matching_plan": relative_to_project(files.project_dir, files.shot_matching_plan),
+            "asset_library": relative_to_project(files.project_dir, files.asset_library),
+        },
+        "stages": [
+            {"name": "viral_deconstruction", "mode": "reuse_existing"},
+            {"name": "product_script_rewrite", "mode": "reuse_existing"},
+            {"name": "asset_matching", "mode": "run"},
+        ],
+        "defaults": {
+            "editing_style": {
+                "pace": "fast",
+                "average_clip_duration": "1.5-2.5s",
+                "platform": "TikTok",
+                "aspect_ratio": "9:16",
+            }
+        },
+    }
+
+
+def init_job(args: argparse.Namespace) -> None:
+    project_dir = args.project_dir.resolve()
+    job = build_project_job(project_dir)
+    out = args.out.resolve() if args.out else project_files(project_dir).project_job
+    write_json(out, job)
+    print(f"wrote {out}")
+    print(f"workflow_mode: {job['workflow_mode']}")
+    print(f"stages: {', '.join(stage['name'] + ':' + stage['mode'] for stage in job['stages'])}")
+
+
+def stage_mode(job: dict[str, Any], stage_name: str) -> str:
+    for stage in job.get("stages", []):
+        if stage.get("name") == stage_name:
+            return str(stage.get("mode", "run"))
+    raise SystemExit(f"Stage `{stage_name}` is missing from project job.")
+
+
+def artifact_path(job: dict[str, Any], stage_name: str, project_dir: Path) -> Path:
+    artifacts = job.get("artifacts", {})
+    mapping = {
+        "viral_deconstruction": "viral_pattern_card",
+        "product_script_rewrite": "product_script_card",
+        "asset_matching": "shot_matching_plan",
+    }
+    key = mapping[stage_name]
+    path = resolve_project_path(project_dir, artifacts.get(key))
+    if path is None:
+        raise SystemExit(f"Project job is missing artifact path for `{key}`.")
+    return path
+
+
+def build_run_input_from_full_workflow(
+    stage_name: str,
+    job: dict[str, Any],
+    project_dir: Path,
+    temp_dir: Path,
+    stage_outputs: dict[str, Path],
+) -> Path:
+    source = job.get("source", {})
+    full_path = resolve_project_path(project_dir, source.get("full_workflow_input"))
+    if full_path is None:
+        raise SystemExit("Project job does not define `source.full_workflow_input`.")
+
+    full = load_json(full_path)
+    out_path = temp_dir / f"{stage_name}_input.json"
+
+    if stage_name == "viral_deconstruction":
+        write_json(out_path, full)
+        return out_path
+
+    if stage_name == "product_script_rewrite":
+        viral_path = stage_outputs.get("viral_deconstruction")
+        if viral_path is None:
+            raise SystemExit("Missing viral_deconstruction output before product_script_rewrite.")
+        write_json(
+            out_path,
+            {
+                "viral_pattern_card": load_json(viral_path),
+                "product": full.get("product", {}),
+                "platform": full.get("platform", full.get("target_platform", "TikTok")),
+                "video_length": full.get("video_length", "25-35s"),
+                "tone": full.get("tone", "native creator style"),
+                "cta": full.get("cta", full.get("product", {}).get("cta", "try the product")),
+            },
+        )
+        return out_path
+
+    if stage_name == "asset_matching":
+        script_path = stage_outputs.get("product_script_rewrite")
+        if script_path is None:
+            raise SystemExit("Missing product_script_rewrite output before asset_matching.")
+        write_json(
+            out_path,
+            {
+                "product_script_card": load_json(script_path),
+                "asset_library": normalize_asset_library(full.get("asset_library", [])),
+                "editing_style": full.get(
+                    "editing_style",
+                    {
+                        "pace": "fast",
+                        "average_clip_duration": "1.5-2.5s",
+                        "platform": "TikTok",
+                        "aspect_ratio": "9:16",
+                    },
+                ),
+            },
+        )
+        return out_path
+
+    raise SystemExit(f"Unsupported stage: {stage_name}")
+
+
+def build_run_input_from_mixed_job(
+    stage_name: str,
+    job: dict[str, Any],
+    project_dir: Path,
+    temp_dir: Path,
+    stage_outputs: dict[str, Path],
+) -> Path:
+    out_path = temp_dir / f"{stage_name}_input.json"
+
+    if stage_name == "asset_matching":
+        script_path = stage_outputs.get("product_script_rewrite")
+        if script_path is None:
+            raise SystemExit("Missing product_script_rewrite artifact before asset_matching.")
+        asset_library_path = resolve_project_path(project_dir, job.get("artifacts", {}).get("asset_library"))
+        if asset_library_path is None:
+            raise SystemExit("Project job is missing `artifacts.asset_library`.")
+        write_json(
+            out_path,
+            {
+                "product_script_card": load_json(script_path),
+                "asset_library": normalize_asset_library(load_json(asset_library_path)),
+                "editing_style": job.get("defaults", {}).get(
+                    "editing_style",
+                    {
+                        "pace": "fast",
+                        "average_clip_duration": "1.5-2.5s",
+                        "platform": "TikTok",
+                        "aspect_ratio": "9:16",
+                    },
+                ),
+            },
+        )
+        return out_path
+
+    raise SystemExit(f"Stage `{stage_name}` cannot be built in mixed mode without an explicit input.")
+
+
+def run_stage_once(
+    stage_name: str,
+    input_path: Path,
+    output_path: Path,
+    project_dir: Path,
+) -> None:
+    completed = run_module(
+        stage_name,
+        ["--input", str(input_path), "--out", str(output_path)],
+        cwd=project_dir,
+    )
+    if completed.stdout:
+        print(completed.stdout, end="")
+    if completed.stderr:
+        print(completed.stderr, file=sys.stderr, end="")
+    if completed.returncode != 0:
+        raise SystemExit(completed.returncode)
+    require_file(output_path, f"{stage_name} output")
 
 
 def build_stage_input(stage: str, files: ProjectFiles, temp_dir: Path) -> Path:
@@ -144,7 +379,7 @@ def default_output_path(stage: str, files: ProjectFiles) -> Path:
     raise SystemExit(f"Unsupported stage: {stage}")
 
 
-def run_stage(args: argparse.Namespace) -> None:
+def run_stage_command(args: argparse.Namespace) -> None:
     files = project_files(args.project_dir.resolve())
     if args.stage not in STAGES:
         raise SystemExit(f"Unsupported stage: {args.stage}. Choose one of: {', '.join(STAGES)}")
@@ -161,25 +396,74 @@ def run_stage(args: argparse.Namespace) -> None:
         print(f"dry_run: {args.dry_run}")
         print(f"output: {temp_out if args.dry_run else final_out}")
 
-        completed = run_module(
+        run_stage_once(
             args.stage,
-            ["--input", str(input_path), "--out", str(temp_out if args.dry_run else final_out)],
-            cwd=files.project_dir,
+            input_path,
+            temp_out if args.dry_run else final_out,
+            files.project_dir,
         )
 
-        if completed.stdout:
-            print(completed.stdout, end="")
-        if completed.stderr:
-            print(completed.stderr, file=sys.stderr, end="")
-
-        if completed.returncode != 0:
-            raise SystemExit(completed.returncode)
-
         output_path = temp_out if args.dry_run else final_out
-        require_file(output_path, "stage output")
         output_json = load_json(output_path)
         print("result: ok")
         print(f"top_level_keys: {', '.join(output_json.keys()) if isinstance(output_json, dict) else type(output_json).__name__}")
+    finally:
+        if args.keep_temp:
+            print(f"temp_dir: {temp_root}")
+        else:
+            shutil.rmtree(temp_root, ignore_errors=True)
+
+
+def run_project(args: argparse.Namespace) -> None:
+    job_path = args.job_file.resolve()
+    job = load_json(job_path)
+    project_dir = resolve_project_path(Path.cwd(), job.get("project_dir"))
+    if project_dir is None:
+        project_dir = job_path.parent
+    project_dir = project_dir.resolve()
+
+    temp_root = Path(tempfile.mkdtemp(prefix="auto-video-worker-project-"))
+    stage_outputs: dict[str, Path] = {}
+    summary: list[dict[str, str]] = []
+
+    try:
+        print(f"project: {project_dir}")
+        print(f"job: {job_path}")
+        print(f"workflow_mode: {job.get('workflow_mode', 'unknown')}")
+        print(f"dry_run: {args.dry_run}")
+
+        for stage_name in STAGES:
+            mode = stage_mode(job, stage_name)
+            print(f"stage: {stage_name} ({mode})")
+
+            if mode == "reuse_existing":
+                existing = artifact_path(job, stage_name, project_dir)
+                require_file(existing, f"existing artifact for {stage_name}")
+                stage_outputs[stage_name] = existing
+                summary.append({"stage": stage_name, "mode": mode, "output": str(existing)})
+                print(f"reused: {existing}")
+                continue
+
+            if mode != "run":
+                raise SystemExit(f"Unsupported stage mode `{mode}` for stage `{stage_name}`.")
+
+            workflow_mode = job.get("workflow_mode", "fresh")
+            if workflow_mode == "fresh":
+                input_path = build_run_input_from_full_workflow(stage_name, job, project_dir, temp_root, stage_outputs)
+            elif workflow_mode == "mixed":
+                input_path = build_run_input_from_mixed_job(stage_name, job, project_dir, temp_root, stage_outputs)
+            else:
+                raise SystemExit(f"Unsupported workflow mode `{workflow_mode}`.")
+
+            final_out = artifact_path(job, stage_name, project_dir)
+            output_path = temp_root / final_out.name if args.dry_run else final_out
+            run_stage_once(stage_name, input_path, output_path, project_dir)
+            stage_outputs[stage_name] = output_path
+            summary.append({"stage": stage_name, "mode": mode, "output": str(output_path)})
+            print(f"wrote: {output_path}")
+
+        print("result: ok")
+        print(json.dumps(summary, ensure_ascii=False, indent=2))
     finally:
         if args.keep_temp:
             print(f"temp_dir: {temp_root}")
@@ -195,13 +479,24 @@ def build_parser() -> argparse.ArgumentParser:
     inspect_parser.add_argument("--project-dir", required=True, type=Path)
     inspect_parser.set_defaults(func=inspect_project)
 
+    init_parser = subparsers.add_parser("init-job", help="Create a standard project_job.json from an existing project.")
+    init_parser.add_argument("--project-dir", required=True, type=Path)
+    init_parser.add_argument("--out", type=Path, default=None)
+    init_parser.set_defaults(func=init_job)
+
     run_parser = subparsers.add_parser("run-stage", help="Run one workflow stage through skill-core.")
     run_parser.add_argument("--project-dir", required=True, type=Path)
     run_parser.add_argument("--stage", required=True, choices=STAGES)
     run_parser.add_argument("--out", type=Path, default=None, help="Optional output path. Defaults to project output artifact.")
     run_parser.add_argument("--dry-run", action="store_true", help="Run into a temporary file without changing project outputs.")
-    run_parser.add_argument("--keep-temp", action="store_true", help="Keep temporary files for debugging.")
-    run_parser.set_defaults(func=run_stage)
+    run_parser.add_argument("--keep_temp", action="store_true", help="Keep temporary files for debugging.")
+    run_parser.set_defaults(func=run_stage_command)
+
+    project_parser = subparsers.add_parser("run-project", help="Run a full project workflow from project_job.json.")
+    project_parser.add_argument("--job-file", required=True, type=Path)
+    project_parser.add_argument("--dry-run", action="store_true", help="Run into temporary files without changing project outputs.")
+    project_parser.add_argument("--keep-temp", action="store_true", help="Keep temporary files for debugging.")
+    project_parser.set_defaults(func=run_project)
 
     return parser
 
