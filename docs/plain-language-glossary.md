@@ -73,6 +73,21 @@ Example ideas inside it:
 - whether the worker should reuse an existing result
 - where the main JSON outputs live
 
+## Preview Render
+
+Preview render means a usable captioned video preview, not the final publishing system.
+
+Plain meaning: an automatically generated first cut.
+
+In this project, preview render is good enough to verify:
+
+- the chosen shots
+- subtitle timing
+- pacing
+- visual flow
+
+Later, the same worker can be extended to handle more advanced final delivery rules.
+
 ## Object Storage
 
 Object storage is cloud storage for large files.

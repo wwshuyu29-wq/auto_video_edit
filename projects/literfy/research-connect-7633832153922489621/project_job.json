@@ -12,6 +12,11 @@
     "shot_matching_plan": "output/shot_matching_plan.json",
     "asset_library": "output/asset_library.json"
   },
+  "delivery": {
+    "mode": "preview_render",
+    "preview_video": "output/final_delivery/worker_preview.mp4",
+    "render_report": "output/final_delivery/worker_render_report.json"
+  },
   "stages": [
     {
       "name": "viral_deconstruction",
@@ -23,6 +28,10 @@
     },
     {
       "name": "asset_matching",
+      "mode": "run"
+    },
+    {
+      "name": "video_rendering",
       "mode": "run"
     }
   ]

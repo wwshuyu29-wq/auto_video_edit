@@ -54,9 +54,11 @@ Supported stages:
 - `viral_deconstruction`
 - `product_script_rewrite`
 - `asset_matching`
+- `video_rendering`
 
-Rendering is intentionally not wired into this first CLI because video export is
-heavier and needs stricter storage cleanup rules.
+The render step currently uses the existing preview-render path. Plain meaning:
+it can automatically produce a captioned preview video from the approved shot
+matching plan, but it is not yet trying to manage all final delivery variants.
 
 ## Plain-Language Meaning
 
@@ -64,3 +66,4 @@ heavier and needs stricter storage cleanup rules.
 - `run-project`: let the worker follow that work order step by step.
 - `reuse_existing`: do not recalculate this step, just use the file already on disk.
 - `dry-run`: rehearse without overwriting the approved project outputs.
+- `preview_render`: make a usable captioned preview video with the current PNG subtitle path.

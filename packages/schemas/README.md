@@ -15,4 +15,4 @@ Current cloud schemas:
 - `cloud_project.schema.json`: top-level project record
 - `render_job.schema.json`: queued or running job record
 - `storage_asset.schema.json`: object storage file record
-- `project_job.schema.json`: worker work-order file used to run one project locally or in a worker
+- `project_job.schema.json`: worker work-order file used to run one project locally or in a worker, including preview render output paths

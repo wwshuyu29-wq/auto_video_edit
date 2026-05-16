@@ -24,7 +24,7 @@ sys.path.insert(0, str(SKILL_CORE_SRC))
 from auto_video_skill_core import run_module  # noqa: E402
 
 
-STAGES = ("viral_deconstruction", "product_script_rewrite", "asset_matching")
+STAGES = ("viral_deconstruction", "product_script_rewrite", "asset_matching", "video_rendering")
 
 
 @dataclass
@@ -37,6 +37,9 @@ class ProjectFiles:
     product_script_card: Path
     shot_matching_plan: Path
     asset_library: Path
+    final_delivery_dir: Path
+    worker_preview_video: Path
+    worker_render_report: Path
     orchestrator_account_input: Path
     orchestrator_script_input: Path
 
@@ -79,6 +82,9 @@ def project_files(project_dir: Path) -> ProjectFiles:
         product_script_card=output_dir / "product_script_card.json",
         shot_matching_plan=output_dir / "shot_matching_plan.json",
         asset_library=output_dir / "asset_library.json",
+        final_delivery_dir=output_dir / "final_delivery",
+        worker_preview_video=output_dir / "final_delivery" / "worker_preview.mp4",
+        worker_render_report=output_dir / "final_delivery" / "worker_render_report.json",
         orchestrator_account_input=output_dir / "_orchestrator_account_input.json",
         orchestrator_script_input=output_dir / "_orchestrator_script_input.json",
     )
@@ -117,6 +123,9 @@ def inspect_project(args: argparse.Namespace) -> None:
             "product_script_card": files.product_script_card.exists(),
             "shot_matching_plan": files.shot_matching_plan.exists(),
             "asset_library": files.asset_library.exists(),
+            "final_delivery_dir": files.final_delivery_dir.exists(),
+            "worker_preview_video": files.worker_preview_video.exists(),
+            "worker_render_report": files.worker_render_report.exists(),
             "orchestrator_account_input": files.orchestrator_account_input.exists(),
             "orchestrator_script_input": files.orchestrator_script_input.exists(),
         },
@@ -143,10 +152,16 @@ def build_project_job(project_dir: Path) -> dict[str, Any]:
                 "shot_matching_plan": relative_to_project(files.project_dir, files.shot_matching_plan),
                 "asset_library": relative_to_project(files.project_dir, files.asset_library),
             },
+            "delivery": {
+                "mode": "preview_render",
+                "preview_video": relative_to_project(files.project_dir, files.worker_preview_video),
+                "render_report": relative_to_project(files.project_dir, files.worker_render_report),
+            },
             "stages": [
                 {"name": "viral_deconstruction", "mode": "run"},
                 {"name": "product_script_rewrite", "mode": "run"},
                 {"name": "asset_matching", "mode": "run"},
+                {"name": "video_rendering", "mode": "run"},
             ],
         }
 
@@ -172,10 +187,16 @@ def build_project_job(project_dir: Path) -> dict[str, Any]:
             "shot_matching_plan": relative_to_project(files.project_dir, files.shot_matching_plan),
             "asset_library": relative_to_project(files.project_dir, files.asset_library),
         },
+        "delivery": {
+            "mode": "preview_render",
+            "preview_video": relative_to_project(files.project_dir, files.worker_preview_video),
+            "render_report": relative_to_project(files.project_dir, files.worker_render_report),
+        },
         "stages": [
             {"name": "viral_deconstruction", "mode": "reuse_existing"},
             {"name": "product_script_rewrite", "mode": "reuse_existing"},
             {"name": "asset_matching", "mode": "run"},
+            {"name": "video_rendering", "mode": "run"},
         ],
         "defaults": {
             "editing_style": {
@@ -211,6 +232,7 @@ def artifact_path(job: dict[str, Any], stage_name: str, project_dir: Path) -> Pa
         "viral_deconstruction": "viral_pattern_card",
         "product_script_rewrite": "product_script_card",
         "asset_matching": "shot_matching_plan",
+        "video_rendering": "shot_matching_plan",
     }
     key = mapping[stage_name]
     path = resolve_project_path(project_dir, artifacts.get(key))
@@ -337,6 +359,75 @@ def run_stage_once(
     require_file(output_path, f"{stage_name} output")
 
 
+def asset_library_path_for_job(job: dict[str, Any], project_dir: Path, temp_dir: Path) -> Path:
+    workflow_mode = job.get("workflow_mode", "fresh")
+    if workflow_mode == "fresh":
+        source = job.get("source", {})
+        full_path = resolve_project_path(project_dir, source.get("full_workflow_input"))
+        if full_path is None:
+            raise SystemExit("Project job does not define `source.full_workflow_input`.")
+        full = load_json(full_path)
+        assets = normalize_asset_library(full.get("asset_library", []))
+        asset_path = temp_dir / "render_asset_library.json"
+        write_json(asset_path, assets)
+        return asset_path
+
+    asset_path = resolve_project_path(project_dir, job.get("artifacts", {}).get("asset_library"))
+    if asset_path is None:
+        raise SystemExit("Project job is missing `artifacts.asset_library`.")
+    require_file(asset_path, "asset library for rendering")
+    return asset_path
+
+
+def delivery_path(job: dict[str, Any], key: str, project_dir: Path) -> Path:
+    delivery = job.get("delivery", {})
+    path = resolve_project_path(project_dir, delivery.get(key))
+    if path is None:
+        raise SystemExit(f"Project job is missing `delivery.{key}`.")
+    return path
+
+
+def run_render_stage(
+    job: dict[str, Any],
+    project_dir: Path,
+    temp_dir: Path,
+    shot_plan_path: Path,
+    dry_run: bool,
+) -> tuple[Path, Path]:
+    asset_library_path = asset_library_path_for_job(job, project_dir, temp_dir)
+    final_preview = delivery_path(job, "preview_video", project_dir)
+    final_report = delivery_path(job, "render_report", project_dir)
+
+    preview_out = temp_dir / final_preview.name if dry_run else final_preview
+    report_out = temp_dir / final_report.name if dry_run else final_report
+
+    completed = run_module(
+        "video_rendering",
+        [
+            "--input",
+            str(shot_plan_path),
+            "--asset-library",
+            str(asset_library_path),
+            "--preview-render",
+            "--preview-out",
+            str(preview_out),
+            "--report-out",
+            str(report_out),
+        ],
+        cwd=project_dir,
+    )
+    if completed.stdout:
+        print(completed.stdout, end="")
+    if completed.stderr:
+        print(completed.stderr, file=sys.stderr, end="")
+    if completed.returncode != 0:
+        raise SystemExit(completed.returncode)
+
+    require_file(preview_out, "preview video output")
+    require_file(report_out, "render report output")
+    return preview_out, report_out
+
+
 def build_stage_input(stage: str, files: ProjectFiles, temp_dir: Path) -> Path:
     if stage == "viral_deconstruction":
         require_file(files.orchestrator_account_input, "viral deconstruction input")
@@ -366,6 +457,10 @@ def build_stage_input(stage: str, files: ProjectFiles, temp_dir: Path) -> Path:
         )
         return input_path
 
+    if stage == "video_rendering":
+        require_file(files.shot_matching_plan, "shot matching plan")
+        return files.shot_matching_plan
+
     raise SystemExit(f"Unsupported stage: {stage}")
 
 
@@ -376,6 +471,8 @@ def default_output_path(stage: str, files: ProjectFiles) -> Path:
         return files.product_script_card
     if stage == "asset_matching":
         return files.shot_matching_plan
+    if stage == "video_rendering":
+        return files.worker_preview_video
     raise SystemExit(f"Unsupported stage: {stage}")
 
 
@@ -394,6 +491,28 @@ def run_stage_command(args: argparse.Namespace) -> None:
         print(f"project: {files.project_dir}")
         print(f"input: {input_path}")
         print(f"dry_run: {args.dry_run}")
+        if args.stage == "video_rendering":
+            print(f"output: {temp_out if args.dry_run else final_out}")
+            job = {
+                "workflow_mode": "mixed",
+                "artifacts": {"asset_library": relative_to_project(files.project_dir, files.asset_library)},
+                "delivery": {
+                    "preview_video": relative_to_project(files.project_dir, final_out),
+                    "render_report": relative_to_project(files.project_dir, final_out.with_name("worker_render_report.json")),
+                },
+            }
+            preview_out, report_out = run_render_stage(
+                job,
+                files.project_dir,
+                temp_root,
+                input_path,
+                args.dry_run,
+            )
+            print("result: ok")
+            print(f"preview_video: {preview_out}")
+            print(f"render_report: {report_out}")
+            return
+
         print(f"output: {temp_out if args.dry_run else final_out}")
 
         run_stage_once(
@@ -446,6 +565,16 @@ def run_project(args: argparse.Namespace) -> None:
 
             if mode != "run":
                 raise SystemExit(f"Unsupported stage mode `{mode}` for stage `{stage_name}`.")
+
+            if stage_name == "video_rendering":
+                shot_plan_path = stage_outputs.get("asset_matching")
+                if shot_plan_path is None:
+                    raise SystemExit("Missing asset_matching output before video_rendering.")
+                preview_out, report_out = run_render_stage(job, project_dir, temp_root, shot_plan_path, args.dry_run)
+                summary.append({"stage": stage_name, "mode": mode, "output": str(preview_out), "report": str(report_out)})
+                print(f"preview: {preview_out}")
+                print(f"report: {report_out}")
+                continue
 
             workflow_mode = job.get("workflow_mode", "fresh")
             if workflow_mode == "fresh":

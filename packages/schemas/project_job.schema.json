@@ -3,7 +3,7 @@
   "$id": "https://auto-video.local/schemas/project_job.schema.json",
   "title": "ProjectJob",
   "type": "object",
-  "required": ["project_id", "project_dir", "workflow_mode", "artifacts", "stages"],
+  "required": ["project_id", "project_dir", "workflow_mode", "artifacts", "delivery", "stages"],
   "properties": {
     "project_id": { "type": "string" },
     "project_dir": { "type": "string" },
@@ -30,6 +30,19 @@
       },
       "additionalProperties": true
     },
+    "delivery": {
+      "type": "object",
+      "required": ["mode", "preview_video", "render_report"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["preview_render"]
+        },
+        "preview_video": { "type": "string" },
+        "render_report": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
     "stages": {
       "type": "array",
       "items": {
@@ -38,7 +51,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "enum": ["viral_deconstruction", "product_script_rewrite", "asset_matching"]
+            "enum": ["viral_deconstruction", "product_script_rewrite", "asset_matching", "video_rendering"]
           },
           "mode": {
             "type": "string",

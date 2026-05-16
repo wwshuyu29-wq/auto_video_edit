@@ -11,6 +11,7 @@
 - [x] Add a minimal worker CLI that can inspect one project and dry-run one stage.
 - [x] Extend the worker CLI to run a full local project workflow.
 - [x] Add a standard `project_job.json` work-order file for worker execution.
+- [x] Extend the worker CLI to include preview rendering as the fourth workflow step.
 
 ## Phase 2: Web MVP
 
