@@ -36,6 +36,7 @@ export type AssetLibraryFile = {
 export type AssetEntry = {
   clip_id: string;
   file_path: string;
+  thumbnail_path?: string;
   duration: number;
   orientation: string;
   quality_score: number;
@@ -140,7 +141,57 @@ async function probeVideo(filePath: string): Promise<ProbeData> {
   return JSON.parse(stdout) as ProbeData;
 }
 
-function buildAssetEntry(filePath: string, probe: ProbeData): AssetEntry {
+async function generateThumbnail(projectDir: string, filePath: string, duration: number) {
+  const thumbnailDir = path.join(projectDir, "materials", "contact_sheets");
+  await fs.mkdir(thumbnailDir, { recursive: true });
+  const thumbnailPath = path.join(thumbnailDir, `${path.parse(filePath).name}.jpg`);
+  const seekTime = duration > 2 ? 1 : Math.max(0, duration / 2);
+
+  try {
+    await execFileAsync("ffmpeg", [
+      "-y",
+      "-v",
+      "error",
+      "-ss",
+      seekTime.toFixed(2),
+      "-i",
+      filePath,
+      "-frames:v",
+      "1",
+      "-vf",
+      "scale=360:-1",
+      thumbnailPath
+    ]);
+    return thumbnailPath;
+  } catch {
+    return undefined;
+  }
+}
+
+function mergeExistingLabels(asset: AssetEntry, existing?: AssetEntry): AssetEntry {
+  if (!existing) return asset;
+  return {
+    ...asset,
+    shot_type: existing.shot_type && existing.shot_type !== "uploaded footage" ? existing.shot_type : asset.shot_type,
+    camera_motion: existing.camera_motion && existing.camera_motion !== "unknown" ? existing.camera_motion : asset.camera_motion,
+    scene: existing.scene && existing.scene !== "needs labeling" ? existing.scene : asset.scene,
+    visible_objects: existing.visible_objects?.length ? existing.visible_objects : asset.visible_objects,
+    emotion: existing.emotion && existing.emotion !== "neutral" ? existing.emotion : asset.emotion,
+    best_use: existing.best_use?.some((item) => item !== "needs review") ? existing.best_use : asset.best_use,
+    not_good_for: existing.not_good_for?.length ? existing.not_good_for : asset.not_good_for,
+    usable_segments: existing.usable_segments?.length ? existing.usable_segments : asset.usable_segments,
+    text_overlay_safe_area:
+      existing.text_overlay_safe_area && existing.text_overlay_safe_area !== "center"
+        ? existing.text_overlay_safe_area
+        : asset.text_overlay_safe_area,
+    notes:
+      existing.notes && !existing.notes.startsWith("Auto-indexed") && !existing.notes.startsWith("Auto-index failed")
+        ? existing.notes
+        : asset.notes
+  };
+}
+
+async function buildAssetEntry(projectDir: string, filePath: string, probe: ProbeData, existing?: AssetEntry): Promise<AssetEntry> {
   const streams = probe.streams || [];
   const videoStream = streams.find((stream) => stream.codec_type === "video") || {};
   const audioStream = streams.find((stream) => stream.codec_type === "audio");
@@ -150,9 +201,10 @@ function buildAssetEntry(filePath: string, probe: ProbeData): AssetEntry {
   const usableEnd = duration > 0 ? Math.min(duration, 3) : 0;
   const orientation = height > width ? "vertical" : width > height ? "landscape_source_for_vertical_crop" : "unknown";
 
-  return {
+  const asset: AssetEntry = {
     clip_id: path.parse(filePath).name,
     file_path: path.resolve(filePath),
+    thumbnail_path: await generateThumbnail(projectDir, filePath, duration),
     duration: Number(duration.toFixed(3)),
     orientation,
     quality_score: orientation === "vertical" ? 7 : 5,
@@ -174,6 +226,7 @@ function buildAssetEntry(filePath: string, probe: ProbeData): AssetEntry {
     audio_quality: audioStream ? "present" : "not needed",
     notes: "Auto-indexed from uploaded local asset. Add human labels before final creative matching."
   };
+  return mergeExistingLabels(asset, existing);
 }
 
 function buildErroredAssetEntry(filePath: string, error: unknown): AssetEntry {
@@ -206,6 +259,7 @@ async function writeMaterialIndex(projectDir: string, assets: AssetEntry[]) {
     items: assets.map((asset) => ({
       id: asset.clip_id,
       path: asset.file_path,
+      thumbnail_path: asset.thumbnail_path,
       relative_path: path.relative(rawDir, asset.file_path),
       duration_s: asset.duration,
       orientation: asset.orientation,
@@ -264,11 +318,20 @@ export async function indexProjectAssets(slug: string): Promise<AssetLibraryFile
   await fs.mkdir(path.join(projectDir, "output"), { recursive: true });
   await fs.mkdir(rawDir, { recursive: true });
 
+  const previousLibrary = await readJson<AssetLibraryFile>(path.join(projectDir, "output", "asset_library.json"));
+  const previousAssets = new Map((previousLibrary?.assets || []).map((asset) => [asset.clip_id, asset]));
   const videoFiles = await listVideoFiles(rawDir);
   const assets: AssetEntry[] = [];
   for (const videoFile of videoFiles) {
     try {
-      assets.push(buildAssetEntry(videoFile, await probeVideo(videoFile)));
+      assets.push(
+        await buildAssetEntry(
+          projectDir,
+          videoFile,
+          await probeVideo(videoFile),
+          previousAssets.get(path.parse(videoFile).name)
+        )
+      );
     } catch (error) {
       assets.push(buildErroredAssetEntry(videoFile, error));
     }
@@ -290,4 +353,64 @@ export async function indexProjectAssets(slug: string): Promise<AssetLibraryFile
   await writeMaterialIndex(projectDir, assets);
   await syncFullWorkflowInput(projectDir, assets, rawDir);
   return payload;
+}
+
+function normalizeList(value: unknown) {
+  if (Array.isArray(value)) {
+    return value.map(String).map((item) => item.trim()).filter(Boolean);
+  }
+  if (typeof value === "string") {
+    return value.split(",").map((item) => item.trim()).filter(Boolean);
+  }
+  return [];
+}
+
+export async function updateProjectAssetLabels(
+  slug: string,
+  clipId: string,
+  patch: {
+    shot_type?: string;
+    camera_motion?: string;
+    scene?: string;
+    visible_objects?: string[] | string;
+    emotion?: string;
+    best_use?: string[] | string;
+    not_good_for?: string[] | string;
+    text_overlay_safe_area?: string;
+    notes?: string;
+  }
+) {
+  const projectDir = projectDirFromSlug(slug);
+  const rawDir = path.join(projectDir, "materials", "raw");
+  const libraryPath = path.join(projectDir, "output", "asset_library.json");
+  const library = await readJson<AssetLibraryFile>(libraryPath);
+  if (!library) {
+    throw new Error("Asset library has not been indexed yet.");
+  }
+
+  const asset = library.assets.find((item) => item.clip_id === clipId);
+  if (!asset) {
+    throw new Error(`Asset not found: ${clipId}`);
+  }
+
+  if (typeof patch.shot_type === "string") asset.shot_type = patch.shot_type.trim() || asset.shot_type;
+  if (typeof patch.camera_motion === "string") asset.camera_motion = patch.camera_motion.trim() || asset.camera_motion;
+  if (typeof patch.scene === "string") asset.scene = patch.scene.trim() || asset.scene;
+  if (typeof patch.emotion === "string") asset.emotion = patch.emotion.trim() || asset.emotion;
+  if (typeof patch.text_overlay_safe_area === "string") {
+    asset.text_overlay_safe_area = patch.text_overlay_safe_area.trim() || asset.text_overlay_safe_area;
+  }
+  if (typeof patch.notes === "string") asset.notes = patch.notes.trim();
+  if (patch.visible_objects !== undefined) asset.visible_objects = normalizeList(patch.visible_objects);
+  if (patch.best_use !== undefined) asset.best_use = normalizeList(patch.best_use);
+  if (patch.not_good_for !== undefined) asset.not_good_for = normalizeList(patch.not_good_for);
+
+  const updated: AssetLibraryFile = {
+    ...library,
+    updated_at: new Date().toISOString()
+  };
+  await writeJson(libraryPath, updated);
+  await writeMaterialIndex(projectDir, updated.assets);
+  await syncFullWorkflowInput(projectDir, updated.assets, rawDir);
+  return updated;
 }

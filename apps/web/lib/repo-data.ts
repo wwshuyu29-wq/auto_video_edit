@@ -80,11 +80,15 @@ type AssetLibrary = {
   assets?: Array<{
     clip_id?: string;
     file_path?: string;
+    thumbnail_path?: string;
     duration?: number;
     orientation?: string;
     shot_type?: string;
+    camera_motion?: string;
     scene?: string;
+    visible_objects?: string[];
     best_use?: string[];
+    text_overlay_safe_area?: string;
     notes?: string;
   }>;
   status?: string;
@@ -137,11 +141,15 @@ export type ProjectDetail = {
     assets: Array<{
       clipId: string;
       filePath: string;
+      thumbnailPath?: string;
       duration: number | null;
       orientation: string;
       shotType: string;
+      cameraMotion: string;
       scene: string;
+      visibleObjects: string[];
       bestUse: string[];
+      textOverlaySafeArea: string;
       notes: string;
     }>;
   };
@@ -376,11 +384,15 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
         assetLibrary?.assets?.slice(0, 8).map((asset) => ({
           clipId: asset.clip_id || "clip",
           filePath: asset.file_path || "",
+          thumbnailPath: asset.thumbnail_path,
           duration: typeof asset.duration === "number" ? asset.duration : null,
           orientation: asset.orientation || "unknown",
           shotType: asset.shot_type || "unlabeled",
+          cameraMotion: asset.camera_motion || "unknown",
           scene: asset.scene || "needs labeling",
+          visibleObjects: asset.visible_objects || [],
           bestUse: asset.best_use || [],
+          textOverlaySafeArea: asset.text_overlay_safe_area || "center",
           notes: asset.notes || ""
         })) || []
     },

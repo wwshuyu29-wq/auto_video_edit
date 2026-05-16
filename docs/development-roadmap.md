@@ -22,8 +22,9 @@
 - [x] Add local footage indexing into `asset_library.json`.
 - [x] Add project status page.
 - [x] Add first-pass artifact viewers for viral pattern card, product script card, and shot matching plan.
+- [x] Add thumbnail/contact-sheet review for uploaded footage.
+- [x] Add first-pass manual labeling for uploaded footage.
 - [ ] Add editable artifact review screens before each worker stage.
-- [ ] Add thumbnail/contact-sheet review for uploaded footage.
 
 ## Phase 3: Worker MVP
 

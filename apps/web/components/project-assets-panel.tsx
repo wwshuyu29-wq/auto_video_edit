@@ -6,11 +6,15 @@ import { useRef, useState, useTransition } from "react";
 type AssetPreview = {
   clipId: string;
   filePath: string;
+  thumbnailPath?: string;
   duration: number | null;
   orientation: string;
   shotType: string;
+  cameraMotion: string;
   scene: string;
+  visibleObjects: string[];
   bestUse: string[];
+  textOverlaySafeArea: string;
   notes: string;
 };
 
@@ -35,6 +39,149 @@ function formatDuration(duration: number | null) {
 function formatDate(value?: string) {
   if (!value) return "Not indexed yet";
   return value.replace("T", " ").replace(/\.\d+/, "").replace("+00:00", " UTC").replace("Z", " UTC");
+}
+
+function mediaUrl(localPath?: string) {
+  if (!localPath) return "";
+  return `/api/media?path=${encodeURIComponent(localPath)}`;
+}
+
+function listToText(items: string[]) {
+  return items.join(", ");
+}
+
+function AssetCard({ slug, asset, onSaved }: { slug: string; asset: AssetPreview; onSaved: () => void }) {
+  const [isPending, startTransition] = useTransition();
+  const [error, setError] = useState("");
+  const [shotType, setShotType] = useState(asset.shotType);
+  const [scene, setScene] = useState(asset.scene);
+  const [bestUse, setBestUse] = useState(listToText(asset.bestUse));
+  const [visibleObjects, setVisibleObjects] = useState(listToText(asset.visibleObjects));
+  const [textOverlaySafeArea, setTextOverlaySafeArea] = useState(asset.textOverlaySafeArea);
+  const [notes, setNotes] = useState(asset.notes);
+
+  function saveLabels() {
+    setError("");
+    startTransition(async () => {
+      try {
+        const response = await fetch(`/api/projects/${slug}/assets`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            clipId: asset.clipId,
+            patch: {
+              shot_type: shotType,
+              scene,
+              best_use: bestUse,
+              visible_objects: visibleObjects,
+              text_overlay_safe_area: textOverlaySafeArea,
+              notes
+            }
+          })
+        });
+        const data = (await response.json()) as { error?: string };
+        if (!response.ok) {
+          throw new Error(data.error || "Failed to save labels.");
+        }
+        onSaved();
+      } catch (saveError) {
+        setError(saveError instanceof Error ? saveError.message : "Failed to save labels.");
+      }
+    });
+  }
+
+  return (
+    <div className="grid gap-4 border border-black/10 bg-[#f8f8f4] p-3 text-sm lg:grid-cols-[130px_1fr]">
+      <div className="overflow-hidden border border-black/10 bg-black">
+        {asset.thumbnailPath ? (
+          <img src={mediaUrl(asset.thumbnailPath)} alt={asset.clipId} className="aspect-[9/16] w-full object-cover" />
+        ) : (
+          <div className="flex aspect-[9/16] items-center justify-center px-3 text-center font-mono text-[10px] uppercase tracking-[0.18em] text-white/45">
+            no thumbnail
+          </div>
+        )}
+      </div>
+
+      <div className="min-w-0">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <div className="truncate font-medium">{asset.clipId}</div>
+          <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-steel">
+            {formatDuration(asset.duration)} / {asset.orientation}
+          </div>
+        </div>
+        <div className="mt-2 truncate font-mono text-[11px] text-black/42">{asset.filePath}</div>
+
+        <div className="mt-4 grid gap-3 lg:grid-cols-2">
+          <label className="grid gap-1">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Shot type</span>
+            <input
+              value={shotType}
+              onChange={(event) => setShotType(event.target.value)}
+              placeholder="landing page / search results / CTA"
+              className="border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-black"
+            />
+          </label>
+          <label className="grid gap-1">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Scene</span>
+            <input
+              value={scene}
+              onChange={(event) => setScene(event.target.value)}
+              placeholder="Google Scholar / Citely verify result"
+              className="border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-black"
+            />
+          </label>
+          <label className="grid gap-1">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Best use</span>
+            <input
+              value={bestUse}
+              onChange={(event) => setBestUse(event.target.value)}
+              placeholder="opening hook, product proof, CTA"
+              className="border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-black"
+            />
+          </label>
+          <label className="grid gap-1">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Visible objects</span>
+            <input
+              value={visibleObjects}
+              onChange={(event) => setVisibleObjects(event.target.value)}
+              placeholder="logo, search bar, result list"
+              className="border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-black"
+            />
+          </label>
+          <label className="grid gap-1">
+            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Subtitle safe area</span>
+            <input
+              value={textOverlaySafeArea}
+              onChange={(event) => setTextOverlaySafeArea(event.target.value)}
+              placeholder="top center / lower third / center"
+              className="border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-black"
+            />
+          </label>
+          <div className="flex items-end">
+            <button
+              type="button"
+              onClick={saveLabels}
+              disabled={isPending}
+              className="w-full rounded-md border border-black bg-black px-4 py-2 text-sm font-medium text-white transition disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {isPending ? "Saving..." : "Save Labels"}
+            </button>
+          </div>
+        </div>
+
+        <label className="mt-3 grid gap-1">
+          <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Notes</span>
+          <textarea
+            value={notes}
+            onChange={(event) => setNotes(event.target.value)}
+            rows={2}
+            className="resize-none border border-black/10 bg-white px-3 py-2 text-sm outline-none focus:border-black"
+          />
+        </label>
+        {error ? <div className="mt-3 border border-[#d5a6a6] bg-[#fff6f6] px-3 py-2 text-sm text-[#8d2d2d]">{error}</div> : null}
+      </div>
+    </div>
+  );
 }
 
 export function ProjectAssetsPanel({ slug, assetLibrary }: Props) {
@@ -136,20 +283,9 @@ export function ProjectAssetsPanel({ slug, assetLibrary }: Props) {
       </div>
 
       {assetLibrary.assets.length > 0 ? (
-        <div className="mt-5 space-y-2">
+        <div className="mt-5 space-y-3">
           {assetLibrary.assets.map((asset) => (
-            <div key={asset.clipId} className="border border-black/10 bg-[#f8f8f4] p-3 text-sm">
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                <div className="font-medium">{asset.clipId}</div>
-                <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-steel">
-                  {formatDuration(asset.duration)} / {asset.orientation}
-                </div>
-              </div>
-              <div className="mt-2 text-black/62">
-                {asset.shotType} · {asset.scene}
-              </div>
-              <div className="mt-2 truncate font-mono text-[11px] text-black/42">{asset.filePath}</div>
-            </div>
+            <AssetCard key={asset.clipId} slug={slug} asset={asset} onSaved={() => router.refresh()} />
           ))}
         </div>
       ) : (

@@ -116,4 +116,27 @@ Indexing means scanning uploaded videos and writing their basic information into
 
 Plain meaning: making a catalog before editing.
 
-The first version detects basic metadata such as duration and orientation. It does not yet deeply understand the picture like a human editor. Later, we can add thumbnails, contact sheets, and AI visual tagging so the system can tell whether a clip is a landing page, a search result, a citation screen, or a final CTA shot.
+The first version detects basic metadata such as duration and orientation, and it generates a simple thumbnail so the footage can be reviewed on the web page.
+
+## Thumbnail
+
+A thumbnail is a still image taken from a video.
+
+Plain meaning: the cover preview for one clip.
+
+It helps you quickly recognize whether a clip is a landing page, a search result, a citation screen, or a final CTA shot without opening the full video.
+
+## Manual Labels
+
+Manual labels are human-written notes attached to a clip.
+
+Plain meaning: your editor notes for the system.
+
+Examples:
+
+- `shot_type`: landing page screen recording
+- `scene`: Citely verify references result
+- `best_use`: product proof, CTA, transition
+- `text_overlay_safe_area`: upper center
+
+These labels make asset matching more reliable because the system can choose footage from your judgment, not only from file names.

@@ -1,5 +1,5 @@
 import { revalidatePath } from "next/cache";
-import { indexProjectAssets, readAssetLibraryForSlug, uploadProjectAssets } from "@/lib/project-assets";
+import { indexProjectAssets, readAssetLibraryForSlug, updateProjectAssetLabels, uploadProjectAssets } from "@/lib/project-assets";
 
 export async function GET(_request: Request, context: { params: Promise<{ slug: string }> }) {
   try {
@@ -28,6 +28,29 @@ export async function POST(request: Request, context: { params: Promise<{ slug: 
     return Response.json(result, { status: 201 });
   } catch (error) {
     const message = error instanceof Error ? error.message : "Failed to upload or index assets.";
+    return Response.json({ error: message }, { status: 500 });
+  }
+}
+
+export async function PATCH(request: Request, context: { params: Promise<{ slug: string }> }) {
+  try {
+    const { slug } = await context.params;
+    const body = (await request.json()) as {
+      clipId?: string;
+      patch?: Record<string, unknown>;
+    };
+    if (!body.clipId?.trim()) {
+      return Response.json({ error: "clipId is required." }, { status: 400 });
+    }
+
+    const assetLibrary = await updateProjectAssetLabels(slug, body.clipId.trim(), body.patch || {});
+
+    revalidatePath("/");
+    revalidatePath(`/projects/${slug}`);
+
+    return Response.json({ assetLibrary }, { status: 200 });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Failed to update asset labels.";
     return Response.json({ error: message }, { status: 500 });
   }
 }
