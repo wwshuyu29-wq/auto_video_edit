@@ -1,14 +1,6 @@
-import path from "path";
 import { revalidatePath } from "next/cache";
+import { projectDirFromSlug } from "@/lib/project-paths";
 import { startWorkerRun } from "@/lib/worker-status";
-
-const REPO_ROOT = path.resolve(process.cwd(), "../..");
-const PROJECTS_ROOT = path.join(REPO_ROOT, "projects");
-
-function projectDirFromSlug(slug: string) {
-  const [group, ...rest] = slug.split("__");
-  return path.join(PROJECTS_ROOT, group, rest.join("__"));
-}
 
 export async function POST(_request: Request, context: { params: Promise<{ slug: string }> }) {
   try {
@@ -23,4 +15,3 @@ export async function POST(_request: Request, context: { params: Promise<{ slug:
     return Response.json({ error: message }, { status: 500 });
   }
 }
-

@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
+import { PROJECTS_ROOT, projectDirFromSlug, projectFromSlug, slugFor } from "@/lib/project-paths";
 import { readWorkerStatus } from "@/lib/worker-status";
 
 export type StageMode = "run" | "reuse_existing";
@@ -75,6 +76,22 @@ type DeliveryVariant = {
   duration?: number | null;
 };
 
+type AssetLibrary = {
+  assets?: Array<{
+    clip_id?: string;
+    file_path?: string;
+    duration?: number;
+    orientation?: string;
+    shot_type?: string;
+    scene?: string;
+    best_use?: string[];
+    notes?: string;
+  }>;
+  status?: string;
+  source_material_dir?: string;
+  updated_at?: string;
+};
+
 export type ProjectSummary = {
   slug: string;
   group: string;
@@ -112,6 +129,22 @@ export type ProjectDetail = {
   deliverables: DeliveryVariant[];
   previewVideo?: string;
   renderReport?: string;
+  assetLibrary: {
+    status: string;
+    assetCount: number;
+    sourceMaterialDir: string;
+    updatedAt?: string;
+    assets: Array<{
+      clipId: string;
+      filePath: string;
+      duration: number | null;
+      orientation: string;
+      shotType: string;
+      scene: string;
+      bestUse: string[];
+      notes: string;
+    }>;
+  };
   workerStatus: {
     state: "idle" | "running" | "completed" | "failed";
     startedAt?: string | null;
@@ -131,9 +164,6 @@ export type ProjectDetail = {
   };
 };
 
-const REPO_ROOT = path.resolve(process.cwd(), "../..");
-const PROJECTS_ROOT = path.join(REPO_ROOT, "projects");
-
 async function pathExists(target: string) {
   try {
     await fs.access(target);
@@ -150,15 +180,6 @@ async function readJson<T>(target: string): Promise<T | null> {
   } catch {
     return null;
   }
-}
-
-function slugFor(group: string, name: string) {
-  return `${group}__${name}`;
-}
-
-function projectFromSlug(slug: string) {
-  const [group, ...rest] = slug.split("__");
-  return { group, name: rest.join("__") };
 }
 
 async function findProjectDirs() {
@@ -283,7 +304,7 @@ export async function getProjectSummaries(): Promise<ProjectSummary[]> {
 
 export async function getProjectDetail(slug: string): Promise<ProjectDetail | null> {
   const { group, name } = projectFromSlug(slug);
-  const projectDir = path.join(PROJECTS_ROOT, group, name);
+  const projectDir = projectDirFromSlug(slug);
   if (!(await pathExists(projectDir))) return null;
 
   const job = await readJson<ProjectJob>(path.join(projectDir, "project_job.json"));
@@ -291,6 +312,7 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
   const script = await readJson<ScriptCard>(path.join(projectDir, "output", "product_script_card.json"));
   const viral = await readJson<ViralCard>(path.join(projectDir, "output", "viral_pattern_card.json"));
   const shotPlan = await readJson<MatchingPlan>(path.join(projectDir, "output", "shot_matching_plan.json"));
+  const assetLibrary = await readJson<AssetLibrary>(path.join(projectDir, "output", "asset_library.json"));
   const deliveryPath = await findDeliveryManifest(projectDir);
   const delivery = deliveryPath ? await readJson<any>(deliveryPath) : null;
   const deliverables = normalizeDeliverables(projectDir, delivery);
@@ -345,6 +367,23 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
     deliverables,
     previewVideo,
     renderReport,
+    assetLibrary: {
+      status: assetLibrary?.status || "not_indexed",
+      assetCount: assetLibrary?.assets?.length || 0,
+      sourceMaterialDir: assetLibrary?.source_material_dir || path.join(projectDir, "materials", "raw"),
+      updatedAt: assetLibrary?.updated_at,
+      assets:
+        assetLibrary?.assets?.slice(0, 8).map((asset) => ({
+          clipId: asset.clip_id || "clip",
+          filePath: asset.file_path || "",
+          duration: typeof asset.duration === "number" ? asset.duration : null,
+          orientation: asset.orientation || "unknown",
+          shotType: asset.shot_type || "unlabeled",
+          scene: asset.scene || "needs labeling",
+          bestUse: asset.best_use || [],
+          notes: asset.notes || ""
+        })) || []
+    },
     workerStatus: {
       state: workerStatus.state,
       startedAt: workerStatus.started_at,

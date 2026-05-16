@@ -95,3 +95,25 @@ Object storage is cloud storage for large files.
 Plain meaning: a cloud hard drive for videos and images.
 
 GitHub stores code and small JSON/MD files. Object storage stores raw videos, final videos, covers, and temporary render files.
+
+## Asset Library
+
+Asset library means the structured list of usable video materials.
+
+Plain meaning: the system's footage notebook.
+
+When you upload `.mov` or `.mp4` clips, the web app saves them into the project folder and writes a file called:
+
+```text
+output/asset_library.json
+```
+
+The worker reads this file to know which clips exist, where each clip lives, how long it is, whether it is vertical, and whether it can be used for matching.
+
+## Indexing
+
+Indexing means scanning uploaded videos and writing their basic information into JSON.
+
+Plain meaning: making a catalog before editing.
+
+The first version detects basic metadata such as duration and orientation. It does not yet deeply understand the picture like a human editor. Later, we can add thumbnails, contact sheets, and AI visual tagging so the system can tell whether a clip is a landing page, a search result, a citation screen, or a final CTA shot.

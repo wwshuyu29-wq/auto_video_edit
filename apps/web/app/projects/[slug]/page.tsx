@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ProjectAssetsPanel } from "@/components/project-assets-panel";
 import { ProjectRunnerControls } from "@/components/project-runner-controls";
 import { getProjectDetail, mediaUrl } from "@/lib/repo-data";
 
@@ -91,6 +92,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </div>
 
         <div className="space-y-6">
+          <ProjectAssetsPanel slug={project.slug} assetLibrary={project.assetLibrary} />
+
           <ProjectRunnerControls slug={project.slug} workerStatus={project.workerStatus} />
 
           <div className="border border-black/10 bg-panel p-6 shadow-panel">

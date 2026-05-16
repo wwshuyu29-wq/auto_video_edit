@@ -15,17 +15,20 @@
 
 ## Phase 2: Web MVP
 
-- [ ] Scaffold Next.js in `apps/web`.
-- [ ] Add product selector for Literfy, Citely, and FigPad only.
-- [ ] Add reference URL/video input.
-- [ ] Add footage upload UI.
-- [ ] Add project status page.
-- [ ] Add artifact viewers for viral pattern card, product script card, and shot matching plan.
+- [x] Scaffold Next.js in `apps/web`.
+- [x] Add product selector for Literfy, Citely, and FigPad only.
+- [x] Add reference URL/video input.
+- [x] Add local footage upload UI.
+- [x] Add local footage indexing into `asset_library.json`.
+- [x] Add project status page.
+- [x] Add first-pass artifact viewers for viral pattern card, product script card, and shot matching plan.
+- [ ] Add editable artifact review screens before each worker stage.
+- [ ] Add thumbnail/contact-sheet review for uploaded footage.
 
 ## Phase 3: Worker MVP
 
-- [ ] Scaffold worker service in `apps/worker`.
-- [ ] Add local job runner.
+- [x] Scaffold worker service in `apps/worker`.
+- [x] Add local job runner.
 - [ ] Add FFmpeg availability check.
 - [ ] Add object storage download/upload adapter.
 - [ ] Add render result manifest output.
