@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState, useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 
 type WorkerStatus = {
   state: "idle" | "running" | "completed" | "failed";
@@ -23,10 +23,27 @@ function stateLabel(state: WorkerStatus["state"]) {
   return "Idle";
 }
 
+function formatDate(value?: string | null) {
+  if (!value) return "Not available";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return date.toLocaleString();
+}
+
 export function ProjectRunnerControls({ slug, workerStatus }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState("");
+
+  useEffect(() => {
+    if (workerStatus.state !== "running") return;
+
+    const timer = window.setInterval(() => {
+      router.refresh();
+    }, 3000);
+
+    return () => window.clearInterval(timer);
+  }, [router, workerStatus.state]);
 
   function runProject() {
     setError("");
@@ -49,7 +66,10 @@ export function ProjectRunnerControls({ slug, workerStatus }: Props) {
       <div className="flex items-end justify-between gap-4">
         <div>
           <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">Worker Run</div>
-          <div className="mt-2 text-2xl font-semibold tracking-[-0.04em]">{stateLabel(workerStatus.state)}</div>
+          <div className="mt-2 flex items-center gap-3">
+            <div className="text-2xl font-semibold tracking-[-0.04em]">{stateLabel(workerStatus.state)}</div>
+            {workerStatus.state === "running" ? <div className="h-2.5 w-2.5 rounded-full bg-black animate-pulse" /> : null}
+          </div>
         </div>
         <button
           type="button"
@@ -62,9 +82,10 @@ export function ProjectRunnerControls({ slug, workerStatus }: Props) {
       </div>
 
       <div className="mt-4 space-y-2 text-sm text-black/64">
-        <div>Started: {workerStatus.startedAt || "Not started"}</div>
-        <div>Finished: {workerStatus.finishedAt || "Not finished"}</div>
+        <div>Started: {workerStatus.startedAt ? formatDate(workerStatus.startedAt) : "Not started"}</div>
+        <div>Finished: {workerStatus.finishedAt ? formatDate(workerStatus.finishedAt) : "Not finished"}</div>
         <div>Log: {workerStatus.logPath || "Not created yet"}</div>
+        {workerStatus.state === "running" ? <div>Auto refresh: every 3 seconds</div> : null}
       </div>
 
       {workerStatus.error ? (
@@ -76,4 +97,3 @@ export function ProjectRunnerControls({ slug, workerStatus }: Props) {
     </div>
   );
 }
-
