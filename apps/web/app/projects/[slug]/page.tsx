@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ProjectRunnerControls } from "@/components/project-runner-controls";
 import { getProjectDetail, mediaUrl } from "@/lib/repo-data";
 
 export const dynamic = "force-dynamic";
@@ -90,6 +91,8 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </div>
 
         <div className="space-y-6">
+          <ProjectRunnerControls slug={project.slug} workerStatus={project.workerStatus} />
+
           <div className="border border-black/10 bg-panel p-6 shadow-panel">
             <div className="flex items-end justify-between">
               <div>

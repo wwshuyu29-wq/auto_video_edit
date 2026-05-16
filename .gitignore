@@ -37,6 +37,11 @@ source-skills/**/.git/
 # Keep structured project artifacts in Git when needed.
 !**/output/**/*.json
 !**/output/**/*.md
+**/output/worker_run_status.json
+**/output/worker_run.log
+**/output/final_delivery/worker_render_report.json
+**/output/final_delivery/captions.json
+**/output/final_delivery/master.srt
 
 # Final media should live in object storage, not Git.
 **/output/final_delivery/*.mp4

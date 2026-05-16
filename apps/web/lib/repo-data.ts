@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
+import { readWorkerStatus } from "@/lib/worker-status";
 
 export type StageMode = "run" | "reuse_existing";
 export type StageName =
@@ -85,6 +86,7 @@ export type ProjectSummary = {
   deliverableCount: number;
   headline: string;
   updatedAt: string;
+  workerState: "idle" | "running" | "completed" | "failed";
 };
 
 export type ProjectDetail = {
@@ -110,6 +112,13 @@ export type ProjectDetail = {
   deliverables: DeliveryVariant[];
   previewVideo?: string;
   renderReport?: string;
+  workerStatus: {
+    state: "idle" | "running" | "completed" | "failed";
+    startedAt?: string | null;
+    finishedAt?: string | null;
+    logPath?: string | null;
+    error?: string | null;
+  };
 };
 
 const REPO_ROOT = path.resolve(process.cwd(), "../..");
@@ -212,7 +221,8 @@ async function updatedAtFor(projectDir: string) {
     path.join(projectDir, "project_job.json"),
     path.join(projectDir, "output", "shot_matching_plan.json"),
     path.join(projectDir, "output", "final_delivery", "final_delivery_manifest.json"),
-    path.join(projectDir, "output", "final_delivery_manifest.json")
+    path.join(projectDir, "output", "final_delivery_manifest.json"),
+    path.join(projectDir, "output", "worker_run_status.json")
   ];
   const stats = await Promise.all(
     candidates.map(async (target) => {
@@ -237,6 +247,7 @@ export async function getProjectSummaries(): Promise<ProjectSummary[]> {
       const deliveryPath = await findDeliveryManifest(dir);
       const delivery = deliveryPath ? await readJson<any>(deliveryPath) : null;
       const deliverables = normalizeDeliverables(dir, delivery);
+      const workerStatus = await readWorkerStatus(dir);
 
       return {
         slug: slugFor(group, name),
@@ -251,7 +262,8 @@ export async function getProjectSummaries(): Promise<ProjectSummary[]> {
           script?.scripts?.find((item) => item.type === "native_creator_version")?.script_title ||
           script?.scripts?.[0]?.script_title ||
           "No script headline yet",
-        updatedAt: await updatedAtFor(dir)
+        updatedAt: await updatedAtFor(dir),
+        workerState: workerStatus.state
       };
     })
   );
@@ -272,6 +284,7 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
   const deliveryPath = await findDeliveryManifest(projectDir);
   const delivery = deliveryPath ? await readJson<any>(deliveryPath) : null;
   const deliverables = normalizeDeliverables(projectDir, delivery);
+  const workerStatus = await readWorkerStatus(projectDir);
   const configuredPreviewVideo = normalizeArtifactPath(projectDir, job?.delivery?.preview_video);
   const previewVideo =
     configuredPreviewVideo && (await pathExists(configuredPreviewVideo))
@@ -321,7 +334,14 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
       })) || [],
     deliverables,
     previewVideo,
-    renderReport
+    renderReport,
+    workerStatus: {
+      state: workerStatus.state,
+      startedAt: workerStatus.started_at,
+      finishedAt: workerStatus.finished_at,
+      logPath: workerStatus.log_path,
+      error: workerStatus.error
+    }
   };
 }
 
@@ -332,6 +352,7 @@ export async function getDashboardMetrics() {
     readyProjects: projects.filter((item) => item.status === "ready" || item.status === "final_delivery_cleaned").length,
     configuredProjects: projects.filter((item) => item.status === "configured" || item.status === "matched").length,
     totalDeliverables: projects.reduce((sum, item) => sum + item.deliverableCount, 0),
+    runningProjects: projects.filter((item) => item.workerState === "running").length,
     projects
   };
 }

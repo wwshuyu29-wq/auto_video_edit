@@ -57,7 +57,7 @@ export default async function DashboardPage() {
       <section className="grid border border-black/10 bg-panel lg:grid-cols-4">
         {metricLabel(data.totalProjects, "Projects")}
         {metricLabel(data.readyProjects, "Ready")}
-        {metricLabel(data.configuredProjects, "In Pipeline")}
+        {metricLabel(data.runningProjects || data.configuredProjects, "In Pipeline")}
         {metricLabel(data.totalDeliverables, "Deliverables")}
       </section>
 
@@ -83,7 +83,7 @@ export default async function DashboardPage() {
                 </div>
                 <div>
                   <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-steel">Status</div>
-                  <div className="mt-2 text-sm">{project.status}</div>
+                  <div className="mt-2 text-sm">{project.workerState === "running" ? "running" : project.status}</div>
                 </div>
                 <div>
                   <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-steel">Mode</div>
