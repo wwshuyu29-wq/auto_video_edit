@@ -8,7 +8,8 @@
 - [x] Add `packages/skill-core`.
 - [x] Add `packages/schemas`.
 - [x] Add cloud architecture docs.
-- [ ] Add a minimal worker CLI that can run one project from object-like local paths.
+- [x] Add a minimal worker CLI that can inspect one project and dry-run one stage.
+- [ ] Extend the worker CLI to run a full local project workflow.
 
 ## Phase 2: Web MVP
 

@@ -54,4 +54,5 @@ Treat source skills as references, not trusted production code. Review scripts a
 - `cloud-migration-plan.md`
 - `docs/cloud-architecture.md`
 - `docs/development-roadmap.md`
+- `docs/plain-language-glossary.md`
 - `docs/repo-policy.md`
