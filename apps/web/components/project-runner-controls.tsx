@@ -9,6 +9,7 @@ type WorkerStatus = {
   finishedAt?: string | null;
   logPath?: string | null;
   error?: string | null;
+  logExcerpt: string[];
   stages: Array<{
     name: string;
     mode?: string;
@@ -45,9 +46,7 @@ function stageStateClassName(state: WorkerStatus["stages"][number]["state"]) {
 
 function formatDate(value?: string | null) {
   if (!value) return "Not available";
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return value;
-  return date.toLocaleString();
+  return value.replace("T", " ").replace(/\.\d+/, "").replace("+00:00", " UTC").replace("Z", " UTC");
 }
 
 export function ProjectRunnerControls({ slug, workerStatus }: Props) {
@@ -129,6 +128,20 @@ export function ProjectRunnerControls({ slug, workerStatus }: Props) {
               </div>
             </div>
           ))}
+        </div>
+      ) : null}
+
+      {workerStatus.logExcerpt.length > 0 ? (
+        <div className="mt-5 border border-black/10 bg-[#111111] p-4 text-white">
+          <div className="flex items-center justify-between gap-4">
+            <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-white/45">Recent Log</div>
+            <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/35">
+              last {workerStatus.logExcerpt.length} lines
+            </div>
+          </div>
+          <pre className="mt-3 max-h-64 overflow-auto whitespace-pre-wrap break-words font-mono text-[11px] leading-5 text-white/70">
+            {workerStatus.logExcerpt.join("\n")}
+          </pre>
         </div>
       ) : null}
 

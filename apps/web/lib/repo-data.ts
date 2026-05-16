@@ -118,6 +118,7 @@ export type ProjectDetail = {
     finishedAt?: string | null;
     logPath?: string | null;
     error?: string | null;
+    logExcerpt: string[];
     stages: Array<{
       name: string;
       mode?: string;
@@ -350,6 +351,7 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
       finishedAt: workerStatus.finished_at,
       logPath: workerStatus.log_path,
       error: workerStatus.error,
+      logExcerpt: workerStatus.log_excerpt || [],
       stages:
         workerStatus.stages?.map((stage) => ({
           name: stage.name,

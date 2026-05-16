@@ -28,6 +28,7 @@ export type WorkerRunStatus = {
   return_code?: number | null;
   log_path?: string | null;
   error?: string | null;
+  log_excerpt?: string[];
   stages?: WorkerStageStatus[];
 };
 
@@ -48,15 +49,46 @@ async function pathExists(target: string) {
   }
 }
 
+async function readRecentLogLines(target: string, maxLines = 80) {
+  if (!(await pathExists(target))) return [];
+
+  try {
+    const stats = await fs.stat(target);
+    const readSize = Math.min(stats.size, 80_000);
+    const handle = await fs.open(target, "r");
+    try {
+      const buffer = Buffer.alloc(readSize);
+      await handle.read(buffer, 0, readSize, Math.max(0, stats.size - readSize));
+      return buffer
+        .toString("utf8")
+        .split(/\r?\n/)
+        .filter(Boolean)
+        .slice(-maxLines);
+    } finally {
+      await handle.close();
+    }
+  } catch {
+    return ["Could not read worker log."];
+  }
+}
+
 export async function readWorkerStatus(projectDir: string): Promise<WorkerRunStatus> {
   const target = statusFilePath(projectDir);
+  const defaultLogPath = logFilePath(projectDir);
   if (!(await pathExists(target))) {
-    return { state: "idle", project_dir: projectDir, log_path: logFilePath(projectDir), stages: [] };
+    return {
+      state: "idle",
+      project_dir: projectDir,
+      log_path: defaultLogPath,
+      log_excerpt: await readRecentLogLines(defaultLogPath),
+      stages: []
+    };
   }
 
   try {
     const raw = await fs.readFile(target, "utf8");
     const data = JSON.parse(raw) as WorkerRunStatus;
+    const resolvedLogPath = data.log_path || defaultLogPath;
     return {
       state: data.state || "idle",
       job_file: data.job_file,
@@ -64,16 +96,18 @@ export async function readWorkerStatus(projectDir: string): Promise<WorkerRunSta
       started_at: data.started_at || null,
       finished_at: data.finished_at || null,
       return_code: typeof data.return_code === "number" ? data.return_code : null,
-      log_path: data.log_path || logFilePath(projectDir),
+      log_path: resolvedLogPath,
       error: data.error || null,
+      log_excerpt: await readRecentLogLines(resolvedLogPath),
       stages: Array.isArray(data.stages) ? data.stages : []
     };
   } catch {
     return {
       state: "failed",
       project_dir: projectDir,
-      log_path: logFilePath(projectDir),
+      log_path: defaultLogPath,
       error: "Could not read worker status file.",
+      log_excerpt: await readRecentLogLines(defaultLogPath),
       stages: []
     };
   }
@@ -106,6 +140,7 @@ export async function startWorkerRun(projectDir: string) {
     return_code: null,
     log_path: logFilePath(projectDir),
     error: null,
+    log_excerpt: current.log_excerpt || [],
     stages: current.stages || []
   };
 }
