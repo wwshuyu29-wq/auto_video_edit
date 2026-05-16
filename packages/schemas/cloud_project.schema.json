@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auto-video.local/schemas/cloud_project.schema.json",
+  "title": "CloudProject",
+  "type": "object",
+  "required": ["project_id", "product_name", "status", "created_at"],
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "description": "Stable project id used by web, worker, database, and object storage."
+    },
+    "product_name": {
+      "type": "string",
+      "enum": ["Literfy", "Citely", "FigPad"]
+    },
+    "template_id": {
+      "type": "string",
+      "description": "Reusable creative template id, such as research-connect-google-scholar."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "uploaded", "analyzing", "scripted", "matched", "rendering", "delivered", "failed"]
+    },
+    "reference": {
+      "type": "object",
+      "properties": {
+        "tiktok_url": { "type": "string" },
+        "uploaded_asset_id": { "type": "string" },
+        "caption_logic_card_id": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "asset_ids": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Uploaded raw footage ids in object storage."
+    },
+    "artifact_ids": {
+      "type": "object",
+      "properties": {
+        "viral_pattern_card": { "type": "string" },
+        "product_script_card": { "type": "string" },
+        "shot_matching_plan": { "type": "string" },
+        "publishing_copy_card": { "type": "string" },
+        "render_report": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "delivery": {
+      "type": "object",
+      "properties": {
+        "video_asset_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "cover_asset_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "manifest_asset_id": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": { "type": "string" },
+        "message": { "type": "string" },
+        "stage": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

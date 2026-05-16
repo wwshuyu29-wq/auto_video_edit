@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auto-video.local/schemas/storage_asset.schema.json",
+  "title": "StorageAsset",
+  "type": "object",
+  "required": ["asset_id", "project_id", "kind", "storage_key", "created_at"],
+  "properties": {
+    "asset_id": { "type": "string" },
+    "project_id": { "type": "string" },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "raw_video",
+        "reference_video",
+        "reference_frame",
+        "cover_image",
+        "final_video",
+        "json_artifact",
+        "subtitle_file",
+        "render_report",
+        "temporary"
+      ]
+    },
+    "storage_key": {
+      "type": "string",
+      "description": "Object storage key, not a public URL."
+    },
+    "content_type": { "type": "string" },
+    "bytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "checksum": { "type": "string" },
+    "ttl_expires_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Temporary files can be deleted after this time."
+    },
+    "created_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

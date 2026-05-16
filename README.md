@@ -2,6 +2,21 @@
 
 This folder contains the first TK automated video workflow package.
 
+## Cloud-Ready Layout
+
+This repository is now being prepared for cloud migration.
+
+```text
+apps/web                 Web UI placeholder
+apps/worker              Async video-processing worker placeholder
+packages/skill-core      Thin Python wrapper around the current skill
+packages/schemas         Cloud project/job/storage schemas
+skills/tk-video-editor   Current local Codex skill implementation
+docs                     Architecture and migration notes
+```
+
+The local skill remains the source of truth for now. The cloud packages wrap it first so the current working video pipeline is not broken during migration.
+
 ## Main Skill
 
 `skills/tk-video-editor/`
@@ -33,3 +48,10 @@ Reference projects pulled for adaptation:
 - `claude-code-video-toolkit`: map of Claude video-production tools.
 
 Treat source skills as references, not trusted production code. Review scripts and dependencies before running anything new.
+
+## Cloud Migration Docs
+
+- `cloud-migration-plan.md`
+- `docs/cloud-architecture.md`
+- `docs/development-roadmap.md`
+- `docs/repo-policy.md`
