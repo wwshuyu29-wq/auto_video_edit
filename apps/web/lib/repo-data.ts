@@ -33,6 +33,16 @@ type ScriptCard = {
     type: string;
     script_title?: string;
     script_angle?: string;
+    caption?: string;
+    hashtags?: string[];
+    full_script?: Array<{
+      time?: string;
+      beat?: string;
+      voiceover?: string;
+      on_screen_text?: string;
+      visual_need?: string;
+      preferred_clip_id?: string;
+    }>;
   }>;
 };
 
@@ -68,6 +78,7 @@ type MatchingPlan = {
     clip_id?: string;
     on_screen_text?: string;
     time?: string;
+    reason?: string;
   }>;
 };
 
@@ -76,6 +87,41 @@ type DeliveryVariant = {
   video?: string;
   cover?: string;
   duration?: number | null;
+};
+
+type ScriptArtifact = {
+  path: string;
+  suffix: string;
+  card: ScriptCard | null;
+};
+
+type ShotPlanArtifact = {
+  path: string;
+  suffix: string;
+  plan: MatchingPlan | null;
+};
+
+type PublishingCopyCard = {
+  publishing_variants?: Array<{
+    variant_id?: string;
+    recommended_title?: string;
+    recommended_caption?: string;
+    hashtags?: string[];
+    keywords?: string[];
+    posting_notes?: string[];
+    compliance_notes?: string[];
+  }>;
+};
+
+type PublishingCopy = {
+  path?: string;
+  variantId: string;
+  recommendedTitle: string;
+  recommendedCaption: string;
+  hashtags: string[];
+  keywords: string[];
+  postingNotes: string[];
+  complianceNotes: string[];
 };
 
 type AssetLibrary = {
@@ -146,6 +192,36 @@ export type ProjectDetail = {
   riskNotes: string[];
   editPreview: Array<{ beat: string; clipId: string; text: string; time: string }>;
   deliverables: DeliveryVariant[];
+  videoVariants: Array<{
+    id: string;
+    name: string;
+    video?: string;
+    cover?: string;
+    duration?: number | null;
+    scriptPath?: string;
+    shotPlanPath?: string;
+    scriptType?: string;
+    scriptTitle: string;
+    scriptAngle: string;
+    publishingCopy?: PublishingCopy;
+    scriptBeats: Array<{
+      time: string;
+      beat: string;
+      onScreenText: string;
+      voiceover: string;
+      visualNeed: string;
+      preferredClipId: string;
+    }>;
+    shotBeats: Array<{
+      time: string;
+      beat: string;
+      clipId: string;
+      onScreenText: string;
+      reason: string;
+    }>;
+  }>;
+  publishingCopyPath?: string;
+  publishingCopyDeliveryPath?: string;
   previewVideo?: string;
   renderReport?: string;
   preflight: PreflightReport;
@@ -248,6 +324,17 @@ async function findDeliveryManifest(projectDir: string) {
   if (await pathExists(primary)) return primary;
   if (await pathExists(secondary)) return secondary;
   return null;
+}
+
+async function findPublishingCopy(projectDir: string, delivery: any) {
+  const cardFromManifest = normalizeArtifactPath(projectDir, delivery?.publishing_copy_card);
+  const deliveryFromManifest = normalizeArtifactPath(projectDir, delivery?.publishing_copy_delivery);
+  const card = cardFromManifest || path.join(projectDir, "output", "publishing_copy_card.json");
+  const readable = deliveryFromManifest || path.join(projectDir, "output", "publishing_copy_delivery.md");
+  return {
+    card: (await pathExists(card)) ? card : undefined,
+    delivery: (await pathExists(readable)) ? readable : undefined
+  };
 }
 
 function normalizeArtifactPath(projectDir: string, target?: string | null) {
@@ -353,6 +440,198 @@ async function discoverMediaDeliverables(projectDir: string): Promise<DeliveryVa
   });
 }
 
+async function listOutputFiles(projectDir: string, matcher: (fileName: string) => boolean) {
+  const outputDir = path.join(projectDir, "output");
+  const files = await listFilesRecursive(outputDir);
+  return files.filter((file) => matcher(path.basename(file))).sort();
+}
+
+function suffixFromArtifact(filePath: string, baseName: string) {
+  const name = path.basename(filePath, ".json");
+  if (name === baseName) return "";
+  return name.replace(`${baseName}_`, "");
+}
+
+function normalizeKey(value?: string | null) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "");
+}
+
+function tokenScore(target: string, candidate?: string) {
+  const targetTokens = new Set(normalizeKey(target).split("_").filter(Boolean));
+  const candidateTokens = normalizeKey(candidate).split("_").filter(Boolean);
+  return candidateTokens.reduce((score, token) => score + (targetTokens.has(token) ? 1 : 0), 0);
+}
+
+async function readScriptArtifacts(projectDir: string): Promise<ScriptArtifact[]> {
+  const files = await listOutputFiles(
+    projectDir,
+    (fileName) => /^product_script_card(?:_[a-z0-9_]+)?\.json$/i.test(fileName)
+  );
+  return Promise.all(
+    files.map(async (file) => ({
+      path: file,
+      suffix: suffixFromArtifact(file, "product_script_card"),
+      card: await readJson<ScriptCard>(file)
+    }))
+  );
+}
+
+async function readShotPlanArtifacts(projectDir: string): Promise<ShotPlanArtifact[]> {
+  const files = await listOutputFiles(
+    projectDir,
+    (fileName) => /^shot_matching_plan(?:_[a-z0-9_]+)?\.json$/i.test(fileName)
+  );
+  return Promise.all(
+    files.map(async (file) => ({
+      path: file,
+      suffix: suffixFromArtifact(file, "shot_matching_plan"),
+      plan: await readJson<MatchingPlan>(file)
+    }))
+  );
+}
+
+function chooseSuffixedArtifact<T extends { suffix: string }>(deliverableName: string, artifacts: T[]) {
+  const normalizedName = normalizeKey(deliverableName);
+  const explicit = artifacts
+    .filter((artifact) => artifact.suffix && normalizedName.includes(normalizeKey(artifact.suffix)))
+    .sort((a, b) => b.suffix.length - a.suffix.length)[0];
+  if (explicit) return explicit;
+  return artifacts.find((artifact) => !artifact.suffix) || artifacts[0];
+}
+
+function chooseScriptVariant(deliverableName: string, card: ScriptCard | null) {
+  const scripts = card?.scripts || [];
+  if (!scripts.length) return null;
+  if (scripts.length === 1) return scripts[0];
+
+  const normalizedName = normalizeKey(deliverableName);
+  if (normalizedName.startsWith("a_")) {
+    return scripts.find((script) => normalizeKey(script.type).includes("safe")) || scripts[0];
+  }
+  if (normalizedName.startsWith("b_")) {
+    return scripts.find((script) => normalizeKey(script.type).includes("viral")) || scripts[1] || scripts[0];
+  }
+  if (normalizedName.startsWith("c_")) {
+    return scripts.find((script) => normalizeKey(script.type).includes("native")) || scripts[2] || scripts[0];
+  }
+
+  return (
+    scripts
+      .map((script) => ({
+        script,
+        score:
+          tokenScore(deliverableName, script.type) +
+          tokenScore(deliverableName, script.script_title) +
+          tokenScore(deliverableName, script.script_angle)
+      }))
+      .sort((a, b) => b.score - a.score)[0]?.script ||
+    scripts.find((script) => normalizeKey(script.type).includes("native")) ||
+    scripts[0]
+  );
+}
+
+function choosePublishingCopy(deliverableName: string, card: PublishingCopyCard | null | undefined) {
+  const variants = card?.publishing_variants || [];
+  if (!variants.length) return null;
+  const normalizedName = normalizeKey(deliverableName);
+  return (
+    variants.find((item) => normalizeKey(item.variant_id) === normalizedName) ||
+    variants
+      .map((item) => ({
+        item,
+        score: tokenScore(deliverableName, item.variant_id)
+      }))
+      .sort((a, b) => b.score - a.score)[0]?.item ||
+    variants[0]
+  );
+}
+
+function fallbackPublishingCopy(
+  deliverableName: string,
+  script: NonNullable<ScriptCard["scripts"]>[number] | null | undefined,
+  scriptArtifactPath?: string
+): PublishingCopy | undefined {
+  if (!script?.script_title && !script?.caption && !script?.hashtags?.length) return undefined;
+  const hashtags = script.hashtags || [];
+  return {
+    path: scriptArtifactPath,
+    variantId: deliverableName,
+    recommendedTitle: script.script_title || deliverableName,
+    recommendedCaption: script.caption || script.script_title || "",
+    hashtags,
+    keywords: hashtags.map((tag) => tag.replace(/^#/, "")),
+    postingNotes: [
+      "Use the matching cover image with this captioned video.",
+      "Add TikTok trending music inside TikTok.",
+      "Review product claims before publishing."
+    ],
+    complianceNotes: ["Use product-safe wording and avoid exaggerated claims."]
+  };
+}
+
+function buildVideoVariants(
+  deliverables: DeliveryVariant[],
+  scriptArtifacts: ScriptArtifact[],
+  shotPlanArtifacts: ShotPlanArtifact[],
+  publishingCopyCard?: PublishingCopyCard | null,
+  publishingCopyPath?: string
+) {
+  return deliverables.map((deliverable) => {
+    const scriptArtifact = chooseSuffixedArtifact(deliverable.name, scriptArtifacts);
+    const shotPlanArtifact = chooseSuffixedArtifact(deliverable.name, shotPlanArtifacts);
+    const script = chooseScriptVariant(deliverable.name, scriptArtifact?.card || null);
+    const publishing = choosePublishingCopy(deliverable.name, publishingCopyCard);
+    const publishingCopy = publishing
+      ? {
+          path: publishingCopyPath,
+          variantId: publishing.variant_id || deliverable.name,
+          recommendedTitle: publishing.recommended_title || script?.script_title || deliverable.name,
+          recommendedCaption: publishing.recommended_caption || script?.caption || "",
+          hashtags: publishing.hashtags || script?.hashtags || [],
+          keywords:
+            publishing.keywords ||
+            (publishing.hashtags || script?.hashtags || []).map((tag) => tag.replace(/^#/, "")),
+          postingNotes: publishing.posting_notes || [],
+          complianceNotes: publishing.compliance_notes || []
+        }
+      : fallbackPublishingCopy(deliverable.name, script, scriptArtifact?.path);
+
+    return {
+      id: normalizeKey(deliverable.name) || "video",
+      name: deliverable.name,
+      video: deliverable.video,
+      cover: deliverable.cover,
+      duration: deliverable.duration,
+      scriptPath: scriptArtifact?.path,
+      shotPlanPath: shotPlanArtifact?.path,
+      scriptType: script?.type,
+      scriptTitle: script?.script_title || deliverable.name,
+      scriptAngle: script?.script_angle || "No script angle found",
+      publishingCopy,
+      scriptBeats:
+        script?.full_script?.map((beat) => ({
+          time: beat.time || "",
+          beat: beat.beat || "",
+          onScreenText: beat.on_screen_text || "",
+          voiceover: beat.voiceover || "",
+          visualNeed: beat.visual_need || "",
+          preferredClipId: beat.preferred_clip_id || ""
+        })) || [],
+      shotBeats:
+        shotPlanArtifact?.plan?.edit_plan?.map((beat) => ({
+          time: beat.time || "",
+          beat: beat.beat || "",
+          clipId: beat.clip_id || "",
+          onScreenText: beat.on_screen_text || "",
+          reason: beat.reason || ""
+        })) || []
+    };
+  });
+}
+
 function statusFromArtifacts(job: ProjectJob | null, delivery: any, shotPlan: MatchingPlan | null) {
   if (delivery?.status) return String(delivery.status);
   if (shotPlan?.edit_plan?.length) return "matched";
@@ -449,6 +728,17 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
   const delivery = deliveryPath ? await readJson<any>(deliveryPath) : null;
   const manifestDeliverables = normalizeDeliverables(projectDir, delivery);
   const deliverables = manifestDeliverables.length ? manifestDeliverables : await discoverMediaDeliverables(projectDir);
+  const scriptArtifacts = await readScriptArtifacts(projectDir);
+  const shotPlanArtifacts = await readShotPlanArtifacts(projectDir);
+  const publishingCopy = await findPublishingCopy(projectDir, delivery);
+  const publishingCopyCard = publishingCopy.card ? await readJson<PublishingCopyCard>(publishingCopy.card) : null;
+  const videoVariants = buildVideoVariants(
+    deliverables,
+    scriptArtifacts,
+    shotPlanArtifacts,
+    publishingCopyCard,
+    publishingCopy.card
+  );
   const workerStatus = await readWorkerStatus(projectDir);
   const preflight = await runProjectPreflight(projectDir);
   const editableArtifacts = await readEditableArtifacts(slug);
@@ -500,6 +790,9 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
         time: item.time || ""
       })) || [],
     deliverables,
+    videoVariants,
+    publishingCopyPath: publishingCopy.card,
+    publishingCopyDeliveryPath: publishingCopy.delivery,
     previewVideo,
     renderReport,
     preflight,

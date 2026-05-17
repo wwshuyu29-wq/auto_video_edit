@@ -13,11 +13,11 @@ export default async function AssetsPage({ params }: { params: Promise<{ slug: s
 
   return (
     <ProjectWorkflowShell project={project} active="assets">
-      <div className="grid gap-5 xl:grid-cols-[0.92fr_1.08fr]">
-        <div className="max-h-[760px] overflow-y-auto pr-2">
+      <div className="grid gap-5 2xl:grid-cols-[minmax(640px,0.95fr)_minmax(760px,1.05fr)]">
+        <div className="min-h-0">
           <ProjectAssetsPanel slug={project.slug} assetLibrary={project.assetLibrary} />
         </div>
-        <div className="max-h-[760px] overflow-y-auto pr-2">
+        <div className="min-h-0">
           <ArtifactReviewPanel
             slug={project.slug}
             artifacts={project.editableArtifacts}

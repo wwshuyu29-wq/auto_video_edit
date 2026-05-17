@@ -36,5 +36,7 @@
     "native_emoji_overlay_size_checked": true,
     "native_emoji_overlay_size": "1080x1920",
     "cleanup_safe_to_run": true
-  }
+  },
+  "publishing_copy_card": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/publishing_copy_card.json",
+  "publishing_copy_delivery": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/publishing_copy_delivery.md"
 }

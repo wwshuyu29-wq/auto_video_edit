@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/figpad/research-connect-google-scholar-template/output/shot_matching_plan_ppt_export.json",
+    "asset_library": "projects/figpad/research-connect-google-scholar-template/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_ppt_export_v1_video.mp4",
+    "preview_sheet": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_ppt_export_v1_video_sheet.jpg",
+    "preview_midpoint_sheet": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_ppt_export_v1_video_midpoint_sheet.jpg",
+    "captions": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/captions.json",
+    "srt": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/master.srt",
+    "render_report": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/render_report_ppt_export.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "23.833333",
+      "size": "18611317"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

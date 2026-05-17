@@ -1,5 +1,5 @@
 {
-  "active_product": "Literfy",
+  "active_product": "FigPad",
   "rules": [
     "Only use products listed in this file.",
     "Start with Literfy and do not generate scripts for Citely or FigPad until explicitly requested.",
@@ -170,15 +170,51 @@
         },
         {
           "feature_name": "Vectorizer",
-          "description": "Convert raster images into cleaner vector-style outputs.",
-          "user_benefit": "Helps users get more editable and presentation-ready scientific visuals.",
-          "visual_need": "Screen recording of raster image converting into SVG or vector-like output."
+          "description": "Convert raster or bitmap images into cleaner vector-style outputs.",
+          "user_benefit": "Helps users get more editable and presentation-ready scientific visuals instead of being stuck with a flat bitmap.",
+          "visual_need": "Screen recording of the svg-converter page converting a bitmap image into an SVG or vector-like output."
+        },
+        {
+          "feature_name": "SVG Converter",
+          "description": "Use the svg-converter page to convert bitmap images into SVG outputs.",
+          "user_benefit": "Helps users turn a flat image into a more editable vector format for figures, slides, and further design cleanup.",
+          "visual_need": "Screen recording of uploading or selecting a bitmap image on the svg-converter page and exporting or previewing the SVG result."
+        },
+        {
+          "feature_name": "Generate Figure Page",
+          "description": "Use the /generate-figure page to generate scientific figure drafts from prompts or figure inputs.",
+          "user_benefit": "Helps users start a scientific visual from a research idea instead of designing from a blank canvas.",
+          "visual_need": "Screen recording of the /generate-figure page, entering a prompt or figure request, and showing the generated figure."
+        },
+        {
+          "feature_name": "Online Text Editing",
+          "description": "After figure generation, users can edit text labels online inside the SVG Editor.",
+          "user_benefit": "Helps users correct labels, titles, and annotations without regenerating the entire figure.",
+          "visual_need": "Screen recording of clicking generated figure text and editing the label directly online."
+        },
+        {
+          "feature_name": "SVG Editor Editable Canvas",
+          "description": "Open generated figures in the SVG Editor and continue editing them on an editable canvas.",
+          "user_benefit": "Helps users adjust figure text, elements, and layout after generation instead of accepting a static AI image.",
+          "visual_need": "Screen recording of clicking SVG Edit, entering the SVG Editor, editing figure elements, and zooming the editable canvas."
+        },
+        {
+          "feature_name": "Editable PPT Export",
+          "description": "Export generated scientific figures as editable PPT/PPTX files.",
+          "user_benefit": "Helps users continue editing the figure in PowerPoint instead of being limited to a static image.",
+          "visual_need": "Screen recording of exporting a generated figure as an editable PPT/PPTX file."
+        },
+        {
+          "feature_name": "Office PowerPoint Editing Workflow",
+          "description": "Open the exported editable PPT in Office PowerPoint and continue editing figure elements there.",
+          "user_benefit": "Helps users fit FigPad outputs into the academic slide and paper-prep tools they already use.",
+          "visual_need": "Screen recording of opening the exported PPT in Office PowerPoint and editing text or figure elements."
         },
         {
           "feature_name": "Export Formats",
           "description": "Export scientific visuals in formats such as SVG, PPTX, and PNG.",
           "user_benefit": "Helps users use outputs in papers, slides, and further editing workflows.",
-          "visual_need": "Screen recording of export options."
+          "visual_need": "Screen recording of SVG, PPTX, and PNG export options."
         }
       ],
       "most_painful_user_scenarios": [
@@ -192,13 +228,25 @@
         "Do not say FigPad replaces professional scientific illustration in all cases.",
         "Do not say every generated figure is scientifically accurate by default.",
         "Do not claim users never need to review labels, structures, or details.",
-        "Do not claim it can perfectly generate every scientific figure type."
+        "Do not claim it can perfectly generate every scientific figure type.",
+        "Do not imply exported PPT/PPTX files will preserve every detail perfectly in all Office versions.",
+        "Do not imply bitmap-to-SVG conversion makes every image fully editable or scientifically correct by default."
       ],
       "good_tiktok_angles": [
         "I turned this ugly research sketch into a clean scientific figure.",
         "I described my experiment and got a figure draft in seconds.",
         "Making research figures doesn’t have to start from a blank canvas.",
-        "This is how I make scientific figures faster."
+        "This is how I make scientific figures faster.",
+        "I converted a flat image into an SVG so I could keep editing it.",
+        "I generated a figure, edited the text online, then exported it to PowerPoint.",
+        "Stop exporting static science figures when you still need to edit the labels."
+      ],
+      "allowed_claim_boundaries": [
+        "Can say FigPad helps generate scientific figure drafts from prompts, sketches, images, or references.",
+        "Can say FigPad supports bitmap-to-SVG conversion through the svg-converter page.",
+        "Can say users can edit generated figure text online after generation.",
+        "Can say users can export editable PPT/PPTX files and continue editing in Office PowerPoint.",
+        "Should still say users need to review scientific labels, structures, and visual accuracy."
       ]
     }
   ]

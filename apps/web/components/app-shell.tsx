@@ -51,6 +51,7 @@ export function AppShell({ children }: { children: ReactNode }) {
                 <div>2. Rewrite</div>
                 <div>3. Match</div>
                 <div>4. Preview render</div>
+                <div>5. Publish copy</div>
               </div>
             </div>
           </div>
@@ -63,7 +64,7 @@ export function AppShell({ children }: { children: ReactNode }) {
                   Research TikTok Workflow
                 </div>
                 <div className="mt-1 text-sm text-black/62">
-                  Reference analysis, script rewrite, shot matching, captioned preview render.
+                  Reference analysis, script rewrite, shot matching, captioned preview render, publishing copy.
                 </div>
               </div>
               <Link

@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:04,000
+Still using flat images in your scientific figures?
+
+2
+00:00:04,000 --> 00:00:06,500
+Just go to this website!
+
+3
+00:00:06,500 --> 00:00:08,000
+Open SVG Converter
+
+4
+00:00:08,000 --> 00:00:11,000
+Upload your bitmap image
+
+5
+00:00:11,000 --> 00:00:14,000
+Then convert it into SVG
+
+6
+00:00:14,000 --> 00:00:17,500
+No cuz it gives you an SVG result...
+
+7
+00:00:17,500 --> 00:00:21,500
+Download it and keep editing your figure assets

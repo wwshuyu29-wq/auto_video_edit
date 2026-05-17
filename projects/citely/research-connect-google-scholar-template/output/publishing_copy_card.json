@@ -1,0 +1,181 @@
+{
+  "platform": "TikTok",
+  "product_name": "Citely",
+  "reference_post": {
+    "caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+    "original_caption_note": "The downloaded reference metadata contains a typo: \"Yse\". Keep the casual urgency, but correct it to \"Use\".",
+    "rewrite_rule": "Rewrite the reference post logic: regret/mistake warning + direct website CTA + academic hashtag cluster. Do not merely reuse the script title as the publishing title."
+  },
+  "publishing_variants": [
+    {
+      "variant_id": "reference_faithful",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_reference_faithful_final.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_reference_faithful_cover.jpg",
+      "source_hook": "dont make the mistakes i did. Check AI references first",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Reference says not to repeat the creator's mistake and pushes a direct website CTA; this version rewrites that urgency around the specific product workflow shown in the video.",
+        "do_not_copy_directly": true
+      },
+      "title_options": [
+        "dont make the mistakes i did. Check AI references first"
+      ],
+      "recommended_title": "dont make the mistakes i did. Check AI references first",
+      "caption_options": [
+        "dont make the mistakes i did. Use this website before trusting an AI-generated reference!!! It helps trace sources and check citation details before you rely on them."
+      ],
+      "recommended_caption": "dont make the mistakes i did. Use this website before trusting an AI-generated reference!!! It helps trace sources and check citation details before you rely on them.",
+      "hashtags": [
+        "#citely",
+        "#citationcheck",
+        "#researchtools",
+        "#research",
+        "#phd",
+        "#literaturereview",
+        "#citation",
+        "#researchpaper",
+        "#aitools",
+        "#academictok"
+      ],
+      "keywords": [
+        "Citely",
+        "AI references",
+        "citation check",
+        "source tracing",
+        "research tools"
+      ],
+      "posting_notes": [
+        "Use the matching Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM.",
+        "Keep the caption casual and urgent like the reference post, but product-safe."
+      ],
+      "compliance_notes": [
+        "Do not say Citely guarantees 100% citation accuracy.",
+        "Do not say Citely replaces human academic judgment.",
+        "Do not encourage users to submit unchecked AI-generated references.",
+        "Frame Citely as checking, tracing, and verification support."
+      ],
+      "scores": {
+        "reference_caption_fit": 9,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 9
+      }
+    },
+    {
+      "variant_id": "verify_reference_focus",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_verify_reference_focus_final.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_verify_reference_focus_cover.jpg",
+      "source_hook": "dont submit references before checking this website",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Reference says not to repeat the creator's mistake and pushes a direct website CTA; this version rewrites that urgency around the specific product workflow shown in the video.",
+        "do_not_copy_directly": true
+      },
+      "title_options": [
+        "dont submit references before checking this website"
+      ],
+      "recommended_title": "dont submit references before checking this website",
+      "caption_options": [
+        "dont make the mistakes i did. Use this website now before trusting a reference that only looks real!!! It helps you check reference details before you submit or rely on them."
+      ],
+      "recommended_caption": "dont make the mistakes i did. Use this website now before trusting a reference that only looks real!!! It helps you check reference details before you submit or rely on them.",
+      "hashtags": [
+        "#citely",
+        "#citationcheck",
+        "#academicwriting",
+        "#research",
+        "#phd",
+        "#literaturereview",
+        "#citation",
+        "#researchpaper",
+        "#aitools",
+        "#academictok"
+      ],
+      "keywords": [
+        "reference verification",
+        "citation checker",
+        "academic writing",
+        "AI citation risk"
+      ],
+      "posting_notes": [
+        "Use the matching Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM.",
+        "Keep the caption casual and urgent like the reference post, but product-safe."
+      ],
+      "compliance_notes": [
+        "Do not say Citely guarantees 100% citation accuracy.",
+        "Do not say Citely replaces human academic judgment.",
+        "Do not encourage users to submit unchecked AI-generated references.",
+        "Frame Citely as checking, tracing, and verification support."
+      ],
+      "scores": {
+        "reference_caption_fit": 9,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 9
+      }
+    },
+    {
+      "variant_id": "find_sources_focus",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_find_sources_focus_final.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_find_sources_focus_cover.jpg",
+      "source_hook": "dont waste hours finding the source manually",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Reference says not to repeat the creator's mistake and pushes a direct website CTA; this version rewrites that urgency around the specific product workflow shown in the video.",
+        "do_not_copy_directly": true
+      },
+      "title_options": [
+        "dont waste hours finding the source manually"
+      ],
+      "recommended_title": "dont waste hours finding the source manually",
+      "caption_options": [
+        "dont make the mistakes i did. Use this website when you need to find where a claim actually comes from!!! Paste the claim and check the source trail first."
+      ],
+      "recommended_caption": "dont make the mistakes i did. Use this website when you need to find where a claim actually comes from!!! Paste the claim and check the source trail first.",
+      "hashtags": [
+        "#citely",
+        "#sourcetracing",
+        "#researchtools",
+        "#research",
+        "#phd",
+        "#literaturereview",
+        "#citation",
+        "#researchpaper",
+        "#aitools",
+        "#academictok"
+      ],
+      "keywords": [
+        "find sources",
+        "source tracing",
+        "claim checking",
+        "research workflow"
+      ],
+      "posting_notes": [
+        "Use the matching Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM.",
+        "Keep the caption casual and urgent like the reference post, but product-safe."
+      ],
+      "compliance_notes": [
+        "Do not say Citely guarantees 100% citation accuracy.",
+        "Do not say Citely replaces human academic judgment.",
+        "Do not encourage users to submit unchecked AI-generated references.",
+        "Frame Citely as checking, tracing, and verification support."
+      ],
+      "scores": {
+        "reference_caption_fit": 9,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 9
+      }
+    }
+  ],
+  "global_rules": [
+    "Publishing copy must imitate the reference post caption logic before adapting to product facts.",
+    "Use the reference rhythm: mistake/regret warning, direct website CTA, academic niche hashtags.",
+    "Do not copy the exact caption or typo directly.",
+    "Keep claims grounded in the visible video and product compliance rules.",
+    "Add TikTok trending music inside TikTok."
+  ]
+}

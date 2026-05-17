@@ -190,12 +190,17 @@ export function ArtifactReviewPanel({ slug, artifacts, assetLibrary, artifactKey
         <ShotMatchingFormEditor draft={draft} onChange={updateDraft} assetLibrary={assetLibrary} />
       ) : null}
 
-      <textarea
-        value={draft}
-        onChange={(event) => updateDraft(event.target.value)}
-        spellCheck={false}
-        className="mt-4 h-[420px] w-full resize-y border border-black/10 bg-[#111111] p-4 font-mono text-[12px] leading-5 text-white/82 outline-none focus:border-black"
-      />
+      <details className="mt-4 border border-black/10 bg-[#f8f8f4]">
+        <summary className="cursor-pointer px-4 py-3 font-mono text-[11px] uppercase tracking-[0.22em] text-black/50">
+          Raw JSON editor
+        </summary>
+        <textarea
+          value={draft}
+          onChange={(event) => updateDraft(event.target.value)}
+          spellCheck={false}
+          className="block h-[320px] w-full resize-y border-t border-black/10 bg-[#111111] p-4 font-mono text-[12px] leading-5 text-white/82 outline-none focus:border-black"
+        />
+      </details>
 
       <div className="mt-4 flex flex-wrap gap-3">
         <button

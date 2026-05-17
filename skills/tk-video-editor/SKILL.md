@@ -219,7 +219,45 @@ If subtitle burning is needed separately:
 python3 scripts/burn_subtitles.py <video.mp4> <captions.srt> <output.mp4>
 ```
 
-### 7. Local Storage Cleanup
+### 7. Publishing Copy
+
+Use `modules/publishing_copy_rewrite/schema.json`.
+
+Output:
+
+```text
+output/publishing_copy_card.json
+output/publishing_copy_delivery.md
+```
+
+Every final video delivery must include the matching cover image, captioned
+video, recommended TikTok title, recommended caption, hashtags, and keywords.
+Do not leave publishing copy hidden only inside `product_script_card.json`.
+
+Publishing copy must be grounded in:
+
+- approved product facts
+- the visible final video/subtitles
+- reference account caption logic and hashtag category
+- product compliance limits
+
+The tone should feel like TikTok creator workflow sharing, not homepage
+advertising.
+
+Do not simply reuse the product script title or script caption as the final
+publishing title/caption. The publishing copy must rewrite the reference post's
+caption logic. For the Research Connect reference pattern:
+
+```text
+dont make the mistakes i did. Use this website now!!!
+#research #phd #literaturereview #citation #researchpaper
+```
+
+preserve the regret/mistake warning, direct website CTA, and academic hashtag
+cluster while replacing the action with the product-safe workflow shown in the
+video.
+
+### 8. Local Storage Cleanup
 
 Use `scripts/cleanup_project.py` after preview/final delivery batches to control local disk usage.
 
@@ -244,7 +282,7 @@ Cleanup policy:
 - In `normal` mode, remove older versioned preview artifacts when newer `_vN` files exist.
 - Use `aggressive` only when the user explicitly wants extra cleanup of extracted reference frames/contact sheets.
 
-### 7. QA
+### 9. QA
 
 Before presenting final outputs:
 
@@ -255,7 +293,7 @@ Before presenting final outputs:
 - Verify vertical 9:16 unless otherwise requested.
 - Append reusable learnings to `references/tiktok-ops-knowledge.md` and the project knowledge base.
 
-### 8. Publishing Copy
+### 10. Publishing Copy
 
 Use `references/publishing-copy-card.md` and `modules/publishing_copy_rewrite/schema.json`.
 

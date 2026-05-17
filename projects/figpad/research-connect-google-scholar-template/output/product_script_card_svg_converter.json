@@ -1,0 +1,120 @@
+{
+  "viral_pattern_card_ref": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/viral_pattern_card.json",
+  "platform": "TikTok",
+  "video_length": "20-23s",
+  "tone": "native creator style, direct problem-solution workflow",
+  "product": {
+    "product_name": "FigPad",
+    "focus_feature": "SVG Converter",
+    "allowed_features": [
+      "SVG Converter",
+      "Vectorizer"
+    ],
+    "excluded_from_this_video": [
+      "Generate Figure Page",
+      "SVG Editor Editable Canvas",
+      "Editable PPT Export",
+      "Image to Image"
+    ],
+    "forbidden_claims": [
+      "Do not imply bitmap-to-SVG conversion makes every element perfectly editable.",
+      "Do not say the converted SVG is scientifically correct by default.",
+      "Do not say conversion is perfect for every image."
+    ]
+  },
+  "scripts": [
+    {
+      "type": "svg_converter_reference_version",
+      "style": "Google Scholar trust hook, short command subtitles, reference-like punctuation",
+      "script_title": "Still using flat images in your scientific figures?",
+      "script_angle": "turn bitmap science images into SVG/vector-style outputs",
+      "target_viewer": "researchers and students who need editable figure assets",
+      "version": "TikTok native creator style",
+      "full_script": [
+        {
+          "time": "0-4s",
+          "beat": "hook",
+          "voiceover": "Still using flat images in your scientific figures?",
+          "on_screen_text": "Still using flat images in your scientific figures?",
+          "visual_need": "Google Scholar / academic search screen as familiar research context.",
+          "preferred_clip_id": "00_google_scholar_hook",
+          "product_feature": ""
+        },
+        {
+          "time": "4-6.5s",
+          "beat": "strong_cta",
+          "voiceover": "Just go to this website!",
+          "on_screen_text": "Just go to this website!",
+          "visual_need": "FigPad landing page with product identity visible.",
+          "preferred_clip_id": "02_figpad_landing_page",
+          "product_feature": "SVG Converter"
+        },
+        {
+          "time": "6.5-8s",
+          "beat": "feature_entry",
+          "voiceover": "Open SVG Converter",
+          "on_screen_text": "Open SVG Converter",
+          "visual_need": "SVG Converter page reveal.",
+          "preferred_clip_id": "11_svg_converter_page",
+          "product_feature": "SVG Converter"
+        },
+        {
+          "time": "8-11s",
+          "beat": "upload_bitmap",
+          "voiceover": "Upload your bitmap image",
+          "on_screen_text": "Upload your bitmap image",
+          "visual_need": "Bitmap image loaded into SVG Converter.",
+          "preferred_clip_id": "12_svg_converter_upload_convert",
+          "product_feature": "SVG Converter"
+        },
+        {
+          "time": "11-14s",
+          "beat": "convert_svg",
+          "voiceover": "Then convert it into SVG",
+          "on_screen_text": "Then convert it into SVG",
+          "visual_need": "Conversion action and converted preview.",
+          "preferred_clip_id": "12_svg_converter_upload_convert",
+          "product_feature": "SVG Converter"
+        },
+        {
+          "time": "14-17.5s",
+          "beat": "result_proof",
+          "voiceover": "No cuz it gives you an SVG result...",
+          "on_screen_text": "No cuz it gives you an SVG result...",
+          "visual_need": "Conversion result page with SVG output visible.",
+          "preferred_clip_id": "13_svg_converter_download_svg",
+          "product_feature": "Vectorizer"
+        },
+        {
+          "time": "17.5-21.5s",
+          "beat": "download_cta",
+          "voiceover": "Download it and keep editing your figure assets",
+          "on_screen_text": "Download it and keep editing your figure assets",
+          "visual_need": "Download button or downloaded SVG visible.",
+          "preferred_clip_id": "13_svg_converter_download_svg",
+          "product_feature": "SVG Converter"
+        }
+      ],
+      "caption": "Flat bitmap figure assets are painful when you still need to edit them.",
+      "hashtags": [
+        "#scientificfigure",
+        "#svg",
+        "#researchtools",
+        "#aitools",
+        "#gradstudent"
+      ],
+      "compliance_notes": [
+        "Frames conversion as an editable SVG/vector-style workflow, not a perfect conversion guarantee.",
+        "Does not claim every bitmap becomes perfectly editable.",
+        "Does not claim scientific accuracy by default."
+      ]
+    }
+  ],
+  "scores": {
+    "hook_strength": 8,
+    "product_fit": 9,
+    "native_tiktok_feel": 8,
+    "clarity": 8,
+    "conversion_potential": 8
+  }
+}

@@ -128,7 +128,6 @@ function isDefaultAssetLabel(asset: NonNullable<AssetLibrary["assets"]>[number])
 export async function runProjectPreflight(projectDir: string): Promise<PreflightReport> {
   const checks: PreflightCheck[] = [];
   const jobPath = path.join(projectDir, "project_job.json");
-  const fullInputPath = path.join(projectDir, "full_workflow_input.json");
   const assetLibraryPath = path.join(projectDir, "output", "asset_library.json");
 
   addCheck(
@@ -152,6 +151,14 @@ export async function runProjectPreflight(projectDir: string): Promise<Preflight
   addCheck(checks, await checkBinary("ffprobe"));
 
   const job = await readJson<ProjectJob>(jobPath);
+  const fullInputPath = resolveProjectPath(projectDir, job?.source?.full_workflow_input) || path.join(projectDir, "full_workflow_input.json");
+  const fullInput = await readJson<FullWorkflowInput>(fullInputPath);
+  const stages = job?.stages || [];
+  const needsFullInput = stages.some(
+    (stage) => stage.mode === "run" && (stage.name === "viral_deconstruction" || stage.name === "product_script_rewrite")
+  );
+  const reusesViralDeconstruction = stages.some((stage) => stage.name === "viral_deconstruction" && stage.mode === "reuse_existing");
+
   addCheck(
     checks,
     job
@@ -169,7 +176,6 @@ export async function runProjectPreflight(projectDir: string): Promise<Preflight
         }
   );
 
-  const fullInput = await readJson<FullWorkflowInput>(fullInputPath);
   addCheck(
     checks,
     fullInput
@@ -179,6 +185,13 @@ export async function runProjectPreflight(projectDir: string): Promise<Preflight
           severity: "pass",
           message: "full_workflow_input.json exists and can be read."
         }
+      : !needsFullInput
+        ? {
+            id: "full_workflow_input",
+            label: "Workflow input",
+            severity: "pass",
+            message: "Not required because the project is reusing existing workflow artifacts."
+          }
       : {
           id: "full_workflow_input",
           label: "Workflow input",
@@ -219,6 +232,13 @@ export async function runProjectPreflight(projectDir: string): Promise<Preflight
           severity: "pass",
           message: "Reference account or video URL is present."
         }
+      : reusesViralDeconstruction
+        ? {
+            id: "reference_input",
+            label: "Reference input",
+            severity: "pass",
+            message: "Reference logic is reused from an existing viral pattern card."
+          }
       : {
           id: "reference_input",
           label: "Reference input",

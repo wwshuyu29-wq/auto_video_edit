@@ -1,0 +1,21 @@
+{
+  "status": "ready_for_review",
+  "delivery_rule": "Cover image + corresponding captioned video. No voiceover/BGM; add TikTok trending music inside TikTok.",
+  "publishing_note": "FigPad videos are split by feature. First video focuses on Generate Figure -> SVG Editor -> editable canvas. Second video focuses on SVG Converter -> bitmap to SVG -> download SVG. Third video focuses on editable PPT export for downstream PowerPoint workflow.",
+  "variants": {
+    "figpad_svg_editor_v1": {
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_svg_editor_v1_cover.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_svg_editor_v1_video.mp4"
+    },
+    "figpad_svg_converter_v1": {
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_svg_converter_v1_cover.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_svg_converter_v1_video.mp4"
+    },
+    "figpad_ppt_export_v1": {
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_ppt_export_v1_cover.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_ppt_export_v1_video.mp4"
+    }
+  },
+  "publishing_copy_card": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/publishing_copy_card.json",
+  "publishing_copy_delivery": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/publishing_copy_delivery.md"
+}

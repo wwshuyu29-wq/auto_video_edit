@@ -1,0 +1,108 @@
+{
+  "account_url": "https://www.tiktok.com/@research.connect",
+  "target_platform": "TikTok",
+  "analysis_goal": "提炼可复用的 Citely 产品营销视频结构",
+  "source_reference": {
+    "video_url": "https://www.tiktok.com/@research.connect/video/7556287949361450248",
+    "local_video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/references/7556287949361450248/reference.mp4",
+    "local_timeline": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/references/7556287949361450248/reference_caption_sheet_large.jpg"
+  },
+  "account_positioning": "这个账号用学生/研究者的吐槽口吻，把 Google Scholar 或论文写作痛点包装成一个低门槛工具发现。",
+  "main_content_logic": "手动研究痛点吐槽 -> 网站反转 CTA -> 极简单输入动作 -> 等待/生成 -> 结果冲击 -> 额外功能证明 -> casual ending",
+  "caption_logic": {
+    "visible_sequence": [
+      "so you're telling me after I just finished writing my RRL/literature review for hours......",
+      "that this website could've done it for me in less than 5 mins.....",
+      "just type your topic",
+      "wait for it to load (2-3 mins)",
+      "its as easy as that....",
+      "no cuz wdym 23 references in 3 mins when i only found 3 for 4 hours looking smh...",
+      "And you can hover in text see cited papers...",
+      "and it has export too...",
+      "for editability..... just wow smh..."
+    ],
+    "sentence_roles": [
+      "manual-effort pain hook",
+      "strong website CTA",
+      "simple input instruction",
+      "wait/load expectation",
+      "ease reinforcement",
+      "result shock",
+      "bonus citation/source proof",
+      "bonus export/workflow proof",
+      "casual benefit ending"
+    ],
+    "punctuation_pattern": "lowercase disbelief hook, long ellipses, simple command, parenthetical timing, 'no cuz wdym' result shock, ending with 'just wow smh...'",
+    "reuse_rule": "复用句式、节奏和语气；产品结果必须改成 Citely 真实功能，避免速度/准确率/替代人工的夸张承诺。"
+  },
+  "viral_patterns": [
+    {
+      "pattern_name": "Casual disbelief tool discovery",
+      "hook_type": "wasted-effort吐槽 + 网站反转",
+      "hook_examples": [
+        "so you're telling me after I just finished writing my RRL/literature review for hours......",
+        "that this website could've done it for me in less than 5 mins....."
+      ],
+      "opening_0_3s": "先展示熟悉的研究场景或 Google Scholar，然后用'我刚刚浪费了这么久'制造强烈代入。",
+      "middle_structure": [
+        "用 this website 做强 CTA，不像广告名词，而像朋友发现网站。",
+        "只展示一个低门槛动作，例如 paste/type/check。",
+        "用手持屏幕镜头证明工具真的在跑，而不是只讲功能。",
+        "用结果画面承接 no cuz wdym 的惊讶语气。"
+      ],
+      "ending_cta": "不硬性购买，用 'just wow smh' 这种 creator reaction 结束，降低广告感。",
+      "visual_style": {
+        "camera": "手持拍屏，略歪、略晃，保留真实感",
+        "pace": "2-4秒一个字幕 beat，结果 proof 稍微多停留",
+        "subtitle_style": "白色粗体黑描边，居中偏下，大字幕短句，保留 ellipses",
+        "music": "适合后期在 TikTok 内加热门 BGM，不需要本地配音"
+      },
+      "why_it_works": [
+        "开头不是介绍工具，而是表达观众已经经历过的懊悔感。",
+        "this website 的说法比产品广告更像 creator 分享。",
+        "简单动作让观众觉得门槛低。",
+        "结果 shock 用具体画面和口语反应放大转发/收藏动机。"
+      ],
+      "reuse_risk": "不能照搬速度、数量、自动完成论文等承诺；Citely 只能表达帮助查找来源、检查引用、查看 citation details。"
+    }
+  ],
+  "recommended_templates": [
+    {
+      "template_name": "Disbelief-Website-Check-Proof",
+      "timeline": [
+        {
+          "time": "0-4s",
+          "purpose": "钩子",
+          "content": "说出用户差点信任/提交未检查引用的懊悔感。"
+        },
+        {
+          "time": "4-7s",
+          "purpose": "网站 CTA",
+          "content": "用 this website 反转，展示 Citely landing page。"
+        },
+        {
+          "time": "7-13s",
+          "purpose": "输入动作",
+          "content": "粘贴 claim/reference，展示 Find Sources 或 Verify References。"
+        },
+        {
+          "time": "13-20s",
+          "purpose": "结果证明",
+          "content": "展示 source results 或 verification result。"
+        },
+        {
+          "time": "20-25s",
+          "purpose": "补充证明",
+          "content": "展示 reference details / citation metadata，并用 casual ending 结束。"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "hook_clarity": 9,
+    "structure_reusability": 9,
+    "product_adaptability": 8,
+    "copy_risk": 5,
+    "evidence_strength": 8
+  }
+}

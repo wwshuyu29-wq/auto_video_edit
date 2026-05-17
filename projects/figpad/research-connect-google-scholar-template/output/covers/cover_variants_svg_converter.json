@@ -1,0 +1,25 @@
+{
+  "svg_converter_reference": {
+    "text": "Still using flat images in your scientific figures?",
+    "style": {
+      "lines": [
+        "Still using",
+        "flat images in your",
+        "scientific figures?"
+      ],
+      "font_size": 66,
+      "line_gap": 8,
+      "y_ratio": 0.41,
+      "max_width": 860,
+      "highlight": [
+        "flat"
+      ],
+      "highlight_fill": [
+        255,
+        235,
+        112,
+        255
+      ]
+    }
+  }
+}

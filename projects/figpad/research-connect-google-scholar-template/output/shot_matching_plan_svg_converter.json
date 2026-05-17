@@ -1,0 +1,223 @@
+{
+  "source_script_card": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/product_script_card_svg_converter.json",
+  "selected_script_type": "svg_converter_reference_version",
+  "editing_style": {
+    "pace": "fast",
+    "average_clip_duration": "1.5-4.0s",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "caption_style": "PNG overlays, bold white text with black outline, Google Scholar template"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-4s",
+      "voiceover": "Still using flat images in your scientific figures?",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.2,
+      "clip_end": 4.4,
+      "playback_speed": 1.05,
+      "speed_reason": "Slight speed-up keeps the Google Scholar hook inside the 4s beat without looping.",
+      "reason": "Google Scholar gives the same academic trust doorway as the existing template.",
+      "on_screen_text": "Still using flat images in your scientific figures?",
+      "caption_style": {
+        "lines": [
+          "Still using",
+          "flat images in your",
+          "scientific figures?"
+        ],
+        "font_size": 66,
+        "line_gap": 8,
+        "y_ratio": 0.41,
+        "max_width": 860,
+        "highlight_terms": [
+          "flat"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "strong_cta",
+      "time": "4-6.5s",
+      "voiceover": "Just go to this website!",
+      "clip_id": "02_figpad_landing_page",
+      "clip_start": 0.5,
+      "clip_end": 4.0,
+      "playback_speed": 1.4,
+      "speed_reason": "Landing page is compressed but still leaves the FigPad brand and page context visible.",
+      "reason": "Second beat mirrors the reference video's strong website CTA.",
+      "on_screen_text": "Just go to this website!",
+      "caption_style": {
+        "lines": [
+          "Just go to",
+          "this website!"
+        ],
+        "font_size": 72,
+        "line_gap": 6,
+        "y_ratio": 0.43,
+        "max_width": 840
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "feature_entry",
+      "time": "6.5-8s",
+      "voiceover": "Open SVG Converter",
+      "clip_id": "11_svg_converter_page",
+      "clip_start": 0.0,
+      "clip_end": 1.2,
+      "playback_speed": 0.8,
+      "speed_reason": "The converter page clip is short, so a slight slow-down/freeze tail makes the page readable.",
+      "reason": "Shows the dedicated SVG Converter page before the upload action.",
+      "on_screen_text": "Open SVG Converter",
+      "caption_style": {
+        "lines": [
+          "Open",
+          "SVG Converter"
+        ],
+        "font_size": 70,
+        "line_gap": 6,
+        "y_ratio": 0.45,
+        "max_width": 780,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "upload_bitmap",
+      "time": "8-11s",
+      "voiceover": "Upload your bitmap image",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 0.1,
+      "clip_end": 2.4,
+      "playback_speed": 0.78,
+      "speed_reason": "A slight slow-down keeps the uploaded bitmap visible long enough for the caption.",
+      "reason": "Shows bitmap input in the SVG Converter workflow.",
+      "on_screen_text": "Upload your bitmap image",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "convert_svg",
+      "time": "11-14s",
+      "voiceover": "Then convert it into SVG",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 2.2,
+      "clip_end": 4.45,
+      "playback_speed": 0.75,
+      "speed_reason": "Use the later conversion action and slow/freeze the tail so the converting state is visible without looping.",
+      "reason": "Shows the conversion action and transition toward output.",
+      "on_screen_text": "Then convert it into SVG",
+      "caption_style": {
+        "lines": [
+          "Then convert it",
+          "into SVG"
+        ],
+        "font_size": 66,
+        "line_gap": 8,
+        "y_ratio": 0.43,
+        "max_width": 820,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "result_proof",
+      "time": "14-17.5s",
+      "voiceover": "No cuz it gives you an SVG result...",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 0.0,
+      "clip_end": 2.8,
+      "playback_speed": 0.8,
+      "speed_reason": "The result page should stay visible so the viewer sees the converted SVG.",
+      "reason": "This is the main proof beat: conversion result and SVG output are visible.",
+      "on_screen_text": "No cuz it gives you an SVG result...",
+      "caption_style": {
+        "lines": [
+          "No cuz it gives you",
+          "an SVG result..."
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.39,
+        "max_width": 860,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "download_cta",
+      "time": "17.5-21.5s",
+      "voiceover": "Download it and keep editing your figure assets",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 2.2,
+      "clip_end": 4.15,
+      "playback_speed": 0.55,
+      "speed_reason": "Slow/freeze the download moment so the final proof is readable without replaying the clip from the start.",
+      "reason": "Shows the download button/file proof while preserving the product-safe editability message.",
+      "on_screen_text": "Download it and keep editing your figure assets",
+      "caption_style": {
+        "lines": [
+          "Download it and",
+          "keep editing your",
+          "figure assets"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.42,
+        "max_width": 820
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "This cut intentionally excludes Generate Figure, SVG Editor canvas editing, PPT export, and image-to-image.",
+    "SVG conversion is described as a workflow for SVG/vector-style output, not a perfect conversion guarantee.",
+    "The final two beats use different ranges from the same result clip and slow/freeze the tail to avoid flash-frame looping."
+  ],
+  "needs_script_revision": false,
+  "scores": {
+    "visual_match": 8,
+    "pace_match": 8,
+    "asset_quality": 8,
+    "opening_strength": 8,
+    "product_proof_strength": 8
+  }
+}

@@ -246,6 +246,50 @@ When testing, keep footage fixed and only compare caption angle first.
 - Whenever the user asks for changes, summarize what went wrong, what rule should change, and write the learning into this knowledge base.
 - Apply the same learning to the skill reference files when it affects future workflow behavior.
 
+## FigPad Product Scope Update
+
+FigPad should now be treated as a scientific figure workflow product, not only a simple image generator.
+
+Confirmed product functions for future scripts:
+
+- `/generate-figure` page: generate scientific figure drafts from prompts or figure inputs.
+- Online text editing after generation: users can edit labels/text directly in the generated figure through `SVG Editor`.
+- `SVG Editor`: confirmed product wording for the post-generation editor.
+- `editable canvas`: confirmed public-facing wording for the canvas capability. Avoid saying `infinite canvas` unless the user later approves it.
+- `svg-converter` page: convert bitmap/raster images into SVG or vector-style outputs.
+- Editable PPT/PPTX export: generated figures can be exported as editable PowerPoint files.
+- Office PowerPoint continuation: users can open the exported PPT/PPTX in Office PowerPoint and keep editing.
+
+FigPad TikTok script implications:
+
+- Strongest creator-style angle: `generate a figure -> edit the text -> export editable PPT -> keep editing in PowerPoint`.
+- Do not describe FigPad only as `AI text to image`; the more valuable proof is editability after generation.
+- Product proof clips should show actual editability: clicking text, changing labels, exporting PPT, or opening the result in PowerPoint.
+- For Google Scholar template videos, the second CTA should still reveal the FigPad landing page or product page before going into `/generate-figure`.
+- If using SVG conversion, the visual proof must show a bitmap before and an SVG/vector-like result after.
+
+Compliance boundaries:
+
+- Do not claim every scientific figure is automatically accurate.
+- Do not claim generated figures are journal-ready without user review.
+- Do not claim bitmap-to-SVG conversion makes every element perfectly editable.
+- Do not claim PPT export preserves every detail perfectly across all Office versions.
+
+## FigPad Feature-Split Production Rule
+
+FigPad has too many visible product features to cover well in one short TikTok. Do not make a single overcrowded "all features" video.
+
+Preferred production strategy:
+
+- One video should focus on one core function story.
+- Two short functions can be combined only when they form one natural workflow.
+- Strong first FigPad story: `generate figure -> click SVG Edit -> enter SVG Editor -> edit on editable canvas -> show zoom/pan`.
+- Separate story: `SVG Converter -> upload bitmap -> convert to SVG -> download SVG`.
+- Separate story or ending proof: `export editable PPT -> open result in Office PowerPoint`.
+- Separate story: image-to-image workflow.
+
+For FigPad, the highest-value differentiator is not just generation; it is editability after generation.
+
 ## Citely Google Scholar Template Material Intake
 
 - Citely should reuse the Google Scholar trust-doorway template: Google Scholar opening/cover first, then Citely website/workflow proof.
@@ -402,6 +446,62 @@ When testing, keep footage fixed and only compare caption angle first.
   - old versioned previews when newer `_vN` versions exist.
 - Use `normal` cleanup after a delivery round. Use `aggressive` only when explicitly cleaning extracted reference frames/contact sheets that can be regenerated.
 - Never delete raw user footage or current delivery outputs without explicit user instruction.
+
+## Publishing Copy Delivery Rule
+
+- Every final video delivery must include four paired outputs:
+  - cover image
+  - captioned video
+  - publishing copy card with recommended TikTok title, caption, hashtags, and keywords
+  - readable publishing copy delivery markdown for manual upload
+- Do not treat publishing copy as optional or hide it only inside `product_script_card.json`.
+- Standard file names:
+  - `output/publishing_copy_card.json`
+  - `output/publishing_copy_delivery.md`
+- The final delivery manifest should point to these files through:
+  - `publishing_copy_card`
+  - `publishing_copy_delivery`
+- The web app should expose publishing copy as a separate `Publish` workflow step after `Render`.
+- Publishing copy must be grounded in:
+  - approved product facts
+  - the visible final video/subtitles
+  - reference account caption logic and hashtag category
+  - product compliance limits
+- Publishing copy must imitate and rewrite the reference video's post caption logic, not simply reuse the product script title or script caption.
+- For the Research Connect reference post `dont make the mistakes i did. Yse this website now!!!#research #phd #literaturereview #citation #researchpaper`, preserve the logic but correct the typo:
+  - regret / mistake warning: `dont make the mistakes i did`
+  - direct CTA: `Use this website now`
+  - academic hashtag cluster: `#research #phd #literaturereview #citation #researchpaper`
+  - adapt the product-specific action safely, e.g. `check AI references first`, `edit your AI figures after generation`, `start your literature review with real papers`
+- Do not let the publishing copy become a neutral summary such as only `A citation can look real and still need checking.` That is acceptable as a script caption but too weak as final TikTok publishing copy.
+- Copy tone: TikTok creator workflow sharing, not homepage advertising.
+- Required per video variant:
+  - `recommended_title`
+  - `recommended_caption`
+  - `hashtags`
+  - `keywords`
+  - `posting_notes`
+  - `compliance_notes`
+
+## Reflection: Publishing Copy Reference-Logic Mistake
+
+- Mistake: I initially treated TikTok publishing title/caption like a light extension of the product script card. This made the copy too neutral and summary-like, instead of clearly imitating the reference video's post caption logic.
+- Why it happened: I focused on the final video subtitles and product safety, but did not explicitly start from the reference post's caption pattern. For this workflow, that is the wrong order.
+- Correct order:
+  1. Read the reference video's actual post caption/title/hashtags.
+  2. Extract the publishing logic, not only the meaning. For example: regret warning + direct CTA + academic hashtag cluster.
+  3. Rewrite that logic around the product workflow shown in the final video.
+  4. Check the rewrite against product facts and forbidden claims.
+  5. Pair each final video and cover with its own recommended title, caption, hashtags, and keywords.
+- For the Research Connect pattern, do not replace the reference-style caption with a generic educational summary. The approved logic is:
+  - `dont make the mistakes i did`
+  - `Use this website now!!!`
+  - academic tags such as `#research #phd #literaturereview #citation #researchpaper`
+- Correct product-safe rewrites should still sound like the reference post, for example:
+  - `dont make the mistakes i did. Use this website before trusting an AI-generated reference!!!`
+  - `dont make the mistakes i did. Use this website when your scientific figure still needs editing!!!`
+  - `dont make the mistakes i did. Use this website before opening 50 random research tabs!!!`
+- QA check before delivery: If the recommended title/caption could have been written without seeing the reference post, it is not good enough. Revise it until the reference post logic is visible while still staying product-safe.
 
 ## Native Emoji Overlay QA Fix
 

@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import type { ProjectDetail } from "@/lib/repo-data";
 import { Badge } from "@/components/ui/badge";
-import { ButtonLink } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
@@ -36,6 +36,12 @@ const steps = [
     label: "Render",
     href: "/render",
     description: "Worker, previews, delivery"
+  },
+  {
+    key: "publish",
+    label: "Publish",
+    href: "/publish",
+    description: "Title, caption, tags"
   }
 ] as const;
 
@@ -56,7 +62,7 @@ export function ProjectWorkflowShell({
 }) {
   return (
     <div className="flex flex-col gap-5">
-      <Card>
+      <Card className="rounded-sm border-[#d8d6cf] bg-[#f7f6f1] shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]">
         <CardContent className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <div className="flex flex-wrap items-center gap-2">
@@ -75,15 +81,17 @@ export function ProjectWorkflowShell({
             </div>
           </div>
           <div className="flex gap-2">
-            <ButtonLink href="/" variant="outline">
+            <Link href="/" className={buttonVariants({ variant: "outline", size: "lg" })}>
               All Projects
-            </ButtonLink>
-            <ButtonLink href={`/projects/${project.slug}/render`}>Run / Export</ButtonLink>
+            </Link>
+            <Link href={`/projects/${project.slug}/render`} className={buttonVariants({ size: "lg" })}>
+              Run / Export
+            </Link>
           </div>
         </CardContent>
       </Card>
 
-      <div className="grid gap-3 lg:grid-cols-5">
+      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-6">
         {steps.map((step, index) => {
           const isActive = active === step.key;
           return (

@@ -1,0 +1,194 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.0,
+      "text": "Still using flat images in your scientific figures?",
+      "beat": "hook",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.2,
+      "clip_end": 4.4,
+      "playback_speed": 1.05,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Still using",
+          "flat images in your",
+          "scientific figures?"
+        ],
+        "font_size": 66,
+        "line_gap": 8,
+        "y_ratio": 0.41,
+        "max_width": 860,
+        "highlight_terms": [
+          "flat"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 4.0,
+      "end": 6.5,
+      "duration": 2.5,
+      "text": "Just go to this website!",
+      "beat": "strong_cta",
+      "clip_id": "02_figpad_landing_page",
+      "clip_start": 0.5,
+      "clip_end": 4.0,
+      "playback_speed": 1.4,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Just go to",
+          "this website!"
+        ],
+        "font_size": 72,
+        "line_gap": 6,
+        "y_ratio": 0.43,
+        "max_width": 840
+      }
+    },
+    {
+      "index": 2,
+      "start": 6.5,
+      "end": 8.0,
+      "duration": 1.5,
+      "text": "Open SVG Converter",
+      "beat": "feature_entry",
+      "clip_id": "11_svg_converter_page",
+      "clip_start": 0.0,
+      "clip_end": 1.2,
+      "playback_speed": 0.8,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Open",
+          "SVG Converter"
+        ],
+        "font_size": 70,
+        "line_gap": 6,
+        "y_ratio": 0.45,
+        "max_width": 780,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.0,
+      "end": 11.0,
+      "duration": 3.0,
+      "text": "Upload your bitmap image",
+      "beat": "upload_bitmap",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 0.1,
+      "clip_end": 2.4,
+      "playback_speed": 0.78,
+      "subtitle_priority": "normal",
+      "caption_style": {}
+    },
+    {
+      "index": 4,
+      "start": 11.0,
+      "end": 14.0,
+      "duration": 3.0,
+      "text": "Then convert it into SVG",
+      "beat": "convert_svg",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 2.2,
+      "clip_end": 4.45,
+      "playback_speed": 0.75,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Then convert it",
+          "into SVG"
+        ],
+        "font_size": 66,
+        "line_gap": 8,
+        "y_ratio": 0.43,
+        "max_width": 820,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 14.0,
+      "end": 17.5,
+      "duration": 3.5,
+      "text": "No cuz it gives you an SVG result...",
+      "beat": "result_proof",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 0.0,
+      "clip_end": 2.8,
+      "playback_speed": 0.8,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "No cuz it gives you",
+          "an SVG result..."
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.39,
+        "max_width": 860,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "start": 17.5,
+      "end": 21.5,
+      "duration": 4.0,
+      "text": "Download it and keep editing your figure assets",
+      "beat": "download_cta",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 2.2,
+      "clip_end": 4.15,
+      "playback_speed": 0.55,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "Download it and",
+          "keep editing your",
+          "figure assets"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.42,
+        "max_width": 820
+      }
+    }
+  ]
+}

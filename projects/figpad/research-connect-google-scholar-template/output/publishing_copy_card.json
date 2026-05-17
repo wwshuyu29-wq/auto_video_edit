@@ -1,0 +1,182 @@
+{
+  "platform": "TikTok",
+  "product_name": "FigPad",
+  "reference_post": {
+    "caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+    "original_caption_note": "The downloaded reference metadata contains a typo: \"Yse\". Keep the casual urgency, but correct it to \"Use\".",
+    "rewrite_rule": "Rewrite the reference post logic: regret/mistake warning + direct website CTA + academic hashtag cluster. Do not merely reuse the script title as the publishing title."
+  },
+  "publishing_variants": [
+    {
+      "variant_id": "figpad_svg_editor_v1",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_svg_editor_v1_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_svg_editor_v1_cover.jpg",
+      "source_hook": "dont make the mistakes i did. Edit your AI figures after generation",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Reference says not to repeat the creator's mistake and pushes a direct website CTA; this version rewrites that urgency around the specific product workflow shown in the video.",
+        "do_not_copy_directly": true
+      },
+      "title_options": [
+        "dont make the mistakes i did. Edit your AI figures after generation"
+      ],
+      "recommended_title": "dont make the mistakes i did. Edit your AI figures after generation",
+      "caption_options": [
+        "dont make the mistakes i did. Use this website when your scientific figure still needs editing!!! Generate a figure draft, open SVG Editor, and keep adjusting labels and layout."
+      ],
+      "recommended_caption": "dont make the mistakes i did. Use this website when your scientific figure still needs editing!!! Generate a figure draft, open SVG Editor, and keep adjusting labels and layout.",
+      "hashtags": [
+        "#figpad",
+        "#scientificfigure",
+        "#researchtools",
+        "#research",
+        "#phd",
+        "#literaturereview",
+        "#citation",
+        "#researchpaper",
+        "#aitools",
+        "#academictok"
+      ],
+      "keywords": [
+        "FigPad",
+        "scientific figure",
+        "SVG editor",
+        "editable canvas",
+        "research tools"
+      ],
+      "posting_notes": [
+        "Use the matching Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM.",
+        "Keep the caption casual and urgent like the reference post, but product-safe."
+      ],
+      "compliance_notes": [
+        "Do not say FigPad guarantees journal-ready figures without editing.",
+        "Do not say every generated figure is scientifically accurate by default.",
+        "Do not imply bitmap-to-SVG conversion makes every image fully editable or scientifically correct.",
+        "Tell users to review labels, structures, and visual accuracy."
+      ],
+      "scores": {
+        "reference_caption_fit": 9,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 9
+      }
+    },
+    {
+      "variant_id": "figpad_svg_converter_v1",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_svg_converter_v1_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_svg_converter_v1_cover.jpg",
+      "source_hook": "dont stay stuck with flat figure images",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Reference says not to repeat the creator's mistake and pushes a direct website CTA; this version rewrites that urgency around the specific product workflow shown in the video.",
+        "do_not_copy_directly": true
+      },
+      "title_options": [
+        "dont stay stuck with flat figure images"
+      ],
+      "recommended_title": "dont stay stuck with flat figure images",
+      "caption_options": [
+        "dont make the mistakes i did. Use this website when your figure asset is still a flat bitmap!!! Convert it into SVG, then keep editing the visual workflow."
+      ],
+      "recommended_caption": "dont make the mistakes i did. Use this website when your figure asset is still a flat bitmap!!! Convert it into SVG, then keep editing the visual workflow.",
+      "hashtags": [
+        "#figpad",
+        "#scientificfigure",
+        "#svg",
+        "#research",
+        "#phd",
+        "#literaturereview",
+        "#citation",
+        "#researchpaper",
+        "#aitools",
+        "#academictok"
+      ],
+      "keywords": [
+        "FigPad",
+        "SVG converter",
+        "bitmap to SVG",
+        "scientific figure assets"
+      ],
+      "posting_notes": [
+        "Use the matching Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM.",
+        "Keep the caption casual and urgent like the reference post, but product-safe."
+      ],
+      "compliance_notes": [
+        "Do not say FigPad guarantees journal-ready figures without editing.",
+        "Do not say every generated figure is scientifically accurate by default.",
+        "Do not imply bitmap-to-SVG conversion makes every image fully editable or scientifically correct.",
+        "Tell users to review labels, structures, and visual accuracy."
+      ],
+      "scores": {
+        "reference_caption_fit": 9,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 9
+      }
+    },
+    {
+      "variant_id": "figpad_ppt_export_v1",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_ppt_export_v1_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_ppt_export_v1_cover.jpg",
+      "source_hook": "dont make the mistakes i did. Export your AI figure into editable PPT",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Reference says not to repeat the creator's mistake and pushes a direct website CTA; this version rewrites that urgency around FigPad's PPT export workflow shown in the video.",
+        "do_not_copy_directly": true
+      },
+      "title_options": [
+        "dont make the mistakes i did. Export your AI figure into editable PPT"
+      ],
+      "recommended_title": "dont make the mistakes i did. Export your AI figure into editable PPT",
+      "caption_options": [
+        "dont make the mistakes i did. Use this website when your AI figure needs to become an editable PPT!!! Generate the figure, export it, then keep working in PowerPoint."
+      ],
+      "recommended_caption": "dont make the mistakes i did. Use this website when your AI figure needs to become an editable PPT!!! Generate the figure, export it, then keep working in PowerPoint.",
+      "hashtags": [
+        "#figpad",
+        "#scientificfigure",
+        "#powerpoint",
+        "#research",
+        "#phd",
+        "#literaturereview",
+        "#citation",
+        "#researchpaper",
+        "#aitools",
+        "#academictok"
+      ],
+      "keywords": [
+        "FigPad",
+        "editable PPT",
+        "scientific figure export",
+        "PowerPoint workflow",
+        "research tools"
+      ],
+      "posting_notes": [
+        "Use the matching Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM.",
+        "This version uses the re-uploaded valid export PPT recording for the export action beat."
+      ],
+      "compliance_notes": [
+        "Do not say FigPad guarantees journal-ready figures without editing.",
+        "Do not say every generated figure is scientifically accurate by default.",
+        "Do not say PPT export preserves every detail perfectly in every Office version.",
+        "Tell users to review labels, structures, and visual accuracy."
+      ],
+      "scores": {
+        "reference_caption_fit": 9,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 9
+      }
+    }
+  ],
+  "global_rules": [
+    "Publishing copy must imitate the reference post caption logic before adapting to product facts.",
+    "Use the reference rhythm: mistake/regret warning, direct website CTA, academic niche hashtags.",
+    "Do not copy the exact caption or typo directly.",
+    "Keep claims grounded in the visible video and product compliance rules.",
+    "Add TikTok trending music inside TikTok."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "ppt_export_reference": {
+    "text": "How to turn an AI figure into an editable PPT",
+    "style": {
+      "lines": [
+        "How to turn",
+        "an AI figure into",
+        "an editable PPT"
+      ],
+      "font_size": 64,
+      "line_gap": 7,
+      "y_ratio": 0.405,
+      "max_width": 860,
+      "highlight": [
+        "PPT"
+      ],
+      "highlight_fill": [
+        255,
+        235,
+        112,
+        255
+      ],
+      "band_alpha": 10
+    }
+  }
+}

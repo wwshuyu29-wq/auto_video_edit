@@ -26,10 +26,36 @@ export async function GET(request: Request) {
   }
 
   try {
+    const type = contentType(resolved);
+    const range = request.headers.get("range");
+    const stat = await fs.stat(resolved);
+
+    if (range && type.startsWith("video/")) {
+      const [startText, endText] = range.replace(/bytes=/, "").split("-");
+      const start = Number.parseInt(startText, 10);
+      const end = endText ? Number.parseInt(endText, 10) : Math.min(start + 1024 * 1024, stat.size - 1);
+      const safeStart = Number.isFinite(start) ? start : 0;
+      const safeEnd = Number.isFinite(end) ? Math.min(end, stat.size - 1) : stat.size - 1;
+      const data = await fs.readFile(resolved);
+      const chunk = data.subarray(safeStart, safeEnd + 1);
+      return new Response(chunk, {
+        status: 206,
+        headers: {
+          "Content-Type": type,
+          "Content-Length": String(chunk.length),
+          "Content-Range": `bytes ${safeStart}-${safeEnd}/${stat.size}`,
+          "Accept-Ranges": "bytes",
+          "Cache-Control": "no-store"
+        }
+      });
+    }
+
     const data = await fs.readFile(resolved);
     return new Response(data, {
       headers: {
-        "Content-Type": contentType(resolved),
+        "Content-Type": type,
+        "Content-Length": String(stat.size),
+        "Accept-Ranges": type.startsWith("video/") ? "bytes" : "none",
         "Cache-Control": "no-store"
       }
     });
