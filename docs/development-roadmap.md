@@ -26,7 +26,8 @@
 - [x] Add first-pass manual labeling for uploaded footage.
 - [x] Add worker preflight checks before running a project.
 - [x] Add editable artifact review screens before each worker stage.
-- [ ] Add structured form editors for scripts and shot plans beyond raw JSON.
+- [x] Add structured form editor for product script cards.
+- [ ] Add structured form editor for shot matching plans.
 
 ## Phase 3: Worker MVP
 

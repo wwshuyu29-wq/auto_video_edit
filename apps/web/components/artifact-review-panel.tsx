@@ -2,6 +2,7 @@
 
 import { useMemo, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
+import { ProductScriptFormEditor } from "@/components/product-script-form-editor";
 
 type EditableArtifact = {
   key: string;
@@ -34,9 +35,13 @@ function boundaryNote(key: string) {
   return "Only edit clip decisions here. Do not rewrite the core script in this plan.";
 }
 
+function defaultArtifactKey(artifacts: EditableArtifact[]) {
+  return artifacts.find((artifact) => artifact.key === "product_script_card")?.key || artifacts[0]?.key || "";
+}
+
 export function ArtifactReviewPanel({ slug, artifacts }: Props) {
   const router = useRouter();
-  const [activeKey, setActiveKey] = useState(artifacts[0]?.key || "");
+  const [activeKey, setActiveKey] = useState(defaultArtifactKey(artifacts));
   const activeArtifact = useMemo(
     () => artifacts.find((artifact) => artifact.key === activeKey) || artifacts[0],
     [activeKey, artifacts]
@@ -151,6 +156,10 @@ export function ArtifactReviewPanel({ slug, artifacts }: Props) {
         <div className="mt-3 border border-black/10 bg-white px-3 py-2 text-sm text-black/62">{boundaryNote(activeArtifact.key)}</div>
         <div className="mt-3 truncate font-mono text-[11px] text-black/40">{activeArtifact.path}</div>
       </div>
+
+      {activeArtifact.key === "product_script_card" ? (
+        <ProductScriptFormEditor draft={draft} onChange={updateDraft} />
+      ) : null}
 
       <textarea
         value={draft}

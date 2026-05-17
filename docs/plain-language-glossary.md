@@ -179,3 +179,20 @@ Editable artifact review means checking and editing those checkpoint files befor
 Plain meaning: human approval before the machine starts cutting.
 
 The first web version edits raw JSON. That is useful for flexibility and debugging. Later, we can build more friendly form editors for script lines, subtitles, clip choices, and timing.
+
+## Structured Script Editor
+
+Structured script editor means editing `product_script_card.json` through form fields instead of raw JSON.
+
+Plain meaning: a script table.
+
+It lets you edit:
+
+- script variant name and angle
+- title
+- target viewer
+- caption
+- hashtags
+- each beat's time, subtitle, voiceover, visual need, preferred clip, and product feature
+
+It still saves back into the same `product_script_card.json`. This matters because the worker continues to read the original workflow artifact; the form is only a more usable editing layer.
