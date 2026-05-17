@@ -196,3 +196,21 @@ It lets you edit:
 - each beat's time, subtitle, voiceover, visual need, preferred clip, and product feature
 
 It still saves back into the same `product_script_card.json`. This matters because the worker continues to read the original workflow artifact; the form is only a more usable editing layer.
+
+## Structured Shot Matching Editor
+
+Structured shot matching editor means editing `shot_matching_plan.json` through form fields instead of raw JSON.
+
+Plain meaning: a clip decision table.
+
+It lets you edit:
+
+- which script version is being matched
+- each beat's time, subtitle, clip id, clip start/end seconds, speed, transition, and selection reason
+- asset picker fields that show the indexed clip list, clip labels, duration, safe subtitle area, notes, and thumbnail area when available
+- caption style details such as line breaks, position, size, and highlight words
+- missing footage notes
+- risk notes
+- quality scores
+
+It still saves back into the same `shot_matching_plan.json`. This keeps the workflow modular: the editor helps the user approve clip decisions, while the worker still renders from the official shot matching plan.

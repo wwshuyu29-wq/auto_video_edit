@@ -65,7 +65,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
       <section className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="space-y-6">
-          <ArtifactReviewPanel slug={project.slug} artifacts={project.editableArtifacts} />
+          <ArtifactReviewPanel slug={project.slug} artifacts={project.editableArtifacts} assetLibrary={project.assetLibrary} />
 
           <div className="border border-black/10 bg-panel p-6 shadow-panel">
             <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">Viral Logic</div>

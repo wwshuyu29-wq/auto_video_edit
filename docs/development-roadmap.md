@@ -27,7 +27,7 @@
 - [x] Add worker preflight checks before running a project.
 - [x] Add editable artifact review screens before each worker stage.
 - [x] Add structured form editor for product script cards.
-- [ ] Add structured form editor for shot matching plans.
+- [x] Add structured form editor for shot matching plans.
 
 ## Phase 3: Worker MVP
 

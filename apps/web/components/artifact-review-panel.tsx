@@ -3,6 +3,7 @@
 import { useMemo, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { ProductScriptFormEditor } from "@/components/product-script-form-editor";
+import { ShotMatchingFormEditor } from "@/components/shot-matching-form-editor";
 
 type EditableArtifact = {
   key: string;
@@ -14,9 +15,26 @@ type EditableArtifact = {
   data: unknown;
 };
 
+type AssetLibrary = {
+  assets: {
+    clipId: string;
+    filePath: string;
+    thumbnailPath?: string;
+    duration: number | null;
+    orientation: string;
+    shotType: string;
+    scene: string;
+    visibleObjects: string[];
+    bestUse: string[];
+    textOverlaySafeArea: string;
+    notes: string;
+  }[];
+};
+
 type Props = {
   slug: string;
   artifacts: EditableArtifact[];
+  assetLibrary?: AssetLibrary;
 };
 
 function formatDate(value: string | null) {
@@ -39,7 +57,7 @@ function defaultArtifactKey(artifacts: EditableArtifact[]) {
   return artifacts.find((artifact) => artifact.key === "product_script_card")?.key || artifacts[0]?.key || "";
 }
 
-export function ArtifactReviewPanel({ slug, artifacts }: Props) {
+export function ArtifactReviewPanel({ slug, artifacts, assetLibrary }: Props) {
   const router = useRouter();
   const [activeKey, setActiveKey] = useState(defaultArtifactKey(artifacts));
   const activeArtifact = useMemo(
@@ -159,6 +177,9 @@ export function ArtifactReviewPanel({ slug, artifacts }: Props) {
 
       {activeArtifact.key === "product_script_card" ? (
         <ProductScriptFormEditor draft={draft} onChange={updateDraft} />
+      ) : null}
+      {activeArtifact.key === "shot_matching_plan" ? (
+        <ShotMatchingFormEditor draft={draft} onChange={updateDraft} assetLibrary={assetLibrary} />
       ) : null}
 
       <textarea
