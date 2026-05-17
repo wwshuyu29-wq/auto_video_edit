@@ -1,0 +1,145 @@
+{
+  "account_url": "https://www.tiktok.com/@ice.uni",
+  "target_platform": "TikTok",
+  "analysis_goal": "Extract reusable academic research tool video structure for product-safe TikTok workflows.",
+  "account_positioning": "A student/research productivity account using late-night academic pain, handheld laptop proof, and fast result promises to sell research workflow shortcuts.",
+  "main_content_logic": "Sleepless-night pain hook -> tool promise -> topic input -> curated paper/result proof -> completed RRL/review output -> sleepy relief ending.",
+  "caption_logic": {
+    "visible_sequence": [
+      "saying goodbye to my sleepless night because i can now finish my rrl in 7 mins 🥹🥹🥹",
+      "skolar.ai provides me with research papers that are curated and relevant 🧑‍💻✨",
+      "just type your topic and let skolar work its magic 🪄✨",
+      "58 research papers in secs 🥰✨",
+      "RRL done in 2-3 minutes, goodnight world 🥱💤"
+    ],
+    "sentence_roles": [
+      "pain_relief_hook",
+      "tool_value_claim",
+      "simple_action_instruction",
+      "quantity_result_proof",
+      "finished_output_relief"
+    ],
+    "punctuation_pattern": "All lowercase, emotional student phrasing, very short sentences, repeated cute emojis, no formal CTA. Strong time/quantity promises drive urgency.",
+    "first_frame_text_density": "Medium-high: 4-5 large lines centered over a paper/laptop screen. The text is readable and emotional, less dense than the soft.student.era template.",
+    "command_grammar": "“just type your topic” + “let [tool] work its magic” + numeric result proof + sleepy relief ending.",
+    "reuse_rule": "Reuse the sleepless-night pain, simple input, result proof, and relief ending. Do not reuse unsupported exact time guarantees like “finish RRL in 7 mins” unless product evidence supports it."
+  },
+  "viral_patterns": [
+    {
+      "pattern_name": "Sleepless-night research shortcut",
+      "hook_type": "late-night pain relief + fast academic workflow promise",
+      "hook_examples": [
+        "saying goodbye to my sleepless night because i can now finish my rrl in 7 mins",
+        "just type your topic and let [tool] work its magic",
+        "[number] research papers in seconds",
+        "RRL done in 2-3 minutes, goodnight world"
+      ],
+      "opening_0_3s": "Show a laptop/paper/research document in dim late-night setting while the caption names a painful student outcome: sleepless night, RRL, thesis, research deadline.",
+      "middle_structure": [
+        "Reveal the research tool website/interface, not necessarily a full landing page.",
+        "Show the simplest action: typing a topic or starting a search.",
+        "Show the tool producing or listing relevant papers/results.",
+        "Use a number or visible result page as proof, e.g. paper count, sources tab, outline, references."
+      ],
+      "ending_cta": "No explicit button CTA. The conversion comes from emotional relief: “done”, “goodnight”, “finally”, plus post hashtags for college/research/thesis search.",
+      "visual_style": {
+        "camera": "Handheld laptop filming, dark room / late-night desk, visible keyboard and screen tilt. No polished screen recording.",
+        "pace": "24 seconds, roughly 4-5 beats. Each caption holds long enough to read while the camera pans/tilts over the screen.",
+        "subtitle_style": "Large white bold text with black outline, centered or lower-center, TikTok-native lowercase wording, cute/sleepy emojis.",
+        "music": "Likely soft/trend audio; captions carry the message.",
+        "composition": "Mostly laptop screen with keyboard foreground, occasional paper/PDF view. Screen angle and handheld imperfection make it feel student-made."
+      },
+      "why_it_works": [
+        "The pain is instantly recognizable for thesis/RRL/literature review students: sleepless nights and deadline pressure.",
+        "It shows a simple action instead of explaining many features, so the tool feels easy.",
+        "It uses numeric proof, “58 research papers”, which makes the result concrete.",
+        "The ending emotion is relief, not sales: “goodnight world” makes the benefit feel personal.",
+        "The laptop-screen filming makes it feel like a peer sharing a hack, not a brand ad."
+      ],
+      "reuse_risk": "Medium-high. The structure is reusable, but exact time promises like 7 mins or RRL done in 2-3 minutes may overpromise. For Literfy/Citely/FigPad, rewrite as “start faster”, “find relevant papers”, “get a structured starting point”, or “prepare sources for review” rather than claiming a finished academic task is complete."
+    }
+  ],
+  "recommended_templates": [
+    {
+      "template_name": "Late-Night-Research-Relief",
+      "best_for": "Literfy first, then Citely source checking, less directly FigPad unless framed as slide/figure deadline relief.",
+      "timeline": [
+        {
+          "time": "0-4s",
+          "purpose": "pain hook",
+          "content": "Late-night laptop/paper shot + sleepless thesis/RRL pain caption."
+        },
+        {
+          "time": "4-8s",
+          "purpose": "tool value",
+          "content": "Show product page or feature with a short value line: curated papers, verified sources, editable figure workflow."
+        },
+        {
+          "time": "8-13s",
+          "purpose": "simple action",
+          "content": "Type topic / paste reference / upload figure / click search."
+        },
+        {
+          "time": "13-18s",
+          "purpose": "result proof",
+          "content": "Show paper list, source verification result, outline, references tab, export, or editable output."
+        },
+        {
+          "time": "18-24s",
+          "purpose": "relief ending",
+          "content": "End with “finally a starting point”, “sources organized”, or “goodnight world” style relief without overclaiming."
+        }
+      ]
+    }
+  ],
+  "publishing_copy_logic": {
+    "original_post_caption": "references tab is also included 🥹🤞🏼 #college #rrl #studytok #research #thesis ",
+    "pattern": "Short factual feature note + cute emojis + college/RRL/studytok/research/thesis hashtag cluster.",
+    "safe_rewrite_pattern": "Mention the specific product result shown, keep student relief tone, avoid saying the work is fully done or guaranteed accurate.",
+    "hashtag_cluster": [
+      "#college",
+      "#rrl",
+      "#studytok",
+      "#research",
+      "#thesis"
+    ],
+    "risky_terms_to_avoid_or_soften": [
+      "finish my RRL in 7 mins",
+      "RRL done in 2-3 minutes",
+      "complete thesis",
+      "guaranteed curated/relevant",
+      "replace real research"
+    ]
+  },
+  "scores": {
+    "hook_clarity": 9,
+    "structure_reusability": 9,
+    "product_adaptability": 9,
+    "copy_risk": 6,
+    "evidence_strength": 9,
+    "product_best_fit_literfy": 10,
+    "product_best_fit_citely": 7,
+    "product_best_fit_figpad": 5
+  },
+  "source_videos": [
+    {
+      "video_url": "https://www.tiktok.com/@ice.uni/video/7578561011322473749",
+      "uploader": "ice.uni",
+      "duration": 24,
+      "views": 562200,
+      "likes": 42600,
+      "comments": 341,
+      "reposts": 3586,
+      "upload_date": "20251130",
+      "caption": "references tab is also included 🥹🤞🏼 #college #rrl #studytok #research #thesis ",
+      "local_video": "/Users/kk/Desktop/auto video/projects/reference/ice-uni-7578561011322473749/references/7578561011322473749/reference.mp4",
+      "contact_sheet": "/Users/kk/Desktop/auto video/projects/reference/ice-uni-7578561011322473749/references/7578561011322473749/contact_sheet.jpg"
+    }
+  ],
+  "compliance_notes": [
+    "Avoid exact completion-time claims unless verified in product data.",
+    "Do not tell students the product completes their RRL/thesis for submission.",
+    "Position Literfy as finding real papers, organizing sources, and creating a starting point for human-reviewed literature review work.",
+    "Keep the emotional “goodnight world” relief, but make the result academically responsible."
+  ]
+}

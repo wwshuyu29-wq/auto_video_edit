@@ -1,0 +1,183 @@
+{
+  "platform": "TikTok",
+  "product_name": "Literfy",
+  "template": "ice.uni late-night research relief",
+  "reference_post": {
+    "url": "https://www.tiktok.com/@ice.uni/video/7578561011322473749",
+    "caption": "references tab is also included 🥹🤞🏼 #college #rrl #studytok #research #thesis",
+    "rewrite_rule": "Imitate the reference caption logic: short feature note + cute student emojis + college/RRL/studytok tags. Do not reuse unsupported speed/completion claims."
+  },
+  "publishing_variants": [
+    {
+      "variant_id": "literfy_ice_uni_a",
+      "angle": "2am literature review panic",
+      "recommended_title": "saying goodbye to my 2am literature review panic",
+      "recommended_caption": "real papers + outline are included 🥹🤞🏼 use this as a starting point, then edit it yourself #college #rrl #studytok #research #thesis #literaturereview #literfy",
+      "caption_options": [
+        "real papers + outline are included 🥹🤞🏼 use this as a starting point, then edit it yourself #college #rrl #studytok #research #thesis #literaturereview #literfy",
+        "saying goodbye to 2am literature review panic because the paper search + outline step is finally organized 🥹 #rrl #studytok #research #thesis #literfy",
+        "not saying the review is done, but starting from real papers feels way less chaotic 🤞🏼 #literaturereview #gradschool #research #studytok #literfy"
+      ],
+      "keywords": [
+        "Literfy",
+        "literature review",
+        "RRL",
+        "real papers",
+        "review outline",
+        "review draft starting point",
+        "study tok"
+      ],
+      "hashtags": [
+        "#college",
+        "#rrl",
+        "#studytok",
+        "#research",
+        "#thesis",
+        "#literaturereview",
+        "#literfy",
+        "#gradschool",
+        "#researchtools"
+      ],
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/literfy_ice_uni_a_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/literfy_ice_uni_a_cover.jpg",
+      "captions_path": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/captions.json",
+      "reference_adaptation": {
+        "reference_caption": "references tab is also included 🥹🤞🏼 #college #rrl #studytok #research #thesis",
+        "adapted_logic": "Keep the short feature-note caption, cute student emojis, and college/RRL/studytok hashtag cluster; replace with Literfy real-paper workflow proof and safe starting-point language.",
+        "do_not_copy_directly": true
+      },
+      "posting_notes": [
+        "Add TikTok trending music inside TikTok; no generated voiceover/BGM is included.",
+        "Use the matching cover image and video together.",
+        "Use as an alternate hook angle under the same ice.uni template."
+      ],
+      "compliance_notes": [
+        "Does not claim the literature review/RRL is finished in minutes.",
+        "Frames Literfy output as a starting point that still needs review and editing.",
+        "Does not imply Google Scholar affiliation."
+      ],
+      "scores": {
+        "reference_caption_fit": 9,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 9
+      }
+    },
+    {
+      "variant_id": "literfy_ice_uni_b",
+      "angle": "random Google Scholar tabs at midnight",
+      "recommended_title": "saying goodbye to random Google Scholar tabs at midnight",
+      "recommended_caption": "references + real paper search are included 🥹🤞🏼 this is how I would start an RRL before writing #college #rrl #studytok #research #thesis #googlescholar #literfy",
+      "caption_options": [
+        "references + real paper search are included 🥹🤞🏼 this is how I would start an RRL before writing #college #rrl #studytok #research #thesis #googlescholar #literfy",
+        "random Google Scholar tabs were not working for me so I started with real papers first 🥹 #rrl #studytok #research #thesis #literaturereview #literfy",
+        "topic → real papers → selected sources → outline → draft starting point 🤞🏼 still review everything before writing #research #studytok #rrl #literfy"
+      ],
+      "keywords": [
+        "Google Scholar tabs",
+        "Literfy",
+        "RRL",
+        "real paper search",
+        "selected papers",
+        "review outline",
+        "literature review workflow"
+      ],
+      "hashtags": [
+        "#college",
+        "#rrl",
+        "#studytok",
+        "#research",
+        "#thesis",
+        "#googlescholar",
+        "#literaturereview",
+        "#literfy",
+        "#aitools"
+      ],
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_b/literfy_ice_uni_b_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_b/literfy_ice_uni_b_cover.jpg",
+      "captions_path": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_b/captions.json",
+      "reference_adaptation": {
+        "reference_caption": "references tab is also included 🥹🤞🏼 #college #rrl #studytok #research #thesis",
+        "adapted_logic": "Keep the short feature-note caption, cute student emojis, and college/RRL/studytok hashtag cluster; replace with Literfy real-paper workflow proof and safe starting-point language.",
+        "do_not_copy_directly": true
+      },
+      "posting_notes": [
+        "Add TikTok trending music inside TikTok; no generated voiceover/BGM is included.",
+        "Use the matching cover image and video together.",
+        "B version is closest to the ice.uni reference structure."
+      ],
+      "compliance_notes": [
+        "Does not claim the literature review/RRL is finished in minutes.",
+        "Frames Literfy output as a starting point that still needs review and editing.",
+        "Does not imply Google Scholar affiliation."
+      ],
+      "scores": {
+        "reference_caption_fit": 9,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 9
+      }
+    },
+    {
+      "variant_id": "literfy_ice_uni_c",
+      "angle": "paper pile to organized starting point",
+      "recommended_title": "turning a pile of papers into a review starting point",
+      "recommended_caption": "outline + review draft starting point are included 🥹🤞🏼 not final work, just a much cleaner way to begin #college #rrl #studytok #research #thesis #literaturereview #literfy",
+      "caption_options": [
+        "outline + review draft starting point are included 🥹🤞🏼 not final work, just a much cleaner way to begin #college #rrl #studytok #research #thesis #literaturereview #literfy",
+        "me trying to organize a pile of papers at 1am... this helped me get a starting point before editing #rrl #studytok #research #gradschool #literfy",
+        "paper pile → selected sources → outline → review draft starting point 🥹 still edit it, but at least the blank doc is gone #thesis #research #studytok #literfy"
+      ],
+      "keywords": [
+        "paper pile",
+        "RRL",
+        "Literfy",
+        "selected sources",
+        "review outline",
+        "review draft",
+        "research workflow"
+      ],
+      "hashtags": [
+        "#college",
+        "#rrl",
+        "#studytok",
+        "#research",
+        "#thesis",
+        "#literaturereview",
+        "#literfy",
+        "#phd",
+        "#masterstudent"
+      ],
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_c/literfy_ice_uni_c_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_c/literfy_ice_uni_c_cover.jpg",
+      "captions_path": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_c/captions.json",
+      "reference_adaptation": {
+        "reference_caption": "references tab is also included 🥹🤞🏼 #college #rrl #studytok #research #thesis",
+        "adapted_logic": "Keep the short feature-note caption, cute student emojis, and college/RRL/studytok hashtag cluster; replace with Literfy real-paper workflow proof and safe starting-point language.",
+        "do_not_copy_directly": true
+      },
+      "posting_notes": [
+        "Add TikTok trending music inside TikTok; no generated voiceover/BGM is included.",
+        "Use the matching cover image and video together.",
+        "Use as an alternate hook angle under the same ice.uni template."
+      ],
+      "compliance_notes": [
+        "Does not claim the literature review/RRL is finished in minutes.",
+        "Frames Literfy output as a starting point that still needs review and editing.",
+        "Does not imply Google Scholar affiliation."
+      ],
+      "scores": {
+        "reference_caption_fit": 9,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 9
+      }
+    }
+  ],
+  "global_rules": [
+    "Final delivery pairs cover image + corresponding captioned video.",
+    "Publishing caption should feel like a student creator note, not product marketing copy.",
+    "Use TikTok trending music inside TikTok.",
+    "No perfect output, guaranteed accuracy, direct submission, or replacement-of-research claims."
+  ]
+}

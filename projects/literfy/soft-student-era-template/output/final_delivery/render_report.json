@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/literfy/soft-student-era-template/output/shot_matching_plan.json",
+    "asset_library": "projects/literfy/soft-student-era-template/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "projects/literfy/soft-student-era-template/output/final_delivery/literfy_soft_student_v1_video.mp4",
+    "preview_sheet": "projects/literfy/soft-student-era-template/output/final_delivery/literfy_soft_student_v1_video_sheet.jpg",
+    "preview_midpoint_sheet": "projects/literfy/soft-student-era-template/output/final_delivery/literfy_soft_student_v1_video_midpoint_sheet.jpg",
+    "captions": "projects/literfy/soft-student-era-template/output/final_delivery/captions.json",
+    "srt": "projects/literfy/soft-student-era-template/output/final_delivery/master.srt",
+    "render_report": "projects/literfy/soft-student-era-template/output/final_delivery/render_report.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "8.766016",
+      "size": "5605091"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

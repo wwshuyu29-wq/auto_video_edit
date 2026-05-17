@@ -47,3 +47,6 @@ source-skills/**/.git/
 **/output/final_delivery/*.mp4
 **/output/final_delivery/*.jpg
 **/output/final_delivery/*.png
+
+# Keep temporary preview work directories out of Git even when JSON artifacts are unignored above.
+**/output/**/preview_render/**

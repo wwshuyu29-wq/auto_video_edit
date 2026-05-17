@@ -1,0 +1,279 @@
+{
+  "source_viral_pattern_card": "/Users/kk/Desktop/auto video/projects/reference/ice-uni-7578561011322473749/output/viral_pattern_card.json",
+  "product": {
+    "product_name": "Literfy",
+    "one_liner": "Literfy is an AI academic research tool that helps students and researchers find papers, organize sources, and start literature reviews faster.",
+    "target_users": [
+      "graduate students",
+      "PhD students",
+      "Master students",
+      "researchers",
+      "students writing literature reviews",
+      "academic writers"
+    ],
+    "core_features": [
+      {
+        "feature_name": "Find Papers",
+        "description": "Search and discover academic papers based on a research topic.",
+        "user_benefit": "Helps users find relevant papers faster instead of opening many random tabs.",
+        "visual_need": "Screen recording of typing a research topic and getting paper results."
+      },
+      {
+        "feature_name": "Paper Discovery / Related Papers",
+        "description": "Help users discover relevant or related papers for a research topic.",
+        "user_benefit": "Helps users avoid missing useful papers during early research.",
+        "visual_need": "Screen recording of paper result list, related papers, or ranked results."
+      },
+      {
+        "feature_name": "Literature Review Outline",
+        "description": "Generate a structured outline for a literature review based on selected papers.",
+        "user_benefit": "Helps users stop staring at a blank page and start with a clear structure.",
+        "visual_need": "Screen recording of selected papers turning into an outline."
+      },
+      {
+        "feature_name": "AI Literature Review Draft",
+        "description": "Generate a structured literature review draft based on collected papers.",
+        "user_benefit": "Helps users move from paper collection to a draftable structure faster.",
+        "visual_need": "Screen recording of a review draft or editable review sections."
+      },
+      {
+        "feature_name": "Citation / Export Workflow",
+        "description": "Export citations or research materials into downstream writing workflows.",
+        "user_benefit": "Helps users organize and move research materials into writing tools.",
+        "visual_need": "Screen recording of export options, citation export, or document export."
+      }
+    ],
+    "most_painful_user_scenarios": [
+      "A student starts a literature review and opens 30-50 random tabs.",
+      "A PhD or Master student does not know which papers are worth reading first.",
+      "A researcher has papers but does not know how to organize them into a review structure.",
+      "A student wastes hours before actually writing anything."
+    ],
+    "forbidden_claims": [
+      "Do not say Literfy writes a perfect literature review.",
+      "Do not say Literfy replaces real research.",
+      "Do not say citations are always 100% correct.",
+      "Do not tell users to submit AI output directly.",
+      "Do not claim guaranteed acceptance by journals or professors.",
+      "Do not claim the output is publication-ready without human review."
+    ],
+    "good_tiktok_angles": [
+      "If your literature review starts with 50 random tabs open, this is for you.",
+      "This is how I start a literature review now.",
+      "I stopped staring at a blank page before writing my literature review.",
+      "Stop searching papers manually like this."
+    ],
+    "source_grounding_note": "Literfy generates literature review outlines and drafts based on real academic papers selected or discovered in the workflow.",
+    "allowed_claim_boundaries": [
+      "Can say Literfy works from real academic papers in the workflow.",
+      "Can say Literfy helps generate a structured literature review draft based on selected/collected papers.",
+      "Can say Literfy helps users move from real papers to an organized review starting point.",
+      "Should still say users need to review, edit, and verify the output."
+    ]
+  },
+  "product_name": "Literfy",
+  "template_name": "ice.uni late-night research relief",
+  "selected_script_count": 3,
+  "script_generation_rules": [
+    "Imitate ice.uni caption logic: lowercase student pain, simple action, result proof, relief ending.",
+    "Do not claim the RRL/literature review is finished in minutes.",
+    "Use Literfy product facts only: find real papers, select papers, generate outline, generate review draft starting point, citation/export workflow.",
+    "Frame output as a starting point users review and edit."
+  ],
+  "scripts": [
+    {
+      "type": "variant_a_short_panic",
+      "style": "short opener, emotional relief, slightly cute with one emoji line",
+      "script_title": "saying goodbye to my 2am literature review panic",
+      "script_angle": "late-night literature review panic -> real-paper workflow -> draft starting point",
+      "target_viewer": "students starting an RRL or literature review at night",
+      "full_script": [
+        {
+          "time": "0-2.8s",
+          "beat": "pain_hook",
+          "voiceover": "saying goodbye to my 2am literature review panic",
+          "on_screen_text": "saying goodbye to my 2am literature review panic 😭",
+          "visual_need": "late-night paper screen opener"
+        },
+        {
+          "time": "2.8-5.8s",
+          "beat": "tool_value",
+          "voiceover": "because Literfy helps me start from real papers",
+          "on_screen_text": "because Literfy helps me start from real papers",
+          "visual_need": "Literfy landing page or product reveal"
+        },
+        {
+          "time": "5.8-8.8s",
+          "beat": "simple_action",
+          "voiceover": "just type your topic and search",
+          "on_screen_text": "just type your topic and search",
+          "visual_need": "topic input screen"
+        },
+        {
+          "time": "8.8-11.8s",
+          "beat": "paper_control",
+          "voiceover": "then pick the papers you actually want",
+          "on_screen_text": "then pick the papers you actually want",
+          "visual_need": "selecting real papers"
+        },
+        {
+          "time": "11.8-14.8s",
+          "beat": "outline_proof",
+          "voiceover": "it builds an outline from selected papers",
+          "on_screen_text": "it builds an outline from selected papers",
+          "visual_need": "generated outline screen"
+        },
+        {
+          "time": "14.8-19.2s",
+          "beat": "draft_proof",
+          "voiceover": "now I have a review draft starting point",
+          "on_screen_text": "now I have a review draft starting point ✅",
+          "visual_need": "review draft screen"
+        },
+        {
+          "time": "19.2-22.2s",
+          "beat": "relief_ending",
+          "voiceover": "goodnight world after I edit this",
+          "on_screen_text": "goodnight world... after i edit this 😭",
+          "visual_need": "review draft or clean final proof"
+        }
+      ]
+    },
+    {
+      "type": "variant_b_reference_closest",
+      "style": "closest to ice.uni: lowercase, no hard sell, simple action-result-relief sequence",
+      "script_title": "saying goodbye to random Google Scholar tabs at midnight",
+      "script_angle": "Google Scholar tab chaos -> Literfy research workflow -> safer starting point",
+      "target_viewer": "Master/PhD students searching papers for a review",
+      "full_script": [
+        {
+          "time": "0-3.8s",
+          "beat": "pain_hook",
+          "voiceover": "saying goodbye to random google scholar tabs at midnight",
+          "on_screen_text": "saying goodbye to random google scholar tabs at midnight",
+          "visual_need": "scrolling paper opener"
+        },
+        {
+          "time": "3.8-6.7s",
+          "beat": "tool_value",
+          "voiceover": "Literfy helps me start with real papers",
+          "on_screen_text": "Literfy helps me start with real papers",
+          "visual_need": "Literfy landing page"
+        },
+        {
+          "time": "6.7-9.7s",
+          "beat": "simple_action",
+          "voiceover": "just type your topic and let it search",
+          "on_screen_text": "just type your topic and let it search",
+          "visual_need": "topic search screen"
+        },
+        {
+          "time": "9.7-12.9s",
+          "beat": "result_proof",
+          "voiceover": "paper results show up in one place",
+          "on_screen_text": "paper results show up in one place",
+          "visual_need": "paper results list"
+        },
+        {
+          "time": "12.9-16.0s",
+          "beat": "paper_control",
+          "voiceover": "select the papers first, don’t skip this",
+          "on_screen_text": "select the papers first, don't skip this",
+          "visual_need": "select paper screen"
+        },
+        {
+          "time": "16.0-19.2s",
+          "beat": "outline_proof",
+          "voiceover": "outline first, then draft starting point",
+          "on_screen_text": "outline first, then draft starting point",
+          "visual_need": "outline screen"
+        },
+        {
+          "time": "19.2-23.2s",
+          "beat": "relief_ending",
+          "voiceover": "finally, I’m not starting from a blank doc",
+          "on_screen_text": "finally, i'm not starting from a blank doc",
+          "visual_need": "review draft proof"
+        }
+      ]
+    },
+    {
+      "type": "variant_c_paper_pile",
+      "style": "paper-overload angle, less centered rhythm, one native emoji hook and final relief",
+      "script_title": "me trying to turn a pile of papers into an RRL at 1am",
+      "script_angle": "paper overload -> choose real papers -> outline and draft starting point",
+      "target_viewer": "students who already collected papers but cannot organize the review",
+      "full_script": [
+        {
+          "time": "0-4s",
+          "beat": "pain_hook",
+          "voiceover": "me trying to turn a pile of papers into an RRL at 1am",
+          "on_screen_text": "me trying to turn a pile of papers into an RRL at 1am 👀",
+          "visual_need": "long paper/references opener"
+        },
+        {
+          "time": "4-7s",
+          "beat": "workflow_start",
+          "voiceover": "then I start with a topic in Literfy",
+          "on_screen_text": "then I start with a topic in Literfy",
+          "visual_need": "review topic input"
+        },
+        {
+          "time": "7-10s",
+          "beat": "paper_result",
+          "voiceover": "it pulls real papers into one list",
+          "on_screen_text": "it pulls real papers into one list",
+          "visual_need": "paper list results"
+        },
+        {
+          "time": "10-13s",
+          "beat": "paper_control",
+          "voiceover": "I choose the ones that actually fit",
+          "on_screen_text": "I choose the ones that actually fit",
+          "visual_need": "select paper screen"
+        },
+        {
+          "time": "13-15.5s",
+          "beat": "outline_action",
+          "voiceover": "then generate the outline",
+          "on_screen_text": "then generate the outline",
+          "visual_need": "click generate outline"
+        },
+        {
+          "time": "15.5-19.5s",
+          "beat": "draft_proof",
+          "voiceover": "and a review draft starting point",
+          "on_screen_text": "and a review draft starting point",
+          "visual_need": "generated review draft"
+        },
+        {
+          "time": "19.5-23.5s",
+          "beat": "relief_ending",
+          "voiceover": "still need to edit, but I’m not starting blank",
+          "on_screen_text": "still need to edit, but i'm not starting blank 😭",
+          "visual_need": "review draft / organized output"
+        }
+      ]
+    }
+  ],
+  "compliance_notes": [
+    "Avoid exact completion-time claims unless verified in product data.",
+    "Do not tell students the product completes their RRL/thesis for submission.",
+    "Position Literfy as finding real papers, organizing sources, and creating a starting point for human-reviewed literature review work.",
+    "Keep the emotional “goodnight world” relief, but make the result academically responsible.",
+    "Do not say Literfy writes a perfect literature review.",
+    "Do not say Literfy replaces real research.",
+    "Do not say citations are always 100% correct.",
+    "Do not tell users to submit AI output directly.",
+    "Do not claim guaranteed acceptance by journals or professors.",
+    "Do not claim the output is publication-ready without human review."
+  ],
+  "scores": {
+    "hook_strength": 9,
+    "product_fit": 10,
+    "native_tiktok_feel": 8,
+    "clarity": 9,
+    "conversion_potential": 8,
+    "claim_safety": 9
+  }
+}

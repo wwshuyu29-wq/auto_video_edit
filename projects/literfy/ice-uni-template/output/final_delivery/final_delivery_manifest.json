@@ -1,0 +1,35 @@
+{
+  "status": "ready_for_review",
+  "product": "Literfy",
+  "template": "ice.uni late-night research relief",
+  "reference_video": "https://www.tiktok.com/@ice.uni/video/7578561011322473749",
+  "delivery_rule": "Cover image + corresponding captioned video. No voiceover/BGM; add TikTok trending music inside TikTok.",
+  "variants": {
+    "literfy_ice_uni_a": {
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/literfy_ice_uni_a_cover.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/literfy_ice_uni_a_video.mp4",
+      "captions_path": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/captions.json",
+      "recommended_title": "saying goodbye to my 2am literature review panic",
+      "recommended_caption": "real papers + outline are included 🥹🤞🏼 use this as a starting point, then edit it yourself #college #rrl #studytok #research #thesis #literaturereview #literfy"
+    },
+    "literfy_ice_uni_b": {
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_b/literfy_ice_uni_b_cover.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_b/literfy_ice_uni_b_video.mp4",
+      "captions_path": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_b/captions.json",
+      "recommended_title": "saying goodbye to random Google Scholar tabs at midnight",
+      "recommended_caption": "references + real paper search are included 🥹🤞🏼 this is how I would start an RRL before writing #college #rrl #studytok #research #thesis #googlescholar #literfy"
+    },
+    "literfy_ice_uni_c": {
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_c/literfy_ice_uni_c_cover.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_c/literfy_ice_uni_c_video.mp4",
+      "captions_path": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_c/captions.json",
+      "recommended_title": "turning a pile of papers into a review starting point",
+      "recommended_caption": "outline + review draft starting point are included 🥹🤞🏼 not final work, just a much cleaner way to begin #college #rrl #studytok #research #thesis #literaturereview #literfy"
+    }
+  },
+  "publishing_copy_card": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/publishing_copy_card.json",
+  "publishing_copy_delivery": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/publishing_copy_delivery.md",
+  "notes": [
+    "Variant B is the closest match to the reference; A and C are alternate hooks using the other two user-provided paper videos."
+  ]
+}

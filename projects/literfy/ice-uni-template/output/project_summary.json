@@ -1,0 +1,29 @@
+{
+  "project": "literfy__ice-uni-template",
+  "product": "Literfy",
+  "template": "ice.uni late-night research relief",
+  "reference_video": "https://www.tiktok.com/@ice.uni/video/7578561011322473749",
+  "source_reference_card": "/Users/kk/Desktop/auto video/projects/reference/ice-uni-7578561011322473749/output/viral_pattern_card.json",
+  "variants": [
+    {
+      "id": "literfy_ice_uni_a",
+      "hook_asset": "00_late_night_paper_hook_a",
+      "angle": "2am literature review panic"
+    },
+    {
+      "id": "literfy_ice_uni_b",
+      "hook_asset": "00_late_night_paper_hook_b",
+      "angle": "random Google Scholar tabs at midnight",
+      "recommended_first_review": true
+    },
+    {
+      "id": "literfy_ice_uni_c",
+      "hook_asset": "00_late_night_paper_hook_c",
+      "angle": "pile of papers into an RRL at 1am"
+    }
+  ],
+  "safe_claim_rules": [
+    "Use “real papers”, “outline”, “review draft starting point”, “review and edit”.",
+    "Do not say “finish my RRL in 7 mins” or “RRL done in 2-3 minutes”."
+  ]
+}

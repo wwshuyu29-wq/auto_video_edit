@@ -1,0 +1,53 @@
+{
+  "source_viral_pattern_card": "/Users/kk/Desktop/auto video/projects/reference/soft-student-era-7639598483682544904/output/viral_pattern_card.json",
+  "product_name": "Citely",
+  "template_name": "soft-student-era confession-to-proof shortcut",
+  "selected_script_type": "single_safe_creator_version",
+  "script_title": "me after realizing AI references can look real and still be fake...",
+  "script_angle": "student anxiety to product proof micro-demo",
+  "target_viewer": "students and researchers using AI/research tools",
+  "full_script": [
+    {
+      "time": "0-3s",
+      "beat": "human_hook",
+      "voiceover": "me after realizing AI references can look real and still be fake...",
+      "on_screen_text": "me after realizing AI references can look real and still be fake...",
+      "preferred_clip_id": "00_ai_human_reaction_citely"
+    },
+    {
+      "time": "3-5.5s",
+      "beat": "shortcut_action",
+      "voiceover": "so I paste the reference into Citely",
+      "on_screen_text": "so I paste the reference into Citely",
+      "preferred_clip_id": "06_verify_references_input"
+    },
+    {
+      "time": "5.5-8.5s",
+      "beat": "result_proof",
+      "voiceover": "and boom, citation details checked ✅",
+      "on_screen_text": "and boom, citation details checked ✅",
+      "preferred_clip_id": "07_verify_references_results"
+    }
+  ],
+  "caption": "me after realizing AI references can look real and still be fake... so now I check them with Citely before I trust them 😂 #citely #citationcheck #studytok #collegetok #research #aitools",
+  "hashtags": [
+    "#citely",
+    "#citationcheck",
+    "#studytok",
+    "#collegetok",
+    "#research",
+    "#aitools"
+  ],
+  "compliance_notes": [
+    "Reuses the reference structure but not the unsafe bypassing-detection claim.",
+    "Does not promise perfect results or replacement for academic judgment.",
+    "Frames the product as checking, organizing, editing, or workflow support."
+  ],
+  "scores": {
+    "hook_strength": 8,
+    "product_fit": 8,
+    "native_tiktok_feel": 8,
+    "clarity": 8,
+    "conversion_potential": 7
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "source_script_card": "/Users/kk/Desktop/auto video/projects/literfy/ice-uni-template/output/product_script_card.json",
+  "source_viral_pattern_card": "/Users/kk/Desktop/auto video/projects/reference/ice-uni-7578561011322473749/output/viral_pattern_card.json",
+  "selected_script_type": "variant_a_short_panic",
+  "editing_style": {
+    "pace": "fast but readable",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "target_duration": "22-24s",
+    "caption_style": "bold white TikTok captions with black outline, lowercase student tone, subtle y-position variations"
+  },
+  "edit_plan": [
+    {
+      "beat": "pain_hook",
+      "time": "0-2.8s",
+      "clip_id": "00_late_night_paper_hook_a",
+      "clip_start": 0.0,
+      "clip_end": 2.8,
+      "playback_speed": 1.0,
+      "on_screen_text": "saying goodbye to my 2am literature review panic 😭",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "saying goodbye to my",
+          "2am literature",
+          "review panic 😭"
+        ],
+        "font_size": 62,
+        "line_gap": 4,
+        "y_ratio": 0.37,
+        "max_width": 900
+      },
+      "reason": "Uses user-provided opener A as the late-night paper pain hook.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "tool_value",
+      "time": "2.8-5.8s",
+      "clip_id": "01_literfy_landing_page",
+      "clip_start": 0.3,
+      "clip_end": 3.8,
+      "playback_speed": 1.2,
+      "on_screen_text": "because Literfy helps me start from real papers",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "because Literfy helps me",
+          "start from real papers"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.43,
+        "max_width": 900,
+        "highlight_terms": [
+          "real"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "reason": "Shows product landing/brand while making the product-safe real-paper claim.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "simple_action",
+      "time": "5.8-8.8s",
+      "clip_id": "02_review_input_topic",
+      "clip_start": 0.4,
+      "clip_end": 5.4,
+      "playback_speed": 1.7,
+      "on_screen_text": "just type your topic and search",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "just type your topic",
+          "and search"
+        ],
+        "font_size": 64,
+        "line_gap": 4,
+        "y_ratio": 0.34,
+        "max_width": 850
+      },
+      "reason": "Mirrors the reference “just type your topic” action grammar.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "paper_control",
+      "time": "8.8-11.8s",
+      "clip_id": "04_select_papers_to_outline",
+      "clip_start": 0.2,
+      "clip_end": 5.4,
+      "playback_speed": 1.75,
+      "on_screen_text": "then pick the papers you actually want",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "then pick the papers",
+          "you actually want"
+        ],
+        "font_size": 60,
+        "line_gap": 8,
+        "y_ratio": 0.55,
+        "max_width": 850
+      },
+      "reason": "Correct workflow order: select papers before outline generation.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "outline_proof",
+      "time": "11.8-14.8s",
+      "clip_id": "06_literature_review_outline",
+      "clip_start": 0.1,
+      "clip_end": 3.1,
+      "playback_speed": 1.0,
+      "on_screen_text": "it builds an outline from selected papers",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "it builds an outline",
+          "from selected papers"
+        ],
+        "font_size": 58,
+        "line_gap": 5,
+        "y_ratio": 0.42,
+        "max_width": 880
+      },
+      "reason": "Shows outline proof without claiming a finished review.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "draft_proof",
+      "time": "14.8-19.2s",
+      "clip_id": "08_generated_review",
+      "clip_start": 3.0,
+      "clip_end": 12.0,
+      "playback_speed": 2.05,
+      "on_screen_text": "now I have a review draft starting point ✅",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "now I have a",
+          "review draft",
+          "starting point ✅"
+        ],
+        "font_size": 62,
+        "line_gap": 4,
+        "y_ratio": 0.38,
+        "max_width": 880
+      },
+      "reason": "Shows more of the generated review at speed so the page is visible.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "relief_ending",
+      "time": "19.2-22.2s",
+      "clip_id": "08_generated_review",
+      "clip_start": 12.0,
+      "clip_end": 14.8,
+      "playback_speed": 0.95,
+      "on_screen_text": "goodnight world... after i edit this 😭",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "goodnight world...",
+          "after i edit this 😭"
+        ],
+        "font_size": 64,
+        "line_gap": 6,
+        "y_ratio": 0.46,
+        "max_width": 880
+      },
+      "reason": "Keeps the reference relief ending while adding the required human-editing safety.",
+      "transition": "hard cut"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "Claims are softened from the reference: no exact finish-time promises.",
+    "Literfy is framed as a real-paper research starting point that still needs user review/editing.",
+    "All three user-provided openers are used as separate versions."
+  ],
+  "needs_script_revision": false,
+  "scores": {
+    "visual_match": 9,
+    "pace_match": 8,
+    "asset_quality": 8,
+    "opening_strength": 8,
+    "product_proof_strength": 9,
+    "claim_safety": 9
+  }
+}

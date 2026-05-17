@@ -1,0 +1,176 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.8,
+      "duration": 2.8,
+      "text": "saying goodbye to my 2am literature review panic 😭",
+      "beat": "pain_hook",
+      "clip_id": "00_late_night_paper_hook_a",
+      "clip_start": 0.0,
+      "clip_end": 2.8,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "saying goodbye to my",
+          "2am literature",
+          "review panic 😭"
+        ],
+        "font_size": 62,
+        "line_gap": 4,
+        "y_ratio": 0.37,
+        "max_width": 900
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.8,
+      "end": 5.8,
+      "duration": 3.0,
+      "text": "because Literfy helps me start from real papers",
+      "beat": "tool_value",
+      "clip_id": "01_literfy_landing_page",
+      "clip_start": 0.3,
+      "clip_end": 3.8,
+      "playback_speed": 1.2,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "because Literfy helps me",
+          "start from real papers"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.43,
+        "max_width": 900,
+        "highlight_terms": [
+          "real"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.8,
+      "end": 8.8,
+      "duration": 3.000000000000001,
+      "text": "just type your topic and search",
+      "beat": "simple_action",
+      "clip_id": "02_review_input_topic",
+      "clip_start": 0.4,
+      "clip_end": 5.4,
+      "playback_speed": 1.7,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "just type your topic",
+          "and search"
+        ],
+        "font_size": 64,
+        "line_gap": 4,
+        "y_ratio": 0.34,
+        "max_width": 850
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.8,
+      "end": 11.8,
+      "duration": 3.0,
+      "text": "then pick the papers you actually want",
+      "beat": "paper_control",
+      "clip_id": "04_select_papers_to_outline",
+      "clip_start": 0.2,
+      "clip_end": 5.4,
+      "playback_speed": 1.75,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "then pick the papers",
+          "you actually want"
+        ],
+        "font_size": 60,
+        "line_gap": 8,
+        "y_ratio": 0.55,
+        "max_width": 850
+      }
+    },
+    {
+      "index": 4,
+      "start": 11.8,
+      "end": 14.8,
+      "duration": 3.0,
+      "text": "it builds an outline from selected papers",
+      "beat": "outline_proof",
+      "clip_id": "06_literature_review_outline",
+      "clip_start": 0.1,
+      "clip_end": 3.1,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "it builds an outline",
+          "from selected papers"
+        ],
+        "font_size": 58,
+        "line_gap": 5,
+        "y_ratio": 0.42,
+        "max_width": 880
+      }
+    },
+    {
+      "index": 5,
+      "start": 14.8,
+      "end": 19.2,
+      "duration": 4.399999999999999,
+      "text": "now I have a review draft starting point ✅",
+      "beat": "draft_proof",
+      "clip_id": "08_generated_review",
+      "clip_start": 3.0,
+      "clip_end": 12.0,
+      "playback_speed": 2.05,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "now I have a",
+          "review draft",
+          "starting point ✅"
+        ],
+        "font_size": 62,
+        "line_gap": 4,
+        "y_ratio": 0.38,
+        "max_width": 880
+      }
+    },
+    {
+      "index": 6,
+      "start": 19.2,
+      "end": 22.2,
+      "duration": 3.0,
+      "text": "goodnight world... after i edit this 😭",
+      "beat": "relief_ending",
+      "clip_id": "08_generated_review",
+      "clip_start": 12.0,
+      "clip_end": 14.8,
+      "playback_speed": 0.95,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "goodnight world...",
+          "after i edit this 😭"
+        ],
+        "font_size": 64,
+        "line_gap": 6,
+        "y_ratio": 0.46,
+        "max_width": 880
+      }
+    }
+  ]
+}

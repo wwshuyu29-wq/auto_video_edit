@@ -1,0 +1,53 @@
+{
+  "source_viral_pattern_card": "/Users/kk/Desktop/auto video/projects/reference/soft-student-era-7639598483682544904/output/viral_pattern_card.json",
+  "product_name": "Figpad",
+  "template_name": "soft-student-era confession-to-proof shortcut",
+  "selected_script_type": "single_safe_creator_version",
+  "script_title": "me after AI gives me a figure I still cannot edit...",
+  "script_angle": "student anxiety to product proof micro-demo",
+  "target_viewer": "students and researchers using AI/research tools",
+  "full_script": [
+    {
+      "time": "0-3s",
+      "beat": "human_hook",
+      "voiceover": "me after AI gives me a figure I still cannot edit...",
+      "on_screen_text": "me after AI gives me a figure I still cannot edit...",
+      "preferred_clip_id": "00_ai_human_reaction_figpad"
+    },
+    {
+      "time": "3-5.5s",
+      "beat": "shortcut_action",
+      "voiceover": "so I open it in FigPad SVG Editor",
+      "on_screen_text": "so I open it in FigPad SVG Editor",
+      "preferred_clip_id": "05_click_svg_edit"
+    },
+    {
+      "time": "5.5-8.8s",
+      "beat": "result_proof",
+      "voiceover": "and boom, I can keep editing it 👀",
+      "on_screen_text": "and boom, I can keep editing it 👀",
+      "preferred_clip_id": "07_svg_editor_edit_demo_2"
+    }
+  ],
+  "caption": "me after AI gives me a figure I still cannot edit... now I open it in FigPad SVG Editor and keep tweaking the figure 👀 #figpad #scientificfigure #studytok #phd #researchtools #aitools",
+  "hashtags": [
+    "#figpad",
+    "#scientificfigure",
+    "#studytok",
+    "#phd",
+    "#researchtools",
+    "#aitools"
+  ],
+  "compliance_notes": [
+    "Reuses the reference structure but not the unsafe bypassing-detection claim.",
+    "Does not promise perfect results or replacement for academic judgment.",
+    "Frames the product as checking, organizing, editing, or workflow support."
+  ],
+  "scores": {
+    "hook_strength": 8,
+    "product_fit": 8,
+    "native_tiktok_feel": 8,
+    "clarity": 8,
+    "conversion_potential": 7
+  }
+}

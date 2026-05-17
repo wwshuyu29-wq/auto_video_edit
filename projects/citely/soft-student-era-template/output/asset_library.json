@@ -1,0 +1,112 @@
+{
+  "product": "Citely",
+  "template": "soft-student-era",
+  "assets": [
+    {
+      "clip_id": "00_ai_human_reaction_citely",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/soft-student-era-template/materials/raw/00_ai_human_reaction_citely.mp4",
+      "duration": 5.06195,
+      "orientation": "vertical_ai_selfie_intro",
+      "quality_score": 8,
+      "shot_type": "AI generated student selfie reaction",
+      "camera_motion": "subtle handheld/selfie movement",
+      "scene": "student desk with laptop",
+      "visible_objects": [
+        "female student",
+        "laptop",
+        "study room"
+      ],
+      "emotion": "surprised / anxious / discovery",
+      "best_use": [
+        "human hook",
+        "student anxiety setup",
+        "second template opening"
+      ],
+      "not_good_for": [
+        "product proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "reason": "Use only the first 3 seconds as requested."
+        }
+      ],
+      "text_overlay_safe_area": "lower center; keep face readable",
+      "audio_quality": "not needed"
+    },
+    {
+      "clip_id": "06_verify_references_input",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/06_verify_references_input.mov",
+      "duration": 4.542,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Verify References input",
+      "camera_motion": "handheld hold with text/reference entry",
+      "scene": "Citely Verify References page",
+      "visible_objects": [
+        "reference text",
+        "verification input",
+        "submit/check action"
+      ],
+      "emotion": "citation checking setup",
+      "best_use": [
+        "paste reference",
+        "check AI-generated reference",
+        "verify before submission"
+      ],
+      "not_good_for": [
+        "source search result",
+        "landing page CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 4.4,
+          "reason": "Shows the reference-checking input step clearly."
+        }
+      ],
+      "text_overlay_safe_area": "upper center or lower center depending on visible reference text",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "speed_reason": "Input/readability needs some time, but still should move faster than raw screen recording."
+    },
+    {
+      "clip_id": "07_verify_references_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/07_verify_references_results.mov",
+      "duration": 5.297,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Verify References result proof",
+      "camera_motion": "handheld hold and slight movement",
+      "scene": "Citely verification results page",
+      "visible_objects": [
+        "verification results",
+        "citation metadata",
+        "source/reference status"
+      ],
+      "emotion": "proof / risk check",
+      "best_use": [
+        "verification result proof",
+        "citation metadata checking",
+        "catch fake or mismatched references"
+      ],
+      "not_good_for": [
+        "opening hook",
+        "landing page CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 5.1,
+          "reason": "Shows final verification output and metadata/result context."
+        }
+      ],
+      "text_overlay_safe_area": "center top; avoid blocking status/result area",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "speed_reason": "Result proof should stay readable but can be lightly sped up for 25s pacing.",
+      "notes": "Do not claim 100% accuracy. Phrase proof as checking, tracing, or catching risk."
+    }
+  ]
+}

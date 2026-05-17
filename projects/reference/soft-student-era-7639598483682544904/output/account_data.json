@@ -1,0 +1,17 @@
+{
+  "account_url": "https://www.tiktok.com/@soft.student.era",
+  "target_platform": "TikTok",
+  "analysis_goal": "Extract reusable short-form product-marketing structure while avoiding academic-integrity unsafe claims.",
+  "video_list": [
+    {
+      "video_url": "https://www.tiktok.com/@soft.student.era/video/7639598483682544904?_r=1&_t=ZS-96Nf5Vby7RU",
+      "views": 2073,
+      "likes": 143,
+      "comments": 42,
+      "reposts": 3,
+      "caption": "literally how to bypass turn it in ai detection in your work is just running it through grubby ai humanizer, simple.. idk why profs don't know ab this but im not complaining bc it works 😂 #turnitin #studytok #aihumanizer #chatgpt #collegetok",
+      "transcript": "Visible captions describe a professor warning about AI-written assignments, then a tool workflow and a result screen. The original claim centers on bypassing AI detection, which should not be reused for our products.",
+      "frames_summary": "0-4s: creator selfie reaction beside laptop, dense confession-style caption. 4-5.5s: handheld laptop screen showing tool interface and finger pointing. 5.5-7.1s: result screen with a large 0% AI-detected result and emoji in caption."
+    }
+  ]
+}

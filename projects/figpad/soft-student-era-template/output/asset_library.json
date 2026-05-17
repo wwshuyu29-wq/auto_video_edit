@@ -1,0 +1,107 @@
+{
+  "product": "Figpad",
+  "template": "soft-student-era",
+  "assets": [
+    {
+      "clip_id": "00_ai_human_reaction_figpad",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/soft-student-era-template/materials/raw/00_ai_human_reaction_figpad.mp4",
+      "duration": 5.06195,
+      "orientation": "vertical_ai_selfie_intro",
+      "quality_score": 8,
+      "shot_type": "AI generated student selfie reaction",
+      "camera_motion": "subtle handheld/selfie movement",
+      "scene": "student desk with laptop",
+      "visible_objects": [
+        "female student",
+        "laptop",
+        "study room"
+      ],
+      "emotion": "surprised / anxious / discovery",
+      "best_use": [
+        "human hook",
+        "student anxiety setup",
+        "second template opening"
+      ],
+      "not_good_for": [
+        "product proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "reason": "Use only the first 3 seconds as requested."
+        }
+      ],
+      "text_overlay_safe_area": "lower center; keep face readable",
+      "audio_quality": "not needed"
+    },
+    {
+      "clip_id": "05_click_svg_edit",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/05_click_svg_edit.mov",
+      "duration": 3.597,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "click SVG Edit after generation",
+      "camera_motion": "handheld click action",
+      "scene": "generated figure page to SVG editor",
+      "visible_objects": [
+        "SVG Edit button",
+        "generated figure",
+        "cursor"
+      ],
+      "emotion": "editability reveal",
+      "best_use": [
+        "click SVG Edit",
+        "transition from generation to editing",
+        "creator surprise beat"
+      ],
+      "not_good_for": [
+        "standalone final proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 3.4,
+          "reason": "Shows the exact action that turns the generated figure into an editable workflow."
+        }
+      ],
+      "text_overlay_safe_area": "center or lower center; keep SVG Edit button visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25
+    },
+    {
+      "clip_id": "07_svg_editor_edit_demo_2",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/07_svg_editor_edit_demo_2.mov",
+      "duration": 4.908,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "SVG editor second edit demo",
+      "camera_motion": "handheld edit action",
+      "scene": "FigPad SVG editor / editable figure",
+      "visible_objects": [
+        "editable scientific figure",
+        "selected element",
+        "editor controls"
+      ],
+      "emotion": "hands-on editor proof",
+      "best_use": [
+        "stronger editability proof",
+        "free edit demo",
+        "SVG editor detail"
+      ],
+      "not_good_for": [
+        "initial product reveal"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 4.7,
+          "reason": "Shows active editing on the generated figure."
+        }
+      ],
+      "text_overlay_safe_area": "center top or lower center depending on selected element",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25
+    }
+  ]
+}

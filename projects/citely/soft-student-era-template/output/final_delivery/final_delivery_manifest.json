@@ -1,0 +1,13 @@
+{
+  "status": "ready_for_review",
+  "template": "soft-student-era-confession-to-proof",
+  "delivery_rule": "Cover image + corresponding captioned video. No voiceover/BGM; add TikTok trending music inside TikTok.",
+  "variants": {
+    "citely_soft_student_v1": {
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/soft-student-era-template/output/final_delivery/citely_soft_student_v1_cover.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/soft-student-era-template/output/final_delivery/citely_soft_student_v1_video.mp4"
+    }
+  },
+  "publishing_copy_card": "/Users/kk/Desktop/auto video/projects/citely/soft-student-era-template/output/publishing_copy_card.json",
+  "publishing_copy_delivery": "/Users/kk/Desktop/auto video/projects/citely/soft-student-era-template/output/publishing_copy_delivery.md"
+}

@@ -1,0 +1,132 @@
+{
+  "product": "Literfy",
+  "template": "soft-student-era",
+  "assets": [
+    {
+      "clip_id": "00_ai_human_reaction_literfy",
+      "file_path": "/Users/kk/Desktop/auto video/projects/literfy/soft-student-era-template/materials/raw/00_ai_human_reaction_literfy.mp4",
+      "duration": 5.06195,
+      "orientation": "vertical_ai_selfie_intro",
+      "quality_score": 8,
+      "shot_type": "AI generated student selfie reaction",
+      "camera_motion": "subtle handheld/selfie movement",
+      "scene": "student desk with laptop",
+      "visible_objects": [
+        "female student",
+        "laptop",
+        "study room"
+      ],
+      "emotion": "surprised / anxious / discovery",
+      "best_use": [
+        "human hook",
+        "student anxiety setup",
+        "second template opening"
+      ],
+      "not_good_for": [
+        "product proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 3,
+          "reason": "Use only the first 3 seconds as requested."
+        }
+      ],
+      "text_overlay_safe_area": "lower center; keep face readable",
+      "audio_quality": "not needed"
+    },
+    {
+      "clip_id": "03_paper_list_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/03_paper_list_results.mov",
+      "duration": 6.205,
+      "orientation": "landscape",
+      "display_note": "MOV may contain rotation metadata; visual content appears vertical in extracted frames.",
+      "quality_score": 9,
+      "shot_type": "handheld Literfy paper results list",
+      "camera_motion": "handheld slight movement",
+      "scene": "paper list results",
+      "visible_objects": [
+        "paper titles",
+        "authors",
+        "case zone tags",
+        "paper list",
+        "selected paper checkboxes"
+      ],
+      "emotion": "real papers proof",
+      "best_use": [
+        "Find Papers",
+        "paper discovery",
+        "real papers proof",
+        "product proof"
+      ],
+      "not_good_for": [
+        "opening hook only"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.3,
+          "end": 3.3,
+          "reason": "Key proof that Literfy works from real papers."
+        }
+      ],
+      "text_overlay_safe_area": "upper right and lower center",
+      "audio_quality": "not needed",
+      "notes": "Key proof that Literfy works from real papers."
+    },
+    {
+      "clip_id": "10_find_papers_search_topic",
+      "file_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/10_find_papers_search_topic.mov",
+      "duration": 13.697,
+      "orientation": "landscape",
+      "display_note": "MOV may contain rotation metadata; visual content appears vertical in extracted frames.",
+      "quality_score": 8,
+      "shot_type": "handheld Literfy Find Papers search workflow",
+      "camera_motion": "handheld slight movement",
+      "scene": "Find Papers topic input, source selection, academic database search, paper results",
+      "visible_objects": [
+        "Find Papers",
+        "topic input",
+        "source selector",
+        "PubMed",
+        "Google Scholar",
+        "Wanfang",
+        "search button",
+        "paper results",
+        "paper titles"
+      ],
+      "emotion": "paper discovery proof",
+      "best_use": [
+        "Find Papers",
+        "search topic",
+        "source selection",
+        "real papers proof",
+        "paper discovery",
+        "product proof"
+      ],
+      "not_good_for": [
+        "citation export",
+        "favorites proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.3,
+          "end": 3.8,
+          "reason": "Typing/searching a paper topic in Find Papers."
+        },
+        {
+          "start": 4,
+          "end": 8.2,
+          "reason": "Selecting academic source databases such as PubMed / Google Scholar / Wanfang."
+        },
+        {
+          "start": 8.5,
+          "end": 13.5,
+          "reason": "Shows searching/loading and then paper result list."
+        }
+      ],
+      "text_overlay_safe_area": "center and lower center",
+      "audio_quality": "not needed",
+      "notes": "Use as the main proof that Find Papers searches real academic sources and returns paper results."
+    }
+  ]
+}

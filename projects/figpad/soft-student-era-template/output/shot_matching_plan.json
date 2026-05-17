@@ -1,0 +1,95 @@
+{
+  "source_script_card": "/Users/kk/Desktop/auto video/projects/figpad/soft-student-era-template/output/product_script_card.json",
+  "source_viral_pattern_card": "/Users/kk/Desktop/auto video/projects/reference/soft-student-era-7639598483682544904/output/viral_pattern_card.json",
+  "selected_script_type": "single_safe_creator_version",
+  "editing_style": {
+    "pace": "very fast",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "average_clip_duration": "2.5-3.3s",
+    "caption_style": "bold white text with black outline, casual dense TikTok selfie hook"
+  },
+  "edit_plan": [
+    {
+      "beat": "human_hook",
+      "time": "0-3s",
+      "clip_id": "00_ai_human_reaction_figpad",
+      "clip_start": 0,
+      "clip_end": 3,
+      "playback_speed": 1,
+      "on_screen_text": "me after AI gives me a figure I still cannot edit...",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "me after AI gives me",
+          "a figure I still",
+          "cannot edit..."
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.57,
+        "max_width": 920
+      },
+      "reason": "Matches the reference template: human face first, anxiety/confession caption.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "shortcut_action",
+      "time": "3-5.5s",
+      "clip_id": "05_click_svg_edit",
+      "clip_start": 0.1,
+      "clip_end": 3.4,
+      "playback_speed": 1.32,
+      "on_screen_text": "so I open it in FigPad SVG Editor",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "so I open it in",
+          "FigPad SVG Editor"
+        ],
+        "font_size": 62,
+        "line_gap": 7,
+        "y_ratio": 0.42,
+        "max_width": 850
+      },
+      "reason": "Shows the simple product action immediately after the human hook.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "result_proof",
+      "time": "5.5-8.8s",
+      "clip_id": "07_svg_editor_edit_demo_2",
+      "clip_start": 0.2,
+      "clip_end": 4.7,
+      "playback_speed": 1.36,
+      "on_screen_text": "and boom, I can keep editing it 👀",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "and boom,",
+          "I can keep",
+          "editing it 👀"
+        ],
+        "font_size": 64,
+        "line_gap": 6,
+        "y_ratio": 0.42,
+        "max_width": 860
+      },
+      "reason": "Shows a visible product result as the proof beat.",
+      "transition": "hard cut"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "Only the first 3 seconds of the AI intro are used.",
+    "The unsafe original bypass-detection claim is not reused."
+  ],
+  "needs_script_revision": false,
+  "scores": {
+    "visual_match": 8,
+    "pace_match": 8,
+    "asset_quality": 8,
+    "opening_strength": 8,
+    "product_proof_strength": 8
+  }
+}

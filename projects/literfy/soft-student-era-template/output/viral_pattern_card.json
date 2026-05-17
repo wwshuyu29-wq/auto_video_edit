@@ -1,0 +1,153 @@
+{
+  "account_url": "https://www.tiktok.com/@soft.student.era",
+  "target_platform": "TikTok",
+  "analysis_goal": "Extract reusable short-form product-marketing structure while avoiding academic-integrity unsafe claims.",
+  "account_positioning": "A student-life account using casual confession, academic anxiety, and quick tool proof to make study/AI tools feel like insider shortcuts.",
+  "main_content_logic": "Authority threat or student fear -> creator reaction/confession -> one-step tool reveal -> large result proof -> casual caption/hashtag push.",
+  "caption_logic": {
+    "visible_sequence": [
+      "Long confession hook about professor warning and assignment risk",
+      "Short one-step tool action caption on laptop screen",
+      "Result caption: “and boom” + large result proof + emoji"
+    ],
+    "sentence_roles": [
+      "fear_hook_and_identity_setup",
+      "shortcut_action",
+      "result_proof_and_emotional_release"
+    ],
+    "punctuation_pattern": "Lowercase casual run-on caption, quoted authority warning, ellipsis in post caption, “and boom” result reveal, emojis at proof moment.",
+    "first_frame_text_density": "Very dense: 8-10 lines stacked center-lower over selfie footage, not a clean minimal cover. It relies on viewers pausing/reading because the premise is provocative.",
+    "command_grammar": "Not classic Click/Type/Then tutorial grammar. It compresses the demo into one action line and one result line.",
+    "reuse_rule": "Reuse the emotional structure and proof rhythm only. Do not reuse bypassing detection, academic dishonesty, or guaranteed outcome claims."
+  },
+  "viral_patterns": [
+    {
+      "pattern_name": "Confession-to-proof shortcut",
+      "hook_type": "Authority threat / academic anxiety / secret workaround framing",
+      "hook_examples": [
+        "My professor said X, so I use Y",
+        "Everyone worries about this before submitting",
+        "I check this before I trust/submit/share my work"
+      ],
+      "opening_0_3s": "Start on a human face, not a product screen. The creator looks surprised/knowing while a long caption frames the pain through an authority figure or high-stakes warning.",
+      "middle_structure": [
+        "Cut from face to handheld laptop proof quickly, usually around second 4.",
+        "Show one obvious product screen or action instead of a full tutorial.",
+        "Use a pointing finger/cursor to direct attention to the exact proof area.",
+        "Avoid explaining features; let the result screen carry the claim."
+      ],
+      "ending_cta": "No formal CTA in the video body; the post caption does the conversion by naming the tool, making it sound simple, and adding niche hashtags.",
+      "visual_style": {
+        "camera": "Creator selfie + handheld laptop screen, warm bedroom/study lighting, close-up face then close-up proof screen.",
+        "pace": "Three beats in 7 seconds: 0-4s hook, 4-5.5s tool action, 5.5-7s result proof.",
+        "subtitle_style": "White bold text with black outline. Dense first caption, then shorter center-lower captions. Emojis appear in result/proof line.",
+        "music": "Likely trend audio/background; the structure can work without voice because captions carry the story.",
+        "composition": "Face occupies the first half; laptop/result screen occupies the proof half. Finger pointing adds human proof and focus."
+      },
+      "why_it_works": [
+        "It opens with a high-stakes student fear instead of a neutral tool benefit.",
+        "The creator face creates social proof and makes the tool feel like a peer recommendation.",
+        "The workflow is compressed to one action, so the perceived effort is low.",
+        "The final screen has a large numeric result, which is easy to understand instantly.",
+        "The casual caption grammar feels native to TikTok rather than brand-written."
+      ],
+      "reuse_risk": "High. The original claim is about bypassing academic AI detection and could encourage misconduct. For our products, convert the structure into ethical checking, verification, drafting support, or editing workflow proof. Do not promise evasion, guaranteed grades, perfect detection results, or submitting unchecked AI output."
+    }
+  ],
+  "recommended_templates": [
+    {
+      "template_name": "Face-Fear-Tool-Proof",
+      "best_for": "Short student/research tool videos where the product has a clear result screen.",
+      "timeline": [
+        {
+          "time": "0-3.5s",
+          "purpose": "human hook",
+          "content": "Creator face + authority/fear statement, e.g. “My professor/advisor always warns me about X...”"
+        },
+        {
+          "time": "3.5-5.5s",
+          "purpose": "shortcut reveal",
+          "content": "Show the product screen and one simple action. Keep it visually obvious."
+        },
+        {
+          "time": "5.5-7.5s",
+          "purpose": "proof",
+          "content": "Show a large result, score, exported file, verified source, generated outline, or editable output."
+        },
+        {
+          "time": "caption/post",
+          "purpose": "conversion",
+          "content": "Use casual post copy: “simple.. idk why people do this manually” plus niche hashtags."
+        }
+      ]
+    },
+    {
+      "template_name": "Anxiety-to-Relief Micro Demo",
+      "best_for": "Ethical academic workflow tools such as citation checking, source verification, literature review organization, or figure editing.",
+      "timeline": [
+        {
+          "time": "0-2s",
+          "purpose": "pain",
+          "content": "Name a concrete fear before submission/research work."
+        },
+        {
+          "time": "2-5s",
+          "purpose": "tool proof",
+          "content": "Show one product action or screen."
+        },
+        {
+          "time": "5-8s",
+          "purpose": "relief/result",
+          "content": "Show output and add a small emoji/emotional caption."
+        }
+      ]
+    }
+  ],
+  "publishing_copy_logic": {
+    "original_post_pattern": "Casual lowercase claim + “simple..” + “idk why [authority/others] do not know this” + emoji + niche hashtags.",
+    "safe_rewrite_pattern": "Casual lowercase workflow claim + “simple..” + “idk why I used to do this manually” + emoji + product/category hashtags.",
+    "hashtag_cluster": [
+      "#studytok",
+      "#collegetok",
+      "#chatgpt",
+      "#aitools"
+    ],
+    "unsafe_terms_to_avoid": [
+      "bypass detection",
+      "avoid getting flagged",
+      "guaranteed grades",
+      "professors do not know",
+      "submit AI-written assignments"
+    ]
+  },
+  "scores": {
+    "hook_clarity": 9,
+    "structure_reusability": 8,
+    "product_adaptability": 6,
+    "copy_risk": 9,
+    "evidence_strength": 8,
+    "ethical_risk": 9
+  },
+  "source_videos": [
+    {
+      "video_url": "https://www.tiktok.com/@soft.student.era/video/7639598483682544904?_r=1&_t=ZS-96Nf5Vby7RU",
+      "uploader": "soft.student.era",
+      "duration": 7,
+      "views": 2073,
+      "likes": 143,
+      "comments": 42,
+      "reposts": 3,
+      "upload_date": "20260514",
+      "local_video": "/Users/kk/Desktop/auto video/projects/reference/soft-student-era-7639598483682544904/references/7639598483682544904/reference.mp4",
+      "contact_sheet": "/Users/kk/Desktop/auto video/projects/reference/soft-student-era-7639598483682544904/references/7639598483682544904/contact_sheet.jpg",
+      "caption": "literally how to bypass turn it in ai detection in your work is just running it through grubby ai humanizer, simple.. idk why profs don't know ab this but im not complaining bc it works 😂 #turnitin #studytok #aihumanizer #chatgpt #collegetok"
+    }
+  ],
+  "compliance_notes": [
+    "Do not create content that instructs students to bypass plagiarism or AI detection systems.",
+    "Do not frame products as a way to deceive instructors, reviewers, journals, or academic institutions.",
+    "For Citely, reframe as citation/source verification before trusting a reference.",
+    "For Literfy, reframe as finding/organizing real papers and starting a review responsibly.",
+    "For FigPad, reframe as making editable scientific figures while still reviewing accuracy."
+  ]
+}

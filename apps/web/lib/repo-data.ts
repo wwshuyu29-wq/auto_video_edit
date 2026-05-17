@@ -25,25 +25,33 @@ type ProjectJob = {
   };
 };
 
+type ScriptVariant = {
+  type: string;
+  script_title?: string;
+  script_angle?: string;
+  caption?: string;
+  hashtags?: string[];
+  full_script?: Array<{
+    time?: string;
+    beat?: string;
+    voiceover?: string;
+    on_screen_text?: string;
+    visual_need?: string;
+    preferred_clip_id?: string;
+  }>;
+};
+
 type ScriptCard = {
   platform?: string;
   tone?: string;
   video_length?: string;
-  scripts?: Array<{
-    type: string;
-    script_title?: string;
-    script_angle?: string;
-    caption?: string;
-    hashtags?: string[];
-    full_script?: Array<{
-      time?: string;
-      beat?: string;
-      voiceover?: string;
-      on_screen_text?: string;
-      visual_need?: string;
-      preferred_clip_id?: string;
-    }>;
-  }>;
+  selected_script_type?: string;
+  script_title?: string;
+  script_angle?: string;
+  caption?: string;
+  hashtags?: string[];
+  full_script?: ScriptVariant["full_script"];
+  scripts?: ScriptVariant[];
 };
 
 type ViralCard = {
@@ -465,6 +473,23 @@ function tokenScore(target: string, candidate?: string) {
   return candidateTokens.reduce((score, token) => score + (targetTokens.has(token) ? 1 : 0), 0);
 }
 
+function scriptVariantsFromCard(card: ScriptCard | null | undefined): ScriptVariant[] {
+  if (!card) return [];
+  if (card.scripts?.length) return card.scripts;
+  if (!card.script_title && !card.caption && !card.full_script?.length) return [];
+
+  return [
+    {
+      type: card.selected_script_type || "single_script_version",
+      script_title: card.script_title,
+      script_angle: card.script_angle,
+      caption: card.caption,
+      hashtags: card.hashtags,
+      full_script: card.full_script
+    }
+  ];
+}
+
 async function readScriptArtifacts(projectDir: string): Promise<ScriptArtifact[]> {
   const files = await listOutputFiles(
     projectDir,
@@ -503,11 +528,17 @@ function chooseSuffixedArtifact<T extends { suffix: string }>(deliverableName: s
 }
 
 function chooseScriptVariant(deliverableName: string, card: ScriptCard | null) {
-  const scripts = card?.scripts || [];
+  const scripts = scriptVariantsFromCard(card);
   if (!scripts.length) return null;
   if (scripts.length === 1) return scripts[0];
 
   const normalizedName = normalizeKey(deliverableName);
+  const variantLetter = normalizedName.match(/(?:^|_)([abc])$/)?.[1];
+  if (variantLetter) {
+    const explicit = scripts.find((script) => normalizeKey(script.type).includes(`variant_${variantLetter}`));
+    if (explicit) return explicit;
+  }
+
   if (normalizedName.startsWith("a_")) {
     return scripts.find((script) => normalizeKey(script.type).includes("safe")) || scripts[0];
   }
@@ -551,7 +582,7 @@ function choosePublishingCopy(deliverableName: string, card: PublishingCopyCard 
 
 function fallbackPublishingCopy(
   deliverableName: string,
-  script: NonNullable<ScriptCard["scripts"]>[number] | null | undefined,
+  script: ScriptVariant | null | undefined,
   scriptArtifactPath?: string
 ): PublishingCopy | undefined {
   if (!script?.script_title && !script?.caption && !script?.hashtags?.length) return undefined;
@@ -683,8 +714,8 @@ export async function getProjectSummaries(): Promise<ProjectSummary[]> {
         stageCount: job?.stages?.length || 0,
         deliverableCount: deliverables.length,
         headline:
-          script?.scripts?.find((item) => item.type === "native_creator_version")?.script_title ||
-          script?.scripts?.[0]?.script_title ||
+          scriptVariantsFromCard(script).find((item) => item.type === "native_creator_version")?.script_title ||
+          scriptVariantsFromCard(script)[0]?.script_title ||
           "No script headline yet",
         updatedAt: await updatedAtFor(dir),
         workerState: workerStatus.state
@@ -761,8 +792,8 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
     projectDir,
     stages: job?.stages || [],
     headline:
-      script?.scripts?.find((item) => item.type === "native_creator_version")?.script_title ||
-      script?.scripts?.[0]?.script_title ||
+      scriptVariantsFromCard(script).find((item) => item.type === "native_creator_version")?.script_title ||
+      scriptVariantsFromCard(script)[0]?.script_title ||
       full?.product?.good_tiktok_angles?.[0] ||
       `${job?.product_name || full?.product?.product_name || "Project"} intake scaffold ready`,
     tone: script?.tone || full?.tone || "Not set",
@@ -774,7 +805,7 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
       "Project scaffold created. Index assets first, then run the worker pipeline.",
     captionSequence: viral?.caption_logic?.visible_sequence?.slice(0, 6) || [],
     scripts:
-      script?.scripts?.map((item) => ({
+      scriptVariantsFromCard(script).map((item) => ({
         type: item.type,
         title: item.script_title || item.type,
         angle: item.script_angle || "No angle"

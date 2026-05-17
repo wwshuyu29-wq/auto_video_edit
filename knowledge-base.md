@@ -510,3 +510,20 @@ For FigPad, the highest-value differentiator is not just generation; it is edita
 - Before delivering emoji-captioned videos, check one emoji overlay with `file <overlay.png>` and confirm it is `1080 x 1920`.
 - Also inspect a full rendered frame, not only a contact sheet, because contact sheets can hide edge clipping.
 - Fix applied: native emoji renderer now writes a pixel-exact `NSBitmapImageRep` instead of using Retina-scaled `NSImage.lockFocus()`.
+
+## Reflection: Template Web Sync Omission
+
+- Mistake: After finishing the third template, I told the user the new videos were synced to the web app, but I only focused on the newest `ice-uni` template and did not explicitly re-check the second `soft-student-era` template.
+- Why it happened: I treated "new videos" as the latest batch only, while the user's actual expectation was cumulative: every completed template should remain visible and usable in the web app.
+- Technical cause: The second template's `product_script_card.json` used an older single-script shape with top-level `script_title`, `caption`, `hashtags`, and `full_script`. The web app initially expected the newer `scripts: [...]` shape, so the second template could appear as `0 variants` or `No script headline` even though its video, cover, script, shot plan, and publishing copy files existed.
+- Correct rule: The web app data layer must support both multi-variant script cards and older single-script cards. Do not make old completed projects disappear just because the schema evolved.
+- QA rule after any template delivery:
+  1. Verify the project overview page.
+  2. Verify the render page shows the final video and cover.
+  3. Verify the publish page shows recommended title, caption, hashtags, and keywords.
+  4. Run the check for every active product/template combination, not only the newest one.
+- Current active template sets that should stay visible:
+  - Research Connect / Google Scholar template.
+  - Soft Student Era second template.
+  - Ice Uni third template.
+- When adding or changing a web parser, test against old and new project folders. The expected behavior is backward compatibility unless the user explicitly asks to archive or remove an old project.

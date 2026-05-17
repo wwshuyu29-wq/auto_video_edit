@@ -1,0 +1,48 @@
+{
+  "platform": "TikTok",
+  "product_name": "Citely",
+  "reference_post": {
+    "caption": "literally how to bypass turn it in ai detection in your work is just running it through grubby ai humanizer, simple.. idk why profs don't know ab this but im not complaining bc it works 😂 #turnitin #studytok #aihumanizer #chatgpt #collegetok",
+    "rewrite_rule": "Preserve casual lowercase confession + simple.. + studytok/collegetok feel, but remove bypassing detection and academic-misconduct claims."
+  },
+  "publishing_variants": [
+    {
+      "variant_id": "citely_soft_student_v1",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/soft-student-era-template/output/final_delivery/citely_soft_student_v1_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/soft-student-era-template/output/final_delivery/citely_soft_student_v1_cover.jpg",
+      "recommended_title": "me after realizing AI references can look real and still be fake",
+      "recommended_caption": "me after realizing AI references can look real and still be fake... so now I check them with Citely before I trust them 😂 #citely #citationcheck #studytok #collegetok #research #aitools",
+      "hashtags": [
+        "#citely",
+        "#citationcheck",
+        "#studytok",
+        "#collegetok",
+        "#research",
+        "#aitools"
+      ],
+      "keywords": [
+        "Citely",
+        "AI references",
+        "citation checker",
+        "verify references",
+        "student research workflow"
+      ],
+      "posting_notes": [
+        "Use this as the second template: AI/student selfie opening + product proof screen.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM.",
+        "This version uses only one video per product as requested."
+      ],
+      "compliance_notes": [
+        "Reuses the reference structure but not the unsafe bypassing-detection claim.",
+        "Does not promise perfect results or replacement for academic judgment.",
+        "Frames the product as checking, organizing, editing, or workflow support."
+      ],
+      "scores": {
+        "reference_caption_fit": 8,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 8
+      }
+    }
+  ]
+}

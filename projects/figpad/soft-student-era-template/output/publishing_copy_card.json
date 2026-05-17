@@ -1,0 +1,48 @@
+{
+  "platform": "TikTok",
+  "product_name": "Figpad",
+  "reference_post": {
+    "caption": "literally how to bypass turn it in ai detection in your work is just running it through grubby ai humanizer, simple.. idk why profs don't know ab this but im not complaining bc it works 😂 #turnitin #studytok #aihumanizer #chatgpt #collegetok",
+    "rewrite_rule": "Preserve casual lowercase confession + simple.. + studytok/collegetok feel, but remove bypassing detection and academic-misconduct claims."
+  },
+  "publishing_variants": [
+    {
+      "variant_id": "figpad_soft_student_v1",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/soft-student-era-template/output/final_delivery/figpad_soft_student_v1_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/soft-student-era-template/output/final_delivery/figpad_soft_student_v1_cover.jpg",
+      "recommended_title": "me after AI gives me a figure I still cannot edit",
+      "recommended_caption": "me after AI gives me a figure I still cannot edit... now I open it in FigPad SVG Editor and keep tweaking the figure 👀 #figpad #scientificfigure #studytok #phd #researchtools #aitools",
+      "hashtags": [
+        "#figpad",
+        "#scientificfigure",
+        "#studytok",
+        "#phd",
+        "#researchtools",
+        "#aitools"
+      ],
+      "keywords": [
+        "FigPad",
+        "scientific figure",
+        "SVG Editor",
+        "editable figure",
+        "research tools"
+      ],
+      "posting_notes": [
+        "Use this as the second template: AI/student selfie opening + product proof screen.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM.",
+        "This version uses only one video per product as requested."
+      ],
+      "compliance_notes": [
+        "Reuses the reference structure but not the unsafe bypassing-detection claim.",
+        "Does not promise perfect results or replacement for academic judgment.",
+        "Frames the product as checking, organizing, editing, or workflow support."
+      ],
+      "scores": {
+        "reference_caption_fit": 8,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 8
+      }
+    }
+  ]
+}
