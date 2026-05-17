@@ -96,7 +96,20 @@ type AssetLibrary = {
   status?: string;
   source_material_dir?: string;
   updated_at?: string;
-};
+} | Array<{
+  clip_id?: string;
+  file_path?: string;
+  thumbnail_path?: string;
+  duration?: number;
+  orientation?: string;
+  shot_type?: string;
+  camera_motion?: string;
+  scene?: string;
+  visible_objects?: string[];
+  best_use?: string[];
+  text_overlay_safe_area?: string;
+  notes?: string;
+}>;
 
 export type ProjectSummary = {
   slug: string;
@@ -212,10 +225,16 @@ async function findProjectDirs() {
     const projects = await fs.readdir(groupPath, { withFileTypes: true });
     for (const project of projects) {
       if (!project.isDirectory()) continue;
+      const dir = path.join(groupPath, project.name);
+      const hasWorkflowFiles =
+        (await pathExists(path.join(dir, "project_job.json"))) ||
+        (await pathExists(path.join(dir, "output"))) ||
+        (await pathExists(path.join(dir, "materials")));
+      if (!hasWorkflowFiles) continue;
       projectDirs.push({
         group: group.name,
         name: project.name,
-        dir: path.join(groupPath, project.name)
+        dir
       });
     }
   }
@@ -260,6 +279,80 @@ function normalizeDeliverables(projectDir: string, data: any): DeliveryVariant[]
   return [];
 }
 
+function normalizeAssetEntries(assetLibrary: AssetLibrary | null) {
+  if (Array.isArray(assetLibrary)) return assetLibrary;
+  return assetLibrary?.assets || [];
+}
+
+function normalizeAssetLibraryMeta(assetLibrary: AssetLibrary | null, projectDir: string) {
+  if (Array.isArray(assetLibrary)) {
+    return {
+      status: "indexed_legacy",
+      sourceMaterialDir: path.join(projectDir, "materials", "raw"),
+      updatedAt: undefined
+    };
+  }
+  return {
+    status: assetLibrary?.status || "not_indexed",
+    sourceMaterialDir: assetLibrary?.source_material_dir || path.join(projectDir, "materials", "raw"),
+    updatedAt: assetLibrary?.updated_at
+  };
+}
+
+async function resolveAssetThumbnail(projectDir: string, clipId?: string, explicitPath?: string) {
+  if (explicitPath && (await pathExists(explicitPath))) return explicitPath;
+  if (!clipId) return undefined;
+  const candidates = [
+    path.join(projectDir, "materials", "contact_sheets", "frames", `${clipId}.jpg`),
+    path.join(projectDir, "materials", "contact_sheets", "timelines", `${clipId}_timeline.jpg`),
+    path.join(projectDir, "materials", "contact_sheets", "new_find_papers", `${clipId}_timeline.jpg`)
+  ];
+  for (const candidate of candidates) {
+    if (await pathExists(candidate)) return candidate;
+  }
+  return undefined;
+}
+
+async function listFilesRecursive(root: string): Promise<string[]> {
+  if (!(await pathExists(root))) return [];
+  const entries = await fs.readdir(root, { withFileTypes: true });
+  const nested = await Promise.all(
+    entries.map(async (entry) => {
+      const target = path.join(root, entry.name);
+      if (entry.isDirectory()) return listFilesRecursive(target);
+      return [target];
+    })
+  );
+  return nested.flat();
+}
+
+async function discoverMediaDeliverables(projectDir: string): Promise<DeliveryVariant[]> {
+  const outputDir = path.join(projectDir, "output");
+  const files = await listFilesRecursive(outputDir);
+  const videos = files
+    .filter((file) => path.extname(file).toLowerCase() === ".mp4")
+    .filter((file) => !path.basename(file).includes("_sheet") && !path.basename(file).includes("midpoint"));
+  const covers = files.filter((file) => /\.(jpe?g|png)$/i.test(file) && path.basename(file).toLowerCase().includes("cover"));
+
+  return videos.map((video) => {
+    const base = path.basename(video, path.extname(video));
+    const simplifiedBase = base
+      .replace(/_final$/, "")
+      .replace(/_preview(_v\d+)?$/, "")
+      .replace(/_25s_captioned$/, "");
+    const cover =
+      covers.find((candidate) => path.basename(candidate).includes(simplifiedBase)) ||
+      covers.find((candidate) => path.basename(candidate).includes(base)) ||
+      undefined;
+    return {
+      name: simplifiedBase,
+      video,
+      cover,
+      duration: null
+    };
+  });
+}
+
 function statusFromArtifacts(job: ProjectJob | null, delivery: any, shotPlan: MatchingPlan | null) {
   if (delivery?.status) return String(delivery.status);
   if (shotPlan?.edit_plan?.length) return "matched";
@@ -297,14 +390,15 @@ export async function getProjectSummaries(): Promise<ProjectSummary[]> {
       const shotPlan = await readJson<MatchingPlan>(path.join(dir, "output", "shot_matching_plan.json"));
       const deliveryPath = await findDeliveryManifest(dir);
       const delivery = deliveryPath ? await readJson<any>(deliveryPath) : null;
-      const deliverables = normalizeDeliverables(dir, delivery);
+      const manifestDeliverables = normalizeDeliverables(dir, delivery);
+      const deliverables = manifestDeliverables.length ? manifestDeliverables : await discoverMediaDeliverables(dir);
       const workerStatus = await readWorkerStatus(dir);
 
       return {
         slug: slugFor(group, name),
         group,
         name,
-        productName: job?.product_name || "Unassigned",
+        productName: job?.product_name || group,
         workflowMode: job?.workflow_mode || "mixed",
         status: statusFromArtifacts(job, delivery, shotPlan),
         stageCount: job?.stages?.length || 0,
@@ -333,9 +427,28 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
   const viral = await readJson<ViralCard>(path.join(projectDir, "output", "viral_pattern_card.json"));
   const shotPlan = await readJson<MatchingPlan>(path.join(projectDir, "output", "shot_matching_plan.json"));
   const assetLibrary = await readJson<AssetLibrary>(path.join(projectDir, "output", "asset_library.json"));
+  const assets = normalizeAssetEntries(assetLibrary);
+  const assetMeta = normalizeAssetLibraryMeta(assetLibrary, projectDir);
+  const normalizedAssets = await Promise.all(
+    assets.map(async (asset) => ({
+      clipId: asset.clip_id || "clip",
+      filePath: asset.file_path || "",
+      thumbnailPath: await resolveAssetThumbnail(projectDir, asset.clip_id, asset.thumbnail_path),
+      duration: typeof asset.duration === "number" ? asset.duration : null,
+      orientation: asset.orientation || "unknown",
+      shotType: asset.shot_type || "unlabeled",
+      cameraMotion: asset.camera_motion || "unknown",
+      scene: asset.scene || "needs labeling",
+      visibleObjects: asset.visible_objects || [],
+      bestUse: asset.best_use || [],
+      textOverlaySafeArea: asset.text_overlay_safe_area || "center",
+      notes: asset.notes || ""
+    }))
+  );
   const deliveryPath = await findDeliveryManifest(projectDir);
   const delivery = deliveryPath ? await readJson<any>(deliveryPath) : null;
-  const deliverables = normalizeDeliverables(projectDir, delivery);
+  const manifestDeliverables = normalizeDeliverables(projectDir, delivery);
+  const deliverables = manifestDeliverables.length ? manifestDeliverables : await discoverMediaDeliverables(projectDir);
   const workerStatus = await readWorkerStatus(projectDir);
   const preflight = await runProjectPreflight(projectDir);
   const editableArtifacts = await readEditableArtifacts(slug);
@@ -352,7 +465,7 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
     slug,
     group,
     name,
-    productName: job?.product_name || "Unassigned",
+    productName: job?.product_name || group,
     workflowMode: job?.workflow_mode || "mixed",
     status: statusFromArtifacts(job, delivery, shotPlan),
     projectDir,
@@ -392,25 +505,11 @@ export async function getProjectDetail(slug: string): Promise<ProjectDetail | nu
     preflight,
     editableArtifacts,
     assetLibrary: {
-      status: assetLibrary?.status || "not_indexed",
-      assetCount: assetLibrary?.assets?.length || 0,
-      sourceMaterialDir: assetLibrary?.source_material_dir || path.join(projectDir, "materials", "raw"),
-      updatedAt: assetLibrary?.updated_at,
-      assets:
-        assetLibrary?.assets?.slice(0, 8).map((asset) => ({
-          clipId: asset.clip_id || "clip",
-          filePath: asset.file_path || "",
-          thumbnailPath: asset.thumbnail_path,
-          duration: typeof asset.duration === "number" ? asset.duration : null,
-          orientation: asset.orientation || "unknown",
-          shotType: asset.shot_type || "unlabeled",
-          cameraMotion: asset.camera_motion || "unknown",
-          scene: asset.scene || "needs labeling",
-          visibleObjects: asset.visible_objects || [],
-          bestUse: asset.best_use || [],
-          textOverlaySafeArea: asset.text_overlay_safe_area || "center",
-          notes: asset.notes || ""
-        })) || []
+      status: assetMeta.status,
+      assetCount: assets.length,
+      sourceMaterialDir: assetMeta.sourceMaterialDir,
+      updatedAt: assetMeta.updatedAt,
+      assets: normalizedAssets
     },
     workerStatus: {
       state: workerStatus.state,

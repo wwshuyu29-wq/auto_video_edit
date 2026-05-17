@@ -35,6 +35,8 @@ type Props = {
   slug: string;
   artifacts: EditableArtifact[];
   assetLibrary?: AssetLibrary;
+  artifactKeys?: string[];
+  hideTabs?: boolean;
 };
 
 function formatDate(value: string | null) {
@@ -57,15 +59,19 @@ function defaultArtifactKey(artifacts: EditableArtifact[]) {
   return artifacts.find((artifact) => artifact.key === "product_script_card")?.key || artifacts[0]?.key || "";
 }
 
-export function ArtifactReviewPanel({ slug, artifacts, assetLibrary }: Props) {
+export function ArtifactReviewPanel({ slug, artifacts, assetLibrary, artifactKeys, hideTabs }: Props) {
   const router = useRouter();
-  const [activeKey, setActiveKey] = useState(defaultArtifactKey(artifacts));
+  const visibleArtifacts = useMemo(
+    () => (artifactKeys?.length ? artifacts.filter((artifact) => artifactKeys.includes(artifact.key)) : artifacts),
+    [artifactKeys, artifacts]
+  );
+  const [activeKey, setActiveKey] = useState(defaultArtifactKey(visibleArtifacts));
   const activeArtifact = useMemo(
-    () => artifacts.find((artifact) => artifact.key === activeKey) || artifacts[0],
-    [activeKey, artifacts]
+    () => visibleArtifacts.find((artifact) => artifact.key === activeKey) || visibleArtifacts[0],
+    [activeKey, visibleArtifacts]
   );
   const [drafts, setDrafts] = useState<Record<string, string>>(() =>
-    Object.fromEntries(artifacts.map((artifact) => [artifact.key, prettyJson(artifact.data)]))
+    Object.fromEntries(visibleArtifacts.map((artifact) => [artifact.key, prettyJson(artifact.data)]))
   );
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState("");
@@ -137,8 +143,9 @@ export function ArtifactReviewPanel({ slug, artifacts, assetLibrary }: Props) {
         </div>
       </div>
 
-      <div className="mt-5 grid gap-2 lg:grid-cols-3">
-        {artifacts.map((artifact) => (
+      {!hideTabs ? (
+        <div className="mt-5 grid gap-2 lg:grid-cols-3">
+          {visibleArtifacts.map((artifact) => (
           <button
             key={artifact.key}
             type="button"
@@ -158,8 +165,9 @@ export function ArtifactReviewPanel({ slug, artifacts, assetLibrary }: Props) {
             </div>
             <div className="mt-1 text-sm font-medium">{artifact.label}</div>
           </button>
-        ))}
-      </div>
+          ))}
+        </div>
+      ) : null}
 
       <div className="mt-5 border border-black/10 bg-[#f8f8f4] p-4">
         <div className="flex flex-wrap items-start justify-between gap-4">

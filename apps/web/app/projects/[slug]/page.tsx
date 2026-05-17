@@ -1,183 +1,141 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArtifactReviewPanel } from "@/components/artifact-review-panel";
-import { ProjectAssetsPanel } from "@/components/project-assets-panel";
-import { ProjectRunnerControls } from "@/components/project-runner-controls";
+import { ProjectWorkflowShell, DensePanel } from "@/components/project-workflow-shell";
+import { Badge } from "@/components/ui/badge";
+import { ButtonLink } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getProjectDetail, mediaUrl } from "@/lib/repo-data";
 
 export const dynamic = "force-dynamic";
 
-function stageState(mode: string) {
-  return mode === "run" ? "Run" : "Reuse";
-}
-
-export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ProjectOverviewPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const project = await getProjectDetail(slug);
   if (!project) notFound();
 
+  const flowCards = [
+    {
+      href: `/projects/${project.slug}/reference`,
+      title: "1. Reference",
+      desc: "拆对标视频逻辑、钩子、字幕节奏。",
+      stat: `${project.captionSequence.length} caption lines`
+    },
+    {
+      href: `/projects/${project.slug}/script`,
+      title: "2. Script",
+      desc: "改写成产品脚本，不在这里选素材。",
+      stat: `${project.scripts.length} variants`
+    },
+    {
+      href: `/projects/${project.slug}/assets`,
+      title: "3. Assets",
+      desc: "管理素材库、镜头标签、分镜匹配表。",
+      stat: `${project.assetLibrary.assetCount} clips`
+    },
+    {
+      href: `/projects/${project.slug}/render`,
+      title: "4. Render",
+      desc: "运行 worker、预览成片、查看交付物。",
+      stat: `${project.deliverables.length} outputs`
+    }
+  ];
+
   return (
-    <div className="space-y-6">
-      <section className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="border border-black/10 bg-panel p-6 shadow-panel lg:p-8">
-          <div className="flex flex-wrap items-center gap-3">
-            <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">{project.productName}</div>
-            <div className="rounded-full border border-black/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.22em] text-black/62">
-              {project.status}
-            </div>
-            <div className="rounded-full border border-black/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.22em] text-black/62">
-              {project.workflowMode}
-            </div>
-          </div>
-          <h2 className="mt-5 max-w-[16ch] text-4xl font-semibold tracking-[-0.05em] lg:text-5xl">{project.headline}</h2>
-          <div className="mt-6 grid gap-4 text-sm text-black/66 lg:grid-cols-3">
-            <div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-steel">Tone</div>
-              <div className="mt-2">{project.tone}</div>
-            </div>
-            <div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-steel">Length</div>
-              <div className="mt-2">{project.videoLength}</div>
-            </div>
-            <div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-steel">Project</div>
-              <div className="mt-2">{project.name}</div>
-            </div>
-          </div>
-        </div>
-        <div className="border border-black/10 bg-[#161616] p-6 text-white shadow-panel lg:p-8">
-          <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-white/45">Workflow</div>
-          <div className="mt-5 space-y-3">
-            {project.stages.map((stage, index) => (
-              <div key={stage.name} className="flex items-center justify-between border-b border-white/10 pb-3 text-sm last:border-b-0 last:pb-0">
-                <span>
-                  {index + 1}. {stage.name.replaceAll("_", " ")}
-                </span>
-                <span className="font-mono text-[11px] uppercase tracking-[0.24em] text-white/45">{stageState(stage.mode)}</span>
-              </div>
+    <ProjectWorkflowShell project={project} active="overview">
+      <div className="grid gap-5 xl:grid-cols-[1.1fr_0.9fr]">
+        <DensePanel title="Workflow Control" description="Four pages, four decisions. No more one-page scroll wall.">
+          <div className="grid gap-3 md:grid-cols-2">
+            {flowCards.map((item) => (
+              <Link key={item.href} href={item.href} className="border border-black/10 bg-[#f8f8f4] p-5 transition hover:border-black/35">
+                <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-steel">{item.stat}</div>
+                <div className="mt-3 text-lg font-semibold tracking-[-0.03em]">{item.title}</div>
+                <div className="mt-2 text-sm leading-6 text-black/60">{item.desc}</div>
+              </Link>
             ))}
           </div>
-          <div className="mt-6 text-sm text-white/66">
-            Preview output path is controlled by the worker job, not by the page.
-          </div>
-        </div>
-      </section>
+        </DensePanel>
 
-      <section className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="space-y-6">
-          <ArtifactReviewPanel slug={project.slug} artifacts={project.editableArtifacts} assetLibrary={project.assetLibrary} />
-
-          <div className="border border-black/10 bg-panel p-6 shadow-panel">
-            <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">Viral Logic</div>
-            <div className="mt-4 text-lg font-semibold tracking-[-0.03em]">{project.viralGoal}</div>
-            <p className="mt-3 text-sm leading-6 text-black/66">{project.contentLogic}</p>
-            <div className="mt-5 space-y-2">
-              {project.captionSequence.map((line) => (
-                <div key={line} className="border border-black/10 bg-[#f8f8f4] px-3 py-2 text-sm text-black/76">
-                  {line}
-                </div>
-              ))}
+        <DensePanel title="Where Your Files Are" description="旧素材和视频没有丢，只是早期没有统一 manifest。">
+          <div className="grid gap-3 text-sm">
+            <div className="border border-black/10 bg-[#f8f8f4] p-3">
+              <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Project folder</div>
+              <div className="mt-2 break-all text-black/70">{project.projectDir}</div>
+            </div>
+            <div className="border border-black/10 bg-[#f8f8f4] p-3">
+              <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Raw footage</div>
+              <div className="mt-2 break-all text-black/70">{project.assetLibrary.sourceMaterialDir}</div>
+            </div>
+            <div className="border border-black/10 bg-[#f8f8f4] p-3">
+              <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-steel">Generated videos</div>
+              <div className="mt-2 break-all text-black/70">{project.projectDir}/output</div>
             </div>
           </div>
+        </DensePanel>
+      </div>
 
-          <div className="border border-black/10 bg-panel p-6 shadow-panel">
-            <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">Script Variants</div>
-            <div className="mt-5 space-y-3">
-              {project.scripts.map((script) => (
-                <div key={script.type} className="border border-black/10 bg-[#f8f8f4] p-4">
-                  <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-steel">{script.type}</div>
-                  <div className="mt-2 text-lg font-semibold tracking-[-0.03em]">{script.title}</div>
-                  <div className="mt-2 text-sm text-black/64">{script.angle}</div>
-                </div>
-              ))}
+      <div className="grid gap-5 xl:grid-cols-[0.85fr_1.15fr]">
+        <Card>
+          <CardHeader>
+            <CardTitle>Current State</CardTitle>
+          </CardHeader>
+          <CardContent className="grid gap-3 sm:grid-cols-2">
+            <div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-steel">Tone</div>
+              <div className="mt-2 text-sm text-black/70">{project.tone}</div>
             </div>
-          </div>
-        </div>
+            <div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-steel">Length</div>
+              <div className="mt-2 text-sm text-black/70">{project.videoLength}</div>
+            </div>
+            <div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-steel">Worker</div>
+              <div className="mt-2 text-sm text-black/70">{project.workerStatus.state}</div>
+            </div>
+            <div>
+              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-steel">Missing assets</div>
+              <div className="mt-2 text-sm text-black/70">{project.missingAssetCount}</div>
+            </div>
+          </CardContent>
+        </Card>
 
-        <div className="space-y-6">
-          <ProjectAssetsPanel slug={project.slug} assetLibrary={project.assetLibrary} />
-
-          <ProjectRunnerControls slug={project.slug} workerStatus={project.workerStatus} preflight={project.preflight} />
-
-          <div className="border border-black/10 bg-panel p-6 shadow-panel">
-            <div className="flex items-end justify-between">
-              <div>
-                <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">Shot Matching</div>
-                <div className="mt-2 text-2xl font-semibold tracking-[-0.04em]">Material decisions</div>
-              </div>
-              <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-steel">
-                Missing assets: {project.missingAssetCount}
-              </div>
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between gap-3">
+            <div>
+              <CardTitle>Recent Deliverables</CardTitle>
+              <p className="mt-1 text-sm text-black/55">Includes manifest outputs and older discovered `.mp4` files.</p>
             </div>
-            <div className="mt-5 grid gap-3 lg:grid-cols-3">
-              {Object.entries(project.matchingScores).map(([key, value]) => (
-                <div key={key} className="border border-black/10 bg-[#f8f8f4] p-4">
-                  <div className="font-mono text-[11px] uppercase tracking-[0.24em] text-steel">{key}</div>
-                  <div className="mt-2 text-2xl font-semibold tracking-[-0.04em]">{value}</div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-5 space-y-2">
-              {project.editPreview.map((item) => (
-                <div key={`${item.beat}-${item.clipId}-${item.time}`} className="grid gap-2 border border-black/10 bg-[#f8f8f4] p-3 text-sm lg:grid-cols-[0.7fr_0.8fr_1.5fr_0.8fr]">
-                  <div className="font-medium">{item.beat}</div>
-                  <div className="text-black/62">{item.clipId}</div>
-                  <div className="text-black/74">{item.text}</div>
-                  <div className="font-mono text-[12px] text-black/52">{item.time}</div>
-                </div>
-              ))}
-            </div>
-            {project.riskNotes.length > 0 ? (
-              <div className="mt-5 border border-black/10 bg-[#111111] p-4 text-sm text-white/76">
-                {project.riskNotes.join(" ")}
-              </div>
-            ) : null}
-          </div>
-
-          <div className="border border-black/10 bg-panel p-6 shadow-panel">
-            <div className="flex items-end justify-between">
-              <div>
-                <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">Delivery</div>
-                <div className="mt-2 text-2xl font-semibold tracking-[-0.04em]">Preview and variants</div>
-              </div>
-              {project.renderReport ? (
-                <div className="rounded-full border border-black/10 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.22em] text-black/62">
-                  worker report
-                </div>
-              ) : null}
-            </div>
-            {project.previewVideo ? (
-              <div className="mt-5 overflow-hidden border border-black/10 bg-black">
-                <video src={mediaUrl(project.previewVideo) || undefined} controls muted playsInline />
-              </div>
-            ) : null}
-            <div className="mt-5 grid gap-4 lg:grid-cols-2">
-              {project.deliverables.map((item) => (
-                <div key={item.name} className="border border-black/10 bg-[#f8f8f4] p-4">
-                  <div className="flex items-center justify-between">
-                    <div className="text-base font-semibold">{item.name}</div>
-                    {item.duration ? (
-                      <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-steel">{item.duration}s</div>
+            <ButtonLink href={`/projects/${project.slug}/render`} variant="outline">
+              Open Render
+            </ButtonLink>
+          </CardHeader>
+          <CardContent>
+            {project.deliverables.length ? (
+              <div className="grid max-h-[360px] gap-3 overflow-y-auto pr-2 md:grid-cols-2">
+                {project.deliverables.slice(0, 8).map((item) => (
+                  <div key={`${item.name}-${item.video}`} className="border border-black/10 bg-[#f8f8f4] p-3">
+                    <div className="flex items-center justify-between gap-2">
+                      <div className="truncate text-sm font-semibold">{item.name}</div>
+                      <Badge variant="outline">{item.duration ? `${item.duration}s` : "mp4"}</Badge>
+                    </div>
+                    {item.cover ? (
+                      <img src={mediaUrl(item.cover) || undefined} alt={item.name} className="mt-3 aspect-[9/16] max-h-[180px] w-full object-cover" />
+                    ) : null}
+                    {item.video ? (
+                      <Link href={mediaUrl(item.video) || "#"} className="mt-3 inline-block text-sm underline underline-offset-4">
+                        Open video
+                      </Link>
                     ) : null}
                   </div>
-                  {item.cover ? (
-                    <div className="mt-4 overflow-hidden border border-black/10 bg-white">
-                      <img src={mediaUrl(item.cover) || undefined} alt={item.name} className="h-auto w-full object-cover" />
-                    </div>
-                  ) : null}
-                  {item.video ? (
-                    <div className="mt-4">
-                      <Link href={mediaUrl(item.video) || "#"} className="text-sm underline underline-offset-4">
-                        Open video file
-                      </Link>
-                    </div>
-                  ) : null}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+                ))}
+              </div>
+            ) : (
+              <div className="border border-dashed border-black/20 bg-[#f8f8f4] p-6 text-sm text-black/55">
+                No generated videos discovered yet.
+              </div>
+            )}
+          </CardContent>
+        </Card>
+      </div>
+    </ProjectWorkflowShell>
   );
 }
