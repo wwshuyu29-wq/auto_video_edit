@@ -188,7 +188,8 @@ This step must explain why each clip supports each beat and list missing assets.
 
 ### 6. Rendering
 
-Use `references/edit-plan-schema.md`, `modules/video_rendering/schema.json`, and the existing scripts.
+Use `references/edit-plan-schema.md`, `references/external-video-skills.md`,
+`modules/video_rendering/schema.json`, and the existing scripts.
 
 For this workflow, prefer the PNG-caption preview path first. It does not rely
 on FFmpeg `drawtext` or `subtitles` filters, so it works on Homebrew FFmpeg
@@ -218,6 +219,11 @@ If subtitle burning is needed separately:
 ```bash
 python3 scripts/burn_subtitles.py <video.mp4> <captions.srt> <output.mp4>
 ```
+
+For low-level FFmpeg failures, consult `references/external-video-skills.md`
+for the `ffmpeg-video-editor` boundary: use it for command diagnostics,
+trimming, concat, codec, and subtitle-render troubleshooting only. Do not let
+rendering troubleshooting change script claims, shot logic, or product facts.
 
 ### 7. Publishing Copy
 
@@ -295,7 +301,8 @@ Before presenting final outputs:
 
 ### 10. Publishing Copy
 
-Use `references/publishing-copy-card.md` and `modules/publishing_copy_rewrite/schema.json`.
+Use `references/publishing-copy-card.md`, `references/external-video-skills.md`,
+and `modules/publishing_copy_rewrite/schema.json`.
 
 Input: final delivery variants, video subtitles, product facts, and the reference post caption.
 
@@ -323,6 +330,11 @@ This module rewrites the competitor post copy into safe TikTok publishing metada
 
 It must preserve product truth and the user's delivery standard: final assets are cover image + captioned video, with TikTok trending music added inside TikTok.
 
+For TikTok caption/title/hashtag inspiration, consult
+`references/external-video-skills.md` for the `tiktok-captions` boundary: use
+it only for publishing metadata after the video and subtitles are approved.
+Product facts and forbidden claims always override platform-native phrasing.
+
 ## References
 
 - `references/orchestrator.md`: module data flow and test commands.
@@ -333,6 +345,7 @@ It must preserve product truth and the user's delivery standard: final assets ar
 - `references/material-library.md`: how to index and label handheld footage.
 - `references/edit-plan-schema.md`: shot table and render EDL requirements.
 - `references/publishing-copy-card.md`: TikTok title, caption, and hashtag output contract.
+- `references/external-video-skills.md`: evaluated external video/caption skills and how they can safely influence this project.
 - `references/tiktok-ops-knowledge.md`: accumulated operating patterns from analyzed TK reference videos.
 - `references/reflection-first-run.md`: mistakes and fixes from the first Literfy run.
 - `references/source-skills.md`: upstream skills and what was borrowed.
