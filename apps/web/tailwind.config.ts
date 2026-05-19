@@ -10,10 +10,10 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: [
-          "Inter",
+          "\"Avenir Next\"",
+          "\"Helvetica Neue\"",
           "-apple-system",
           "BlinkMacSystemFont",
-          "\"Segoe UI\"",
           "system-ui",
           "sans-serif"
         ],

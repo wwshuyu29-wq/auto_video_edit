@@ -3,8 +3,8 @@ import { AppShell } from "@/components/app-shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Auto Video Console",
-  description: "Industrial control console for the TikTok automation workflow."
+  title: "Auto Video",
+  description: "Turn TikTok references, product facts, and footage into short-video scripts and captioned drafts."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
