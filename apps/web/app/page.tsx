@@ -5,10 +5,11 @@ import {
   Clapperboard,
   FileText,
   FolderUp,
+  Play,
   Sparkles,
   Video
 } from "lucide-react";
-import { getDashboardMetrics } from "@/lib/repo-data";
+import { getDashboardMetrics, getGeneratedVideos, mediaUrl } from "@/lib/repo-data";
 
 export const dynamic = "force-dynamic";
 
@@ -80,8 +81,53 @@ function ProjectLink({
   );
 }
 
+function GeneratedVideoCard({
+  video
+}: {
+  video: Awaited<ReturnType<typeof getGeneratedVideos>>[number];
+}) {
+  const videoHref = mediaUrl(video.video) || "#";
+  return (
+    <article className="group overflow-hidden rounded-lg border border-ink/10 bg-white transition hover:-translate-y-0.5 hover:border-ink/25 hover:shadow-[0_18px_45px_rgba(31,46,43,0.08)]">
+      <Link href={videoHref} className="block bg-[#202321]" target="_blank">
+        {video.cover ? (
+          <img src={mediaUrl(video.cover) || undefined} alt={video.variantName} className="aspect-[9/16] w-full object-cover" />
+        ) : (
+          <div className="grid aspect-[9/16] place-items-center text-white/70">
+            <Play className="h-8 w-8" />
+          </div>
+        )}
+      </Link>
+      <div className="p-4">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <div className="text-xs font-semibold uppercase tracking-[0.18em] text-ink/45">
+              {video.productName}
+            </div>
+            <h3 className="mt-2 line-clamp-2 text-base font-semibold leading-snug text-ink">
+              {video.variantName}
+            </h3>
+          </div>
+          <span className="rounded-full border border-ink/10 px-2.5 py-1 text-xs text-ink/55">
+            {video.duration ? `${video.duration}s` : "mp4"}
+          </span>
+        </div>
+        <p className="mt-3 line-clamp-2 text-sm leading-6 text-ink/58">{video.projectHeadline}</p>
+        <div className="mt-4 flex items-center justify-between gap-3 text-sm font-medium">
+          <Link href={videoHref} className="underline underline-offset-4" target="_blank">
+            Open video
+          </Link>
+          <Link href={`/projects/${video.projectSlug}`} className="text-ink/55 transition hover:text-ink">
+            Project
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+}
+
 export default async function HomePage() {
-  const data = await getDashboardMetrics();
+  const [data, generatedVideos] = await Promise.all([getDashboardMetrics(), getGeneratedVideos()]);
   const featuredProjects = data.projects.slice(0, 3);
 
   return (
@@ -195,6 +241,35 @@ export default async function HomePage() {
           ))}
         </div>
       </section>
+
+      {generatedVideos.length > 0 ? (
+        <section>
+          <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <div>
+              <div className="text-sm font-semibold uppercase tracking-[0.18em] text-ink/45">
+                Generated videos
+              </div>
+              <h2 className="mt-4 text-4xl font-semibold tracking-[-0.03em] text-ink">
+                All finished drafts in one place.
+              </h2>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-ink/64">
+                Review covers and open videos without jumping through each project first.
+              </p>
+            </div>
+            <Link
+              href="/projects/new"
+              className="inline-flex items-center justify-center rounded-md border border-ink/12 bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:border-ink/28"
+            >
+              Make another video
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {generatedVideos.map((video) => (
+              <GeneratedVideoCard key={video.id} video={video} />
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       {featuredProjects.length > 0 ? (
         <section>

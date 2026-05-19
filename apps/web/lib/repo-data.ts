@@ -179,6 +179,19 @@ export type ProjectSummary = {
   workerState: "idle" | "running" | "completed" | "failed";
 };
 
+export type GeneratedVideo = {
+  id: string;
+  projectSlug: string;
+  projectName: string;
+  productName: string;
+  projectHeadline: string;
+  variantName: string;
+  video?: string;
+  cover?: string;
+  duration?: number | null;
+  updatedAt: string;
+};
+
 export type ProjectDetail = {
   slug: string;
   group: string;
@@ -866,6 +879,56 @@ export async function getDashboardMetrics() {
     runningProjects: projects.filter((item) => item.workerState === "running").length,
     projects
   };
+}
+
+export async function getGeneratedVideos(): Promise<GeneratedVideo[]> {
+  const dirs = await findProjectDirs();
+  const videos = await Promise.all(
+    dirs.map(async ({ group, name, dir }) => {
+      const job = await readJson<ProjectJob>(path.join(dir, "project_job.json"));
+      const script = await readJson<ScriptCard>(path.join(dir, "output", "product_script_card.json"));
+      const deliveryPath = await findDeliveryManifest(dir);
+      const delivery = deliveryPath ? await readJson<any>(deliveryPath) : null;
+      const manifestDeliverables = normalizeDeliverables(dir, delivery);
+      const deliverables = manifestDeliverables.length ? manifestDeliverables : await discoverMediaDeliverables(dir);
+      const projectSlug = slugFor(group, name);
+      const projectHeadline =
+        scriptVariantsFromCard(script).find((item) => item.type === "native_creator_version")?.script_title ||
+        scriptVariantsFromCard(script)[0]?.script_title ||
+        "No script headline yet";
+
+      return Promise.all(
+        deliverables
+          .filter((deliverable) => deliverable.video)
+          .map(async (deliverable) => {
+            let updatedAt = await updatedAtFor(dir);
+            const cover = deliverable.cover && (await pathExists(deliverable.cover)) ? deliverable.cover : undefined;
+            if (deliverable.video) {
+              try {
+                const stat = await fs.stat(deliverable.video);
+                updatedAt = stat.mtime.toISOString();
+              } catch {
+                // Keep project-level timestamp when the video path cannot be statted.
+              }
+            }
+            return {
+              id: `${projectSlug}-${normalizeKey(deliverable.name) || "video"}`,
+              projectSlug,
+              projectName: name,
+              productName: job?.product_name || group,
+              projectHeadline,
+              variantName: deliverable.name,
+              video: deliverable.video,
+              cover,
+              duration: deliverable.duration,
+              updatedAt
+            };
+          })
+      );
+    })
+  );
+
+  return videos.flat().sort((a, b) => (a.updatedAt < b.updatedAt ? 1 : -1));
 }
 
 export function mediaUrl(localPath?: string) {
