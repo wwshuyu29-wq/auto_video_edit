@@ -2,7 +2,7 @@
   "active_product": "FigPad",
   "rules": [
     "Only use products listed in this file.",
-    "Start with Literfy and do not generate scripts for Citely or FigPad until explicitly requested.",
+    "Use active_product as the default product for new work unless the user explicitly requests a different listed product.",
     "Do not invent product features, integrations, claims, or guarantees.",
     "Scripts must sound like TikTok creator workflow sharing, not homepage advertising.",
     "Avoid exaggerated claims: no 100% accuracy, no paper ghostwriting, no guaranteed publication, no replacement for human judgment."

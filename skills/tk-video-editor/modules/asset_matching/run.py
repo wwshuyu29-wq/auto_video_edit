@@ -157,6 +157,13 @@ def beat_asset_boost(beat: dict, asset: dict, used: set[str]) -> int:
 
 
 def choose_asset(beat: dict, assets: list[dict], used: set[str]) -> tuple[dict | None, int]:
+    preferred_clip_id = str(beat.get("preferred_clip_id") or "").strip()
+    if preferred_clip_id:
+        for asset in assets:
+            clip_id = str(asset.get("clip_id") or asset.get("id") or Path(asset.get("file_path", "")).stem)
+            if clip_id == preferred_clip_id:
+                return asset, 100
+
     query = " ".join([
         beat.get("beat", ""),
         beat.get("visual_need", ""),
@@ -177,6 +184,9 @@ def choose_asset(beat: dict, assets: list[dict], used: set[str]) -> tuple[dict |
 
 
 def selected_script(card: dict) -> dict:
+    if isinstance(card.get("full_script"), list):
+        return card
+
     scripts = card.get("scripts") or []
     if not scripts:
         return {"full_script": []}

@@ -3,7 +3,8 @@ import path from "path";
 import { spawn } from "child_process";
 
 const REPO_ROOT = path.resolve(process.cwd(), "../..");
-const PYTHON_BIN = "python3";
+const VENV_PYTHON_BIN = path.join(REPO_ROOT, ".venv", "bin", "python3");
+const FALLBACK_PYTHON_BIN = "python3";
 const BACKGROUND_RUNNER = path.join(REPO_ROOT, "apps", "worker", "run_project_background.py");
 
 export type WorkerRunState = "idle" | "running" | "completed" | "failed";
@@ -124,7 +125,8 @@ export async function startWorkerRun(projectDir: string) {
     return current;
   }
 
-  const child = spawn(PYTHON_BIN, [BACKGROUND_RUNNER, "--job-file", jobFile], {
+  const pythonBin = (await pathExists(VENV_PYTHON_BIN)) ? VENV_PYTHON_BIN : FALLBACK_PYTHON_BIN;
+  const child = spawn(pythonBin, [BACKGROUND_RUNNER, "--job-file", jobFile], {
     cwd: projectDir,
     detached: true,
     stdio: "ignore"

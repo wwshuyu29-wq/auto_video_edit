@@ -5,6 +5,8 @@ import { promisify } from "util";
 import { getProductByName } from "@/lib/product-catalog";
 
 const execFileAsync = promisify(execFile);
+const REPO_ROOT = path.resolve(process.cwd(), "../..");
+const VENV_PYTHON_BIN = path.join(REPO_ROOT, ".venv", "bin", "python3");
 
 type StageName = "viral_deconstruction" | "product_script_rewrite" | "asset_matching" | "video_rendering";
 type StageMode = "run" | "reuse_existing";
@@ -107,6 +109,26 @@ async function checkBinary(binary: string): Promise<PreflightCheck> {
   }
 }
 
+async function checkPythonPackage(moduleName: string, packageName: string): Promise<PreflightCheck> {
+  const pythonBin = (await pathExists(VENV_PYTHON_BIN)) ? VENV_PYTHON_BIN : "python3";
+  try {
+    await execFileAsync(pythonBin, ["-c", `import ${moduleName}`], { timeout: 5000 });
+    return {
+      id: `python_package_${moduleName}`,
+      label: `${packageName} installed`,
+      severity: "pass",
+      message: `${packageName} is available to ${pythonBin}.`
+    };
+  } catch {
+    return {
+      id: `python_package_${moduleName}`,
+      label: `${packageName} installed`,
+      severity: "blocker",
+      message: `${packageName} is missing for ${pythonBin}. Install it before preview rendering.`
+    };
+  }
+}
+
 function addCheck(checks: PreflightCheck[], check: PreflightCheck) {
   checks.push(check);
 }
@@ -157,7 +179,12 @@ export async function runProjectPreflight(projectDir: string): Promise<Preflight
   const needsFullInput = stages.some(
     (stage) => stage.mode === "run" && (stage.name === "viral_deconstruction" || stage.name === "product_script_rewrite")
   );
+  const needsPreviewRendering = stages.some((stage) => stage.mode === "run" && stage.name === "video_rendering");
   const reusesViralDeconstruction = stages.some((stage) => stage.name === "viral_deconstruction" && stage.mode === "reuse_existing");
+
+  if (needsPreviewRendering) {
+    addCheck(checks, await checkPythonPackage("PIL", "Pillow"));
+  }
 
   addCheck(
     checks,

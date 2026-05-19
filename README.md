@@ -7,15 +7,41 @@ This folder contains the first TK automated video workflow package.
 This repository is now being prepared for cloud migration.
 
 ```text
-apps/web                 Web UI placeholder
-apps/worker              Async video-processing worker placeholder
+apps/web                 Local Next.js control console
+apps/worker              Local worker CLI and background runner
 packages/skill-core      Thin Python wrapper around the current skill
 packages/schemas         Cloud project/job/storage schemas
 skills/tk-video-editor   Current local Codex skill implementation
 docs                     Architecture and migration notes
 ```
 
-The local skill remains the source of truth for now. The cloud packages wrap it first so the current working video pipeline is not broken during migration.
+The local skill remains the source of truth for now. The web app, worker, and cloud packages wrap it first so the current working video pipeline is not broken during migration.
+
+## Current Local App
+
+`apps/web` is a local control console, not a production cloud app yet. It can:
+
+- create local project folders and `project_job.json` files
+- upload or index local footage
+- show viral/script/shot-plan artifacts
+- run the local worker after preflight checks
+- display preview renders, covers, publishing copy, and delivery manifests
+
+Run it with:
+
+```bash
+cd apps/web
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+For preview rendering, install the Python image dependency:
+
+```bash
+python3 -m pip install -r skills/tk-video-editor/requirements.txt
+```
 
 ## Main Skill
 

@@ -2,7 +2,7 @@
   "product": "FigPad",
   "template": "research_connect_google_scholar",
   "project_dir": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template",
-  "asset_count": 16,
+  "asset_count": 17,
   "notes": [
     "FigPad has multiple feature stories. Do not force every feature into one TikTok video.",
     "Use Google Scholar as the academic-trust opening, then move into one clear FigPad workflow.",
@@ -536,6 +536,43 @@
       "audio_quality": "not needed",
       "recommended_speed": 1.5,
       "speed_reason": "Longer workflow should be compressed if used in a short TikTok cut."
+    },
+    {
+      "clip_id": "15_svg_editor_new_project",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/15_svg_editor_new_project.mov",
+      "duration": 3.87,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 7,
+      "shot_type": "SVG editor new project setup",
+      "camera_motion": "handheld workflow action",
+      "scene": "FigPad SVG Editor project creation",
+      "visible_objects": [
+        "SVG editor",
+        "new project flow",
+        "editable workspace"
+      ],
+      "emotion": "editor entry / workflow setup",
+      "best_use": [
+        "start SVG editor workflow",
+        "new editable project beat",
+        "bridge into online text editing"
+      ],
+      "not_good_for": [
+        "opening hook",
+        "final result proof",
+        "SVG converter proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 3.7,
+          "reason": "Shows the SVG editor new-project workflow as a separate action beat."
+        }
+      ],
+      "text_overlay_safe_area": "upper center or lower center depending on editor controls",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "notes": "Moved from repository root during cleanup; use when the script needs a dedicated SVG Editor project-entry beat."
     },
     {
       "clip_id": "09_export_ppt_workflow_rebuilt",

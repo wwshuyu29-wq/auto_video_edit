@@ -25,6 +25,11 @@ from auto_video_skill_core import run_module  # noqa: E402
 
 
 STAGES = ("viral_deconstruction", "product_script_rewrite", "asset_matching", "video_rendering")
+PRODUCT_NAME_BY_GROUP = {
+    "literfy": "Literfy",
+    "citely": "Citely",
+    "figpad": "FigPad",
+}
 
 
 @dataclass
@@ -111,6 +116,31 @@ def resolve_project_path(project_dir: Path, value: str | None) -> Path | None:
     return project_dir / path
 
 
+def normalize_product_name(value: Any) -> str:
+    if not isinstance(value, str):
+        return ""
+    cleaned = value.strip()
+    if not cleaned:
+        return ""
+    return PRODUCT_NAME_BY_GROUP.get(cleaned.lower(), cleaned)
+
+
+def infer_product_name(project_dir: Path, script_card: dict[str, Any] | None = None) -> str:
+    candidates: list[Any] = []
+    if script_card:
+        product = script_card.get("product")
+        if isinstance(product, dict):
+            candidates.extend([product.get("product_name"), product.get("name")])
+        candidates.extend([script_card.get("product_name"), script_card.get("product")])
+
+    for candidate in candidates:
+        normalized = normalize_product_name(candidate)
+        if normalized:
+            return normalized
+
+    return PRODUCT_NAME_BY_GROUP.get(project_dir.parent.name.lower(), "")
+
+
 def inspect_project(args: argparse.Namespace) -> None:
     files = project_files(args.project_dir.resolve())
     summary = {
@@ -171,9 +201,9 @@ def build_project_job(project_dir: Path) -> dict[str, Any]:
 
     product_name = ""
     try:
-        product_name = load_json(files.product_script_card).get("product", {}).get("product_name", "")
+        product_name = infer_product_name(files.project_dir, load_json(files.product_script_card))
     except Exception:
-        product_name = ""
+        product_name = infer_product_name(files.project_dir)
 
     return {
         "project_id": files.project_dir.name,

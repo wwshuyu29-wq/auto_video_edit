@@ -29,6 +29,7 @@ FigPad has too many features to force into one TikTok video. The better producti
 | `12_svg_converter_upload_convert` | 4.51s | Upload and convert bitmap | Main converter action |
 | `13_svg_converter_download_svg` | 4.22s | Download converted SVG | Converter result proof |
 | `14_image_to_image_workflow` | 9.02s | Image-to-image workflow | Separate feature video candidate |
+| `15_svg_editor_new_project` | 3.87s | SVG Editor new project setup | Editor entry / editable project beat |
 
 ## Recommended Video Splits
 

@@ -109,9 +109,9 @@ export default async function DashboardPage() {
           </div>
           <div className="border border-black/10 bg-panel p-6 shadow-panel">
             <div className="font-mono text-[11px] uppercase tracking-[0.28em] text-steel">Next Action</div>
-            <div className="mt-3 text-2xl font-semibold tracking-[-0.04em]">Wire the upload form to `project_job.json`.</div>
+            <div className="mt-3 text-2xl font-semibold tracking-[-0.04em]">Standardize legacy projects and render manifests.</div>
             <p className="mt-4 text-sm leading-6 text-black/66">
-              The worker already accepts one standard work order. The web app now needs to create that file shape from user input.
+              New projects already create worker work orders. The next cleanup step is making older deliveries follow the same file shape.
             </p>
           </div>
         </div>

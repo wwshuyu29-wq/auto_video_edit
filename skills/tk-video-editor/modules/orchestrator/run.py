@@ -23,7 +23,7 @@ def run_module(module: str, input_path: Path, out_path: Path) -> None:
     if not script.exists():
         raise SystemExit(f"module runner not found: {script}")
     subprocess.run(
-        ["python3", str(script), "--input", str(input_path), "--out", str(out_path)],
+        [sys.executable, str(script), "--input", str(input_path), "--out", str(out_path)],
         check=True,
         cwd=str(SKILL_ROOT),
     )
@@ -136,7 +136,7 @@ def main() -> None:
             notes.append("--render was requested but no --edl was provided; rendering skipped.")
             render_status_input = shot_plan
             subprocess.run([
-                "python3",
+                sys.executable,
                 str(MODULES / "video_rendering" / "run.py"),
                 "--input",
                 str(render_status_input),
@@ -147,7 +147,7 @@ def main() -> None:
             return
 
         subprocess.run([
-            "python3",
+            sys.executable,
             str(MODULES / "video_rendering" / "run.py"),
             "--input",
             str(shot_plan),
@@ -163,7 +163,7 @@ def main() -> None:
         return
 
     subprocess.run([
-        "python3",
+        sys.executable,
         str(MODULES / "video_rendering" / "run.py"),
         "--input",
         str(shot_plan),

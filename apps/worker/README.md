@@ -18,17 +18,24 @@ The worker should be deployed separately from the web app because render jobs ar
 The first worker step is a local command-line interface. Think of it as a
 temporary control panel before the web buttons exist.
 
+Create a project-local Python environment and install the rendering dependency before running preview renders:
+
+```bash
+python3 -m venv .venv
+.venv/bin/python3 -m pip install -r skills/tk-video-editor/requirements.txt
+```
+
 Inspect a project:
 
 ```bash
-python3 apps/worker/worker_cli.py inspect \
+.venv/bin/python3 apps/worker/worker_cli.py inspect \
   --project-dir projects/citely/research-connect-google-scholar-template
 ```
 
 Run one stage without changing project files:
 
 ```bash
-python3 apps/worker/worker_cli.py run-stage \
+.venv/bin/python3 apps/worker/worker_cli.py run-stage \
   --project-dir projects/citely/research-connect-google-scholar-template \
   --stage asset_matching \
   --dry-run
@@ -37,14 +44,14 @@ python3 apps/worker/worker_cli.py run-stage \
 Create a standard project job file:
 
 ```bash
-python3 apps/worker/worker_cli.py init-job \
+.venv/bin/python3 apps/worker/worker_cli.py init-job \
   --project-dir projects/literfy/research-connect-7633832153922489621
 ```
 
 Run a whole project from the job file:
 
 ```bash
-python3 apps/worker/worker_cli.py run-project \
+.venv/bin/python3 apps/worker/worker_cli.py run-project \
   --job-file projects/literfy/research-connect-7633832153922489621/project_job.json \
   --dry-run
 ```

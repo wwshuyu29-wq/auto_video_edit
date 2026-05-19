@@ -38,7 +38,7 @@ def main() -> None:
         preview_out = args.preview_out or args.video_out.with_name("preview.mp4")
         preview_out.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run([
-            "python3",
+            sys.executable,
             str(preview_script),
             "--shot-plan",
             str(args.input),
@@ -57,7 +57,7 @@ def main() -> None:
         render_script = Path(__file__).resolve().parents[2] / "scripts" / "render.py"
         args.video_out.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run([
-            "python3",
+            sys.executable,
             str(render_script),
             str(args.edl),
             "-o",

@@ -53,6 +53,8 @@ def index_video(path: Path, root: Path) -> dict:
         "id": path.stem,
         "path": str(path.resolve()),
         "relative_path": str(path.relative_to(root)),
+        "is_symlink": path.is_symlink(),
+        "symlink_target": str(path.resolve()) if path.is_symlink() else None,
         "duration_s": round(float(duration), 3),
         "width": width,
         "height": height,
@@ -86,7 +88,7 @@ def main() -> None:
     items = []
     for video in videos:
         try:
-            items.append(index_video(video.resolve(), root))
+            items.append(index_video(video, root))
         except subprocess.CalledProcessError as exc:
             items.append({
                 "id": video.stem,

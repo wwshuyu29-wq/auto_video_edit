@@ -28,12 +28,16 @@
 - [x] Add editable artifact review screens before each worker stage.
 - [x] Add structured form editor for product script cards.
 - [x] Add structured form editor for shot matching plans.
+- [x] Add render and publish pages that pair videos, covers, scripts, shot plans, and publishing copy.
+- [x] Add Pillow dependency preflight for PNG-caption preview rendering.
 
 ## Phase 3: Worker MVP
 
 - [x] Scaffold worker service in `apps/worker`.
 - [x] Add local job runner.
 - [x] Add FFmpeg availability check.
+- [x] Add local preview render path through the worker.
+- [x] Generate standard `project_job.json` files for complete legacy local projects.
 - [ ] Add object storage download/upload adapter.
 - [ ] Add render result manifest output.
 - [ ] Add cleanup policy for temporary files.
