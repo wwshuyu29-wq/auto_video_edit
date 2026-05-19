@@ -79,36 +79,12 @@ export default async function ProjectOverviewPage({ params }: { params: Promise<
         </DensePanel>
       </div>
 
-      <div className="grid gap-5 xl:grid-cols-[0.85fr_1.15fr]">
-        <Card>
-          <CardHeader>
-            <CardTitle>Current State</CardTitle>
-          </CardHeader>
-          <CardContent className="grid gap-3 sm:grid-cols-2">
-            <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-steel">Tone</div>
-              <div className="mt-2 text-sm text-black/70">{project.tone}</div>
-            </div>
-            <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-steel">Length</div>
-              <div className="mt-2 text-sm text-black/70">{project.videoLength}</div>
-            </div>
-            <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-steel">Worker</div>
-              <div className="mt-2 text-sm text-black/70">{project.workerStatus.state}</div>
-            </div>
-            <div>
-              <div className="font-mono text-[10px] uppercase tracking-[0.22em] text-steel">Missing assets</div>
-              <div className="mt-2 text-sm text-black/70">{project.missingAssetCount}</div>
-            </div>
-          </CardContent>
-        </Card>
-
+      <div>
         <Card>
           <CardHeader className="flex flex-row items-center justify-between gap-3">
             <div>
               <CardTitle>Video Versions</CardTitle>
-              <p className="mt-1 text-sm text-black/55">每条视频绑定自己的脚本、分镜、封面和成片。</p>
+              <p className="mt-1 text-sm text-black/55">每条视频绑定自己的脚本、分镜、封面和成片，方便横向比较。</p>
             </div>
             <Link href={`/projects/${project.slug}/render`} className={buttonVariants({ variant: "outline" })}>
               Open Render
@@ -116,7 +92,7 @@ export default async function ProjectOverviewPage({ params }: { params: Promise<
           </CardHeader>
           <CardContent>
             {project.videoVariants.length ? (
-              <div className="grid max-h-[360px] gap-3 overflow-y-auto pr-2 md:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
                 {project.videoVariants.slice(0, 8).map((item) => (
                   <div key={`${item.name}-${item.video}`} className="border border-black/10 bg-[#f8f8f4] p-3">
                     <div className="flex items-center justify-between gap-2">
@@ -124,7 +100,7 @@ export default async function ProjectOverviewPage({ params }: { params: Promise<
                       <Badge variant="outline">{item.duration ? `${item.duration}s` : "mp4"}</Badge>
                     </div>
                     {item.cover ? (
-                      <img src={mediaUrl(item.cover) || undefined} alt={item.name} className="mt-3 aspect-[9/16] max-h-[180px] w-full object-cover" />
+                      <img src={mediaUrl(item.cover) || undefined} alt={item.name} className="mt-3 aspect-[9/16] max-h-[260px] w-full object-cover" />
                     ) : null}
                     {item.video ? (
                       <Link href={mediaUrl(item.video) || "#"} className="mt-3 inline-block text-sm underline underline-offset-4">
