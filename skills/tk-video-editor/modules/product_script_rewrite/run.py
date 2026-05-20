@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Create a product_script_card.json from a viral pattern card and product profile."""
+"""Create a product_script_card.json from a viral pattern card and product profile.
+
+The generator is reference-template driven. Product facts decide what can be
+said; the viral pattern card decides sentence order, role, and rhythm.
+"""
 
 from __future__ import annotations
 
@@ -95,6 +99,10 @@ def creator_pain(text: str) -> str:
         "A student wastes hours before actually writing anything": "wasting hours before actually writing anything",
         "A PhD or Master student does not know which papers are worth reading first": "not knowing which papers are worth reading first",
         "A researcher has papers but does not know how to organize them into a review structure": "having papers but no clear review structure",
+        "A researcher has a rough idea but cannot make a clean figure": "messy rough figure ideas",
+        "A PhD student draws an ugly sketch and wants to turn it into a polished diagram": "ugly research sketches",
+        "A student uses AI to generate references but is not sure whether they are real": "not knowing if AI references are real",
+        "A citation looks real but points to the wrong paper": "citations that look real but point to the wrong paper",
     }
     return replacements.get(cleaned, cleaned)
 
@@ -124,200 +132,328 @@ def product_angles(product: dict, name: str, pain: str) -> list[str]:
     ]
 
 
-def build_script(product: dict, script_type: str, style: str, angle: str, hook: str, feature_index: int) -> dict:
-    name = product_name(product)
-    target = target_user(product)
-    pain = creator_pain(pain_point(product))
-    feature = pick_feature(product, feature_index)
-    proof_feature = pick_feature(product, min(feature_index + 1, max(len(feature_items(product)) - 1, 0)))
-    feature_name = feature_text(feature, "feature_name", "product workflow")
-    feature_benefit = creator_action(feature_text(feature, "user_benefit", feature_text(feature, "description", "move through the workflow faster")))
-    feature_visual = feature_text(feature, "visual_need", "Product screen recording that shows the specific feature being used.")
-    proof_name = feature_text(proof_feature, "feature_name", feature_name)
-    proof_benefit = creator_action(feature_text(proof_feature, "user_benefit", feature_benefit))
-    proof_visual = feature_text(proof_feature, "visual_need", feature_visual)
-    cta = product.get("cta") or "try it"
+def split_feature_words(product: dict) -> str:
+    features = feature_items(product)
+    return " ".join(feature_text(item, "feature_name", "") for item in features).lower()
 
-    return {
+
+def product_category(product: dict) -> str:
+    return product_value(product, "category", "").lower()
+
+
+def product_task(product: dict, variant: str) -> str:
+    name = product_name(product)
+    features = split_feature_words(product)
+    category = product_category(product)
+    joined = f"{features} {category}"
+
+    if "citation" in joined or "reference" in joined:
+        if variant == "viral_version":
+            return "check AI-generated references before you trust them"
+        if variant == "native_creator_version":
+            return "trace sources before putting citations in your paper"
+        return "verify references before you rely on them"
+    if "figure" in joined or "svg" in joined or "ppt" in joined or "image" in joined:
+        if variant == "viral_version":
+            return "turn rough research visuals into editable figure drafts"
+        if variant == "native_creator_version":
+            return "make a scientific figure draft without starting from a blank canvas"
+        return "turn a reference image into a scientific figure draft"
+    if "paper" in joined or "literature" in joined or "review" in joined:
+        if variant == "viral_version":
+            return "find real papers before opening 50 random tabs"
+        if variant == "native_creator_version":
+            return "start a literature review from real papers"
+        return "find real papers and organize them before writing"
+    return f"use {name} for this workflow"
+
+
+def result_proof(product: dict, variant: str) -> str:
+    features = split_feature_words(product)
+    category = product_category(product)
+    joined = f"{features} {category}"
+    if "citation" in joined or "reference" in joined:
+        return "Reference details you can review before trusting them!"
+    if "figure" in joined or "svg" in joined or "ppt" in joined or "image" in joined:
+        return "A figure draft you can review and edit!"
+    if "paper" in joined or "literature" in joined or "review" in joined:
+        return "A structured starting point based on real papers!"
+    return "A clearer workflow starting point!"
+
+
+def soft_value_claim(product: dict, variant: str) -> str:
+    features = split_feature_words(product)
+    category = product_category(product)
+    joined = f"{features} {category}"
+    if "citation" in joined or "reference" in joined:
+        return "it helps me check references before i trust them"
+    if "figure" in joined or "svg" in joined or "ppt" in joined or "image" in joined:
+        return "it gives me an editable figure draft instead of a static image"
+    if "paper" in joined or "literature" in joined or "review" in joined:
+        return "it helps me find relevant papers before i start writing"
+    return f"it helps me use {product_name(product)} as a starting point"
+
+
+def simple_instruction(product: dict) -> str:
+    features = split_feature_words(product)
+    if "citation" in features or "reference" in features or "source" in features:
+        return "just paste the claim or reference and check the source"
+    if "figure" in features or "svg" in features or "ppt" in features or "image" in features:
+        return "just upload your reference or type the figure idea"
+    if "paper" in features or "literature" in features or "review" in features:
+        return "just type your topic and choose the papers first"
+    return "just open the workflow and check the result"
+
+
+def emotional_result_line(product: dict, variant: str, role: str) -> str:
+    features = split_feature_words(product)
+    category = product_category(product)
+    joined = f"{features} {category}"
+    if "citation" in joined or "reference" in joined:
+        if "finished_output_relief" in role:
+            return "now i know which references need a closer look, goodnight world 🥱💤"
+        return "and boom, now i know what to check before trusting it 😭"
+    if "figure" in joined or "svg" in joined or "ppt" in joined or "image" in joined:
+        if "finished_output_relief" in role:
+            return "now i can keep editing the figure instead of starting over 🥱💤"
+        return "and boom, now the figure is actually editable 😭"
+    if "paper" in joined or "literature" in joined or "review" in joined:
+        if "finished_output_relief" in role:
+            return "my review finally has a real-paper starting point, goodnight world 🥱💤"
+        return "and boom, now i have a structure to review 😭"
+    return "and boom, now i know the next step 😭"
+
+
+def safe_hook(product: dict, variant: str, reference_hook: str = "") -> str:
+    task = product_task(product, variant)
+    lowered_hook = reference_hook.lower()
+    if "saying goodbye" in lowered_hook:
+        pain = short_caption(creator_pain(pain_point(product)), 34).lower()
+        return f"saying goodbye to {pain} because i can now {task}"
+    if "my professor said" in lowered_hook or "my teacher said" in lowered_hook:
+        if "citation" in split_feature_words(product) or "reference" in split_feature_words(product):
+            return "My professor said references can look real and still be wrong..."
+        if "figure" in split_feature_words(product):
+            return "My professor said research figures need to stay editable..."
+        return "My professor said a review still needs real papers behind it..."
+    if "how to" in lowered_hook:
+        suffix = ""
+        if "like a phd/master student" in lowered_hook:
+            suffix = " like a PhD/Master student"
+        if "the easy way" in lowered_hook:
+            suffix += " (The easy way)"
+        return f"How to {task}{suffix}"
+    if "still" in lowered_hook or "?" in reference_hook:
+        return f"Still doing this manually instead of using {product_name(product)}?"
+    if "dont" in lowered_hook or "don't" in lowered_hook:
+        return f"Don't make this mistake before you {task}"
+    return product_angles(product, product_name(product), pain_point(product))[0]
+
+
+def feature_by_index(product: dict, index: int) -> dict:
+    return pick_feature(product, index)
+
+
+def title_case_feature(value: str) -> str:
+    words = [word for word in re_words(value) if word not in {"relevant", "structured"}]
+    return " ".join(word.capitalize() for word in words[:3]) or value.title()
+
+
+def re_words(value: str) -> list[str]:
+    import re
+    return re.findall(r"[a-zA-Z0-9]+", value.lower())
+
+
+def command_for_feature(feature_name: str, product: dict, index: int) -> str:
+    lowered = feature_name.lower()
+    joined = split_feature_words(product)
+    if "find" in lowered and "paper" in lowered:
+        return "Click Find Papers"
+    if ("source" in lowered or "paper" in lowered) and index > 0:
+        return "Pick the sources you want"
+    if "verify" in lowered and "reference" in lowered:
+        return "Open Verify References"
+    if "find" in lowered and "source" in lowered:
+        return "Open Find Sources"
+    if "citation" in lowered or "reference" in lowered:
+        return "Paste the citation first"
+    if "image to image" in lowered or ("image" in lowered and "figure" in joined):
+        return "Upload a reference image"
+    if "text to figure" in lowered:
+        return "Type your figure prompt"
+    if "svg" in lowered:
+        return "Open SVG Editor"
+    if "ppt" in lowered or "export" in lowered:
+        return "Export the editable file"
+    if "review" in lowered and "draft" in lowered:
+        return "Then generate the review draft"
+    if "outline" in lowered:
+        return "Then generate the outline"
+    return f"Click {title_case_feature(feature_name)}"
+
+
+def action_line(product: dict, role: str, index: int, variant: str) -> tuple[str, str, str]:
+    name = product_name(product)
+    feature = feature_by_index(product, index)
+    feature_name = feature_text(feature, "feature_name", "product workflow")
+    visual = feature_text(feature, "visual_need", "Product screen recording showing the workflow.")
+    role = role.lower()
+
+    if role in {"strong_cta", "cta"}:
+        return "Just go to this website!", "website landing page with product logo and main CTA visible", ""
+    if role in {"shortcut_action"}:
+        if "citation" in split_feature_words(product) or "reference" in split_feature_words(product):
+            return "So I check the sources first", visual, feature_name
+        if "figure" in split_feature_words(product):
+            return "So I keep the figure editable first", visual, feature_name
+        return "So I start from real papers first", visual, feature_name
+    if role in {"tool_value_claim"}:
+        return soft_value_claim(product, variant), visual, feature_name
+    if role in {"simple_action_instruction"}:
+        return simple_instruction(product), visual, feature_name
+    if role in {"quantity_result_proof", "result_proof_and_emotional_release", "finished_output_relief"}:
+        return emotional_result_line(product, variant, role), visual, feature_name
+    if role in {"command", "product_reveal", "tool_reveal"}:
+        if index <= 0:
+            return f"Open {name}", visual, feature_name
+        return command_for_feature(feature_name, product, index), visual, feature_name
+    if role in {"input", "topic_input"}:
+        if "figure" in split_feature_words(product):
+            return "Upload your reference image", visual, feature_name
+        if "citation" in split_feature_words(product) or "reference" in split_feature_words(product):
+            return "Paste the claim or citation text", visual, feature_name
+        return "Type your research topic", visual, feature_name
+    if role in {"pro_tip", "tip"}:
+        if "citation" in split_feature_words(product) or "reference" in split_feature_words(product):
+            return "Pro tip! check the source before you rely on it", visual, feature_name
+        if "figure" in split_feature_words(product):
+            return "Pro tip! review the details before exporting", visual, feature_name
+        return "Pro tip! choose the sources first", visual, feature_name
+    if role in {"time_promise", "workflow_progress"}:
+        return "Then let it show the next step", visual, feature_name
+    if role in {"reveal_setup"}:
+        return "It's done! let's see...", visual, feature_name
+    if role in {"result_proof", "bonus_proof", "proof"}:
+        return result_proof(product, variant), visual, feature_name
+    return f"Then use {feature_name}", visual, feature_name
+
+
+def normalized_roles(caption_logic: dict) -> list[str]:
+    roles = caption_logic.get("sentence_roles") or []
+    if isinstance(roles, list) and roles:
+        return [str(role) for role in roles]
+    sequence = caption_logic.get("visible_sequence") or []
+    fallback = ["hook", "strong_cta", "command", "input", "proof", "result_proof"]
+    if isinstance(sequence, list) and sequence:
+        return [fallback[min(i, len(fallback) - 1)] for i, _ in enumerate(sequence)]
+    return fallback
+
+
+def reference_lines(caption_logic: dict) -> list[str]:
+    sequence = caption_logic.get("visible_sequence") or []
+    if isinstance(sequence, list) and sequence:
+        return [str(item) for item in sequence]
+    return []
+
+
+def time_range(index: int, total: int, max_seconds: int = 30) -> str:
+    if total <= 1:
+        return f"0-{max_seconds}s"
+    if index == 0:
+        return "0-3s"
+    remaining = max_seconds - 3
+    slot = remaining / max(total - 1, 1)
+    start = 3 + slot * (index - 1)
+    end = 3 + slot * index
+    return f"{start:.1f}-{end:.1f}s".replace(".0", "")
+
+
+def script_has_forbidden_claims(script: dict, product: dict) -> bool:
+    forbidden = " ".join(str(item).lower() for item in product.get("forbidden_claims", []) or [])
+    if not forbidden:
+        return False
+    text = " ".join(
+        f"{beat.get('voiceover', '')} {beat.get('on_screen_text', '')}"
+        for beat in script.get("full_script", [])
+    ).lower()
+    risky_terms = ["perfect", "100%", "guarantee", "guaranteed", "submit directly", "publication-ready", "replace"]
+    return any(term in text for term in risky_terms if term in forbidden or term in text)
+
+
+def build_reference_driven_script(product: dict, viral_card: dict, script_type: str, style: str) -> dict:
+    caption_logic = viral_card.get("caption_logic") if isinstance(viral_card.get("caption_logic"), dict) else {}
+    roles = normalized_roles(caption_logic)
+    refs = reference_lines(caption_logic)
+    if len(refs) < len(roles):
+        refs.extend([""] * (len(roles) - len(refs)))
+
+    hook = safe_hook(product, script_type, refs[0] if refs else "")
+    action_index = 0
+    beats: list[dict] = []
+    for idx, role in enumerate(roles):
+        role_key = str(role).lower()
+        if idx == 0 or role_key == "hook":
+            line = hook
+            visual_need = "Opening shot that visually matches the reference template and makes the workflow familiar."
+            product_feature = ""
+            beat_name = "hook"
+        else:
+            line, visual_need, product_feature = action_line(product, role_key, action_index, script_type)
+            if role_key in {
+                "command",
+                "input",
+                "topic_input",
+                "product_reveal",
+                "tool_reveal",
+                "proof",
+                "result_proof",
+                "bonus_proof",
+                "shortcut_action",
+                "tool_value_claim",
+                "simple_action_instruction",
+                "quantity_result_proof",
+                "result_proof_and_emotional_release",
+                "finished_output_relief",
+            }:
+                action_index += 1
+            beat_name = role_key
+
+        beats.append({
+            "time": time_range(idx, len(roles)),
+            "beat": beat_name,
+            "voiceover": line,
+            "on_screen_text": line,
+            "visual_need": visual_need,
+            "product_feature": product_feature,
+            "reference_line": refs[idx] if idx < len(refs) else "",
+            "reference_role": role,
+        })
+
+    script = {
         "type": script_type,
         "style": style,
         "script_title": hook,
-        "script_angle": angle,
-        "target_viewer": target,
+        "script_angle": f"Reference-template adaptation: {viral_card.get('main_content_logic', 'workflow demo')}",
+        "caption_adaptation": {
+            "source": "viral_pattern_card.caption_logic",
+            "roles_preserved": roles,
+            "punctuation_pattern": caption_logic.get("punctuation_pattern", ""),
+            "reuse_rule": caption_logic.get("reuse_rule", "Preserve structure and replace with product-safe facts."),
+            "boundary": "Template logic comes from the reference video; product claims come only from product facts.",
+        },
+        "target_viewer": target_user(product),
         "version": "TikTok native creator style",
-        "full_script": [
-            {
-                "time": "0-3s",
-                "beat": "hook",
-                "voiceover": hook,
-                "on_screen_text": short_caption(hook),
-                "visual_need": "Strong opening shot showing the user's pain or familiar workflow.",
-                "product_feature": "",
-            },
-            {
-                "time": "3-8s",
-                "beat": "pain",
-                "voiceover": f"I used to waste so much time just {pain} before I could even start writing.",
-                "on_screen_text": "Too much time before real work",
-                "visual_need": "Handheld laptop shot, messy tabs, scrolling, or frustrated study/work scene.",
-                "product_feature": "",
-            },
-            {
-                "time": "8-16s",
-                "beat": "solution",
-                "voiceover": f"Now I use {name}'s {feature_name} to {feature_benefit}",
-                "on_screen_text": feature_name,
-                "visual_need": feature_visual,
-                "product_feature": feature_name,
-            },
-            {
-                "time": "16-24s",
-                "beat": "proof",
-                "voiceover": f"Then I use {proof_name} to {proof_benefit}. That gives me a clearer starting point.",
-                "on_screen_text": "A clearer starting point",
-                "visual_need": proof_visual,
-                "product_feature": proof_name,
-            },
-            {
-                "time": "24-30s",
-                "beat": "cta",
-                "voiceover": f"If this is part of your workflow, {cta} before opening another pile of tabs.",
-                "on_screen_text": cta,
-                "visual_need": "Clean product end screen, homepage, CTA button, or result hero shot.",
-                "product_feature": "",
-            },
-        ],
-        "caption": f"{pain.capitalize()} does not have to be the hardest part.",
-        "hashtags": ["#aitools", "#productivity", "#researchtools", "#studenttok", "#workflow"],
+        "full_script": beats,
+        "caption": f"Use {product_name(product)} as a workflow starting point, then review the result yourself.",
+        "hashtags": ["#researchtools", "#aitools", "#studytok", "#academictok", "#workflow"],
         "compliance_notes": product.get("forbidden_claims", []) or [
             "Avoid guaranteed outcomes.",
             "Do not imply the product replaces user judgment.",
         ],
     }
-
-
-def literfy_hook(script_type: str) -> str:
-    if script_type == "safe_version":
-        return "Still starting your literature review with 50 random tabs?"
-    if script_type == "viral_version":
-        return "Still using Google Scholar like this for your literature review?"
-    return "How to start your literature review like a PhD/Master student (The easy way)"
-
-
-def build_literfy_workflow_script(product: dict, script_type: str, style: str, hook: str) -> dict:
-    name = product_name(product)
-    cta = product.get("cta") or "try Literfy"
-    opening_hook = literfy_hook(script_type)
-    return {
-        "type": script_type,
-        "style": style,
-        "script_title": opening_hook,
-        "script_angle": "Google Scholar trust hook to real-papers literature review workflow",
-        "caption_adaptation": {
-            "reference_style": "research.connect Google Scholar academic workflow demo",
-            "grammar_preserved": [
-                "How to ... like a PhD/Master student (The easy way)",
-                "Just go to this website!",
-                "Click ...",
-                "Type ...",
-                "Pro tip! ...",
-                "Then ...",
-                "It's done! let's see...",
-                "[result proof]!"
-            ],
-            "safety_change": "Result proof is rewritten as a review draft based on real papers, not a perfect or submission-ready literature review."
-        },
-        "target_viewer": target_user(product),
-        "version": "TikTok native creator style",
-        "full_script": [
-            {
-                "time": "0-3s",
-                "beat": "hook",
-                "voiceover": opening_hook,
-                "on_screen_text": opening_hook,
-                "visual_need": "Google Scholar or familiar academic search screen as trust object.",
-                "product_feature": "",
-            },
-            {
-                "time": "3-5s",
-                "beat": "strong_cta",
-                "voiceover": "Just go to this website!",
-                "on_screen_text": "Just go to this website!",
-                "visual_need": "Literfy landing page or website homepage with Literature Review button visible.",
-                "product_feature": "Literature Review Outline",
-            },
-            {
-                "time": "5-8s",
-                "beat": "product_reveal",
-                "voiceover": "Click Literature Review",
-                "on_screen_text": "Click Literature Review",
-                "visual_need": "Literfy dashboard with Literature Review or review button visible.",
-                "product_feature": "Literature Review Outline",
-            },
-            {
-                "time": "8-11s",
-                "beat": "input_topic",
-                "voiceover": "Type your literature review topic",
-                "on_screen_text": "Type your literature review topic",
-                "visual_need": "Screen recording of typing a research topic.",
-                "product_feature": "Find Papers",
-            },
-            {
-                "time": "11-15s",
-                "beat": "real_papers",
-                "voiceover": "It finds real papers for your topic",
-                "on_screen_text": "It finds real papers for your topic",
-                "visual_need": "Paper results list, related papers, ranked papers, or real academic paper cards.",
-                "product_feature": "Paper Discovery / Related Papers",
-            },
-            {
-                "time": "15-18s",
-                "beat": "select_papers",
-                "voiceover": "Pro tip! select the papers first",
-                "on_screen_text": "Pro tip! select the papers first",
-                "visual_need": "Selecting or filtering papers before generating an outline.",
-                "product_feature": "Paper Discovery / Related Papers",
-            },
-            {
-                "time": "18-22s",
-                "beat": "generate_outline",
-                "voiceover": "Then generate the outline",
-                "on_screen_text": "Then generate the outline",
-                "visual_need": "Click generate outline button or outline generation action.",
-                "product_feature": "Literature Review Outline",
-            },
-            {
-                "time": "22-26s",
-                "beat": "outline_proof",
-                "voiceover": "It's done! let's see...",
-                "on_screen_text": "It's done! let's see...",
-                "visual_need": "Generated literature review outline with sections.",
-                "product_feature": "Literature Review Outline",
-            },
-            {
-                "time": "26-30s",
-                "beat": "generate_review",
-                "voiceover": "Now turn it into a review draft",
-                "on_screen_text": "Now turn it into a review draft",
-                "visual_need": "Click generate full review button.",
-                "product_feature": "AI Literature Review Draft",
-            },
-            {
-                "time": "30-35s",
-                "beat": "result_cta",
-                "voiceover": f"A literature review draft based on real papers! Review and edit before you keep writing. {cta}.",
-                "on_screen_text": "A review draft based on real papers!",
-                "visual_need": "Generated literature review draft based on selected papers.",
-                "product_feature": "AI Literature Review Draft",
-            },
-        ],
-        "caption": "A literature review should start from real papers, not chaos.",
-        "hashtags": ["#literaturereview", "#researchtools", "#phdstudent", "#gradstudent", "#aitools"],
-        "compliance_notes": product.get("forbidden_claims", []) or [
-            "Do not tell users to submit AI output directly.",
-            "Do not claim perfect accuracy or replacement of real research.",
-        ],
-    }
+    if script_has_forbidden_claims(script, product):
+        script["needs_claim_review"] = True
+    return script
 
 
 def build_card(data: dict) -> dict:
@@ -325,25 +461,12 @@ def build_card(data: dict) -> dict:
     if "product_script_card" in data and isinstance(data["product_script_card"], dict):
         return data["product_script_card"]
 
-    name = product_name(product)
-    pain = pain_point(product)
-
-    hooks = product_angles(product, name, pain)
-    while len(hooks) < 3:
-        hooks.append(f"I wish I knew {name} before wasting time on {pain}.")
-
-    if product_name(product).lower() == "literfy":
-        scripts = [
-            build_literfy_workflow_script(product, "safe_version", "truthful, specific, not exaggerated", hooks[0]),
-            build_literfy_workflow_script(product, "viral_version", "stronger hook, faster rhythm", hooks[1]),
-            build_literfy_workflow_script(product, "native_creator_version", "casual user recommendation", hooks[2]),
-        ]
-    else:
-        scripts = [
-            build_script(product, "safe_version", "truthful, specific, not exaggerated", "pain-saving workflow", hooks[0], 0),
-            build_script(product, "viral_version", "stronger hook, faster rhythm", "anti-manual-work shortcut", hooks[1], 0),
-            build_script(product, "native_creator_version", "casual user recommendation", "I wish I knew this earlier", hooks[2], 1),
-        ]
+    viral_card = data.get("viral_pattern_card") if isinstance(data.get("viral_pattern_card"), dict) else {}
+    scripts = [
+        build_reference_driven_script(product, viral_card, "safe_version", "truthful, specific, not exaggerated"),
+        build_reference_driven_script(product, viral_card, "viral_version", "stronger hook, faster rhythm"),
+        build_reference_driven_script(product, viral_card, "native_creator_version", "casual user recommendation"),
+    ]
 
     return {
         "viral_pattern_card_ref": data.get("viral_pattern_card_ref", ""),
@@ -351,6 +474,12 @@ def build_card(data: dict) -> dict:
         "video_length": data.get("video_length", "25-35s"),
         "tone": data.get("tone", "native creator style, casual, not too salesy"),
         "product": product,
+        "template_source": {
+            "type": "viral_pattern_card",
+            "template_id": viral_card.get("template_id", ""),
+            "caption_logic_used": bool(viral_card.get("caption_logic")),
+            "main_content_logic": viral_card.get("main_content_logic", ""),
+        },
         "scripts": scripts,
         "allowed_feature_names": [feature_text(f, "feature_name", "") for f in feature_items(product)],
         "forbidden_claims": product.get("forbidden_claims", []),

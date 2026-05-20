@@ -40,10 +40,15 @@ It must not rewrite subtitles, change cover text, choose footage, or render vide
 
 - Use the competitor caption as a category and structure reference, not as copy to paste.
 - Preserve the academic/research niche and creator workflow feel.
-- Adapt to product truth: for Literfy, the safe claim is real papers -> selected sources -> outline -> review draft starting point.
+- Adapt to product truth:
+  - Literfy: real papers -> saved sources -> structured review starting point.
+  - Citely: source tracing -> reference details -> check before relying.
+  - FigPad: figure draft -> editable/reviewable output -> user checks details.
 - Do not claim perfect output, guaranteed accuracy, submission-ready work, or replacement of real research.
 - Hashtags should mix product, academic niche, and reference-style tags.
 - Avoid making the caption sound like website ad copy.
+
+If the reference post uses regret/urgency such as `dont make the mistakes i did. Use this website now!!!`, preserve that publishing rhythm but replace the action with the product-safe workflow shown in the final video.
 
 ## Output
 

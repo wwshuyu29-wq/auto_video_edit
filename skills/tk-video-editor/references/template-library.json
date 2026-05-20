@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "template_id": "research_connect_google_scholar",
+      "match": {
+        "accounts": ["research.connect"],
+        "video_ids": ["7633832153922489621"],
+        "keywords": ["google scholar", "phd/master", "the easy way", "just go to this website"]
+      },
+      "account_positioning": "Academic productivity account using familiar research interfaces, status-upgrade hooks, and simple screen-recorded workflows to make research tools feel immediately useful.",
+      "main_content_logic": "Status-gap hook -> strong website CTA -> short command chain -> tip/proof setup -> finished academic output proof.",
+      "caption_logic": {
+        "template_id": "research_connect_google_scholar",
+        "visible_sequence": [
+          "How to write your thesis paper like a PhD/Master student (The easy way)",
+          "Just go to this website!",
+          "Click researcher",
+          "Type your research paper topic",
+          "Pro tip! use latex for pdfs",
+          "Then watch it do its magic in 2-3 mins",
+          "It's done! let's see...",
+          "A complete research paper!",
+          "With meaningful visualizations!"
+        ],
+        "sentence_roles": [
+          "hook",
+          "strong_cta",
+          "command",
+          "input",
+          "pro_tip",
+          "workflow_progress",
+          "reveal_setup",
+          "result_proof",
+          "bonus_proof"
+        ],
+        "punctuation_pattern": "Status-upgrade hook with parenthetical qualifier, exclamation CTA, short command captions, Pro tip!, ellipsis before reveal, exclamation result proof.",
+        "command_grammar": [
+          "Just go to this website!",
+          "Click researcher",
+          "Type your research paper topic"
+        ],
+        "hook_formula": "How to [do academic task] like a [higher-status academic identity] ([easy/smart/legit way])",
+        "cta_position": "early",
+        "result_proof_position": "ending",
+        "reuse_rule": "Preserve status-gap hook, early CTA, command chain, reveal setup, and proof ending. Replace unsupported time/completion claims with product-safe proof."
+      },
+      "template_fingerprint": {
+        "line_count": 9,
+        "has_early_cta": true,
+        "has_command_chain": true,
+        "has_result_reveal": true
+      },
+      "rewrite_boundaries": [
+        "Do not imply the product writes a complete paper for submission.",
+        "Do not copy Google Scholar branding as product affiliation.",
+        "Replace exact time promises with safer phrases unless measured.",
+        "Keep the sentence rhythm and roles, not the original claims."
+      ]
+    },
+    {
+      "template_id": "soft_student_era_human_hook",
+      "match": {
+        "accounts": ["soft.student.era"],
+        "video_ids": ["7639598483682544904"],
+        "keywords": ["professor", "ai detector", "and boom", "assignment"]
+      },
+      "account_positioning": "Student-life creator using fear, casual confession, and quick laptop proof to make an academic workflow shortcut feel like an insider tip.",
+      "main_content_logic": "Authority warning or student fear -> creator reaction/confession -> one-step tool action -> fast result proof -> emotional release.",
+      "caption_logic": {
+        "template_id": "soft_student_era_human_hook",
+        "visible_sequence": [
+          "My professor said he can tell if we use AI for our assignments...",
+          "So I check my sources first",
+          "and boom, now I know what to fix \ud83d\ude2d"
+        ],
+        "sentence_roles": [
+          "fear_hook_and_identity_setup",
+          "shortcut_action",
+          "result_proof_and_emotional_release"
+        ],
+        "punctuation_pattern": "Lowercase casual confession, quoted authority warning, ellipsis after fear setup, and boom result reveal, emoji at relief moment.",
+        "command_grammar": [
+          "So I check..."
+        ],
+        "hook_formula": "My [authority/person] said [high-anxiety warning]...",
+        "cta_position": "implicit_middle",
+        "result_proof_position": "ending",
+        "reuse_rule": "Preserve fear-to-relief rhythm. Rewrite unsafe bypass/detector logic into ethical checking, verifying, organizing, or editing support."
+      },
+      "template_fingerprint": {
+        "line_count": 3,
+        "has_early_cta": false,
+        "has_command_chain": false,
+        "has_result_reveal": true
+      },
+      "rewrite_boundaries": [
+        "Do not promise bypassing AI detection.",
+        "Do not encourage academic dishonesty.",
+        "Keep the human anxiety hook, but convert the action into ethical review or verification.",
+        "Use one clear proof moment instead of a long feature tour."
+      ]
+    },
+    {
+      "template_id": "ice_uni_paper_hook",
+      "match": {
+        "accounts": ["ice.uni"],
+        "video_ids": ["7578561011322473749"],
+        "keywords": ["sleepless night", "finish my rrl", "research papers in secs", "goodnight world"]
+      },
+      "account_positioning": "Student/research productivity account using late-night academic pain, handheld paper/laptop proof, and emotional relief to frame research workflows as time-saving study help.",
+      "main_content_logic": "Sleepless-night pain hook -> tool value promise -> simple topic input -> relevant paper/result proof -> finished starting point -> relief ending.",
+      "caption_logic": {
+        "template_id": "ice_uni_paper_hook",
+        "visible_sequence": [
+          "saying goodbye to my sleepless night because i can now start my rrl faster \ud83e\udd79\ud83e\udd79\ud83e\udd79",
+          "this gives me research papers that are curated and relevant \ud83e\uddd1\u200d\ud83d\udcbb\u2728",
+          "just type your topic and let it find the papers \ud83e\ude84\u2728",
+          "relevant research papers in seconds \ud83e\udd70\u2728",
+          "my review finally has a starting point, goodnight world \ud83e\udd71\ud83d\udca4"
+        ],
+        "sentence_roles": [
+          "pain_relief_hook",
+          "tool_value_claim",
+          "simple_action_instruction",
+          "quantity_result_proof",
+          "finished_output_relief"
+        ],
+        "punctuation_pattern": "All lowercase, emotional student phrasing, short lines, cute emojis, soft no-hard-sell CTA, relief ending.",
+        "command_grammar": [
+          "just type your topic"
+        ],
+        "hook_formula": "saying goodbye to my [study pain] because i can now [safe progress outcome]",
+        "cta_position": "soft_implicit",
+        "result_proof_position": "middle_and_end",
+        "reuse_rule": "Preserve lowercase emotional study rhythm and relief arc. Replace exact time/quantity promises with safe measured or softer claims."
+      },
+      "template_fingerprint": {
+        "line_count": 5,
+        "has_early_cta": false,
+        "has_command_chain": true,
+        "has_result_reveal": true
+      },
+      "rewrite_boundaries": [
+        "Do not promise a full assignment, RRL, or paper is finished automatically.",
+        "Do not use exact time claims unless verified.",
+        "Keep the late-night pain and relief emotion, but frame the result as a starting point or checked workflow.",
+        "Use emojis sparingly and only where the template expects emotional release."
+      ]
+    }
+  ]
+}

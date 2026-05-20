@@ -8,7 +8,7 @@ It converts a viral pattern card into product-specific TikTok scripts. It should
 
 It does not analyze competitor videos again and does not choose footage.
 
-When the viral pattern card includes `caption_logic`, this module must preserve the reference video's sentence roles and punctuation rhythm unless doing so would violate product facts or forbidden claims.
+When the viral pattern card includes `caption_logic`, this module must preserve the reference video's sentence roles and punctuation rhythm unless doing so would violate product facts or forbidden claims. This is template-driven, not product-driven: Literfy, Citely, and FigPad all adapt from the provided reference template, not from a hardcoded product script.
 
 ## Input Shape
 
@@ -100,7 +100,7 @@ feature -> user scenario -> pain -> visible result -> CTA
 
 ## Reference Caption Adaptation
 
-For the `research.connect` style, adapt at the caption-grammar level:
+Adapt at the caption-grammar level. The exact pattern comes from `viral_pattern_card.caption_logic`, for example:
 
 ```text
 How to [product-safe task] like a PhD/Master student (The easy way)
@@ -114,14 +114,24 @@ It's done! let's see...
 [product-safe result proof]!
 ```
 
-For Literfy, safe result proof examples:
+Safe result proof examples by product:
 
-- `A review draft based on real papers!`
-- `A literature review outline from selected papers!`
-- `A structured starting point from real sources!`
+- Literfy: `A structured starting point based on real papers!`
+- Citely: `Reference details you can review before trusting them!`
+- FigPad: `A figure draft you can review and edit!`
 
 Unsafe result proof examples:
 
 - `A perfect literature review!`
 - `Submit this directly!`
 - `A publication-ready paper!`
+
+## Template Boundary
+
+Do not write a product-specific exception such as "Literfy always uses Google Scholar logic." The rule is:
+
+```text
+reference video/template -> caption_logic -> product-safe adaptation
+```
+
+If the user sends a new TikTok URL or video, first refresh `viral_pattern_card.caption_logic`. If the template stays the same, the existing caption logic can be reused for new product angles.

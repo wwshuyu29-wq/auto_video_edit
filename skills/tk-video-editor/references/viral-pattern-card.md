@@ -16,6 +16,23 @@ It answers:
 
 It does not write scripts for the user's product.
 
+## Standard Skill Output Contract
+
+`viral_deconstruction` is a decision module, not a summary module. It must produce a reusable template card with:
+
+- `template_id`: stable reference-template identifier, such as `research_connect_google_scholar`.
+- `caption_logic`: visible sentence sequence, roles, punctuation rhythm, command grammar, CTA position, and result-proof position.
+- `template_fingerprint`: compact facts that let downstream modules compare templates.
+- `rewrite_boundaries`: what can be reused and what cannot be copied.
+- `evidence_gaps`: missing evidence that weakens the analysis.
+
+The downstream script module should be able to adapt Literfy, Citely, or FigPad from this card without a product-specific hardcoded template.
+
+Known reference templates are stored in `references/template-library.json`.
+Use this library when a URL/account/template is recognized, then let explicit
+user-supplied `caption_logic` override the library if the user has a more
+accurate transcript or subtitle sequence.
+
 ## Caption Logic
 
 For TikTok references with visible text, the card must include `caption_logic`. This is the sentence-level operating system of the video. It should capture:
@@ -28,6 +45,32 @@ For TikTok references with visible text, the card must include `caption_logic`. 
 - Any repeated phrase formulas.
 
 The product rewrite stage should preserve this grammar where safe. Do not only summarize the video's topic.
+
+Recommended roles:
+
+```text
+hook
+strong_cta
+command
+input
+pro_tip
+workflow_progress
+reveal_setup
+result_proof
+bonus_proof
+cta
+```
+
+These roles are more important than the exact words. Exact words are reference evidence, not product copy.
+
+Current canonical template IDs:
+
+```text
+research_connect_google_scholar
+soft_student_era_human_hook
+ice_uni_paper_hook
+custom_reference_template
+```
 
 ## Input Shape
 
@@ -57,7 +100,20 @@ The module must write `output/viral_pattern_card.json`.
 ```json
 {
   "account_positioning": "This account uses a student-friendly tone to solve academic workflow pain.",
+  "template_id": "research_connect_google_scholar",
   "main_content_logic": "Status-gap hook -> tool reveal -> simple workflow -> result proof -> CTA",
+  "template_fingerprint": {
+    "line_count": 9,
+    "roles": ["hook", "strong_cta", "command", "input", "pro_tip", "workflow_progress", "reveal_setup", "result_proof", "bonus_proof"],
+    "has_early_cta": true,
+    "has_command_chain": true,
+    "has_result_reveal": true
+  },
+  "rewrite_boundaries": [
+    "Do not write product script in this module.",
+    "Do not copy exact reference wording unless it is generic platform grammar.",
+    "Only preserve template roles, pacing, and rhetorical shape."
+  ],
   "viral_patterns": [
     {
       "pattern_name": "Academic shortcut demo",
@@ -102,7 +158,8 @@ The module must write `output/viral_pattern_card.json`.
     "structure_reusability": 9,
     "product_adaptability": 7,
     "copy_risk": 3
-  }
+  },
+  "evidence_gaps": []
 }
 ```
 

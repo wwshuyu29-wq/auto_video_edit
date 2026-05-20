@@ -30,6 +30,7 @@
           "caption_options": {"type": "array", "items": {"type": "string"}},
           "recommended_caption": {"type": "string"},
           "hashtags": {"type": "array", "items": {"type": "string"}},
+          "keywords": {"type": "array", "items": {"type": "string"}},
           "posting_notes": {"type": "array", "items": {"type": "string"}},
           "compliance_notes": {"type": "array", "items": {"type": "string"}},
           "scores": {"type": "object"}

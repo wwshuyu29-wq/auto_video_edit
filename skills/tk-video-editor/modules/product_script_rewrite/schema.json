@@ -5,6 +5,7 @@
   "required": ["product", "scripts", "scores"],
   "properties": {
     "product": {"type": "object"},
+    "template_source": {"type": "object"},
     "scripts": {
       "type": "array",
       "items": {
@@ -19,11 +20,14 @@
           "version": {"type": "string"},
           "full_script": {"type": "array"},
           "caption": {"type": "string"},
+          "caption_adaptation": {"type": "object"},
           "hashtags": {"type": "array", "items": {"type": "string"}},
           "compliance_notes": {"type": "array", "items": {"type": "string"}}
         }
       }
     },
+    "allowed_feature_names": {"type": "array", "items": {"type": "string"}},
+    "forbidden_claims": {"type": "array", "items": {"type": "string"}},
     "scores": {"type": "object"}
   }
 }

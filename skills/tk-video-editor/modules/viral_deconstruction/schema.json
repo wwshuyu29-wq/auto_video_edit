@@ -5,16 +5,24 @@
   "required": ["account_positioning", "main_content_logic", "caption_logic", "viral_patterns", "recommended_templates", "scores"],
   "properties": {
     "account_positioning": {"type": "string"},
+    "template_id": {"type": "string"},
     "main_content_logic": {"type": "string"},
     "caption_logic": {
       "type": "object",
       "properties": {
+        "template_id": {"type": "string"},
         "visible_sequence": {"type": "array", "items": {"type": "string"}},
         "sentence_roles": {"type": "array", "items": {"type": "string"}},
         "punctuation_pattern": {"type": "string"},
+        "command_grammar": {"type": "array", "items": {"type": "string"}},
+        "hook_formula": {"type": "string"},
+        "cta_position": {"type": "string"},
+        "result_proof_position": {"type": "string"},
         "reuse_rule": {"type": "string"}
       }
     },
+    "template_fingerprint": {"type": "object"},
+    "rewrite_boundaries": {"type": "array", "items": {"type": "string"}},
     "viral_patterns": {
       "type": "array",
       "items": {
@@ -35,6 +43,7 @@
     },
     "recommended_templates": {"type": "array"},
     "scores": {"type": "object"},
+    "evidence_gaps": {"type": "array", "items": {"type": "string"}},
     "source_videos": {"type": "array"}
   }
 }

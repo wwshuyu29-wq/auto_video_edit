@@ -32,6 +32,27 @@ PRODUCT_TAGS = {
     "figpad": ["#figpad", "#scientificfigures", "#researchtools"],
 }
 
+PRODUCT_COPY = {
+    "literfy": {
+        "task": "start a literature review from real papers",
+        "proof": "find real papers, save useful sources, and build a structured starting point you can review",
+        "risk": "Do not imply Literfy writes a perfect or submission-ready literature review.",
+        "keywords": ["literature review", "real papers", "paper discovery", "research workflow"],
+    },
+    "citely": {
+        "task": "check AI-generated references before trusting them",
+        "proof": "trace source trails and review citation details before you rely on them",
+        "risk": "Do not imply Citely guarantees every citation is correct.",
+        "keywords": ["citation check", "AI references", "source tracing", "reference verification"],
+    },
+    "figpad": {
+        "task": "turn research visuals into editable scientific figure drafts",
+        "proof": "generate a figure direction, review the details, and keep editing the output",
+        "risk": "Do not imply FigPad guarantees scientifically accurate or journal-ready figures.",
+        "keywords": ["scientific figure", "figure draft", "SVG editor", "research visuals"],
+    },
+}
+
 
 def read_optional_json(path: str | None) -> dict:
     if not path:
@@ -59,6 +80,30 @@ def captions_from_variant(variant: dict) -> list[str]:
 
 def product_name(product: dict) -> str:
     return str(product.get("product_name") or product.get("name") or "").strip()
+
+
+def product_key(product: dict) -> str:
+    return product_name(product).lower()
+
+
+def product_copy(product: dict) -> dict:
+    key = product_key(product)
+    if key in PRODUCT_COPY:
+        return PRODUCT_COPY[key]
+    features = product.get("core_features") or []
+    feature_names = []
+    for item in features:
+        if isinstance(item, dict):
+            feature_names.append(str(item.get("feature_name") or item.get("description") or "workflow"))
+        else:
+            feature_names.append(str(item))
+    task = feature_names[0] if feature_names else "use this workflow"
+    return {
+        "task": task,
+        "proof": "move through the workflow with a clearer starting point you can review",
+        "risk": "Do not imply guaranteed results or replacement of user judgment.",
+        "keywords": feature_names[:4],
+    }
 
 
 def forbidden_terms(product: dict) -> list[str]:
@@ -98,49 +143,67 @@ def make_titles(captions: list[str], product: dict) -> list[str]:
     hook = captions[0] if captions else "How to start a literature review"
     name = product_name(product) or "this tool"
     angle = caption_angle(captions)
+    copy = product_copy(product)
+    task = copy["task"]
     if angle == "pain_question":
         return [
-            "Stop opening random tabs for your literature review",
-            "A better way to start your literature review",
-            f"I tried {name} for literature review research",
+            f"Stop doing this manually: {task}",
+            f"A better way to {task}",
+            f"I tried {name} for this research workflow",
         ]
     if angle == "workflow_direct":
         return [
-            "Start a literature review without 50 tabs",
-            "A faster literature review workflow",
-            f"How I use {name} to start research",
+            f"How I use {name} to {task}",
+            f"A faster research workflow for {task}",
+            f"{task.capitalize()} without the messy workaround",
+        ]
+    if "dont" in hook.lower() or "don't" in hook.lower():
+        return [
+            f"dont make the mistakes i did. {task}",
+            f"Use this before you {task}",
+            f"I wish I checked this workflow earlier",
         ]
     return [
-        "How to start your literature review like a PhD/Master student",
-        "The easy way to start a literature review",
-        f"Starting a literature review with {name}",
+        f"How to {task}",
+        f"The easier way to {task}",
+        f"Using {name} for this research workflow",
     ]
 
 
 def make_captions(captions: list[str], product: dict, reference: str) -> list[str]:
-    name = product_name(product) or "Literfy"
+    name = product_name(product) or "this tool"
     hook = captions[0] if captions else "How to start your literature review"
     angle = caption_angle(captions)
+    copy = product_copy(product)
+    task = copy["task"]
+    proof_line = f"It helps you {copy['proof']}."
+    soft_cta = f"Try {name} before doing the whole workflow manually."
 
-    proof_line = "It helps you find real papers, select sources, generate an outline, and turn it into a review draft you can review and edit."
-    soft_cta = f"Try {name} before opening another pile of tabs."
+    reference_lower = reference.lower()
+    reference_uses_mistake_cta = "mistake" in reference_lower or "use this website" in reference_lower
 
+    if reference_uses_mistake_cta:
+        return [
+            f"dont make the mistakes i did. Use this website before you {task}!!! {proof_line}",
+            f"Use this website before you {task}. {proof_line} Still review the result before using it.",
+            f"I would not {task} without checking the workflow first. {proof_line}",
+        ]
     if angle == "pain_question":
         return [
             f"{hook} This is the workflow I would use instead. {proof_line} {soft_cta}",
-            f"If your literature review starts with random Google Scholar tabs, try this workflow. {name} helps you move from topic → papers → outline → draft starting point.",
-            f"Random tabs are not a research strategy. I used {name} to start from real papers and build a review outline first.",
+            f"If this workflow still feels messy, try {name}. {proof_line}",
+            f"Manual work is not a strategy. I used {name} to {task} with a clearer starting point.",
         ]
     if angle == "workflow_direct":
         return [
-            f"{hook}. I used {name} to find real papers first, select the useful ones, and create a structured starting point for the review.",
-            f"One workflow for starting a literature review without living in 50 tabs: topic → real papers → selected sources → outline → draft.",
-            f"Starting a literature review feels easier when the first step is real papers, not a blank doc. {soft_cta}",
+            f"{hook}. I used {name} to {task}. {proof_line}",
+            f"One workflow for {task}: open the tool, run the key step, review the output, then keep editing.",
+            f"This feels easier when the first step is a visible workflow, not a blank screen. {soft_cta}",
         ]
     return [
-        f"{hook}. Just go to the website, type your topic, select real papers, then generate an outline and review draft starting point.",
-        f"How I would start a literature review now: find real papers first, select the sources, generate an outline, then review and edit the draft.",
-        f"Literature review shortcut, but keep it honest: use real papers, review the output, and edit before you keep writing. {soft_cta}",
+        f"{hook}. Just go to the website, follow the workflow, and review the result before using it.",
+        f"How I would {task} now: use the tool for the first pass, then review and edit the result myself.",
+        f"Workflow shortcut, but keep it honest: use the output as a starting point and review it before you keep working. {soft_cta}",
     ]
 
 
@@ -171,9 +234,10 @@ def make_hashtags(product: dict, reference: str, captions: list[str]) -> list[st
 
 
 def compliance_notes(product: dict, captions: list[str]) -> list[str]:
+    copy = product_copy(product)
     notes = [
-        "Do not imply the tool writes a perfect or submission-ready literature review.",
-        "Keep the wording as a workflow starting point, not a replacement for academic judgment.",
+        copy["risk"],
+        "Keep the wording as a workflow starting point, not a replacement for user judgment.",
         "If mentioning Google Scholar, do not imply affiliation or partnership.",
     ]
     blocked = forbidden_terms(product)
@@ -195,7 +259,7 @@ def build_variant_copy(variant: dict, product: dict, reference: str) -> dict:
         "source_hook": captions[0] if captions else "",
         "reference_adaptation": {
             "reference_caption": reference,
-            "adapted_logic": "Keep research.connect academic workflow framing and hashtag category, but rewrite around Literfy's real-paper literature-review workflow.",
+            "adapted_logic": f"Keep the reference post rhythm and hashtag category, but rewrite around {product_name(product) or 'the product'} and the visible video workflow.",
             "do_not_copy_directly": True,
         },
         "title_options": title_options,
@@ -206,9 +270,10 @@ def build_variant_copy(variant: dict, product: dict, reference: str) -> dict:
         "posting_notes": [
             "Use the matching Google Scholar cover image for this video.",
             "Add TikTok trending music inside TikTok; do not use generated voiceover/BGM.",
-            "Keep product claims tied to visible workflow steps: real papers, selected sources, outline, draft starting point.",
+            "Keep product claims tied to visible workflow steps and product facts.",
         ],
         "compliance_notes": compliance_notes(product, captions),
+        "keywords": [product_name(product), *product_copy(product).get("keywords", [])],
         "scores": {
             "reference_fit": 9 if caption_angle(captions) == "reference_faithful" else 8,
             "native_tiktok_feel": 8,

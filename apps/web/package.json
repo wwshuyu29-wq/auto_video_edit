@@ -5,10 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "blob:plan": "node scripts/upload-project-assets-to-blob.mjs --all --dry-run",
+    "blob:upload": "node scripts/upload-project-assets-to-blob.mjs --all --execute --overwrite",
+    "r2:plan": "node scripts/upload-project-assets-to-r2.mjs --all --dry-run",
+    "r2:upload": "node scripts/upload-project-assets-to-r2.mjs --all --execute --overwrite"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1050.0",
+    "@aws-sdk/lib-storage": "^3.1050.0",
     "@base-ui/react": "^1.4.1",
+    "@vercel/blob": "^2.4.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.16.0",

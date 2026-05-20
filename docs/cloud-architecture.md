@@ -63,6 +63,8 @@ Later, stable logic can move from `skills/tk-video-editor` into `packages/skill-
 
 ## Storage Rules
 
+The chosen object storage provider for this repo is Cloudflare R2. Vercel Blob was tested first, but the Hobby storage quota is too small for the current local video library.
+
 Git stores:
 
 - source code

@@ -75,7 +75,8 @@ python3 modules/orchestrator/run.py --input output/orchestrator_input.json --out
 
 ### 2. Viral Deconstruction
 
-Use `references/viral-pattern-card.md` and `modules/viral_deconstruction/schema.json`.
+Use `references/viral-pattern-card.md`, `references/template-library.json`, and
+`modules/viral_deconstruction/schema.json`.
 
 Input: account/video evidence.
 
@@ -92,6 +93,14 @@ python3 modules/viral_deconstruction/run.py --input <account_data.json> --out ou
 ```
 
 The card must answer why the video/account works, how the opening grabs attention, how the middle proves the tool, how the ending converts, what can be reused, and what cannot be copied.
+
+Treat this module as a standard sub-skill with a strict output contract:
+
+- It writes reusable template logic, not product scripts.
+- It must identify `template_id`, `caption_logic`, `template_fingerprint`, `rewrite_boundaries`, and `evidence_gaps`.
+- It should preserve the reference video's sentence roles, CTA position, punctuation rhythm, and result-proof structure.
+- It should match known reference videos through `references/template-library.json` when the URL/account/template is recognized.
+- If evidence is missing, it should say what is missing instead of inventing certainty.
 
 For short-form reference videos with visible subtitles, always extract `caption_logic` before rewriting:
 
@@ -130,7 +139,15 @@ The output should normally include three variants:
 
 Write like a creator sharing a useful workflow, not like a product homepage.
 
-For scripts adapted from a specific reference video, preserve the reference video's caption grammar and punctuation rhythm when it is safe:
+For scripts adapted from a specific reference video, preserve the reference video's caption grammar and punctuation rhythm when it is safe. The script logic must come from `viral_pattern_card.caption_logic`, not from a product-specific hardcoded template. Literfy, Citely, and FigPad all follow the same rule:
+
+```text
+reference video/template -> caption_logic -> product-safe script
+```
+
+If the user sends a new TikTok URL, regenerate or update `viral_pattern_card` first. If the template is unchanged, reuse the same `caption_logic` for new product angles.
+
+Common reference grammar examples:
 
 - `How to ... like a PhD/Master student (The easy way)`
 - `Just go to this website!`
@@ -236,6 +253,12 @@ output/publishing_copy_card.json
 output/publishing_copy_delivery.md
 ```
 
+Independent runner:
+
+```bash
+python3 modules/publishing_copy_rewrite/run.py --input <publishing_copy_input.json> --out output/publishing_copy_card.json
+```
+
 Every final video delivery must include the matching cover image, captioned
 video, recommended TikTok title, recommended caption, hashtags, and keywords.
 Do not leave publishing copy hidden only inside `product_script_card.json`.
@@ -252,7 +275,13 @@ advertising.
 
 Do not simply reuse the product script title or script caption as the final
 publishing title/caption. The publishing copy must rewrite the reference post's
-caption logic. For the Research Connect reference pattern:
+caption logic and product truth. Product-specific safe directions:
+
+- Literfy: paper discovery, saved sources, structured review starting point.
+- Citely: source tracing, reference detail review, checking before relying.
+- FigPad: scientific figure draft, editable/reviewable output, user detail checking.
+
+For the Research Connect reference pattern:
 
 ```text
 dont make the mistakes i did. Use this website now!!!
@@ -298,42 +327,6 @@ Before presenting final outputs:
 - Check cut boundaries for black flashes, audio pops, and awkward jumps.
 - Verify vertical 9:16 unless otherwise requested.
 - Append reusable learnings to `references/tiktok-ops-knowledge.md` and the project knowledge base.
-
-### 10. Publishing Copy
-
-Use `references/publishing-copy-card.md`, `references/external-video-skills.md`,
-and `modules/publishing_copy_rewrite/schema.json`.
-
-Input: final delivery variants, video subtitles, product facts, and the reference post caption.
-
-Output:
-
-```text
-output/publishing_copy_card.json
-```
-
-Independent runner:
-
-```bash
-python3 modules/publishing_copy_rewrite/run.py --input <publishing_copy_input.json> --out output/publishing_copy_card.json
-```
-
-This module rewrites the competitor post copy into safe TikTok publishing metadata:
-
-- title options
-- recommended title
-- caption options
-- recommended caption
-- hashtags
-- posting notes
-- compliance notes
-
-It must preserve product truth and the user's delivery standard: final assets are cover image + captioned video, with TikTok trending music added inside TikTok.
-
-For TikTok caption/title/hashtag inspiration, consult
-`references/external-video-skills.md` for the `tiktok-captions` boundary: use
-it only for publishing metadata after the video and subtitles are approved.
-Product facts and forbidden claims always override platform-native phrasing.
 
 ## References
 

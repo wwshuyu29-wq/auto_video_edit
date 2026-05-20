@@ -4,6 +4,7 @@ __pycache__/
 *.pyc
 .env
 .env.*
+!apps/web/.env.example
 .venv/
 **/node_modules/
 **/.next/
@@ -52,3 +53,5 @@ source-skills/**/.git/
 
 # Keep temporary preview work directories out of Git even when JSON artifacts are unignored above.
 **/output/**/preview_render/**
+.vercel
+.env*.local
