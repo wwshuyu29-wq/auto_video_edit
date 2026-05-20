@@ -1,0 +1,24 @@
+{
+  "ai_reference_risk_v2_ko": {
+    "text": "AI가 만든 참고문헌\n아직도 그냥 믿어?",
+    "style": {
+      "lines": [
+        "AI가 만든 참고문헌",
+        "아직도 그냥 믿어?"
+      ],
+      "font_size": 64,
+      "line_gap": 8,
+      "y_ratio": 0.405,
+      "max_width": 900,
+      "highlight": [
+        "AI"
+      ],
+      "highlight_fill": [
+        255,
+        235,
+        112,
+        255
+      ]
+    }
+  }
+}

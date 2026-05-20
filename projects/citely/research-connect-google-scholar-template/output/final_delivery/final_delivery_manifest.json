@@ -28,6 +28,20 @@
       "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_find_sources_focus_cover.jpg",
       "duration_seconds": 24.8,
       "style_notes": "Find-sources angle, narrower text block and one native emoji on the result-shock beat."
+    },
+    {
+      "variant": "ai_reference_risk_v2",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/citely_ai_reference_risk_v2_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/cover_style_ai_reference_risk_v2.jpg",
+      "duration_seconds": 24.63,
+      "style_notes": "AI reference risk check workflow"
+    },
+    {
+      "variant": "ai_reference_risk_v2_ko",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2_ko/citely_ai_reference_risk_v2_ko_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2_ko/cover_style_ai_reference_risk_v2_ko.jpg",
+      "duration_seconds": 24.63,
+      "style_notes": "Korean subtitle version; same shot order and timing as ai_reference_risk_v2."
     }
   ],
   "qa": {

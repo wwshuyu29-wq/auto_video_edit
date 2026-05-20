@@ -1,0 +1,91 @@
+{
+  "platform": "TikTok",
+  "tone": "native creator style, casual, not too salesy",
+  "video_length": "21-25s",
+  "scripts": [
+    {
+      "type": "image_to_image_v2",
+      "script_title": "How to turn a reference image into a cleaner scientific figure draft",
+      "script_angle": "Image-to-image scientific figure workflow",
+      "caption": "dont make the mistakes i did. Use this website when your research figure needs a cleaner visual draft!!! Upload a reference image, generate a new figure direction, then review and edit the result.",
+      "hashtags": [
+        "#figpad",
+        "#scientificfigure",
+        "#researchtools",
+        "#phd",
+        "#academictok",
+        "#aitools",
+        "#researchpaper",
+        "#studytok"
+      ],
+      "full_script": [
+        {
+          "time": "0-3.2s",
+          "beat": "hook",
+          "voiceover": "How to turn a rough reference image into a scientific figure draft",
+          "on_screen_text": "How to turn a rough reference image into a scientific figure draft",
+          "visual_need": "",
+          "preferred_clip_id": "00_google_scholar_hook"
+        },
+        {
+          "time": "3.2-5.8s",
+          "beat": "strong_cta",
+          "voiceover": "Just go to this website!",
+          "on_screen_text": "Just go to this website!",
+          "visual_need": "",
+          "preferred_clip_id": "02_figpad_landing_page"
+        },
+        {
+          "time": "5.8-7.7s",
+          "beat": "dashboard",
+          "voiceover": "Open FigPad",
+          "on_screen_text": "Open FigPad",
+          "visual_need": "",
+          "preferred_clip_id": "01_figpad_dashboard"
+        },
+        {
+          "time": "7.7-13.4s",
+          "beat": "workflow_input",
+          "voiceover": "Upload a reference image",
+          "on_screen_text": "Upload a reference image",
+          "visual_need": "",
+          "preferred_clip_id": "14_image_to_image_workflow"
+        },
+        {
+          "time": "13.4-17.2s",
+          "beat": "generate",
+          "voiceover": "Then generate a cleaner figure direction",
+          "on_screen_text": "Then generate a cleaner figure direction",
+          "visual_need": "",
+          "preferred_clip_id": "14_image_to_image_workflow"
+        },
+        {
+          "time": "17.2-21.6s",
+          "beat": "result_proof",
+          "voiceover": "Now you have a draft to review and edit",
+          "on_screen_text": "Now you have a draft to review and edit",
+          "visual_need": "",
+          "preferred_clip_id": "14_image_to_image_workflow"
+        },
+        {
+          "time": "21.6-24.8s",
+          "beat": "editable_followup",
+          "voiceover": "Don’t skip checking the details",
+          "on_screen_text": "Don’t skip checking the details",
+          "visual_need": "",
+          "preferred_clip_id": "07_svg_editor_edit_demo_2"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "hook_strength": 8,
+    "product_fit": 9,
+    "native_tiktok_feel": 8,
+    "clarity": 8,
+    "conversion_potential": 8
+  },
+  "compliance_notes": [
+    "Frame generated image as a draft/direction that needs review, not guaranteed scientific accuracy."
+  ]
+}

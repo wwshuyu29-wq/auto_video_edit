@@ -1,0 +1,107 @@
+{
+  "platform": "TikTok",
+  "tone": "native creator style, casual, not too salesy",
+  "video_length": "21-25s",
+  "scripts": [
+    {
+      "type": "ai_reference_risk_v2",
+      "script_title": "How to check if an AI reference is real before you trust it",
+      "script_angle": "AI reference risk check workflow",
+      "caption": "dont make the mistakes i did. Use this website before trusting an AI-generated reference!!! Find the source trail, then check the reference details before you rely on it.",
+      "hashtags": [
+        "#citely",
+        "#citationcheck",
+        "#researchtools",
+        "#citation",
+        "#researchpaper",
+        "#phd",
+        "#academictok",
+        "#aitools"
+      ],
+      "full_script": [
+        {
+          "time": "0-3.2s",
+          "beat": "hook",
+          "voiceover": "Still trusting AI-generated references without checking?",
+          "on_screen_text": "Still trusting AI-generated references without checking? 👀",
+          "visual_need": "",
+          "preferred_clip_id": "00_google_scholar_hook"
+        },
+        {
+          "time": "3.2-5.6s",
+          "beat": "strong_cta",
+          "voiceover": "Go to this website first",
+          "on_screen_text": "Go to this website first",
+          "visual_need": "",
+          "preferred_clip_id": "01_citely_landing_page"
+        },
+        {
+          "time": "5.6-7.7s",
+          "beat": "find_sources_entry",
+          "voiceover": "Open Find Sources",
+          "on_screen_text": "Open Find Sources",
+          "visual_need": "",
+          "preferred_clip_id": "02_click_find_sources"
+        },
+        {
+          "time": "7.7-11s",
+          "beat": "claim_input",
+          "voiceover": "Paste the claim or citation text",
+          "on_screen_text": "Paste the claim or citation text",
+          "visual_need": "",
+          "preferred_clip_id": "03_find_sources_input_claim"
+        },
+        {
+          "time": "11-13.8s",
+          "beat": "source_results",
+          "voiceover": "Now check where it comes from",
+          "on_screen_text": "Now check where it comes from",
+          "visual_need": "",
+          "preferred_clip_id": "04_find_sources_results"
+        },
+        {
+          "time": "13.8-16.1s",
+          "beat": "verify_entry",
+          "voiceover": "Then verify the reference",
+          "on_screen_text": "Then verify the reference",
+          "visual_need": "",
+          "preferred_clip_id": "05_click_verify_references"
+        },
+        {
+          "time": "16.1-18.7s",
+          "beat": "verify_input",
+          "voiceover": "Paste it before you rely on it",
+          "on_screen_text": "Paste it before you rely on it",
+          "visual_need": "",
+          "preferred_clip_id": "06_verify_references_input"
+        },
+        {
+          "time": "18.7-22.4s",
+          "beat": "verify_results",
+          "voiceover": "It shows the citation details to review",
+          "on_screen_text": "It shows the citation details to review",
+          "visual_need": "",
+          "preferred_clip_id": "07_verify_references_results"
+        },
+        {
+          "time": "22.4-24.8s",
+          "beat": "result_cta",
+          "voiceover": "Check it before it goes in your paper",
+          "on_screen_text": "Check it before it goes in your paper",
+          "visual_need": "",
+          "preferred_clip_id": "07_verify_references_results"
+        }
+      ]
+    }
+  ],
+  "scores": {
+    "hook_strength": 8,
+    "product_fit": 9,
+    "native_tiktok_feel": 8,
+    "clarity": 8,
+    "conversion_potential": 8
+  },
+  "compliance_notes": [
+    "Do not imply Citely guarantees every citation is correct; frame as checking/tracing support."
+  ]
+}

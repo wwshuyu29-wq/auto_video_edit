@@ -14,6 +14,14 @@
     "figpad_ppt_export_v1": {
       "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_ppt_export_v1_cover.jpg",
       "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_ppt_export_v1_video.mp4"
+    },
+    "image_to_image_v2": {
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2/cover_style_image_to_image_v2.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2/figpad_image_to_image_v2_video.mp4"
+    },
+    "image_to_image_v2_ko": {
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/cover_style_image_to_image_v2_ko.jpg",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/figpad_image_to_image_v2_ko_video.mp4"
     }
   },
   "publishing_copy_card": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/publishing_copy_card.json",

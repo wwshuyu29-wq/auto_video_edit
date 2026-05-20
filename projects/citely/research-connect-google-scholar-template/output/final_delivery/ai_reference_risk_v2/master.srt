@@ -1,0 +1,35 @@
+1
+00:00:00,000 --> 00:00:03,200
+Still trusting AI-generated references without checking? 👀
+
+2
+00:00:03,200 --> 00:00:05,600
+Go to this website first
+
+3
+00:00:05,600 --> 00:00:07,700
+Open Find Sources
+
+4
+00:00:07,700 --> 00:00:11,000
+Paste the claim or citation text
+
+5
+00:00:11,000 --> 00:00:13,800
+Now check where it comes from
+
+6
+00:00:13,800 --> 00:00:16,100
+Then verify the reference
+
+7
+00:00:16,100 --> 00:00:18,700
+Paste it before you rely on it
+
+8
+00:00:18,700 --> 00:00:22,400
+It shows the citation details to review
+
+9
+00:00:22,400 --> 00:00:24,800
+Check it before it goes in your paper

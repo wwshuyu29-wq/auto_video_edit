@@ -23,6 +23,8 @@ from PIL import Image, ImageDraw, ImageFont
 W, H = 1080, 1920
 FPS = 30
 FONT_PATHS = [
+    Path("/System/Library/Fonts/AppleSDGothicNeo.ttc"),
+    Path("/System/Library/Fonts/Supplemental/AppleGothic.ttf"),
     Path("/System/Library/Fonts/Supplemental/Arial Bold.ttf"),
     Path("/System/Library/Fonts/Supplemental/Arial Black.ttf"),
     Path("/System/Library/Fonts/Helvetica.ttc"),

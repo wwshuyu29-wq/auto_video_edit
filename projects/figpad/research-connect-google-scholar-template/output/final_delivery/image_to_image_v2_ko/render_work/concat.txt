@@ -1,0 +1,7 @@
+file '/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/render_work/segments/seg_00.mp4'
+file '/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/render_work/segments/seg_01.mp4'
+file '/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/render_work/segments/seg_02.mp4'
+file '/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/render_work/segments/seg_03.mp4'
+file '/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/render_work/segments/seg_04.mp4'
+file '/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/render_work/segments/seg_05.mp4'
+file '/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/render_work/segments/seg_06.mp4'

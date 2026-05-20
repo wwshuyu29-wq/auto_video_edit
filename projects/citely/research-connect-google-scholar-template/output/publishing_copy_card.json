@@ -169,6 +169,92 @@
         "product_truth_safety": 9,
         "hashtag_relevance": 9
       }
+    },
+    {
+      "variant_id": "ai_reference_risk_v2",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/citely_ai_reference_risk_v2_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/cover_style_ai_reference_risk_v2.jpg",
+      "source_hook": "How to check if an AI reference is real before you trust it",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Rewrite the reference post urgency around the exact workflow shown in the new Google Scholar template video.",
+        "do_not_copy_directly": true
+      },
+      "recommended_title": "How to check if an AI reference is real before you trust it",
+      "recommended_caption": "dont make the mistakes i did. Use this website before trusting an AI-generated reference!!! Find the source trail, then check the reference details before you rely on it.",
+      "hashtags": [
+        "#citely",
+        "#citationcheck",
+        "#researchtools",
+        "#citation",
+        "#researchpaper",
+        "#phd",
+        "#academictok",
+        "#aitools"
+      ],
+      "keywords": [
+        "Citely",
+        "AI reference check",
+        "citation verification",
+        "source tracing",
+        "research workflow"
+      ],
+      "posting_notes": [
+        "Use the matching Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM."
+      ],
+      "compliance_notes": [
+        "Do not imply Citely guarantees every citation is correct; frame as checking/tracing support."
+      ],
+      "scores": {
+        "reference_caption_fit": 8,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 8
+      }
+    },
+    {
+      "variant_id": "ai_reference_risk_v2_ko",
+      "video": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2_ko/citely_ai_reference_risk_v2_ko_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2_ko/cover_style_ai_reference_risk_v2_ko.jpg",
+      "source_hook": "AI 참고문헌 믿기 전에 먼저 확인해",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Keep the reference mistake-warning and direct website CTA, localized into Korean around Citely source tracing and reference checking.",
+        "do_not_copy_directly": true
+      },
+      "recommended_title": "AI 참고문헌 믿기 전에 먼저 확인해",
+      "recommended_caption": "AI가 만든 참고문헌을 그냥 믿기 전에 Citely에서 출처랑 인용 정보를 먼저 확인해봐. 논문에 넣기 전 마지막 체크용.",
+      "hashtags": [
+        "#Citely",
+        "#참고문헌",
+        "#인용",
+        "#논문",
+        "#대학원생",
+        "#researchtools",
+        "#academictok",
+        "#aitools"
+      ],
+      "keywords": [
+        "Citely",
+        "AI 참고문헌",
+        "인용 확인",
+        "source tracing",
+        "citation verification"
+      ],
+      "posting_notes": [
+        "Use the matching Korean Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM."
+      ],
+      "compliance_notes": [
+        "Do not imply Citely guarantees every citation is correct; frame as checking/tracing support."
+      ],
+      "scores": {
+        "reference_caption_fit": 8,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 8
+      }
     }
   ],
   "global_rules": [

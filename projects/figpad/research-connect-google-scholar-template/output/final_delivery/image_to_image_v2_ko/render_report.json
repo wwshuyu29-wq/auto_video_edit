@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/figpad/research-connect-google-scholar-template/output/shot_matching_plan_image_to_image_v2_ko.json",
+    "asset_library": "projects/figpad/research-connect-google-scholar-template/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/figpad_image_to_image_v2_ko_video.mp4",
+    "preview_sheet": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/figpad_image_to_image_v2_ko_video_sheet.jpg",
+    "preview_midpoint_sheet": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/figpad_image_to_image_v2_ko_video_midpoint_sheet.jpg",
+    "captions": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/captions.json",
+    "srt": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/master.srt",
+    "render_report": "projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/render_report.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "24.633333",
+      "size": "16418162"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

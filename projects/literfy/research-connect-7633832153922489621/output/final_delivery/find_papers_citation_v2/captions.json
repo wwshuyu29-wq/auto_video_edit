@@ -1,0 +1,204 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 3.0,
+      "duration": 3.0,
+      "text": "How to find real papers and save citations like a PhD/Master student (The easy way)",
+      "beat": "hook",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.25,
+      "clip_end": 3.35,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "How to find real papers",
+          "and save citations like a",
+          "PhD/Master student",
+          "(The easy way)"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.405,
+        "max_width": 920,
+        "highlight_terms": [
+          "PhD/Master"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.0,
+      "end": 5.3,
+      "duration": 2.3,
+      "text": "Just go to this website!",
+      "beat": "strong_cta",
+      "clip_id": "01_literfy_landing_page",
+      "clip_start": 0.55,
+      "clip_end": 3.5,
+      "playback_speed": 1.15,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 68,
+        "y_ratio": 0.43
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.3,
+      "end": 7.2,
+      "duration": 1.9000000000000004,
+      "text": "Click Find Papers",
+      "beat": "feature_entry",
+      "clip_id": "09_click_find_papers_button",
+      "clip_start": 0.0,
+      "clip_end": 2.1,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 66,
+        "y_ratio": 0.39
+      }
+    },
+    {
+      "index": 3,
+      "start": 7.2,
+      "end": 10.0,
+      "duration": 2.8,
+      "text": "Type your research topic",
+      "beat": "topic_input",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 0.3,
+      "clip_end": 3.8,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 64,
+        "y_ratio": 0.43
+      }
+    },
+    {
+      "index": 4,
+      "start": 10.0,
+      "end": 12.5,
+      "duration": 2.5,
+      "text": "Pick the sources you want",
+      "beat": "source_selection",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 4.0,
+      "clip_end": 8.2,
+      "playback_speed": 1.7,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 62,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "index": 5,
+      "start": 12.5,
+      "end": 15.4,
+      "duration": 2.9000000000000004,
+      "text": "Then it finds real papers for you",
+      "beat": "paper_results",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 8.5,
+      "clip_end": 13.5,
+      "playback_speed": 1.75,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "Then it finds",
+          "real papers for you"
+        ],
+        "font_size": 66,
+        "line_gap": 8,
+        "y_ratio": 0.39,
+        "highlight_terms": [
+          "real",
+          "papers"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "start": 15.4,
+      "end": 18.2,
+      "duration": 2.799999999999999,
+      "text": "Save the papers worth reading",
+      "beat": "save_papers",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 4.8,
+      "clip_end": 8.7,
+      "playback_speed": 1.45,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 62,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "index": 7,
+      "start": 18.2,
+      "end": 22.0,
+      "duration": 3.8000000000000007,
+      "text": "Then copy the citation when you need it",
+      "beat": "citation_export",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 12.0,
+      "clip_end": 17.8,
+      "playback_speed": 1.55,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "Then copy the citation",
+          "when you need it"
+        ],
+        "font_size": 62,
+        "line_gap": 10,
+        "y_ratio": 0.405
+      }
+    },
+    {
+      "index": 8,
+      "start": 22.0,
+      "end": 24.6,
+      "duration": 2.6000000000000014,
+      "text": "No more 50 random tabs!",
+      "beat": "result_cta",
+      "clip_id": "03_paper_list_results",
+      "clip_start": 0.4,
+      "clip_end": 3.3,
+      "playback_speed": 1.1,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 68,
+        "y_ratio": 0.42,
+        "highlight_terms": [
+          "50",
+          "tabs"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "image_to_image_v2_ko": {
+    "text": "러프한 참고 이미지를\n과학 figure 초안으로 바꾸는 법",
+    "style": {
+      "lines": [
+        "러프한 참고 이미지를",
+        "과학 figure 초안으로",
+        "바꾸는 법"
+      ],
+      "font_size": 62,
+      "line_gap": 8,
+      "y_ratio": 0.405,
+      "max_width": 920,
+      "highlight": [
+        "figure"
+      ],
+      "highlight_fill": [
+        255,
+        235,
+        112,
+        255
+      ]
+    }
+  }
+}

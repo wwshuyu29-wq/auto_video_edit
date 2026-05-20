@@ -1,0 +1,198 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 3.2,
+      "duration": 3.2,
+      "text": "Still trusting AI-generated references without checking? 👀",
+      "beat": "hook",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.2,
+      "clip_end": 3.6,
+      "playback_speed": 1.05,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Still trusting",
+          "AI-generated references",
+          "without checking? 👀"
+        ],
+        "font_size": 64,
+        "line_gap": 7,
+        "y_ratio": 0.405,
+        "max_width": 900,
+        "highlight_terms": [
+          "AI-generated",
+          "references"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.2,
+      "end": 5.6,
+      "duration": 2.3999999999999995,
+      "text": "Go to this website first",
+      "beat": "strong_cta",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 66,
+        "y_ratio": 0.42
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.6,
+      "end": 7.7,
+      "duration": 2.1000000000000005,
+      "text": "Open Find Sources",
+      "beat": "find_sources_entry",
+      "clip_id": "02_click_find_sources",
+      "clip_start": 0.2,
+      "clip_end": 3.3,
+      "playback_speed": 1.5,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 64,
+        "y_ratio": 0.38
+      }
+    },
+    {
+      "index": 3,
+      "start": 7.7,
+      "end": 11.0,
+      "duration": 3.3,
+      "text": "Paste the claim or citation text",
+      "beat": "claim_input",
+      "clip_id": "03_find_sources_input_claim",
+      "clip_start": 0.2,
+      "clip_end": 5.8,
+      "playback_speed": 1.7,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "Paste the claim",
+          "or citation text"
+        ],
+        "font_size": 62,
+        "line_gap": 9,
+        "y_ratio": 0.43
+      }
+    },
+    {
+      "index": 4,
+      "start": 11.0,
+      "end": 13.8,
+      "duration": 2.8000000000000007,
+      "text": "Now check where it comes from",
+      "beat": "source_results",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 62,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "index": 5,
+      "start": 13.8,
+      "end": 16.1,
+      "duration": 2.3000000000000007,
+      "text": "Then verify the reference",
+      "beat": "verify_entry",
+      "clip_id": "05_click_verify_references",
+      "clip_start": 0.2,
+      "clip_end": 4.7,
+      "playback_speed": 1.9,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 62,
+        "y_ratio": 0.405
+      }
+    },
+    {
+      "index": 6,
+      "start": 16.1,
+      "end": 18.7,
+      "duration": 2.599999999999998,
+      "text": "Paste it before you rely on it",
+      "beat": "verify_input",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.1,
+      "clip_end": 4.3,
+      "playback_speed": 1.6,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 60,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "index": 7,
+      "start": 18.7,
+      "end": 22.4,
+      "duration": 3.6999999999999993,
+      "text": "It shows the citation details to review",
+      "beat": "verify_results",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 5.1,
+      "playback_speed": 1.35,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "It shows the citation",
+          "details to review"
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.405,
+        "highlight_terms": [
+          "citation"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "start": 22.4,
+      "end": 24.8,
+      "duration": 2.400000000000002,
+      "text": "Check it before it goes in your paper",
+      "beat": "result_cta",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 2.0,
+      "clip_end": 5.1,
+      "playback_speed": 1.25,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Check it before it goes",
+          "in your paper"
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.43
+      }
+    }
+  ]
+}

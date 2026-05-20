@@ -1,0 +1,109 @@
+{
+  "platform": "TikTok",
+  "tone": "native TikTok creator style, Korean subtitles, casual, not too salesy",
+  "video_length": "21-25s",
+  "scripts": [
+    {
+      "type": "ai_reference_risk_v2_ko",
+      "script_title": "AI 참고문헌 믿기 전에 먼저 확인해",
+      "script_angle": "AI reference risk check workflow",
+      "caption": "AI가 만든 참고문헌을 그냥 믿기 전에 Citely에서 출처랑 인용 정보를 먼저 확인해봐. 논문에 넣기 전 마지막 체크용.",
+      "hashtags": [
+        "#citely",
+        "#citationcheck",
+        "#researchtools",
+        "#citation",
+        "#researchpaper",
+        "#phd",
+        "#academictok",
+        "#aitools"
+      ],
+      "full_script": [
+        {
+          "time": "0-3.2s",
+          "beat": "hook",
+          "voiceover": "AI가 만든 참고문헌 아직도 그냥 믿어?",
+          "on_screen_text": "AI가 만든 참고문헌\n아직도 그냥 믿어? 👀",
+          "visual_need": "",
+          "preferred_clip_id": "00_google_scholar_hook"
+        },
+        {
+          "time": "3.2-5.6s",
+          "beat": "strong_cta",
+          "voiceover": "먼저 이 웹사이트로 가",
+          "on_screen_text": "먼저 이 웹사이트로 가",
+          "visual_need": "",
+          "preferred_clip_id": "01_citely_landing_page"
+        },
+        {
+          "time": "5.6-7.7s",
+          "beat": "find_sources_entry",
+          "voiceover": "Find Sources 열기",
+          "on_screen_text": "Find Sources 열기",
+          "visual_need": "",
+          "preferred_clip_id": "02_click_find_sources"
+        },
+        {
+          "time": "7.7-11s",
+          "beat": "claim_input",
+          "voiceover": "주장이나 인용문을 붙여넣어",
+          "on_screen_text": "주장이나 인용문을 붙여넣어",
+          "visual_need": "",
+          "preferred_clip_id": "03_find_sources_input_claim"
+        },
+        {
+          "time": "11-13.8s",
+          "beat": "source_results",
+          "voiceover": "출처가 어디인지 확인해",
+          "on_screen_text": "출처가 어디인지 확인해",
+          "visual_need": "",
+          "preferred_clip_id": "04_find_sources_results"
+        },
+        {
+          "time": "13.8-16.1s",
+          "beat": "verify_entry",
+          "voiceover": "그다음 참고문헌을 검증해",
+          "on_screen_text": "그다음 참고문헌을 검증해",
+          "visual_need": "",
+          "preferred_clip_id": "05_click_verify_references"
+        },
+        {
+          "time": "16.1-18.7s",
+          "beat": "verify_input",
+          "voiceover": "믿기 전에 먼저 붙여넣어",
+          "on_screen_text": "믿기 전에 먼저 붙여넣어",
+          "visual_need": "",
+          "preferred_clip_id": "06_verify_references_input"
+        },
+        {
+          "time": "18.7-22.4s",
+          "beat": "verify_results",
+          "voiceover": "검토할 인용 정보를 보여줘",
+          "on_screen_text": "검토할 인용 정보를 보여줘",
+          "visual_need": "",
+          "preferred_clip_id": "07_verify_references_results"
+        },
+        {
+          "time": "22.4-24.8s",
+          "beat": "result_cta",
+          "voiceover": "논문에 넣기 전에 확인해",
+          "on_screen_text": "논문에 넣기 전에 확인해",
+          "visual_need": "",
+          "preferred_clip_id": "07_verify_references_results"
+        }
+      ],
+      "language": "ko"
+    }
+  ],
+  "scores": {
+    "hook_strength": 8,
+    "product_fit": 9,
+    "native_tiktok_feel": 8,
+    "clarity": 8,
+    "conversion_potential": 8
+  },
+  "compliance_notes": [
+    "Do not imply Citely guarantees every citation is correct; frame as checking/tracing support."
+  ],
+  "language": "ko"
+}

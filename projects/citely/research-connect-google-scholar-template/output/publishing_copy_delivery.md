@@ -1,117 +1,66 @@
-# Publishing Copy Delivery
-
-Use each pair as: cover image + corresponding captioned video + TikTok title/caption/tags. Add TikTok trending music inside TikTok.
+# Publishing Copy Delivery - Citely Google Scholar Template
 
 ## reference_faithful
 
-Video: `/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_reference_faithful_final.mp4`
-
-Cover: `/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_reference_faithful_cover.jpg`
+Video: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_reference_faithful_final.mp4
+Cover: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_reference_faithful_cover.jpg
 
 Recommended title: dont make the mistakes i did. Check AI references first
 
-Recommended caption:
+Recommended caption: dont make the mistakes i did. Use this website before trusting an AI-generated reference!!! It helps trace sources and check citation details before you rely on them.
 
-dont make the mistakes i did. Use this website before trusting an AI-generated reference!!! It helps trace sources and check citation details before you rely on them.
+Hashtags: #citely #citationcheck #researchtools #research #phd #literaturereview #citation #researchpaper #aitools #academictok
 
-Hashtags:
-
-#citely #citationcheck #researchtools #research #phd #literaturereview #citation #researchpaper #aitools #academictok
-
-Keywords:
-
-Citely, AI references, citation check, source tracing, research tools
-
-Reference adaptation:
-
-- Reference says not to repeat the creator's mistake and pushes a direct website CTA; this version rewrites that urgency around the specific product workflow shown in the video.
-- Do not copy typo or unsupported claims directly: true
-
-Notes:
-
-- Use the matching Google Scholar-style cover image with this captioned video.
-- Add TikTok trending music inside TikTok; no generated voiceover or BGM.
-- Keep the caption casual and urgent like the reference post, but product-safe.
-
-Compliance:
-
-- Do not say Citely guarantees 100% citation accuracy.
-- Do not say Citely replaces human academic judgment.
-- Do not encourage users to submit unchecked AI-generated references.
-- Frame Citely as checking, tracing, and verification support.
+Keywords: Citely, AI references, citation check, source tracing, research tools
 
 ## verify_reference_focus
 
-Video: `/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_verify_reference_focus_final.mp4`
-
-Cover: `/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_verify_reference_focus_cover.jpg`
+Video: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_verify_reference_focus_final.mp4
+Cover: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_verify_reference_focus_cover.jpg
 
 Recommended title: dont submit references before checking this website
 
-Recommended caption:
+Recommended caption: dont make the mistakes i did. Use this website now before trusting a reference that only looks real!!! It helps you check reference details before you submit or rely on them.
 
-dont make the mistakes i did. Use this website now before trusting a reference that only looks real!!! It helps you check reference details before you submit or rely on them.
+Hashtags: #citely #citationcheck #academicwriting #research #phd #literaturereview #citation #researchpaper #aitools #academictok
 
-Hashtags:
-
-#citely #citationcheck #academicwriting #research #phd #literaturereview #citation #researchpaper #aitools #academictok
-
-Keywords:
-
-reference verification, citation checker, academic writing, AI citation risk
-
-Reference adaptation:
-
-- Reference says not to repeat the creator's mistake and pushes a direct website CTA; this version rewrites that urgency around the specific product workflow shown in the video.
-- Do not copy typo or unsupported claims directly: true
-
-Notes:
-
-- Use the matching Google Scholar-style cover image with this captioned video.
-- Add TikTok trending music inside TikTok; no generated voiceover or BGM.
-- Keep the caption casual and urgent like the reference post, but product-safe.
-
-Compliance:
-
-- Do not say Citely guarantees 100% citation accuracy.
-- Do not say Citely replaces human academic judgment.
-- Do not encourage users to submit unchecked AI-generated references.
-- Frame Citely as checking, tracing, and verification support.
+Keywords: reference verification, citation checker, academic writing, AI citation risk
 
 ## find_sources_focus
 
-Video: `/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_find_sources_focus_final.mp4`
-
-Cover: `/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_find_sources_focus_cover.jpg`
+Video: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_find_sources_focus_final.mp4
+Cover: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/citely_find_sources_focus_cover.jpg
 
 Recommended title: dont waste hours finding the source manually
 
-Recommended caption:
+Recommended caption: dont make the mistakes i did. Use this website when you need to find where a claim actually comes from!!! Paste the claim and check the source trail first.
 
-dont make the mistakes i did. Use this website when you need to find where a claim actually comes from!!! Paste the claim and check the source trail first.
+Hashtags: #citely #sourcetracing #researchtools #research #phd #literaturereview #citation #researchpaper #aitools #academictok
 
-Hashtags:
+Keywords: find sources, source tracing, claim checking, research workflow
 
-#citely #sourcetracing #researchtools #research #phd #literaturereview #citation #researchpaper #aitools #academictok
+## ai_reference_risk_v2
 
-Keywords:
+Video: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/citely_ai_reference_risk_v2_video.mp4
+Cover: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/cover_style_ai_reference_risk_v2.jpg
 
-find sources, source tracing, claim checking, research workflow
+Recommended title: How to check if an AI reference is real before you trust it
 
-Reference adaptation:
+Recommended caption: dont make the mistakes i did. Use this website before trusting an AI-generated reference!!! Find the source trail, then check the reference details before you rely on it.
 
-- Reference says not to repeat the creator's mistake and pushes a direct website CTA; this version rewrites that urgency around the specific product workflow shown in the video.
-- Do not copy typo or unsupported claims directly: true
+Hashtags: #citely #citationcheck #researchtools #citation #researchpaper #phd #academictok #aitools
 
-Notes:
+Keywords: Citely, AI reference check, citation verification, source tracing, research workflow
 
-- Use the matching Google Scholar-style cover image with this captioned video.
-- Add TikTok trending music inside TikTok; no generated voiceover or BGM.
-- Keep the caption casual and urgent like the reference post, but product-safe.
+## ai_reference_risk_v2_ko
 
-Compliance:
+Video: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2_ko/citely_ai_reference_risk_v2_ko_video.mp4
+Cover: /Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2_ko/cover_style_ai_reference_risk_v2_ko.jpg
 
-- Do not say Citely guarantees 100% citation accuracy.
-- Do not say Citely replaces human academic judgment.
-- Do not encourage users to submit unchecked AI-generated references.
-- Frame Citely as checking, tracing, and verification support.
+Recommended title: AI 참고문헌 믿기 전에 먼저 확인해
+
+Recommended caption: AI가 만든 참고문헌을 그냥 믿기 전에 Citely에서 출처랑 인용 정보를 먼저 확인해봐. 논문에 넣기 전 마지막 체크용.
+
+Hashtags: #Citely #참고문헌 #인용 #논문 #대학원생 #researchtools #academictok #aitools
+
+Keywords: Citely, AI 참고문헌, 인용 확인, source tracing, citation verification

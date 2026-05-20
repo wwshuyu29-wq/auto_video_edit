@@ -170,6 +170,92 @@
         "product_truth_safety": 9,
         "hashtag_relevance": 9
       }
+    },
+    {
+      "variant_id": "image_to_image_v2",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2/figpad_image_to_image_v2_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2/cover_style_image_to_image_v2.jpg",
+      "source_hook": "How to turn a reference image into a cleaner scientific figure draft",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Rewrite the reference post urgency around the exact workflow shown in the new Google Scholar template video.",
+        "do_not_copy_directly": true
+      },
+      "recommended_title": "How to turn a reference image into a cleaner scientific figure draft",
+      "recommended_caption": "dont make the mistakes i did. Use this website when your research figure needs a cleaner visual draft!!! Upload a reference image, generate a new figure direction, then review and edit the result.",
+      "hashtags": [
+        "#figpad",
+        "#scientificfigure",
+        "#researchtools",
+        "#phd",
+        "#academictok",
+        "#aitools",
+        "#researchpaper",
+        "#studytok"
+      ],
+      "keywords": [
+        "FigPad",
+        "image to image",
+        "scientific figure",
+        "reference image",
+        "figure workflow"
+      ],
+      "posting_notes": [
+        "Use the matching Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM."
+      ],
+      "compliance_notes": [
+        "Frame generated image as a draft/direction that needs review, not guaranteed scientific accuracy."
+      ],
+      "scores": {
+        "reference_caption_fit": 8,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 8
+      }
+    },
+    {
+      "variant_id": "image_to_image_v2_ko",
+      "video": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/figpad_image_to_image_v2_ko_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/image_to_image_v2_ko/cover_style_image_to_image_v2_ko.jpg",
+      "source_hook": "참고 이미지를 scientific figure 초안으로 바꾸는 법",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Keep the reference direct website CTA and academic niche framing, localized into Korean around FigPad image-to-image figure draft workflow.",
+        "do_not_copy_directly": true
+      },
+      "recommended_title": "참고 이미지를 scientific figure 초안으로 바꾸는 법",
+      "recommended_caption": "러프한 참고 이미지를 FigPad에 넣고 더 깔끔한 scientific figure 초안을 만들어봐. 결과는 꼭 검토하고 디테일을 수정해야 해.",
+      "hashtags": [
+        "#FigPad",
+        "#scientificfigure",
+        "#논문",
+        "#대학원생",
+        "#연구",
+        "#academictok",
+        "#aitools",
+        "#studytok"
+      ],
+      "keywords": [
+        "FigPad",
+        "image to image",
+        "scientific figure",
+        "참고 이미지",
+        "figure workflow"
+      ],
+      "posting_notes": [
+        "Use the matching Korean Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM."
+      ],
+      "compliance_notes": [
+        "Frame generated image as a draft/direction that needs review, not guaranteed scientific accuracy."
+      ],
+      "scores": {
+        "reference_caption_fit": 8,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 8
+      }
     }
   ],
   "global_rules": [

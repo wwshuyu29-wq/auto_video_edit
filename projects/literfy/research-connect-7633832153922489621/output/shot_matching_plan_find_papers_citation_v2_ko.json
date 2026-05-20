@@ -1,0 +1,177 @@
+{
+  "selected_script_type": "find_papers_citation_v2_ko",
+  "editing_style": {
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "pace": "fast",
+    "average_clip_duration": "1.8-3.0s"
+  },
+  "scores": {
+    "visual_match": 9,
+    "pace_match": 8,
+    "asset_quality": 8,
+    "opening_strength": 8,
+    "product_proof_strength": 9
+  },
+  "missing_assets": [],
+  "risk_notes": [
+    "Citation/export is framed as organization support, not guaranteed citation accuracy."
+  ],
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-3s",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.25,
+      "clip_end": 3.35,
+      "playback_speed": 1,
+      "on_screen_text": "진짜 논문 찾고 인용 저장하는 법\nPhD/Master 학생처럼\n(쉬운 방법)",
+      "voiceover": "진짜 논문 찾고 인용 저장하는 법 PhD/Master 학생처럼 (쉬운 방법)",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "진짜 논문 찾고",
+          "인용 저장하는 법",
+          "PhD/Master 학생처럼",
+          "(쉬운 방법)"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.405,
+        "max_width": 920
+      }
+    },
+    {
+      "beat": "strong_cta",
+      "time": "3-5.3s",
+      "clip_id": "01_literfy_landing_page",
+      "clip_start": 0.55,
+      "clip_end": 3.5,
+      "playback_speed": 1.15,
+      "on_screen_text": "이 웹사이트로 가면 돼!",
+      "voiceover": "이 웹사이트로 가면 돼!",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 68,
+        "y_ratio": 0.43
+      }
+    },
+    {
+      "beat": "feature_entry",
+      "time": "5.3-7.2s",
+      "clip_id": "09_click_find_papers_button",
+      "clip_start": 0,
+      "clip_end": 2.1,
+      "playback_speed": 1.25,
+      "on_screen_text": "Find Papers 클릭",
+      "voiceover": "Find Papers 클릭",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 66,
+        "y_ratio": 0.39
+      }
+    },
+    {
+      "beat": "topic_input",
+      "time": "7.2-10s",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 0.3,
+      "clip_end": 3.8,
+      "playback_speed": 1.25,
+      "on_screen_text": "연구 주제를 입력해",
+      "voiceover": "연구 주제를 입력해",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 64,
+        "y_ratio": 0.43
+      }
+    },
+    {
+      "beat": "source_selection",
+      "time": "10-12.5s",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 4,
+      "clip_end": 8.2,
+      "playback_speed": 1.7,
+      "on_screen_text": "원하는 출처를 골라",
+      "voiceover": "원하는 출처를 골라",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 62,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "beat": "paper_results",
+      "time": "12.5-15.4s",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 8.5,
+      "clip_end": 13.5,
+      "playback_speed": 1.75,
+      "on_screen_text": "그다음 진짜 논문을 찾아줘",
+      "voiceover": "그다음 진짜 논문을 찾아줘",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "그다음 진짜 논문을",
+          "찾아줘"
+        ],
+        "font_size": 66,
+        "line_gap": 8,
+        "y_ratio": 0.39
+      }
+    },
+    {
+      "beat": "save_papers",
+      "time": "15.4-18.2s",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 4.8,
+      "clip_end": 8.7,
+      "playback_speed": 1.45,
+      "on_screen_text": "읽을 만한 논문은 저장해",
+      "voiceover": "읽을 만한 논문은 저장해",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 62,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "beat": "citation_export",
+      "time": "18.2-22s",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 12,
+      "clip_end": 17.8,
+      "playback_speed": 1.55,
+      "on_screen_text": "필요할 때 인용을 복사하면 끝",
+      "voiceover": "필요할 때 인용을 복사하면 끝",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "필요할 때 인용을",
+          "복사하면 끝"
+        ],
+        "font_size": 62,
+        "line_gap": 10,
+        "y_ratio": 0.405
+      }
+    },
+    {
+      "beat": "result_cta",
+      "time": "22-24.6s",
+      "clip_id": "03_paper_list_results",
+      "clip_start": 0.4,
+      "clip_end": 3.3,
+      "playback_speed": 1.1,
+      "on_screen_text": "이제 랜덤 탭 50개는 그만!",
+      "voiceover": "이제 랜덤 탭 50개는 그만!",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 68,
+        "y_ratio": 0.42
+      }
+    }
+  ],
+  "source_script_card": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/product_script_card_find_papers_citation_v2_ko.json",
+  "language": "ko"
+}

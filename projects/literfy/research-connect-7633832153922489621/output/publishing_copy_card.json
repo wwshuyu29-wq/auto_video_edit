@@ -161,6 +161,92 @@
         "product_truth_safety": 9,
         "hashtag_relevance": 9
       }
+    },
+    {
+      "variant_id": "find_papers_citation_v2",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2/literfy_find_papers_citation_v2_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2/cover_style_find_papers_citation_v2.jpg",
+      "source_hook": "How to find real papers and save citations like a PhD/Master student (The easy way)",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Rewrite the reference post urgency around the exact workflow shown in the new Google Scholar template video.",
+        "do_not_copy_directly": true
+      },
+      "recommended_title": "How to find real papers and save citations like a PhD/Master student (The easy way)",
+      "recommended_caption": "dont make the mistakes i did. Use this website before opening 50 random tabs!!! Find real papers, save the useful ones, then copy citations before you start writing.",
+      "hashtags": [
+        "#literfy",
+        "#researchtools",
+        "#literaturereview",
+        "#citation",
+        "#researchpaper",
+        "#phd",
+        "#studytok",
+        "#aitools"
+      ],
+      "keywords": [
+        "Literfy",
+        "find papers",
+        "citation export",
+        "literature review",
+        "research workflow"
+      ],
+      "posting_notes": [
+        "Use the matching Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM."
+      ],
+      "compliance_notes": [
+        "Citation/export is framed as organization support, not guaranteed citation accuracy."
+      ],
+      "scores": {
+        "reference_caption_fit": 8,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 8
+      }
+    },
+    {
+      "variant_id": "find_papers_citation_v2_ko",
+      "video": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2_ko/literfy_find_papers_citation_v2_ko_video.mp4",
+      "cover": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2_ko/cover_style_find_papers_citation_v2_ko.jpg",
+      "source_hook": "진짜 논문 찾고 인용 저장하는 법 PhD/Master 학생처럼 (쉬운 방법)",
+      "reference_adaptation": {
+        "reference_caption": "dont make the mistakes i did. Use this website now!!! #research #phd #literaturereview #citation #researchpaper",
+        "adapted_logic": "Keep the reference urgency and academic workflow framing, localized into Korean around the exact Literfy workflow shown.",
+        "do_not_copy_directly": true
+      },
+      "recommended_title": "진짜 논문 찾고 인용 저장하는 법",
+      "recommended_caption": "랜덤 탭 50개 열기 전에 이 웹사이트 먼저 써봐. Literfy에서 논문 찾고, 저장하고, 필요한 인용까지 정리할 수 있어.",
+      "hashtags": [
+        "#Literfy",
+        "#논문",
+        "#대학원생",
+        "#연구",
+        "#PhD",
+        "#studytok",
+        "#researchtools",
+        "#aitools"
+      ],
+      "keywords": [
+        "Literfy",
+        "논문 검색",
+        "인용 저장",
+        "literature review",
+        "research workflow"
+      ],
+      "posting_notes": [
+        "Use the matching Korean Google Scholar-style cover image with this captioned video.",
+        "Add TikTok trending music inside TikTok; no generated voiceover or BGM."
+      ],
+      "compliance_notes": [
+        "Do not imply perfect citations or replacement of academic judgment."
+      ],
+      "scores": {
+        "reference_caption_fit": 8,
+        "native_tiktok_feel": 8,
+        "product_truth_safety": 9,
+        "hashtag_relevance": 8
+      }
     }
   ],
   "global_rules": [

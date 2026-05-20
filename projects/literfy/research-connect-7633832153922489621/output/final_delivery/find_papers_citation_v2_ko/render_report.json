@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/literfy/research-connect-7633832153922489621/output/shot_matching_plan_find_papers_citation_v2_ko.json",
+    "asset_library": "projects/literfy/research-connect-7633832153922489621/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2_ko/literfy_find_papers_citation_v2_ko_video.mp4",
+    "preview_sheet": "projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2_ko/literfy_find_papers_citation_v2_ko_video_sheet.jpg",
+    "preview_midpoint_sheet": "projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2_ko/literfy_find_papers_citation_v2_ko_video_midpoint_sheet.jpg",
+    "captions": "projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2_ko/captions.json",
+    "srt": "projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2_ko/master.srt",
+    "render_report": "projects/literfy/research-connect-7633832153922489621/output/final_delivery/find_papers_citation_v2_ko/render_report.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "24.432682",
+      "size": "16855276"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

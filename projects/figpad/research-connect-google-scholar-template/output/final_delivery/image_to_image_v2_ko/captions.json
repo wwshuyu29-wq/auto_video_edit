@@ -1,0 +1,140 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 3.2,
+      "duration": 3.2,
+      "text": "러프한 참고 이미지를\n과학 figure 초안으로 바꾸는 법",
+      "beat": "hook",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.2,
+      "clip_end": 3.6,
+      "playback_speed": 1.05,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "러프한 참고 이미지를",
+          "과학 figure 초안으로",
+          "바꾸는 법"
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.405,
+        "max_width": 920
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.2,
+      "end": 5.8,
+      "duration": 2.5999999999999996,
+      "text": "이 웹사이트로 가면 돼!",
+      "beat": "strong_cta",
+      "clip_id": "02_figpad_landing_page",
+      "clip_start": 0.5,
+      "clip_end": 4.1,
+      "playback_speed": 1.35,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 68,
+        "y_ratio": 0.42
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.8,
+      "end": 7.7,
+      "duration": 1.9000000000000004,
+      "text": "FigPad 열기",
+      "beat": "dashboard",
+      "clip_id": "01_figpad_dashboard",
+      "clip_start": 0.0,
+      "clip_end": 2.8,
+      "playback_speed": 1.45,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 66,
+        "y_ratio": 0.39
+      }
+    },
+    {
+      "index": 3,
+      "start": 7.7,
+      "end": 13.4,
+      "duration": 5.7,
+      "text": "참고 이미지를 업로드해",
+      "beat": "workflow_input",
+      "clip_id": "14_image_to_image_workflow",
+      "clip_start": 0.3,
+      "clip_end": 4.6,
+      "playback_speed": 0.9,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 64,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "index": 4,
+      "start": 13.4,
+      "end": 17.2,
+      "duration": 3.799999999999999,
+      "text": "더 깔끔한 figure 방향을 생성해",
+      "beat": "generate",
+      "clip_id": "14_image_to_image_workflow",
+      "clip_start": 4.6,
+      "clip_end": 7.3,
+      "playback_speed": 0.8,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "더 깔끔한 figure",
+          "방향을 생성해"
+        ],
+        "font_size": 62,
+        "line_gap": 9,
+        "y_ratio": 0.405
+      }
+    },
+    {
+      "index": 5,
+      "start": 17.2,
+      "end": 21.6,
+      "duration": 4.400000000000002,
+      "text": "이제 검토하고 편집할 초안이 생겨",
+      "beat": "result_proof",
+      "clip_id": "14_image_to_image_workflow",
+      "clip_start": 6.6,
+      "clip_end": 8.9,
+      "playback_speed": 0.65,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "이제 검토하고 편집할",
+          "초안이 생겨"
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "index": 6,
+      "start": 21.6,
+      "end": 24.8,
+      "duration": 3.1999999999999993,
+      "text": "디테일 확인은 꼭 해",
+      "beat": "editable_followup",
+      "clip_id": "07_svg_editor_edit_demo_2",
+      "clip_start": 0.2,
+      "clip_end": 4.7,
+      "playback_speed": 1.45,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 66,
+        "y_ratio": 0.43
+      }
+    }
+  ]
+}

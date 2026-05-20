@@ -1,0 +1,109 @@
+{
+  "platform": "TikTok",
+  "tone": "native TikTok creator style, Korean subtitles, casual, not too salesy",
+  "video_length": "21-25s",
+  "scripts": [
+    {
+      "type": "find_papers_citation_v2_ko",
+      "script_title": "진짜 논문 찾고 인용 저장하는 법",
+      "script_angle": "Find Papers + citation export workflow",
+      "caption": "랜덤 탭 50개 열기 전에 이 웹사이트 먼저 써봐. Literfy에서 논문 찾고, 저장하고, 필요한 인용까지 정리할 수 있어.",
+      "hashtags": [
+        "#literfy",
+        "#researchtools",
+        "#literaturereview",
+        "#citation",
+        "#researchpaper",
+        "#phd",
+        "#studytok",
+        "#aitools"
+      ],
+      "full_script": [
+        {
+          "time": "0-3s",
+          "beat": "hook",
+          "voiceover": "진짜 논문 찾고 인용 저장하는 법\nPhD/Master 학생처럼\n(쉬운 방법)",
+          "on_screen_text": "진짜 논문 찾고 인용 저장하는 법\nPhD/Master 학생처럼\n(쉬운 방법)",
+          "visual_need": "",
+          "preferred_clip_id": "00_google_scholar_hook"
+        },
+        {
+          "time": "3-5.3s",
+          "beat": "strong_cta",
+          "voiceover": "이 웹사이트로 가면 돼!",
+          "on_screen_text": "이 웹사이트로 가면 돼!",
+          "visual_need": "",
+          "preferred_clip_id": "01_literfy_landing_page"
+        },
+        {
+          "time": "5.3-7.2s",
+          "beat": "feature_entry",
+          "voiceover": "Find Papers 클릭",
+          "on_screen_text": "Find Papers 클릭",
+          "visual_need": "",
+          "preferred_clip_id": "09_click_find_papers_button"
+        },
+        {
+          "time": "7.2-10s",
+          "beat": "topic_input",
+          "voiceover": "연구 주제를 입력해",
+          "on_screen_text": "연구 주제를 입력해",
+          "visual_need": "",
+          "preferred_clip_id": "10_find_papers_search_topic"
+        },
+        {
+          "time": "10-12.5s",
+          "beat": "source_selection",
+          "voiceover": "원하는 출처를 골라",
+          "on_screen_text": "원하는 출처를 골라",
+          "visual_need": "",
+          "preferred_clip_id": "10_find_papers_search_topic"
+        },
+        {
+          "time": "12.5-15.4s",
+          "beat": "paper_results",
+          "voiceover": "그다음 진짜 논문을 찾아줘",
+          "on_screen_text": "그다음 진짜 논문을 찾아줘",
+          "visual_need": "",
+          "preferred_clip_id": "10_find_papers_search_topic"
+        },
+        {
+          "time": "15.4-18.2s",
+          "beat": "save_papers",
+          "voiceover": "읽을 만한 논문은 저장해",
+          "on_screen_text": "읽을 만한 논문은 저장해",
+          "visual_need": "",
+          "preferred_clip_id": "12_save_and_citation_export_workflow"
+        },
+        {
+          "time": "18.2-22s",
+          "beat": "citation_export",
+          "voiceover": "필요할 때 인용을 복사하면 끝",
+          "on_screen_text": "필요할 때 인용을 복사하면 끝",
+          "visual_need": "",
+          "preferred_clip_id": "12_save_and_citation_export_workflow"
+        },
+        {
+          "time": "22-24.6s",
+          "beat": "result_cta",
+          "voiceover": "이제 랜덤 탭 50개는 그만!",
+          "on_screen_text": "이제 랜덤 탭 50개는 그만!",
+          "visual_need": "",
+          "preferred_clip_id": "03_paper_list_results"
+        }
+      ],
+      "language": "ko"
+    }
+  ],
+  "scores": {
+    "hook_strength": 8,
+    "product_fit": 9,
+    "native_tiktok_feel": 8,
+    "clarity": 8,
+    "conversion_potential": 8
+  },
+  "compliance_notes": [
+    "Citation/export is framed as organization support, not guaranteed citation accuracy."
+  ],
+  "language": "ko"
+}

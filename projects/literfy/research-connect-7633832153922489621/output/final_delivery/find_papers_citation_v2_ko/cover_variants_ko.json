@@ -1,0 +1,26 @@
+{
+  "find_papers_citation_v2_ko": {
+    "text": "진짜 논문 찾고 인용 저장하는 법\nPhD/Master 학생처럼\n(쉬운 방법)",
+    "style": {
+      "lines": [
+        "진짜 논문 찾고",
+        "인용 저장하는 법",
+        "PhD/Master 학생처럼",
+        "(쉬운 방법)"
+      ],
+      "font_size": 58,
+      "line_gap": 8,
+      "y_ratio": 0.405,
+      "max_width": 920,
+      "highlight": [
+        "PhD/Master"
+      ],
+      "highlight_fill": [
+        255,
+        235,
+        112,
+        255
+      ]
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "selected_script_type": "ai_reference_risk_v2",
+  "editing_style": {
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "pace": "fast",
+    "average_clip_duration": "1.8-3.2s"
+  },
+  "scores": {
+    "visual_match": 9,
+    "pace_match": 8,
+    "asset_quality": 8,
+    "opening_strength": 8,
+    "product_proof_strength": 9
+  },
+  "missing_assets": [],
+  "risk_notes": [
+    "Do not imply Citely guarantees every citation is correct; frame as checking/tracing support."
+  ],
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-3.2s",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.2,
+      "clip_end": 3.6,
+      "playback_speed": 1.05,
+      "on_screen_text": "Still trusting AI-generated references without checking? 👀",
+      "voiceover": "Still trusting AI-generated references without checking?",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Still trusting",
+          "AI-generated references",
+          "without checking? 👀"
+        ],
+        "font_size": 64,
+        "line_gap": 7,
+        "y_ratio": 0.405,
+        "max_width": 900,
+        "highlight_terms": [
+          "AI-generated",
+          "references"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "beat": "strong_cta",
+      "time": "3.2-5.6s",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.1,
+      "on_screen_text": "Go to this website first",
+      "voiceover": "Go to this website first",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 66,
+        "y_ratio": 0.42
+      }
+    },
+    {
+      "beat": "find_sources_entry",
+      "time": "5.6-7.7s",
+      "clip_id": "02_click_find_sources",
+      "clip_start": 0.2,
+      "clip_end": 3.3,
+      "playback_speed": 1.5,
+      "on_screen_text": "Open Find Sources",
+      "voiceover": "Open Find Sources",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 64,
+        "y_ratio": 0.38
+      }
+    },
+    {
+      "beat": "claim_input",
+      "time": "7.7-11s",
+      "clip_id": "03_find_sources_input_claim",
+      "clip_start": 0.2,
+      "clip_end": 5.8,
+      "playback_speed": 1.7,
+      "on_screen_text": "Paste the claim or citation text",
+      "voiceover": "Paste the claim or citation text",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "Paste the claim",
+          "or citation text"
+        ],
+        "font_size": 62,
+        "line_gap": 9,
+        "y_ratio": 0.43
+      }
+    },
+    {
+      "beat": "source_results",
+      "time": "11-13.8s",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.1,
+      "on_screen_text": "Now check where it comes from",
+      "voiceover": "Now check where it comes from",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 62,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "beat": "verify_entry",
+      "time": "13.8-16.1s",
+      "clip_id": "05_click_verify_references",
+      "clip_start": 0.2,
+      "clip_end": 4.7,
+      "playback_speed": 1.9,
+      "on_screen_text": "Then verify the reference",
+      "voiceover": "Then verify the reference",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 62,
+        "y_ratio": 0.405
+      }
+    },
+    {
+      "beat": "verify_input",
+      "time": "16.1-18.7s",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.1,
+      "clip_end": 4.3,
+      "playback_speed": 1.6,
+      "on_screen_text": "Paste it before you rely on it",
+      "voiceover": "Paste it before you rely on it",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 60,
+        "y_ratio": 0.36
+      }
+    },
+    {
+      "beat": "verify_results",
+      "time": "18.7-22.4s",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 5.1,
+      "playback_speed": 1.35,
+      "on_screen_text": "It shows the citation details to review",
+      "voiceover": "It shows the citation details to review",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "It shows the citation",
+          "details to review"
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.405,
+        "highlight_terms": [
+          "citation"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "beat": "result_cta",
+      "time": "22.4-24.8s",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 2.0,
+      "clip_end": 5.1,
+      "playback_speed": 1.25,
+      "on_screen_text": "Check it before it goes in your paper",
+      "voiceover": "Check it before it goes in your paper",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Check it before it goes",
+          "in your paper"
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.43
+      }
+    }
+  ],
+  "source_script_card": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/output/product_script_card_ai_reference_risk_v2.json"
+}

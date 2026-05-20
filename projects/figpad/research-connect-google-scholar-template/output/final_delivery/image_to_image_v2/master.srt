@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:03,200
+How to turn a rough reference image into a scientific figure draft
+
+2
+00:00:03,200 --> 00:00:05,800
+Just go to this website!
+
+3
+00:00:05,800 --> 00:00:07,700
+Open FigPad
+
+4
+00:00:07,700 --> 00:00:13,400
+Upload a reference image
+
+5
+00:00:13,400 --> 00:00:17,200
+Then generate a cleaner figure direction
+
+6
+00:00:17,200 --> 00:00:21,600
+Now you have a draft to review and edit
+
+7
+00:00:21,600 --> 00:00:24,800
+Don’t skip checking the details
