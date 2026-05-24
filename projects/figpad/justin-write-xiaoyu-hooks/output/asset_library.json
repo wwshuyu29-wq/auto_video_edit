@@ -1,0 +1,30 @@
+{
+  "library_id": "figpad-xiaoyu-justin-write-assets",
+  "library_name": "FigPad product proof plus Xiaoyu real-person hook",
+  "asset_type": "mixed_real_person_hook_and_product_footage",
+  "usage_rule": "Use Xiaoyu only for the opening reaction hook. Use the rendered FigPad SVG Editor proof video for product workflow segments because raw MOV sources are unavailable.",
+  "assets": [
+    {
+      "clip_id": "06_xiaoyu_hook_IMG_5568",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/06_xiaoyu_hook_IMG_5568.mov",
+      "duration_s": 5.567,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "shocked student reaction with mouth-covered close-up",
+      "best_use": [
+        "strong story-reaction opening hook",
+        "advisor asked for an edit but the figure is not editable"
+      ]
+    },
+    {
+      "clip_id": "figpad_svg_editor_v1_video",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/output/final_delivery/figpad_svg_editor_v1_video.mp4",
+      "duration_s": 25.433,
+      "shot_type": "rendered FigPad SVG Editor product proof video",
+      "scene": "FigPad generated figure, SVG Editor, editable canvas, zoom proof",
+      "best_use": [
+        "use rendered proof segments when raw MOV sources are unavailable",
+        "show SVG Editor and editable canvas workflow"
+      ]
+    }
+  ]
+}

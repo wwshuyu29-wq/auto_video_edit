@@ -1,0 +1,26 @@
+{
+  "text": "u think u can scare me???\nmy advisor said\n\"just edit this figure\"\nbut it was a flat AI image",
+  "beat": "human_reaction_story_hook",
+  "priority": "large",
+  "width": 1080,
+  "height": 1920,
+  "output": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery/overlays/overlay_00.png",
+  "style": {
+    "lines": [
+      "u think u can scare me???",
+      "my advisor said",
+      "\"just edit this figure\"",
+      "but it was a flat AI image"
+    ],
+    "font_size": 48,
+    "line_gap": 8,
+    "max_width": 940,
+    "y_ratio": 0.48,
+    "highlight_terms": [
+      "advisor",
+      "edit",
+      "flat",
+      "AI"
+    ]
+  }
+}

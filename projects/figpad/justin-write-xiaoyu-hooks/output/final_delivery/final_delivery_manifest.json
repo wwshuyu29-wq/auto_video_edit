@@ -1,0 +1,35 @@
+{
+  "status": "ready_for_review",
+  "product": "FigPad",
+  "template": "justin_write_story_reaction_proof with Xiaoyu real-person hook",
+  "selected_hook_clip": "06_xiaoyu_hook_IMG_5568",
+  "delivery_rule": "Cover image + corresponding captioned video. No voiceover/BGM; add TikTok trending music inside TikTok.",
+  "video": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery/figpad_xiaoyu_justin_write_preview.mp4",
+  "cover": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery/figpad_xiaoyu_justin_write_cover.jpg",
+  "recommended_title": "when your advisor says \"just edit the figure\"",
+  "recommended_caption": "my advisor said just edit the figure... but it was a flat AI image 😭 opened it in FigPad SVG Editor so I could keep tweaking the canvas myself #figpad #phd #research #scientificfigures #studytok #gradschool #aitools",
+  "hashtags": [
+    "#figpad",
+    "#phd",
+    "#research",
+    "#scientificfigures",
+    "#studytok",
+    "#gradschool",
+    "#aitools",
+    "#researchtools",
+    "#phdlife"
+  ],
+  "publishing_copy_card": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/publishing_copy_card.json",
+  "publishing_copy_delivery": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/publishing_copy_delivery.md",
+  "render_report": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/render_report.json",
+  "qa": {
+    "width": 1080,
+    "height": 1920,
+    "duration_s": 15.6,
+    "has_audio": false
+  },
+  "notes": [
+    "Initial selected 02_xiaoyu_hook_IMG_5551 was unreadable, so the valid Xiaoyu 06 hook was used.",
+    "Raw FigPad MOV sources were unreadable locally, so rendered FigPad SVG Editor proof video segments were used for product proof."
+  ]
+}

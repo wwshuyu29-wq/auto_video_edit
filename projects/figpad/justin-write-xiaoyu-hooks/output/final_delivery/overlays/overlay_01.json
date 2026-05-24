@@ -1,0 +1,18 @@
+{
+  "text": "It's done! let's edit it...",
+  "beat": "product_action",
+  "priority": "large",
+  "width": 1080,
+  "height": 1920,
+  "output": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery/overlays/overlay_01.png",
+  "style": {
+    "lines": [
+      "It's done!",
+      "let's edit it..."
+    ],
+    "font_size": 66,
+    "line_gap": 8,
+    "y_ratio": 0.42,
+    "max_width": 820
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "project": "figpad/justin-write-xiaoyu-hooks",
+  "product": "FigPad",
+  "reference_url": "https://www.tiktok.com/@justin_write/video/7620697283176320269",
+  "reference_template": "justin_write_story_reaction_proof",
+  "hook_library": "projects/hook-library/xiaoyu-reaction-hooks/output/asset_library.json",
+  "selected_hook_clip": "06_xiaoyu_hook_IMG_5568",
+  "source_product_assets": "projects/figpad/research-connect-google-scholar-template/output/asset_library.json",
+  "outputs": {
+    "shot_matching_plan": "output/shot_matching_plan.json",
+    "publishing_copy": "output/publishing_copy_delivery.md",
+    "final_preview": "output/final_delivery/figpad_xiaoyu_justin_write_preview.mp4"
+  }
+}

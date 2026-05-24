@@ -1,0 +1,21 @@
+{
+  "text": "Click SVG Editor",
+  "beat": "editor_entry",
+  "priority": "large",
+  "width": 1080,
+  "height": 1920,
+  "output": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery/overlays/overlay_02.png",
+  "style": {
+    "lines": [
+      "Click",
+      "SVG Editor"
+    ],
+    "font_size": 70,
+    "line_gap": 6,
+    "y_ratio": 0.45,
+    "max_width": 760,
+    "highlight_terms": [
+      "SVG"
+    ]
+  }
+}

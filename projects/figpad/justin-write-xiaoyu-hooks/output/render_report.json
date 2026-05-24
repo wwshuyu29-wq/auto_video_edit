@@ -1,0 +1,36 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "reference_url": "https://www.tiktok.com/@justin_write/video/7620697283176320269",
+    "shot_matching_plan": "projects/figpad/justin-write-xiaoyu-hooks/output/shot_matching_plan.json",
+    "asset_library": "projects/figpad/justin-write-xiaoyu-hooks/output/asset_library.json",
+    "selected_hook_clip": "06_xiaoyu_hook_IMG_5568"
+  },
+  "outputs": {
+    "preview_video": "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery/figpad_xiaoyu_justin_write_preview.mp4",
+    "preview_sheet": "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery/figpad_xiaoyu_justin_write_preview_sheet.jpg",
+    "preview_midpoint_sheet": "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery/figpad_xiaoyu_justin_write_preview_midpoint_sheet.jpg",
+    "captions": "projects/figpad/justin-write-xiaoyu-hooks/output/captions.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "15.600000",
+      "size": "9951160"
+    }
+  },
+  "notes": [
+    "Rendered with Swift-generated PNG caption overlays and FFmpeg segment concat.",
+    "No voiceover or music is included in this preview.",
+    "Claims avoid publication-ready, perfect-edit, or no-review promises.",
+    "Initial selected 02_xiaoyu_hook_IMG_5551 and raw FigPad MOV sources were unreadable, so the deliverable uses valid 06_xiaoyu_hook_IMG_5568 and rendered FigPad SVG Editor proof video segments."
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "variant_id": "figpad_xiaoyu_advisor_editable_figure",
+  "product_name": "FigPad",
+  "reference_template": "justin_write_story_reaction_proof",
+  "selected_hook_clip": "06_xiaoyu_hook_IMG_5568",
+  "editing_style": {
+    "pace": "fast",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "caption_style": "large white bold text with black outline, casual story-reaction rhythm"
+  },
+  "edit_plan": [
+    {
+      "beat": "human_reaction_story_hook",
+      "time": "0-3.6",
+      "clip_id": "06_xiaoyu_hook_IMG_5568",
+      "clip_start": 0.0,
+      "clip_end": 3.6,
+      "playback_speed": 1.0,
+      "on_screen_text": "u think u can scare me???\nmy advisor said\n\"just edit this figure\"\nbut it was a flat AI image",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "u think u can scare me???",
+          "my advisor said",
+          "\"just edit this figure\"",
+          "but it was a flat AI image"
+        ],
+        "font_size": 48,
+        "line_gap": 8,
+        "max_width": 940,
+        "y_ratio": 0.48,
+        "highlight_terms": [
+          "advisor",
+          "edit",
+          "flat",
+          "AI"
+        ]
+      },
+      "reason": "Uses Xiaoyu's readable shock hook to match the edit-request pain without overstating the problem.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "product_action",
+      "time": "3.6-6.1",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 13.5,
+      "clip_end": 16.0,
+      "playback_speed": 1.0,
+      "on_screen_text": "It's done! let's edit it...",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "It's done!",
+          "let's edit it..."
+        ],
+        "font_size": 66,
+        "line_gap": 8,
+        "y_ratio": 0.42,
+        "max_width": 820
+      },
+      "reason": "Cuts into the existing FigPad proof at the exact edit-reveal beat.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "editor_entry",
+      "time": "6.1-8.6",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 16.0,
+      "clip_end": 18.5,
+      "playback_speed": 1.0,
+      "on_screen_text": "Click SVG Editor",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Click",
+          "SVG Editor"
+        ],
+        "font_size": 70,
+        "line_gap": 6,
+        "y_ratio": 0.45,
+        "max_width": 760,
+        "highlight_terms": [
+          "SVG"
+        ]
+      },
+      "reason": "Shows the product action that turns the figure into an editable workflow.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "editability_proof",
+      "time": "8.6-12.1",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 18.5,
+      "clip_end": 22.0,
+      "playback_speed": 1.0,
+      "on_screen_text": "Now edit it on the editable canvas",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Now edit it on",
+          "the editable canvas"
+        ],
+        "font_size": 60,
+        "line_gap": 9,
+        "y_ratio": 0.37,
+        "max_width": 820,
+        "highlight_terms": [
+          "editable"
+        ]
+      },
+      "reason": "Visible FigPad editor footage provides the product proof.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "detail_review",
+      "time": "12.1-15.6",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 22.0,
+      "clip_end": 25.5,
+      "playback_speed": 1.0,
+      "on_screen_text": "You can zoom in and keep tweaking the figure",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "You can zoom in",
+          "and keep tweaking",
+          "the figure"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.42,
+        "max_width": 820
+      },
+      "reason": "Ends on editable-canvas detail review, not perfect-output claims.",
+      "transition": "hard cut"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "Does not claim the figure is publication-ready without review.",
+    "Frames FigPad as an editable starting point and manual detail-review workflow.",
+    "Raw FigPad MOV files were not readable locally, so the product proof uses a rendered FigPad SVG Editor delivery video as source footage.",
+    "No voiceover or music is included in this preview; add platform-native music when posting."
+  ],
+  "needs_script_revision": false,
+  "scores": {
+    "visual_match": 8,
+    "pace_match": 8,
+    "asset_quality": 8,
+    "opening_strength": 8,
+    "product_proof_strength": 8,
+    "claim_safety": 9
+  }
+}
