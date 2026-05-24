@@ -1,0 +1,167 @@
+{
+  "footage_dir": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw",
+  "count": 7,
+  "items": [
+    {
+      "id": "00_xiaoyu_hook_IMG_5541",
+      "path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/00_xiaoyu_hook_IMG_5541.mov",
+      "relative_path": "00_xiaoyu_hook_IMG_5541.mov",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 3.685,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 58.98216615919965,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "01_xiaoyu_hook_IMG_5550",
+      "path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/01_xiaoyu_hook_IMG_5550.mov",
+      "relative_path": "01_xiaoyu_hook_IMG_5550.mov",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 3.432,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 54.48140900195695,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "02_xiaoyu_hook_IMG_5551",
+      "path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/02_xiaoyu_hook_IMG_5551.mov",
+      "relative_path": "02_xiaoyu_hook_IMG_5551.mov",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 3.997,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 60.05004170141785,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "03_xiaoyu_hook_IMG_5557",
+      "path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/03_xiaoyu_hook_IMG_5557.mov",
+      "relative_path": "03_xiaoyu_hook_IMG_5557.mov",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 6.357,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 56.79645605036139,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "04_xiaoyu_hook_IMG_5564",
+      "path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/04_xiaoyu_hook_IMG_5564.mov",
+      "relative_path": "04_xiaoyu_hook_IMG_5564.mov",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 4.388,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 55.73238064306593,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "05_xiaoyu_hook_IMG_5567",
+      "path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/05_xiaoyu_hook_IMG_5567.mov",
+      "relative_path": "05_xiaoyu_hook_IMG_5567.mov",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 2.41,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 57.663316582914575,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "06_xiaoyu_hook_IMG_5568",
+      "path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/06_xiaoyu_hook_IMG_5568.mov",
+      "relative_path": "06_xiaoyu_hook_IMG_5568.mov",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 5.567,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.91084695393759,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    }
+  ]
+}

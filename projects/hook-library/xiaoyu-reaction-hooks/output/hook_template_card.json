@@ -1,0 +1,54 @@
+{
+  "template_id": "xiaoyu_real_person_reaction_hook",
+  "template_name": "Xiaoyu real-person opening reaction hook",
+  "purpose": "Use a real Xiaoyu reaction clip as the first 1-4 seconds of a TikTok product video, similar to the AI-generated human hook workflow.",
+  "opening_logic": [
+    "Start with Xiaoyu face/reaction before showing product UI.",
+    "Match the expression to the script pain: confused, surprised, stressed, relieved, skeptical, or pointing.",
+    "Use 1.5-4.0 seconds for most openings; use 05_xiaoyu_hook_IMG_5567 when the hook must be under 2.5 seconds.",
+    "Keep the product proof after the hook; do not let the reaction clip replace actual product footage."
+  ],
+  "asset_selection": {
+    "confused_or_question_hook": [
+      "02_xiaoyu_hook_IMG_5551"
+    ],
+    "panic_or_stress_hook": [
+      "01_xiaoyu_hook_IMG_5550"
+    ],
+    "short_fast_hook": [
+      "05_xiaoyu_hook_IMG_5567",
+      "04_xiaoyu_hook_IMG_5564"
+    ],
+    "strong_shock_reveal": [
+      "06_xiaoyu_hook_IMG_5568",
+      "00_xiaoyu_hook_IMG_5541",
+      "03_xiaoyu_hook_IMG_5557"
+    ],
+    "long_reaction_arc": [
+      "03_xiaoyu_hook_IMG_5557",
+      "06_xiaoyu_hook_IMG_5568"
+    ]
+  },
+  "recommended_script_beats": [
+    {
+      "beat": "human_hook",
+      "visual_need": "Xiaoyu close-up reaction matching the pain or surprise",
+      "duration_s": "1.5-4.0"
+    },
+    {
+      "beat": "product_reveal",
+      "visual_need": "Product homepage or first workflow step",
+      "duration_s": "1.5-3.0"
+    },
+    {
+      "beat": "proof",
+      "visual_need": "Product result, highlighted problem, generated output, or before/after",
+      "duration_s": "2.0-5.0"
+    }
+  ],
+  "boundaries": [
+    "Do not classify Xiaoyu clips as product proof.",
+    "Do not use clips where facial expression conflicts with the script emotion.",
+    "Do not overuse the same reaction across many variants; rotate expressions by hook angle."
+  ]
+}

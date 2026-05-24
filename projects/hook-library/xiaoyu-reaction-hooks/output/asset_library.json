@@ -1,0 +1,403 @@
+{
+  "library_id": "xiaoyu-reaction-hooks",
+  "library_name": "Xiaoyu Real-Person Reaction Hook Library",
+  "asset_type": "real_person_hook_library",
+  "updated_at": "2026-05-24",
+  "source_folder": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw",
+  "count": 7,
+  "usage_rule": "Use these clips only for the opening human hook or creator reaction beat. The later proof/demo/result beats must still come from the product-specific footage library.",
+  "crop_guidance": {
+    "source_orientation": "landscape_1920x1080",
+    "recommended_output": "vertical_9x16",
+    "default_crop": "center crop around Xiaoyu's face and upper body; keep eyes, mouth, and hand gesture visible; leave upper-left or upper-right space for short overlay text when possible",
+    "avoid": "Do not crop away the mouth-covering hand, pointing hand, or widened eyes because those are the hook signal."
+  },
+  "matching_labels": [
+    "human hook",
+    "creator reaction",
+    "opening hook",
+    "student POV",
+    "surprised reaction",
+    "shocked reaction",
+    "confused reaction",
+    "skeptical reaction",
+    "stressed reaction",
+    "caught off guard",
+    "pointing to screen",
+    "mouth covered"
+  ],
+  "assets": [
+    {
+      "clip_id": "00_xiaoyu_hook_IMG_5541",
+      "file_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/00_xiaoyu_hook_IMG_5541.mov",
+      "contact_sheet_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/contact_sheets/timelines/00_xiaoyu_hook_IMG_5541.jpg",
+      "duration_s": 3.685,
+      "source_resolution": "1920x1080",
+      "orientation": "landscape",
+      "quality_score": 0.9,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "indoor close selfie framing; Xiaoyu in grey hoodie with blonde hair, neutral room background",
+      "action": "Starts with wide-eyed open-mouth shock, then covers mouth with hand and leans closer to camera.",
+      "emotion": [
+        "shocked",
+        "caught off guard",
+        "secretly surprised"
+      ],
+      "camera_motion": "handheld/selfie with slight forward lean near the end",
+      "visible_objects": [
+        "Xiaoyu",
+        "grey hoodie",
+        "blonde hair",
+        "hand covering mouth",
+        "indoor room"
+      ],
+      "best_use": [
+        "opening human hook for surprising AI score/result",
+        "creator reacts to an unexpectedly high AI detection rate",
+        "before showing product proof or result screen"
+      ],
+      "not_good_for": [
+        "calm tutorial intro",
+        "pricing proof",
+        "final result proof"
+      ],
+      "usable_segments": [
+        {
+          "start_s": 0.0,
+          "end_s": 1.4,
+          "reason": "clear wide-eyed shock before hand covers mouth"
+        },
+        {
+          "start_s": 1.4,
+          "end_s": 3.5,
+          "reason": "mouth-covered surprise works for reveal or 'wait what' hook"
+        }
+      ],
+      "text_overlay_safe_area": "Top-left/top-right only; keep center face and lower hand gesture clean.",
+      "audio_quality": "has_audio; usually replace or duck under voiceover/music",
+      "notes": "Strong hook when the script angle is 'I did not expect this result'."
+    },
+    {
+      "clip_id": "01_xiaoyu_hook_IMG_5550",
+      "file_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/01_xiaoyu_hook_IMG_5550.mov",
+      "contact_sheet_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/contact_sheets/timelines/01_xiaoyu_hook_IMG_5550.jpg",
+      "duration_s": 3.432,
+      "source_resolution": "1920x1080",
+      "orientation": "landscape",
+      "quality_score": 0.88,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "indoor close selfie framing; Xiaoyu in grey hoodie, face fills most of the frame",
+      "action": "Open-mouth panic/shock, hands move toward hair/head, then she leans in close.",
+      "emotion": [
+        "panicked",
+        "stressed",
+        "shocked"
+      ],
+      "camera_motion": "slight handheld movement with close lean-in",
+      "visible_objects": [
+        "Xiaoyu",
+        "grey hoodie",
+        "blonde hair",
+        "hands near head",
+        "indoor background"
+      ],
+      "best_use": [
+        "opening hook for 'my essay got flagged' panic",
+        "student POV when a deadline or AI detector result is stressful",
+        "fast transition into Clearfy detector or humanizer workflow"
+      ],
+      "not_good_for": [
+        "relieved ending",
+        "simple product walkthrough",
+        "feature list beat"
+      ],
+      "usable_segments": [
+        {
+          "start_s": 0.0,
+          "end_s": 1.2,
+          "reason": "clean open-mouth shock"
+        },
+        {
+          "start_s": 1.2,
+          "end_s": 3.2,
+          "reason": "hands-to-head stress reaction, good with urgent overlay text"
+        }
+      ],
+      "text_overlay_safe_area": "Upper corners only; avoid covering eyes and hands.",
+      "audio_quality": "has_audio; usually replace or duck under voiceover/music",
+      "notes": "Best for high-intensity pain-point openings."
+    },
+    {
+      "clip_id": "02_xiaoyu_hook_IMG_5551",
+      "file_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/02_xiaoyu_hook_IMG_5551.mov",
+      "contact_sheet_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/contact_sheets/timelines/02_xiaoyu_hook_IMG_5551.jpg",
+      "duration_s": 3.997,
+      "source_resolution": "1920x1080",
+      "orientation": "landscape",
+      "quality_score": 0.86,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "indoor close selfie framing; Xiaoyu in grey hoodie, desk/room background",
+      "action": "Serious skeptical look, hand/finger moves toward camera, then chin-on-hand thinking pose.",
+      "emotion": [
+        "skeptical",
+        "confused",
+        "thinking"
+      ],
+      "camera_motion": "mostly static selfie framing with small hand movement",
+      "visible_objects": [
+        "Xiaoyu",
+        "grey hoodie",
+        "blonde hair",
+        "hand near face",
+        "indoor room"
+      ],
+      "best_use": [
+        "opening hook for 'is this AI score real?'",
+        "question-style intro before showing a tool test",
+        "calmer hook for detector comparison or method explanation"
+      ],
+      "not_good_for": [
+        "huge shock reveal",
+        "celebration ending",
+        "urgent panic opening"
+      ],
+      "usable_segments": [
+        {
+          "start_s": 0.0,
+          "end_s": 1.6,
+          "reason": "skeptical stare and finger movement"
+        },
+        {
+          "start_s": 1.6,
+          "end_s": 3.8,
+          "reason": "thinking pose works for question-based hooks"
+        }
+      ],
+      "text_overlay_safe_area": "Upper-left or upper-right; center should stay focused on face.",
+      "audio_quality": "has_audio; usually replace or duck under voiceover/music",
+      "notes": "Use when the script hook is more suspicious/confused than panicked."
+    },
+    {
+      "clip_id": "03_xiaoyu_hook_IMG_5557",
+      "file_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/03_xiaoyu_hook_IMG_5557.mov",
+      "contact_sheet_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/contact_sheets/timelines/03_xiaoyu_hook_IMG_5557.jpg",
+      "duration_s": 6.357,
+      "source_resolution": "1920x1080",
+      "orientation": "landscape",
+      "quality_score": 0.9,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "indoor close selfie framing; Xiaoyu in grey hoodie, looking off to the side then into camera",
+      "action": "Side-looking surprise, hand to chest, covers mouth, then leans extremely close to the camera.",
+      "emotion": [
+        "surprised",
+        "caught off guard",
+        "secretly shocked"
+      ],
+      "camera_motion": "noticeable close lean-in; strong final close-up",
+      "visible_objects": [
+        "Xiaoyu",
+        "grey hoodie",
+        "blonde hair",
+        "hand on chest",
+        "hand covering mouth"
+      ],
+      "best_use": [
+        "longer opening hook with a reaction arc",
+        "story-style intro before revealing Clearfy result",
+        "template where the hook starts subtle and escalates"
+      ],
+      "not_good_for": [
+        "very short 1 second hook",
+        "static clean tutorial",
+        "product proof beat"
+      ],
+      "usable_segments": [
+        {
+          "start_s": 0.0,
+          "end_s": 2.2,
+          "reason": "side glance plus hand-to-chest surprise"
+        },
+        {
+          "start_s": 2.2,
+          "end_s": 5.8,
+          "reason": "mouth-covered close-up reveal; high hook energy"
+        }
+      ],
+      "text_overlay_safe_area": "Use top corners only; final close-up leaves little safe text space.",
+      "audio_quality": "has_audio; usually replace or duck under voiceover/music",
+      "notes": "Good for a 3-5 second real-person hook when the template needs visible emotional progression."
+    },
+    {
+      "clip_id": "04_xiaoyu_hook_IMG_5564",
+      "file_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/04_xiaoyu_hook_IMG_5564.mov",
+      "contact_sheet_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/contact_sheets/timelines/04_xiaoyu_hook_IMG_5564.jpg",
+      "duration_s": 4.388,
+      "source_resolution": "1920x1080",
+      "orientation": "landscape",
+      "quality_score": 0.87,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "very tight indoor selfie close-up; face fills the frame, grey hoodie visible",
+      "action": "Holds a wide-eyed open-mouth shocked expression while slightly turning and moving closer.",
+      "emotion": [
+        "frozen shock",
+        "speechless",
+        "wide-eyed surprise"
+      ],
+      "camera_motion": "small handheld movement and slow close framing",
+      "visible_objects": [
+        "Xiaoyu",
+        "grey hoodie",
+        "blonde hair",
+        "wide eyes",
+        "open-mouth expression"
+      ],
+      "best_use": [
+        "instant 'wait...' hook",
+        "reaction to a number/result on screen",
+        "short transition into a product UI reveal"
+      ],
+      "not_good_for": [
+        "explaining steps",
+        "before-and-after proof",
+        "subtle or calm hook"
+      ],
+      "usable_segments": [
+        {
+          "start_s": 0.0,
+          "end_s": 2.0,
+          "reason": "clean shocked face, enough room for overlay"
+        },
+        {
+          "start_s": 2.0,
+          "end_s": 4.1,
+          "reason": "closer shocked face, stronger emotional emphasis"
+        }
+      ],
+      "text_overlay_safe_area": "Small text only in the upper corners; face occupies most of frame.",
+      "audio_quality": "has_audio; usually replace or duck under voiceover/music",
+      "notes": "Simple, reusable shock clip with minimal gesture."
+    },
+    {
+      "clip_id": "05_xiaoyu_hook_IMG_5567",
+      "file_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/05_xiaoyu_hook_IMG_5567.mov",
+      "contact_sheet_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/contact_sheets/timelines/05_xiaoyu_hook_IMG_5567.jpg",
+      "duration_s": 2.41,
+      "source_resolution": "1920x1080",
+      "orientation": "landscape",
+      "quality_score": 0.84,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "indoor medium-close selfie framing; ceiling panels and room background visible",
+      "action": "Starts neutral/serious, then quickly shifts to open-mouth surprise.",
+      "emotion": [
+        "neutral to surprised",
+        "realization",
+        "sudden shock"
+      ],
+      "camera_motion": "mostly static selfie framing",
+      "visible_objects": [
+        "Xiaoyu",
+        "grey hoodie",
+        "blonde hair",
+        "ceiling panels",
+        "indoor room"
+      ],
+      "best_use": [
+        "very short opening hook",
+        "quick realization before a product reveal",
+        "reaction beat when the script needs a fast emotion switch"
+      ],
+      "not_good_for": [
+        "long storytelling intro",
+        "strong panic hook",
+        "mouth-covered secret reaction"
+      ],
+      "usable_segments": [
+        {
+          "start_s": 0.0,
+          "end_s": 0.9,
+          "reason": "neutral setup before the realization"
+        },
+        {
+          "start_s": 0.9,
+          "end_s": 2.3,
+          "reason": "clear surprised expression for fast hook"
+        }
+      ],
+      "text_overlay_safe_area": "Upper-left and upper-right are usable because framing is wider than the close-up clips.",
+      "audio_quality": "has_audio; usually replace or duck under voiceover/music",
+      "notes": "Best short clip when the generated video should start fast."
+    },
+    {
+      "clip_id": "06_xiaoyu_hook_IMG_5568",
+      "file_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/06_xiaoyu_hook_IMG_5568.mov",
+      "contact_sheet_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/contact_sheets/timelines/06_xiaoyu_hook_IMG_5568.jpg",
+      "duration_s": 5.567,
+      "source_resolution": "1920x1080",
+      "orientation": "landscape",
+      "quality_score": 0.91,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "indoor selfie framing; starts wider, then moves into extreme close-up with warmer screen light",
+      "action": "Looks surprised, points/reaches toward camera, covers mouth, then leans very close while eyes stay wide.",
+      "emotion": [
+        "shocked",
+        "mouth-covered surprise",
+        "secret reveal"
+      ],
+      "camera_motion": "selfie close-in movement; ends with extreme close-up",
+      "visible_objects": [
+        "Xiaoyu",
+        "grey hoodie",
+        "blonde hair",
+        "pointing hand",
+        "hand covering mouth",
+        "warm screen light"
+      ],
+      "best_use": [
+        "strongest real-person hook for shocking AI score reveal",
+        "creator sees something unbelievable on screen",
+        "opening beat before Clearfy detector/humanizer proof"
+      ],
+      "not_good_for": [
+        "calm product walkthrough",
+        "clean UI demonstration",
+        "quiet educational tone"
+      ],
+      "usable_segments": [
+        {
+          "start_s": 0.0,
+          "end_s": 1.8,
+          "reason": "surprise plus pointing/reaching motion"
+        },
+        {
+          "start_s": 1.8,
+          "end_s": 5.2,
+          "reason": "mouth-covered extreme close-up; strongest emotional hook"
+        }
+      ],
+      "text_overlay_safe_area": "Use only very short text at the top early in the clip; avoid text in the final extreme close-up.",
+      "audio_quality": "has_audio; usually replace or duck under voiceover/music",
+      "notes": "Most dramatic clip in this set; rotate carefully to avoid overuse."
+    }
+  ],
+  "selection_policy": {
+    "confused_or_question_hook": [
+      "02_xiaoyu_hook_IMG_5551"
+    ],
+    "panic_or_stress_hook": [
+      "01_xiaoyu_hook_IMG_5550"
+    ],
+    "short_fast_hook": [
+      "05_xiaoyu_hook_IMG_5567",
+      "04_xiaoyu_hook_IMG_5564"
+    ],
+    "strong_shock_reveal": [
+      "06_xiaoyu_hook_IMG_5568",
+      "00_xiaoyu_hook_IMG_5541",
+      "03_xiaoyu_hook_IMG_5557"
+    ],
+    "long_reaction_arc": [
+      "03_xiaoyu_hook_IMG_5557",
+      "06_xiaoyu_hook_IMG_5568"
+    ]
+  }
+}
