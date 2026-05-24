@@ -183,6 +183,28 @@ Do not rewrite subtitle content just to create style variation. Keep text fixed 
 
 When the user corrects an output, update this knowledge base with the underlying rule, not just the one-off fix. Future runs should apply the learned rule without waiting for the same correction.
 
+### Same-Creator Multi-Video Rule
+
+Do not use creator/account as the unique reference key. A single TikTok creator can have multiple unrelated template patterns.
+
+Reference storage should preserve:
+
+```text
+creator_id -> videos -> video_id -> reference.mp4 / reference.info.json / contact_sheet / template notes
+```
+
+When the user provides another URL from a creator already seen before:
+
+1. Extract the `video_id` from the URL.
+2. Store or register it as a separate video under that creator.
+3. Compare the new video's visual/caption structure against prior videos from the same creator.
+4. Select the template by `video_id` or observed pattern, not by creator name alone.
+
+For `justin_write`, keep these separate:
+
+- `7620697283176320269`: face-first reaction story followed by AI detector/humanizer result proof.
+- `7621061020181744926`: POV suspicious observer/laptop angle about someone writing from a blank Google Doc.
+
 ### Citely Google Scholar Template Intake
 
 For Citely, keep the same Google Scholar trust-doorway structure used in the Literfy run:

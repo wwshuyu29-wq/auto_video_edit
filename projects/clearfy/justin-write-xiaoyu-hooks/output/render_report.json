@@ -1,0 +1,29 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "reference_url": "https://www.tiktok.com/@justin_write/video/7620697283176320269",
+    "shot_matching_plan": "projects/clearfy/justin-write-xiaoyu-hooks/output/shot_matching_plan.json",
+    "xiaoyu_hook_clip": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/06_xiaoyu_hook_IMG_5568.mov",
+    "clearfy_materials": [
+      "projects/clearfy/research-connect-google-scholar-template/materials/raw/01_clearfy_clip_IMG_9837.MOV",
+      "projects/clearfy/research-connect-google-scholar-template/materials/raw/03_clearfy_clip_IMG_9840.MOV"
+    ]
+  },
+  "outputs": {
+    "preview_video": "projects/clearfy/justin-write-xiaoyu-hooks/output/final_delivery/clearfy_xiaoyu_justin_write_preview.mp4",
+    "preview_sheet": "projects/clearfy/justin-write-xiaoyu-hooks/output/final_delivery/clearfy_xiaoyu_justin_write_preview_sheet.png",
+    "publishing_copy": "projects/clearfy/justin-write-xiaoyu-hooks/output/publishing_copy_delivery.md"
+  },
+  "video_metadata": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration_s": 11.666667,
+    "has_audio": false
+  },
+  "notes": [
+    "Rendered with Swift-generated PNG caption overlays and FFmpeg segment concat.",
+    "No voiceover or music is included in this preview.",
+    "Claims avoid guaranteed detector bypass, 0% AI, and 100% human-score promises."
+  ]
+}

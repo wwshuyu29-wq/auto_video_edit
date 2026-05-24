@@ -1,0 +1,48 @@
+{
+  "creator_id": "justin_write",
+  "display_name": "justin_write",
+  "platform": "tiktok",
+  "creator_url": "https://www.tiktok.com/@justin_write",
+  "updated_at": "2026-05-24",
+  "storage_rule": "Same creator can have many different reference videos. Always key reference assets by video_id, not by creator_id alone.",
+  "videos": [
+    {
+      "video_id": "7620697283176320269",
+      "source_url": "https://www.tiktok.com/@justin_write/video/7620697283176320269",
+      "legacy_project_path": "projects/reference/justin-write-7620697283176320269",
+      "reference_video_path": "projects/reference/justin-write-7620697283176320269/references/7620697283176320269/reference.mp4",
+      "reference_info_path": "projects/reference/justin-write-7620697283176320269/references/7620697283176320269/reference.info.json",
+      "duration_s": 11,
+      "description": "bruh there's no way #bypassai #study #humanize #chatgpt",
+      "observed_template": "real_person_reaction_story_then_tool_result",
+      "template_summary": "Close selfie reaction with long story caption, then quick AI detector/humanizer result proof and punchline.",
+      "best_for": [
+        "human reaction hook",
+        "student accused of AI writing",
+        "AI detector/humanizer result reveal",
+        "Clearfy check and revise workflow"
+      ],
+      "status": "used_for_clearfy_xiaoyu_preview"
+    },
+    {
+      "video_id": "7621061020181744926",
+      "source_url": "https://www.tiktok.com/@justin_write/video/7621061020181744926",
+      "canonical_project_path": "projects/reference/creators/justin_write/videos/7621061020181744926",
+      "reference_video_path": "projects/reference/creators/justin_write/videos/7621061020181744926/reference.mp4",
+      "reference_info_path": "projects/reference/creators/justin_write/videos/7621061020181744926/reference.info.json",
+      "contact_sheet_path": "projects/reference/creators/justin_write/videos/7621061020181744926/contact_sheet.png",
+      "duration_s": 7.613991,
+      "description": "#aidetector #bypassai #study #chatgpt",
+      "observed_template": "pov_suspicious_library_observer",
+      "template_summary": "POV observer angle: creator stares suspiciously over a laptop while text describes seeing someone start from a blank Google Doc and type nonstop with no notes.",
+      "best_for": [
+        "POV library/classroom suspicion hook",
+        "blank document anxiety",
+        "how did they write that so fast angle",
+        "AI detector concern setup"
+      ],
+      "status": "downloaded_and_indexed"
+    }
+  ],
+  "selection_rule": "When generating from this creator, ask for or infer video_id/template. Do not treat all justin_write videos as the same reference pattern."
+}

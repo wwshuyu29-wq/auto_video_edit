@@ -1,0 +1,15 @@
+{
+  "text": "then i rewrote those parts, not the whole essay",
+  "beat": "humanizer_action",
+  "priority": "normal",
+  "width": 1080,
+  "height": 1920,
+  "output": "projects/clearfy/justin-write-xiaoyu-hooks/output/final_delivery/overlays/overlay_02.png",
+  "style": {
+    "font_size": 76,
+    "line_gap": 8,
+    "max_width": 880,
+    "y_ratio": 0.72,
+    "highlight_terms": ["rewrote", "parts"]
+  }
+}

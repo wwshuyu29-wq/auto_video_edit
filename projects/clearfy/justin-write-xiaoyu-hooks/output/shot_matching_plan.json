@@ -1,0 +1,57 @@
+{
+  "variant_id": "clearfy_xiaoyu_professor_called_out",
+  "product_name": "Clearfy",
+  "reference_template": "justin_write_story_reaction_proof",
+  "editing_style": {
+    "pace": "fast",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "caption_style": "large white bold text with black outline"
+  },
+  "edit_plan": [
+    {
+      "beat": "human_reaction_story_hook",
+      "time": "0-4.2",
+      "clip_id": "06_xiaoyu_hook_IMG_5568",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/06_xiaoyu_hook_IMG_5568.mov",
+      "clip_start": 0.0,
+      "clip_end": 4.2,
+      "on_screen_text": "u think u can scare me???\nmy professor said my draft\nsounded like chatgpt\nso i checked the AI-heavy parts\nin Clearfy first",
+      "reason": "Uses Xiaoyu's strongest mouth-covered shock reaction to mirror the reference video's face-first story hook."
+    },
+    {
+      "beat": "detector_proof",
+      "time": "4.2-7.2",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/01_clearfy_clip_IMG_9837.MOV",
+      "clip_start": 5.0,
+      "clip_end": 8.0,
+      "on_screen_text": "it showed the sentences that looked robotic",
+      "reason": "Clearfy detector result and highlighted sentences show the problem instead of making a guarantee."
+    },
+    {
+      "beat": "humanizer_action",
+      "time": "7.2-9.4",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "file_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/03_clearfy_clip_IMG_9840.MOV",
+      "clip_start": 0.2,
+      "clip_end": 2.4,
+      "on_screen_text": "then i rewrote those parts, not the whole essay",
+      "reason": "Humanizer close-up supports the safe revision workflow."
+    },
+    {
+      "beat": "result_punchline",
+      "time": "9.4-11.8",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/01_clearfy_clip_IMG_9837.MOV",
+      "clip_start": 9.5,
+      "clip_end": 11.9,
+      "on_screen_text": "he had nothing left to circle",
+      "reason": "Ends on visible Clearfy detection/result proof while avoiding 100% human or bypass claims."
+    }
+  ],
+  "risk_notes": [
+    "No claim of guaranteed detector bypass, 0% AI, or 100% human score.",
+    "No voiceover or music in this preview; captions carry the story."
+  ]
+}

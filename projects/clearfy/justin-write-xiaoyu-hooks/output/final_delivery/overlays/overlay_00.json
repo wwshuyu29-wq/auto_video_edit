@@ -1,0 +1,15 @@
+{
+  "text": "u think u can scare me???\nmy professor said my draft\nsounded like chatgpt\nso i checked the AI-heavy parts\nin Clearfy first",
+  "beat": "hook",
+  "priority": "large",
+  "width": 1080,
+  "height": 1920,
+  "output": "projects/clearfy/justin-write-xiaoyu-hooks/output/final_delivery/overlays/overlay_00.png",
+  "style": {
+    "font_size": 48,
+    "line_gap": 8,
+    "max_width": 900,
+    "y_ratio": 0.46,
+    "highlight_terms": ["chatgpt", "AI-heavy", "Clearfy"]
+  }
+}

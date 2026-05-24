@@ -1,0 +1,15 @@
+{
+  "text": "he had nothing left to circle",
+  "beat": "result_punchline",
+  "priority": "normal",
+  "width": 1080,
+  "height": 1920,
+  "output": "projects/clearfy/justin-write-xiaoyu-hooks/output/final_delivery/overlays/overlay_03.png",
+  "style": {
+    "font_size": 82,
+    "line_gap": 8,
+    "max_width": 880,
+    "y_ratio": 0.72,
+    "highlight_terms": ["nothing", "circle"]
+  }
+}
