@@ -1,0 +1,66 @@
+{
+  "template_id": "studywjess2_pov_method_screen_proof",
+  "template_name": "POV method reveal with laptop-screen proof",
+  "source": {
+    "account_url": "https://www.tiktok.com/@studywjess2",
+    "video_url": "https://www.tiktok.com/@studywjess2/video/7637831907329182998?_r=1&_t=ZS-96Ndt52p53V",
+    "local_reference_video": "projects/reference/studywjess2-7637831907329182998/references/7637831907329182998/reference.mp4",
+    "caption": "Gets so annoying fr #xybzca #trending #viral #naturalwrite #aitools",
+    "duration_s": 7.2
+  },
+  "account_positioning": "Student productivity / writing tool content. The reference frames a common ChatGPT-writing pain as a quick method reveal, then proves the method with a handheld laptop-screen demo.",
+  "main_content_logic": "One large POV caption stays centered while the screen recording shows a writing tool workflow. The hook names the pain, the visual shows the method, and the final frames show rewritten/humanized text as proof.",
+  "viral_patterns": [
+    {
+      "opening_0_3s": "Large centered POV caption over a laptop-screen tool demo: ChatGPT does not make assignments sound human-written.",
+      "hook_type": "POV pain confession + method reveal",
+      "middle_3_6s": "Handheld screen moves through the tool interface and shows input/output comparison.",
+      "ending_6_8s": "Humanized/revised output remains visible as the proof of method.",
+      "visual_style": {
+        "camera": "vertical handheld phone recording of laptop screen",
+        "caption": "large white text with heavy black outline, centered, multiple short lines",
+        "pace": "very short, no explanatory voiceover needed",
+        "proof": "product UI and rewritten text are visible behind the caption"
+      }
+    }
+  ],
+  "caption_logic": {
+    "template_id": "studywjess2_pov_method_screen_proof",
+    "visible_sequence": [
+      "POV: When ChatGPT does NOT make your assignments sound HUMAN Written so you pull out this method..."
+    ],
+    "sentence_roles": [
+      "hook"
+    ],
+    "punctuation_pattern": "POV prefix, NOT in caps, HUMAN Written in caps, ellipsis ending to imply method reveal",
+    "command_grammar": [],
+    "hook_formula": "POV: When [common AI-writing pain] so you pull out this method...",
+    "cta_position": "implicit_early_visual_method",
+    "result_proof_position": "background UI proof throughout the short clip",
+    "reuse_rule": "Keep the POV pain confession and large centered caption. Replace the product and proof with Clearfy-safe AI detector/humanizer workflow. Do not promise bypassing detectors or guaranteed human score."
+  },
+  "template_fingerprint": {
+    "duration": "7-9 seconds",
+    "aspect_ratio": "9:16",
+    "shots": "one handheld screen-recording sequence with fast cuts or continuous movement",
+    "caption_style": "large white text, black stroke, centered over UI",
+    "emotional_trigger": "frustration that ChatGPT text sounds robotic or not like the student",
+    "proof_type": "visible web tool interface and text transformation/detection result"
+  },
+  "rewrite_boundaries": [
+    "Do not copy the exact Natural Write product UI or product name.",
+    "Do not say Clearfy bypasses Turnitin or guarantees undetectability.",
+    "Do not promise 0% AI detection or perfect detector accuracy.",
+    "Use Clearfy as a review and revision workflow: check AI-likelihood signals, then rewrite robotic phrasing and review the final text."
+  ],
+  "evidence_gaps": [
+    "No native transcript file was available; visible caption and frame analysis were extracted from downloaded reference frames.",
+    "The reference makes aggressive humanizer implications; Clearfy rewrite must keep compliance-safe wording."
+  ],
+  "scores": {
+    "hook_strength": 8,
+    "template_clarity": 8,
+    "product_transferability": 8,
+    "risk_level": 6
+  }
+}

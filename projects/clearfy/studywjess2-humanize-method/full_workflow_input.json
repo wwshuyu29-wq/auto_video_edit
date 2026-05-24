@@ -1,0 +1,385 @@
+{
+  "account_url": "https://www.tiktok.com/@studywjess2",
+  "target_platform": "TikTok",
+  "analysis_goal": "Adapt the POV method-sharing template into a Clearfy AI detector and humanizer product video.",
+  "video_list": [
+    {
+      "video_url": "https://www.tiktok.com/@studywjess2/video/7637831907329182998?_r=1&_t=ZS-96Ndt52p53V",
+      "views": 1640,
+      "likes": 85,
+      "comments": 21,
+      "caption": "Gets so annoying fr #xybzca #trending #viral #naturalwrite #aitools",
+      "transcript": "POV: When ChatGPT does NOT make your assignments sound HUMAN Written so you pull out this method...",
+      "visible_subtitles": [
+        "POV: When ChatGPT does NOT make your assignments sound HUMAN Written so you pull out this method..."
+      ],
+      "frames_summary": "Handheld vertical laptop-screen recording. Browser shows a writing humanizer tool. Large centered white text with black outline stays over the screen. The tool compares original text and humanized text, then shows a rewritten result. The pattern is pain/confession first, then quick method reveal, then product proof."
+    }
+  ],
+  "platform": "TikTok",
+  "video_length": "8-10s",
+  "tone": "native creator style, casual, method-sharing, not too salesy",
+  "product": {
+    "product_name": "Clearfy",
+    "one_liner": "Clearfy is an AI writing review tool that helps users check AI-likelihood signals and revise AI-heavy text into clearer, more natural writing.",
+    "target_users": [
+      "students",
+      "college students",
+      "essay writers",
+      "academic writers",
+      "people revising AI-assisted drafts",
+      "multilingual writers"
+    ],
+    "core_features": [
+      {
+        "feature_name": "AI Detector",
+        "description": "Check pasted text or uploaded files for AI-generated writing signals.",
+        "user_benefit": "Helps users understand where a draft may look AI-heavy before they revise or submit it.",
+        "visual_need": "Screen recording of pasting an essay or uploading a file, clicking Check for AI, and showing AI-likelihood results."
+      },
+      {
+        "feature_name": "AI Humanizer",
+        "description": "Rewrite AI-heavy or robotic phrasing into more natural human-like wording while preserving the original meaning.",
+        "user_benefit": "Helps users polish drafts that sound too robotic or generic.",
+        "visual_need": "Screen recording of selecting AI-heavy text, running the humanizer, and comparing before/after wording."
+      },
+      {
+        "feature_name": "Sentence-Level Insights",
+        "description": "Review sentence-level AI signals so users can identify which parts of a draft need revision.",
+        "user_benefit": "Helps users focus editing time on the passages that look most robotic.",
+        "visual_need": "Close-up screen recording of highlighted or scored sentences and the user revising those passages."
+      },
+      {
+        "feature_name": "Upload File / Paste Text Workflow",
+        "description": "Start from pasted text or uploaded writing files.",
+        "user_benefit": "Makes it easy to review full essays or drafts without manually breaking them into small pieces.",
+        "visual_need": "Screen recording of switching between Paste Text and Upload File, then starting a check."
+      },
+      {
+        "feature_name": "Credit-Based Usage",
+        "description": "Use one credit balance for AI checks and revisions, with credits that do not expire.",
+        "user_benefit": "Helps users avoid subscriptions when they only need occasional AI checks or rewrites.",
+        "visual_need": "Screen recording of pricing or credit balance only if needed for a value-prop beat."
+      }
+    ],
+    "most_painful_user_scenarios": [
+      "A student used AI to draft an essay and now worries it sounds too robotic.",
+      "A writer wants to check AI-likelihood signals before revising a draft.",
+      "A student wants to know which sentences need rewriting instead of rewriting the whole essay blindly.",
+      "A user needs a quick check and revision workflow without committing to a subscription."
+    ],
+    "forbidden_claims": [
+      "Do not say Clearfy guarantees bypassing Turnitin or any AI detector.",
+      "Do not promise 0% AI detection or guaranteed undetectability.",
+      "Do not encourage academic dishonesty, plagiarism, or submitting unreviewed AI-generated work.",
+      "Do not say detector results are perfectly accurate.",
+      "Do not say Clearfy replaces the user's own writing, judgment, or responsibility.",
+      "Do not claim every school or detector will produce the same result."
+    ],
+    "good_tiktok_angles": [
+      "If your essay sounds too much like ChatGPT, check this first.",
+      "Before submitting an AI-assisted draft, I check which sentences sound robotic.",
+      "I stopped rewriting the whole essay and started fixing the sentences that looked AI-heavy.",
+      "This is how I make an AI-assisted draft sound more like my own writing.",
+      "No subscription, just credits when I need to check or revise a draft."
+    ],
+    "source_grounding_note": "Clearfy's public site describes AI detector and AI humanizer workflows for checking AI-likelihood signals and revising drafts into more natural writing.",
+    "allowed_claim_boundaries": [
+      "Can say Clearfy helps users check AI-likelihood signals in drafts.",
+      "Can say Clearfy helps rewrite robotic or AI-heavy phrasing into more natural language.",
+      "Can say Clearfy provides sentence-level review signals when visible in the recorded workflow.",
+      "Can say credits do not expire if using pricing/credit footage.",
+      "Should still say users need to review, edit, and take responsibility for the final writing."
+    ],
+    "cta": "try Clearfy"
+  },
+  "asset_library": [
+    {
+      "clip_id": "00_clearfy_landing_page_empty_state",
+      "file_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/00_clearfy_clip_IMG_9834.MOV",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/contact_sheets/timelines/00_clearfy_clip_IMG_9834.jpg",
+      "duration": 2.687,
+      "orientation": "landscape",
+      "quality_score": 7,
+      "shot_type": "handheld Clearfy landing page reveal",
+      "camera_motion": "short handheld tilt across laptop screen",
+      "scene": "Clearfy homepage with paste text and upload file input",
+      "visible_objects": [
+        "Clearfy logo",
+        "Check AI rate. Humanize AI content.",
+        "Paste Text tab",
+        "Upload File tab",
+        "AI humanizer button",
+        "AI detector button"
+      ],
+      "emotion": "quick website reveal",
+      "best_use": [
+        "website reveal",
+        "opening product reveal",
+        "go to website CTA",
+        "AI detector introduction",
+        "AI humanizer introduction"
+      ],
+      "not_good_for": [
+        "deep product proof",
+        "final result proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 2.5,
+          "reason": "Fast Clearfy homepage reveal with the core claim and input box visible."
+        }
+      ],
+      "text_overlay_safe_area": "lower center or right side; avoid covering headline",
+      "audio_quality": "not needed",
+      "notes": "Useful for a quick 'go to this website' beat or product reveal."
+    },
+    {
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/01_clearfy_clip_IMG_9837.MOV",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/contact_sheets/timelines/01_clearfy_clip_IMG_9837.jpg",
+      "duration": 13.252,
+      "orientation": "landscape",
+      "quality_score": 8,
+      "shot_type": "handheld Clearfy AI detector workflow",
+      "camera_motion": "handheld screen recording with slight movement",
+      "scene": "Clearfy AI detector checking pasted essay text and showing AI-likelihood results",
+      "visible_objects": [
+        "AI detector tab",
+        "pasted essay text",
+        "Check for AI button",
+        "scanning modal",
+        "red highlighted sentences",
+        "Clearfy.ai Detection Results",
+        "AI likelihood result",
+        "result breakdown"
+      ],
+      "emotion": "proof that the draft looks AI-heavy",
+      "best_use": [
+        "AI detector proof",
+        "check AI rate",
+        "scan result",
+        "sentence-level AI signal",
+        "problem reveal",
+        "before humanizing"
+      ],
+      "not_good_for": [
+        "pricing",
+        "credit explanation",
+        "upload file proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.5,
+          "end": 4.5,
+          "reason": "Shows pasted text and detector mode before scan."
+        },
+        {
+          "start": 5.0,
+          "end": 9.5,
+          "reason": "Shows highlighted sentences and detection result beginning to appear."
+        },
+        {
+          "start": 9.5,
+          "end": 12.8,
+          "reason": "Best result-proof section: detection results and AI-likelihood breakdown are visible."
+        }
+      ],
+      "text_overlay_safe_area": "upper left or lower left; keep red highlights and result card visible",
+      "audio_quality": "not needed",
+      "notes": "Strongest detector-proof clip. Use for 'check before submitting' or 'this draft looks AI-heavy' beats."
+    },
+    {
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "file_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/02_clearfy_clip_IMG_9839.MOV",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/contact_sheets/timelines/02_clearfy_clip_IMG_9839.jpg",
+      "duration": 6.275,
+      "orientation": "landscape",
+      "quality_score": 8,
+      "shot_type": "handheld Clearfy AI humanizer input workflow",
+      "camera_motion": "stable handheld screen recording",
+      "scene": "Clearfy AI humanizer mode with pasted writing and rewrite strength selector",
+      "visible_objects": [
+        "AI humanizer tab",
+        "AI detector tab",
+        "Easy mode",
+        "Medium mode",
+        "Aggressive mode",
+        "pasted essay text",
+        "Humanize button"
+      ],
+      "emotion": "solution setup",
+      "best_use": [
+        "AI humanizer setup",
+        "rewrite AI-heavy text",
+        "choose rewrite strength",
+        "solution step",
+        "before after setup"
+      ],
+      "not_good_for": [
+        "detector final result",
+        "pricing",
+        "upload file proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.4,
+          "end": 2.4,
+          "reason": "Shows humanizer tab and rewrite modes."
+        },
+        {
+          "start": 2.4,
+          "end": 5.8,
+          "reason": "Shows a draft in the input box and the Humanize action button."
+        }
+      ],
+      "text_overlay_safe_area": "right side or lower center; avoid covering the Humanize button",
+      "audio_quality": "not needed",
+      "notes": "Good for explaining that Clearfy can revise AI-heavy wording, not just detect it."
+    },
+    {
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "file_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/03_clearfy_clip_IMG_9840.MOV",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/contact_sheets/timelines/03_clearfy_clip_IMG_9840.jpg",
+      "duration": 3.038,
+      "orientation": "landscape",
+      "quality_score": 7,
+      "shot_type": "close handheld Clearfy humanizer input",
+      "camera_motion": "short handheld close-up",
+      "scene": "AI humanizer input box with aggressive rewrite mode selected",
+      "visible_objects": [
+        "AI humanizer tab",
+        "Aggressive mode",
+        "pasted draft",
+        "Humanize button"
+      ],
+      "emotion": "fast action close-up",
+      "best_use": [
+        "click humanize",
+        "rewrite button close-up",
+        "fast solution beat",
+        "mode selection"
+      ],
+      "not_good_for": [
+        "full website reveal",
+        "detector result proof",
+        "long explanation"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 2.8,
+          "reason": "Compact close-up of the Humanize action area."
+        }
+      ],
+      "text_overlay_safe_area": "upper left; keep button area visible",
+      "audio_quality": "not needed",
+      "notes": "Short insert clip for a quick 'then hit Humanize' beat."
+    },
+    {
+      "clip_id": "04_clearfy_detector_to_ai_result",
+      "file_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/04_clearfy_clip_IMG_9841.mov",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/contact_sheets/timelines/04_clearfy_clip_IMG_9841.jpg",
+      "duration": 9.887,
+      "orientation": "landscape",
+      "quality_score": 8,
+      "shot_type": "handheld Clearfy detector result reveal",
+      "camera_motion": "handheld screen recording with slow drift",
+      "scene": "Clearfy detector page moving from pasted text to highlighted AI-likelihood results",
+      "visible_objects": [
+        "AI detector tab",
+        "Check for AI button",
+        "pasted essay text",
+        "red highlighted sentences",
+        "Clearfy.ai Detection Results",
+        "likely to be written by AI",
+        "result breakdown",
+        "Humanize button"
+      ],
+      "emotion": "risk reveal then next-step CTA",
+      "best_use": [
+        "detector result proof",
+        "AI signal result",
+        "sentence-level highlights",
+        "use humanizer after detection",
+        "before after bridge"
+      ],
+      "not_good_for": [
+        "empty-state website reveal",
+        "pricing",
+        "upload file proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.5,
+          "end": 4.0,
+          "reason": "Shows detector input and check button."
+        },
+        {
+          "start": 5.5,
+          "end": 9.5,
+          "reason": "Best section: highlighted AI-heavy sentences and result panel are visible."
+        }
+      ],
+      "text_overlay_safe_area": "left side or top; keep result card and red highlights visible",
+      "audio_quality": "not needed",
+      "notes": "Best bridge from 'check AI rate' into 'now fix the highlighted parts'."
+    },
+    {
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "file_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/05_clearfy_clip_IMG_9843.MOV",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/contact_sheets/timelines/05_clearfy_clip_IMG_9843.jpg",
+      "duration": 6.255,
+      "orientation": "landscape",
+      "quality_score": 7,
+      "shot_type": "handheld Clearfy homepage and input box",
+      "camera_motion": "handheld pan across homepage input area",
+      "scene": "Clearfy homepage showing headline, AI humanizer and AI detector tabs, paste/upload input box",
+      "visible_objects": [
+        "Clearfy logo",
+        "Check AI rate. Humanize AI content.",
+        "AI humanizer button",
+        "AI detector button",
+        "Paste Text tab",
+        "Upload File tab",
+        "empty input box",
+        "minimum scan is 50 words"
+      ],
+      "emotion": "clean product setup",
+      "best_use": [
+        "homepage reveal",
+        "tool setup",
+        "paste text instruction",
+        "upload file instruction",
+        "opening product context"
+      ],
+      "not_good_for": [
+        "result proof",
+        "humanizer output proof",
+        "pricing"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.3,
+          "end": 5.8,
+          "reason": "Shows Clearfy's main promise and the two starting workflows."
+        }
+      ],
+      "text_overlay_safe_area": "lower right or upper left; avoid covering the headline",
+      "audio_quality": "not needed",
+      "notes": "Good general-purpose setup clip for explaining what Clearfy does."
+    }
+  ],
+  "editing_style": {
+    "pace": "fast",
+    "average_clip_duration": "1.5-2.5s",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16"
+  },
+  "intake": {
+    "template_name": "studywjess2 POV humanizer method",
+    "project_dir": "/Users/kk/Desktop/auto video/projects/clearfy/studywjess2-humanize-method",
+    "notes": "Use Clearfy footage only. Avoid bypass/guarantee claims."
+  }
+}

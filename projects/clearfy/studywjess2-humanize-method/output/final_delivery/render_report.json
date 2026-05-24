@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/clearfy/studywjess2-humanize-method/output/shot_matching_plan.json",
+    "asset_library": "projects/clearfy/studywjess2-humanize-method/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "projects/clearfy/studywjess2-humanize-method/output/final_delivery/clearfy_studywjess2_preview.mp4",
+    "preview_sheet": "projects/clearfy/studywjess2-humanize-method/output/final_delivery/clearfy_studywjess2_preview_sheet.jpg",
+    "preview_midpoint_sheet": "projects/clearfy/studywjess2-humanize-method/output/final_delivery/clearfy_studywjess2_preview_midpoint_sheet.jpg",
+    "captions": "projects/clearfy/studywjess2-humanize-method/output/final_delivery/captions.json",
+    "srt": "projects/clearfy/studywjess2-humanize-method/output/final_delivery/master.srt",
+    "render_report": "projects/clearfy/studywjess2-humanize-method/output/final_delivery/render_report.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "9.266667",
+      "size": "4197368"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

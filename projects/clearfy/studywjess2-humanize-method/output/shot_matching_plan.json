@@ -1,0 +1,68 @@
+{
+  "editing_style": {
+    "pace": "fast",
+    "average_clip_duration": "1.8-2.5s",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0.0-2.2",
+      "voiceover": "",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.3,
+      "clip_end": 5.8,
+      "reason": "Matches visual need with score 100: Clearfy homepage reveal with input box and product headline visible",
+      "on_screen_text": "POV: when ChatGPT makes your essay sound nothing like you...",
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "detector",
+      "time": "2.2-4.4",
+      "voiceover": "",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 0.5,
+      "clip_end": 4.5,
+      "reason": "Matches visual need with score 100: AI detector workflow with pasted essay text and Check for AI button",
+      "on_screen_text": "so you check the AI rate first",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "proof",
+      "time": "4.4-6.8",
+      "voiceover": "",
+      "clip_id": "04_clearfy_detector_to_ai_result",
+      "clip_start": 0.5,
+      "clip_end": 4.0,
+      "reason": "Matches visual need with score 100: Detection results with red highlighted sentences and result breakdown",
+      "on_screen_text": "Clearfy shows which sentences sound AI-heavy",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "solution",
+      "time": "6.8-9.4",
+      "voiceover": "",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 2.4,
+      "reason": "Matches visual need with score 100: AI humanizer tab with rewrite strength selector and Humanize button",
+      "on_screen_text": "then you humanize the robotic parts and review it yourself",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [],
+  "needs_script_revision": false,
+  "scores": {
+    "visual_match": 10,
+    "pace_match": 7,
+    "asset_quality": 8,
+    "opening_strength": 8,
+    "product_proof_strength": 8
+  }
+}

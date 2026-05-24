@@ -1,0 +1,201 @@
+{
+  "product": {
+    "product_name": "Clearfy",
+    "one_liner": "Clearfy is an AI writing review tool that helps users check AI-likelihood signals and revise AI-heavy text into clearer, more natural writing.",
+    "target_users": [
+      "students",
+      "college students",
+      "essay writers",
+      "academic writers",
+      "people revising AI-assisted drafts",
+      "multilingual writers"
+    ],
+    "core_features": [
+      {
+        "feature_name": "AI Detector",
+        "description": "Check pasted text or uploaded files for AI-generated writing signals.",
+        "user_benefit": "Helps users understand where a draft may look AI-heavy before they revise or submit it.",
+        "visual_need": "Screen recording of pasting an essay or uploading a file, clicking Check for AI, and showing AI-likelihood results."
+      },
+      {
+        "feature_name": "AI Humanizer",
+        "description": "Rewrite AI-heavy or robotic phrasing into more natural human-like wording while preserving the original meaning.",
+        "user_benefit": "Helps users polish drafts that sound too robotic or generic.",
+        "visual_need": "Screen recording of selecting AI-heavy text, running the humanizer, and comparing before/after wording."
+      },
+      {
+        "feature_name": "Sentence-Level Insights",
+        "description": "Review sentence-level AI signals so users can identify which parts of a draft need revision.",
+        "user_benefit": "Helps users focus editing time on the passages that look most robotic.",
+        "visual_need": "Close-up screen recording of highlighted or scored sentences and the user revising those passages."
+      },
+      {
+        "feature_name": "Upload File / Paste Text Workflow",
+        "description": "Start from pasted text or uploaded writing files.",
+        "user_benefit": "Makes it easy to review full essays or drafts without manually breaking them into small pieces.",
+        "visual_need": "Screen recording of switching between Paste Text and Upload File, then starting a check."
+      },
+      {
+        "feature_name": "Credit-Based Usage",
+        "description": "Use one credit balance for AI checks and revisions, with credits that do not expire.",
+        "user_benefit": "Helps users avoid subscriptions when they only need occasional AI checks or rewrites.",
+        "visual_need": "Screen recording of pricing or credit balance only if needed for a value-prop beat."
+      }
+    ],
+    "most_painful_user_scenarios": [
+      "A student used AI to draft an essay and now worries it sounds too robotic.",
+      "A writer wants to check AI-likelihood signals before revising a draft.",
+      "A student wants to know which sentences need rewriting instead of rewriting the whole essay blindly.",
+      "A user needs a quick check and revision workflow without committing to a subscription."
+    ],
+    "forbidden_claims": [
+      "Do not say Clearfy guarantees bypassing Turnitin or any AI detector.",
+      "Do not promise 0% AI detection or guaranteed undetectability.",
+      "Do not encourage academic dishonesty, plagiarism, or submitting unreviewed AI-generated work.",
+      "Do not say detector results are perfectly accurate.",
+      "Do not say Clearfy replaces the user's own writing, judgment, or responsibility.",
+      "Do not claim every school or detector will produce the same result."
+    ],
+    "good_tiktok_angles": [
+      "If your essay sounds too much like ChatGPT, check this first.",
+      "Before submitting an AI-assisted draft, I check which sentences sound robotic.",
+      "I stopped rewriting the whole essay and started fixing the sentences that looked AI-heavy.",
+      "This is how I make an AI-assisted draft sound more like my own writing.",
+      "No subscription, just credits when I need to check or revise a draft."
+    ],
+    "source_grounding_note": "Clearfy's public site describes AI detector and AI humanizer workflows for checking AI-likelihood signals and revising drafts into more natural writing.",
+    "allowed_claim_boundaries": [
+      "Can say Clearfy helps users check AI-likelihood signals in drafts.",
+      "Can say Clearfy helps rewrite robotic or AI-heavy phrasing into more natural language.",
+      "Can say Clearfy provides sentence-level review signals when visible in the recorded workflow.",
+      "Can say credits do not expire if using pricing/credit footage.",
+      "Should still say users need to review, edit, and take responsibility for the final writing."
+    ]
+  },
+  "template_source": {
+    "template_id": "studywjess2_pov_method_screen_proof",
+    "reference_video": "https://www.tiktok.com/@studywjess2/video/7637831907329182998?_r=1&_t=ZS-96Ndt52p53V",
+    "adaptation_rule": "Preserve the POV pain confession and big centered text; replace method proof with Clearfy detector and humanizer footage."
+  },
+  "scripts": [
+    {
+      "type": "native_creator_version",
+      "style": "POV method reveal, large centered captions, fast handheld screen proof",
+      "script_title": "POV: ChatGPT draft sounds too AI",
+      "script_angle": "A student checks AI-likelihood signals and fixes robotic sentences with Clearfy instead of blindly rewriting everything.",
+      "target_viewer": "students or writers revising AI-assisted drafts",
+      "version": "Clearfy adapted from studywjess2 POV method template",
+      "full_script": [
+        {
+          "beat": "hook",
+          "time": "0.0-2.2",
+          "voiceover": "",
+          "on_screen_text": "POV: when ChatGPT makes your essay sound nothing like you...",
+          "visual_need": "Clearfy homepage reveal with input box and product headline visible",
+          "product_feature": "AI Detector / AI Humanizer",
+          "preferred_clip_id": "05_clearfy_homepage_input_empty",
+          "caption_style": {
+            "font_size": 62,
+            "max_width": 900,
+            "lines": [
+              "POV: when ChatGPT",
+              "makes your essay sound",
+              "nothing like you..."
+            ]
+          }
+        },
+        {
+          "beat": "detector",
+          "time": "2.2-4.4",
+          "voiceover": "",
+          "on_screen_text": "so you check the AI rate first",
+          "visual_need": "AI detector workflow with pasted essay text and Check for AI button",
+          "product_feature": "AI Detector",
+          "preferred_clip_id": "01_clearfy_ai_detector_scan_results",
+          "caption_style": {
+            "font_size": 66,
+            "max_width": 860,
+            "lines": [
+              "so you check",
+              "the AI rate first"
+            ]
+          }
+        },
+        {
+          "beat": "proof",
+          "time": "4.4-6.8",
+          "voiceover": "",
+          "on_screen_text": "Clearfy shows which sentences sound AI-heavy",
+          "visual_need": "Detection results with red highlighted sentences and result breakdown",
+          "product_feature": "Sentence-Level Insights",
+          "preferred_clip_id": "04_clearfy_detector_to_ai_result",
+          "caption_style": {
+            "font_size": 58,
+            "max_width": 900,
+            "lines": [
+              "Clearfy shows",
+              "which sentences",
+              "sound AI-heavy"
+            ]
+          }
+        },
+        {
+          "beat": "solution",
+          "time": "6.8-9.4",
+          "voiceover": "",
+          "on_screen_text": "then you humanize the robotic parts and review it yourself",
+          "visual_need": "AI humanizer tab with rewrite strength selector and Humanize button",
+          "product_feature": "AI Humanizer",
+          "preferred_clip_id": "02_clearfy_humanizer_input_mode",
+          "caption_style": {
+            "font_size": 54,
+            "max_width": 920,
+            "lines": [
+              "then humanize",
+              "the robotic parts",
+              "and review it yourself"
+            ]
+          }
+        }
+      ],
+      "caption": "POV: your AI-assisted draft sounds too robotic, so you check the AI signals and fix the parts that need work. #aitools #studenttok #writingtips #aihumanizer #aichecker",
+      "caption_adaptation": {
+        "reference_pattern": "POV pain + method reveal + screen proof",
+        "clearfy_change": "Use detection and revision language instead of bypass/guarantee claims."
+      },
+      "hashtags": [
+        "#aitools",
+        "#studenttok",
+        "#writingtips",
+        "#aihumanizer",
+        "#aichecker"
+      ],
+      "compliance_notes": [
+        "Does not promise bypassing Turnitin or any detector.",
+        "Frames Clearfy as review and revision support, not a guarantee.",
+        "Tells users to review the revised text themselves."
+      ]
+    }
+  ],
+  "allowed_feature_names": [
+    "AI Detector",
+    "AI Humanizer",
+    "Sentence-Level Insights",
+    "Upload File / Paste Text Workflow"
+  ],
+  "forbidden_claims": [
+    "Do not say Clearfy guarantees bypassing Turnitin or any AI detector.",
+    "Do not promise 0% AI detection or guaranteed undetectability.",
+    "Do not encourage academic dishonesty, plagiarism, or submitting unreviewed AI-generated work.",
+    "Do not say detector results are perfectly accurate.",
+    "Do not say Clearfy replaces the user's own writing, judgment, or responsibility.",
+    "Do not claim every school or detector will produce the same result."
+  ],
+  "scores": {
+    "template_fit": 9,
+    "product_truth": 8,
+    "native_tiktok_feel": 8,
+    "compliance_safety": 8,
+    "asset_readiness": 8
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "footage_dir": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw",
+  "count": 6,
+  "items": [
+    {
+      "id": "00_clearfy_clip_IMG_9834",
+      "path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/00_clearfy_clip_IMG_9834.MOV",
+      "relative_path": "00_clearfy_clip_IMG_9834.MOV",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 2.687,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.925558312655085,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "01_clearfy_clip_IMG_9837",
+      "path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/01_clearfy_clip_IMG_9837.MOV",
+      "relative_path": "01_clearfy_clip_IMG_9837.MOV",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 13.252,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.90945674044266,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "02_clearfy_clip_IMG_9839",
+      "path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/02_clearfy_clip_IMG_9839.MOV",
+      "relative_path": "02_clearfy_clip_IMG_9839.MOV",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 6.275,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.90440785979819,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "03_clearfy_clip_IMG_9840",
+      "path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/03_clearfy_clip_IMG_9840.MOV",
+      "relative_path": "03_clearfy_clip_IMG_9840.MOV",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 3.038,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.90126165660998,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "04_clearfy_clip_IMG_9841",
+      "path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/04_clearfy_clip_IMG_9841.mov",
+      "relative_path": "04_clearfy_clip_IMG_9841.mov",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 9.887,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.12444663059518,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "05_clearfy_clip_IMG_9843",
+      "path": "/Users/kk/Desktop/auto video/projects/clearfy/research-connect-google-scholar-template/materials/raw/05_clearfy_clip_IMG_9843.MOV",
+      "relative_path": "05_clearfy_clip_IMG_9843.MOV",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 6.255,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 59.93606819392648,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    }
+  ]
+}
