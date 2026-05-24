@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auto-video.local/schemas/human_hook_observation.schema.json",
+  "title": "HumanHookObservation",
+  "type": "object",
+  "required": ["status", "detected", "reference_video", "hook_window_s", "observation"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["no_reference_video", "frames_extracted", "vision_analyzed", "failed"]
+    },
+    "detected": { "type": "boolean" },
+    "reference_video": { "type": ["string", "null"] },
+    "hook_window_s": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "frame_index": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "evidence_gaps": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

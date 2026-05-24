@@ -21,7 +21,8 @@ from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 WORKER_CLI = REPO_ROOT / "apps" / "worker" / "worker_cli.py"
-STAGE_NAMES = ("viral_deconstruction", "product_script_rewrite", "asset_matching", "video_rendering")
+STAGE_NAMES = ("reference_hook_analysis", "viral_deconstruction", "human_hook_generation", "product_script_rewrite", "asset_matching", "video_rendering")
+OPTIONAL_STAGES = {"reference_hook_analysis", "human_hook_generation"}
 
 
 def utc_now() -> str:
@@ -55,7 +56,7 @@ def build_initial_stages(job_file: Path) -> list[dict[str, Any]]:
     return [
         {
             "name": name,
-            "mode": configured.get(name, "run"),
+            "mode": configured.get(name, "skip" if name in OPTIONAL_STAGES else "run"),
             "state": "pending",
             "started_at": None,
             "finished_at": None,

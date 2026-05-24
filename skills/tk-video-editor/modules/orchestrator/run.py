@@ -29,6 +29,50 @@ def run_module(module: str, input_path: Path, out_path: Path) -> None:
     )
 
 
+def run_human_hook_module(input_path: Path, out_path: Path, project_dir: Path) -> None:
+    script = MODULES / "human_hook_generation" / "run.py"
+    if not script.exists():
+        raise SystemExit(f"module runner not found: {script}")
+    subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--input",
+            str(input_path),
+            "--out",
+            str(out_path),
+            "--project-dir",
+            str(project_dir),
+            "--dry-run",
+        ],
+        check=True,
+        cwd=str(SKILL_ROOT),
+    )
+
+
+def run_reference_hook_module(input_path: Path, out_path: Path, frame_index_out: Path, project_dir: Path) -> None:
+    script = MODULES / "reference_hook_analysis" / "run.py"
+    if not script.exists():
+        raise SystemExit(f"module runner not found: {script}")
+    subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--input",
+            str(input_path),
+            "--out",
+            str(out_path),
+            "--frame-index-out",
+            str(frame_index_out),
+            "--project-dir",
+            str(project_dir),
+            "--dry-run",
+        ],
+        check=True,
+        cwd=str(SKILL_ROOT),
+    )
+
+
 def write_json(path: Path, data: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -85,10 +129,15 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     account_input = out_dir / "_orchestrator_account_input.json"
+    reference_hook_input = out_dir / "_orchestrator_reference_hook_input.json"
     script_input = out_dir / "_orchestrator_script_input.json"
     matching_input = out_dir / "_orchestrator_matching_input.json"
+    human_hook_input = out_dir / "_orchestrator_human_hook_input.json"
 
+    human_hook_observation = out_dir / "human_hook_observation.json"
+    hook_frame_index = out_dir / "hook_frame_index.json"
     viral_card = out_dir / "viral_pattern_card.json"
+    human_hook_card = out_dir / "human_hook_card.json"
     script_card = out_dir / "product_script_card.json"
     shot_plan = out_dir / "shot_matching_plan.json"
     render_report = out_dir / "render_report.json"
@@ -96,7 +145,10 @@ def main() -> None:
     final_video = out_dir / "final_video.mp4"
 
     outputs = {
+        "human_hook_observation": str(human_hook_observation),
+        "hook_frame_index": str(hook_frame_index),
         "viral_pattern_card": str(viral_card),
+        "human_hook_card": str(human_hook_card),
         "product_script_card": str(script_card),
         "shot_matching_plan": str(shot_plan),
         "render_report": str(render_report),
@@ -111,7 +163,22 @@ def main() -> None:
         "analysis_goal": full_input.get("analysis_goal", "Extract reusable product-marketing video structures"),
     }
     write_json(account_input, account_payload)
+    reference_payload = {
+        **full_input,
+        "project_dir": str(args.input.resolve().parent),
+    }
+    write_json(reference_hook_input, reference_payload)
+    run_reference_hook_module(reference_hook_input, human_hook_observation, hook_frame_index, args.input.resolve().parent)
     run_module("viral_deconstruction", account_input, viral_card)
+
+    human_hook_payload = {
+        **full_input,
+        "human_hook_observation": load_json(human_hook_observation),
+        "viral_pattern_card": load_json(viral_card),
+        "project_dir": str(args.input.resolve().parent),
+    }
+    write_json(human_hook_input, human_hook_payload)
+    run_human_hook_module(human_hook_input, human_hook_card, args.input.resolve().parent)
 
     write_json(script_input, build_script_input(full_input, viral_card))
     run_module("product_script_rewrite", script_input, script_card)

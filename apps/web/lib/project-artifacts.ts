@@ -2,7 +2,12 @@ import { promises as fs } from "fs";
 import path from "path";
 import { projectDirFromSlug } from "@/lib/project-paths";
 
-export type EditableArtifactKey = "viral_pattern_card" | "product_script_card" | "shot_matching_plan";
+export type EditableArtifactKey =
+  | "human_hook_observation"
+  | "viral_pattern_card"
+  | "human_hook_card"
+  | "product_script_card"
+  | "shot_matching_plan";
 
 const ARTIFACTS: Record<
   EditableArtifactKey,
@@ -12,10 +17,20 @@ const ARTIFACTS: Record<
     relativePath: string;
   }
 > = {
+  human_hook_observation: {
+    label: "Human Hook Observation",
+    description: "Extracted hook frames and visual observation from the reference video's first seconds.",
+    relativePath: "output/human_hook_observation.json"
+  },
   viral_pattern_card: {
     label: "Viral Pattern Card",
     description: "Why the reference works. This should not write your product script.",
     relativePath: "output/viral_pattern_card.json"
+  },
+  human_hook_card: {
+    label: "Human Hook Card",
+    description: "AI human opening analysis, text-to-video prompt, generation status, and generated hook asset.",
+    relativePath: "output/human_hook_card.json"
   },
   product_script_card: {
     label: "Product Script Card",

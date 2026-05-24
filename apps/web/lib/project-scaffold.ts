@@ -26,7 +26,10 @@ type ProjectJob = {
     full_workflow_input: string;
   };
   artifacts: {
+    hook_frame_index: string;
+    human_hook_observation: string;
     viral_pattern_card: string;
+    human_hook_card: string;
     product_script_card: string;
     shot_matching_plan: string;
     asset_library: string;
@@ -37,7 +40,7 @@ type ProjectJob = {
     render_report: string;
   };
   stages: Array<{
-    name: "viral_deconstruction" | "product_script_rewrite" | "asset_matching" | "video_rendering";
+    name: "reference_hook_analysis" | "viral_deconstruction" | "human_hook_generation" | "product_script_rewrite" | "asset_matching" | "video_rendering";
     mode: "run";
   }>;
   defaults: {
@@ -133,7 +136,10 @@ function buildProjectJob(projectDir: string, product: ProductProfile, templateNa
       full_workflow_input: "full_workflow_input.json"
     },
     artifacts: {
+      hook_frame_index: "output/hook_frame_index.json",
+      human_hook_observation: "output/human_hook_observation.json",
       viral_pattern_card: "output/viral_pattern_card.json",
+      human_hook_card: "output/human_hook_card.json",
       product_script_card: "output/product_script_card.json",
       shot_matching_plan: "output/shot_matching_plan.json",
       asset_library: "output/asset_library.json"
@@ -144,7 +150,9 @@ function buildProjectJob(projectDir: string, product: ProductProfile, templateNa
       render_report: "output/final_delivery/worker_render_report.json"
     },
     stages: [
+      { name: "reference_hook_analysis", mode: "run" },
       { name: "viral_deconstruction", mode: "run" },
+      { name: "human_hook_generation", mode: "run" },
       { name: "product_script_rewrite", mode: "run" },
       { name: "asset_matching", mode: "run" },
       { name: "video_rendering", mode: "run" }
@@ -211,4 +219,3 @@ export async function createProjectScaffold(input: CreateProjectInput) {
     productName: product.product_name
   };
 }
-

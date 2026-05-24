@@ -61,7 +61,9 @@ def beat_asset_boost(beat: dict, asset: dict, used: set[str]) -> int:
 
     boost = 0
 
-    if beat_name == "hook":
+    if "hook" in beat_name:
+        if "human hook" in best_use or "ai_human_hook" in clip_id or "ai generated human selfie hook" in text:
+            boost += 35
         if "opening hook" in best_use or "google_scholar" in clip_id or "google scholar" in text:
             boost += 18
         if "product proof" in best_use or "final proof" in text:

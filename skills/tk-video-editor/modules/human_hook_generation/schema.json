@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://auto-video.local/schemas/human_hook_card.schema.json",
+  "title": "HumanHookCard",
+  "type": "object",
+  "required": ["status", "detected", "analysis", "text_to_video_prompt", "generation"],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["skipped", "prompt_ready", "generated", "failed"]
+    },
+    "detected": { "type": "boolean" },
+    "analysis": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "text_to_video_prompt": { "type": "string" },
+    "negative_prompt": { "type": "string" },
+    "generation": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "asset": {
+      "type": ["object", "null"],
+      "additionalProperties": true
+    },
+    "evidence_gaps": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": true
+}

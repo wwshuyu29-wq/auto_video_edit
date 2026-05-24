@@ -21,10 +21,13 @@
     },
     "artifacts": {
       "type": "object",
-      "required": ["viral_pattern_card", "product_script_card", "shot_matching_plan", "asset_library"],
-      "properties": {
-        "viral_pattern_card": { "type": "string" },
-        "product_script_card": { "type": "string" },
+        "required": ["viral_pattern_card", "product_script_card", "shot_matching_plan", "asset_library"],
+        "properties": {
+          "hook_frame_index": { "type": "string" },
+          "human_hook_observation": { "type": "string" },
+          "viral_pattern_card": { "type": "string" },
+          "human_hook_card": { "type": "string" },
+          "product_script_card": { "type": "string" },
         "shot_matching_plan": { "type": "string" },
         "asset_library": { "type": "string" }
       },
@@ -51,7 +54,7 @@
         "properties": {
           "name": {
             "type": "string",
-            "enum": ["viral_deconstruction", "product_script_rewrite", "asset_matching", "video_rendering"]
+            "enum": ["reference_hook_analysis", "viral_deconstruction", "human_hook_generation", "product_script_rewrite", "asset_matching", "video_rendering"]
           },
           "mode": {
             "type": "string",

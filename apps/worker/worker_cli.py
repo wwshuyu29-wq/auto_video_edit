@@ -24,7 +24,8 @@ sys.path.insert(0, str(SKILL_CORE_SRC))
 from auto_video_skill_core import run_module  # noqa: E402
 
 
-STAGES = ("viral_deconstruction", "product_script_rewrite", "asset_matching", "video_rendering")
+STAGES = ("reference_hook_analysis", "viral_deconstruction", "human_hook_generation", "product_script_rewrite", "asset_matching", "video_rendering")
+OPTIONAL_STAGES = {"reference_hook_analysis", "human_hook_generation"}
 PRODUCT_NAME_BY_GROUP = {
     "literfy": "Literfy",
     "citely": "Citely",
@@ -38,7 +39,10 @@ class ProjectFiles:
     output_dir: Path
     full_workflow_input: Path
     project_job: Path
+    hook_frame_index: Path
+    human_hook_observation: Path
     viral_pattern_card: Path
+    human_hook_card: Path
     product_script_card: Path
     shot_matching_plan: Path
     asset_library: Path
@@ -83,7 +87,10 @@ def project_files(project_dir: Path) -> ProjectFiles:
         output_dir=output_dir,
         full_workflow_input=project_dir / "full_workflow_input.json",
         project_job=project_dir / "project_job.json",
+        hook_frame_index=output_dir / "hook_frame_index.json",
+        human_hook_observation=output_dir / "human_hook_observation.json",
         viral_pattern_card=output_dir / "viral_pattern_card.json",
+        human_hook_card=output_dir / "human_hook_card.json",
         product_script_card=output_dir / "product_script_card.json",
         shot_matching_plan=output_dir / "shot_matching_plan.json",
         asset_library=output_dir / "asset_library.json",
@@ -149,7 +156,10 @@ def inspect_project(args: argparse.Namespace) -> None:
         "artifacts": {
             "full_workflow_input": files.full_workflow_input.exists(),
             "project_job": files.project_job.exists(),
+            "hook_frame_index": files.hook_frame_index.exists(),
+            "human_hook_observation": files.human_hook_observation.exists(),
             "viral_pattern_card": files.viral_pattern_card.exists(),
+            "human_hook_card": files.human_hook_card.exists(),
             "product_script_card": files.product_script_card.exists(),
             "shot_matching_plan": files.shot_matching_plan.exists(),
             "asset_library": files.asset_library.exists(),
@@ -177,7 +187,10 @@ def build_project_job(project_dir: Path) -> dict[str, Any]:
                 "full_workflow_input": relative_to_project(files.project_dir, files.full_workflow_input),
             },
             "artifacts": {
+                "hook_frame_index": relative_to_project(files.project_dir, files.hook_frame_index),
+                "human_hook_observation": relative_to_project(files.project_dir, files.human_hook_observation),
                 "viral_pattern_card": relative_to_project(files.project_dir, files.viral_pattern_card),
+                "human_hook_card": relative_to_project(files.project_dir, files.human_hook_card),
                 "product_script_card": relative_to_project(files.project_dir, files.product_script_card),
                 "shot_matching_plan": relative_to_project(files.project_dir, files.shot_matching_plan),
                 "asset_library": relative_to_project(files.project_dir, files.asset_library),
@@ -188,7 +201,9 @@ def build_project_job(project_dir: Path) -> dict[str, Any]:
                 "render_report": relative_to_project(files.project_dir, files.worker_render_report),
             },
             "stages": [
+                {"name": "reference_hook_analysis", "mode": "run"},
                 {"name": "viral_deconstruction", "mode": "run"},
+                {"name": "human_hook_generation", "mode": "run"},
                 {"name": "product_script_rewrite", "mode": "run"},
                 {"name": "asset_matching", "mode": "run"},
                 {"name": "video_rendering", "mode": "run"},
@@ -212,7 +227,10 @@ def build_project_job(project_dir: Path) -> dict[str, Any]:
         "workflow_mode": "mixed",
         "source": {},
         "artifacts": {
+            "hook_frame_index": relative_to_project(files.project_dir, files.hook_frame_index),
+            "human_hook_observation": relative_to_project(files.project_dir, files.human_hook_observation),
             "viral_pattern_card": relative_to_project(files.project_dir, files.viral_pattern_card),
+            "human_hook_card": relative_to_project(files.project_dir, files.human_hook_card),
             "product_script_card": relative_to_project(files.project_dir, files.product_script_card),
             "shot_matching_plan": relative_to_project(files.project_dir, files.shot_matching_plan),
             "asset_library": relative_to_project(files.project_dir, files.asset_library),
@@ -223,7 +241,9 @@ def build_project_job(project_dir: Path) -> dict[str, Any]:
             "render_report": relative_to_project(files.project_dir, files.worker_render_report),
         },
         "stages": [
+            *([{"name": "reference_hook_analysis", "mode": "reuse_existing"}] if files.human_hook_observation.exists() else []),
             {"name": "viral_deconstruction", "mode": "reuse_existing"},
+            *([{"name": "human_hook_generation", "mode": "reuse_existing"}] if files.human_hook_card.exists() else []),
             {"name": "product_script_rewrite", "mode": "reuse_existing"},
             {"name": "asset_matching", "mode": "run"},
             {"name": "video_rendering", "mode": "run"},
@@ -253,13 +273,17 @@ def stage_mode(job: dict[str, Any], stage_name: str) -> str:
     for stage in job.get("stages", []):
         if stage.get("name") == stage_name:
             return str(stage.get("mode", "run"))
+    if stage_name in OPTIONAL_STAGES:
+        return "skip"
     raise SystemExit(f"Stage `{stage_name}` is missing from project job.")
 
 
 def artifact_path(job: dict[str, Any], stage_name: str, project_dir: Path) -> Path:
     artifacts = job.get("artifacts", {})
     mapping = {
+        "reference_hook_analysis": "human_hook_observation",
         "viral_deconstruction": "viral_pattern_card",
+        "human_hook_generation": "human_hook_card",
         "product_script_rewrite": "product_script_card",
         "asset_matching": "shot_matching_plan",
         "video_rendering": "shot_matching_plan",
@@ -290,6 +314,11 @@ def build_run_input_from_full_workflow(
         write_json(out_path, full)
         return out_path
 
+    if stage_name == "reference_hook_analysis":
+        full["project_dir"] = str(project_dir)
+        write_json(out_path, full)
+        return out_path
+
     if stage_name == "product_script_rewrite":
         viral_path = stage_outputs.get("viral_deconstruction")
         if viral_path is None:
@@ -305,6 +334,18 @@ def build_run_input_from_full_workflow(
                 "cta": full.get("cta", full.get("product", {}).get("cta", "try the product")),
             },
         )
+        return out_path
+
+    if stage_name == "human_hook_generation":
+        viral_path = stage_outputs.get("viral_deconstruction")
+        if viral_path is None:
+            raise SystemExit("Missing viral_deconstruction output before human_hook_generation.")
+        full["viral_pattern_card"] = load_json(viral_path)
+        observation_path = stage_outputs.get("reference_hook_analysis")
+        if observation_path and observation_path.exists():
+            full["human_hook_observation"] = load_json(observation_path)
+        full["project_dir"] = str(project_dir)
+        write_json(out_path, full)
         return out_path
 
     if stage_name == "asset_matching":
@@ -366,6 +407,27 @@ def build_run_input_from_mixed_job(
         )
         return out_path
 
+    if stage_name == "human_hook_generation":
+        viral_path = stage_outputs.get("viral_deconstruction")
+        if viral_path is None:
+            raise SystemExit("Missing viral_deconstruction artifact before human_hook_generation.")
+        full_path = resolve_project_path(project_dir, job.get("source", {}).get("full_workflow_input"))
+        payload = load_json(full_path) if full_path and full_path.exists() else {}
+        payload["viral_pattern_card"] = load_json(viral_path)
+        observation_path = stage_outputs.get("reference_hook_analysis")
+        if observation_path and observation_path.exists():
+            payload["human_hook_observation"] = load_json(observation_path)
+        payload["project_dir"] = str(project_dir)
+        write_json(out_path, payload)
+        return out_path
+
+    if stage_name == "reference_hook_analysis":
+        full_path = resolve_project_path(project_dir, job.get("source", {}).get("full_workflow_input"))
+        payload = load_json(full_path) if full_path and full_path.exists() else {}
+        payload["project_dir"] = str(project_dir)
+        write_json(out_path, payload)
+        return out_path
+
     raise SystemExit(f"Stage `{stage_name}` cannot be built in mixed mode without an explicit input.")
 
 
@@ -387,6 +449,88 @@ def run_stage_once(
     if completed.returncode != 0:
         raise SystemExit(completed.returncode)
     require_file(output_path, f"{stage_name} output")
+
+
+def run_human_hook_stage(
+    input_path: Path,
+    output_path: Path,
+    project_dir: Path,
+    job: dict[str, Any],
+    dry_run: bool,
+) -> None:
+    asset_library = resolve_project_path(project_dir, job.get("artifacts", {}).get("asset_library"))
+    full_workflow_input = resolve_project_path(project_dir, job.get("source", {}).get("full_workflow_input"))
+    args = [
+        "--input",
+        str(input_path),
+        "--out",
+        str(output_path),
+        "--project-dir",
+        str(project_dir),
+        "--generated-dir",
+        str(project_dir / "output" / "generated_hooks"),
+        "--video-out",
+        str(project_dir / "output" / "generated_hooks" / "ai_human_hook.mp4"),
+    ]
+    if asset_library is not None:
+        args.extend(["--asset-library", str(asset_library)])
+    if full_workflow_input is not None:
+        args.extend(["--full-workflow-input", str(full_workflow_input)])
+    if dry_run:
+        args.append("--dry-run")
+
+    completed = run_module("human_hook_generation", args, cwd=project_dir)
+    if completed.stdout:
+        print(completed.stdout, end="")
+    if completed.stderr:
+        print(completed.stderr, file=sys.stderr, end="")
+    if completed.returncode != 0:
+        raise SystemExit(completed.returncode)
+    require_file(output_path, "human_hook_generation output")
+
+
+def run_reference_hook_stage(
+    input_path: Path,
+    output_path: Path,
+    project_dir: Path,
+    job: dict[str, Any],
+    temp_dir: Path,
+    dry_run: bool,
+) -> tuple[Path, Path]:
+    hook_frame_index = resolve_project_path(project_dir, job.get("artifacts", {}).get("hook_frame_index")) or (project_dir / "output" / "hook_frame_index.json")
+    full_workflow_input = resolve_project_path(project_dir, job.get("source", {}).get("full_workflow_input"))
+    reference_dir = temp_dir / "reference_hook_analysis" if dry_run else project_dir / "references" / "auto_hook"
+    output_frame_index = temp_dir / hook_frame_index.name if dry_run else hook_frame_index
+    args = [
+        "--input",
+        str(input_path),
+        "--out",
+        str(output_path),
+        "--project-dir",
+        str(project_dir),
+        "--frame-index-out",
+        str(output_frame_index),
+        "--reference-dir",
+        str(reference_dir),
+    ]
+    if full_workflow_input is not None:
+        args.extend(["--full-workflow-input", str(full_workflow_input)])
+    if not dry_run:
+        args.append("--download-reference")
+        args.append("--vision")
+    if dry_run:
+        args.append("--dry-run")
+
+    completed = run_module("reference_hook_analysis", args, cwd=project_dir)
+    if completed.stdout:
+        print(completed.stdout, end="")
+    if completed.stderr:
+        print(completed.stderr, file=sys.stderr, end="")
+    if completed.returncode != 0:
+        raise SystemExit(completed.returncode)
+    require_file(output_path, "reference_hook_analysis output")
+    require_file(output_frame_index, "hook frame index output")
+    return output_path, output_frame_index
 
 
 def asset_library_path_for_job(job: dict[str, Any], project_dir: Path, temp_dir: Path) -> Path:
@@ -459,6 +603,15 @@ def run_render_stage(
 
 
 def build_stage_input(stage: str, files: ProjectFiles, temp_dir: Path) -> Path:
+    if stage == "reference_hook_analysis":
+        input_path = temp_dir / "reference_hook_analysis_input.json"
+        payload: dict[str, Any] = {}
+        if files.full_workflow_input.exists():
+            payload = load_json(files.full_workflow_input)
+        payload["project_dir"] = str(files.project_dir)
+        write_json(input_path, payload)
+        return input_path
+
     if stage == "viral_deconstruction":
         require_file(files.orchestrator_account_input, "viral deconstruction input")
         return files.orchestrator_account_input
@@ -466,6 +619,19 @@ def build_stage_input(stage: str, files: ProjectFiles, temp_dir: Path) -> Path:
     if stage == "product_script_rewrite":
         require_file(files.orchestrator_script_input, "product script rewrite input")
         return files.orchestrator_script_input
+
+    if stage == "human_hook_generation":
+        require_file(files.viral_pattern_card, "viral pattern card")
+        input_path = temp_dir / "human_hook_generation_input.json"
+        payload: dict[str, Any] = {}
+        if files.full_workflow_input.exists():
+            payload = load_json(files.full_workflow_input)
+        payload["viral_pattern_card"] = load_json(files.viral_pattern_card)
+        if files.human_hook_observation.exists():
+            payload["human_hook_observation"] = load_json(files.human_hook_observation)
+        payload["project_dir"] = str(files.project_dir)
+        write_json(input_path, payload)
+        return input_path
 
     if stage == "asset_matching":
         require_file(files.product_script_card, "product script card")
@@ -495,8 +661,12 @@ def build_stage_input(stage: str, files: ProjectFiles, temp_dir: Path) -> Path:
 
 
 def default_output_path(stage: str, files: ProjectFiles) -> Path:
+    if stage == "reference_hook_analysis":
+        return files.human_hook_observation
     if stage == "viral_deconstruction":
         return files.viral_pattern_card
+    if stage == "human_hook_generation":
+        return files.human_hook_card
     if stage == "product_script_rewrite":
         return files.product_script_card
     if stage == "asset_matching":
@@ -545,6 +715,43 @@ def run_stage_command(args: argparse.Namespace) -> None:
 
         print(f"output: {temp_out if args.dry_run else final_out}")
 
+        if args.stage == "reference_hook_analysis":
+            job = {
+                "source": {"full_workflow_input": relative_to_project(files.project_dir, files.full_workflow_input)},
+                "artifacts": {"hook_frame_index": relative_to_project(files.project_dir, files.hook_frame_index)},
+            }
+            output_path, frame_index = run_reference_hook_stage(
+                input_path,
+                temp_out if args.dry_run else final_out,
+                files.project_dir,
+                job,
+                temp_root,
+                args.dry_run,
+            )
+            output_json = load_json(output_path)
+            print("result: ok")
+            print(f"frame_index: {frame_index}")
+            print(f"top_level_keys: {', '.join(output_json.keys()) if isinstance(output_json, dict) else type(output_json).__name__}")
+            return
+
+        if args.stage == "human_hook_generation":
+            job = {
+                "source": {"full_workflow_input": relative_to_project(files.project_dir, files.full_workflow_input)},
+                "artifacts": {"asset_library": relative_to_project(files.project_dir, files.asset_library)},
+            }
+            run_human_hook_stage(
+                input_path,
+                temp_out if args.dry_run else final_out,
+                files.project_dir,
+                job,
+                args.dry_run,
+            )
+            output_path = temp_out if args.dry_run else final_out
+            output_json = load_json(output_path)
+            print("result: ok")
+            print(f"top_level_keys: {', '.join(output_json.keys()) if isinstance(output_json, dict) else type(output_json).__name__}")
+            return
+
         run_stage_once(
             args.stage,
             input_path,
@@ -585,6 +792,11 @@ def run_project(args: argparse.Namespace) -> None:
             mode = stage_mode(job, stage_name)
             print(f"stage: {stage_name} ({mode})")
 
+            if mode == "skip":
+                summary.append({"stage": stage_name, "mode": mode, "output": ""})
+                print("skipped: optional stage is not configured")
+                continue
+
             if mode == "reuse_existing":
                 existing = artifact_path(job, stage_name, project_dir)
                 require_file(existing, f"existing artifact for {stage_name}")
@@ -616,7 +828,17 @@ def run_project(args: argparse.Namespace) -> None:
 
             final_out = artifact_path(job, stage_name, project_dir)
             output_path = temp_root / final_out.name if args.dry_run else final_out
-            run_stage_once(stage_name, input_path, output_path, project_dir)
+            if stage_name == "reference_hook_analysis":
+                output_path, frame_index = run_reference_hook_stage(input_path, output_path, project_dir, job, temp_root, args.dry_run)
+                summary.append({"stage": stage_name, "mode": mode, "output": str(output_path), "report": str(frame_index)})
+                stage_outputs[stage_name] = output_path
+                print(f"wrote: {output_path}")
+                print(f"frame_index: {frame_index}")
+                continue
+            if stage_name == "human_hook_generation":
+                run_human_hook_stage(input_path, output_path, project_dir, job, args.dry_run)
+            else:
+                run_stage_once(stage_name, input_path, output_path, project_dir)
             stage_outputs[stage_name] = output_path
             summary.append({"stage": stage_name, "mode": mode, "output": str(output_path)})
             print(f"wrote: {output_path}")

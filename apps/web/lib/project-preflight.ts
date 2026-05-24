@@ -8,7 +8,7 @@ const execFileAsync = promisify(execFile);
 const REPO_ROOT = path.resolve(process.cwd(), "../..");
 const VENV_PYTHON_BIN = path.join(REPO_ROOT, ".venv", "bin", "python3");
 
-type StageName = "viral_deconstruction" | "product_script_rewrite" | "asset_matching" | "video_rendering";
+type StageName = "reference_hook_analysis" | "viral_deconstruction" | "human_hook_generation" | "product_script_rewrite" | "asset_matching" | "video_rendering";
 type StageMode = "run" | "reuse_existing";
 
 type ProjectJob = {
@@ -18,7 +18,10 @@ type ProjectJob = {
     full_workflow_input?: string;
   };
   artifacts?: {
+    hook_frame_index?: string;
+    human_hook_observation?: string;
     viral_pattern_card?: string;
+    human_hook_card?: string;
     product_script_card?: string;
     shot_matching_plan?: string;
     asset_library?: string;
@@ -134,7 +137,9 @@ function addCheck(checks: PreflightCheck[], check: PreflightCheck) {
 }
 
 function artifactKeyForStage(stage: StageName) {
+  if (stage === "reference_hook_analysis") return "human_hook_observation";
   if (stage === "viral_deconstruction") return "viral_pattern_card";
+  if (stage === "human_hook_generation") return "human_hook_card";
   if (stage === "product_script_rewrite") return "product_script_card";
   if (stage === "asset_matching") return "shot_matching_plan";
   return "shot_matching_plan";
@@ -177,13 +182,74 @@ export async function runProjectPreflight(projectDir: string): Promise<Preflight
   const fullInput = await readJson<FullWorkflowInput>(fullInputPath);
   const stages = job?.stages || [];
   const needsFullInput = stages.some(
-    (stage) => stage.mode === "run" && (stage.name === "viral_deconstruction" || stage.name === "product_script_rewrite")
+    (stage) =>
+      stage.mode === "run" &&
+      (stage.name === "reference_hook_analysis" || stage.name === "viral_deconstruction" || stage.name === "product_script_rewrite")
   );
   const needsPreviewRendering = stages.some((stage) => stage.mode === "run" && stage.name === "video_rendering");
+  const needsReferenceHookAnalysis = stages.some((stage) => stage.mode === "run" && stage.name === "reference_hook_analysis");
+  const needsHumanHookGeneration = stages.some((stage) => stage.mode === "run" && stage.name === "human_hook_generation");
   const reusesViralDeconstruction = stages.some((stage) => stage.name === "viral_deconstruction" && stage.mode === "reuse_existing");
 
   if (needsPreviewRendering) {
     addCheck(checks, await checkPythonPackage("PIL", "Pillow"));
+  }
+
+  if (needsReferenceHookAnalysis) {
+    const envPath = path.join(REPO_ROOT, ".env.local");
+    const envText = await fs.readFile(envPath, "utf8").catch(() => "");
+    const hasOfficialOpenAIKey = process.env.OPENAI_API_KEY || /\bOPENAI_API_KEY\s*=/.test(envText);
+    const hasEvolinkGateway =
+      (process.env.EVOLINK_API_KEY || process.env.AI_REAL_PERSON_VIDEO_API_KEY || /\b(EVOLINK_API_KEY|AI_REAL_PERSON_VIDEO_API_KEY)\s*=/.test(envText)) &&
+      (process.env.EVOLINK_OPENAI_RESPONSES_ENDPOINT ||
+        process.env.EVOLINK_RESPONSES_ENDPOINT ||
+        process.env.EVOLINK_OPENAI_CHAT_COMPLETIONS_ENDPOINT ||
+        process.env.EVOLINK_CHAT_COMPLETIONS_ENDPOINT ||
+        process.env.EVOLINK_OPENAI_BASE_URL ||
+        /\b(EVOLINK_OPENAI_RESPONSES_ENDPOINT|EVOLINK_RESPONSES_ENDPOINT|EVOLINK_OPENAI_CHAT_COMPLETIONS_ENDPOINT|EVOLINK_CHAT_COMPLETIONS_ENDPOINT|EVOLINK_OPENAI_BASE_URL)\s*=/.test(envText));
+    addCheck(
+      checks,
+      hasOfficialOpenAIKey || hasEvolinkGateway
+        ? {
+            id: "reference_hook_openai_key",
+            label: "Reference hook vision key",
+            severity: "pass",
+            message: hasOfficialOpenAIKey
+              ? "OpenAI API key is configured for reference hook visual analysis."
+              : "Evolink OpenAI-compatible endpoint is configured for reference hook visual analysis."
+          }
+        : {
+            id: "reference_hook_openai_key",
+            label: "Reference hook vision key",
+            severity: "warning",
+            message: "No OPENAI_API_KEY or Evolink OpenAI-compatible responses endpoint found. The worker can extract frames, but visual analysis will use the heuristic fallback."
+          }
+    );
+  }
+
+  if (needsHumanHookGeneration) {
+    const envPath = path.join(REPO_ROOT, ".env.local");
+    const envText = await fs.readFile(envPath, "utf8").catch(() => "");
+    const hasVideoKey =
+      process.env.EVOLINK_API_KEY ||
+      process.env.AI_REAL_PERSON_VIDEO_API_KEY ||
+      /\b(EVOLINK_API_KEY|AI_REAL_PERSON_VIDEO_API_KEY)\s*=/.test(envText);
+    addCheck(
+      checks,
+      hasVideoKey
+        ? {
+            id: "human_hook_video_api_key",
+            label: "Human hook video API key",
+            severity: "pass",
+            message: "Video generation API key is configured for AI human hook generation."
+          }
+        : {
+            id: "human_hook_video_api_key",
+            label: "Human hook video API key",
+            severity: "warning",
+            message: "No EVOLINK_API_KEY or AI_REAL_PERSON_VIDEO_API_KEY found. The worker can write a prompt, but cannot generate the AI human hook clip."
+          }
+    );
   }
 
   addCheck(
@@ -284,7 +350,9 @@ export async function runProjectPreflight(projectDir: string): Promise<Preflight
           id: "worker_stages",
           label: "Worker stages",
           severity: "pass",
-          message: "All four worker stages are configured."
+            message: needsHumanHookGeneration
+            ? "Core worker stages, reference hook analysis, and AI human hook generation are configured."
+            : "All four core worker stages are configured."
         }
       : {
           id: "worker_stages",

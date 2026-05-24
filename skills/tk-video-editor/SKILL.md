@@ -16,7 +16,9 @@ This skill is the orchestrator. It coordinates modules and preserves intermediat
 ```text
 tk-video-editor orchestrator
 ├── modules/orchestrator              -> coordinates all module outputs
+├── modules/reference_hook_analysis   -> output/human_hook_observation.json + output/hook_frame_index.json
 ├── modules/viral_deconstruction      -> output/viral_pattern_card.json
+├── modules/human_hook_generation     -> output/human_hook_card.json + output/generated_hooks/ai_human_hook.mp4
 ├── modules/product_script_rewrite    -> output/product_script_card.json
 ├── modules/asset_matching            -> output/shot_matching_plan.json
 ├── modules/video_rendering           -> output/final_video.mp4 + output/render_report.json
@@ -27,7 +29,9 @@ The stable products are the cards/plans. Treat these as the source of truth for 
 
 ## Boundary Rules
 
+- `reference_hook_analysis` only finds or best-effort downloads a single reference video, extracts the first seconds as frames/contact sheet, and writes visual observation JSON. It does not write product scripts or generate the AI hook.
 - `viral_deconstruction` only extracts why a reference account/video works. It does not write the user's product script.
+- `human_hook_generation` only detects/analyzes a真人出镜 opening hook, writes a text-to-video prompt, and optionally generates an opening AI human hook clip. It does not rewrite the product script or choose later product footage.
 - `product_script_rewrite` only adapts a viral pattern card into product scripts. It does not choose footage.
 - `asset_matching` only maps script beats to assets and identifies missing footage. It does not rewrite the core script.
 - `video_rendering` only executes the approved shot plan and render assets. It does not re-decide content.
@@ -39,12 +43,22 @@ If a later module finds a problem from an earlier module, return a revision flag
 
 Always preserve this order:
 
-1. Competitor logic before product script.
-2. Product truth before creative imitation.
-3. Shot matching before rendering.
-4. Preview and QA before final export.
+1. Reference hook frame analysis before human hook generation when a local reference video is available.
+2. Competitor logic before product script.
+3. Human hook analysis/generation before product script if the reference opens with a真人出镜 hook.
+4. Product truth before creative imitation.
+5. Shot matching before rendering.
+6. Preview and QA before final export.
 
 If direct TikTok access is blocked, continue from uploaded videos, screenshots, captions, transcripts, metadata, or manually supplied frame summaries.
+
+TikTok download is best-effort through `yt-dlp` for a single video URL. Do not promise account-wide scraping or stable TikTok download behavior; fall back to uploaded reference videos or recordings when access fails.
+
+When the user sends a TikTok reference link with a real person on camera and asks for an AI真人/AI human-style video, the workflow may use the local environment variable `AI_REAL_PERSON_VIDEO_API_KEY` from the repository root `.env.local`. Never hardcode or print the key in generated artifacts, logs, docs, or final replies. Keep `.env.local` ignored by Git.
+
+For reference-video visual understanding, prefer `OPENAI_API_KEY` against the official OpenAI Responses API. Evolink keys must not be sent to the official OpenAI endpoint. If visual understanding should go through Evolink, configure an OpenAI-compatible Evolink endpoint with `EVOLINK_OPENAI_RESPONSES_ENDPOINT`, `EVOLINK_RESPONSES_ENDPOINT`, `EVOLINK_OPENAI_CHAT_COMPLETIONS_ENDPOINT`, `EVOLINK_CHAT_COMPLETIONS_ENDPOINT`, or `EVOLINK_OPENAI_BASE_URL`; then use `EVOLINK_API_KEY` or `AI_REAL_PERSON_VIDEO_API_KEY` against that endpoint only. The module should send extracted frames, not raw API keys or full secret-bearing env files.
+
+When a generated AI human hook is used, treat it as a normal asset library clip named `ai_human_hook`. The final edit should use that generated opening clip first, then continue matching the rest of the script to the user's uploaded product footage.
 
 ## Workflow
 
@@ -267,15 +281,16 @@ Publishing copy must be grounded in:
 
 - approved product facts
 - the visible final video/subtitles
-- reference account caption logic and hashtag category
+- reference TikTok post title, caption logic, CTA rhythm, and hashtag category
 - product compliance limits
 
 The tone should feel like TikTok creator workflow sharing, not homepage
 advertising.
 
 Do not simply reuse the product script title or script caption as the final
-publishing title/caption. The publishing copy must rewrite the reference post's
-caption logic and product truth. Product-specific safe directions:
+publishing title/caption. The publishing copy must classify the reference
+post's publishing template type, summarize the title/caption pattern, then
+rewrite that pattern around product truth. Product-specific safe directions:
 
 - Literfy: paper discovery, saved sources, structured review starting point.
 - Citely: source tracing, reference detail review, checking before relying.
@@ -291,6 +306,10 @@ dont make the mistakes i did. Use this website now!!!
 preserve the regret/mistake warning, direct website CTA, and academic hashtag
 cluster while replacing the action with the product-safe workflow shown in the
 video.
+
+For every publishing-copy run, include `template_type_summaries` covering the
+main reusable posting formats: mistake/urgency CTA, how-to/easy-way,
+pain-question solution, workflow-direct demo, and result reveal.
 
 ### 8. Local Storage Cleanup
 
