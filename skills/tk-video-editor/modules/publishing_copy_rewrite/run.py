@@ -53,6 +53,51 @@ PRODUCT_COPY = {
     },
 }
 
+TEMPLATE_TYPE_SUMMARIES = [
+    {
+        "template_type": "mistake_urgency_cta",
+        "title_logic": "Warn from regret or a past mistake, then point to the safer workflow.",
+        "caption_logic": "Short regret line + direct website/tool CTA + proof of the workflow shown in the video.",
+        "best_for": "Citation checking, source verification, figure correction, or any task where the user can avoid rework.",
+        "example_title_shape": "dont make the mistakes i did. [product-safe task]",
+        "example_caption_shape": "dont make the mistakes i did. Use this website before you [risky/manual task]!!! [visible workflow proof].",
+    },
+    {
+        "template_type": "how_to_easy_way",
+        "title_logic": "Promise a practical method for a specific academic task.",
+        "caption_logic": "Name the task, show the shortcut workflow, and remind users to review the output.",
+        "best_for": "Literature review, paper discovery, citation generation, and structured research workflows.",
+        "example_title_shape": "How to [task] like a PhD/Master student",
+        "example_caption_shape": "How I [task] now: use the tool for the first pass, then review and edit the result.",
+    },
+    {
+        "template_type": "pain_question_solution",
+        "title_logic": "Start from a familiar pain or question, then position the product as the cleaner next step.",
+        "caption_logic": "Repeat the pain in creator language, introduce the workflow, and show the practical improvement.",
+        "best_for": "Messy research starts, too many tabs, confusing citations, or unclear visual drafts.",
+        "example_title_shape": "Still [pain]? Try this workflow",
+        "example_caption_shape": "[Pain question]. This is the workflow I would use instead. [visible workflow proof].",
+    },
+    {
+        "template_type": "workflow_direct_demo",
+        "title_logic": "Lead with a direct workflow promise, usually framed as how the creator uses the tool.",
+        "caption_logic": "Give step-like instructions and tie every claim to a visible screen action.",
+        "best_for": "Screen-recording demos where the value is obvious from the product steps.",
+        "example_title_shape": "How I use [product] to [task]",
+        "example_caption_shape": "One workflow for [task]: open the tool, run the key step, review the output, then keep editing.",
+    },
+    {
+        "template_type": "result_reveal",
+        "title_logic": "Tease a before/after or visible result that appears in the video.",
+        "caption_logic": "Set up the before state, reveal the product-assisted result, and add a review/edit caveat.",
+        "best_for": "Figure generation, cover/output comparisons, and videos with a strong visual transformation.",
+        "example_title_shape": "I turned [before] into [reviewable result]",
+        "example_caption_shape": "Started with [before], used [product] for the first draft, then reviewed and edited the details.",
+    },
+]
+
+TEMPLATE_BY_TYPE = {item["template_type"]: item for item in TEMPLATE_TYPE_SUMMARIES}
+
 
 def read_optional_json(path: str | None) -> dict:
     if not path:
@@ -65,6 +110,10 @@ def read_optional_json(path: str | None) -> dict:
 
 def clean_text(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
+
+
+def strip_hashtags(text: str) -> str:
+    return clean_text(re.sub(r"#[a-zA-Z0-9_]+", "", text))
 
 
 def captions_from_variant(variant: dict) -> list[str]:
@@ -139,72 +188,187 @@ def reference_caption(data: dict) -> str:
     return "How to write a research paper like a phd/master student!!! #research #phd #literaturereview #citation #researchpaper"
 
 
-def make_titles(captions: list[str], product: dict) -> list[str]:
+def reference_title(data: dict) -> str:
+    explicit = data.get("reference_post", {}).get("title", "")
+    if explicit:
+        return clean_text(str(explicit))
+    viral = data.get("viral_pattern_card") or read_optional_json(data.get("viral_pattern_card_path"))
+    patterns = viral.get("viral_patterns") or []
+    if patterns:
+        examples = patterns[0].get("hook_examples") or []
+        if examples:
+            return strip_hashtags(str(examples[0]))
+    return ""
+
+
+def detect_template_type(reference_title_text: str, reference_caption_text: str, captions: list[str]) -> str:
+    blob = " ".join([reference_title_text, reference_caption_text, *captions]).lower()
+    if "mistake" in blob or "mistakes" in blob or "wish i" in blob or "before you" in blob:
+        return "mistake_urgency_cta"
+    if "how to" in blob or "easy way" in blob or "phd/master" in blob or "master student" in blob:
+        return "how_to_easy_way"
+    if "?" in blob or "still" in blob or "too many" in blob or "messy" in blob or "stuck" in blob:
+        return "pain_question_solution"
+    if "turn" in blob or "into" in blob or "before after" in blob or "draft" in blob:
+        return "result_reveal"
+    return "workflow_direct_demo"
+
+
+def title_pattern(reference_title_text: str, template_type: str) -> str:
+    if reference_title_text:
+        if template_type == "mistake_urgency_cta":
+            return "regret warning + safer action"
+        if template_type == "how_to_easy_way":
+            return "How to + specific academic task + credibility/ease qualifier"
+        if template_type == "pain_question_solution":
+            return "pain question + cleaner workflow promise"
+        if template_type == "result_reveal":
+            return "before state + transformed reviewable result"
+        return "direct workflow demo promise"
+    return TEMPLATE_BY_TYPE[template_type]["example_title_shape"]
+
+
+def caption_pattern(reference_caption_text: str, template_type: str) -> str:
+    tags = re.findall(r"#[a-zA-Z0-9_]+", reference_caption_text)
+    tag_note = f" Hashtag cluster: {', '.join(tags[:6])}." if tags else ""
+    return TEMPLATE_BY_TYPE[template_type]["caption_logic"] + tag_note
+
+
+def reference_post_analysis(reference_title_text: str, reference_caption_text: str, captions: list[str]) -> dict:
+    template_type = detect_template_type(reference_title_text, reference_caption_text, captions)
+    return {
+        "template_type": template_type,
+        "title_pattern": title_pattern(reference_title_text, template_type),
+        "caption_pattern": caption_pattern(reference_caption_text, template_type),
+        "hashtag_pattern": "Mix reference-style academic tags with product and workflow tags.",
+    }
+
+
+def task_phrase(product: dict) -> str:
+    return str(product_copy(product)["task"])
+
+
+def adapt_reference_title(reference_title_text: str, product: dict, template_type: str) -> str:
+    name = product_name(product) or "this tool"
+    task = task_phrase(product)
+    if template_type == "mistake_urgency_cta":
+        return f"dont make the mistakes i did. {task}"
+    if template_type == "how_to_easy_way":
+        if "like" in reference_title_text.lower():
+            return f"How to {task} like a PhD/Master student"
+        return f"How to {task}"
+    if template_type == "pain_question_solution":
+        return f"Still doing this manually? A better way to {task}"
+    if template_type == "result_reveal":
+        return f"I used {name} to {task}"
+    return f"How I use {name} to {task}"
+
+
+def make_titles(captions: list[str], product: dict, reference_title_text: str = "", template_type: str = "") -> list[str]:
     hook = captions[0] if captions else "How to start a literature review"
     name = product_name(product) or "this tool"
     angle = caption_angle(captions)
+    template_type = template_type or detect_template_type(reference_title_text, "", captions)
     copy = product_copy(product)
     task = copy["task"]
+    reference_adapted = adapt_reference_title(reference_title_text, product, template_type)
     if angle == "pain_question":
-        return [
+        return dedupe_keep_order([
+            reference_adapted,
             f"Stop doing this manually: {task}",
             f"A better way to {task}",
             f"I tried {name} for this research workflow",
-        ]
+        ])
     if angle == "workflow_direct":
-        return [
+        return dedupe_keep_order([
+            reference_adapted,
             f"How I use {name} to {task}",
             f"A faster research workflow for {task}",
             f"{task.capitalize()} without the messy workaround",
-        ]
+        ])
     if "dont" in hook.lower() or "don't" in hook.lower():
-        return [
+        return dedupe_keep_order([
+            reference_adapted,
             f"dont make the mistakes i did. {task}",
             f"Use this before you {task}",
             f"I wish I checked this workflow earlier",
-        ]
-    return [
+        ])
+    return dedupe_keep_order([
+        reference_adapted,
         f"How to {task}",
         f"The easier way to {task}",
         f"Using {name} for this research workflow",
-    ]
+    ])
 
 
-def make_captions(captions: list[str], product: dict, reference: str) -> list[str]:
+def dedupe_keep_order(items: list[str]) -> list[str]:
+    seen: set[str] = set()
+    result: list[str] = []
+    for item in items:
+        key = clean_text(item).lower()
+        if key and key not in seen:
+            seen.add(key)
+            result.append(clean_text(item))
+    return result
+
+
+def adapt_reference_caption(reference: str, product: dict, template_type: str) -> str:
+    name = product_name(product) or "this tool"
+    copy = product_copy(product)
+    task = copy["task"]
+    proof_line = f"It helps you {copy['proof']}."
+    if template_type == "mistake_urgency_cta":
+        return f"dont make the mistakes i did. Use this website before you {task}!!! {proof_line}"
+    if template_type == "how_to_easy_way":
+        return f"How I would {task} now: use {name} for the first pass, then review and edit the result yourself."
+    if template_type == "pain_question_solution":
+        return f"If {task} still feels messy, try this workflow instead. {proof_line}"
+    if template_type == "result_reveal":
+        return f"Start with the rough version, use {name} for a reviewable draft, then check and edit the details yourself."
+    return f"One workflow for {task}: open {name}, run the key step, review the output, then keep editing."
+
+
+def make_captions(captions: list[str], product: dict, reference: str, reference_title_text: str = "", template_type: str = "") -> list[str]:
     name = product_name(product) or "this tool"
     hook = captions[0] if captions else "How to start your literature review"
     angle = caption_angle(captions)
+    template_type = template_type or detect_template_type(reference_title_text, reference, captions)
     copy = product_copy(product)
     task = copy["task"]
     proof_line = f"It helps you {copy['proof']}."
     soft_cta = f"Try {name} before doing the whole workflow manually."
+    adapted_caption = adapt_reference_caption(reference, product, template_type)
 
     reference_lower = reference.lower()
     reference_uses_mistake_cta = "mistake" in reference_lower or "use this website" in reference_lower
 
     if reference_uses_mistake_cta:
-        return [
+        return dedupe_keep_order([
+            adapted_caption,
             f"dont make the mistakes i did. Use this website before you {task}!!! {proof_line}",
             f"Use this website before you {task}. {proof_line} Still review the result before using it.",
             f"I would not {task} without checking the workflow first. {proof_line}",
-        ]
+        ])
     if angle == "pain_question":
-        return [
+        return dedupe_keep_order([
+            adapted_caption,
             f"{hook} This is the workflow I would use instead. {proof_line} {soft_cta}",
             f"If this workflow still feels messy, try {name}. {proof_line}",
             f"Manual work is not a strategy. I used {name} to {task} with a clearer starting point.",
-        ]
+        ])
     if angle == "workflow_direct":
-        return [
+        return dedupe_keep_order([
+            adapted_caption,
             f"{hook}. I used {name} to {task}. {proof_line}",
             f"One workflow for {task}: open the tool, run the key step, review the output, then keep editing.",
             f"This feels easier when the first step is a visible workflow, not a blank screen. {soft_cta}",
-        ]
-    return [
+        ])
+    return dedupe_keep_order([
+        adapted_caption,
         f"{hook}. Just go to the website, follow the workflow, and review the result before using it.",
         f"How I would {task} now: use the tool for the first pass, then review and edit the result myself.",
         f"Workflow shortcut, but keep it honest: use the output as a starting point and review it before you keep working. {soft_cta}",
-    ]
+    ])
 
 
 def make_hashtags(product: dict, reference: str, captions: list[str]) -> list[str]:
@@ -247,16 +411,25 @@ def compliance_notes(product: dict, captions: list[str]) -> list[str]:
     return notes
 
 
-def build_variant_copy(variant: dict, product: dict, reference: str) -> dict:
+def build_variant_copy(variant: dict, product: dict, reference: str, reference_title_text: str, reference_analysis: dict) -> dict:
     captions = captions_from_variant(variant)
-    title_options = make_titles(captions, product)
-    caption_options = make_captions(captions, product, reference)
+    template_type = reference_analysis["template_type"]
+    title_options = make_titles(captions, product, reference_title_text, template_type)
+    caption_options = make_captions(captions, product, reference, reference_title_text, template_type)
     tags = make_hashtags(product, reference, captions)
     return {
         "variant_id": variant.get("id") or variant.get("variant_id") or "variant",
         "video": variant.get("video", ""),
         "cover": variant.get("cover", ""),
         "source_hook": captions[0] if captions else "",
+        "publishing_template": {
+            "template_type": template_type,
+            "reference_title": reference_title_text,
+            "reference_caption": reference,
+            "title_pattern": reference_analysis["title_pattern"],
+            "caption_pattern": reference_analysis["caption_pattern"],
+            "rewrite_method": "Preserve the reference post's publishing structure, emotional rhythm, CTA placement, and hashtag category; replace claims with product-safe facts from the final video.",
+        },
         "reference_adaptation": {
             "reference_caption": reference,
             "adapted_logic": f"Keep the reference post rhythm and hashtag category, but rewrite around {product_name(product) or 'the product'} and the visible video workflow.",
@@ -289,6 +462,8 @@ def build_card(data: dict) -> dict:
         product = read_optional_json(data.get("product_script_card_path")).get("product", {})
 
     reference = reference_caption(data)
+    ref_title = reference_title(data)
+    ref_analysis = reference_post_analysis(ref_title, reference, [])
     variants = data.get("variants") or []
     if not variants and data.get("final_delivery_manifest_path"):
         manifest = read_optional_json(data.get("final_delivery_manifest_path"))
@@ -304,10 +479,22 @@ def build_card(data: dict) -> dict:
         "platform": data.get("platform", "TikTok"),
         "product_name": product_name(product),
         "reference_post": {
+            "title": ref_title,
             "caption": reference,
+            **ref_analysis,
             "rewrite_rule": "Adapt the reference post's academic niche and hashtag logic; do not copy unsupported claims or exact caption as-is.",
         },
-        "publishing_variants": [build_variant_copy(v, product, reference) for v in variants],
+        "template_type_summaries": TEMPLATE_TYPE_SUMMARIES,
+        "publishing_variants": [
+            build_variant_copy(
+                v,
+                product,
+                reference,
+                ref_title,
+                reference_post_analysis(ref_title, reference, captions_from_variant(v)),
+            )
+            for v in variants
+        ],
         "global_rules": [
             "Final delivery pairs cover image + captioned video.",
             "Publishing caption should feel like a creator sharing a useful workflow, not a product ad.",

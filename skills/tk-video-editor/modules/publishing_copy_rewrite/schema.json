@@ -10,8 +10,28 @@
       "type": "object",
       "required": ["caption", "rewrite_rule"],
       "properties": {
+        "title": {"type": "string"},
         "caption": {"type": "string"},
-        "rewrite_rule": {"type": "string"}
+        "rewrite_rule": {"type": "string"},
+        "template_type": {"type": "string"},
+        "title_pattern": {"type": "string"},
+        "caption_pattern": {"type": "string"},
+        "hashtag_pattern": {"type": "string"}
+      }
+    },
+    "template_type_summaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["template_type", "title_logic", "caption_logic", "best_for"],
+        "properties": {
+          "template_type": {"type": "string"},
+          "title_logic": {"type": "string"},
+          "caption_logic": {"type": "string"},
+          "best_for": {"type": "string"},
+          "example_title_shape": {"type": "string"},
+          "example_caption_shape": {"type": "string"}
+        }
       }
     },
     "publishing_variants": {
@@ -24,6 +44,7 @@
           "video": {"type": "string"},
           "cover": {"type": "string"},
           "source_hook": {"type": "string"},
+          "publishing_template": {"type": "object"},
           "reference_adaptation": {"type": "object"},
           "title_options": {"type": "array", "items": {"type": "string"}},
           "recommended_title": {"type": "string"},
