@@ -1,0 +1,18 @@
+{
+  "text": "pov your advisor says\n“just edit the figure”\nbut it is a flat AI image",
+  "beat": "hook",
+  "priority": "large",
+  "width": 1080,
+  "height": 1920,
+  "output": "/Users/kk/Desktop/auto video/projects/batch/justin-write-7629578125906578719-hook-demo/figpad/xiaoyu/overlays/overlay_00.png",
+  "style": {
+    "font_size": 46,
+    "line_gap": 7,
+    "max_width": 900,
+    "y_ratio": 0.43,
+    "highlight_terms": [
+      "figure",
+      "flat"
+    ]
+  }
+}

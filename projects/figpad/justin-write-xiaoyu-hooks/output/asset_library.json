@@ -5,6 +5,18 @@
   "usage_rule": "Use Xiaoyu only for the opening reaction hook. Use the rendered FigPad SVG Editor proof video for product workflow segments because raw MOV sources are unavailable.",
   "assets": [
     {
+      "clip_id": "02_xiaoyu_hook_IMG_5551",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/02_xiaoyu_hook_IMG_5551.mov",
+      "duration_s": 3.997,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "skeptical/confused student reaction with thinking pose",
+      "best_use": [
+        "question-style opening hook",
+        "advisor asked for an edit but the figure is not editable",
+        "calmer FigPad hook than the shock/mouth-covered clips"
+      ]
+    },
+    {
       "clip_id": "06_xiaoyu_hook_IMG_5568",
       "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/06_xiaoyu_hook_IMG_5568.mov",
       "duration_s": 5.567,

@@ -1,0 +1,39 @@
+{
+  "status": "ready_for_review",
+  "product": "figpad",
+  "hook_kind": "ai_human",
+  "reference_template": "justin_write_7629578125906578719_pov_face_hook_then_product_demo",
+  "source_reference": "https://www.tiktok.com/@justin_write/video/7629578125906578719",
+  "hook_source": "projects/figpad/soft-student-era-template/materials/raw/00_ai_human_reaction_figpad.mp4",
+  "demo_segments": [
+    "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/segments/seg_01.mp4",
+    "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/segments/seg_02.mp4",
+    "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/segments/seg_03.mp4",
+    "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/segments/seg_04.mp4"
+  ],
+  "outputs": {
+    "video": "projects/batch/justin-write-7629578125906578719-hook-demo/figpad/ai_human/figpad_ai_human_hook_demo.mp4",
+    "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/figpad/ai_human/figpad_ai_human_hook_demo_cover.jpg",
+    "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/figpad/ai_human/figpad_ai_human_hook_demo_sheet.jpg"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "15.166667",
+      "size": "6652111"
+    }
+  },
+  "notes": [
+    "First beat imitates the reference POV face-hook structure.",
+    "After the hook, the cut moves into product function demonstration segments.",
+    "No voiceover or music is included; add platform-native music when posting."
+  ]
+}

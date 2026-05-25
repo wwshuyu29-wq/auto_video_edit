@@ -1,0 +1,4 @@
+file '/Users/kk/Desktop/auto video/projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/segments/seg_00_hook.mp4'
+file '/Users/kk/Desktop/auto video/projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/segments/seg_01_demo.mp4'
+file '/Users/kk/Desktop/auto video/projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/segments/seg_02_demo.mp4'
+file '/Users/kk/Desktop/auto video/projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/segments/seg_03_demo.mp4'

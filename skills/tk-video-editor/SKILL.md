@@ -258,7 +258,9 @@ rendering troubleshooting change script claims, shot logic, or product facts.
 
 ### 7. Publishing Copy
 
-Use `modules/publishing_copy_rewrite/schema.json`.
+Use `modules/publishing_copy_rewrite/schema.json` and the
+`overseas-tiktok-publish-copywriting` skill for overseas TikTok caption,
+hashtags, and pinned comment strategy.
 
 Output:
 
@@ -274,7 +276,8 @@ python3 modules/publishing_copy_rewrite/run.py --input <publishing_copy_input.js
 ```
 
 Every final video delivery must include the matching cover image, captioned
-video, recommended TikTok title, recommended caption, hashtags, and keywords.
+video, recommended TikTok title, recommended caption, hashtags, pinned
+comment, and keywords.
 Do not leave publishing copy hidden only inside `product_script_card.json`.
 
 Publishing copy must be grounded in:
@@ -282,10 +285,14 @@ Publishing copy must be grounded in:
 - approved product facts
 - the visible final video/subtitles
 - reference TikTok post title, caption logic, CTA rhythm, and hashtag category
+- reference TikTok caption/posting style and viral structure
 - product compliance limits
 
-The tone should feel like TikTok creator workflow sharing, not homepage
-advertising.
+The task is not to write marketing copy. It is to automatically deconstruct
+viral publishing-copy structure from the reference TikTok video and generate
+caption, hashtags, and pinned comment for overseas TikTok. The output must feel
+like a real overseas creator post, not translated Chinese, homepage copy, or a
+formal ad.
 
 Do not simply reuse the product script title or script caption as the final
 publishing title/caption. The publishing copy must classify the reference
@@ -310,6 +317,16 @@ video.
 For every publishing-copy run, include `template_type_summaries` covering the
 main reusable posting formats: mistake/urgency CTA, how-to/easy-way,
 pain-question solution, workflow-direct demo, and result reveal.
+
+For overseas TikTok publishing copy, also include:
+
+- product understanding: user pain, feature, visible result, emotional angle
+- reference caption breakdown: hook type, structure, viral mechanism, reusable pattern, avoid list
+- caption strategy: the best TikTok angle for the video
+- at least 8 caption options: most viral, pain-point, curiosity, POV, soft-selling, comment-bait, save-worthy, direct conversion
+- 3-6 relevant hashtags only: broad, niche, and product/use-case tags
+- optional pinned comment for each option
+- risk check: overpromise, ad tone, unrelated hashtags, close copying, weak hook
 
 ### 8. Local Storage Cleanup
 

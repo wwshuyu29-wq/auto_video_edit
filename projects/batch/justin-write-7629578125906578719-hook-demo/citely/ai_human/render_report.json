@@ -1,0 +1,40 @@
+{
+  "status": "ready_for_review",
+  "product": "citely",
+  "hook_kind": "ai_human",
+  "reference_template": "justin_write_7629578125906578719_pov_face_hook_then_product_demo",
+  "source_reference": "https://www.tiktok.com/@justin_write/video/7629578125906578719",
+  "hook_source": "projects/citely/soft-student-era-template/materials/raw/00_ai_human_reaction_citely.mp4",
+  "demo_segments": [
+    "projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/preview_render/segments/seg_02.mp4",
+    "projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/preview_render/segments/seg_03.mp4",
+    "projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/preview_render/segments/seg_04.mp4",
+    "projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/preview_render/segments/seg_05.mp4",
+    "projects/citely/research-connect-google-scholar-template/output/final_delivery/ai_reference_risk_v2/preview_render/segments/seg_06.mp4"
+  ],
+  "outputs": {
+    "video": "projects/batch/justin-write-7629578125906578719-hook-demo/citely/ai_human/citely_ai_human_hook_demo.mp4",
+    "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/citely/ai_human/citely_ai_human_hook_demo_cover.jpg",
+    "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/citely/ai_human/citely_ai_human_hook_demo_sheet.jpg"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "16.199023",
+      "size": "12403789"
+    }
+  },
+  "notes": [
+    "First beat imitates the reference POV face-hook structure.",
+    "After the hook, the cut moves into product function demonstration segments.",
+    "No voiceover or music is included; add platform-native music when posting."
+  ]
+}

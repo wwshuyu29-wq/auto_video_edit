@@ -1,0 +1,34 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/figpad/justin-write-xiaoyu-hooks/output/shot_matching_plan_xiaoyu_02.json",
+    "asset_library": "projects/figpad/justin-write-xiaoyu-hooks/output/asset_library.json",
+    "selected_hook_clip": "02_xiaoyu_hook_IMG_5551"
+  },
+  "outputs": {
+    "preview_video": "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/figpad_xiaoyu_02_justin_write.mp4",
+    "cover": "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/figpad_xiaoyu_02_justin_write_cover.jpg",
+    "preview_sheet": "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/figpad_xiaoyu_02_justin_write_sheet.jpg",
+    "captions": "projects/figpad/justin-write-xiaoyu-hooks/output/captions_xiaoyu_02.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "15.800000",
+      "size": "10323735"
+    }
+  },
+  "notes": [
+    "Uses 02_xiaoyu_hook_IMG_5551 as the new Xiaoyu hook.",
+    "Product proof source already has captions, so only the Xiaoyu hook receives a new overlay.",
+    "No voiceover or music is included."
+  ]
+}

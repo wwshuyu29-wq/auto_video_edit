@@ -1,0 +1,38 @@
+{
+  "status": "ready_for_review",
+  "product": "clearfy",
+  "hook_kind": "xiaoyu",
+  "reference_template": "justin_write_7629578125906578719_pov_face_hook_then_product_demo",
+  "source_reference": "https://www.tiktok.com/@justin_write/video/7629578125906578719",
+  "hook_source": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/00_xiaoyu_hook_IMG_5541.mov",
+  "demo_segments": [
+    "projects/clearfy/justin-write-xiaoyu-hooks/output/final_delivery/segments/seg_01.mp4",
+    "projects/clearfy/justin-write-xiaoyu-hooks/output/final_delivery/segments/seg_02.mp4",
+    "projects/clearfy/justin-write-xiaoyu-hooks/output/final_delivery/segments/seg_03.mp4"
+  ],
+  "outputs": {
+    "video": "projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/clearfy_xiaoyu_hook_demo.mp4",
+    "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/clearfy_xiaoyu_hook_demo_cover.jpg",
+    "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/clearfy_xiaoyu_hook_demo_sheet.jpg"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "10.699023",
+      "size": "8007628"
+    }
+  },
+  "notes": [
+    "First beat imitates the reference POV face-hook structure.",
+    "After the hook, the cut moves into product function demonstration segments.",
+    "No voiceover or music is included; add platform-native music when posting."
+  ]
+}

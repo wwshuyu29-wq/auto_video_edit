@@ -1,0 +1,34 @@
+{
+  "status": "ready_for_review",
+  "product": "FigPad",
+  "template": "justin_write_story_reaction_proof with Xiaoyu real-person hook",
+  "selected_hook_clip": "02_xiaoyu_hook_IMG_5551",
+  "delivery_rule": "Captioned vertical video. No voiceover/BGM; add TikTok trending music inside TikTok.",
+  "video": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/figpad_xiaoyu_02_justin_write.mp4",
+  "cover": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/figpad_xiaoyu_02_justin_write_cover.jpg",
+  "preview_sheet": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_xiaoyu_02/figpad_xiaoyu_02_justin_write_sheet.jpg",
+  "recommended_title": "when your advisor says \"just edit it\"",
+  "recommended_caption": "me staring at a flat AI figure after my advisor said \"just edit it\" 😭 FigPad SVG Editor makes it easier to keep tweaking the figure instead of redrawing everything #figpad #phd #research #scientificfigures #studytok #gradschool #aitools",
+  "hashtags": [
+    "#figpad",
+    "#phd",
+    "#research",
+    "#scientificfigures",
+    "#studytok",
+    "#gradschool",
+    "#aitools",
+    "#researchtools",
+    "#phdlife"
+  ],
+  "render_report": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/render_report_xiaoyu_02.json",
+  "qa": {
+    "width": 1080,
+    "height": 1920,
+    "duration_s": 15.8,
+    "has_audio": false
+  },
+  "notes": [
+    "Uses a different Xiaoyu hook from prior FigPad versions: 02_xiaoyu_hook_IMG_5551.",
+    "Only the Xiaoyu hook segment receives a new overlay. FigPad proof segments keep the existing baked captions from the source proof video."
+  ]
+}

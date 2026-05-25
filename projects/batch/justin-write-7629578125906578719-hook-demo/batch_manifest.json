@@ -1,0 +1,75 @@
+{
+  "status": "ready_for_review",
+  "reference_video": "https://www.tiktok.com/@justin_write/video/7629578125906578719",
+  "reference_analysis": {
+    "duration_s": 5.94,
+    "structure": "single close-face POV hook with one dense confession/risk caption; face reaction carries retention; no product walkthrough in reference",
+    "adaptation": "Use the reference for the opening hook only, then cut into product function demo segments as requested."
+  },
+  "variants": [
+    {
+      "product": "literfy",
+      "kind": "xiaoyu",
+      "video": "projects/batch/justin-write-7629578125906578719-hook-demo/literfy/xiaoyu/literfy_xiaoyu_hook_demo.mp4",
+      "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/literfy/xiaoyu/literfy_xiaoyu_hook_demo_cover.jpg",
+      "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/literfy/xiaoyu/literfy_xiaoyu_hook_demo_sheet.jpg",
+      "duration": "19.433008"
+    },
+    {
+      "product": "literfy",
+      "kind": "ai_human",
+      "video": "projects/batch/justin-write-7629578125906578719-hook-demo/literfy/ai_human/literfy_ai_human_hook_demo.mp4",
+      "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/literfy/ai_human/literfy_ai_human_hook_demo_cover.jpg",
+      "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/literfy/ai_human/literfy_ai_human_hook_demo_sheet.jpg",
+      "duration": "19.399023"
+    },
+    {
+      "product": "citely",
+      "kind": "xiaoyu",
+      "video": "projects/batch/justin-write-7629578125906578719-hook-demo/citely/xiaoyu/citely_xiaoyu_hook_demo.mp4",
+      "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/citely/xiaoyu/citely_xiaoyu_hook_demo_cover.jpg",
+      "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/citely/xiaoyu/citely_xiaoyu_hook_demo_sheet.jpg",
+      "duration": "16.233333"
+    },
+    {
+      "product": "citely",
+      "kind": "ai_human",
+      "video": "projects/batch/justin-write-7629578125906578719-hook-demo/citely/ai_human/citely_ai_human_hook_demo.mp4",
+      "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/citely/ai_human/citely_ai_human_hook_demo_cover.jpg",
+      "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/citely/ai_human/citely_ai_human_hook_demo_sheet.jpg",
+      "duration": "16.199023"
+    },
+    {
+      "product": "figpad",
+      "kind": "xiaoyu",
+      "video": "projects/batch/justin-write-7629578125906578719-hook-demo/figpad/xiaoyu/figpad_xiaoyu_hook_demo.mp4",
+      "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/figpad/xiaoyu/figpad_xiaoyu_hook_demo_cover.jpg",
+      "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/figpad/xiaoyu/figpad_xiaoyu_hook_demo_sheet.jpg",
+      "duration": "14.900000"
+    },
+    {
+      "product": "figpad",
+      "kind": "ai_human",
+      "video": "projects/batch/justin-write-7629578125906578719-hook-demo/figpad/ai_human/figpad_ai_human_hook_demo.mp4",
+      "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/figpad/ai_human/figpad_ai_human_hook_demo_cover.jpg",
+      "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/figpad/ai_human/figpad_ai_human_hook_demo_sheet.jpg",
+      "duration": "15.166667"
+    },
+    {
+      "product": "clearfy",
+      "kind": "xiaoyu",
+      "video": "projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/clearfy_xiaoyu_hook_demo.mp4",
+      "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/clearfy_xiaoyu_hook_demo_cover.jpg",
+      "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/xiaoyu/clearfy_xiaoyu_hook_demo_sheet.jpg",
+      "duration": "10.699023"
+    },
+    {
+      "product": "clearfy",
+      "kind": "ai_human",
+      "video": "projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/ai_human/clearfy_ai_human_hook_demo.mp4",
+      "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/ai_human/clearfy_ai_human_hook_demo_cover.jpg",
+      "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/clearfy/ai_human/clearfy_ai_human_hook_demo_sheet.jpg",
+      "duration": "10.666016"
+    }
+  ]
+}

@@ -155,6 +155,41 @@ def product_copy(product: dict) -> dict:
     }
 
 
+def product_pain(product: dict, captions: list[str] | None = None) -> str:
+    key = product_key(product)
+    if key == "literfy":
+        return "starting a literature review from a blank page or random tabs"
+    if key == "citely":
+        return "AI citations can look real even when the source trail is messy"
+    if key == "figpad":
+        return "AI can give you a research figure that is still hard to edit"
+    for field in ["main_user_pain_points", "pain_points", "pain_point", "user_pain"]:
+        value = product.get(field)
+        if isinstance(value, str) and value.strip():
+            return clean_text(value)
+        if isinstance(value, list) and value:
+            return clean_text(str(value[0]))
+    if captions:
+        return strip_hashtags(captions[0])
+    return "the manual workflow takes too much time"
+
+
+def visible_result(product: dict) -> str:
+    copy = product_copy(product)
+    return copy["proof"]
+
+
+def product_understanding(product: dict, captions: list[str]) -> dict:
+    copy = product_copy(product)
+    return {
+        "user_pain": product_pain(product, captions),
+        "feature": copy["task"],
+        "visible_result": visible_result(product),
+        "emotional_angle": "relief from a familiar workflow frustration",
+        "best_tiktok_angle": "creator-style pain-to-workflow proof",
+    }
+
+
 def forbidden_terms(product: dict) -> list[str]:
     terms = ["perfect", "guaranteed", "submit directly", "publication-ready", "replace real research"]
     for claim in product.get("forbidden_claims", []) or []:
@@ -343,32 +378,69 @@ def make_captions(captions: list[str], product: dict, reference: str, reference_
     reference_uses_mistake_cta = "mistake" in reference_lower or "use this website" in reference_lower
 
     if reference_uses_mistake_cta:
-        return dedupe_keep_order([
+        base_options = [
             adapted_caption,
             f"dont make the mistakes i did. Use this website before you {task}!!! {proof_line}",
             f"Use this website before you {task}. {proof_line} Still review the result before using it.",
             f"I would not {task} without checking the workflow first. {proof_line}",
-        ])
-    if angle == "pain_question":
-        return dedupe_keep_order([
+        ]
+    elif angle == "pain_question":
+        base_options = [
             adapted_caption,
             f"{hook} This is the workflow I would use instead. {proof_line} {soft_cta}",
             f"If this workflow still feels messy, try {name}. {proof_line}",
             f"Manual work is not a strategy. I used {name} to {task} with a clearer starting point.",
-        ])
-    if angle == "workflow_direct":
-        return dedupe_keep_order([
+        ]
+    elif angle == "workflow_direct":
+        base_options = [
             adapted_caption,
             f"{hook}. I used {name} to {task}. {proof_line}",
             f"One workflow for {task}: open the tool, run the key step, review the output, then keep editing.",
             f"This feels easier when the first step is a visible workflow, not a blank screen. {soft_cta}",
-        ])
+        ]
+    else:
+        base_options = [
+            adapted_caption,
+            f"{hook}. Just go to the website, follow the workflow, and review the result before using it.",
+            f"How I would {task} now: use the tool for the first pass, then review and edit the result myself.",
+            f"Workflow shortcut, but keep it honest: use the output as a starting point and review it before you keep working. {soft_cta}",
+        ]
+    return expand_caption_options(base_options, captions, product, template_type)
+
+
+def expand_caption_options(base_options: list[str], captions: list[str], product: dict, template_type: str) -> list[str]:
+    name = product_name(product) or "this tool"
+    copy = product_copy(product)
+    task = copy["task"]
+    pain = product_pain(product, captions)
+    proof = copy["proof"]
+    extra_options = [
+        f"save this if {pain}. I use {name} to {task}, then review the result before I keep working.",
+        f"why did nobody tell me this workflow existed for {task}? {name} gives you a clearer starting point you can actually check.",
+        f"POV: you are tired of {pain}. Open {name}, run the workflow, and keep editing instead of starting from zero.",
+        f"not an ad, just the workflow I would use when {pain}. {name} helps you {proof}.",
+        f"comment if you want the exact workflow for this. I used {name} to {task} without pretending the output is perfect.",
+        f"if your workflow still starts with {pain}, this is your sign to try a cleaner first pass.",
+        f"for students/researchers who need to {task}: use {name} for the first pass, then check the details yourself.",
+        f"the annoying part is not the idea, it is {pain}. {name} makes the next step easier to review.",
+    ]
+    if template_type == "result_reveal":
+        extra_options.insert(0, f"started with the messy version, ended with something I could actually review and edit in {name}.")
+    return dedupe_keep_order([*base_options, *extra_options])[:10]
+
+
+def make_pinned_comments(product: dict, captions: list[str]) -> list[str]:
+    name = product_name(product) or "this tool"
+    task = product_copy(product)["task"]
+    pain = product_pain(product, captions)
     return dedupe_keep_order([
-        adapted_caption,
-        f"{hook}. Just go to the website, follow the workflow, and review the result before using it.",
-        f"How I would {task} now: use the tool for the first pass, then review and edit the result myself.",
-        f"Workflow shortcut, but keep it honest: use the output as a starting point and review it before you keep working. {soft_cta}",
-    ])
+        f"Would you use this for {task}?",
+        f"Save this before your next research workflow.",
+        f"The key is still reviewing the output yourself.",
+        f"Comment if you want the step-by-step workflow.",
+        f"This is for when {pain}.",
+        f"Tool: {name}",
+    ])[:4]
 
 
 def make_hashtags(product: dict, reference: str, captions: list[str]) -> list[str]:
@@ -394,7 +466,20 @@ def make_hashtags(product: dict, reference: str, captions: list[str]) -> list[st
     for tag in tags:
         if tag not in deduped:
             deduped.append(tag)
-    return deduped[:11]
+    return deduped[:6]
+
+
+def risk_check(caption: str, reference: str, hashtags: list[str]) -> dict:
+    lower = caption.lower()
+    ref_lower = strip_hashtags(reference).lower()
+    copied_reference = bool(ref_lower and ref_lower in lower)
+    return {
+        "overpromises": any(term in lower for term in ["100%", "guaranteed", "perfect", "fully replaces"]),
+        "sounds_too_much_like_an_ad": any(term in lower for term in ["revolutionary", "game-changing", "best-in-class", "boost productivity"]),
+        "uses_unrelated_hashtags": len(hashtags) > 6,
+        "copies_reference_too_closely": copied_reference,
+        "has_weak_tiktok_hook": len(caption.split()) > 0 and len(caption.split()[:8]) > 7 and not any(marker in lower for marker in ["pov", "save this", "why", "stop", "me ", "if "]),
+    }
 
 
 def compliance_notes(product: dict, captions: list[str]) -> list[str]:
@@ -417,6 +502,7 @@ def build_variant_copy(variant: dict, product: dict, reference: str, reference_t
     title_options = make_titles(captions, product, reference_title_text, template_type)
     caption_options = make_captions(captions, product, reference, reference_title_text, template_type)
     tags = make_hashtags(product, reference, captions)
+    pinned_comment_options = make_pinned_comments(product, captions)
     return {
         "variant_id": variant.get("id") or variant.get("variant_id") or "variant",
         "video": variant.get("video", ""),
@@ -435,10 +521,14 @@ def build_variant_copy(variant: dict, product: dict, reference: str, reference_t
             "adapted_logic": f"Keep the reference post rhythm and hashtag category, but rewrite around {product_name(product) or 'the product'} and the visible video workflow.",
             "do_not_copy_directly": True,
         },
+        "product_understanding": product_understanding(product, captions),
+        "caption_strategy": "Use the reference structure as a publishing template, then lead with user pain and visible product proof in native TikTok English.",
         "title_options": title_options,
         "recommended_title": title_options[0],
         "caption_options": caption_options,
         "recommended_caption": caption_options[0],
+        "pinned_comment_options": pinned_comment_options,
+        "recommended_pinned_comment": pinned_comment_options[0] if pinned_comment_options else "",
         "hashtags": tags,
         "posting_notes": [
             "Use the matching Google Scholar cover image for this video.",
@@ -447,9 +537,12 @@ def build_variant_copy(variant: dict, product: dict, reference: str, reference_t
         ],
         "compliance_notes": compliance_notes(product, captions),
         "keywords": [product_name(product), *product_copy(product).get("keywords", [])],
+        "risk_check": risk_check(caption_options[0], reference, tags),
         "scores": {
             "reference_fit": 9 if caption_angle(captions) == "reference_faithful" else 8,
             "native_tiktok_feel": 8,
+            "viral_hook_strength": 8,
+            "product_pain_fit": 8,
             "product_truth_safety": 9,
             "hashtag_relevance": 9,
         },

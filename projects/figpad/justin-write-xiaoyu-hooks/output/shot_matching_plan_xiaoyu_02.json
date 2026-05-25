@@ -1,0 +1,104 @@
+{
+  "variant_id": "figpad_xiaoyu_02_editable_figure",
+  "product_name": "FigPad",
+  "reference_template": "justin_write_story_reaction_proof",
+  "selected_hook_clip": "02_xiaoyu_hook_IMG_5551",
+  "editing_style": {
+    "pace": "fast",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "caption_style": "large white bold text with black outline, casual story-reaction rhythm"
+  },
+  "edit_plan": [
+    {
+      "beat": "human_reaction_story_hook",
+      "time": "0-3.8",
+      "clip_id": "02_xiaoyu_hook_IMG_5551",
+      "clip_start": 0,
+      "clip_end": 3.8,
+      "playback_speed": 1,
+      "on_screen_text": "me staring at a flat AI figure\nafter my advisor said\n\"just edit it\"",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "me staring at",
+          "a flat AI figure",
+          "after my advisor said",
+          "\"just edit it\""
+        ],
+        "font_size": 52,
+        "line_gap": 7,
+        "max_width": 900,
+        "y_ratio": 0.4,
+        "highlight_terms": [
+          "flat",
+          "AI",
+          "advisor",
+          "edit"
+        ]
+      },
+      "reason": "Uses Xiaoyu's skeptical/thinking reaction as the new hook, matching the FigPad editable-figure problem setup.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "product_action",
+      "time": "3.8-6.3",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 13.5,
+      "clip_end": 16,
+      "playback_speed": 1,
+      "on_screen_text": "",
+      "subtitle_priority": "large",
+      "caption_style": {},
+      "reason": "Cuts into the FigPad proof at the edit-reveal beat.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "editor_entry",
+      "time": "6.3-8.8",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 16,
+      "clip_end": 18.5,
+      "playback_speed": 1,
+      "on_screen_text": "",
+      "subtitle_priority": "large",
+      "caption_style": {},
+      "reason": "Shows the product action that turns the figure into an editable workflow.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "editability_proof",
+      "time": "8.8-12.3",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 18.5,
+      "clip_end": 22,
+      "playback_speed": 1,
+      "on_screen_text": "",
+      "subtitle_priority": "large",
+      "caption_style": {},
+      "reason": "Visible FigPad editor footage provides the product proof.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "detail_review",
+      "time": "12.3-15.8",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 22,
+      "clip_end": 25.5,
+      "playback_speed": 1,
+      "on_screen_text": "",
+      "subtitle_priority": "normal",
+      "caption_style": {},
+      "reason": "Ends on editable-canvas detail review, not perfect-output claims.",
+      "transition": "hard cut"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "Uses a different Xiaoyu source hook from the previous FigPad versions.",
+    "Does not claim the figure is publication-ready without review.",
+    "Frames FigPad as an editable starting point and manual detail-review workflow.",
+    "Product proof segments use the already-captioned FigPad source video without adding duplicate overlay text."
+  ],
+  "needs_script_revision": false
+}

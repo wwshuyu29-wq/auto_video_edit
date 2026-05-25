@@ -1,0 +1,40 @@
+{
+  "status": "ready_for_review",
+  "product": "literfy",
+  "hook_kind": "xiaoyu",
+  "reference_template": "justin_write_7629578125906578719_pov_face_hook_then_product_demo",
+  "source_reference": "https://www.tiktok.com/@justin_write/video/7629578125906578719",
+  "hook_source": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/01_xiaoyu_hook_IMG_5550.mov",
+  "demo_segments": [
+    "projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/preview_render/segments/seg_01.mp4",
+    "projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/preview_render/segments/seg_02.mp4",
+    "projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/preview_render/segments/seg_03.mp4",
+    "projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/preview_render/segments/seg_04.mp4",
+    "projects/literfy/ice-uni-template/output/final_delivery/literfy_ice_uni_a/preview_render/segments/seg_05.mp4"
+  ],
+  "outputs": {
+    "video": "projects/batch/justin-write-7629578125906578719-hook-demo/literfy/xiaoyu/literfy_xiaoyu_hook_demo.mp4",
+    "cover": "projects/batch/justin-write-7629578125906578719-hook-demo/literfy/xiaoyu/literfy_xiaoyu_hook_demo_cover.jpg",
+    "sheet": "projects/batch/justin-write-7629578125906578719-hook-demo/literfy/xiaoyu/literfy_xiaoyu_hook_demo_sheet.jpg"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "19.433008",
+      "size": "22314959"
+    }
+  },
+  "notes": [
+    "First beat imitates the reference POV face-hook structure.",
+    "After the hook, the cut moves into product function demonstration segments.",
+    "No voiceover or music is included; add platform-native music when posting."
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 3.8,
+      "duration": 3.8,
+      "text": "me staring at a flat AI figure\nafter my advisor said\n\"just edit it\"",
+      "beat": "human_reaction_story_hook",
+      "clip_id": "02_xiaoyu_hook_IMG_5551",
+      "clip_start": 0,
+      "clip_end": 3.8,
+      "playback_speed": 1,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "me staring at",
+          "a flat AI figure",
+          "after my advisor said",
+          "\"just edit it\""
+        ],
+        "font_size": 52,
+        "line_gap": 7,
+        "max_width": 900,
+        "y_ratio": 0.4,
+        "highlight_terms": [
+          "flat",
+          "AI",
+          "advisor",
+          "edit"
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.8,
+      "end": 6.3,
+      "duration": 2.5,
+      "text": "",
+      "beat": "product_action",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 13.5,
+      "clip_end": 16,
+      "playback_speed": 1,
+      "subtitle_priority": "large",
+      "caption_style": {}
+    },
+    {
+      "index": 2,
+      "start": 6.3,
+      "end": 8.8,
+      "duration": 2.500000000000001,
+      "text": "",
+      "beat": "editor_entry",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 16,
+      "clip_end": 18.5,
+      "playback_speed": 1,
+      "subtitle_priority": "large",
+      "caption_style": {}
+    },
+    {
+      "index": 3,
+      "start": 8.8,
+      "end": 12.3,
+      "duration": 3.5,
+      "text": "",
+      "beat": "editability_proof",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 18.5,
+      "clip_end": 22,
+      "playback_speed": 1,
+      "subtitle_priority": "large",
+      "caption_style": {}
+    },
+    {
+      "index": 4,
+      "start": 12.3,
+      "end": 15.8,
+      "duration": 3.5,
+      "text": "",
+      "beat": "detail_review",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 22,
+      "clip_end": 25.5,
+      "playback_speed": 1,
+      "subtitle_priority": "normal",
+      "caption_style": {}
+    }
+  ]
+}
