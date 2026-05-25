@@ -38,7 +38,36 @@
     ],
     "text_overlay_safe_area": "lower center or right side; avoid covering headline",
     "audio_quality": "not needed",
-    "notes": "Useful for a quick 'go to this website' beat or product reveal."
+    "notes": "Useful for a quick 'go to this website' beat or product reveal.",
+    "product": "Clearfy",
+    "feature_group": "homepage",
+    "function_label": "homepage reveal / paste or upload starting point",
+    "matched_beats": [
+      "website reveal",
+      "go to website CTA",
+      "AI detector introduction",
+      "AI humanizer introduction"
+    ],
+    "tags": {
+      "scene": "Clearfy homepage with headline, paste text, upload file, AI humanizer and AI detector entry points",
+      "subject": "Clearfy website on laptop screen",
+      "action": "reveal homepage and input area",
+      "shot_type": "handheld laptop screen reveal",
+      "quality": "usable; short and slightly soft",
+      "best_ranges": [
+        {
+          "start": 0.2,
+          "end": 2.5,
+          "reason": "Fast homepage reveal with product promise and input area visible."
+        }
+      ],
+      "matched_beats": [
+        "website reveal",
+        "go to website CTA",
+        "AI detector introduction",
+        "AI humanizer introduction"
+      ]
+    }
   },
   {
     "clip_id": "01_clearfy_ai_detector_scan_results",
@@ -81,7 +110,7 @@
         "reason": "Shows pasted text and detector mode before scan."
       },
       {
-        "start": 5.0,
+        "start": 5,
         "end": 9.5,
         "reason": "Shows highlighted sentences and detection result beginning to appear."
       },
@@ -93,7 +122,46 @@
     ],
     "text_overlay_safe_area": "upper left or lower left; keep red highlights and result card visible",
     "audio_quality": "not needed",
-    "notes": "Strongest detector-proof clip. Use for 'check before submitting' or 'this draft looks AI-heavy' beats."
+    "notes": "Strongest detector-proof clip. Use for 'check before submitting' or 'this draft looks AI-heavy' beats.",
+    "product": "Clearfy",
+    "feature_group": "AI detector",
+    "function_label": "AI detector scan with red sentence highlights and result panel",
+    "matched_beats": [
+      "problem reveal",
+      "AI detector proof",
+      "scan result",
+      "before humanizing"
+    ],
+    "tags": {
+      "scene": "Clearfy AI detector scans pasted academic text and reveals likely AI-written sentence highlights",
+      "subject": "AI detector results on laptop screen",
+      "action": "paste text, scan, show highlighted AI-likelihood result",
+      "shot_type": "handheld product proof screen",
+      "quality": "usable; strongest detector proof",
+      "best_ranges": [
+        {
+          "start": 0.5,
+          "end": 4.5,
+          "reason": "Detector mode and pasted text setup."
+        },
+        {
+          "start": 5,
+          "end": 9.5,
+          "reason": "Red highlighted sentences appear."
+        },
+        {
+          "start": 9.5,
+          "end": 12.8,
+          "reason": "Result panel and breakdown are visible."
+        }
+      ],
+      "matched_beats": [
+        "problem reveal",
+        "AI detector proof",
+        "scan result",
+        "before humanizing"
+      ]
+    }
   },
   {
     "clip_id": "02_clearfy_humanizer_input_mode",
@@ -141,7 +209,41 @@
     ],
     "text_overlay_safe_area": "right side or lower center; avoid covering the Humanize button",
     "audio_quality": "not needed",
-    "notes": "Good for explaining that Clearfy can revise AI-heavy wording, not just detect it."
+    "notes": "Good for explaining that Clearfy can revise AI-heavy wording, not just detect it.",
+    "product": "Clearfy",
+    "feature_group": "AI humanizer",
+    "function_label": "AI humanizer input with Easy/Medium/Aggressive rewrite modes",
+    "matched_beats": [
+      "solution setup",
+      "choose rewrite strength",
+      "humanizer workflow",
+      "before-after setup"
+    ],
+    "tags": {
+      "scene": "Clearfy humanizer tab with pasted text and rewrite strength selector",
+      "subject": "AI humanizer input screen",
+      "action": "select rewrite mode and prepare to humanize text",
+      "shot_type": "handheld product workflow screen",
+      "quality": "usable; clear solution setup",
+      "best_ranges": [
+        {
+          "start": 0.4,
+          "end": 2.4,
+          "reason": "Humanizer tab and rewrite modes visible."
+        },
+        {
+          "start": 2.4,
+          "end": 5.8,
+          "reason": "Pasted draft and Humanize button visible."
+        }
+      ],
+      "matched_beats": [
+        "solution setup",
+        "choose rewrite strength",
+        "humanizer workflow",
+        "before-after setup"
+      ]
+    }
   },
   {
     "clip_id": "03_clearfy_humanizer_closeup",
@@ -180,7 +282,34 @@
     ],
     "text_overlay_safe_area": "upper left; keep button area visible",
     "audio_quality": "not needed",
-    "notes": "Short insert clip for a quick 'then hit Humanize' beat."
+    "notes": "Short insert clip for a quick 'then hit Humanize' beat.",
+    "product": "Clearfy",
+    "feature_group": "AI humanizer",
+    "function_label": "close-up Humanize button / aggressive mode insert",
+    "matched_beats": [
+      "click humanize",
+      "fast solution beat",
+      "mode selection"
+    ],
+    "tags": {
+      "scene": "Close handheld shot of Clearfy humanizer input with aggressive mode selected",
+      "subject": "Humanize button and rewrite mode controls",
+      "action": "show humanize action area",
+      "shot_type": "close handheld insert",
+      "quality": "usable b-roll; short action close-up",
+      "best_ranges": [
+        {
+          "start": 0.2,
+          "end": 2.8,
+          "reason": "Compact close-up of the humanizer action area."
+        }
+      ],
+      "matched_beats": [
+        "click humanize",
+        "fast solution beat",
+        "mode selection"
+      ]
+    }
   },
   {
     "clip_id": "04_clearfy_detector_to_ai_result",
@@ -218,7 +347,7 @@
     "usable_segments": [
       {
         "start": 0.5,
-        "end": 4.0,
+        "end": 4,
         "reason": "Shows detector input and check button."
       },
       {
@@ -229,7 +358,41 @@
     ],
     "text_overlay_safe_area": "left side or top; keep result card and red highlights visible",
     "audio_quality": "not needed",
-    "notes": "Best bridge from 'check AI rate' into 'now fix the highlighted parts'."
+    "notes": "Best bridge from 'check AI rate' into 'now fix the highlighted parts'.",
+    "product": "Clearfy",
+    "feature_group": "AI detector",
+    "function_label": "detector input to AI result bridge with Humanize next step",
+    "matched_beats": [
+      "detector result proof",
+      "risk reveal",
+      "before-after bridge",
+      "use humanizer after detection"
+    ],
+    "tags": {
+      "scene": "Clearfy detector moves from pasted text into highlighted AI-likelihood result and visible Humanize next-step button",
+      "subject": "AI detector result and Humanize button",
+      "action": "check text for AI and reveal highlighted result",
+      "shot_type": "handheld result reveal screen",
+      "quality": "usable; strong before-to-next-step bridge",
+      "best_ranges": [
+        {
+          "start": 0.5,
+          "end": 4,
+          "reason": "Detector input and Check for AI button visible."
+        },
+        {
+          "start": 5.5,
+          "end": 9.5,
+          "reason": "Highlighted AI-heavy sentences and result panel visible."
+        }
+      ],
+      "matched_beats": [
+        "detector result proof",
+        "risk reveal",
+        "before-after bridge",
+        "use humanizer after detection"
+      ]
+    }
   },
   {
     "clip_id": "05_clearfy_homepage_input_empty",
@@ -273,6 +436,35 @@
     ],
     "text_overlay_safe_area": "lower right or upper left; avoid covering the headline",
     "audio_quality": "not needed",
-    "notes": "Good general-purpose setup clip for explaining what Clearfy does."
+    "notes": "Good general-purpose setup clip for explaining what Clearfy does.",
+    "product": "Clearfy",
+    "feature_group": "homepage",
+    "function_label": "homepage input box / empty paste-upload setup",
+    "matched_beats": [
+      "homepage reveal",
+      "tool setup",
+      "paste text instruction",
+      "upload file instruction"
+    ],
+    "tags": {
+      "scene": "Clearfy homepage showing headline, AI humanizer and AI detector tabs, paste/upload input box",
+      "subject": "Clearfy homepage input area",
+      "action": "pan across homepage input box and feature tabs",
+      "shot_type": "handheld homepage setup shot",
+      "quality": "usable; general product setup",
+      "best_ranges": [
+        {
+          "start": 0.3,
+          "end": 5.8,
+          "reason": "Main promise and two starting workflows are visible."
+        }
+      ],
+      "matched_beats": [
+        "homepage reveal",
+        "tool setup",
+        "paste text instruction",
+        "upload file instruction"
+      ]
+    }
   }
 ]

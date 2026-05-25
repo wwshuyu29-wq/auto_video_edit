@@ -2,7 +2,7 @@
   "library_id": "figpad-xiaoyu-justin-write-assets",
   "library_name": "FigPad product proof plus Xiaoyu real-person hook",
   "asset_type": "mixed_real_person_hook_and_product_footage",
-  "usage_rule": "Use Xiaoyu only for the opening reaction hook. Use the rendered FigPad SVG Editor proof video for product workflow segments because raw MOV sources are unavailable.",
+  "usage_rule": "Use Xiaoyu clips only for opening reaction hooks. For FigPad product proof, prefer raw handheld product clips from the research-connect source library and match by feature: SVG Editor/editability, export to PPTX/SVG, SVG Converter, or image-to-image. Keep the rendered proof video as a fallback or full-workflow reference, not as the only product source.",
   "assets": [
     {
       "clip_id": "02_xiaoyu_hook_IMG_5551",
@@ -34,9 +34,98 @@
       "shot_type": "rendered FigPad SVG Editor product proof video",
       "scene": "FigPad generated figure, SVG Editor, editable canvas, zoom proof",
       "best_use": [
-        "use rendered proof segments when raw MOV sources are unavailable",
+        "fallback full-workflow reference",
+        "use only when a rendered stitched proof is preferred over raw handheld clips",
         "show SVG Editor and editable canvas workflow"
+      ],
+      "notes": "Raw product proof clips are now available in the FigPad research-connect source library; prefer raw clips for new native-feeling edits."
+    },
+    {
+      "clip_id": "05_click_svg_edit",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/05_click_svg_edit.mov",
+      "duration_s": 3.597,
+      "feature_group": "svg_editor",
+      "shot_type": "handheld product workflow / click SVG Edit",
+      "scene": "generated FigPad figure page transitioning into SVG Editor",
+      "best_use": [
+        "click SVG Edit",
+        "advisor wants changes but figure needs to stay editable",
+        "transition from generated figure to editable canvas"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 3.4,
+          "reason": "Shows the exact action that opens SVG Editor from the generated figure."
+        }
+      ]
+    },
+    {
+      "clip_id": "07_svg_editor_edit_demo_2",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/07_svg_editor_edit_demo_2.mov",
+      "duration_s": 4.908,
+      "feature_group": "svg_editor",
+      "shot_type": "handheld product proof / editable SVG canvas",
+      "scene": "FigPad SVG Editor with selected editable figure elements",
+      "best_use": [
+        "strong editability proof",
+        "show the figure is not a flat image",
+        "final proof for SVG Editor angle"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 4.7,
+          "reason": "Shows active editing on the generated figure."
+        }
+      ]
+    },
+    {
+      "clip_id": "09_export_ppt_workflow",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/09_export_ppt_workflow.mov",
+      "duration_s": 5.68,
+      "feature_group": "export_to_ppt",
+      "shot_type": "handheld product workflow / export modal",
+      "scene": "FigPad generated figure page opening Export and showing PNG, JPG, SVG Vector, Editable PPTX, Responsive SVG options",
+      "best_use": [
+        "export PPTX proof",
+        "download workflow",
+        "format choice proof",
+        "PowerPoint portability angle"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 5.4,
+          "reason": "Export modal and PPTX/SVG options are visible."
+        }
+      ]
+    },
+    {
+      "clip_id": "10_ppt_export_result",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/10_ppt_export_result.mov",
+      "duration_s": 2.918,
+      "feature_group": "export_to_ppt",
+      "shot_type": "handheld final proof / exported PowerPoint result",
+      "scene": "PowerPoint window showing exported FigPad figure",
+      "best_use": [
+        "final proof",
+        "editable PowerPoint result",
+        "CTA ending for PPT export angle"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 2.8,
+          "reason": "Short final proof that the exported figure opens in PowerPoint."
+        }
       ]
     }
+  ],
+  "notes": [
+    "FigPad has multiple feature stories; do not mix every feature into one short video unless the script explicitly asks for it.",
+    "For the advisor/figure-not-editable angle, prioritize SVG Editor clips 05-08.",
+    "For export/PowerPoint portability, use 09_export_ppt_workflow plus 10_ppt_export_result.",
+    "For converter or image-to-image angles, use those source-library clips as separate feature paths."
   ]
 }

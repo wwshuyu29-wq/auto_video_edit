@@ -7,7 +7,9 @@
     "FigPad has multiple feature stories. Do not force every feature into one TikTok video.",
     "Use Google Scholar as the academic-trust opening, then move into one clear FigPad workflow.",
     "Treat clips as action segments. Trim and speed up by caption beat; do not loop clips to fill time.",
-    "The strongest first direction is generate figure -> SVG Edit -> editable canvas proof."
+    "The strongest first direction is generate figure -> SVG Edit -> editable canvas proof.",
+    "FigPad has separate feature paths: text-to-figure + SVG editor, export to PPT/PPTX, SVG converter, and image-to-image. Label and match by feature instead of mixing all functionality into one video.",
+    "Use the clean raw 09_export_ppt_workflow.mov for export dialog/PPTX proof; keep the rebuilt clip only as a fallback."
   ],
   "assets": [
     {
@@ -336,32 +338,43 @@
       "quality_score": 8,
       "shot_type": "export editable PPT workflow",
       "camera_motion": "handheld click action",
-      "scene": "FigPad export dialog",
+      "scene": "FigPad generated figure page opening the Export dialog and choosing downloadable formats",
       "visible_objects": [
-        "export menu",
-        "PPT/PPTX option",
-        "generated figure"
+        "generated scientific figure",
+        "Export button",
+        "Export dialog",
+        "PNG option",
+        "JPG option",
+        "SVG Vector option",
+        "Editable PPTX option",
+        "Responsive SVG option"
       ],
       "emotion": "workflow completion / portability",
       "best_use": [
-        "export PPT",
-        "editable PPT proof",
-        "download workflow"
+        "export PPTX proof",
+        "download workflow",
+        "format choice proof",
+        "end beat for editable figure workflow"
       ],
       "not_good_for": [
         "opening hook",
-        "SVG converter"
+        "SVG converter upload workflow",
+        "image-to-image feature"
       ],
       "usable_segments": [
         {
           "start": 0.2,
           "end": 5.4,
-          "reason": "Shows export action and PPT format choice."
+          "reason": "Shows the Export button, export modal, and PPTX/SVG format options clearly."
         }
       ],
       "text_overlay_safe_area": "center top; keep export dialog visible",
       "audio_quality": "not needed",
-      "recommended_speed": 1.5
+      "recommended_speed": 1.5,
+      "feature_group": "export_to_ppt",
+      "function_label": "export generated figure to PPTX / SVG formats",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/contact_sheets/timelines/09_export_ppt_workflow_timeline.jpg",
+      "notes": "Clean re-recorded finger/cursor workflow for export. Use this over the rebuilt fallback when showing PPTX or SVG export from a generated figure."
     },
     {
       "clip_id": "10_ppt_export_result",
@@ -579,7 +592,7 @@
       "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/derived/09_export_ppt_workflow_rebuilt.mp4",
       "duration": 4,
       "orientation": "vertical_derived_from_timeline_still",
-      "quality_score": 6,
+      "quality_score": 4,
       "shot_type": "derived export PPT still clip",
       "camera_motion": "static rebuilt still",
       "scene": "FigPad export dialog / PPT option",
@@ -590,13 +603,12 @@
       ],
       "emotion": "workflow completion / portability",
       "best_use": [
-        "export PPT",
-        "PPT option proof",
-        "transition when raw export clip is broken"
+        "fallback only if the clean raw export clip is unavailable"
       ],
       "not_good_for": [
-        "opening hook",
-        "dynamic product proof"
+        "primary export proof",
+        "dynamic product demo",
+        "new edits when raw 09_export_ppt_workflow.mov is available"
       ],
       "usable_segments": [
         {
@@ -608,7 +620,7 @@
       "text_overlay_safe_area": "upper center; keep export dialog visible",
       "audio_quality": "not needed",
       "recommended_speed": 1,
-      "notes": "Temporary derived fallback. Replace with a clean re-recorded export PPT clip when available."
+      "notes": "Obsolete fallback from an older broken export recording. Prefer raw 09_export_ppt_workflow.mov now that the clean re-recorded clip is present."
     }
   ]
 }

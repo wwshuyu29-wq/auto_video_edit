@@ -223,13 +223,24 @@
       "has_audio": true,
       "codec": "h264",
       "tags": {
-        "scene": "",
-        "subject": "",
-        "action": "",
-        "shot_type": "",
-        "quality": "",
-        "best_ranges": [],
-        "matched_beats": []
+        "scene": "FigPad generated figure page with Export dialog and format choices",
+        "subject": "generated scientific figure, export modal, PPTX/SVG download options",
+        "action": "click Export and choose Editable PPTX / SVG formats",
+        "shot_type": "handheld laptop screen export workflow",
+        "quality": "usable; clean replacement for older export fallback",
+        "best_ranges": [
+          {
+            "start": 0.2,
+            "end": 5.4,
+            "reason": "Export modal and downloadable format options stay visible."
+          }
+        ],
+        "matched_beats": [
+          "export PPTX proof",
+          "download workflow",
+          "editable figure portability",
+          "final CTA proof"
+        ]
       }
     },
     {
