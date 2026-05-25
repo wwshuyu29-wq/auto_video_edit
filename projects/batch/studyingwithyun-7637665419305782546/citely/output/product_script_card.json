@@ -1,0 +1,69 @@
+{
+  "source_reference_template": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7637665419305782546/reference_template_breakdown.json",
+  "product_name": "Citely",
+  "template_name": "teacher accusation -> proof report/workflow",
+  "script_title": "my professor thinks my AI references are fake because one citation looks too perfect",
+  "script_angle": "citation verification proof workflow",
+  "target_viewer": [
+    "students",
+    "researchers",
+    "academic writers",
+    "journal editors"
+  ],
+  "full_script": [
+    {
+      "time": "0-4s",
+      "beat": "hook",
+      "voiceover": "my professor thinks my AI references are fake because one citation looks too perfect",
+      "on_screen_text": "my professor thinks my AI references are fake because one citation looks too perfect",
+      "visual_need": "AI student selfie hook, anxious/confessional",
+      "preferred_clip_id": "ai_human_hook"
+    },
+    {
+      "time": "4-7s",
+      "beat": "product_reveal",
+      "voiceover": "so I check the reference trail in Citely",
+      "on_screen_text": "so I check the reference trail in Citely",
+      "visual_need": "Citely product reveal",
+      "preferred_clip_id": "01_citely_landing_page"
+    },
+    {
+      "time": "7-10s",
+      "beat": "verify_entry",
+      "voiceover": "I go straight to Verify References",
+      "on_screen_text": "I go straight to Verify References",
+      "visual_need": "click Verify References",
+      "preferred_clip_id": "05_click_verify_references"
+    },
+    {
+      "time": "10-14s",
+      "beat": "input",
+      "voiceover": "paste the suspicious citation",
+      "on_screen_text": "paste the suspicious citation",
+      "visual_need": "reference input workflow",
+      "preferred_clip_id": "06_verify_references_input"
+    },
+    {
+      "time": "14-18s",
+      "beat": "result",
+      "voiceover": "then I check what actually matches",
+      "on_screen_text": "then I check what actually matches",
+      "visual_need": "verification result proof",
+      "preferred_clip_id": "07_verify_references_results"
+    },
+    {
+      "time": "18-21s",
+      "beat": "source_proof",
+      "voiceover": "and trace the claim back to real sources",
+      "on_screen_text": "and trace the claim back to real sources",
+      "visual_need": "find sources result proof",
+      "preferred_clip_id": "04_find_sources_results"
+    }
+  ],
+  "compliance_notes": [
+    "Do not say Citely guarantees 100% citation accuracy.",
+    "Do not say Citely replaces human academic judgment.",
+    "Do not say Citely guarantees manuscript acceptance.",
+    "Do not say Citely can verify every possible source in the world."
+  ]
+}

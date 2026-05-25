@@ -1,0 +1,69 @@
+{
+  "source_reference_template": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7637665419305782546/reference_template_breakdown.json",
+  "product_name": "Clearfy",
+  "template_name": "teacher accusation -> proof report/workflow",
+  "script_title": "my teacher thinks I used AI because one sentence sounds too polished",
+  "script_angle": "AI-likelihood review and revision workflow",
+  "target_viewer": [
+    "students",
+    "college students",
+    "essay writers",
+    "academic writers"
+  ],
+  "full_script": [
+    {
+      "time": "0-4s",
+      "beat": "hook",
+      "voiceover": "my teacher thinks I used AI because one sentence sounds too polished",
+      "on_screen_text": "my teacher thinks I used AI because one sentence sounds too polished",
+      "visual_need": "AI student selfie hook, anxious/confessional",
+      "preferred_clip_id": "ai_human_hook"
+    },
+    {
+      "time": "4-7s",
+      "beat": "product_reveal",
+      "voiceover": "so I check the draft in Clearfy first",
+      "on_screen_text": "so I check the draft in Clearfy first",
+      "visual_need": "Clearfy homepage/input setup",
+      "preferred_clip_id": "05_clearfy_homepage_input_empty"
+    },
+    {
+      "time": "7-11s",
+      "beat": "detector",
+      "voiceover": "it shows which sentences look AI-heavy",
+      "on_screen_text": "it shows which sentences look AI-heavy",
+      "visual_need": "AI detector scan proof",
+      "preferred_clip_id": "01_clearfy_ai_detector_scan_results"
+    },
+    {
+      "time": "11-15s",
+      "beat": "result_bridge",
+      "voiceover": "then I review the flagged parts",
+      "on_screen_text": "then I review the flagged parts",
+      "visual_need": "detector result plus highlighted sentences",
+      "preferred_clip_id": "04_clearfy_detector_to_ai_result"
+    },
+    {
+      "time": "15-18s",
+      "beat": "humanizer",
+      "voiceover": "and rewrite the parts that sound robotic",
+      "on_screen_text": "and rewrite the parts that sound robotic",
+      "visual_need": "humanizer input mode proof",
+      "preferred_clip_id": "02_clearfy_humanizer_input_mode"
+    },
+    {
+      "time": "18-21s",
+      "beat": "action",
+      "voiceover": "then I still read it before using it",
+      "on_screen_text": "then I still read it before using it",
+      "visual_need": "humanize action close-up",
+      "preferred_clip_id": "03_clearfy_humanizer_closeup"
+    }
+  ],
+  "compliance_notes": [
+    "Do not say Clearfy guarantees bypassing Turnitin or any AI detector.",
+    "Do not promise 0% AI detection or guaranteed undetectability.",
+    "Do not encourage academic dishonesty, plagiarism, or submitting unreviewed AI-generated work.",
+    "Do not say detector results are perfectly accurate."
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "product": {
+    "product_name": "Literfy",
+    "one_liner": "Literfy is an AI academic research tool that helps students and researchers find papers, organize sources, and start literature reviews faster.",
+    "target_users": [
+      "graduate students",
+      "PhD students",
+      "Master students",
+      "researchers",
+      "students writing literature reviews",
+      "academic writers"
+    ],
+    "core_features": [
+      {
+        "feature_name": "Find Papers",
+        "description": "Search and discover academic papers based on a research topic.",
+        "user_benefit": "Helps users find relevant papers faster instead of opening many random tabs.",
+        "visual_need": "Screen recording of typing a research topic and getting paper results."
+      },
+      {
+        "feature_name": "Paper Discovery / Related Papers",
+        "description": "Help users discover relevant or related papers for a research topic.",
+        "user_benefit": "Helps users avoid missing useful papers during early research.",
+        "visual_need": "Screen recording of paper result list, related papers, or ranked results."
+      },
+      {
+        "feature_name": "Literature Review Outline",
+        "description": "Generate a structured outline for a literature review based on selected papers.",
+        "user_benefit": "Helps users stop staring at a blank page and start with a clear structure.",
+        "visual_need": "Screen recording of selected papers turning into an outline."
+      },
+      {
+        "feature_name": "AI Literature Review Draft",
+        "description": "Generate a structured literature review draft based on collected papers.",
+        "user_benefit": "Helps users move from paper collection to a draftable structure faster.",
+        "visual_need": "Screen recording of a review draft or editable review sections."
+      },
+      {
+        "feature_name": "Citation / Export Workflow",
+        "description": "Export citations or research materials into downstream writing workflows.",
+        "user_benefit": "Helps users organize and move research materials into writing tools.",
+        "visual_need": "Screen recording of export options, citation export, or document export."
+      }
+    ],
+    "most_painful_user_scenarios": [
+      "A student starts a literature review and opens 30-50 random tabs.",
+      "A PhD or Master student does not know which papers are worth reading first.",
+      "A researcher has papers but does not know how to organize them into a review structure.",
+      "A student wastes hours before actually writing anything."
+    ],
+    "forbidden_claims": [
+      "Do not say Literfy writes a perfect literature review.",
+      "Do not say Literfy replaces real research.",
+      "Do not say citations are always 100% correct.",
+      "Do not tell users to submit AI output directly.",
+      "Do not claim guaranteed acceptance by journals or professors.",
+      "Do not claim the output is publication-ready without human review."
+    ],
+    "good_tiktok_angles": [
+      "If your literature review starts with 50 random tabs open, this is for you.",
+      "This is how I start a literature review now.",
+      "I stopped staring at a blank page before writing my literature review.",
+      "Stop searching papers manually like this."
+    ],
+    "source_grounding_note": "Literfy generates literature review outlines and drafts based on real academic papers selected or discovered in the workflow.",
+    "allowed_claim_boundaries": [
+      "Can say Literfy works from real academic papers in the workflow.",
+      "Can say Literfy helps generate a structured literature review draft based on selected/collected papers.",
+      "Can say Literfy helps users move from real papers to an organized review starting point.",
+      "Should still say users need to review, edit, and verify the output."
+    ]
+  },
+  "product_name": "Literfy",
+  "human_hook": {
+    "enabled": true
+  },
+  "human_hook_duration_s": 4,
+  "reference_video_url": "https://www.tiktok.com/@studyingwithyun/video/7637665419305782546?_r=1&_t=ZS-96LilpoWWKz",
+  "reference_hook_summary": "Reference opens with a close vertical selfie of a student covering their mouth in anxious disbelief, then cuts to a handheld laptop proof/report with finger pointing.",
+  "human_hook_observation": {
+    "detected": true,
+    "status": "manual_frame_review",
+    "observation": {
+      "person": {
+        "count": 1,
+        "framing": "vertical close-up selfie, mouth partly covered by one hand, original fictional student creator"
+      },
+      "action": "student covers their mouth, looks worried at the phone, then glances toward a laptop beside them",
+      "expression": "anxious, embarrassed, confessional disbelief",
+      "environment": "student desk or dorm study setup with laptop nearby, warm indoor lighting",
+      "camera": "front-facing phone camera, subtle handheld movement, native TikTok feel",
+      "prompt_inputs": {
+        "motion": "covers mouth with one hand, wide worried eyes, then glances toward the laptop screen as if about to show proof",
+        "scene": "student desk with laptop, dorm or bedroom study lighting",
+        "emotion": "anxious, embarrassed, confessional disbelief"
+      }
+    }
+  },
+  "viral_pattern_card": {
+    "reference_url": "https://www.tiktok.com/@studyingwithyun/video/7637665419305782546?_r=1&_t=ZS-96LilpoWWKz",
+    "reference_video": "/Users/kk/Desktop/auto video/projects/reference/studyingwithyun-7637665419305782546/references/7637665419305782546/reference.mp4",
+    "reference_caption": "what circle of hell am i living in — #ai #chatgpt #university #essay #GPTZeroAd",
+    "duration_s": 26.306,
+    "template_id": "studyingwithyun_teacher_accusation_proof_report",
+    "observed_structure": [
+      {
+        "time": "0-4s",
+        "role": "human hook",
+        "visual": "close selfie, student covers mouth, anxious/confessional expression",
+        "on_screen_text": "my teacher thinks i used AI because of an em-dash when i have a whole gptzero writing report showing me typing out every word."
+      },
+      {
+        "time": "4-9s",
+        "role": "proof reveal",
+        "visual": "handheld laptop screen; Google Docs with GPTZero sidebar/report visible",
+        "action": "camera moves from face to laptop screen"
+      },
+      {
+        "time": "9-15s",
+        "role": "finger proof",
+        "visual": "finger points at report status / AI probability / Natural result",
+        "action": "use finger to guide viewer attention"
+      },
+      {
+        "time": "15-26s",
+        "role": "report details",
+        "visual": "typing analysis / natural typing patterns / large paste checks",
+        "action": "shows evidence report as proof"
+      }
+    ],
+    "script_formula": "[authority/teacher thinks X] + [tiny reason or unfair suspicion] + [but I have tool/workflow proof showing Y]",
+    "visual_formula": "AI/person selfie anxiety hook -> hard cut to handheld laptop proof -> finger points at key evidence -> close proof/report detail",
+    "reuse_rules": [
+      "Keep the anxious student confession energy.",
+      "Do not copy the original creator identity or exact face.",
+      "Do not claim guaranteed detector bypass or academic misconduct.",
+      "Replace GPTZero report proof with each product’s truthful workflow proof.",
+      "Use hand/finger product footage after the hook whenever available."
+    ]
+  }
+}

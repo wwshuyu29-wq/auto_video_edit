@@ -1,0 +1,69 @@
+{
+  "source_reference_template": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7637665419305782546/reference_template_breakdown.json",
+  "product_name": "FigPad",
+  "template_name": "teacher accusation -> proof report/workflow",
+  "script_title": "my PI thinks I just used a random AI image because the figure looks too clean",
+  "script_angle": "editable scientific figure proof workflow",
+  "target_viewer": [
+    "researchers",
+    "PhD students",
+    "Master students",
+    "lab members"
+  ],
+  "full_script": [
+    {
+      "time": "0-4s",
+      "beat": "hook",
+      "voiceover": "my PI thinks I just used a random AI image because the figure looks too clean",
+      "on_screen_text": "my PI thinks I just used a random AI image because the figure looks too clean",
+      "visual_need": "AI student selfie hook, anxious/confessional",
+      "preferred_clip_id": "ai_human_hook"
+    },
+    {
+      "time": "4-7s",
+      "beat": "generated_result",
+      "voiceover": "when I have FigPad showing the figure draft",
+      "on_screen_text": "when I have FigPad showing the figure draft",
+      "visual_need": "generated figure result proof",
+      "preferred_clip_id": "04_text_to_figure_result"
+    },
+    {
+      "time": "7-10s",
+      "beat": "edit_entry",
+      "voiceover": "then I open it in SVG Edit",
+      "on_screen_text": "then I open it in SVG Edit",
+      "visual_need": "click SVG Edit workflow",
+      "preferred_clip_id": "05_click_svg_edit"
+    },
+    {
+      "time": "10-14s",
+      "beat": "edit_proof",
+      "voiceover": "and keep editing the labels myself",
+      "on_screen_text": "and keep editing the labels myself",
+      "visual_need": "editable SVG canvas proof",
+      "preferred_clip_id": "07_svg_editor_edit_demo_2"
+    },
+    {
+      "time": "14-18s",
+      "beat": "export",
+      "voiceover": "then I export it as PPTX or SVG",
+      "on_screen_text": "then I export it as PPTX or SVG",
+      "visual_need": "export format modal proof",
+      "preferred_clip_id": "09_export_ppt_workflow"
+    },
+    {
+      "time": "18-21s",
+      "beat": "result",
+      "voiceover": "so it is not just a flat AI image",
+      "on_screen_text": "so it is not just a flat AI image",
+      "visual_need": "PowerPoint result proof",
+      "preferred_clip_id": "10_ppt_export_result"
+    }
+  ],
+  "compliance_notes": [
+    "Do not say FigPad guarantees journal-ready figures without editing.",
+    "Do not say FigPad replaces professional scientific illustration in all cases.",
+    "Do not say every generated figure is scientifically accurate by default.",
+    "Do not claim users never need to review labels, structures, or details."
+  ]
+}

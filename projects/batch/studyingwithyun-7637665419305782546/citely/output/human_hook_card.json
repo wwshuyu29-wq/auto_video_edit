@@ -1,0 +1,63 @@
+{
+  "status": "fallback_asset_used",
+  "detected": true,
+  "analysis": {
+    "duration_s": 4,
+    "character": "young adult student/creator, original fictional person, not the reference creator",
+    "framing": "vertical close-up selfie, mouth partly covered by one hand, original fictional student creator",
+    "action": "covers mouth with one hand, wide worried eyes, then glances toward the laptop screen as if about to show proof",
+    "emotion": "anxious, embarrassed, confessional disbelief",
+    "environment": "student desk with laptop, dorm or bedroom study lighting",
+    "camera": "front-facing phone camera, subtle handheld movement, native TikTok feel",
+    "overlay_policy": "generate clean video without baked-in text; renderer will add captions later",
+    "identity_policy": "do not copy the reference person's face, identity, clothing, or exact likeness"
+  },
+  "text_to_video_prompt": "Realistic vertical 9:16 smartphone selfie video, 4 seconds. An original young adult student creator sits at a student desk with laptop, dorm or bedroom study lighting. The creator looks anxious, embarrassed, confessional disbelief, covers mouth with one hand, wide worried eyes, then glances toward the laptop screen as if about to show proof. Natural handheld phone motion, warm indoor lighting, authentic TikTok studytok style, close-up face first, laptop visible but not brand-specific, no logos, no readable text, no subtitles baked into the video. The moment should feel like a peer sharing a useful Citely workflow.",
+  "negative_prompt": "Do not imitate or recreate the reference creator's face or identity. No watermark, no logo, no readable on-screen text, no distorted hands, no extra limbs, no uncanny face, no product UI.",
+  "generation": {
+    "provider": "evolink",
+    "model": "seedance-2.0-text-to-video",
+    "dry_run": false,
+    "attempted": true,
+    "status": "failed",
+    "message": "HTTP Error 403: Forbidden",
+    "fallback_video_path": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7637665419305782546/citely/output/generated_hooks/ai_human_hook.mp4",
+    "fallback_reason": "Evolink generation returned HTTP 403; reused local no-text AI selfie hook."
+  },
+  "asset": {
+    "clip_id": "ai_human_hook",
+    "file_path": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7637665419305782546/citely/output/generated_hooks/ai_human_hook.mp4",
+    "duration": 4.041,
+    "orientation": "vertical_ai_selfie_intro",
+    "quality_score": 7,
+    "shot_type": "AI generated human selfie hook",
+    "camera_motion": "subtle selfie movement",
+    "scene": "student desk / dorm study setup with laptop",
+    "visible_objects": [
+      "student creator",
+      "laptop",
+      "desk"
+    ],
+    "emotion": "worried, surprised, confessional",
+    "best_use": [
+      "opening hook",
+      "student anxiety setup",
+      "teacher/advisor accusation hook"
+    ],
+    "not_good_for": [
+      "product proof",
+      "final result proof"
+    ],
+    "usable_segments": [
+      {
+        "start": 0,
+        "end": 4.0,
+        "reason": "AI-generated student reaction hook with no baked-in caption text."
+      }
+    ],
+    "text_overlay_safe_area": "lower center; keep face readable",
+    "audio_quality": "not needed",
+    "notes": "Fallback AI hook used because live Evolink generation returned HTTP 403 for new hook requests."
+  },
+  "evidence_gaps": []
+}

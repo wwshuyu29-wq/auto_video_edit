@@ -1,0 +1,42 @@
+{
+  "reference_url": "https://www.tiktok.com/@studyingwithyun/video/7637665419305782546?_r=1&_t=ZS-96LilpoWWKz",
+  "reference_video": "/Users/kk/Desktop/auto video/projects/reference/studyingwithyun-7637665419305782546/references/7637665419305782546/reference.mp4",
+  "reference_caption": "what circle of hell am i living in — #ai #chatgpt #university #essay #GPTZeroAd",
+  "duration_s": 26.306,
+  "template_id": "studyingwithyun_teacher_accusation_proof_report",
+  "observed_structure": [
+    {
+      "time": "0-4s",
+      "role": "human hook",
+      "visual": "close selfie, student covers mouth, anxious/confessional expression",
+      "on_screen_text": "my teacher thinks i used AI because of an em-dash when i have a whole gptzero writing report showing me typing out every word."
+    },
+    {
+      "time": "4-9s",
+      "role": "proof reveal",
+      "visual": "handheld laptop screen; Google Docs with GPTZero sidebar/report visible",
+      "action": "camera moves from face to laptop screen"
+    },
+    {
+      "time": "9-15s",
+      "role": "finger proof",
+      "visual": "finger points at report status / AI probability / Natural result",
+      "action": "use finger to guide viewer attention"
+    },
+    {
+      "time": "15-26s",
+      "role": "report details",
+      "visual": "typing analysis / natural typing patterns / large paste checks",
+      "action": "shows evidence report as proof"
+    }
+  ],
+  "script_formula": "[authority/teacher thinks X] + [tiny reason or unfair suspicion] + [but I have tool/workflow proof showing Y]",
+  "visual_formula": "AI/person selfie anxiety hook -> hard cut to handheld laptop proof -> finger points at key evidence -> close proof/report detail",
+  "reuse_rules": [
+    "Keep the anxious student confession energy.",
+    "Do not copy the original creator identity or exact face.",
+    "Do not claim guaranteed detector bypass or academic misconduct.",
+    "Replace GPTZero report proof with each product’s truthful workflow proof.",
+    "Use hand/finger product footage after the hook whenever available."
+  ]
+}
