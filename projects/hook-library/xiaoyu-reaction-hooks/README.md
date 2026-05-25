@@ -32,6 +32,7 @@ Current clips:
 04_xiaoyu_hook_IMG_5564.mov  frozen wide-eyed shock
 05_xiaoyu_hook_IMG_5567.mov  neutral to sudden surprise, short hook
 06_xiaoyu_hook_IMG_5568.mov  points/reaches, covers mouth, extreme close-up
+07_xiaoyu_hook_IMG_5539.mov  surprised to concerned/skeptical close-up
 ```
 
 ## Matching Rules

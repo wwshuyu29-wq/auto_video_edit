@@ -1,0 +1,19 @@
+{
+  "text": "You can zoom in and keep tweaking the figure",
+  "beat": "detail_review",
+  "priority": "normal",
+  "width": 1080,
+  "height": 1920,
+  "output": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_alt_hook/overlays/overlay_04.png",
+  "style": {
+    "lines": [
+      "You can zoom in",
+      "and keep tweaking",
+      "the figure"
+    ],
+    "font_size": 58,
+    "line_gap": 6,
+    "y_ratio": 0.42,
+    "max_width": 820
+  }
+}

@@ -1,6 +1,6 @@
 {
   "footage_dir": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw",
-  "count": 7,
+  "count": 8,
   "items": [
     {
       "id": "00_xiaoyu_hook_IMG_5541",
@@ -8,11 +8,11 @@
       "relative_path": "00_xiaoyu_hook_IMG_5541.mov",
       "is_symlink": false,
       "symlink_target": null,
-      "duration_s": 3.685,
+      "duration_s": 3.26,
       "width": 1920,
       "height": 1080,
       "orientation": "landscape",
-      "fps": 58.98216615919965,
+      "fps": 59.00195694716243,
       "has_audio": true,
       "codec": "h264",
       "tags": {
@@ -151,6 +151,29 @@
       "height": 1080,
       "orientation": "landscape",
       "fps": 59.91084695393759,
+      "has_audio": true,
+      "codec": "h264",
+      "tags": {
+        "scene": "",
+        "subject": "",
+        "action": "",
+        "shot_type": "",
+        "quality": "",
+        "best_ranges": [],
+        "matched_beats": []
+      }
+    },
+    {
+      "id": "07_xiaoyu_hook_IMG_5539",
+      "path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-reaction-hooks/materials/raw/07_xiaoyu_hook_IMG_5539.mov",
+      "relative_path": "07_xiaoyu_hook_IMG_5539.mov",
+      "is_symlink": false,
+      "symlink_target": null,
+      "duration_s": 2.982,
+      "width": 1920,
+      "height": 1080,
+      "orientation": "landscape",
+      "fps": 58.23714585519412,
       "has_audio": true,
       "codec": "h264",
       "tags": {

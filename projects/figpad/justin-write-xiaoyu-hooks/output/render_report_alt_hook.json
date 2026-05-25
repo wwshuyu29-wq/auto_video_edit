@@ -1,0 +1,34 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/figpad/justin-write-xiaoyu-hooks/output/shot_matching_plan_alt_hook.json",
+    "asset_library": "projects/figpad/justin-write-xiaoyu-hooks/output/asset_library.json",
+    "selected_hook_clip": "06_xiaoyu_hook_IMG_5568",
+    "hook_segment": "06_xiaoyu_hook_IMG_5568 1.8-5.2s"
+  },
+  "outputs": {
+    "preview_video": "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_alt_hook/figpad_xiaoyu_justin_write_alt_hook.mp4",
+    "cover": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_alt_hook/figpad_xiaoyu_justin_write_alt_hook_cover.jpg",
+    "preview_sheet": "projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_alt_hook/figpad_xiaoyu_justin_write_alt_hook_sheet.jpg",
+    "captions": "projects/figpad/justin-write-xiaoyu-hooks/output/captions_alt_hook.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920,
+        "r_frame_rate": "30/1"
+      }
+    ],
+    "format": {
+      "duration": "15.400000",
+      "size": "9807523"
+    }
+  },
+  "notes": [
+    "Alternate hook version uses the later mouth-covered close-up segment from the only readable Xiaoyu source file.",
+    "No voiceover or music is included."
+  ]
+}

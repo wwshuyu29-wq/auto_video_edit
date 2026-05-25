@@ -1,0 +1,150 @@
+{
+  "variant_id": "figpad_xiaoyu_advisor_editable_figure_alt_hook",
+  "product_name": "FigPad",
+  "reference_template": "justin_write_story_reaction_proof",
+  "selected_hook_clip": "06_xiaoyu_hook_IMG_5568",
+  "editing_style": {
+    "pace": "fast",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "caption_style": "large white bold text with black outline, casual story-reaction rhythm"
+  },
+  "edit_plan": [
+    {
+      "beat": "human_reaction_story_hook",
+      "time": "0-3.4",
+      "clip_id": "06_xiaoyu_hook_IMG_5568",
+      "clip_start": 1.8,
+      "clip_end": 5.2,
+      "playback_speed": 1.0,
+      "on_screen_text": "my advisor said\n\"just edit this figure\"\n...it was a flat AI image",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "my advisor said",
+          "\"just edit this figure\"",
+          "...it was a flat AI image"
+        ],
+        "font_size": 52,
+        "line_gap": 8,
+        "max_width": 920,
+        "y_ratio": 0.34,
+        "highlight_terms": [
+          "advisor",
+          "edit",
+          "flat",
+          "AI"
+        ]
+      },
+      "reason": "Uses the later mouth-covered close-up section from the only readable Xiaoyu hook file, giving a different opening feel from the first version.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "product_action",
+      "time": "3.4-5.9",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 13.5,
+      "clip_end": 16.0,
+      "playback_speed": 1.0,
+      "on_screen_text": "It's done! let's edit it...",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "It's done!",
+          "let's edit it..."
+        ],
+        "font_size": 66,
+        "line_gap": 8,
+        "y_ratio": 0.42,
+        "max_width": 820
+      },
+      "reason": "Cuts into the existing FigPad proof at the exact edit-reveal beat.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "editor_entry",
+      "time": "5.9-8.4",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 16.0,
+      "clip_end": 18.5,
+      "playback_speed": 1.0,
+      "on_screen_text": "Click SVG Editor",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Click",
+          "SVG Editor"
+        ],
+        "font_size": 70,
+        "line_gap": 6,
+        "y_ratio": 0.45,
+        "max_width": 760,
+        "highlight_terms": [
+          "SVG"
+        ]
+      },
+      "reason": "Shows the product action that turns the figure into an editable workflow.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "editability_proof",
+      "time": "8.4-11.9",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 18.5,
+      "clip_end": 22.0,
+      "playback_speed": 1.0,
+      "on_screen_text": "Now edit it on the editable canvas",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Now edit it on",
+          "the editable canvas"
+        ],
+        "font_size": 60,
+        "line_gap": 9,
+        "y_ratio": 0.37,
+        "max_width": 820,
+        "highlight_terms": [
+          "editable"
+        ]
+      },
+      "reason": "Visible FigPad editor footage provides the product proof.",
+      "transition": "hard cut"
+    },
+    {
+      "beat": "detail_review",
+      "time": "11.9-15.4",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 22.0,
+      "clip_end": 25.5,
+      "playback_speed": 1.0,
+      "on_screen_text": "You can zoom in and keep tweaking the figure",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "You can zoom in",
+          "and keep tweaking",
+          "the figure"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.42,
+        "max_width": 820
+      },
+      "reason": "Ends on editable-canvas detail review, not perfect-output claims.",
+      "transition": "hard cut"
+    }
+  ],
+  "missing_assets": [
+    {
+      "need": "A different Xiaoyu source clip, such as 02_xiaoyu_hook_IMG_5551",
+      "reason": "The available 00-05 Xiaoyu MOV files have zero disk blocks and cannot be decoded."
+    }
+  ],
+  "risk_notes": [
+    "This is a different segment from the only readable Xiaoyu source file, not a different Xiaoyu source file.",
+    "Does not claim the figure is publication-ready without review.",
+    "Frames FigPad as an editable starting point and manual detail-review workflow."
+  ],
+  "needs_script_revision": false
+}

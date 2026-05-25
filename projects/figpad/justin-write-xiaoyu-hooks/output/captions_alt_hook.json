@@ -1,0 +1,133 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 3.4,
+      "duration": 3.4,
+      "text": "my advisor said\n\"just edit this figure\"\n...it was a flat AI image",
+      "beat": "human_reaction_story_hook",
+      "clip_id": "06_xiaoyu_hook_IMG_5568",
+      "clip_start": 1.8,
+      "clip_end": 5.2,
+      "playback_speed": 1,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "my advisor said",
+          "\"just edit this figure\"",
+          "...it was a flat AI image"
+        ],
+        "font_size": 52,
+        "line_gap": 8,
+        "max_width": 920,
+        "y_ratio": 0.34,
+        "highlight_terms": [
+          "advisor",
+          "edit",
+          "flat",
+          "AI"
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.4,
+      "end": 5.9,
+      "duration": 2.5000000000000004,
+      "text": "It's done! let's edit it...",
+      "beat": "product_action",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 13.5,
+      "clip_end": 16,
+      "playback_speed": 1,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "It's done!",
+          "let's edit it..."
+        ],
+        "font_size": 66,
+        "line_gap": 8,
+        "y_ratio": 0.42,
+        "max_width": 820
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.9,
+      "end": 8.4,
+      "duration": 2.5,
+      "text": "Click SVG Editor",
+      "beat": "editor_entry",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 16,
+      "clip_end": 18.5,
+      "playback_speed": 1,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Click",
+          "SVG Editor"
+        ],
+        "font_size": 70,
+        "line_gap": 6,
+        "y_ratio": 0.45,
+        "max_width": 760,
+        "highlight_terms": [
+          "SVG"
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.4,
+      "end": 11.9,
+      "duration": 3.5,
+      "text": "Now edit it on the editable canvas",
+      "beat": "editability_proof",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 18.5,
+      "clip_end": 22,
+      "playback_speed": 1,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "Now edit it on",
+          "the editable canvas"
+        ],
+        "font_size": 60,
+        "line_gap": 9,
+        "y_ratio": 0.37,
+        "max_width": 820,
+        "highlight_terms": [
+          "editable"
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 11.9,
+      "end": 15.4,
+      "duration": 3.5,
+      "text": "You can zoom in and keep tweaking the figure",
+      "beat": "detail_review",
+      "clip_id": "figpad_svg_editor_v1_video",
+      "clip_start": 22,
+      "clip_end": 25.5,
+      "playback_speed": 1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "You can zoom in",
+          "and keep tweaking",
+          "the figure"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.42,
+        "max_width": 820
+      }
+    }
+  ]
+}

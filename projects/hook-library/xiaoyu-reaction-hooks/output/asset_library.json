@@ -4,7 +4,7 @@
   "asset_type": "real_person_hook_library",
   "updated_at": "2026-05-24",
   "source_folder": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw",
-  "count": 7,
+  "count": 8,
   "usage_rule": "Use these clips only for the opening human hook or creator reaction beat. The later proof/demo/result beats must still come from the product-specific footage library.",
   "crop_guidance": {
     "source_orientation": "landscape_1920x1080",
@@ -31,7 +31,7 @@
       "clip_id": "00_xiaoyu_hook_IMG_5541",
       "file_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/00_xiaoyu_hook_IMG_5541.mov",
       "contact_sheet_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/contact_sheets/timelines/00_xiaoyu_hook_IMG_5541.jpg",
-      "duration_s": 3.685,
+      "duration_s": 3.26,
       "source_resolution": "1920x1080",
       "orientation": "landscape",
       "quality_score": 0.9,
@@ -377,18 +377,70 @@
       "text_overlay_safe_area": "Use only very short text at the top early in the clip; avoid text in the final extreme close-up.",
       "audio_quality": "has_audio; usually replace or duck under voiceover/music",
       "notes": "Most dramatic clip in this set; rotate carefully to avoid overuse."
+    },
+    {
+      "clip_id": "07_xiaoyu_hook_IMG_5539",
+      "file_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/raw/07_xiaoyu_hook_IMG_5539.mov",
+      "contact_sheet_path": "projects/hook-library/xiaoyu-reaction-hooks/materials/contact_sheets/timelines/07_xiaoyu_hook_IMG_5539.jpg",
+      "duration_s": 2.982,
+      "source_resolution": "1920x1080",
+      "orientation": "landscape",
+      "quality_score": 0.87,
+      "shot_type": "real Xiaoyu selfie reaction hook",
+      "scene": "indoor close selfie framing; Xiaoyu in grey hoodie with blonde hair, room/clothing rack background",
+      "action": "Starts with open-mouth surprise, shifts into concerned or skeptical close look, then leans closer with a slight frown.",
+      "emotion": [
+        "surprised",
+        "concerned",
+        "skeptical"
+      ],
+      "camera_motion": "mostly static selfie framing with slight close-in movement",
+      "visible_objects": [
+        "Xiaoyu",
+        "grey hoodie",
+        "blonde hair",
+        "indoor room",
+        "clothing rack"
+      ],
+      "best_use": [
+        "opening hook for 'wait, I can edit this?' moments",
+        "creator reacts to a confusing or annoying research workflow",
+        "softer alternative to the high-shock 06 hook"
+      ],
+      "not_good_for": [
+        "panic/stress opening",
+        "mouth-covered secret reveal",
+        "final result proof"
+      ],
+      "usable_segments": [
+        {
+          "start_s": 0.0,
+          "end_s": 1.2,
+          "reason": "open-mouth surprise works for a fast wait/what hook"
+        },
+        {
+          "start_s": 1.2,
+          "end_s": 2.8,
+          "reason": "concerned skeptical look works for problem setup before product proof"
+        }
+      ],
+      "text_overlay_safe_area": "Upper-left and upper-right; avoid covering eyes and mouth in the center.",
+      "audio_quality": "has_audio; usually replace or duck under voiceover/music",
+      "notes": "Good lighter hook for FigPad or research-tool videos when the story is confusion rather than panic."
     }
   ],
   "selection_policy": {
     "confused_or_question_hook": [
-      "02_xiaoyu_hook_IMG_5551"
+      "02_xiaoyu_hook_IMG_5551",
+      "07_xiaoyu_hook_IMG_5539"
     ],
     "panic_or_stress_hook": [
       "01_xiaoyu_hook_IMG_5550"
     ],
     "short_fast_hook": [
       "05_xiaoyu_hook_IMG_5567",
-      "04_xiaoyu_hook_IMG_5564"
+      "04_xiaoyu_hook_IMG_5564",
+      "07_xiaoyu_hook_IMG_5539"
     ],
     "strong_shock_reveal": [
       "06_xiaoyu_hook_IMG_5568",

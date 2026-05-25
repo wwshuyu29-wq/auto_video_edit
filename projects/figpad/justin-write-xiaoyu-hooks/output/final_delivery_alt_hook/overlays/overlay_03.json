@@ -1,0 +1,21 @@
+{
+  "text": "Now edit it on the editable canvas",
+  "beat": "editability_proof",
+  "priority": "large",
+  "width": 1080,
+  "height": 1920,
+  "output": "/Users/kk/Desktop/auto video/projects/figpad/justin-write-xiaoyu-hooks/output/final_delivery_alt_hook/overlays/overlay_03.png",
+  "style": {
+    "lines": [
+      "Now edit it on",
+      "the editable canvas"
+    ],
+    "font_size": 60,
+    "line_gap": 9,
+    "y_ratio": 0.37,
+    "max_width": 820,
+    "highlight_terms": [
+      "editable"
+    ]
+  }
+}
