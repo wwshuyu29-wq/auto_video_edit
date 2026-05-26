@@ -322,17 +322,25 @@ def heuristic_observation(data: dict[str, Any], frame_index: dict[str, Any]) -> 
         },
         "action": "review hook frames manually" if not detected else "creator reacts to camera, then gestures toward laptop or screen",
         "expression": "unknown" if not detected else "anxious, surprised, confessional creator reaction",
+        "atmosphere": "unknown" if not detected else "urgent student study moment with a slightly anxious creator-native tone",
         "environment": "unknown" if not detected else "student desk or dorm study setup with laptop",
         "camera": "vertical 9:16 reference video; review frames for exact camera motion",
+        "lighting_color": "unknown" if not detected else "warm indoor lighting with natural phone-camera feel",
+        "differentiation_rule": "reuse only emotional function, framing category, and hook rhythm; change face, outfit, room layout, props, lighting, and gesture timing",
         "text_overlay": {
             "visible": "unknown",
             "style": "review extracted frames",
             "summary": "use OCR/vision output when available",
+            "safe_area": "keep hook captions away from the creator's eyes and main gesture",
         },
         "prompt_inputs": {
             "motion": "creator leans toward phone with small hand gesture" if detected else "",
             "scene": "student desk with laptop, warm indoor lighting" if detected else "",
             "emotion": "anxious, surprised, confessional" if detected else "",
+            "atmosphere": "urgent student study moment" if detected else "",
+            "framing": "vertical 9:16 close-up selfie or medium close-up" if detected else "",
+            "camera_motion": "subtle handheld phone movement" if detected else "",
+            "must_change": ["face", "outfit", "room layout", "props", "lighting", "gesture timing"] if detected else [],
         },
     }
     return {
@@ -380,8 +388,11 @@ def analyze_with_openai(frame_paths: list[Path], frame_index: dict[str, Any], mo
 
     instruction = (
         "Analyze these first seconds of a TikTok reference video. Return only JSON. "
-        "Detect whether this is a real-person/creator-on-camera hook. Describe person framing, action, expression, environment, camera motion, "
-        "visible text overlay style, and prompt_inputs for text-to-video generation. Do not identify the person or copy likeness."
+        "Detect whether this is a real-person/creator-on-camera hook. Describe person type/role, facial expression, body action, atmosphere, "
+        "scene and objects, framing/shot size, camera motion, lighting/color feel, and visible text overlay style/safe area. "
+        "Create prompt_inputs for text-to-video generation: scene, emotion, motion, atmosphere, framing, camera_motion, and must_change attributes. "
+        "The generated AI hook should be a silent reaction/gesture clip only, with no speaking, no lip-sync, no readable text, and no baked-in captions. "
+        "Do not identify the person or copy likeness. Do not produce a one-to-one remake; reuse only the emotional function, framing category, and hook rhythm."
     )
 
     if api_shape == "chat_completions":

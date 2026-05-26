@@ -196,11 +196,21 @@ def build_prompt(data: dict[str, Any], reference_text: str) -> tuple[dict[str, A
     scene = first_nonempty(prompt_inputs.get("scene"), observed.get("environment"), default=infer_scene(reference_text))
     emotion = first_nonempty(prompt_inputs.get("emotion"), observed.get("expression"), default=infer_emotion(reference_text))
     action = first_nonempty(prompt_inputs.get("motion"), observed.get("action"), default=infer_action(reference_text))
+    atmosphere = first_nonempty(prompt_inputs.get("atmosphere"), observed.get("atmosphere"), default="authentic creator-native study moment")
+    camera_motion = first_nonempty(prompt_inputs.get("camera_motion"), default="")
     camera = first_nonempty(observed.get("camera"), default="front-facing phone camera, subtle handheld movement, native TikTok feel")
+    if camera_motion and camera_motion.lower() not in camera.lower():
+        camera = f"{camera}, {camera_motion}"
+    lighting = first_nonempty(observed.get("lighting_color"), default="natural warm indoor lighting")
     framing = "vertical 9:16 smartphone selfie, close-up to medium close-up"
+    if isinstance(prompt_inputs.get("framing"), str) and prompt_inputs["framing"].strip():
+        framing = prompt_inputs["framing"].strip()
     person = observed.get("person") if isinstance(observed.get("person"), dict) else {}
     if isinstance(person.get("framing"), str) and person["framing"].strip():
         framing = person["framing"].strip()
+    must_change = prompt_inputs.get("must_change")
+    if not isinstance(must_change, list) or not must_change:
+        must_change = ["face", "outfit", "room layout", "props", "lighting", "gesture timing"]
     product = product_name(data)
     duration = int(data.get("human_hook_duration_s") or 4)
 
@@ -210,22 +220,33 @@ def build_prompt(data: dict[str, Any], reference_text: str) -> tuple[dict[str, A
         "framing": framing,
         "action": action,
         "emotion": emotion,
+        "atmosphere": atmosphere,
         "environment": scene,
         "camera": camera,
-        "overlay_policy": "generate clean video without baked-in text; renderer will add captions later",
+        "lighting_color": lighting,
+        "must_change": must_change,
+        "overlay_policy": "generate clean silent reaction video without baked-in text; renderer will add hook copy as captions later",
+        "speech_policy": "no speaking, no lip-sync, no dialogue; use only facial expression, posture, glance, and hand gesture",
         "identity_policy": "do not copy the reference person's face, identity, clothing, or exact likeness",
+        "differentiation_policy": "do not remake the reference one-to-one; change at least 3 visible attributes while preserving only emotional function and hook rhythm",
     }
 
     prompt = (
         f"Realistic vertical 9:16 smartphone selfie video, {duration} seconds. "
         f"An original young adult student creator sits at a {scene}. "
         f"The creator looks {emotion}, {action}. "
-        f"Natural handheld phone motion, warm indoor lighting, authentic TikTok studytok style, "
+        f"{lighting}, {atmosphere}. "
+        f"Natural handheld phone motion, authentic TikTok studytok style, "
         f"close-up face first, laptop visible but not brand-specific, no logos, no readable text, "
-        f"no subtitles baked into the video. The moment should feel like a peer sharing a useful {product} workflow."
+        f"no subtitles baked into the video. Silent reaction only: the creator does not speak, "
+        f"does not lip-sync, and communicates through facial expression, posture, glances, and a small gesture. "
+        f"Do not remake the reference video exactly; use a different face, outfit, room layout, props, lighting variation, and gesture timing. "
+        f"The moment should feel like a peer reacting before showing a useful {product} workflow."
     )
     negative = (
         "Do not imitate or recreate the reference creator's face or identity. "
+        "No speaking, no talking mouth, no lip-sync, no dialogue, no voiceover. "
+        "No one-to-one remake of the reference video, no same outfit, no same room, no same exact pose sequence. "
         "No watermark, no logo, no readable on-screen text, no distorted hands, no extra limbs, no uncanny face, no product UI."
     )
     return analysis, prompt, negative

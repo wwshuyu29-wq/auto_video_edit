@@ -31,7 +31,7 @@ The stable products are the cards/plans. Treat these as the source of truth for 
 
 - `reference_hook_analysis` only finds or best-effort downloads a single reference video, extracts the first seconds as frames/contact sheet, and writes visual observation JSON. It does not write product scripts or generate the AI hook.
 - `viral_deconstruction` only extracts why a reference account/video works. It does not write the user's product script.
-- `human_hook_generation` only detects/analyzes a真人出镜 opening hook, writes a text-to-video prompt, and optionally generates an opening AI human hook clip. It does not rewrite the product script or choose later product footage.
+- `human_hook_generation` only detects/analyzes a真人出镜 opening hook, writes a text-to-video prompt, and optionally generates an opening AI human hook clip. The generated AI human clip is a silent reaction/gesture asset only: no speaking, no lip-sync, no baked-in subtitles, no readable text. The hook copy is added later by `video_rendering` as overlays/subtitles. It does not rewrite the product script or choose later product footage.
 - `product_script_rewrite` only adapts a viral pattern card into product scripts. It does not choose footage.
 - `asset_matching` only maps script beats to assets and identifies missing footage. It does not rewrite the core script.
 - `video_rendering` only executes the approved shot plan and render assets. It does not re-decide content.
@@ -58,7 +58,31 @@ When the user sends a TikTok reference link with a real person on camera and ask
 
 For reference-video visual understanding, prefer `OPENAI_API_KEY` against the official OpenAI Responses API. Evolink keys must not be sent to the official OpenAI endpoint. If visual understanding should go through Evolink, configure an OpenAI-compatible Evolink endpoint with `EVOLINK_OPENAI_RESPONSES_ENDPOINT`, `EVOLINK_RESPONSES_ENDPOINT`, `EVOLINK_OPENAI_CHAT_COMPLETIONS_ENDPOINT`, `EVOLINK_CHAT_COMPLETIONS_ENDPOINT`, or `EVOLINK_OPENAI_BASE_URL`; then use `EVOLINK_API_KEY` or `AI_REAL_PERSON_VIDEO_API_KEY` against that endpoint only. The module should send extracted frames, not raw API keys or full secret-bearing env files.
 
-When a generated AI human hook is used, treat it as a normal asset library clip named `ai_human_hook`. The final edit should use that generated opening clip first, then continue matching the rest of the script to the user's uploaded product footage.
+When a generated AI human hook is used, treat it as a normal asset library clip named `ai_human_hook`. The final edit should use that generated opening clip first, then continue matching the rest of the script to the user's uploaded product footage. The visible hook sentence belongs in the render plan/caption overlay, not inside the generated video prompt as spoken dialogue.
+
+### AI Human Hook Prompt Rule
+
+For AI真人 text-to-video hooks, imitate the reference hook's reusable visual grammar, not its exact footage.
+
+Always split the reference hook into:
+
+- person type and role: student, creator, researcher, office worker, etc.
+- facial expression: anxious, shocked, amused, skeptical, relieved, confessional, etc.
+- body action: lean-in, cover mouth, eyebrow raise, glance to laptop, point to screen, pause, small hand gesture.
+- atmosphere: messy study desk, late-night dorm, quiet office, casual creator bedroom, urgent submission mood, etc.
+- scene and objects: laptop, notebook, desk lamp, paper, browser window, document, etc.
+- framing: close-up selfie, medium close-up, over-desk creator shot, handheld phone angle.
+- camera motion: subtle handheld shake, phone selfie drift, quick push-in, stationary desk shot.
+- lighting and color feel: warm indoor, cool monitor glow, natural daylight, low-light study vibe.
+- text safe area: where captions can be burned later without covering the face or key object.
+
+Then convert the analysis into a Seedance prompt for a clean reaction clip:
+
+```text
+[original fictional person] + [scene] + [expression] + [small action] + [camera/framing] + [atmosphere] + [silent/no text/no lip-sync constraints]
+```
+
+Do not generate a clip that is one-to-one with the reference. Change at least 3 visible attributes such as face, outfit, room layout, props, lighting, camera distance, angle, or gesture timing. Keep the emotional function and hook rhythm, not the original person's identity, exact clothing, exact room, exact action sequence, or exact caption.
 
 ## Workflow
 
