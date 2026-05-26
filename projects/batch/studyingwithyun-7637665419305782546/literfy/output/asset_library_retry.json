@@ -1,0 +1,45 @@
+{
+  "assets": [
+    {
+      "clip_id": "ai_human_hook",
+      "file_path": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7637665419305782546/literfy/output/generated_hooks_retry/ai_human_hook.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7637665419305782546/literfy/materials/contact_sheets/ai_human_hook.jpg",
+      "duration": 4.042,
+      "orientation": "vertical_ai_selfie_intro",
+      "quality_score": 8,
+      "shot_type": "AI generated human selfie hook",
+      "camera_motion": "subtle handheld selfie movement",
+      "scene": "student desk with laptop, dorm or bedroom study lighting",
+      "visible_objects": [
+        "student creator",
+        "laptop",
+        "study desk"
+      ],
+      "emotion": "anxious, embarrassed, confessional disbelief",
+      "best_use": [
+        "human hook",
+        "opening hook",
+        "creator reaction",
+        "student anxiety setup"
+      ],
+      "not_good_for": [
+        "product proof",
+        "final result proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 4.0,
+          "reason": "AI-generated opening human hook based on reference hook analysis."
+        }
+      ],
+      "text_overlay_safe_area": "lower center; keep face readable",
+      "audio_quality": "present but not required",
+      "notes": "Generated from human_hook_generation; use only as the opening hook."
+    }
+  ],
+  "status": "indexed",
+  "asset_count": 1,
+  "updated_at": "2026-05-26T02:54:38Z",
+  "note": "Includes AI-generated human hook clip when available."
+}

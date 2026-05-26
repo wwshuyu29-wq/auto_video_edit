@@ -28,6 +28,7 @@ from _shared import load_json, write_json  # noqa: E402
 REPO_ROOT = Path(__file__).resolve().parents[4]
 DEFAULT_MODEL = "seedance-2.0-text-to-video"
 DEFAULT_BASE_URL = "https://api.evolink.ai/v1"
+DEFAULT_QUALITY = "720p"
 
 
 def first_nonempty(*values: Any, default: str = "") -> str:
@@ -62,6 +63,15 @@ def load_env_value(name: str) -> str:
 
 def evolink_base_url() -> str:
     return load_env_value("EVOLINK_BASE_URL") or load_env_value("EVOLINK_API_BASE_URL") or DEFAULT_BASE_URL
+
+
+def env_bool(name: str, default: bool) -> bool:
+    value = load_env_value(name).lower()
+    if value in {"1", "true", "yes", "y", "on"}:
+        return True
+    if value in {"0", "false", "no", "n", "off"}:
+        return False
+    return default
 
 
 def collect_reference_text(data: dict[str, Any]) -> str:
@@ -227,6 +237,7 @@ def request_json(method: str, url: str, api_key: str, payload: dict[str, Any] | 
     request.add_header("Authorization", f"Bearer {api_key}")
     request.add_header("Content-Type", "application/json")
     request.add_header("Accept", "application/json")
+    request.add_header("User-Agent", "Mozilla/5.0 Codex TikTok Video Pipeline")
     with urllib.request.urlopen(request, timeout=timeout) as response:
         return json.loads(response.read().decode("utf-8"))
 
@@ -239,8 +250,12 @@ def create_video_task(prompt: str, negative_prompt: str, duration: int, api_key:
         "prompt": prompt,
         "negative_prompt": negative_prompt,
         "duration": duration,
+        "quality": load_env_value("EVOLINK_VIDEO_QUALITY") or DEFAULT_QUALITY,
         "aspect_ratio": "9:16",
+        "generate_audio": env_bool("EVOLINK_VIDEO_GENERATE_AUDIO", False),
     }
+    if env_bool("EVOLINK_VIDEO_WEB_SEARCH", False):
+        payload["model_params"] = {"web_search": True}
     return request_json("POST", endpoint, api_key, payload)
 
 
@@ -260,9 +275,14 @@ def poll_task(task_id: str, api_key: str, timeout_s: int, interval_s: int) -> di
     return last
 
 
-def download_file(url: str, out_path: Path) -> None:
+def download_file(url: str, out_path: Path, api_key: str = "") -> None:
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    with urllib.request.urlopen(url, timeout=180) as response:
+    request = urllib.request.Request(url)
+    request.add_header("Accept", "video/mp4,video/*,*/*")
+    request.add_header("User-Agent", "Mozilla/5.0 Codex TikTok Video Pipeline")
+    if api_key:
+        request.add_header("Authorization", f"Bearer {api_key}")
+    with urllib.request.urlopen(request, timeout=180) as response:
         out_path.write_bytes(response.read())
 
 
@@ -459,7 +479,7 @@ def build_card(args: argparse.Namespace) -> dict[str, Any]:
         result_url = generated_url(status)
         if str(status.get("status", "")).lower() not in {"completed", "succeeded", "success"} or not result_url:
             raise RuntimeError(f"Video task did not complete successfully: {status.get('status', 'unknown')}")
-        download_file(result_url, video_out)
+        download_file(result_url, video_out, api_key)
         asset = make_asset(Path(args.project_dir).resolve(), video_out, analysis)
         if args.asset_library:
             upsert_asset(Path(args.asset_library), asset)
