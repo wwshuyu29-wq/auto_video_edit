@@ -1,0 +1,14 @@
+{
+  "template_id": "studyingwithyun_without_chatgpt_proof_trail",
+  "source_url": "https://www.tiktok.com/@studyingwithyun/video/7634373938331553031?_r=1&_t=ZS-96LilpoWWKz",
+  "hook_visual_summary": "First seconds: extreme close selfie with hand covering mouth, playful/proud student reaction, overlay about showing off an essay written without ChatGPT, then hard cut to Google Docs and GPTZero writing report / typing analysis proof.",
+  "reusable_structure": "[self-authorship/proof flex hook] + [document/product reveal] + [process trail proof] + [risk/activity check evidence]",
+  "do_not_copy": [
+    "reference creator face or likeness",
+    "exact outfit or room",
+    "exact pose timing",
+    "exact GPTZero claims unless product provides them",
+    "baked-in text or speaking mouth in generated AI hook"
+  ],
+  "generation_rule": "Generate silent AI reaction assets only. Hook text is rendered later as caption overlay."
+}

@@ -1,0 +1,13 @@
+{
+  "account_url": "https://www.tiktok.com/@studyingwithyun",
+  "reference_video_url": "https://www.tiktok.com/@studyingwithyun/video/7634373938331553031?_r=1&_t=ZS-96LilpoWWKz",
+  "video_list": [
+    {
+      "video_url": "https://www.tiktok.com/@studyingwithyun/video/7634373938331553031?_r=1&_t=ZS-96LilpoWWKz",
+      "caption": "",
+      "frames_summary": "TikTok reference template. Extract visible subtitles, hook structure, and product-proof rhythm."
+    }
+  ],
+  "human_hook": {"enabled": true},
+  "human_hook_duration_s": 4
+}

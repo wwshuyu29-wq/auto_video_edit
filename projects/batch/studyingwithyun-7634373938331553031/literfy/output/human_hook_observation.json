@@ -1,0 +1,47 @@
+{
+  "status": "structured_from_reference_contact_sheet",
+  "detected": true,
+  "reference_video": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/reference.mp4",
+  "hook_window_s": [
+    0,
+    6
+  ],
+  "observation": {
+    "person": {
+      "count": 1,
+      "role": "student creator / studytok essay workflow creator",
+      "framing": "vertical 9:16 extreme close-up selfie, lower-middle caption-safe area",
+      "identity_policy": "do not copy reference creator face, identity, clothing, or exact likeness"
+    },
+    "action": "covers the mouth for a beat, leans toward the phone, then glances down toward the laptop with a small proud nod",
+    "expression": "proud but amused, like showing proof that the research workflow is organized",
+    "atmosphere": "late-night literature review flex, playful academic proof-of-work mood",
+    "environment": "a different cozy study desk with a laptop, notebook, highlighted paper notes, and coffee cup, not the reference room",
+    "camera": "vertical 9:16 phone selfie; subtle handheld selfie drift with a tiny lean-in",
+    "lighting_color": "warm indoor study lighting, visibly different from reference",
+    "differentiation_rule": "reuse only proof-pride emotional function and hand-over-mouth selfie grammar; change face, outfit, room layout, props, lighting, camera distance, and gesture timing",
+    "text_overlay": {
+      "visible": true,
+      "style": "large white TikTok caption with black outline, lower-middle placement",
+      "summary": "caption should be burned during render, not generated inside AI video",
+      "safe_area": "lower-middle; avoid covering eyes and mouth-covering hand"
+    },
+    "prompt_inputs": {
+      "scene": "a different cozy study desk with a laptop, notebook, highlighted paper notes, and coffee cup, not the reference room",
+      "emotion": "proud but amused, like showing proof that the research workflow is organized",
+      "motion": "covers the mouth for a beat, leans toward the phone, then glances down toward the laptop with a small proud nod",
+      "atmosphere": "late-night literature review flex, playful academic proof-of-work mood",
+      "framing": "vertical 9:16 extreme close-up selfie, lower-middle caption-safe area",
+      "camera_motion": "subtle handheld selfie drift with a tiny lean-in",
+      "must_change": [
+        "face",
+        "outfit",
+        "desk layout",
+        "props",
+        "lighting",
+        "gesture timing"
+      ]
+    }
+  },
+  "evidence_gaps": []
+}

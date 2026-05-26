@@ -1,0 +1,19 @@
+{
+  "created": 1779786283,
+  "duration": 288,
+  "id": "task-unified-1779786282-sfz84wyi",
+  "model": "seedance-2.0-text-to-video",
+  "object": "video.generation.task",
+  "progress": 100,
+  "results": [
+    "https://files.evolink.ai/003WE840ZDYX6V00VD/videos/2026/05/26/8d12e9a215294b069829b5ded8c56120.mp4"
+  ],
+  "status": "completed",
+  "task_info": {
+    "can_cancel": false
+  },
+  "type": "video",
+  "usage": {
+    "credits_used": 44
+  }
+}

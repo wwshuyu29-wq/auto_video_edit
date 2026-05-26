@@ -1,0 +1,47 @@
+{
+  "status": "structured_from_reference_contact_sheet",
+  "detected": true,
+  "reference_video": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/reference.mp4",
+  "hook_window_s": [
+    0,
+    6
+  ],
+  "observation": {
+    "person": {
+      "count": 1,
+      "role": "student creator / studytok essay workflow creator",
+      "framing": "vertical 9:16 close-up selfie, face off-center with captions safe below",
+      "identity_policy": "do not copy reference creator face, identity, clothing, or exact likeness"
+    },
+    "action": "covers mouth with one hand, gives a small embarrassed smile, glances toward laptop, then shrugs lightly",
+    "expression": "proud but nervous, like showing a draft review workflow before submission",
+    "atmosphere": "college essay revision proof-of-work mood, casual and slightly anxious",
+    "environment": "a different student bedroom desk with a laptop showing an essay draft glow, notebook nearby, not the reference room",
+    "camera": "vertical 9:16 phone selfie; gentle handheld phone movement with a short pause",
+    "lighting_color": "warm indoor study lighting, visibly different from reference",
+    "differentiation_rule": "reuse only proof-pride emotional function and hand-over-mouth selfie grammar; change face, outfit, room layout, props, lighting, camera distance, and gesture timing",
+    "text_overlay": {
+      "visible": true,
+      "style": "large white TikTok caption with black outline, lower-middle placement",
+      "summary": "caption should be burned during render, not generated inside AI video",
+      "safe_area": "lower-middle; avoid covering eyes and mouth-covering hand"
+    },
+    "prompt_inputs": {
+      "scene": "a different student bedroom desk with a laptop showing an essay draft glow, notebook nearby, not the reference room",
+      "emotion": "proud but nervous, like showing a draft review workflow before submission",
+      "motion": "covers mouth with one hand, gives a small embarrassed smile, glances toward laptop, then shrugs lightly",
+      "atmosphere": "college essay revision proof-of-work mood, casual and slightly anxious",
+      "framing": "vertical 9:16 close-up selfie, face off-center with captions safe below",
+      "camera_motion": "gentle handheld phone movement with a short pause",
+      "must_change": [
+        "face",
+        "outfit",
+        "bedroom layout",
+        "desk items",
+        "lighting",
+        "gesture timing"
+      ]
+    }
+  },
+  "evidence_gaps": []
+}

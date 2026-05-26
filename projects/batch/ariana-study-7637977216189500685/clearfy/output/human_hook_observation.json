@@ -1,0 +1,217 @@
+{
+  "status": "vision_structured_from_contact_sheet",
+  "detected": true,
+  "frame_index": {
+    "reference_video": "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/reference.mp4",
+    "raw_reference": "https://www.tiktok.com/@ariana.study/video/7637977216189500685?_r=1&_t=ZS-96Libu7SVeP",
+    "hook_window_s": [
+      0,
+      5
+    ],
+    "fps": 2,
+    "frames_dir": "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames",
+    "frames": [
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_01.jpg",
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_02.jpg",
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_03.jpg",
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_04.jpg",
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_05.jpg",
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_06.jpg",
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_07.jpg",
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_08.jpg",
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_09.jpg",
+      "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_frames/frame_10.jpg"
+    ],
+    "contact_sheet": "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/hook_contact_sheet.jpg",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "HE-AACv2",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "44100",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x1",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/44100",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 367529,
+          "duration": "8.333991",
+          "bit_rate": "65260",
+          "nb_frames": "183",
+          "extradata_size": 4,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 720,
+          "height": 1280,
+          "coded_width": 720,
+          "coded_height": 1280,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "9:16",
+          "pix_fmt": "yuv420p",
+          "level": 31,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x2",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 128000,
+          "duration": "8.333333",
+          "bit_rate": "2908678",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "250",
+          "extradata_size": 48,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/reference.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "8.333991",
+        "size": "3106379",
+        "bit_rate": "2981888",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "aigc_info": "{\"aigc_label_type\":0}",
+          "comment": "vid:v12044gd0000d7vonovog65lua56onh0",
+          "vid_md5": "47958d36c191ed78dda6fbb190dd8d59",
+          "encoder": "Lavf58.76.100"
+        }
+      }
+    },
+    "generated_at": "2026-05-26T07:31:45Z"
+  },
+  "observation": {
+    "person": {
+      "count": 1,
+      "role": "student creator / academic studytok creator",
+      "framing": "vertical 9:16 close-up selfie, face off-center with room for captions below",
+      "identity_policy": "do not copy the reference creator face, identity, clothing, or exact likeness"
+    },
+    "action": "covers the mouth with one hand, blinks in disbelief, glances to the laptop, then gives a small helpless shrug",
+    "expression": "nervous amused panic, like realizing polished wording might get questioned",
+    "atmosphere": "college essay revision anxiety, native studytok confession",
+    "environment": "a different student bedroom desk with a laptop and essay document glow, not the reference room",
+    "camera": "vertical 9:16 phone selfie; soft handheld phone movement with a short pause",
+    "lighting_color": "natural indoor study lighting, changed from reference lighting",
+    "differentiation_rule": "reuse only emotional function, close-selfie grammar, and hard-cut-to-proof rhythm; change face, outfit, room layout, props, lighting, camera distance, and gesture timing",
+    "text_overlay": {
+      "visible": true,
+      "style": "large white TikTok caption with black outline, lower-middle placement",
+      "summary": "caption should be burned during render, not generated inside AI video",
+      "safe_area": "lower-middle; avoid covering eyes and mouth-covering hand"
+    },
+    "prompt_inputs": {
+      "scene": "a different student bedroom desk with a laptop and essay document glow, not the reference room",
+      "emotion": "nervous amused panic, like realizing polished wording might get questioned",
+      "motion": "covers the mouth with one hand, blinks in disbelief, glances to the laptop, then gives a small helpless shrug",
+      "atmosphere": "college essay revision anxiety, native studytok confession",
+      "framing": "vertical 9:16 close-up selfie, face off-center with room for captions below",
+      "camera_motion": "soft handheld phone movement with a short pause",
+      "must_change": [
+        "face",
+        "outfit",
+        "bedroom layout",
+        "desk items",
+        "lighting",
+        "gesture timing"
+      ]
+    }
+  },
+  "evidence_gaps": [
+    "Vision model was not used; observation is heuristic. Review extracted frames or set OPENAI_API_KEY, or configure an Evolink OpenAI-compatible responses endpoint.",
+    "Vision analysis failed; heuristic observation retained: HTTP Error 400: Bad Request"
+  ],
+  "reference_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685/references/7637977216189500685/reference.mp4",
+  "hook_window_s": [
+    0,
+    5
+  ]
+}

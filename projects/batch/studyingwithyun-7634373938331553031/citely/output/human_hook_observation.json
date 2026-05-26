@@ -1,0 +1,47 @@
+{
+  "status": "structured_from_reference_contact_sheet",
+  "detected": true,
+  "reference_video": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/reference.mp4",
+  "hook_window_s": [
+    0,
+    6
+  ],
+  "observation": {
+    "person": {
+      "count": 1,
+      "role": "student creator / studytok essay workflow creator",
+      "framing": "vertical 9:16 close-up selfie from a slightly higher angle, captions safe in the lower-middle",
+      "identity_policy": "do not copy reference creator face, identity, clothing, or exact likeness"
+    },
+    "action": "hand near mouth, eyebrows raised, looks at the phone, then glances toward the laptop with a small pointing gesture",
+    "expression": "skeptical but proud, like catching a citation problem before submission",
+    "atmosphere": "pre-submission citation-check flex, academic anxiety turned into proof",
+    "environment": "a different dorm desk with a laptop open beside a printed reference list, not the reference room",
+    "camera": "vertical 9:16 phone selfie; soft handheld phone movement, slight push-in feeling",
+    "lighting_color": "warm indoor study lighting, visibly different from reference",
+    "differentiation_rule": "reuse only proof-pride emotional function and hand-over-mouth selfie grammar; change face, outfit, room layout, props, lighting, camera distance, and gesture timing",
+    "text_overlay": {
+      "visible": true,
+      "style": "large white TikTok caption with black outline, lower-middle placement",
+      "summary": "caption should be burned during render, not generated inside AI video",
+      "safe_area": "lower-middle; avoid covering eyes and mouth-covering hand"
+    },
+    "prompt_inputs": {
+      "scene": "a different dorm desk with a laptop open beside a printed reference list, not the reference room",
+      "emotion": "skeptical but proud, like catching a citation problem before submission",
+      "motion": "hand near mouth, eyebrows raised, looks at the phone, then glances toward the laptop with a small pointing gesture",
+      "atmosphere": "pre-submission citation-check flex, academic anxiety turned into proof",
+      "framing": "vertical 9:16 close-up selfie from a slightly higher angle, captions safe in the lower-middle",
+      "camera_motion": "soft handheld phone movement, slight push-in feeling",
+      "must_change": [
+        "face",
+        "hair/outfit",
+        "wall/background",
+        "desk props",
+        "lighting",
+        "gesture timing"
+      ]
+    }
+  },
+  "evidence_gaps": []
+}

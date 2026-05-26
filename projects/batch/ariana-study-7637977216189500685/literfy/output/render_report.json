@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/batch/ariana-study-7637977216189500685/literfy/output/shot_matching_plan.json",
+    "asset_library": "projects/batch/ariana-study-7637977216189500685/literfy/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "projects/batch/ariana-study-7637977216189500685/literfy/output/literfy_ariana_study_hook_video.mp4",
+    "preview_sheet": "projects/batch/ariana-study-7637977216189500685/literfy/output/literfy_ariana_study_hook_video_sheet.jpg",
+    "preview_midpoint_sheet": "projects/batch/ariana-study-7637977216189500685/literfy/output/literfy_ariana_study_hook_video_midpoint_sheet.jpg",
+    "captions": "projects/batch/ariana-study-7637977216189500685/literfy/output/captions.json",
+    "srt": "projects/batch/ariana-study-7637977216189500685/literfy/output/master.srt",
+    "render_report": "projects/batch/ariana-study-7637977216189500685/literfy/output/render_report.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "20.798047",
+      "size": "13411766"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

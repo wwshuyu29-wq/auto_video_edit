@@ -1,0 +1,194 @@
+{
+  "account_url": "https://www.tiktok.com/@studyingwithyun/video/7634373938331553031?_r=1&_t=ZS-96LilpoWWKz",
+  "reference_hook_summary": "First seconds: extreme close selfie with hand covering mouth, playful/proud student reaction, overlay about showing off an essay written without ChatGPT, then hard cut to Google Docs and GPTZero writing report / typing analysis proof.",
+  "product": {
+    "product_name": "Clearfy",
+    "one_liner": "Clearfy is an AI writing review tool that helps users check AI-likelihood signals and revise AI-heavy text into clearer, more natural writing.",
+    "target_users": [
+      "students",
+      "college students",
+      "essay writers",
+      "academic writers",
+      "people revising AI-assisted drafts",
+      "multilingual writers"
+    ],
+    "core_features": [
+      {
+        "feature_name": "AI Detector",
+        "description": "Check pasted text or uploaded files for AI-generated writing signals.",
+        "user_benefit": "Helps users understand where a draft may look AI-heavy before they revise or submit it.",
+        "visual_need": "Screen recording of pasting an essay or uploading a file, clicking Check for AI, and showing AI-likelihood results."
+      },
+      {
+        "feature_name": "AI Humanizer",
+        "description": "Rewrite AI-heavy or robotic phrasing into more natural human-like wording while preserving the original meaning.",
+        "user_benefit": "Helps users polish drafts that sound too robotic or generic.",
+        "visual_need": "Screen recording of selecting AI-heavy text, running the humanizer, and comparing before/after wording."
+      },
+      {
+        "feature_name": "Sentence-Level Insights",
+        "description": "Review sentence-level AI signals so users can identify which parts of a draft need revision.",
+        "user_benefit": "Helps users focus editing time on the passages that look most robotic.",
+        "visual_need": "Close-up screen recording of highlighted or scored sentences and the user revising those passages."
+      },
+      {
+        "feature_name": "Upload File / Paste Text Workflow",
+        "description": "Start from pasted text or uploaded writing files.",
+        "user_benefit": "Makes it easy to review full essays or drafts without manually breaking them into small pieces.",
+        "visual_need": "Screen recording of switching between Paste Text and Upload File, then starting a check."
+      },
+      {
+        "feature_name": "Credit-Based Usage",
+        "description": "Use one credit balance for AI checks and revisions, with credits that do not expire.",
+        "user_benefit": "Helps users avoid subscriptions when they only need occasional AI checks or rewrites.",
+        "visual_need": "Screen recording of pricing or credit balance only if needed for a value-prop beat."
+      }
+    ],
+    "most_painful_user_scenarios": [
+      "A student used AI to draft an essay and now worries it sounds too robotic.",
+      "A writer wants to check AI-likelihood signals before revising a draft.",
+      "A student wants to know which sentences need rewriting instead of rewriting the whole essay blindly.",
+      "A user needs a quick check and revision workflow without committing to a subscription."
+    ],
+    "forbidden_claims": [
+      "Do not say Clearfy guarantees bypassing Turnitin or any AI detector.",
+      "Do not promise 0% AI detection or guaranteed undetectability.",
+      "Do not encourage academic dishonesty, plagiarism, or submitting unreviewed AI-generated work.",
+      "Do not say detector results are perfectly accurate.",
+      "Do not say Clearfy replaces the user's own writing, judgment, or responsibility.",
+      "Do not claim every school or detector will produce the same result."
+    ],
+    "good_tiktok_angles": [
+      "If your essay sounds too much like ChatGPT, check this first.",
+      "Before submitting an AI-assisted draft, I check which sentences sound robotic.",
+      "I stopped rewriting the whole essay and started fixing the sentences that looked AI-heavy.",
+      "This is how I make an AI-assisted draft sound more like my own writing.",
+      "No subscription, just credits when I need to check or revise a draft."
+    ],
+    "source_grounding_note": "Clearfy's public site describes AI detector and AI humanizer workflows for checking AI-likelihood signals and revising drafts into more natural writing.",
+    "allowed_claim_boundaries": [
+      "Can say Clearfy helps users check AI-likelihood signals in drafts.",
+      "Can say Clearfy helps rewrite robotic or AI-heavy phrasing into more natural language.",
+      "Can say Clearfy provides sentence-level review signals when visible in the recorded workflow.",
+      "Can say credits do not expire if using pricing/credit footage.",
+      "Should still say users need to review, edit, and take responsibility for the final writing."
+    ]
+  },
+  "product_name": "Clearfy",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "human_hook_observation": {
+    "status": "structured_from_reference_contact_sheet",
+    "detected": true,
+    "reference_video": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/reference.mp4",
+    "hook_window_s": [
+      0,
+      6
+    ],
+    "observation": {
+      "person": {
+        "count": 1,
+        "role": "student creator / studytok essay workflow creator",
+        "framing": "vertical 9:16 close-up selfie, face off-center with captions safe below",
+        "identity_policy": "do not copy reference creator face, identity, clothing, or exact likeness"
+      },
+      "action": "covers mouth with one hand, gives a small embarrassed smile, glances toward laptop, then shrugs lightly",
+      "expression": "proud but nervous, like showing a draft review workflow before submission",
+      "atmosphere": "college essay revision proof-of-work mood, casual and slightly anxious",
+      "environment": "a different student bedroom desk with a laptop showing an essay draft glow, notebook nearby, not the reference room",
+      "camera": "vertical 9:16 phone selfie; gentle handheld phone movement with a short pause",
+      "lighting_color": "warm indoor study lighting, visibly different from reference",
+      "differentiation_rule": "reuse only proof-pride emotional function and hand-over-mouth selfie grammar; change face, outfit, room layout, props, lighting, camera distance, and gesture timing",
+      "text_overlay": {
+        "visible": true,
+        "style": "large white TikTok caption with black outline, lower-middle placement",
+        "summary": "caption should be burned during render, not generated inside AI video",
+        "safe_area": "lower-middle; avoid covering eyes and mouth-covering hand"
+      },
+      "prompt_inputs": {
+        "scene": "a different student bedroom desk with a laptop showing an essay draft glow, notebook nearby, not the reference room",
+        "emotion": "proud but nervous, like showing a draft review workflow before submission",
+        "motion": "covers mouth with one hand, gives a small embarrassed smile, glances toward laptop, then shrugs lightly",
+        "atmosphere": "college essay revision proof-of-work mood, casual and slightly anxious",
+        "framing": "vertical 9:16 close-up selfie, face off-center with captions safe below",
+        "camera_motion": "gentle handheld phone movement with a short pause",
+        "must_change": [
+          "face",
+          "outfit",
+          "bedroom layout",
+          "desk items",
+          "lighting",
+          "gesture timing"
+        ]
+      }
+    },
+    "evidence_gaps": []
+  },
+  "viral_pattern_card": {
+    "template_id": "studyingwithyun_without_chatgpt_proof_trail",
+    "main_content_logic": "[self-authorship/proof flex hook] + [document/product reveal] + [process trail proof] + [risk/activity check evidence]",
+    "caption_logic": {
+      "visible_sequence": [
+        "showing off the draft I reviewed before submitting cuz why are we trusting polished AI wording",
+        "Clearfy shows me where the draft sounds AI-heavy",
+        "I check the flagged sentences",
+        "then review the detector result",
+        "and rewrite the robotic parts",
+        "so I still read it before using it"
+      ],
+      "sentence_roles": [
+        "self_authorship_or_proof_flex_hook",
+        "product_reveal",
+        "workflow_proof",
+        "detail_proof",
+        "export_or_check_proof",
+        "reviewable_result"
+      ]
+    },
+    "viral_patterns": [
+      {
+        "opening_0_3s": "showing off the draft I reviewed before submitting cuz why are we trusting polished AI wording",
+        "hook_type": "proof flex / without bad workflow",
+        "visual_style": {
+          "person": {
+            "count": 1,
+            "role": "student creator / studytok essay workflow creator",
+            "framing": "vertical 9:16 close-up selfie, face off-center with captions safe below",
+            "identity_policy": "do not copy reference creator face, identity, clothing, or exact likeness"
+          },
+          "action": "covers mouth with one hand, gives a small embarrassed smile, glances toward laptop, then shrugs lightly",
+          "expression": "proud but nervous, like showing a draft review workflow before submission",
+          "atmosphere": "college essay revision proof-of-work mood, casual and slightly anxious",
+          "environment": "a different student bedroom desk with a laptop showing an essay draft glow, notebook nearby, not the reference room",
+          "camera": "vertical 9:16 phone selfie; gentle handheld phone movement with a short pause",
+          "lighting_color": "warm indoor study lighting, visibly different from reference",
+          "differentiation_rule": "reuse only proof-pride emotional function and hand-over-mouth selfie grammar; change face, outfit, room layout, props, lighting, camera distance, and gesture timing",
+          "text_overlay": {
+            "visible": true,
+            "style": "large white TikTok caption with black outline, lower-middle placement",
+            "summary": "caption should be burned during render, not generated inside AI video",
+            "safe_area": "lower-middle; avoid covering eyes and mouth-covering hand"
+          },
+          "prompt_inputs": {
+            "scene": "a different student bedroom desk with a laptop showing an essay draft glow, notebook nearby, not the reference room",
+            "emotion": "proud but nervous, like showing a draft review workflow before submission",
+            "motion": "covers mouth with one hand, gives a small embarrassed smile, glances toward laptop, then shrugs lightly",
+            "atmosphere": "college essay revision proof-of-work mood, casual and slightly anxious",
+            "framing": "vertical 9:16 close-up selfie, face off-center with captions safe below",
+            "camera_motion": "gentle handheld phone movement with a short pause",
+            "must_change": [
+              "face",
+              "outfit",
+              "bedroom layout",
+              "desk items",
+              "lighting",
+              "gesture timing"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

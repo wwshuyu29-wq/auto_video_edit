@@ -1,0 +1,47 @@
+{
+  "status": "structured_from_reference_contact_sheet",
+  "detected": true,
+  "reference_video": "/Users/kk/Desktop/auto video/projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/reference.mp4",
+  "hook_window_s": [
+    0,
+    6
+  ],
+  "observation": {
+    "person": {
+      "count": 1,
+      "role": "student creator / studytok essay workflow creator",
+      "framing": "vertical 9:16 medium close-up selfie, shoulders visible, lower-middle caption-safe area",
+      "identity_policy": "do not copy reference creator face, identity, clothing, or exact likeness"
+    },
+    "action": "covers part of the mouth, raises eyebrows, then turns slightly toward the laptop as if about to show the edit trail",
+    "expression": "playfully proud and slightly incredulous, like showing an editable figure proof",
+    "atmosphere": "lab meeting prep flex, scientific figure workflow proof, casual studytok energy",
+    "environment": "a different research desk with laptop, tablet, rough figure sketch, and lab notes, not the reference room",
+    "camera": "vertical 9:16 phone selfie; subtle handheld phone wobble with a quick lean-in",
+    "lighting_color": "warm indoor study lighting, visibly different from reference",
+    "differentiation_rule": "reuse only proof-pride emotional function and hand-over-mouth selfie grammar; change face, outfit, room layout, props, lighting, camera distance, and gesture timing",
+    "text_overlay": {
+      "visible": true,
+      "style": "large white TikTok caption with black outline, lower-middle placement",
+      "summary": "caption should be burned during render, not generated inside AI video",
+      "safe_area": "lower-middle; avoid covering eyes and mouth-covering hand"
+    },
+    "prompt_inputs": {
+      "scene": "a different research desk with laptop, tablet, rough figure sketch, and lab notes, not the reference room",
+      "emotion": "playfully proud and slightly incredulous, like showing an editable figure proof",
+      "motion": "covers part of the mouth, raises eyebrows, then turns slightly toward the laptop as if about to show the edit trail",
+      "atmosphere": "lab meeting prep flex, scientific figure workflow proof, casual studytok energy",
+      "framing": "vertical 9:16 medium close-up selfie, shoulders visible, lower-middle caption-safe area",
+      "camera_motion": "subtle handheld phone wobble with a quick lean-in",
+      "must_change": [
+        "face",
+        "outfit",
+        "room layout",
+        "props",
+        "lighting color",
+        "gesture sequence"
+      ]
+    }
+  },
+  "evidence_gaps": []
+}

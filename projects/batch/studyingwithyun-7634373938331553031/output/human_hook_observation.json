@@ -1,0 +1,208 @@
+{
+  "status": "frames_extracted",
+  "detected": false,
+  "frame_index": {
+    "reference_video": "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/reference.mp4",
+    "raw_reference": "https://www.tiktok.com/@studyingwithyun/video/7634373938331553031?_r=1&_t=ZS-96LilpoWWKz",
+    "hook_window_s": [
+      0.0,
+      6.0
+    ],
+    "fps": 2.0,
+    "frames_dir": "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames",
+    "frames": [
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_01.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_02.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_03.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_04.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_05.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_06.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_07.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_08.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_09.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_10.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_11.jpg",
+      "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_frames/frame_12.jpg"
+    ],
+    "contact_sheet": "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/hook_contact_sheet.jpg",
+    "metadata": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "HE-AACv2",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "44100",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x1",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/44100",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1362866,
+          "duration": "30.903991",
+          "bit_rate": "64345",
+          "nb_frames": "669",
+          "extradata_size": 4,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "hevc",
+          "codec_long_name": "H.265 / HEVC (High Efficiency Video Coding)",
+          "profile": "Main",
+          "codec_type": "video",
+          "codec_tag_string": "hvc1",
+          "codec_tag": "0x31637668",
+          "width": 720,
+          "height": 1280,
+          "coded_width": 720,
+          "coded_height": 1280,
+          "has_b_frames": 4,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "9:16",
+          "pix_fmt": "yuv420p",
+          "level": 120,
+          "color_range": "tv",
+          "color_space": "bt709",
+          "color_transfer": "bt709",
+          "color_primaries": "bt709",
+          "chroma_location": "left",
+          "refs": 1,
+          "view_ids_available": "",
+          "view_pos_available": "",
+          "id": "0x2",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 475136,
+          "duration": "30.933333",
+          "bit_rate": "384407",
+          "nb_frames": "928",
+          "extradata_size": 205,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0,
+            "multilayer": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/reference.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "nb_stream_groups": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "30.933333",
+        "size": "1762171",
+        "bit_rate": "455733",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2mp41",
+          "aigc_info": "{\"aigc_label_type\":0}",
+          "comment": "vid:v1c044g50000d7pbr2vog65rbht80dtg",
+          "vid_md5": "d7b47d53c4c453603184ab27cd9d4249",
+          "encoder": "Lavf58.76.100"
+        }
+      }
+    },
+    "generated_at": "2026-05-26T08:59:04Z"
+  },
+  "observation": {
+    "person": {
+      "count": 0,
+      "framing": "unknown; review extracted hook frames",
+      "identity_policy": "do not copy the reference person's face, identity, clothing, or exact likeness"
+    },
+    "action": "review hook frames manually",
+    "expression": "unknown",
+    "atmosphere": "unknown",
+    "environment": "unknown",
+    "camera": "vertical 9:16 reference video; review frames for exact camera motion",
+    "lighting_color": "unknown",
+    "differentiation_rule": "reuse only emotional function, framing category, and hook rhythm; change face, outfit, room layout, props, lighting, and gesture timing",
+    "text_overlay": {
+      "visible": "unknown",
+      "style": "review extracted frames",
+      "summary": "use OCR/vision output when available",
+      "safe_area": "keep hook captions away from the creator's eyes and main gesture"
+    },
+    "prompt_inputs": {
+      "motion": "",
+      "scene": "",
+      "emotion": "",
+      "atmosphere": "",
+      "framing": "",
+      "camera_motion": "",
+      "must_change": []
+    }
+  },
+  "evidence_gaps": [
+    "Vision model was not used; observation is heuristic. Review extracted frames or set OPENAI_API_KEY, or configure an Evolink OpenAI-compatible responses endpoint."
+  ],
+  "reference_video": "projects/batch/studyingwithyun-7634373938331553031/references/7634373938331553031/reference.mp4",
+  "hook_window_s": [
+    0.0,
+    6.0
+  ]
+}

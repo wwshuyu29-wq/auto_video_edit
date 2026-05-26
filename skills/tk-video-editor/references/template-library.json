@@ -4,9 +4,18 @@
     {
       "template_id": "research_connect_google_scholar",
       "match": {
-        "accounts": ["research.connect"],
-        "video_ids": ["7633832153922489621"],
-        "keywords": ["google scholar", "phd/master", "the easy way", "just go to this website"]
+        "accounts": [
+          "research.connect"
+        ],
+        "video_ids": [
+          "7633832153922489621"
+        ],
+        "keywords": [
+          "google scholar",
+          "phd/master",
+          "the easy way",
+          "just go to this website"
+        ]
       },
       "account_positioning": "Academic productivity account using familiar research interfaces, status-upgrade hooks, and simple screen-recorded workflows to make research tools feel immediately useful.",
       "main_content_logic": "Status-gap hook -> strong website CTA -> short command chain -> tip/proof setup -> finished academic output proof.",
@@ -61,9 +70,18 @@
     {
       "template_id": "soft_student_era_human_hook",
       "match": {
-        "accounts": ["soft.student.era"],
-        "video_ids": ["7639598483682544904"],
-        "keywords": ["professor", "ai detector", "and boom", "assignment"]
+        "accounts": [
+          "soft.student.era"
+        ],
+        "video_ids": [
+          "7639598483682544904"
+        ],
+        "keywords": [
+          "professor",
+          "ai detector",
+          "and boom",
+          "assignment"
+        ]
       },
       "account_positioning": "Student-life creator using fear, casual confession, and quick laptop proof to make an academic workflow shortcut feel like an insider tip.",
       "main_content_logic": "Authority warning or student fear -> creator reaction/confession -> one-step tool action -> fast result proof -> emotional release.",
@@ -72,7 +90,7 @@
         "visible_sequence": [
           "My professor said he can tell if we use AI for our assignments...",
           "So I check my sources first",
-          "and boom, now I know what to fix \ud83d\ude2d"
+          "and boom, now I know what to fix 😭"
         ],
         "sentence_roles": [
           "fear_hook_and_identity_setup",
@@ -104,9 +122,18 @@
     {
       "template_id": "xiaoyu_real_person_reaction_hook",
       "match": {
-        "accounts": ["xiaoyu"],
+        "accounts": [
+          "xiaoyu"
+        ],
         "video_ids": [],
-        "keywords": ["xiaoyu", "real person hook", "creator reaction", "shocked", "confused", "mouth covered"]
+        "keywords": [
+          "xiaoyu",
+          "real person hook",
+          "creator reaction",
+          "shocked",
+          "confused",
+          "mouth covered"
+        ]
       },
       "account_positioning": "Real-person creator hook library using Xiaoyu's selfie reactions to make the first seconds feel human before product footage starts.",
       "main_content_logic": "Xiaoyu reaction hook -> product reveal -> workflow proof -> result proof or emotional release.",
@@ -152,20 +179,29 @@
     {
       "template_id": "ice_uni_paper_hook",
       "match": {
-        "accounts": ["ice.uni"],
-        "video_ids": ["7578561011322473749"],
-        "keywords": ["sleepless night", "finish my rrl", "research papers in secs", "goodnight world"]
+        "accounts": [
+          "ice.uni"
+        ],
+        "video_ids": [
+          "7578561011322473749"
+        ],
+        "keywords": [
+          "sleepless night",
+          "finish my rrl",
+          "research papers in secs",
+          "goodnight world"
+        ]
       },
       "account_positioning": "Student/research productivity account using late-night academic pain, handheld paper/laptop proof, and emotional relief to frame research workflows as time-saving study help.",
       "main_content_logic": "Sleepless-night pain hook -> tool value promise -> simple topic input -> relevant paper/result proof -> finished starting point -> relief ending.",
       "caption_logic": {
         "template_id": "ice_uni_paper_hook",
         "visible_sequence": [
-          "saying goodbye to my sleepless night because i can now start my rrl faster \ud83e\udd79\ud83e\udd79\ud83e\udd79",
-          "this gives me research papers that are curated and relevant \ud83e\uddd1\u200d\ud83d\udcbb\u2728",
-          "just type your topic and let it find the papers \ud83e\ude84\u2728",
-          "relevant research papers in seconds \ud83e\udd70\u2728",
-          "my review finally has a starting point, goodnight world \ud83e\udd71\ud83d\udca4"
+          "saying goodbye to my sleepless night because i can now start my rrl faster 🥹🥹🥹",
+          "this gives me research papers that are curated and relevant 🧑‍💻✨",
+          "just type your topic and let it find the papers 🪄✨",
+          "relevant research papers in seconds 🥰✨",
+          "my review finally has a starting point, goodnight world 🥱💤"
         ],
         "sentence_roles": [
           "pain_relief_hook",
@@ -194,6 +230,134 @@
         "Do not use exact time claims unless verified.",
         "Keep the late-night pain and relief emotion, but frame the result as a starting point or checked workflow.",
         "Use emojis sparingly and only where the template expects emotional release."
+      ]
+    },
+    {
+      "template_id": "ariana_professors_evolving_human_hook",
+      "match": {
+        "accounts": [
+          "ariana.study"
+        ],
+        "video_ids": [
+          "7637977216189500685"
+        ],
+        "keywords": [
+          "professors are evolving",
+          "bro...",
+          "mouth covered",
+          "student selfie",
+          "highlighted document"
+        ]
+      },
+      "account_positioning": "Study creator using a close selfie panic reaction, professor-surveillance anxiety, and a hard cut to laptop/document proof.",
+      "main_content_logic": "Close selfie academic panic -> professors are evolving caption -> hard cut to laptop proof -> product workflow that creates or checks evidence.",
+      "ai_human_hook_visual_grammar": {
+        "person_expression": "student creator, anxious/amused, caught off guard, half-covering mouth",
+        "action": "close selfie, hand partially covering mouth, eye contact, small glance toward laptop before proof cut",
+        "atmosphere": "academic deadline or submission anxiety with a playful studytok tone",
+        "framing": "vertical 9:16 close selfie, face in upper half, lower-middle caption-safe area",
+        "camera_motion": "subtle handheld selfie drift; no speaking or lip-sync",
+        "differentiation_rule": "reuse emotional function and close-selfie grammar only; change face, outfit, room, props, lighting, camera distance, and gesture timing"
+      },
+      "caption_logic": {
+        "template_id": "ariana_professors_evolving_human_hook",
+        "visible_sequence": [
+          "bro... professors are evolving...",
+          "hard cut to document / product proof",
+          "proof that the student checked, traced, edited, or kept a workflow trail"
+        ],
+        "sentence_roles": [
+          "academic_panic_hook",
+          "proof_reveal",
+          "workflow_evidence"
+        ],
+        "punctuation_pattern": "Lowercase bro... setup, ellipsis for panic/comedy, short proof captions after hard cut.",
+        "command_grammar": [
+          "so I check...",
+          "so I keep...",
+          "then I show..."
+        ],
+        "hook_formula": "bro... [authority/person] are [checking/evolving/noticing X] now...",
+        "cta_position": "implicit_after_hook",
+        "result_proof_position": "middle_and_end",
+        "reuse_rule": "Preserve the professor-evolving panic and hard cut to proof. Rewrite the proof around product-safe evidence, checking, editing, or source-tracing workflows."
+      },
+      "template_fingerprint": {
+        "line_count": 3,
+        "has_real_person_opening": true,
+        "has_hard_cut_to_laptop": true,
+        "has_result_proof": true
+      },
+      "rewrite_boundaries": [
+        "Do not copy the reference creator face, clothing, room, or exact pose timing.",
+        "Do not generate speaking or lip-sync in the AI human clip; burn hook text later as captions.",
+        "Do not use unsupported academic misconduct claims or detector-bypass promises.",
+        "Avoid unsupported guarantees; keep proof to visible product workflow."
+      ]
+    },
+    {
+      "template_id": "studyingwithyun_without_chatgpt_proof_trail",
+      "match": {
+        "accounts": [
+          "studyingwithyun"
+        ],
+        "video_ids": [
+          "7634373938331553031"
+        ],
+        "keywords": [
+          "without chatgpt",
+          "showing off the essay",
+          "typing report",
+          "typing analysis",
+          "pastes"
+        ]
+      },
+      "account_positioning": "Student creator using self-authorship pride, anti-shortcut humor, and process-proof screen recordings to make writing/report tools feel trust-building rather than promotional.",
+      "main_content_logic": "Close selfie proof-pride hook -> document reveal -> writing/process report -> activity/typing proof -> paste or AI-risk check evidence.",
+      "ai_human_hook_visual_grammar": {
+        "person_expression": "student creator, amused/proud/embarrassed, hand covering mouth, close to camera",
+        "action": "close selfie, hand over mouth, subtle lean-in, playful disbelief, no speaking; then hard cut to document proof",
+        "atmosphere": "study desk, essay/submission context, playful academic pride with mild sarcasm",
+        "framing": "vertical 9:16 extreme close-up selfie, lower-middle caption-safe area",
+        "camera_motion": "subtle handheld phone movement; no lip-sync, no baked-in text",
+        "differentiation_rule": "reuse proof-pride emotion and hand-over-mouth selfie grammar only; change face, outfit, room, desk, props, lighting, and gesture timing"
+      },
+      "caption_logic": {
+        "template_id": "studyingwithyun_without_chatgpt_proof_trail",
+        "visible_sequence": [
+          "showing off the essay i wrote without chatgpt cuz why has everyone forgotten how to",
+          "gptzero showing me typing out every word",
+          "checking my pastes to show they aren’t AI"
+        ],
+        "sentence_roles": [
+          "self_authorship_pride_hook",
+          "process_proof_reveal",
+          "risk_check_or_activity_evidence"
+        ],
+        "punctuation_pattern": "Lowercase casual sentence, long first-line flex/complaint, then short proof captions on screen recordings.",
+        "command_grammar": [
+          "showing off...",
+          "showing me...",
+          "checking..."
+        ],
+        "hook_formula": "showing off the [work/output] i [did/checked/made] without [bad workflow/shortcut] cuz why has everyone forgotten how to [basic skill]",
+        "cta_position": "implicit",
+        "result_proof_position": "middle_and_end",
+        "reuse_rule": "Preserve the self-authorship/process-proof flex. Rewrite around ethical product workflows: source trail, citation check, editable figure trail, or reviewed draft. Avoid claiming the product proves authorship unless the visible workflow supports it."
+      },
+      "template_fingerprint": {
+        "line_count": 3,
+        "has_real_person_opening": true,
+        "has_document_reveal": true,
+        "has_process_proof": true,
+        "has_tool_report": true
+      },
+      "rewrite_boundaries": [
+        "Do not claim a product proves the user wrote every word unless that feature exists and is shown.",
+        "Do not encourage bypassing AI detectors or academic misconduct.",
+        "Do not copy the reference creator face, outfit, room, or exact pose timing.",
+        "Generated AI human hooks must be silent reaction clips; burn captions later.",
+        "For product rewrites, make the proof match visible product footage: source trail, citation match, editable figure, or revision/check workflow."
       ]
     }
   ]

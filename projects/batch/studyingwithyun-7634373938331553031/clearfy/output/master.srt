@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:04,000
+showing off the draft I reviewed before submitting cuz why are we trusting polished AI wording
+
+2
+00:00:04,000 --> 00:00:07,000
+Clearfy shows me where the draft sounds AI-heavy
+
+3
+00:00:07,000 --> 00:00:11,000
+I check the flagged sentences
+
+4
+00:00:11,000 --> 00:00:15,000
+then review the detector result
+
+5
+00:00:15,000 --> 00:00:18,000
+and rewrite the robotic parts
+
+6
+00:00:18,000 --> 00:00:21,000
+so I still read it before using it

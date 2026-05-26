@@ -1,0 +1,69 @@
+{
+  "source_reference_template": "studyingwithyun_without_chatgpt_proof_trail",
+  "product_name": "Literfy",
+  "template_name": "teacher accusation -> proof report/workflow",
+  "script_title": "Literfy: proof trail hook",
+  "script_angle": "StudyingWithYun-style proof flex: showing off the source trail behind my lit review cuz why are we still starting from random tabs",
+  "target_viewer": [
+    "graduate students",
+    "PhD students",
+    "Master students",
+    "researchers"
+  ],
+  "full_script": [
+    {
+      "time": "0-4s",
+      "beat": "hook",
+      "voiceover": "showing off the source trail behind my lit review cuz why are we still starting from random tabs",
+      "on_screen_text": "showing off the source trail behind my lit review cuz why are we still starting from random tabs",
+      "visual_need": "silent AI close selfie reaction: hand near mouth, proud/amused proof flex, no speech or baked-in text",
+      "preferred_clip_id": "ai_human_hook"
+    },
+    {
+      "time": "4-8s",
+      "beat": "proof_reveal",
+      "voiceover": "Literfy showing the papers I started from",
+      "on_screen_text": "Literfy showing the papers I started from",
+      "visual_need": "handheld Literfy paper search proof",
+      "preferred_clip_id": "10_find_papers_search_topic"
+    },
+    {
+      "time": "8-11s",
+      "beat": "real_papers",
+      "voiceover": "actual papers, not mystery links",
+      "on_screen_text": "actual papers, not mystery links",
+      "visual_need": "paper result list proof",
+      "preferred_clip_id": "03_paper_list_results"
+    },
+    {
+      "time": "11-14s",
+      "beat": "selection",
+      "voiceover": "I pick the ones I really used",
+      "on_screen_text": "I pick the ones I really used",
+      "visual_need": "selected papers before outline",
+      "preferred_clip_id": "04_select_papers_to_outline"
+    },
+    {
+      "time": "14-18s",
+      "beat": "citation_proof",
+      "voiceover": "then save the citations before writing",
+      "on_screen_text": "then save the citations before writing",
+      "visual_need": "citation/save workflow proof",
+      "preferred_clip_id": "12_save_and_citation_export_workflow"
+    },
+    {
+      "time": "18-21s",
+      "beat": "result",
+      "voiceover": "so the outline has a paper trail I can review",
+      "on_screen_text": "so the outline has a paper trail I can review",
+      "visual_need": "literature review outline proof",
+      "preferred_clip_id": "06_literature_review_outline"
+    }
+  ],
+  "compliance_notes": [
+    "Do not say Literfy writes a perfect literature review.",
+    "Do not say Literfy replaces real research.",
+    "Do not say citations are always 100% correct.",
+    "Do not tell users to submit AI output directly."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "template_id": "ariana-study-professors-evolving-human-hook",
+  "source_url": "https://www.tiktok.com/@ariana.study/video/7637977216189500685?_r=1&_t=ZS-96Libu7SVeP",
+  "hook_visual_summary": "First seconds: close selfie of student covering mouth, anxious/amused eye contact, casual bedroom/dorm angle; overlay reads “bro... professors are evolving... 🤡”; hard cut to handheld laptop/document proof with highlighted text.",
+  "reusable_visual_grammar": [
+    "close selfie reaction before proof",
+    "hand partially covering mouth",
+    "anxious/amused academic panic",
+    "caption-safe lower-middle overlay",
+    "hard cut from face to laptop proof"
+  ],
+  "do_not_copy": [
+    "reference creator face or likeness",
+    "exact outfit or room",
+    "exact pose timing",
+    "exact caption for every product",
+    "baked-in text or speaking mouth in generated AI hook"
+  ],
+  "generation_rule": "Generate silent AI reaction assets only. Hook copy is burned later by video_rendering."
+}
