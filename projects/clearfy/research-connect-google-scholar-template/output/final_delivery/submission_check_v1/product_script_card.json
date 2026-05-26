@@ -1,0 +1,26 @@
+{
+  "product": "Clearfy",
+  "template": "google_scholar_template",
+  "variant_id": "submission_check_v1",
+  "title": "last minute draft check before submitting",
+  "product_understanding": {
+    "user_pain": "Students and writers are unsure which parts of a draft sound AI-heavy or robotic.",
+    "feature": "Clearfy AI detector highlights likely AI-written wording and the humanizer helps revise stiff text with adjustable strength.",
+    "result": "User can see what to edit and revise the draft more intentionally.",
+    "emotional_angle": "last-minute relief without pretending the tool writes the paper for them"
+  },
+  "script_lines": [
+    "so you are telling me I can check the weird AI tone before I submit...",
+    "go to Clearfy",
+    "scan the draft first",
+    "see which parts look too AI-written",
+    "then humanize the stiff sentences",
+    "choose a rewrite strength and keep editing",
+    "this is the kind of tool I needed during finals week..."
+  ],
+  "safety_notes": [
+    "Avoid claims about bypassing AI detectors.",
+    "Do not promise guaranteed human score or academic success.",
+    "Frame Clearfy as checking and editing support."
+  ]
+}

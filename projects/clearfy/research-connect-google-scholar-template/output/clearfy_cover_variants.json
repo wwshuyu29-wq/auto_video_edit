@@ -1,0 +1,62 @@
+{
+  "ai_detector_check_v1": {
+    "text": "checking if my draft sounds AI-written before I submit",
+    "style": {
+      "highlight": [
+        "ai",
+        "draft",
+        "submit",
+        "paragraph",
+        "robotic"
+      ]
+    }
+  },
+  "humanizer_modes_v1": {
+    "text": "when your paragraph has that obvious AI voice",
+    "style": {
+      "highlight": [
+        "ai",
+        "draft",
+        "submit",
+        "paragraph",
+        "robotic"
+      ]
+    }
+  },
+  "detector_to_humanize_v1": {
+    "text": "the check first then fix workflow",
+    "style": {
+      "highlight": [
+        "ai",
+        "draft",
+        "submit",
+        "paragraph",
+        "robotic"
+      ]
+    }
+  },
+  "paste_whole_draft_v1": {
+    "text": "me after pasting the paragraph instead of guessing",
+    "style": {
+      "highlight": [
+        "ai",
+        "draft",
+        "submit",
+        "paragraph",
+        "robotic"
+      ]
+    }
+  },
+  "submission_check_v1": {
+    "text": "last minute draft check before submitting",
+    "style": {
+      "highlight": [
+        "ai",
+        "draft",
+        "submit",
+        "paragraph",
+        "robotic"
+      ]
+    }
+  }
+}

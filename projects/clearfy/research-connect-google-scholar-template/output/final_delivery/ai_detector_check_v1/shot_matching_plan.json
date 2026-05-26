@@ -1,0 +1,154 @@
+{
+  "source_script_card": "manual_clearfy_google_scholar_template_5_variants",
+  "selected_script_type": "ai_detector_check_v1",
+  "editing_style": {
+    "pace": "fast",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "caption_style": "PNG overlays, bold white text with black outline"
+  },
+  "product": "Clearfy",
+  "variant_id": "ai_detector_check_v1",
+  "title": "checking if my draft sounds AI-written before I submit",
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-4",
+      "voiceover": "so you are telling me I kept searching Google Scholar while my draft still sounded like AI...",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.2,
+      "clip_end": 4.4,
+      "playback_speed": 1.05,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "so you are telling me I kept searching Google Scholar while my draft still sounded like AI...",
+      "caption_style": {
+        "lines": [
+          "so you are telling me I kept",
+          "searching Google Scholar while",
+          "my draft still sounded like AI..."
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.405,
+        "max_width": 910,
+        "highlight_terms": [
+          "google",
+          "scholar",
+          "ai"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "website_reveal",
+      "time": "4-6.5",
+      "voiceover": "that this website could show me the AI-heavy parts first...",
+      "clip_id": "00_clearfy_landing_page_empty_state",
+      "clip_start": 0.2,
+      "clip_end": 2.5,
+      "playback_speed": 1,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "that this website could show me the AI-heavy parts first...",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "detector_entry",
+      "time": "6.5-9",
+      "voiceover": "paste the paragraph into AI detector",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 0.5,
+      "clip_end": 4,
+      "playback_speed": 1.4,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "paste the paragraph into AI detector",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "scan",
+      "time": "9-11.5",
+      "voiceover": "let it scan the draft",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 4,
+      "clip_end": 7,
+      "playback_speed": 1.2,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "let it scan the draft",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "result",
+      "time": "11.5-15.5",
+      "voiceover": "no cuz wdym it literally marks the AI-looking sentences...",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 7,
+      "clip_end": 11.8,
+      "playback_speed": 1.15,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "no cuz wdym it literally marks the AI-looking sentences...",
+      "caption_style": {
+        "lines": [
+          "no cuz wdym it literally",
+          "marks the AI-looking sentences..."
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.43,
+        "max_width": 900,
+        "highlight_terms": [
+          "ai-looking"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "next_step",
+      "time": "15.5-18.5",
+      "voiceover": "then I know what to fix instead of guessing",
+      "clip_id": "04_clearfy_detector_to_ai_result",
+      "clip_start": 9.5,
+      "clip_end": 12.8,
+      "playback_speed": 1.1,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "then I know what to fix instead of guessing",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "18.5-21.5",
+      "voiceover": "for checking a draft before submitting... this is useful",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.2,
+      "clip_end": 2.6,
+      "playback_speed": 0.8,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "for checking a draft before submitting... this is useful",
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ]
+}

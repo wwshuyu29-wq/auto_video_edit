@@ -1,0 +1,44 @@
+{
+  "variants": [
+    {
+      "id": "ai_detector_check_v1",
+      "title": "checking if my draft sounds AI-written before I submit",
+      "caption": "checking if my draft sounds AI-written before I submit",
+      "hashtags": "#studytools #aitools #studentlife #essaytips #clearfy",
+      "pinned": "Would you check the highlighted sentences first or rewrite the whole paragraph?",
+      "why": "Pain-point hook for students worried their draft sounds too robotic, with visible detector proof."
+    },
+    {
+      "id": "humanizer_modes_v1",
+      "title": "when your paragraph has that obvious AI voice",
+      "caption": "when your paragraph has that obvious AI voice",
+      "hashtags": "#collegeapps #aitools #writingtips #studenttok #clearfy",
+      "pinned": "The mode selector is the part I would use most.",
+      "why": "Focuses on the Clearfy humanizer workflow and the rewrite strength selector as the visible differentiator."
+    },
+    {
+      "id": "detector_to_humanize_v1",
+      "title": "the check first then fix workflow",
+      "caption": "the check first then fix workflow",
+      "hashtags": "#studytok #writingtools #aitools #essayhelp #clearfy",
+      "pinned": "Check first, then edit. That workflow makes way more sense.",
+      "why": "Shows a full before-fix-after intent: detect the problem first, then move into humanizing/editing."
+    },
+    {
+      "id": "paste_whole_draft_v1",
+      "title": "me after pasting the paragraph instead of guessing",
+      "caption": "me after pasting the paragraph instead of guessing",
+      "hashtags": "#studentlife #essaywriting #aitools #productivitytools #clearfy",
+      "pinned": "The best part is seeing exactly which lines need work.",
+      "why": "Creator-style relatable angle, centered on reducing manual guessing and saving time."
+    },
+    {
+      "id": "submission_check_v1",
+      "title": "last minute draft check before submitting",
+      "caption": "last minute draft check before submitting",
+      "hashtags": "#finalsweek #studytok #writingtools #aitools #clearfy",
+      "pinned": "I would still read the final version myself, but this catches the obvious stiff parts fast.",
+      "why": "Submission-pressure angle; strong save intent because it maps to a common late-night student workflow."
+    }
+  ]
+}

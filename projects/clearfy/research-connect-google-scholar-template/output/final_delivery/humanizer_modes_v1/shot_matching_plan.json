@@ -1,0 +1,153 @@
+{
+  "source_script_card": "manual_clearfy_google_scholar_template_5_variants",
+  "selected_script_type": "humanizer_modes_v1",
+  "editing_style": {
+    "pace": "fast",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "caption_style": "PNG overlays, bold white text with black outline"
+  },
+  "product": "Clearfy",
+  "variant_id": "humanizer_modes_v1",
+  "title": "when your paragraph has that obvious AI voice",
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-4",
+      "voiceover": "so you are telling me I fixed my sources but my paragraph still sounds robotic...",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.2,
+      "clip_end": 4.4,
+      "playback_speed": 1.05,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "so you are telling me I fixed my sources but my paragraph still sounds robotic...",
+      "caption_style": {
+        "lines": [
+          "so you are telling me I fixed",
+          "my sources but my paragraph",
+          "still sounds robotic..."
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.405,
+        "max_width": 910,
+        "highlight_terms": [
+          "robotic"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "website_reveal",
+      "time": "4-6.5",
+      "voiceover": "that this website has a humanizer for that...",
+      "clip_id": "00_clearfy_landing_page_empty_state",
+      "clip_start": 0.2,
+      "clip_end": 2.5,
+      "playback_speed": 1,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "that this website has a humanizer for that...",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "feature_entry",
+      "time": "6.5-9.5",
+      "voiceover": "open AI humanizer",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 2.4,
+      "playback_speed": 1,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "open AI humanizer",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "input",
+      "time": "9.5-12.5",
+      "voiceover": "paste the awkward paragraph",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 2.4,
+      "clip_end": 5.8,
+      "playback_speed": 1.15,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "paste the awkward paragraph",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "mode",
+      "time": "12.5-15.5",
+      "voiceover": "choose how strong you want the rewrite",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 0.2,
+      "clip_end": 3.8,
+      "playback_speed": 1.2,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "choose how strong you want the rewrite",
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "result",
+      "time": "15.5-19",
+      "voiceover": "no cuz the modes make this so much easier to edit...",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 3.8,
+      "clip_end": 6.2,
+      "playback_speed": 0.75,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "no cuz the modes make this so much easier to edit...",
+      "caption_style": {
+        "lines": [
+          "no cuz the modes make this",
+          "so much easier to edit..."
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.43,
+        "max_width": 900,
+        "highlight_terms": [
+          "modes",
+          "edit"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "ending",
+      "time": "19-22",
+      "voiceover": "not writing for you, just helping the draft sound less stiff",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.2,
+      "clip_end": 2.6,
+      "playback_speed": 0.75,
+      "speed_reason": "Fit source clip to the Google Scholar template beat length.",
+      "reason": "Maps Clearfy product proof to the reference Google Scholar-style creator workflow.",
+      "on_screen_text": "not writing for you, just helping the draft sound less stiff",
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ]
+}

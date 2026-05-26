@@ -1,0 +1,26 @@
+{
+  "product": "Clearfy",
+  "template": "google_scholar_template",
+  "variant_id": "humanizer_modes_v1",
+  "title": "when your paragraph has that obvious AI voice",
+  "product_understanding": {
+    "user_pain": "Students and writers are unsure which parts of a draft sound AI-heavy or robotic.",
+    "feature": "Clearfy AI detector highlights likely AI-written wording and the humanizer helps revise stiff text with adjustable strength.",
+    "result": "User can see what to edit and revise the draft more intentionally.",
+    "emotional_angle": "last-minute relief without pretending the tool writes the paper for them"
+  },
+  "script_lines": [
+    "so you are telling me I fixed my sources but my paragraph still sounds robotic...",
+    "that this website has a humanizer for that...",
+    "open AI humanizer",
+    "paste the awkward paragraph",
+    "choose how strong you want the rewrite",
+    "no cuz the modes make this so much easier to edit...",
+    "not writing for you, just helping the draft sound less stiff"
+  ],
+  "safety_notes": [
+    "Avoid claims about bypassing AI detectors.",
+    "Do not promise guaranteed human score or academic success.",
+    "Frame Clearfy as checking and editing support."
+  ]
+}
