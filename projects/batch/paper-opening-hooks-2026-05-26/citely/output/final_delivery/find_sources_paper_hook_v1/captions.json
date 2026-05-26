@@ -1,0 +1,198 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.8,
+      "duration": 2.8,
+      "text": "when the paper makes a claim but I cannot find where it came from",
+      "beat": "pain_hook",
+      "clip_id": "paper_hook_01",
+      "clip_start": 0.0,
+      "clip_end": 1.2,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "when the paper makes a claim",
+          "but I cannot find",
+          "where it came from"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.35,
+        "max_width": 900,
+        "highlight_terms": [
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.8,
+      "end": 5.8,
+      "duration": 3.0,
+      "text": "so I open Citely instead of guessing",
+      "beat": "tool_reveal",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.1,
+      "clip_end": 3.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "so I open Citely",
+          "instead of guessing"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.48,
+        "max_width": 900,
+        "highlight_terms": [
+          "Citely"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.8,
+      "end": 8.8,
+      "duration": 3.000000000000001,
+      "text": "go to Find Sources",
+      "beat": "feature_entry",
+      "clip_id": "02_click_find_sources",
+      "clip_start": 0.2,
+      "clip_end": 3.4,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "go to",
+          "Find Sources"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "Find"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.8,
+      "end": 12.0,
+      "duration": 3.1999999999999993,
+      "text": "paste the claim from the paper",
+      "beat": "input",
+      "clip_id": "03_find_sources_input_claim",
+      "clip_start": 0.2,
+      "clip_end": 5.8,
+      "playback_speed": 1.8,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "paste the claim",
+          "from the paper"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 12.0,
+      "end": 16.0,
+      "duration": 4.0,
+      "text": "then it pulls up papers connected to that claim",
+      "beat": "result",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 0.8,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "then it pulls up papers",
+          "connected to that claim"
+        ],
+        "font_size": 60,
+        "line_gap": 6,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "papers",
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 16.0,
+      "end": 20.0,
+      "duration": 4.0,
+      "text": "finally I have a source trail to check before I cite it",
+      "beat": "ending",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 1.0,
+      "clip_end": 3.0,
+      "playback_speed": 0.7,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "finally I have a source trail",
+          "to check before I cite it"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.5,
+        "max_width": 900,
+        "highlight_terms": [
+          "check"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

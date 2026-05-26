@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:03,600
+when the figure looks fine until I need it in PowerPoint
+
+2
+00:00:03,600 --> 00:00:06,500
+FigPad keeps the workflow editable
+
+3
+00:00:06,500 --> 00:00:09,800
+generate or open the figure
+
+4
+00:00:09,800 --> 00:00:14,200
+choose the export option
+
+5
+00:00:14,200 --> 00:00:17,600
+send it to PowerPoint
+
+6
+00:00:17,600 --> 00:00:21,800
+so I can keep editing instead of rebuilding everything

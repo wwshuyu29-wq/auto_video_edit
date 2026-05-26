@@ -1,0 +1,197 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 3.2,
+      "duration": 3.2,
+      "text": "me trusting a reference just because it looks academic",
+      "beat": "pain_hook",
+      "clip_id": "paper_hook_02",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "me trusting a reference",
+          "just because it looks",
+          "academic"
+        ],
+        "font_size": 60,
+        "line_gap": 6,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "reference"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.2,
+      "end": 6.0,
+      "duration": 2.8,
+      "text": "nope, I check it first",
+      "beat": "tool_reveal",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.1,
+      "clip_end": 3.0,
+      "playback_speed": 1.05,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "nope, I check it first"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.45,
+        "max_width": 900,
+        "highlight_terms": [
+          "check"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 6.0,
+      "end": 9.0,
+      "duration": 3.0,
+      "text": "open Verify References",
+      "beat": "feature_entry",
+      "clip_id": "05_click_verify_references",
+      "clip_start": 0.2,
+      "clip_end": 5.8,
+      "playback_speed": 1.9,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Verify References"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.37,
+        "max_width": 900,
+        "highlight_terms": [
+          "Verify"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 9.0,
+      "end": 12.0,
+      "duration": 3.0,
+      "text": "paste the citation details",
+      "beat": "input",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.2,
+      "clip_end": 4.3,
+      "playback_speed": 1.4,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "paste the",
+          "citation details"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "citation"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 12.0,
+      "end": 16.5,
+      "duration": 4.5,
+      "text": "it shows what matches and what needs checking",
+      "beat": "result",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 5.0,
+      "playback_speed": 1.1,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "it shows what matches",
+          "and what needs checking"
+        ],
+        "font_size": 60,
+        "line_gap": 6,
+        "y_ratio": 0.39,
+        "max_width": 900,
+        "highlight_terms": [
+          "matches",
+          "checking"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 16.5,
+      "end": 20.5,
+      "duration": 4.0,
+      "text": "before I let one bad reference ruin the whole draft",
+      "beat": "ending",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 2.0,
+      "clip_end": 5.0,
+      "playback_speed": 0.75,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "before I let one bad reference",
+          "ruin the whole draft"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.48,
+        "max_width": 900,
+        "highlight_terms": [
+          "bad"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

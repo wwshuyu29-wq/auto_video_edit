@@ -1,0 +1,195 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 3.4,
+      "duration": 3.4,
+      "text": "when the only figure file I have is a flat image",
+      "beat": "pain_hook",
+      "clip_id": "paper_hook_05",
+      "clip_start": 0.0,
+      "clip_end": 3.2,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "when the only figure file",
+          "I have is a flat image"
+        ],
+        "font_size": 60,
+        "line_gap": 6,
+        "y_ratio": 0.37,
+        "max_width": 900,
+        "highlight_terms": [
+          "flat"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.4,
+      "end": 5.8,
+      "duration": 2.4,
+      "text": "open FigPad SVG Converter",
+      "beat": "tool_reveal",
+      "clip_id": "11_svg_converter_page",
+      "clip_start": 0.0,
+      "clip_end": 1.2,
+      "playback_speed": 0.6,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "open FigPad",
+          "SVG Converter"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.45,
+        "max_width": 900,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.8,
+      "end": 9.5,
+      "duration": 3.7,
+      "text": "upload the image",
+      "beat": "upload",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 0.2,
+      "clip_end": 4.2,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "upload the image"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "image"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 9.5,
+      "end": 13.3,
+      "duration": 3.8000000000000007,
+      "text": "convert it into SVG",
+      "beat": "convert",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 2.2,
+      "clip_end": 4.4,
+      "playback_speed": 0.65,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "convert it",
+          "into SVG"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 13.3,
+      "end": 17.3,
+      "duration": 4.0,
+      "text": "then download the editable file",
+      "beat": "download",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 0.2,
+      "clip_end": 4.1,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "then download",
+          "the editable file"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "editable"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 17.3,
+      "end": 21.5,
+      "duration": 4.199999999999999,
+      "text": "now I am not stuck with a screenshot-looking figure",
+      "beat": "ending",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 1.2,
+      "clip_end": 4.1,
+      "playback_speed": 0.7,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "now I am not stuck with",
+          "a screenshot-looking figure"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.47,
+        "max_width": 900,
+        "highlight_terms": [
+          "figure"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

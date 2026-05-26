@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:03,200
+me trusting a reference just because it looks academic
+
+2
+00:00:03,200 --> 00:00:06,000
+nope, I check it first
+
+3
+00:00:06,000 --> 00:00:09,000
+open Verify References
+
+4
+00:00:09,000 --> 00:00:12,000
+paste the citation details
+
+5
+00:00:12,000 --> 00:00:16,500
+it shows what matches and what needs checking
+
+6
+00:00:16,500 --> 00:00:20,500
+before I let one bad reference ruin the whole draft

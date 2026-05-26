@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:03,200
+when my paper draft sounds a little too AI-clean
+
+2
+00:00:03,200 --> 00:00:06,000
+so I check it in Clearfy first
+
+3
+00:00:06,000 --> 00:00:09,500
+paste the draft into AI detector
+
+4
+00:00:09,500 --> 00:00:13,500
+let it scan the writing
+
+5
+00:00:13,500 --> 00:00:17,800
+then review the AI-heavy highlights
+
+6
+00:00:17,800 --> 00:00:21,500
+not final work, just a better edit checklist

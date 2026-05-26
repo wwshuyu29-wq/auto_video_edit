@@ -1,0 +1,17 @@
+{
+  "product": "citely",
+  "template": "paper_opening_ice_uni",
+  "variant_id": "verify_reference_paper_hook_v1",
+  "title": "me checking references before trusting them",
+  "caption": "References can look real and still be off. I would verify the details before I build my paper around them.",
+  "hashtags": "#citationcheck #researchtools #studytok #academicwriting #citely",
+  "pinned_comment": "The scary part is when a citation looks real at first glance.",
+  "script_lines": [
+    "me trusting a reference just because it looks academic",
+    "nope, I check it first",
+    "open Verify References",
+    "paste the citation details",
+    "it shows what matches and what needs checking",
+    "before I let one bad reference ruin the whole draft"
+  ]
+}

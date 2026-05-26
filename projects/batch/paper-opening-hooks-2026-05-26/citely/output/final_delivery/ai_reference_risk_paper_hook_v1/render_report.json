@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/batch/paper-opening-hooks-2026-05-26/citely/output/final_delivery/ai_reference_risk_paper_hook_v1/shot_matching_plan.json",
+    "asset_library": "projects/batch/paper-opening-hooks-2026-05-26/citely/output/asset_library_with_paper_hooks.json"
+  },
+  "outputs": {
+    "preview_video": "projects/batch/paper-opening-hooks-2026-05-26/citely/output/final_delivery/ai_reference_risk_paper_hook_v1/citely_ai_reference_risk_paper_hook_v1_video.mp4",
+    "preview_sheet": "projects/batch/paper-opening-hooks-2026-05-26/citely/output/final_delivery/ai_reference_risk_paper_hook_v1/citely_ai_reference_risk_paper_hook_v1_video_sheet.jpg",
+    "preview_midpoint_sheet": "projects/batch/paper-opening-hooks-2026-05-26/citely/output/final_delivery/ai_reference_risk_paper_hook_v1/citely_ai_reference_risk_paper_hook_v1_video_midpoint_sheet.jpg",
+    "captions": "projects/batch/paper-opening-hooks-2026-05-26/citely/output/final_delivery/ai_reference_risk_paper_hook_v1/captions.json",
+    "srt": "projects/batch/paper-opening-hooks-2026-05-26/citely/output/final_delivery/ai_reference_risk_paper_hook_v1/master.srt",
+    "render_report": "projects/batch/paper-opening-hooks-2026-05-26/citely/output/final_delivery/ai_reference_risk_paper_hook_v1/render_report.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "20.866667",
+      "size": "20689619"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

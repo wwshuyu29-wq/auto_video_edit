@@ -1,0 +1,221 @@
+{
+  "source_template": "paper_opening_ice_uni",
+  "product": "figpad",
+  "selected_script_type": "ppt_export_paper_hook_v1",
+  "title": "when the paper figure also has to go into slides",
+  "editing_style": {
+    "pace": "fast but readable",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "target_duration": "20-22s",
+    "caption_style": "bold white TikTok captions with black outline"
+  },
+  "edit_plan": [
+    {
+      "beat": "pain_hook",
+      "time": "0-3.6s",
+      "voiceover": "when the figure looks fine until I need it in PowerPoint",
+      "clip_id": "paper_hook_06",
+      "clip_start": 0,
+      "clip_end": 3.5,
+      "playback_speed": 1,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "when the figure looks fine until I need it in PowerPoint",
+      "caption_style": {
+        "lines": [
+          "when the figure looks fine",
+          "until I need it",
+          "in PowerPoint"
+        ],
+        "font_size": 60,
+        "line_gap": 6,
+        "y_ratio": 0.35,
+        "max_width": 900,
+        "highlight_terms": [
+          "PowerPoint"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "tool_reveal",
+      "time": "3.6-6.5s",
+      "voiceover": "FigPad keeps the workflow editable",
+      "clip_id": "02_figpad_landing_page",
+      "clip_start": 0.2,
+      "clip_end": 4.2,
+      "playback_speed": 1.35,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "FigPad keeps the workflow editable",
+      "caption_style": {
+        "lines": [
+          "FigPad keeps the workflow",
+          "editable"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.48,
+        "max_width": 900,
+        "highlight_terms": [
+          "editable"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "generate",
+      "time": "6.5-9.8s",
+      "voiceover": "generate or open the figure",
+      "clip_id": "04_text_to_figure_result",
+      "clip_start": 0,
+      "clip_end": 3.1,
+      "playback_speed": 0.95,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "generate or open the figure",
+      "caption_style": {
+        "lines": [
+          "generate or open",
+          "the figure"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "figure"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "export",
+      "time": "9.8-14.2s",
+      "voiceover": "choose the export option",
+      "clip_id": "09_export_ppt_workflow",
+      "clip_start": 0.2,
+      "clip_end": 5.5,
+      "playback_speed": 1.25,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "choose the export option",
+      "caption_style": {
+        "lines": [
+          "choose the",
+          "export option"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "export"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ppt",
+      "time": "14.2-17.6s",
+      "voiceover": "send it to PowerPoint",
+      "clip_id": "10_ppt_export_result",
+      "clip_start": 0,
+      "clip_end": 2.8,
+      "playback_speed": 0.85,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "send it to PowerPoint",
+      "caption_style": {
+        "lines": [
+          "send it to",
+          "PowerPoint"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "PowerPoint"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "17.6-21.8s",
+      "voiceover": "so I can keep editing instead of rebuilding everything",
+      "clip_id": "10_ppt_export_result",
+      "clip_start": 0.7,
+      "clip_end": 2.8,
+      "playback_speed": 0.65,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "so I can keep editing instead of rebuilding everything",
+      "caption_style": {
+        "lines": [
+          "so I can keep editing",
+          "instead of rebuilding everything"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.47,
+        "max_width": 900,
+        "highlight_terms": [
+          "editing"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "No claims about writing papers for users.",
+    "No guarantees about citation or AI detection accuracy.",
+    "Product is framed as workflow support and checking/editing aid."
+  ],
+  "needs_script_revision": false
+}

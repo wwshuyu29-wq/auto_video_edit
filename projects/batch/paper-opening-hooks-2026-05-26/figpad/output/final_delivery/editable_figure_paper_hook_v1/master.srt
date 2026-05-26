@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:03,000
+when the paper needs a figure but my sketch is fighting for its life
+
+2
+00:00:03,000 --> 00:00:06,000
+so I start a figure draft in FigPad
+
+3
+00:00:06,000 --> 00:00:09,200
+type the figure idea
+
+4
+00:00:09,200 --> 00:00:12,700
+generate a visual starting point
+
+5
+00:00:12,700 --> 00:00:16,500
+then open it in the SVG editor
+
+6
+00:00:16,500 --> 00:00:21,500
+because the labels and layout still need fixing

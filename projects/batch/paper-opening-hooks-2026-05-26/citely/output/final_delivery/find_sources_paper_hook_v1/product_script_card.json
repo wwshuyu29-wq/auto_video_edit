@@ -1,0 +1,17 @@
+{
+  "product": "citely",
+  "template": "paper_opening_ice_uni",
+  "variant_id": "find_sources_paper_hook_v1",
+  "title": "when the paper makes a claim but the source trail is missing",
+  "caption": "When a paper makes a claim but the source trail is messy, I check where the evidence actually comes from first.",
+  "hashtags": "#research #studytok #citations #academicwriting #citely",
+  "pinned_comment": "Would you check the claim first or the reference list first?",
+  "script_lines": [
+    "when the paper makes a claim but I cannot find where it came from",
+    "so I open Citely instead of guessing",
+    "go to Find Sources",
+    "paste the claim from the paper",
+    "then it pulls up papers connected to that claim",
+    "finally I have a source trail to check before I cite it"
+  ]
+}

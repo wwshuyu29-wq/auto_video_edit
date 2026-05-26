@@ -1,0 +1,17 @@
+{
+  "product": "citely",
+  "template": "paper_opening_ice_uni",
+  "variant_id": "ai_reference_risk_paper_hook_v1",
+  "title": "AI references can look way too real",
+  "caption": "AI references can look convincing. I use Citely to check the source trail before relying on one.",
+  "hashtags": "#aitools #research #citationcheck #studenttok #citely",
+  "pinned_comment": "This is your sign to check AI references before trusting them.",
+  "script_lines": [
+    "AI references looking real is actually terrifying",
+    "so I do not trust the citation blindly",
+    "paste it into Verify References",
+    "check the title, authors, and source details",
+    "and if I only have a claim, I can find sources too",
+    "not every academic-looking citation deserves trust"
+  ]
+}

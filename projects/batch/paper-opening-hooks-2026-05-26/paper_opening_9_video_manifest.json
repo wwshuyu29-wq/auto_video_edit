@@ -1,0 +1,130 @@
+{
+  "created_at": "2026-05-26T11:05:08.897Z",
+  "hooks": [
+    {
+      "clip_id": "paper_hook_01",
+      "file_path": "/Users/kk/Desktop/auto video/IMG_9928.mov",
+      "duration": 1.285
+    },
+    {
+      "clip_id": "paper_hook_02",
+      "file_path": "/Users/kk/Desktop/auto video/IMG_9929.MOV",
+      "duration": 3.085
+    },
+    {
+      "clip_id": "paper_hook_03",
+      "file_path": "/Users/kk/Desktop/auto video/IMG_9930.MOV",
+      "duration": 3.052
+    },
+    {
+      "clip_id": "paper_hook_04",
+      "file_path": "/Users/kk/Desktop/auto video/IMG_9931.MOV",
+      "duration": 2.718
+    },
+    {
+      "clip_id": "paper_hook_05",
+      "file_path": "/Users/kk/Desktop/auto video/IMG_9933.MOV",
+      "duration": 3.285
+    },
+    {
+      "clip_id": "paper_hook_06",
+      "file_path": "/Users/kk/Desktop/auto video/IMG_9934.MOV",
+      "duration": 3.585
+    },
+    {
+      "clip_id": "paper_hook_07",
+      "file_path": "/Users/kk/Desktop/auto video/IMG_9935.MOV",
+      "duration": 3.185
+    },
+    {
+      "clip_id": "paper_hook_08",
+      "file_path": "/Users/kk/Desktop/auto video/IMG_9936.MOV",
+      "duration": 3.535
+    },
+    {
+      "clip_id": "paper_hook_09",
+      "file_path": "/Users/kk/Desktop/auto video/IMG_9937.MOV",
+      "duration": 2.485
+    }
+  ],
+  "products": {
+    "citely": [
+      {
+        "id": "find_sources_paper_hook_v1",
+        "title": "when the paper makes a claim but the source trail is missing",
+        "caption": "When a paper makes a claim but the source trail is messy, I check where the evidence actually comes from first.",
+        "hashtags": "#research #studytok #citations #academicwriting #citely",
+        "pinned": "Would you check the claim first or the reference list first?",
+        "hook": "paper_hook_01"
+      },
+      {
+        "id": "verify_reference_paper_hook_v1",
+        "title": "me checking references before trusting them",
+        "caption": "References can look real and still be off. I would verify the details before I build my paper around them.",
+        "hashtags": "#citationcheck #researchtools #studytok #academicwriting #citely",
+        "pinned": "The scary part is when a citation looks real at first glance.",
+        "hook": "paper_hook_02"
+      },
+      {
+        "id": "ai_reference_risk_paper_hook_v1",
+        "title": "AI references can look way too real",
+        "caption": "AI references can look convincing. I use Citely to check the source trail before relying on one.",
+        "hashtags": "#aitools #research #citationcheck #studenttok #citely",
+        "pinned": "This is your sign to check AI references before trusting them.",
+        "hook": "paper_hook_03"
+      }
+    ],
+    "figpad": [
+      {
+        "id": "editable_figure_paper_hook_v1",
+        "title": "when the paper needs a figure but my sketch is a mess",
+        "caption": "When the paper needs a figure, I would rather generate a draft I can still edit than use a flat image.",
+        "hashtags": "#scientificfigure #researchtools #phdlife #figures #figpad",
+        "pinned": "Editable figure draft > flat image you cannot fix.",
+        "hook": "paper_hook_04"
+      },
+      {
+        "id": "svg_converter_paper_hook_v1",
+        "title": "when the only figure file I have is a flat image",
+        "caption": "Flat figure assets are painful to edit. FigPad SVG Converter helps turn an image into an editable SVG workflow.",
+        "hashtags": "#svg #researchtools #scientificfigure #academictok #figpad",
+        "pinned": "This is for turning a figure image into something easier to keep editing.",
+        "hook": "paper_hook_05"
+      },
+      {
+        "id": "ppt_export_paper_hook_v1",
+        "title": "when the paper figure also has to go into slides",
+        "caption": "If the figure has to move into slides later, editable PPT export is the workflow I would want.",
+        "hashtags": "#powerpoint #scientificfigure #researchtools #phdlife #figpad",
+        "pinned": "For anyone who has had to rebuild a figure inside slides.",
+        "hook": "paper_hook_06"
+      }
+    ],
+    "clearfy": [
+      {
+        "id": "ai_detector_paper_hook_v1",
+        "title": "when my paper draft sounds too AI-clean",
+        "caption": "Before submitting, I would check which sentences sound too AI-heavy instead of guessing.",
+        "hashtags": "#essaywriting #studytok #aitools #writingtips #clearfy",
+        "pinned": "The highlighted sentences are the part I would review first.",
+        "hook": "paper_hook_07"
+      },
+      {
+        "id": "humanizer_paper_hook_v1",
+        "title": "when the paragraph is technically correct but sounds robotic",
+        "caption": "When a paragraph sounds stiff, I use Clearfy to help revise the wording and then still read it myself.",
+        "hashtags": "#writingtips #studentlife #aitools #essayhelp #clearfy",
+        "pinned": "I would still edit the final version myself, but this helps with the stiff parts.",
+        "hook": "paper_hook_08"
+      },
+      {
+        "id": "detect_then_humanize_paper_hook_v1",
+        "title": "the check first then fix workflow",
+        "caption": "Check what sounds AI-heavy first, then revise the stiff sentences. That workflow makes more sense than editing blind.",
+        "hashtags": "#studytok #writingtools #aitools #essaywriting #clearfy",
+        "pinned": "Check first, then fix. Much less guessing.",
+        "hook": "paper_hook_09"
+      }
+    ]
+  }
+}

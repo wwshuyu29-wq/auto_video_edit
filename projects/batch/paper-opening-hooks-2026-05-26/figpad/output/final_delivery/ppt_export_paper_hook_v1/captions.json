@@ -1,0 +1,197 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 3.6,
+      "duration": 3.6,
+      "text": "when the figure looks fine until I need it in PowerPoint",
+      "beat": "pain_hook",
+      "clip_id": "paper_hook_06",
+      "clip_start": 0.0,
+      "clip_end": 3.5,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "when the figure looks fine",
+          "until I need it",
+          "in PowerPoint"
+        ],
+        "font_size": 60,
+        "line_gap": 6,
+        "y_ratio": 0.35,
+        "max_width": 900,
+        "highlight_terms": [
+          "PowerPoint"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.6,
+      "end": 6.5,
+      "duration": 2.9,
+      "text": "FigPad keeps the workflow editable",
+      "beat": "tool_reveal",
+      "clip_id": "02_figpad_landing_page",
+      "clip_start": 0.2,
+      "clip_end": 4.2,
+      "playback_speed": 1.35,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "FigPad keeps the workflow",
+          "editable"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.48,
+        "max_width": 900,
+        "highlight_terms": [
+          "editable"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 6.5,
+      "end": 9.8,
+      "duration": 3.3000000000000007,
+      "text": "generate or open the figure",
+      "beat": "generate",
+      "clip_id": "04_text_to_figure_result",
+      "clip_start": 0.0,
+      "clip_end": 3.1,
+      "playback_speed": 0.95,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "generate or open",
+          "the figure"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "figure"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 9.8,
+      "end": 14.2,
+      "duration": 4.399999999999999,
+      "text": "choose the export option",
+      "beat": "export",
+      "clip_id": "09_export_ppt_workflow",
+      "clip_start": 0.2,
+      "clip_end": 5.5,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "choose the",
+          "export option"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "export"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 14.2,
+      "end": 17.6,
+      "duration": 3.400000000000002,
+      "text": "send it to PowerPoint",
+      "beat": "ppt",
+      "clip_id": "10_ppt_export_result",
+      "clip_start": 0.0,
+      "clip_end": 2.8,
+      "playback_speed": 0.85,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "send it to",
+          "PowerPoint"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "PowerPoint"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 17.6,
+      "end": 21.8,
+      "duration": 4.199999999999999,
+      "text": "so I can keep editing instead of rebuilding everything",
+      "beat": "ending",
+      "clip_id": "10_ppt_export_result",
+      "clip_start": 0.7,
+      "clip_end": 2.8,
+      "playback_speed": 0.65,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "so I can keep editing",
+          "instead of rebuilding everything"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.47,
+        "max_width": 900,
+        "highlight_terms": [
+          "editing"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

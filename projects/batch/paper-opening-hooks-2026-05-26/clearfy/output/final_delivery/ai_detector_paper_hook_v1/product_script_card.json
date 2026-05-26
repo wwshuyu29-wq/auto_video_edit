@@ -1,0 +1,17 @@
+{
+  "product": "clearfy",
+  "template": "paper_opening_ice_uni",
+  "variant_id": "ai_detector_paper_hook_v1",
+  "title": "when my paper draft sounds too AI-clean",
+  "caption": "Before submitting, I would check which sentences sound too AI-heavy instead of guessing.",
+  "hashtags": "#essaywriting #studytok #aitools #writingtips #clearfy",
+  "pinned_comment": "The highlighted sentences are the part I would review first.",
+  "script_lines": [
+    "when my paper draft sounds a little too AI-clean",
+    "so I check it in Clearfy first",
+    "paste the draft into AI detector",
+    "let it scan the writing",
+    "then review the AI-heavy highlights",
+    "not final work, just a better edit checklist"
+  ]
+}

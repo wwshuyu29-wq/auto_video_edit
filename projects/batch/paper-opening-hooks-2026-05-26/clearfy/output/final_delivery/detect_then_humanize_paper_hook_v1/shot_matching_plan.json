@@ -1,0 +1,221 @@
+{
+  "source_template": "paper_opening_ice_uni",
+  "product": "clearfy",
+  "selected_script_type": "detect_then_humanize_paper_hook_v1",
+  "title": "the check first then fix workflow",
+  "editing_style": {
+    "pace": "fast but readable",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "target_duration": "20-22s",
+    "caption_style": "bold white TikTok captions with black outline"
+  },
+  "edit_plan": [
+    {
+      "beat": "pain_hook",
+      "time": "0-2.8s",
+      "voiceover": "me editing the same paragraph forever because I do not know what sounds off",
+      "clip_id": "paper_hook_09",
+      "clip_start": 0,
+      "clip_end": 2.4,
+      "playback_speed": 1,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "me editing the same paragraph forever because I do not know what sounds off",
+      "caption_style": {
+        "lines": [
+          "me editing the same paragraph forever",
+          "because I do not know",
+          "what sounds off"
+        ],
+        "font_size": 56,
+        "line_gap": 6,
+        "y_ratio": 0.34,
+        "max_width": 900,
+        "highlight_terms": [
+          "editing"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "tool_reveal",
+      "time": "2.8-5.5s",
+      "voiceover": "Clearfy shows what to fix first",
+      "clip_id": "00_clearfy_landing_page_empty_state",
+      "clip_start": 0.2,
+      "clip_end": 2.5,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "Clearfy shows what to fix first",
+      "caption_style": {
+        "lines": [
+          "Clearfy shows",
+          "what to fix first"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.48,
+        "max_width": 900,
+        "highlight_terms": [
+          "fix"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "detector",
+      "time": "5.5-9.2s",
+      "voiceover": "run the AI detector",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 0.5,
+      "clip_end": 5,
+      "playback_speed": 1.25,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "run the AI detector",
+      "caption_style": {
+        "lines": [
+          "run the",
+          "AI detector"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "AI"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "proof",
+      "time": "9.2-13.2s",
+      "voiceover": "check the highlighted sentences",
+      "clip_id": "04_clearfy_detector_to_ai_result",
+      "clip_start": 5,
+      "clip_end": 9.8,
+      "playback_speed": 1.2,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "check the highlighted sentences",
+      "caption_style": {
+        "lines": [
+          "check the",
+          "highlighted sentences"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "highlighted"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "humanize",
+      "time": "13.2-16.8s",
+      "voiceover": "then humanize the stiff parts",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 5.8,
+      "playback_speed": 1.5,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "then humanize the stiff parts",
+      "caption_style": {
+        "lines": [
+          "then humanize",
+          "the stiff parts"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "humanize"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "16.8-21.3s",
+      "voiceover": "finally an edit flow that is not just guessing",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 0.2,
+      "clip_end": 2.9,
+      "playback_speed": 0.65,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "finally an edit flow that is not just guessing",
+      "caption_style": {
+        "lines": [
+          "finally an edit flow",
+          "that is not just guessing"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.47,
+        "max_width": 900,
+        "highlight_terms": [
+          "edit"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "No claims about writing papers for users.",
+    "No guarantees about citation or AI detection accuracy.",
+    "Product is framed as workflow support and checking/editing aid."
+  ],
+  "needs_script_revision": false
+}

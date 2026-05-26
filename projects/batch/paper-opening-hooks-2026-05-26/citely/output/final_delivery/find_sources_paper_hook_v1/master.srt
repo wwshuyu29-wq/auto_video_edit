@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:02,800
+when the paper makes a claim but I cannot find where it came from
+
+2
+00:00:02,800 --> 00:00:05,800
+so I open Citely instead of guessing
+
+3
+00:00:05,800 --> 00:00:08,800
+go to Find Sources
+
+4
+00:00:08,800 --> 00:00:12,000
+paste the claim from the paper
+
+5
+00:00:12,000 --> 00:00:16,000
+then it pulls up papers connected to that claim
+
+6
+00:00:16,000 --> 00:00:20,000
+finally I have a source trail to check before I cite it

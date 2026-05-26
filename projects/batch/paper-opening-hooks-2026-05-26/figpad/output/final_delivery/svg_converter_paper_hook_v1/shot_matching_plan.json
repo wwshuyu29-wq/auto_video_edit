@@ -1,0 +1,219 @@
+{
+  "source_template": "paper_opening_ice_uni",
+  "product": "figpad",
+  "selected_script_type": "svg_converter_paper_hook_v1",
+  "title": "when the only figure file I have is a flat image",
+  "editing_style": {
+    "pace": "fast but readable",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "target_duration": "20-22s",
+    "caption_style": "bold white TikTok captions with black outline"
+  },
+  "edit_plan": [
+    {
+      "beat": "pain_hook",
+      "time": "0-3.4s",
+      "voiceover": "when the only figure file I have is a flat image",
+      "clip_id": "paper_hook_05",
+      "clip_start": 0,
+      "clip_end": 3.2,
+      "playback_speed": 1,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "when the only figure file I have is a flat image",
+      "caption_style": {
+        "lines": [
+          "when the only figure file",
+          "I have is a flat image"
+        ],
+        "font_size": 60,
+        "line_gap": 6,
+        "y_ratio": 0.37,
+        "max_width": 900,
+        "highlight_terms": [
+          "flat"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "tool_reveal",
+      "time": "3.4-5.8s",
+      "voiceover": "open FigPad SVG Converter",
+      "clip_id": "11_svg_converter_page",
+      "clip_start": 0,
+      "clip_end": 1.2,
+      "playback_speed": 0.6,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "open FigPad SVG Converter",
+      "caption_style": {
+        "lines": [
+          "open FigPad",
+          "SVG Converter"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.45,
+        "max_width": 900,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "upload",
+      "time": "5.8-9.5s",
+      "voiceover": "upload the image",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 0.2,
+      "clip_end": 4.2,
+      "playback_speed": 1.1,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "upload the image",
+      "caption_style": {
+        "lines": [
+          "upload the image"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "image"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "convert",
+      "time": "9.5-13.3s",
+      "voiceover": "convert it into SVG",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 2.2,
+      "clip_end": 4.4,
+      "playback_speed": 0.65,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "convert it into SVG",
+      "caption_style": {
+        "lines": [
+          "convert it",
+          "into SVG"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "download",
+      "time": "13.3-17.3s",
+      "voiceover": "then download the editable file",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 0.2,
+      "clip_end": 4.1,
+      "playback_speed": 1,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "then download the editable file",
+      "caption_style": {
+        "lines": [
+          "then download",
+          "the editable file"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "editable"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "17.3-21.5s",
+      "voiceover": "now I am not stuck with a screenshot-looking figure",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 1.2,
+      "clip_end": 4.1,
+      "playback_speed": 0.7,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "now I am not stuck with a screenshot-looking figure",
+      "caption_style": {
+        "lines": [
+          "now I am not stuck with",
+          "a screenshot-looking figure"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.47,
+        "max_width": 900,
+        "highlight_terms": [
+          "figure"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "No claims about writing papers for users.",
+    "No guarantees about citation or AI detection accuracy.",
+    "Product is framed as workflow support and checking/editing aid."
+  ],
+  "needs_script_revision": false
+}

@@ -1,0 +1,17 @@
+{
+  "product": "clearfy",
+  "template": "paper_opening_ice_uni",
+  "variant_id": "detect_then_humanize_paper_hook_v1",
+  "title": "the check first then fix workflow",
+  "caption": "Check what sounds AI-heavy first, then revise the stiff sentences. That workflow makes more sense than editing blind.",
+  "hashtags": "#studytok #writingtools #aitools #essaywriting #clearfy",
+  "pinned_comment": "Check first, then fix. Much less guessing.",
+  "script_lines": [
+    "me editing the same paragraph forever because I do not know what sounds off",
+    "Clearfy shows what to fix first",
+    "run the AI detector",
+    "check the highlighted sentences",
+    "then humanize the stiff parts",
+    "finally an edit flow that is not just guessing"
+  ]
+}

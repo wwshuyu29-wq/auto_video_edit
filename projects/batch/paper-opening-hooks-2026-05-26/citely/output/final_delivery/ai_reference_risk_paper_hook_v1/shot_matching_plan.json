@@ -1,0 +1,222 @@
+{
+  "source_template": "paper_opening_ice_uni",
+  "product": "citely",
+  "selected_script_type": "ai_reference_risk_paper_hook_v1",
+  "title": "AI references can look way too real",
+  "editing_style": {
+    "pace": "fast but readable",
+    "platform": "TikTok",
+    "aspect_ratio": "9:16",
+    "target_duration": "20-22s",
+    "caption_style": "bold white TikTok captions with black outline"
+  },
+  "edit_plan": [
+    {
+      "beat": "pain_hook",
+      "time": "0-3.2s",
+      "voiceover": "AI references looking real is actually terrifying",
+      "clip_id": "paper_hook_03",
+      "clip_start": 0,
+      "clip_end": 3,
+      "playback_speed": 1,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "AI references looking real is actually terrifying",
+      "caption_style": {
+        "lines": [
+          "AI references looking real",
+          "is actually terrifying"
+        ],
+        "font_size": 62,
+        "line_gap": 6,
+        "y_ratio": 0.36,
+        "max_width": 900,
+        "highlight_terms": [
+          "AI",
+          "references"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "tool_reveal",
+      "time": "3.2-6s",
+      "voiceover": "so I do not trust the citation blindly",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.1,
+      "clip_end": 3,
+      "playback_speed": 1,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "so I do not trust the citation blindly",
+      "caption_style": {
+        "lines": [
+          "so I do not trust",
+          "the citation blindly"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.48,
+        "max_width": 900,
+        "highlight_terms": [
+          "citation"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "verify",
+      "time": "6-9s",
+      "voiceover": "paste it into Verify References",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.2,
+      "clip_end": 4.3,
+      "playback_speed": 1.45,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "paste it into Verify References",
+      "caption_style": {
+        "lines": [
+          "paste it into",
+          "Verify References"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.37,
+        "max_width": 900,
+        "highlight_terms": [
+          "Verify"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "proof",
+      "time": "9-13s",
+      "voiceover": "check the title, authors, and source details",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 5,
+      "playback_speed": 1.25,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "check the title, authors, and source details",
+      "caption_style": {
+        "lines": [
+          "check the title, authors,",
+          "and source details"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "check"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "bonus",
+      "time": "13-16.5s",
+      "voiceover": "and if I only have a claim, I can find sources too",
+      "clip_id": "02_click_find_sources",
+      "clip_start": 0.2,
+      "clip_end": 3.4,
+      "playback_speed": 1,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "and if I only have a claim, I can find sources too",
+      "caption_style": {
+        "lines": [
+          "and if I only have a claim,",
+          "I can find sources too"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "claim",
+          "sources"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "16.5-21s",
+      "voiceover": "not every academic-looking citation deserves trust",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0,
+      "clip_end": 3,
+      "playback_speed": 0.7,
+      "speed_reason": "Fit source footage to paper-opening template timing.",
+      "reason": "Maps product proof to the paper-opening pain hook structure.",
+      "on_screen_text": "not every academic-looking citation deserves trust",
+      "caption_style": {
+        "lines": [
+          "not every academic-looking",
+          "citation deserves trust"
+        ],
+        "font_size": 60,
+        "line_gap": 6,
+        "y_ratio": 0.45,
+        "max_width": 900,
+        "highlight_terms": [
+          "citation"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "No claims about writing papers for users.",
+    "No guarantees about citation or AI detection accuracy.",
+    "Product is framed as workflow support and checking/editing aid."
+  ],
+  "needs_script_revision": false
+}

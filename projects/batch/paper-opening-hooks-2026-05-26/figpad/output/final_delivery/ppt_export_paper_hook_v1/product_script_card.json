@@ -1,0 +1,17 @@
+{
+  "product": "figpad",
+  "template": "paper_opening_ice_uni",
+  "variant_id": "ppt_export_paper_hook_v1",
+  "title": "when the paper figure also has to go into slides",
+  "caption": "If the figure has to move into slides later, editable PPT export is the workflow I would want.",
+  "hashtags": "#powerpoint #scientificfigure #researchtools #phdlife #figpad",
+  "pinned_comment": "For anyone who has had to rebuild a figure inside slides.",
+  "script_lines": [
+    "when the figure looks fine until I need it in PowerPoint",
+    "FigPad keeps the workflow editable",
+    "generate or open the figure",
+    "choose the export option",
+    "send it to PowerPoint",
+    "so I can keep editing instead of rebuilding everything"
+  ]
+}

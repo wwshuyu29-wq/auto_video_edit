@@ -1,0 +1,198 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 3.2,
+      "duration": 3.2,
+      "text": "AI references looking real is actually terrifying",
+      "beat": "pain_hook",
+      "clip_id": "paper_hook_03",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "AI references looking real",
+          "is actually terrifying"
+        ],
+        "font_size": 62,
+        "line_gap": 6,
+        "y_ratio": 0.36,
+        "max_width": 900,
+        "highlight_terms": [
+          "AI",
+          "references"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.2,
+      "end": 6.0,
+      "duration": 2.8,
+      "text": "so I do not trust the citation blindly",
+      "beat": "tool_reveal",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.1,
+      "clip_end": 3.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "so I do not trust",
+          "the citation blindly"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.48,
+        "max_width": 900,
+        "highlight_terms": [
+          "citation"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 6.0,
+      "end": 9.0,
+      "duration": 3.0,
+      "text": "paste it into Verify References",
+      "beat": "verify",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.2,
+      "clip_end": 4.3,
+      "playback_speed": 1.45,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "paste it into",
+          "Verify References"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.37,
+        "max_width": 900,
+        "highlight_terms": [
+          "Verify"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 9.0,
+      "end": 13.0,
+      "duration": 4.0,
+      "text": "check the title, authors, and source details",
+      "beat": "proof",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 5.0,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "check the title, authors,",
+          "and source details"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "check"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 13.0,
+      "end": 16.5,
+      "duration": 3.5,
+      "text": "and if I only have a claim, I can find sources too",
+      "beat": "bonus",
+      "clip_id": "02_click_find_sources",
+      "clip_start": 0.2,
+      "clip_end": 3.4,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "and if I only have a claim,",
+          "I can find sources too"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "claim",
+          "sources"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 16.5,
+      "end": 21.0,
+      "duration": 4.5,
+      "text": "not every academic-looking citation deserves trust",
+      "beat": "ending",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 0.7,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "not every academic-looking",
+          "citation deserves trust"
+        ],
+        "font_size": 60,
+        "line_gap": 6,
+        "y_ratio": 0.45,
+        "max_width": 900,
+        "highlight_terms": [
+          "citation"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

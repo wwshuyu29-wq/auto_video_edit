@@ -1,0 +1,197 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 3.6,
+      "duration": 3.6,
+      "text": "when the paragraph is correct but sounds like a robot wrote it",
+      "beat": "pain_hook",
+      "clip_id": "paper_hook_08",
+      "clip_start": 0.0,
+      "clip_end": 3.4,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "when the paragraph is correct",
+          "but sounds like a robot",
+          "wrote it"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.35,
+        "max_width": 900,
+        "highlight_terms": [
+          "robot"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 3.6,
+      "end": 6.2,
+      "duration": 2.6,
+      "text": "Clearfy has a humanizer for the stiff parts",
+      "beat": "tool_reveal",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.2,
+      "clip_end": 3.0,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "Clearfy has a humanizer",
+          "for the stiff parts"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.48,
+        "max_width": 900,
+        "highlight_terms": [
+          "humanizer"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 6.2,
+      "end": 9.5,
+      "duration": 3.3,
+      "text": "open AI humanizer",
+      "beat": "humanizer",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 2.4,
+      "playback_speed": 0.75,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "open",
+          "AI humanizer"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "humanizer"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 9.5,
+      "end": 13.0,
+      "duration": 3.5,
+      "text": "paste the awkward paragraph",
+      "beat": "input",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 2.4,
+      "clip_end": 5.8,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "paste the awkward",
+          "paragraph"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "paragraph"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 13.0,
+      "end": 16.5,
+      "duration": 3.5,
+      "text": "choose the rewrite strength",
+      "beat": "mode",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 0.2,
+      "clip_end": 2.9,
+      "playback_speed": 0.75,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "choose the",
+          "rewrite strength"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "rewrite"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 16.5,
+      "end": 21.0,
+      "duration": 4.5,
+      "text": "then I edit the result so it still sounds like me",
+      "beat": "ending",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.2,
+      "clip_end": 4.0,
+      "playback_speed": 0.85,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "then I edit the result",
+          "so it still sounds like me"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.47,
+        "max_width": 900,
+        "highlight_terms": [
+          "edit"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:03,400
+when the only figure file I have is a flat image
+
+2
+00:00:03,400 --> 00:00:05,800
+open FigPad SVG Converter
+
+3
+00:00:05,800 --> 00:00:09,500
+upload the image
+
+4
+00:00:09,500 --> 00:00:13,300
+convert it into SVG
+
+5
+00:00:13,300 --> 00:00:17,300
+then download the editable file
+
+6
+00:00:17,300 --> 00:00:21,500
+now I am not stuck with a screenshot-looking figure

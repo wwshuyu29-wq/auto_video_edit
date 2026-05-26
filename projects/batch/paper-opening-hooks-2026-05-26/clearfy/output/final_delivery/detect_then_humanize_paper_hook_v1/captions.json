@@ -1,0 +1,197 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.8,
+      "duration": 2.8,
+      "text": "me editing the same paragraph forever because I do not know what sounds off",
+      "beat": "pain_hook",
+      "clip_id": "paper_hook_09",
+      "clip_start": 0.0,
+      "clip_end": 2.4,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "me editing the same paragraph forever",
+          "because I do not know",
+          "what sounds off"
+        ],
+        "font_size": 56,
+        "line_gap": 6,
+        "y_ratio": 0.34,
+        "max_width": 900,
+        "highlight_terms": [
+          "editing"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.8,
+      "end": 5.5,
+      "duration": 2.7,
+      "text": "Clearfy shows what to fix first",
+      "beat": "tool_reveal",
+      "clip_id": "00_clearfy_landing_page_empty_state",
+      "clip_start": 0.2,
+      "clip_end": 2.5,
+      "playback_speed": 0.9,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "Clearfy shows",
+          "what to fix first"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.48,
+        "max_width": 900,
+        "highlight_terms": [
+          "fix"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.5,
+      "end": 9.2,
+      "duration": 3.6999999999999993,
+      "text": "run the AI detector",
+      "beat": "detector",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 0.5,
+      "clip_end": 5.0,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "run the",
+          "AI detector"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "AI"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 9.2,
+      "end": 13.2,
+      "duration": 4.0,
+      "text": "check the highlighted sentences",
+      "beat": "proof",
+      "clip_id": "04_clearfy_detector_to_ai_result",
+      "clip_start": 5.0,
+      "clip_end": 9.8,
+      "playback_speed": 1.2,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "check the",
+          "highlighted sentences"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.52,
+        "max_width": 900,
+        "highlight_terms": [
+          "highlighted"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 13.2,
+      "end": 16.8,
+      "duration": 3.6000000000000014,
+      "text": "then humanize the stiff parts",
+      "beat": "humanize",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 5.8,
+      "playback_speed": 1.5,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "then humanize",
+          "the stiff parts"
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.38,
+        "max_width": 900,
+        "highlight_terms": [
+          "humanize"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 16.8,
+      "end": 21.3,
+      "duration": 4.5,
+      "text": "finally an edit flow that is not just guessing",
+      "beat": "ending",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 0.2,
+      "clip_end": 2.9,
+      "playback_speed": 0.65,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "finally an edit flow",
+          "that is not just guessing"
+        ],
+        "font_size": 58,
+        "line_gap": 6,
+        "y_ratio": 0.47,
+        "max_width": 900,
+        "highlight_terms": [
+          "edit"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

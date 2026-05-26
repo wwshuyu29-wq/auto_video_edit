@@ -1,0 +1,17 @@
+{
+  "product": "clearfy",
+  "template": "paper_opening_ice_uni",
+  "variant_id": "humanizer_paper_hook_v1",
+  "title": "when the paragraph is technically correct but sounds robotic",
+  "caption": "When a paragraph sounds stiff, I use Clearfy to help revise the wording and then still read it myself.",
+  "hashtags": "#writingtips #studentlife #aitools #essayhelp #clearfy",
+  "pinned_comment": "I would still edit the final version myself, but this helps with the stiff parts.",
+  "script_lines": [
+    "when the paragraph is correct but sounds like a robot wrote it",
+    "Clearfy has a humanizer for the stiff parts",
+    "open AI humanizer",
+    "paste the awkward paragraph",
+    "choose the rewrite strength",
+    "then I edit the result so it still sounds like me"
+  ]
+}
