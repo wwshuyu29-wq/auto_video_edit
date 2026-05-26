@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:04,000
+so you are telling me I did not have to reread the same paragraph 20 times...
+
+2
+00:00:04,000 --> 00:00:06,500
+just paste it here
+
+3
+00:00:06,500 --> 00:00:09,500
+choose AI detector or humanizer
+
+4
+00:00:09,500 --> 00:00:13,000
+check what looks AI-heavy
+
+5
+00:00:13,000 --> 00:00:16,000
+the highlighted lines are the ones I would fix first
+
+6
+00:00:16,000 --> 00:00:19,000
+then use humanizer for the stiff parts
+
+7
+00:00:19,000 --> 00:00:22,000
+why did no one show me this earlier...

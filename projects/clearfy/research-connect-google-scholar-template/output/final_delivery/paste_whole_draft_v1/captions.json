@@ -1,0 +1,137 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.0,
+      "text": "so you are telling me I did not have to reread the same paragraph 20 times...",
+      "beat": "hook",
+      "clip_id": "00_google_scholar_hook",
+      "clip_start": 0.2,
+      "clip_end": 4.4,
+      "playback_speed": 1.05,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "so you are telling me I did not",
+          "have to reread the same",
+          "paragraph 20 times..."
+        ],
+        "font_size": 62,
+        "line_gap": 8,
+        "y_ratio": 0.405,
+        "max_width": 910,
+        "highlight_terms": [
+          "paragraph"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 4.0,
+      "end": 6.5,
+      "duration": 2.5,
+      "text": "just paste it here",
+      "beat": "website_reveal",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.2,
+      "clip_end": 2.6,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {}
+    },
+    {
+      "index": 2,
+      "start": 6.5,
+      "end": 9.5,
+      "duration": 3.0,
+      "text": "choose AI detector or humanizer",
+      "beat": "input",
+      "clip_id": "00_clearfy_landing_page_empty_state",
+      "clip_start": 0.2,
+      "clip_end": 2.5,
+      "playback_speed": 0.9,
+      "subtitle_priority": "normal",
+      "caption_style": {}
+    },
+    {
+      "index": 3,
+      "start": 9.5,
+      "end": 13.0,
+      "duration": 3.5,
+      "text": "check what looks AI-heavy",
+      "beat": "detector",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 5.0,
+      "clip_end": 10.0,
+      "playback_speed": 1.4,
+      "subtitle_priority": "normal",
+      "caption_style": {}
+    },
+    {
+      "index": 4,
+      "start": 13.0,
+      "end": 16.0,
+      "duration": 3.0,
+      "text": "the highlighted lines are the ones I would fix first",
+      "beat": "proof",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 9.5,
+      "clip_end": 12.8,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {}
+    },
+    {
+      "index": 5,
+      "start": 16.0,
+      "end": 19.0,
+      "duration": 3.0,
+      "text": "then use humanizer for the stiff parts",
+      "beat": "humanizer",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 4.8,
+      "playback_speed": 1.4,
+      "subtitle_priority": "normal",
+      "caption_style": {}
+    },
+    {
+      "index": 6,
+      "start": 19.0,
+      "end": 22.0,
+      "duration": 3.0,
+      "text": "why did no one show me this earlier...",
+      "beat": "ending",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 0.2,
+      "clip_end": 2.9579999999999997,
+      "playback_speed": 1.25,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "why did no one show me",
+          "this earlier..."
+        ],
+        "font_size": 58,
+        "line_gap": 8,
+        "y_ratio": 0.43,
+        "max_width": 900,
+        "highlight_terms": [],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

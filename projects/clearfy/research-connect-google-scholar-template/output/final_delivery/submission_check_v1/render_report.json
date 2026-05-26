@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/clearfy/research-connect-google-scholar-template/output/final_delivery/submission_check_v1/shot_matching_plan.json",
+    "asset_library": "projects/clearfy/research-connect-google-scholar-template/output/asset_library_with_google_hook.json"
+  },
+  "outputs": {
+    "preview_video": "projects/clearfy/research-connect-google-scholar-template/output/final_delivery/submission_check_v1/clearfy_submission_check_v1_video.mp4",
+    "preview_sheet": "projects/clearfy/research-connect-google-scholar-template/output/final_delivery/submission_check_v1/clearfy_submission_check_v1_video_sheet.jpg",
+    "preview_midpoint_sheet": "projects/clearfy/research-connect-google-scholar-template/output/final_delivery/submission_check_v1/clearfy_submission_check_v1_video_midpoint_sheet.jpg",
+    "captions": "projects/clearfy/research-connect-google-scholar-template/output/final_delivery/submission_check_v1/captions.json",
+    "srt": "projects/clearfy/research-connect-google-scholar-template/output/final_delivery/submission_check_v1/master.srt",
+    "render_report": "projects/clearfy/research-connect-google-scholar-template/output/final_delivery/submission_check_v1/render_report.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "22.900000",
+      "size": "10142181"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

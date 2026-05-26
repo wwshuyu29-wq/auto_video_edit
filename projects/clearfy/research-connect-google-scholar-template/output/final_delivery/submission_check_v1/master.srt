@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:04,000
+so you are telling me I can check the weird AI tone before I submit...
+
+2
+00:00:04,000 --> 00:00:06,500
+go to Clearfy
+
+3
+00:00:06,500 --> 00:00:10,000
+scan the draft first
+
+4
+00:00:10,000 --> 00:00:13,500
+see which parts look too AI-written
+
+5
+00:00:13,500 --> 00:00:16,500
+then humanize the stiff sentences
+
+6
+00:00:16,500 --> 00:00:19,500
+choose a rewrite strength and keep editing
+
+7
+00:00:19,500 --> 00:00:23,000
+this is the kind of tool I needed during finals week...

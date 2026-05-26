@@ -1,0 +1,27 @@
+1
+00:00:00,000 --> 00:00:04,000
+so you are telling me I was editing blind this whole time...
+
+2
+00:00:04,000 --> 00:00:06,500
+this website lets you check the AI-heavy parts first
+
+3
+00:00:06,500 --> 00:00:10,000
+run the AI detector
+
+4
+00:00:10,000 --> 00:00:13,500
+it highlights the sentences that need attention
+
+5
+00:00:13,500 --> 00:00:16,000
+then hit humanize instead of redoing everything
+
+6
+00:00:16,000 --> 00:00:19,500
+adjust the rewrite strength
+
+7
+00:00:19,500 --> 00:00:23,000
+finally a workflow that shows what to fix first...
