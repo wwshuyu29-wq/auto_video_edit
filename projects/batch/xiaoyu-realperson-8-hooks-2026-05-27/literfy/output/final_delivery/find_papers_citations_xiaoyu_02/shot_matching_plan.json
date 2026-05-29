@@ -1,0 +1,231 @@
+{
+  "source_template": "studywithcc_7468211521600949510",
+  "reference_url": "https://www.tiktok.com/@stud.ywithcc/video/7468211521600949510",
+  "product": "Literfy",
+  "variant_id": "find_papers_citations_xiaoyu_02",
+  "title": "random research tabs got personally attacked",
+  "template_logic": "real-person reaction hook -> product reveal -> simple action -> result proof -> tool-name ending",
+  "editing_style": {
+    "pace": "fast TikTok creator demo",
+    "aspect_ratio": "9:16",
+    "caption_style": "bold white text with black outline, safe center width, selected yellow highlights, restrained emoji"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-2.4s",
+      "voiceover": "WAIT why are my research tabs suddenly unemployed 👀",
+      "clip_id": "07_xiaoyu_library_side_eye",
+      "clip_start": 0,
+      "clip_end": 1.55,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "WAIT why are my research tabs suddenly unemployed 👀",
+      "caption_style": {
+        "lines": [
+          "WAIT why are my",
+          "research tabs suddenly",
+          "unemployed 👀"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "tabs"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "reveal",
+      "time": "2.4-4.8s",
+      "voiceover": "open Find Papers",
+      "clip_id": "09_click_find_papers_button",
+      "clip_start": 0,
+      "clip_end": 2,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "open Find Papers",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Find Papers"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Find"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "search",
+      "time": "4.8-8.8s",
+      "voiceover": "search a topic and pick sources",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 0.4,
+      "clip_end": 7,
+      "playback_speed": 1.65,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "search a topic and pick sources",
+      "caption_style": {
+        "lines": [
+          "search a topic",
+          "and pick sources"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "sources"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "results",
+      "time": "8.8-12.2s",
+      "voiceover": "real papers show up in one place",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 7,
+      "clip_end": 12.8,
+      "playback_speed": 1.7,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "real papers show up in one place",
+      "caption_style": {
+        "lines": [
+          "real papers show up",
+          "in one place"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "real"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "save",
+      "time": "12.2-16.4s",
+      "voiceover": "save the useful ones",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 0.4,
+      "clip_end": 7.5,
+      "playback_speed": 1.7,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "save the useful ones",
+      "caption_style": {
+        "lines": [
+          "save the",
+          "useful ones"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "16.4-20.0s",
+      "voiceover": "and copy the citation before the chaos returns",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 7.5,
+      "clip_end": 14.5,
+      "playback_speed": 1.95,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "and copy the citation before the chaos returns",
+      "caption_style": {
+        "lines": [
+          "and copy the citation",
+          "before the chaos returns"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "citation"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "needs_script_revision": false,
+  "risk_notes": [
+    "Hook video is silent reaction footage; subtitles are not presented as spoken dialogue.",
+    "Claims avoid guaranteed academic outcomes and product overpromises.",
+    "Caption max_width kept in 680-720 safe area to avoid side edges and TikTok UI."
+  ]
+}

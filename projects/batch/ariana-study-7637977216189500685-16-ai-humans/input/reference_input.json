@@ -1,0 +1,13 @@
+{
+  "account_url": "https://www.tiktok.com/@ariana.study",
+  "reference_video_url": "https://www.tiktok.com/@ariana.study/video/7637977216189500685?_r=1&_t=ZS-96Libu7SVeP",
+  "video_list": [
+    {
+      "video_url": "https://www.tiktok.com/@ariana.study/video/7637977216189500685?_r=1&_t=ZS-96Libu7SVeP",
+      "caption": "",
+      "frames_summary": "TikTok reference for AI human opening hook. Analyze only the first seconds for visual hook grammar."
+    }
+  ],
+  "human_hook": {"enabled": true},
+  "human_hook_duration_s": 4
+}

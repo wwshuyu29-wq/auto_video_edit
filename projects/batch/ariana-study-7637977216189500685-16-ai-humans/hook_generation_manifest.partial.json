@@ -1,0 +1,114 @@
+[
+  {
+    "product": "citely",
+    "variant_id": "citely_human_01",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_01/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_01/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "citely",
+    "variant_id": "citely_human_02",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_02/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_02/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "citely",
+    "variant_id": "citely_human_03",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_03/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_03/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "citely",
+    "variant_id": "citely_human_04",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_04/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_04/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "clearfy",
+    "variant_id": "clearfy_human_01",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_01/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_01/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "clearfy",
+    "variant_id": "clearfy_human_02",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_02/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_02/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "clearfy",
+    "variant_id": "clearfy_human_03",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_03/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_03/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "clearfy",
+    "variant_id": "clearfy_human_04",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_04/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_04/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "figpad",
+    "variant_id": "figpad_human_01",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_01/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_01/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "figpad",
+    "variant_id": "figpad_human_02",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_02/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_02/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "figpad",
+    "variant_id": "figpad_human_03",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_03/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_03/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "figpad",
+    "variant_id": "figpad_human_04",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_04/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_04/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "literfy",
+    "variant_id": "literfy_human_01",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_01/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_01/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "literfy",
+    "variant_id": "literfy_human_02",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_02/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_02/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "literfy",
+    "variant_id": "literfy_human_03",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_03/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_03/output/human_hook_card.json",
+    "reused_existing": true
+  },
+  {
+    "product": "literfy",
+    "variant_id": "literfy_human_04",
+    "hook_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_04/output/generated_hooks/ai_human_hook.mp4",
+    "human_hook_card": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_04/output/human_hook_card.json",
+    "reused_existing": true
+  }
+]

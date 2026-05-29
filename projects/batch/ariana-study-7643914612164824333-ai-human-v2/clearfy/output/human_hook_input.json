@@ -1,0 +1,194 @@
+{
+  "account_url": "https://www.tiktok.com/@ariana.study/video/7643914612164824333",
+  "reference_hook_summary": "V2 adaptation of Ariana 764391: tired facepalm StudyTok selfie, hand on forehead, bad workflow consequence, then cut to product proof. Preserve emotion and rhythm, change identity/scene/gesture/product pain.",
+  "product": {
+    "product_name": "Clearfy",
+    "one_liner": "Clearfy is an AI writing review tool that helps users check AI-likelihood signals and revise AI-heavy text into clearer, more natural writing.",
+    "target_users": [
+      "students",
+      "college students",
+      "essay writers",
+      "academic writers",
+      "people revising AI-assisted drafts",
+      "multilingual writers"
+    ],
+    "core_features": [
+      {
+        "feature_name": "AI Detector",
+        "description": "Check pasted text or uploaded files for AI-generated writing signals.",
+        "user_benefit": "Helps users understand where a draft may look AI-heavy before they revise or submit it.",
+        "visual_need": "Screen recording of pasting an essay or uploading a file, clicking Check for AI, and showing AI-likelihood results."
+      },
+      {
+        "feature_name": "AI Humanizer",
+        "description": "Rewrite AI-heavy or robotic phrasing into more natural human-like wording while preserving the original meaning.",
+        "user_benefit": "Helps users polish drafts that sound too robotic or generic.",
+        "visual_need": "Screen recording of selecting AI-heavy text, running the humanizer, and comparing before/after wording."
+      },
+      {
+        "feature_name": "Sentence-Level Insights",
+        "description": "Review sentence-level AI signals so users can identify which parts of a draft need revision.",
+        "user_benefit": "Helps users focus editing time on the passages that look most robotic.",
+        "visual_need": "Close-up screen recording of highlighted or scored sentences and the user revising those passages."
+      },
+      {
+        "feature_name": "Upload File / Paste Text Workflow",
+        "description": "Start from pasted text or uploaded writing files.",
+        "user_benefit": "Makes it easy to review full essays or drafts without manually breaking them into small pieces.",
+        "visual_need": "Screen recording of switching between Paste Text and Upload File, then starting a check."
+      },
+      {
+        "feature_name": "Credit-Based Usage",
+        "description": "Use one credit balance for AI checks and revisions, with credits that do not expire.",
+        "user_benefit": "Helps users avoid subscriptions when they only need occasional AI checks or rewrites.",
+        "visual_need": "Screen recording of pricing or credit balance only if needed for a value-prop beat."
+      }
+    ],
+    "most_painful_user_scenarios": [
+      "A student used AI to draft an essay and now worries it sounds too robotic.",
+      "A writer wants to check AI-likelihood signals before revising a draft.",
+      "A student wants to know which sentences need rewriting instead of rewriting the whole essay blindly.",
+      "A user needs a quick check and revision workflow without committing to a subscription."
+    ],
+    "forbidden_claims": [
+      "Do not say Clearfy guarantees bypassing Turnitin or any AI detector.",
+      "Do not promise 0% AI detection or guaranteed undetectability.",
+      "Do not encourage academic dishonesty, plagiarism, or submitting unreviewed AI-generated work.",
+      "Do not say detector results are perfectly accurate.",
+      "Do not say Clearfy replaces the user's own writing, judgment, or responsibility.",
+      "Do not claim every school or detector will produce the same result."
+    ],
+    "good_tiktok_angles": [
+      "If your essay sounds too much like ChatGPT, check this first.",
+      "Before submitting an AI-assisted draft, I check which sentences sound robotic.",
+      "I stopped rewriting the whole essay and started fixing the sentences that looked AI-heavy.",
+      "This is how I make an AI-assisted draft sound more like my own writing.",
+      "No subscription, just credits when I need to check or revise a draft."
+    ],
+    "source_grounding_note": "Clearfy's public site describes AI detector and AI humanizer workflows for checking AI-likelihood signals and revising drafts into more natural writing.",
+    "allowed_claim_boundaries": [
+      "Can say Clearfy helps users check AI-likelihood signals in drafts.",
+      "Can say Clearfy helps rewrite robotic or AI-heavy phrasing into more natural language.",
+      "Can say Clearfy provides sentence-level review signals when visible in the recorded workflow.",
+      "Can say credits do not expire if using pricing/credit footage.",
+      "Should still say users need to review, edit, and take responsibility for the final writing."
+    ]
+  },
+  "product_name": "Clearfy",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "human_hook_observation": {
+    "status": "vision_structured_from_contact_sheet",
+    "detected": true,
+    "frame_index": {
+      "reference_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human-v2/references/7643914612164824333/reference.mp4",
+      "raw_reference": "https://www.tiktok.com/@ariana.study/video/7643914612164824333",
+      "hook_window_s": [
+        0,
+        4
+      ],
+      "fps": 2,
+      "frames_dir": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human-v2/references/7643914612164824333/frames",
+      "frames": [
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_01.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_02.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_03.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_04.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_05.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_06.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_07.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_08.jpg"
+      ],
+      "contact_sheet": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human-v2/references/7643914612164824333/hook_0_4s_sheet.jpg"
+    },
+    "observation": {
+      "reference_caption_visible": "Just saw a guy run his essay through an AI detector first. Not naturalwrite. Straight to the detector. Score: 97% AI. Now he is panicking.",
+      "visual_summary": "Close vertical selfie at a study desk. Student keeps one hand pressed to forehead with eyes closed or downcast, looking tired and disappointed. A pink checkered notebook/paper repeatedly moves close to the lens on the right side, creating a casual handheld StudyTok feel. Low motion, facepalm energy, indoor ceiling/ring light, desk edge visible.",
+      "hook_mechanism": "Someone uses the risky/wrong workflow first, gets a scary score or proof problem, then panic becomes the reason to show a safer product workflow.",
+      "person": {
+        "framing": "vertical 9:16 smartphone selfie, close-up face and upper torso, desk-level angle"
+      },
+      "environment": "bedroom study desk with laptop, essay draft, soft ceiling light, and a notebook near the camera",
+      "expression": "essay submission panic after realizing the wording sounds too AI-heavy",
+      "action": "keeps palm on forehead, closes eyes, then looks down at the laptop like the draft betrayed them",
+      "atmosphere": "creator-native StudyTok, lightly dramatic, not polished ad footage",
+      "camera": "front-facing phone camera, static desk-level selfie with subtle handheld movement",
+      "lighting_color": "soft indoor light with slight phone-camera realism",
+      "prompt_inputs": {
+        "scene": "bedroom study desk with laptop, essay draft, soft ceiling light, and a notebook near the camera",
+        "emotion": "essay submission panic after realizing the wording sounds too AI-heavy",
+        "motion": "keeps palm on forehead, closes eyes, then looks down at the laptop like the draft betrayed them",
+        "atmosphere": "authentic StudyTok reaction, lightly dramatic and creator-native",
+        "camera_motion": "subtle phone selfie movement, desk-level angle",
+        "framing": "vertical 9:16 smartphone selfie, close-up to medium close-up",
+        "must_change": [
+          "face",
+          "outfit",
+          "prop color",
+          "desk layout",
+          "camera distance",
+          "gesture timing"
+        ]
+      }
+    }
+  },
+  "viral_pattern_card": {
+    "template_id": "ariana-study-professors-evolving-human-hook",
+    "main_content_logic": "[close selfie academic panic] + [professors are evolving caption] + [hard cut to product proof]",
+    "caption_logic": {
+      "visible_sequence": [
+        "bro... professors are checking AI wording now...",
+        "so I check the draft in Clearfy first"
+      ],
+      "sentence_roles": [
+        "panic hook adapted from reference",
+        "product proof reveal"
+      ]
+    },
+    "viral_patterns": [
+      {
+        "opening_0_3s": "bro... professors are checking AI wording now...",
+        "hook_type": "academic panic / professors are evolving",
+        "visual_style": {
+          "person": {
+            "count": 1,
+            "role": "student creator / academic studytok creator",
+            "framing": "vertical 9:16 close-up selfie, face off-center with room for captions below",
+            "identity_policy": "do not copy the reference creator face, identity, clothing, or exact likeness"
+          },
+          "action": "covers the mouth with one hand, blinks in disbelief, glances to the laptop, then gives a small helpless shrug",
+          "expression": "nervous amused panic, like realizing polished wording might get questioned",
+          "atmosphere": "college essay revision anxiety, native studytok confession",
+          "environment": "a different student bedroom desk with a laptop and essay document glow, not the reference room",
+          "camera": "vertical 9:16 phone selfie; soft handheld phone movement with a short pause",
+          "lighting_color": "natural indoor study lighting, changed from reference lighting",
+          "differentiation_rule": "reuse only emotional function, close-selfie grammar, and hard-cut-to-proof rhythm; change face, outfit, room layout, props, lighting, camera distance, and gesture timing",
+          "text_overlay": {
+            "visible": true,
+            "style": "large white TikTok caption with black outline, lower-middle placement",
+            "summary": "caption should be burned during render, not generated inside AI video",
+            "safe_area": "lower-middle; avoid covering eyes and mouth-covering hand"
+          },
+          "prompt_inputs": {
+            "scene": "a different student bedroom desk with a laptop and essay document glow, not the reference room",
+            "emotion": "nervous amused panic, like realizing polished wording might get questioned",
+            "motion": "covers the mouth with one hand, blinks in disbelief, glances to the laptop, then gives a small helpless shrug",
+            "atmosphere": "college essay revision anxiety, native studytok confession",
+            "framing": "vertical 9:16 close-up selfie, face off-center with room for captions below",
+            "camera_motion": "soft handheld phone movement with a short pause",
+            "must_change": [
+              "face",
+              "outfit",
+              "bedroom layout",
+              "desk items",
+              "lighting",
+              "gesture timing"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

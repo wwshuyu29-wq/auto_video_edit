@@ -1,4 +1,7 @@
 import Link from "next/link";
+import { getProjectSummaries } from "@/lib/repo-data";
+
+export const dynamic = "force-dynamic";
 
 const flowSteps = [
   {
@@ -28,20 +31,9 @@ const flowSteps = [
   }
 ];
 
-const projectLinks = [
-  {
-    label: "StudyingWithYun Batch",
-    href: "/projects/batch__studyingwithyun-7637665419305782546",
-    description: "当前批量项目入口，适合继续检查 FigPad / Citely / Clearfy。"
-  },
-  {
-    label: "Create New Project",
-    href: "/projects/new",
-    description: "新建一个产品视频项目，上传素材并开始生成流程。"
-  }
-];
+export default async function HomePage() {
+  const projects = await getProjectSummaries();
 
-export default function HomePage() {
   return (
     <div className="space-y-12 pb-12">
       <section className="grid gap-8 border-b border-ink/10 pb-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
@@ -102,19 +94,37 @@ export default function HomePage() {
         </div>
         <h2 className="mt-4 text-4xl font-semibold text-ink">选择一个项目继续编辑</h2>
         <div className="mt-8 grid gap-4 lg:grid-cols-2">
-          {projectLinks.map((project) => (
+          {projects.map((project) => (
             <Link
-              key={project.href}
-              href={project.href}
+              key={project.slug}
+              href={`/projects/${project.slug}`}
               className="group rounded-lg border border-ink/10 bg-white px-5 py-5 transition hover:-translate-y-0.5 hover:border-ink/25 hover:shadow-[0_18px_45px_rgba(31,46,43,0.08)]"
             >
-              <h3 className="text-xl font-semibold text-ink">{project.label}</h3>
-              <p className="mt-3 text-sm leading-6 text-ink/62">{project.description}</p>
-              <div className="mt-5 text-sm font-medium text-ink transition group-hover:translate-x-1">
-                Open project
+              <div className="flex items-start justify-between gap-4">
+                <h3 className="text-xl font-semibold text-ink">{project.name}</h3>
+                <span className="rounded-md bg-[#eef4f1] px-2 py-1 text-xs font-medium text-ink/60">
+                  {project.deliverableCount} videos
+                </span>
+              </div>
+              <p className="mt-3 text-sm leading-6 text-ink/62">{project.headline}</p>
+              <div className="mt-5 flex items-center justify-between gap-3 text-sm font-medium text-ink transition group-hover:translate-x-1">
+                <span>Open project</span>
+                <span className="text-xs text-ink/40">{project.group}</span>
               </div>
             </Link>
           ))}
+          <Link
+            href="/projects/new"
+            className="group rounded-lg border border-dashed border-ink/20 bg-white px-5 py-5 transition hover:-translate-y-0.5 hover:border-ink/35"
+          >
+            <h3 className="text-xl font-semibold text-ink">Create New Project</h3>
+            <p className="mt-3 text-sm leading-6 text-ink/62">
+              新建一个产品视频项目，上传素材并开始生成流程。
+            </p>
+            <div className="mt-5 text-sm font-medium text-ink transition group-hover:translate-x-1">
+              Start setup
+            </div>
+          </Link>
         </div>
       </section>
     </div>

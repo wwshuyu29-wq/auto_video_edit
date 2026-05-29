@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:02,400
+WAIT the detector highlights the AI-looking parts?? 😳
+
+2
+00:00:02,400 --> 00:00:05,000
+open Clearfy
+
+3
+00:00:05,000 --> 00:00:08,500
+paste the draft into AI detector
+
+4
+00:00:08,500 --> 00:00:12,200
+let it scan the writing
+
+5
+00:00:12,200 --> 00:00:16,200
+review the highlighted sentences
+
+6
+00:00:16,200 --> 00:00:19,200
+now I know what to edit first ✅

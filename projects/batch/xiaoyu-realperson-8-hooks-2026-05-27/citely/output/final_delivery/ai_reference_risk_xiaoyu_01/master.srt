@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:02,600
+WAIT why do AI citations look this real 😳
+
+2
+00:00:02,600 --> 00:00:05,100
+go to Citely
+
+3
+00:00:05,100 --> 00:00:08,100
+open Verify References
+
+4
+00:00:08,100 --> 00:00:11,400
+paste the suspicious reference
+
+5
+00:00:11,400 --> 00:00:15,900
+it checks the source details
+
+6
+00:00:15,900 --> 00:00:19,300
+it is called Citely btw

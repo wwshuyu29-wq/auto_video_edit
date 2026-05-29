@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:02,400
+WAIT why does my paragraph sound like a robot 😭
+
+2
+00:00:02,400 --> 00:00:05,000
+open Clearfy
+
+3
+00:00:05,000 --> 00:00:08,000
+go to AI humanizer
+
+4
+00:00:08,000 --> 00:00:11,500
+paste the stiff paragraph
+
+5
+00:00:11,500 --> 00:00:15,000
+choose the rewrite strength
+
+6
+00:00:15,000 --> 00:00:19,000
+edit the result so it still sounds like you

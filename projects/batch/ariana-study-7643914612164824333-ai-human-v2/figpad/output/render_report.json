@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/batch/ariana-study-7643914612164824333-ai-human-v2/figpad/output/shot_matching_plan.json",
+    "asset_library": "projects/batch/ariana-study-7643914612164824333-ai-human-v2/figpad/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "projects/batch/ariana-study-7643914612164824333-ai-human-v2/figpad/output/figpad_ariana_764391_ai_hook_v2_video.mp4",
+    "preview_sheet": "projects/batch/ariana-study-7643914612164824333-ai-human-v2/figpad/output/figpad_ariana_764391_ai_hook_v2_video_sheet.jpg",
+    "preview_midpoint_sheet": "projects/batch/ariana-study-7643914612164824333-ai-human-v2/figpad/output/figpad_ariana_764391_ai_hook_v2_video_midpoint_sheet.jpg",
+    "captions": "projects/batch/ariana-study-7643914612164824333-ai-human-v2/figpad/output/captions.json",
+    "srt": "projects/batch/ariana-study-7643914612164824333-ai-human-v2/figpad/output/master.srt",
+    "render_report": "projects/batch/ariana-study-7643914612164824333-ai-human-v2/figpad/output/render_report.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "20.800000",
+      "size": "13305704"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "project_id": "generated-video-library",
+  "project_dir": "projects/batch/generated-video-library",
+  "product_name": "Generated Video Library",
+  "workflow_mode": "mixed",
+  "stages": [],
+  "delivery": {
+    "mode": "template_product_library",
+    "render_report": "output/final_delivery_manifest.json"
+  }
+}

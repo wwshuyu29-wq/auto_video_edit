@@ -1,0 +1,18 @@
+{
+  "product": "FigPad",
+  "variant_id": "editable_figure_xiaoyu_01",
+  "template": "studywithcc reaction product demo",
+  "title": "flat AI figures catching strays today",
+  "script_lines": [
+    "WAIT why are we accepting flat AI figures 😭",
+    "open FigPad",
+    "type the figure idea",
+    "generate a figure draft",
+    "then open SVG editor",
+    "now I can fix labels like a normal person"
+  ],
+  "caption": "Generate a figure draft, then open it in an SVG editor so the labels and layout can actually be fixed.",
+  "hashtags": "#scientificfigure #researchtools #phdlife #aitools #figpad",
+  "pinned_comment": "flat AI images heard “editable” and started sweating",
+  "why": "Secret-reveal hook into text-to-figure and SVG edit workflow."
+}

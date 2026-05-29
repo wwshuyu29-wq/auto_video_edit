@@ -19,10 +19,18 @@ __pycache__/
 **/references/**/*.jpeg
 **/references/**/*.png
 **/references/**/frames/**
+**/reference/**/*.mp4
+**/reference/**/*.mov
+**/reference/**/*.jpg
+**/reference/**/*.jpeg
+**/reference/**/*.png
+**/materials/**/*.mp4
+**/materials/**/*.mov
 *.mov
 *.m4v
 
 # Generated video artifacts
+**/main/*.mp4
 **/output/**/preview_render/**
 **/output/**/segments/**
 **/output/**/overlays/**
@@ -50,6 +58,7 @@ source-skills/**/.git/
 **/output/final_delivery/*.mp4
 **/output/final_delivery/*.jpg
 **/output/final_delivery/*.png
+*.zip
 
 # Keep temporary preview work directories out of Git even when JSON artifacts are unignored above.
 **/output/**/preview_render/**

@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:04,000
+me rereading the sentence that sounds too robotic...
+
+2
+00:00:04,000 --> 00:00:07,000
+so I check the draft in Clearfy first
+
+3
+00:00:07,000 --> 00:00:11,000
+it shows which sentences look AI-heavy
+
+4
+00:00:11,000 --> 00:00:15,000
+then I review the flagged parts
+
+5
+00:00:15,000 --> 00:00:18,000
+and rewrite the parts that sound robotic
+
+6
+00:00:18,000 --> 00:00:21,000
+then I still read it before using it

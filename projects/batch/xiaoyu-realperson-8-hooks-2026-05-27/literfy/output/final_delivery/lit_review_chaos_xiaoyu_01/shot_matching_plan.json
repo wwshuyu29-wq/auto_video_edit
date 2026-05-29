@@ -1,0 +1,231 @@
+{
+  "source_template": "studywithcc_7468211521600949510",
+  "reference_url": "https://www.tiktok.com/@stud.ywithcc/video/7468211521600949510",
+  "product": "Literfy",
+  "variant_id": "lit_review_chaos_xiaoyu_01",
+  "title": "literature review chaos finally got humbled",
+  "template_logic": "real-person reaction hook -> product reveal -> simple action -> result proof -> tool-name ending",
+  "editing_style": {
+    "pace": "fast TikTok creator demo",
+    "aspect_ratio": "9:16",
+    "caption_style": "bold white text with black outline, safe center width, selected yellow highlights, restrained emoji"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-2.6s",
+      "voiceover": "WAIT why is this site lowkey saving my lit review chaos 😭",
+      "clip_id": "04_xiaoyu_laptop_library_explain",
+      "clip_start": 0,
+      "clip_end": 2.42,
+      "playback_speed": 1,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "WAIT why is this site lowkey saving my lit review chaos 😭",
+      "caption_style": {
+        "lines": [
+          "WAIT why is this site",
+          "lowkey saving my",
+          "lit review chaos 😭"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "lit",
+          "review"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "reveal",
+      "time": "2.6-5.2s",
+      "voiceover": "go to Literfy",
+      "clip_id": "01_literfy_landing_page",
+      "clip_start": 0.3,
+      "clip_end": 3.8,
+      "playback_speed": 1.35,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "go to Literfy",
+      "caption_style": {
+        "lines": [
+          "go to",
+          "Literfy"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Literfy"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "input",
+      "time": "5.2-8.6s",
+      "voiceover": "type your topic",
+      "clip_id": "02_review_input_topic",
+      "clip_start": 0.4,
+      "clip_end": 5.6,
+      "playback_speed": 1.55,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "type your topic",
+      "caption_style": {
+        "lines": [
+          "type your topic"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "papers",
+      "time": "8.6-12.0s",
+      "voiceover": "it finds real papers first",
+      "clip_id": "03_paper_list_results",
+      "clip_start": 0.2,
+      "clip_end": 5.4,
+      "playback_speed": 1.55,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "it finds real papers first",
+      "caption_style": {
+        "lines": [
+          "it finds",
+          "real papers first"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "real"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "outline",
+      "time": "12.0-15.8s",
+      "voiceover": "then builds an outline from what you picked",
+      "clip_id": "06_literature_review_outline",
+      "clip_start": 0.05,
+      "clip_end": 3.15,
+      "playback_speed": 0.85,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "then builds an outline from what you picked",
+      "caption_style": {
+        "lines": [
+          "then builds an outline",
+          "from what you picked"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "15.8-19.2s",
+      "voiceover": "it is called Literfy btw",
+      "clip_id": "08_generated_review",
+      "clip_start": 3,
+      "clip_end": 9,
+      "playback_speed": 1.75,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "it is called Literfy btw",
+      "caption_style": {
+        "lines": [
+          "it is called",
+          "Literfy btw"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Literfy"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "needs_script_revision": false,
+  "risk_notes": [
+    "Hook video is silent reaction footage; subtitles are not presented as spoken dialogue.",
+    "Claims avoid guaranteed academic outcomes and product overpromises.",
+    "Caption max_width kept in 680-720 safe area to avoid side edges and TikTok UI."
+  ]
+}

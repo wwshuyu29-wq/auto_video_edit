@@ -1,0 +1,33 @@
+{
+  "status": "rendered_preview",
+  "inputs": {
+    "shot_matching_plan": "projects/batch/xiaoyu-realperson-8-hooks-2026-05-27/literfy/output/final_delivery/find_papers_citations_xiaoyu_02/shot_matching_plan.json",
+    "asset_library": "projects/batch/xiaoyu-realperson-8-hooks-2026-05-27/literfy/output/asset_library.json"
+  },
+  "outputs": {
+    "preview_video": "projects/batch/xiaoyu-realperson-8-hooks-2026-05-27/literfy/output/final_delivery/find_papers_citations_xiaoyu_02/literfy_find_papers_citations_xiaoyu_02_video.mp4",
+    "preview_sheet": "projects/batch/xiaoyu-realperson-8-hooks-2026-05-27/literfy/output/final_delivery/find_papers_citations_xiaoyu_02/literfy_find_papers_citations_xiaoyu_02_video_sheet.jpg",
+    "preview_midpoint_sheet": "projects/batch/xiaoyu-realperson-8-hooks-2026-05-27/literfy/output/final_delivery/find_papers_citations_xiaoyu_02/literfy_find_papers_citations_xiaoyu_02_video_midpoint_sheet.jpg",
+    "captions": "projects/batch/xiaoyu-realperson-8-hooks-2026-05-27/literfy/output/final_delivery/find_papers_citations_xiaoyu_02/captions.json",
+    "srt": "projects/batch/xiaoyu-realperson-8-hooks-2026-05-27/literfy/output/final_delivery/find_papers_citations_xiaoyu_02/master.srt",
+    "render_report": "projects/batch/xiaoyu-realperson-8-hooks-2026-05-27/literfy/output/final_delivery/find_papers_citations_xiaoyu_02/render_report.json"
+  },
+  "video_metadata": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "width": 1080,
+        "height": 1920
+      }
+    ],
+    "format": {
+      "duration": "19.798698",
+      "size": "17049318"
+    }
+  },
+  "notes": [
+    "Preview uses PNG caption overlays to avoid depending on FFmpeg drawtext/libass.",
+    "Final VO/music is not added in this preview pass."
+  ]
+}

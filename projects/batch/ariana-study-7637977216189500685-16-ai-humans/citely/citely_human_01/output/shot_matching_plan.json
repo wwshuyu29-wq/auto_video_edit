@@ -1,0 +1,127 @@
+{
+  "product_name": "Citely",
+  "template_id": "studyingwithyun_teacher_accusation_proof_report",
+  "edit_plan": [
+    {
+      "time": "0-4s",
+      "beat": "hook",
+      "voiceover": "bro... professors are checking fake citations now...",
+      "on_screen_text": "bro... professors are checking fake citations now...",
+      "clip_id": "ai_human_hook",
+      "clip_start": 0,
+      "clip_end": 4,
+      "playback_speed": 1,
+      "reason": "Unique AI silent selfie reaction for this exact variant; not reused across the batch.",
+      "transition": "hard cut",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.54,
+        "line_gap": 5
+      }
+    },
+    {
+      "time": "4-7s",
+      "beat": "product_reveal",
+      "voiceover": "so I check the reference trail in Citely",
+      "on_screen_text": "so I check the reference trail in Citely",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0,
+      "clip_end": 3,
+      "playback_speed": 1.1,
+      "reason": "Citely product reveal",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "time": "7-10s",
+      "beat": "verify_entry",
+      "voiceover": "I go straight to Verify References",
+      "on_screen_text": "I go straight to Verify References",
+      "clip_id": "05_click_verify_references",
+      "clip_start": 0.2,
+      "clip_end": 3.8,
+      "playback_speed": 1.35,
+      "reason": "click Verify References",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "time": "10-14s",
+      "beat": "input",
+      "voiceover": "paste the suspicious citation",
+      "on_screen_text": "paste the suspicious citation",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.1,
+      "clip_end": 4.4,
+      "playback_speed": 1.25,
+      "reason": "reference input workflow",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "time": "14-18s",
+      "beat": "result",
+      "voiceover": "then I check what actually matches",
+      "on_screen_text": "then I check what actually matches",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 5.1,
+      "playback_speed": 1.35,
+      "reason": "verification result proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "time": "18-21s",
+      "beat": "source_proof",
+      "voiceover": "and trace the claim back to real sources",
+      "on_screen_text": "and trace the claim back to real sources",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0,
+      "clip_end": 3,
+      "playback_speed": 1,
+      "reason": "find sources result proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "Opening AI hook must be an original fictional student, not the reference creator likeness.",
+    "Claims are framed as workflow proof, not guarantees or misconduct encouragement."
+  ],
+  "reference_template": "ariana-study-professors-evolving-human-hook",
+  "variant_id": "citely_human_01"
+}

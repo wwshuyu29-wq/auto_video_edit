@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:04,000
+me when the lab asks for editable figures...
+
+2
+00:00:04,000 --> 00:00:07,000
+so I keep the FigPad edit trail visible
+
+3
+00:00:07,000 --> 00:00:10,000
+then I open it in SVG Edit
+
+4
+00:00:10,000 --> 00:00:14,000
+and keep editing the labels myself
+
+5
+00:00:14,000 --> 00:00:18,000
+then I export it as PPTX or SVG
+
+6
+00:00:18,000 --> 00:00:21,000
+so it is not just a flat AI image

@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:02,400
+WAIT this turns a flat image into SVG?? 🤯
+
+2
+00:00:02,400 --> 00:00:04,800
+open SVG Converter
+
+3
+00:00:04,800 --> 00:00:08,800
+upload the image
+
+4
+00:00:08,800 --> 00:00:12,600
+convert it into SVG
+
+5
+00:00:12,600 --> 00:00:16,400
+download the editable file
+
+6
+00:00:16,400 --> 00:00:19,500
+it is called FigPad btw

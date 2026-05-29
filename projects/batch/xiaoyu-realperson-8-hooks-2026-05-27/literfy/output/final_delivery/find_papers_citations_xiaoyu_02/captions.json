@@ -1,0 +1,207 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.4,
+      "duration": 2.4,
+      "text": "WAIT why are my research tabs suddenly unemployed 👀",
+      "beat": "hook",
+      "clip_id": "07_xiaoyu_library_side_eye",
+      "clip_start": 0.0,
+      "clip_end": 1.55,
+      "playback_speed": 0.9,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "WAIT why are my",
+          "research tabs suddenly",
+          "unemployed 👀"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "tabs"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.4,
+      "end": 4.8,
+      "duration": 2.4,
+      "text": "open Find Papers",
+      "beat": "reveal",
+      "clip_id": "09_click_find_papers_button",
+      "clip_start": 0.0,
+      "clip_end": 2.0,
+      "playback_speed": 0.9,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Find Papers"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Find"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 2,
+      "start": 4.8,
+      "end": 8.8,
+      "duration": 4.000000000000001,
+      "text": "search a topic and pick sources",
+      "beat": "search",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 0.4,
+      "clip_end": 7.0,
+      "playback_speed": 1.65,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "search a topic",
+          "and pick sources"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "sources"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.8,
+      "end": 12.2,
+      "duration": 3.3999999999999986,
+      "text": "real papers show up in one place",
+      "beat": "results",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 7.0,
+      "clip_end": 12.8,
+      "playback_speed": 1.7,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "real papers show up",
+          "in one place"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "real"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 4,
+      "start": 12.2,
+      "end": 16.4,
+      "duration": 4.199999999999999,
+      "text": "save the useful ones",
+      "beat": "save",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 0.4,
+      "clip_end": 7.5,
+      "playback_speed": 1.7,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "save the",
+          "useful ones"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 5,
+      "start": 16.4,
+      "end": 20.0,
+      "duration": 3.6000000000000014,
+      "text": "and copy the citation before the chaos returns",
+      "beat": "ending",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 7.5,
+      "clip_end": 14.5,
+      "playback_speed": 1.95,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "and copy the citation",
+          "before the chaos returns"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "citation"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    }
+  ]
+}

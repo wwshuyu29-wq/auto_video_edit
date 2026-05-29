@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:02,800
+WAIT this finds sources for a claim?? 👀
+
+2
+00:00:02,800 --> 00:00:05,300
+open Citely
+
+3
+00:00:05,300 --> 00:00:08,100
+click Find Sources
+
+4
+00:00:08,100 --> 00:00:11,700
+paste the claim
+
+5
+00:00:11,700 --> 00:00:15,600
+papers connected to it show up
+
+6
+00:00:15,600 --> 00:00:19,000
+source trail found. my tabs can rest.

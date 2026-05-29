@@ -1,0 +1,210 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.6,
+      "duration": 2.6,
+      "text": "WAIT why do AI citations look this real 😳",
+      "beat": "hook",
+      "clip_id": "00_xiaoyu_cover_mouth_wide_eye",
+      "clip_start": 0.0,
+      "clip_end": 1.82,
+      "playback_speed": 0.9,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "WAIT why do",
+          "AI citations",
+          "look this real 😳"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "AI",
+          "citations"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.6,
+      "end": 5.1,
+      "duration": 2.4999999999999996,
+      "text": "go to Citely",
+      "beat": "reveal",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.1,
+      "clip_end": 3.0,
+      "playback_speed": 1.2,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "go to",
+          "Citely"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Citely"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.1,
+      "end": 8.1,
+      "duration": 3.0,
+      "text": "open Verify References",
+      "beat": "entry",
+      "clip_id": "05_click_verify_references",
+      "clip_start": 0.2,
+      "clip_end": 5.5,
+      "playback_speed": 1.75,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Verify References"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "Verify"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.1,
+      "end": 11.4,
+      "duration": 3.3000000000000007,
+      "text": "paste the suspicious reference",
+      "beat": "paste",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.2,
+      "clip_end": 4.3,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "paste the",
+          "suspicious reference"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "reference"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 4,
+      "start": 11.4,
+      "end": 15.9,
+      "duration": 4.5,
+      "text": "it checks the source details",
+      "beat": "proof",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 5.0,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "it checks the",
+          "source details"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "checks"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 5,
+      "start": 15.9,
+      "end": 19.3,
+      "duration": 3.4000000000000004,
+      "text": "it is called Citely btw",
+      "beat": "ending",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 2.0,
+      "clip_end": 5.0,
+      "playback_speed": 0.9,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "it is called",
+          "Citely btw"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Citely"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    }
+  ]
+}

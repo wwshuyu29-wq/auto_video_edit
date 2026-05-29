@@ -1,0 +1,82 @@
+[
+  {
+    "product": "literfy",
+    "variant_id": "literfy_human_01",
+    "persona": "mouth_cover_desk_lamp"
+  },
+  {
+    "product": "literfy",
+    "variant_id": "literfy_human_02",
+    "persona": "forehead_hold_window"
+  },
+  {
+    "product": "literfy",
+    "variant_id": "literfy_human_03",
+    "persona": "pencil_freeze_library"
+  },
+  {
+    "product": "literfy",
+    "variant_id": "literfy_human_04",
+    "persona": "hoodie_side_eye"
+  },
+  {
+    "product": "figpad",
+    "variant_id": "figpad_human_01",
+    "persona": "mouth_cover_desk_lamp"
+  },
+  {
+    "product": "figpad",
+    "variant_id": "figpad_human_02",
+    "persona": "forehead_hold_window"
+  },
+  {
+    "product": "figpad",
+    "variant_id": "figpad_human_03",
+    "persona": "pencil_freeze_library"
+  },
+  {
+    "product": "figpad",
+    "variant_id": "figpad_human_04",
+    "persona": "hoodie_side_eye"
+  },
+  {
+    "product": "clearfy",
+    "variant_id": "clearfy_human_01",
+    "persona": "mouth_cover_desk_lamp"
+  },
+  {
+    "product": "clearfy",
+    "variant_id": "clearfy_human_02",
+    "persona": "forehead_hold_window"
+  },
+  {
+    "product": "clearfy",
+    "variant_id": "clearfy_human_03",
+    "persona": "pencil_freeze_library"
+  },
+  {
+    "product": "clearfy",
+    "variant_id": "clearfy_human_04",
+    "persona": "hoodie_side_eye"
+  },
+  {
+    "product": "citely",
+    "variant_id": "citely_human_01",
+    "persona": "mouth_cover_desk_lamp"
+  },
+  {
+    "product": "citely",
+    "variant_id": "citely_human_02",
+    "persona": "forehead_hold_window"
+  },
+  {
+    "product": "citely",
+    "variant_id": "citely_human_03",
+    "persona": "pencil_freeze_library"
+  },
+  {
+    "product": "citely",
+    "variant_id": "citely_human_04",
+    "persona": "hoodie_side_eye"
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "status": "generated",
+  "detected": true,
+  "analysis": {
+    "duration_s": 4,
+    "character": "young adult student/creator, original fictional person, not the reference creator",
+    "framing": "vertical 9:16 smartphone selfie, close-up face and upper torso, desk-level angle",
+    "action": "keeps one hand pressed to forehead, eyes closed, then looks down at the laptop like the score was bad news",
+    "emotion": "tired essay panic and secondhand embarrassment",
+    "atmosphere": "authentic StudyTok reaction, lightly dramatic and creator-native",
+    "environment": "bedroom study desk with laptop, essay draft, and soft ceiling light",
+    "camera": "front-facing phone camera, static desk-level selfie with subtle handheld movement, subtle phone selfie movement, desk-level angle",
+    "lighting_color": "soft indoor light with slight phone-camera realism",
+    "must_change": [
+      "face",
+      "outfit",
+      "notebook color",
+      "desk layout",
+      "lighting angle",
+      "gesture timing"
+    ],
+    "overlay_policy": "generate clean silent reaction video without baked-in text; renderer will add hook copy as captions later",
+    "speech_policy": "no speaking, no lip-sync, no dialogue; use only facial expression, posture, glance, and hand gesture",
+    "identity_policy": "do not copy the reference person's face, identity, clothing, or exact likeness",
+    "differentiation_policy": "do not remake the reference one-to-one; change at least 3 visible attributes while preserving only emotional function and hook rhythm"
+  },
+  "text_to_video_prompt": "Realistic vertical 9:16 smartphone selfie video, 4 seconds. An original young adult student creator sits at a bedroom study desk with laptop, essay draft, and soft ceiling light. The creator looks tired essay panic and secondhand embarrassment, keeps one hand pressed to forehead, eyes closed, then looks down at the laptop like the score was bad news. soft indoor light with slight phone-camera realism, authentic StudyTok reaction, lightly dramatic and creator-native. Natural handheld phone motion, authentic TikTok studytok style, close-up face first, laptop visible but not brand-specific, no logos, no readable text, no subtitles baked into the video. Silent reaction only: the creator does not speak, does not lip-sync, and communicates through facial expression, posture, glances, and a small gesture. Do not remake the reference video exactly; use a different face, outfit, room layout, props, lighting variation, and gesture timing. The moment should feel like a peer reacting before showing a useful Clearfy workflow.",
+  "negative_prompt": "Do not imitate or recreate the reference creator's face or identity. No speaking, no talking mouth, no lip-sync, no dialogue, no voiceover. No one-to-one remake of the reference video, no same outfit, no same room, no same exact pose sequence. No watermark, no logo, no readable on-screen text, no distorted hands, no extra limbs, no uncanny face, no product UI.",
+  "generation": {
+    "provider": "evolink",
+    "model": "seedance-2.0-text-to-video",
+    "dry_run": false,
+    "attempted": true,
+    "status": "completed",
+    "message": "The read operation timed out",
+    "task_id": "task-unified-1779875725-r8mmtzvk",
+    "task_status_path": "projects/batch/ariana-study-7643914612164824333-ai-human/clearfy/output/generated_hooks/evolink_task_status.json",
+    "video_path": "projects/batch/ariana-study-7643914612164824333-ai-human/clearfy/output/generated_hooks/ai_human_hook.mp4"
+  },
+  "asset": {
+    "clip_id": "ai_human_hook",
+    "file_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/clearfy/output/generated_hooks/ai_human_hook.mp4",
+    "thumbnail_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/clearfy/materials/contact_sheets/ai_human_hook.jpg",
+    "duration": 4.042,
+    "orientation": "vertical_ai_selfie_intro",
+    "quality_score": 8,
+    "shot_type": "AI generated human selfie hook",
+    "camera_motion": "subtle handheld selfie movement",
+    "scene": "bedroom study desk with laptop, essay draft, and soft ceiling light",
+    "visible_objects": [
+      "student creator",
+      "laptop",
+      "study desk"
+    ],
+    "emotion": "tired essay panic and secondhand embarrassment",
+    "best_use": [
+      "human hook",
+      "opening hook",
+      "creator reaction",
+      "student anxiety setup"
+    ],
+    "not_good_for": [
+      "product proof",
+      "final result proof"
+    ],
+    "usable_segments": [
+      {
+        "start": 0,
+        "end": 4.0,
+        "reason": "AI-generated opening human hook based on reference hook analysis."
+      }
+    ],
+    "text_overlay_safe_area": "lower center; keep face readable",
+    "audio_quality": "not needed",
+    "notes": "Generated from human_hook_generation; use only as the opening hook."
+  },
+  "evidence_gaps": []
+}

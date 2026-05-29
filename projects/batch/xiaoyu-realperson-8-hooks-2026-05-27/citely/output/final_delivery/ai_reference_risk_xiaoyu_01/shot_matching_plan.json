@@ -1,0 +1,234 @@
+{
+  "source_template": "studywithcc_7468211521600949510",
+  "reference_url": "https://www.tiktok.com/@stud.ywithcc/video/7468211521600949510",
+  "product": "Citely",
+  "variant_id": "ai_reference_risk_xiaoyu_01",
+  "title": "AI citations looking real is my villain origin story",
+  "template_logic": "real-person reaction hook -> product reveal -> simple action -> result proof -> tool-name ending",
+  "editing_style": {
+    "pace": "fast TikTok creator demo",
+    "aspect_ratio": "9:16",
+    "caption_style": "bold white text with black outline, safe center width, selected yellow highlights, restrained emoji"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-2.6s",
+      "voiceover": "WAIT why do AI citations look this real 😳",
+      "clip_id": "00_xiaoyu_cover_mouth_wide_eye",
+      "clip_start": 0,
+      "clip_end": 1.82,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "WAIT why do AI citations look this real 😳",
+      "caption_style": {
+        "lines": [
+          "WAIT why do",
+          "AI citations",
+          "look this real 😳"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "AI",
+          "citations"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "reveal",
+      "time": "2.6-5.1s",
+      "voiceover": "go to Citely",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.1,
+      "clip_end": 3,
+      "playback_speed": 1.2,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "go to Citely",
+      "caption_style": {
+        "lines": [
+          "go to",
+          "Citely"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Citely"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "entry",
+      "time": "5.1-8.1s",
+      "voiceover": "open Verify References",
+      "clip_id": "05_click_verify_references",
+      "clip_start": 0.2,
+      "clip_end": 5.5,
+      "playback_speed": 1.75,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "open Verify References",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Verify References"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "Verify"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "paste",
+      "time": "8.1-11.4s",
+      "voiceover": "paste the suspicious reference",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.2,
+      "clip_end": 4.3,
+      "playback_speed": 1.25,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "paste the suspicious reference",
+      "caption_style": {
+        "lines": [
+          "paste the",
+          "suspicious reference"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "reference"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "proof",
+      "time": "11.4-15.9s",
+      "voiceover": "it checks the source details",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 5,
+      "playback_speed": 1.1,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "it checks the source details",
+      "caption_style": {
+        "lines": [
+          "it checks the",
+          "source details"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "checks"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "15.9-19.3s",
+      "voiceover": "it is called Citely btw",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 2,
+      "clip_end": 5,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "it is called Citely btw",
+      "caption_style": {
+        "lines": [
+          "it is called",
+          "Citely btw"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Citely"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "needs_script_revision": false,
+  "risk_notes": [
+    "Hook video is silent reaction footage; subtitles are not presented as spoken dialogue.",
+    "Claims avoid guaranteed academic outcomes and product overpromises.",
+    "Caption max_width kept in 680-720 safe area to avoid side edges and TikTok UI."
+  ]
+}

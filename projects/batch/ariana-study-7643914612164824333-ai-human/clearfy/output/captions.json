@@ -1,0 +1,184 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.0,
+      "text": "ran the detector first 😭\n97% AI...\npanic mode",
+      "beat": "hook",
+      "clip_id": "ai_human_hook",
+      "clip_start": 0.0,
+      "clip_end": 4.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 52,
+        "max_width": 640,
+        "y_ratio": 0.56,
+        "line_gap": 8,
+        "min_font_size": 38,
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "lines": [
+          "ran the detector first 😭",
+          "97% AI...",
+          "panic mode"
+        ],
+        "highlight_terms": [
+          "first",
+          "97%",
+          "AI",
+          "source",
+          "flat",
+          "reviewer",
+          "random",
+          "panic"
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 4.0,
+      "end": 7.0,
+      "duration": 3.0,
+      "text": "so I check the draft in Clearfy first",
+      "beat": "product_reveal",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.3,
+      "clip_end": 3.6,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "min_font_size": 42,
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "highlight_terms": []
+      }
+    },
+    {
+      "index": 2,
+      "start": 7.0,
+      "end": 11.0,
+      "duration": 4.0,
+      "text": "it shows which sentences look AI-heavy",
+      "beat": "detector",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 5.0,
+      "clip_end": 9.5,
+      "playback_speed": 1.2,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "min_font_size": 42,
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "highlight_terms": [
+          "ai-heavy"
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 11.0,
+      "end": 15.0,
+      "duration": 4.0,
+      "text": "then I review the flagged parts",
+      "beat": "result_bridge",
+      "clip_id": "04_clearfy_detector_to_ai_result",
+      "clip_start": 5.5,
+      "clip_end": 9.5,
+      "playback_speed": 1.15,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "min_font_size": 42,
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "highlight_terms": []
+      }
+    },
+    {
+      "index": 4,
+      "start": 15.0,
+      "end": 18.0,
+      "duration": 3.0,
+      "text": "and rewrite the parts that sound robotic",
+      "beat": "humanizer",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 5.8,
+      "playback_speed": 1.8,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "min_font_size": 42,
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "highlight_terms": [
+          "robotic"
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 18.0,
+      "end": 21.0,
+      "duration": 3.0,
+      "text": "then I still read it before using it",
+      "beat": "action",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 0.2,
+      "clip_end": 2.8,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "min_font_size": 42,
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "highlight_terms": []
+      }
+    }
+  ]
+}

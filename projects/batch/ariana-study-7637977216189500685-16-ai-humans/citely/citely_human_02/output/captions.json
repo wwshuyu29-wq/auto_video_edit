@@ -1,0 +1,118 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.0,
+      "text": "me when one citation looks a little too perfect...",
+      "beat": "hook",
+      "clip_id": "ai_human_hook",
+      "clip_start": 0.0,
+      "clip_end": 4.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.54,
+        "line_gap": 5
+      }
+    },
+    {
+      "index": 1,
+      "start": 4.0,
+      "end": 7.0,
+      "duration": 3.0,
+      "text": "so I check the reference trail in Citely",
+      "beat": "product_reveal",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "index": 2,
+      "start": 7.0,
+      "end": 10.0,
+      "duration": 3.0,
+      "text": "I go straight to Verify References",
+      "beat": "verify_entry",
+      "clip_id": "05_click_verify_references",
+      "clip_start": 0.2,
+      "clip_end": 3.8,
+      "playback_speed": 1.35,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "index": 3,
+      "start": 10.0,
+      "end": 14.0,
+      "duration": 4.0,
+      "text": "paste the suspicious citation",
+      "beat": "input",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.1,
+      "clip_end": 4.4,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "index": 4,
+      "start": 14.0,
+      "end": 18.0,
+      "duration": 4.0,
+      "text": "then I check what actually matches",
+      "beat": "result",
+      "clip_id": "07_verify_references_results",
+      "clip_start": 0.1,
+      "clip_end": 5.1,
+      "playback_speed": 1.35,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "index": 5,
+      "start": 18.0,
+      "end": 21.0,
+      "duration": 3.0,
+      "text": "and trace the claim back to real sources",
+      "beat": "source_proof",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    }
+  ]
+}

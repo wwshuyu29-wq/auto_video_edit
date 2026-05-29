@@ -1,0 +1,234 @@
+{
+  "source_template": "studywithcc_7468211521600949510",
+  "reference_url": "https://www.tiktok.com/@stud.ywithcc/video/7468211521600949510",
+  "product": "FigPad",
+  "variant_id": "editable_figure_xiaoyu_01",
+  "title": "flat AI figures catching strays today",
+  "template_logic": "real-person reaction hook -> product reveal -> simple action -> result proof -> tool-name ending",
+  "editing_style": {
+    "pace": "fast TikTok creator demo",
+    "aspect_ratio": "9:16",
+    "caption_style": "bold white text with black outline, safe center width, selected yellow highlights, restrained emoji"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-2.4s",
+      "voiceover": "WAIT why are we accepting flat AI figures 😭",
+      "clip_id": "01_xiaoyu_cover_mouth_close_crop",
+      "clip_start": 0,
+      "clip_end": 1.22,
+      "playback_speed": 0.8,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "WAIT why are we accepting flat AI figures 😭",
+      "caption_style": {
+        "lines": [
+          "WAIT why are we accepting",
+          "flat AI figures 😭"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "flat",
+          "figures"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "reveal",
+      "time": "2.4-5.2s",
+      "voiceover": "open FigPad",
+      "clip_id": "02_figpad_landing_page",
+      "clip_start": 0.2,
+      "clip_end": 4,
+      "playback_speed": 1.35,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "open FigPad",
+      "caption_style": {
+        "lines": [
+          "open",
+          "FigPad"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "FigPad"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "prompt",
+      "time": "5.2-8.6s",
+      "voiceover": "type the figure idea",
+      "clip_id": "03_text_to_figure_prompt",
+      "clip_start": 0.2,
+      "clip_end": 4.8,
+      "playback_speed": 1.4,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "type the figure idea",
+      "caption_style": {
+        "lines": [
+          "type the",
+          "figure idea"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "figure"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "result",
+      "time": "8.6-12.0s",
+      "voiceover": "generate a figure draft",
+      "clip_id": "04_text_to_figure_result",
+      "clip_start": 0,
+      "clip_end": 3.1,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "generate a figure draft",
+      "caption_style": {
+        "lines": [
+          "generate a",
+          "figure draft"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "figure"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "edit",
+      "time": "12.0-15.8s",
+      "voiceover": "then open SVG editor",
+      "clip_id": "05_click_svg_edit",
+      "clip_start": 0.2,
+      "clip_end": 3.5,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "then open SVG editor",
+      "caption_style": {
+        "lines": [
+          "then open",
+          "SVG editor"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "15.8-19.2s",
+      "voiceover": "now I can fix labels like a normal person",
+      "clip_id": "06_svg_editor_edit_demo",
+      "clip_start": 0,
+      "clip_end": 3.2,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "now I can fix labels like a normal person",
+      "caption_style": {
+        "lines": [
+          "now I can fix labels",
+          "like a normal person"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "fix",
+          "labels"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "needs_script_revision": false,
+  "risk_notes": [
+    "Hook video is silent reaction footage; subtitles are not presented as spoken dialogue.",
+    "Claims avoid guaranteed academic outcomes and product overpromises.",
+    "Caption max_width kept in 680-720 safe area to avoid side edges and TikTok UI."
+  ]
+}

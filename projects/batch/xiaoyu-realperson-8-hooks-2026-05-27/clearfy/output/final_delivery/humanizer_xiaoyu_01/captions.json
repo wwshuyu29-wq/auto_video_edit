@@ -1,0 +1,208 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.4,
+      "duration": 2.4,
+      "text": "WAIT why does my paragraph sound like a robot 😭",
+      "beat": "hook",
+      "clip_id": "05_xiaoyu_cover_mouth_soft_gasp",
+      "clip_start": 0.0,
+      "clip_end": 1.31,
+      "playback_speed": 0.8,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "WAIT why does my paragraph",
+          "sound like a robot 😭"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "robot"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.4,
+      "end": 5.0,
+      "duration": 2.6,
+      "text": "open Clearfy",
+      "beat": "reveal",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.2,
+      "clip_end": 3.0,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Clearfy"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Clearfy"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.0,
+      "end": 8.0,
+      "duration": 3.0,
+      "text": "go to AI humanizer",
+      "beat": "humanizer",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 2.4,
+      "playback_speed": 0.75,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "go to",
+          "AI humanizer"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "humanizer"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.0,
+      "end": 11.5,
+      "duration": 3.5,
+      "text": "paste the stiff paragraph",
+      "beat": "paste",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 2.4,
+      "clip_end": 5.8,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "paste the",
+          "stiff paragraph"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "stiff"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 4,
+      "start": 11.5,
+      "end": 15.0,
+      "duration": 3.5,
+      "text": "choose the rewrite strength",
+      "beat": "mode",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 0.2,
+      "clip_end": 2.9,
+      "playback_speed": 0.75,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "choose the",
+          "rewrite strength"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "rewrite"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 5,
+      "start": 15.0,
+      "end": 19.0,
+      "duration": 4.0,
+      "text": "edit the result so it still sounds like you",
+      "beat": "ending",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.2,
+      "clip_end": 4.0,
+      "playback_speed": 0.95,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "edit the result",
+          "so it still sounds like you"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "edit"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    }
+  ]
+}
