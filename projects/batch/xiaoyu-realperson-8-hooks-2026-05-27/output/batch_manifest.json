@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-05-27T06:37:51.484Z",
+  "reference": {
+    "url": "https://www.tiktok.com/@stud.ywithcc/video/7468211521600949510",
+    "local_video": "/Users/kk/Desktop/auto video/projects/reference/studywithcc-7468211521600949510/reference.mp4",
+    "local_timeline": "/Users/kk/Desktop/auto video/projects/reference/studywithcc-7468211521600949510/reference_timeline.jpg",
+    "observed_template": "reaction hook + upload/action + instant result proof + tool-name ending"
+  },
+  "variants": [
+    {
+      "product": "Literfy",
+      "id": "lit_review_chaos_xiaoyu_01",
+      "title": "literature review chaos finally got humbled",
+      "caption": "Literature review panic meeting its first organized thought. Real papers first, then an outline you still edit yourself.",
+      "hashtags": "#studytok #gradschool #literaturereview #researchtools #literfy",
+      "pinned_comment": "my 38 open tabs watching me organize them for once",
+      "hook": "04_xiaoyu_laptop_library_explain"
+    },
+    {
+      "product": "Literfy",
+      "id": "find_papers_citations_xiaoyu_02",
+      "title": "random research tabs got personally attacked",
+      "caption": "The workflow is topic search, real papers, save the useful ones, then copy citations before the tab spiral wins.",
+      "hashtags": "#research #studytok #citation #gradschool #literfy",
+      "pinned_comment": "google scholar tabs punching the air rn",
+      "hook": "07_xiaoyu_library_side_eye"
+    },
+    {
+      "product": "Citely",
+      "id": "ai_reference_risk_xiaoyu_01",
+      "title": "AI citations looking real is my villain origin story",
+      "caption": "AI references can look real enough to cause damage. I would check the citation details before building a paper around them.",
+      "hashtags": "#citationcheck #research #studytok #academicwriting #citely",
+      "pinned_comment": "fake-looking citations? no babe the scary ones look real",
+      "hook": "00_xiaoyu_cover_mouth_wide_eye"
+    },
+    {
+      "product": "Citely",
+      "id": "find_sources_xiaoyu_02",
+      "title": "the source trail was missing and I took that personally",
+      "caption": "When a claim has no clear source trail, I would paste the claim and check which papers are actually connected.",
+      "hashtags": "#researchtools #citations #studytok #sourcecheck #citely",
+      "pinned_comment": "the claim said “trust me bro” and I said absolutely not",
+      "hook": "02_xiaoyu_cover_mouth_double_take"
+    },
+    {
+      "product": "FigPad",
+      "id": "editable_figure_xiaoyu_01",
+      "title": "flat AI figures catching strays today",
+      "caption": "Generate a figure draft, then open it in an SVG editor so the labels and layout can actually be fixed.",
+      "hashtags": "#scientificfigure #researchtools #phdlife #aitools #figpad",
+      "pinned_comment": "flat AI images heard “editable” and started sweating",
+      "hook": "01_xiaoyu_cover_mouth_close_crop"
+    },
+    {
+      "product": "FigPad",
+      "id": "svg_converter_xiaoyu_02",
+      "title": "the screenshot-looking figure finally met consequences",
+      "caption": "If the only figure asset is a flat image, FigPad SVG Converter turns it into an SVG workflow you can keep editing.",
+      "hashtags": "#svg #scientificfigure #researchtools #academictok #figpad",
+      "pinned_comment": "the flat png has had power for too long",
+      "hook": "03_xiaoyu_cover_mouth_side_crop"
+    },
+    {
+      "product": "Clearfy",
+      "id": "humanizer_xiaoyu_01",
+      "title": "my paragraph had robot posture",
+      "caption": "When a paragraph sounds stiff, I would use Clearfy to revise the wording, then still read the final version myself.",
+      "hashtags": "#writingtips #studytok #essaywriting #aitools #clearfy",
+      "pinned_comment": "the paragraph said “furthermore” one too many times",
+      "hook": "05_xiaoyu_cover_mouth_soft_gasp"
+    },
+    {
+      "product": "Clearfy",
+      "id": "ai_detector_xiaoyu_02",
+      "title": "the detector saw my draft and chose violence",
+      "caption": "Before submitting, I would check which sentences sound AI-heavy and review those parts instead of guessing.",
+      "hashtags": "#essaywriting #aichecker #studytok #writingtools #clearfy",
+      "pinned_comment": "my draft thought it was slick. it was not slick.",
+      "hook": "06_xiaoyu_cover_mouth_direct_gasp"
+    }
+  ]
+}

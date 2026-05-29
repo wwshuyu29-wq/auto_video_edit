@@ -1,0 +1,185 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.0,
+      "text": "wrote first, sourced later 😭\nthat was...\na choice",
+      "beat": "hook",
+      "clip_id": "ai_human_hook",
+      "clip_start": 0.0,
+      "clip_end": 4.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "wrote first, sourced later 😭",
+          "that was...",
+          "a choice"
+        ],
+        "font_size": 52,
+        "min_font_size": 38,
+        "max_width": 640,
+        "y_ratio": 0.56,
+        "line_gap": 8,
+        "highlight_terms": [
+          "AI",
+          "citations",
+          "editable",
+          "detector",
+          "raw",
+          "sources"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 4.0,
+      "end": 8.0,
+      "duration": 4.0,
+      "text": "now I find papers before writing",
+      "beat": "source_first",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 8.5,
+      "clip_end": 13.5,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "min_font_size": 42,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "papers"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 8.0,
+      "end": 11.0,
+      "duration": 3.0,
+      "text": "real papers first, outline second",
+      "beat": "real_papers",
+      "clip_id": "03_paper_list_results",
+      "clip_start": 0.3,
+      "clip_end": 3.3,
+      "playback_speed": 1.15,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "min_font_size": 42,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "real",
+          "papers"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 11.0,
+      "end": 15.0,
+      "duration": 4.0,
+      "text": "I choose what actually fits",
+      "beat": "selection",
+      "clip_id": "04_select_papers_to_outline",
+      "clip_start": 0.3,
+      "clip_end": 3.9,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "min_font_size": 42,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 15.0,
+      "end": 18.0,
+      "duration": 3.0,
+      "text": "then build the lit review from that",
+      "beat": "outline",
+      "clip_id": "06_literature_review_outline",
+      "clip_start": 0.3,
+      "clip_end": 3.2,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "min_font_size": 42,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 18.0,
+      "end": 21.0,
+      "duration": 3.0,
+      "text": "and keep the source trail saved",
+      "beat": "save",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 12.0,
+      "clip_end": 17.8,
+      "playback_speed": 1.8,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "min_font_size": 42,
+        "max_width": 720,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "trail"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ]
+      }
+    }
+  ]
+}

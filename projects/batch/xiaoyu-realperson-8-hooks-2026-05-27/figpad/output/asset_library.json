@@ -1,0 +1,902 @@
+{
+  "asset_library": [
+    {
+      "clip_id": "00_xiaoyu_cover_mouth_wide_eye",
+      "source_filename": "IMG_9906.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/00_xiaoyu_cover_mouth_wide_eye.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/00_xiaoyu_cover_mouth_wide_eye.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/00_xiaoyu_cover_mouth_wide_eye_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/00_xiaoyu_cover_mouth_wide_eye_sheet.jpg",
+      "duration": 1.866667,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_shock",
+      "emotion": "wide-eye shock / caught off guard",
+      "action": "close-up hand-over-mouth reaction",
+      "best_use": [
+        "AI reference risk",
+        "fake citation scare",
+        "bad source discovery"
+      ],
+      "product_fit": [
+        "Citely"
+      ],
+      "assigned_product": "Citely",
+      "assigned_angle": "AI reference risk / citation looked real but needs checking",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 1.817,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "01_xiaoyu_cover_mouth_close_crop",
+      "source_filename": "IMG_9907 2.MOV",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/01_xiaoyu_cover_mouth_close_crop.MOV",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/01_xiaoyu_cover_mouth_close_crop.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/01_xiaoyu_cover_mouth_close_crop_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/01_xiaoyu_cover_mouth_close_crop_sheet.jpg",
+      "duration": 1.266667,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_mystery",
+      "emotion": "quiet gasp / secret reveal",
+      "action": "tight hand-over-mouth crop",
+      "best_use": [
+        "flat image frustration",
+        "tool reveal setup",
+        "short hook before visual workflow"
+      ],
+      "product_fit": [
+        "FigPad"
+      ],
+      "assigned_product": "FigPad",
+      "assigned_angle": "flat image needs editable workflow",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 1.217,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "02_xiaoyu_cover_mouth_double_take",
+      "source_filename": "IMG_9907.MOV",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/02_xiaoyu_cover_mouth_double_take.MOV",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/02_xiaoyu_cover_mouth_double_take.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/02_xiaoyu_cover_mouth_double_take_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/02_xiaoyu_cover_mouth_double_take_sheet.jpg",
+      "duration": 2.266667,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_double_take",
+      "emotion": "disbelief / double take",
+      "action": "hand-over-mouth close-up with slight movement",
+      "best_use": [
+        "missing source trail",
+        "citation panic",
+        "research workflow surprise"
+      ],
+      "product_fit": [
+        "Citely"
+      ],
+      "assigned_product": "Citely",
+      "assigned_angle": "find sources / source trail discovery",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 2.217,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "03_xiaoyu_cover_mouth_side_crop",
+      "source_filename": "IMG_9908.MOV",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/03_xiaoyu_cover_mouth_side_crop.MOV",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/03_xiaoyu_cover_mouth_side_crop.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/03_xiaoyu_cover_mouth_side_crop_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/03_xiaoyu_cover_mouth_side_crop_sheet.jpg",
+      "duration": 1.333333,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_side_crop",
+      "emotion": "embarrassed shock / why did nobody tell me",
+      "action": "side-cropped hand-over-mouth reaction",
+      "best_use": [
+        "editable figure reveal",
+        "SVG converter surprise",
+        "before-after product reveal"
+      ],
+      "product_fit": [
+        "FigPad"
+      ],
+      "assigned_product": "FigPad",
+      "assigned_angle": "SVG converter or editable figure reveal",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 1.283,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "04_xiaoyu_laptop_library_explain",
+      "source_filename": "IMG_9914.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/04_xiaoyu_laptop_library_explain.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/04_xiaoyu_laptop_library_explain.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/04_xiaoyu_laptop_library_explain_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/04_xiaoyu_laptop_library_explain_sheet.jpg",
+      "duration": 2.466667,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "library_deadpan_explain",
+      "emotion": "deadpan study frustration",
+      "action": "library/laptop setup, creator looks at camera",
+      "best_use": [
+        "research chaos",
+        "literature review panic",
+        "workflow explanation"
+      ],
+      "product_fit": [
+        "Literfy"
+      ],
+      "assigned_product": "Literfy",
+      "assigned_angle": "literature review starting point / real paper workflow",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 2.417,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "05_xiaoyu_cover_mouth_soft_gasp",
+      "source_filename": "IMG_9917.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/05_xiaoyu_cover_mouth_soft_gasp.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/05_xiaoyu_cover_mouth_soft_gasp.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/05_xiaoyu_cover_mouth_soft_gasp_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/05_xiaoyu_cover_mouth_soft_gasp_sheet.jpg",
+      "duration": 1.366016,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_soft_gasp",
+      "emotion": "soft gasp / draft embarrassment",
+      "action": "hand-over-mouth close-up, softer expression",
+      "best_use": [
+        "robotic writing",
+        "AI-heavy draft worry",
+        "humanizer setup"
+      ],
+      "product_fit": [
+        "Clearfy"
+      ],
+      "assigned_product": "Clearfy",
+      "assigned_angle": "humanizer for stiff/robotic paragraph",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 1.316,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "06_xiaoyu_cover_mouth_direct_gasp",
+      "source_filename": "IMG_9918.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/06_xiaoyu_cover_mouth_direct_gasp.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/06_xiaoyu_cover_mouth_direct_gasp.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/06_xiaoyu_cover_mouth_direct_gasp_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/06_xiaoyu_cover_mouth_direct_gasp_sheet.jpg",
+      "duration": 1.333333,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_direct_gasp",
+      "emotion": "direct gasp / caught by detector",
+      "action": "direct eye contact with hand over mouth",
+      "best_use": [
+        "AI detector panic",
+        "draft before submitting",
+        "highlighted AI-heavy text"
+      ],
+      "product_fit": [
+        "Clearfy"
+      ],
+      "assigned_product": "Clearfy",
+      "assigned_angle": "AI detector finds AI-heavy sentences",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 1.283,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "07_xiaoyu_library_side_eye",
+      "source_filename": "IMG_9919.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/07_xiaoyu_library_side_eye.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/07_xiaoyu_library_side_eye.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/07_xiaoyu_library_side_eye_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/07_xiaoyu_library_side_eye_sheet.jpg",
+      "duration": 1.6,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "library_side_eye",
+      "emotion": "side-eye / skeptical study mood",
+      "action": "library side glance, no hand cover",
+      "best_use": [
+        "too many papers",
+        "blank doc dread",
+        "research tabs roast"
+      ],
+      "product_fit": [
+        "Literfy"
+      ],
+      "assigned_product": "Literfy",
+      "assigned_angle": "too many tabs / organize papers into review workflow",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 1.55,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "00_google_scholar_hook",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/00_google_scholar_hook.mov",
+      "duration": 4.673,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "handheld Google Scholar screen",
+      "camera_motion": "small handheld movement",
+      "scene": "laptop / academic search page",
+      "visible_objects": [
+        "Google Scholar logo",
+        "search bar",
+        "laptop edge"
+      ],
+      "emotion": "academic trust / research context",
+      "best_use": [
+        "opening hook",
+        "cover background",
+        "academic trust doorway"
+      ],
+      "not_good_for": [
+        "product proof",
+        "feature demonstration",
+        "final CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 4.4,
+          "reason": "Google Scholar remains readable and supports the reference-template hook."
+        }
+      ],
+      "text_overlay_safe_area": "center; avoid covering search bar if possible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1,
+      "notes": "Shared hook asset via symlink. Keep native handheld imperfection."
+    },
+    {
+      "clip_id": "01_figpad_dashboard",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/01_figpad_dashboard.mov",
+      "duration": 3.003,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 7,
+      "shot_type": "FigPad dashboard / feature entry",
+      "camera_motion": "handheld hold",
+      "scene": "FigPad dashboard",
+      "visible_objects": [
+        "FigPad navigation",
+        "feature entry points",
+        "workspace"
+      ],
+      "emotion": "product reveal / tool entry",
+      "best_use": [
+        "product reveal",
+        "click feature",
+        "dashboard transition"
+      ],
+      "not_good_for": [
+        "final proof",
+        "SVG conversion proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 2.8,
+          "reason": "Dashboard appears quickly and works as a product entry bridge."
+        }
+      ],
+      "text_overlay_safe_area": "center or lower center; keep product logo visible if possible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1
+    },
+    {
+      "clip_id": "02_figpad_landing_page",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/02_figpad_landing_page.mov",
+      "duration": 6.773,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "FigPad landing page reveal",
+      "camera_motion": "handheld hold",
+      "scene": "FigPad website / landing page",
+      "visible_objects": [
+        "FigPad logo",
+        "landing page headline",
+        "scientific figure examples"
+      ],
+      "emotion": "website reveal / strong CTA",
+      "best_use": [
+        "strong CTA",
+        "Just go to this website style beat",
+        "product credibility reveal"
+      ],
+      "not_good_for": [
+        "editor proof",
+        "export proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.4,
+          "end": 5.8,
+          "reason": "Landing page and example figures are visible long enough for the CTA beat."
+        }
+      ],
+      "text_overlay_safe_area": "center; keep headline or logo readable",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "speed_reason": "Landing page can be compressed while preserving brand reveal."
+    },
+    {
+      "clip_id": "03_text_to_figure_prompt",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/03_text_to_figure_prompt.mov",
+      "duration": 4.907,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "generate figure prompt input",
+      "camera_motion": "handheld hold with input action",
+      "scene": "/generate-figure page",
+      "visible_objects": [
+        "prompt box",
+        "figure generator",
+        "generate action"
+      ],
+      "emotion": "workflow start / task input",
+      "best_use": [
+        "type prompt",
+        "generate scientific figure",
+        "input research idea"
+      ],
+      "not_good_for": [
+        "final proof",
+        "SVG converter"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 4.7,
+          "reason": "Shows the prompt/input action clearly."
+        }
+      ],
+      "text_overlay_safe_area": "upper center or lower center depending on prompt location",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.5,
+      "speed_reason": "Prompt entry should be compressed for TikTok pacing."
+    },
+    {
+      "clip_id": "04_text_to_figure_result",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/04_text_to_figure_result.mov",
+      "duration": 3.257,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "generated scientific figure result",
+      "camera_motion": "handheld hold",
+      "scene": "FigPad generated result page",
+      "visible_objects": [
+        "generated scientific figure",
+        "result panel",
+        "figure preview"
+      ],
+      "emotion": "result proof",
+      "best_use": [
+        "generated figure proof",
+        "before SVG Edit",
+        "result reveal"
+      ],
+      "not_good_for": [
+        "landing CTA",
+        "input step"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 3.1,
+          "reason": "Generated figure result is visible and supports the first proof beat."
+        }
+      ],
+      "text_overlay_safe_area": "center top; avoid covering figure if possible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1
+    },
+    {
+      "clip_id": "05_click_svg_edit",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/05_click_svg_edit.mov",
+      "duration": 3.597,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "click SVG Edit after generation",
+      "camera_motion": "handheld click action",
+      "scene": "generated figure page to SVG editor",
+      "visible_objects": [
+        "SVG Edit button",
+        "generated figure",
+        "cursor"
+      ],
+      "emotion": "editability reveal",
+      "best_use": [
+        "click SVG Edit",
+        "transition from generation to editing",
+        "creator surprise beat"
+      ],
+      "not_good_for": [
+        "standalone final proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 3.4,
+          "reason": "Shows the exact action that turns the generated figure into an editable workflow."
+        }
+      ],
+      "text_overlay_safe_area": "center or lower center; keep SVG Edit button visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25
+    },
+    {
+      "clip_id": "06_svg_editor_edit_demo",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/06_svg_editor_edit_demo.mov",
+      "duration": 3.315,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "SVG editor direct edit demo",
+      "camera_motion": "handheld hold with edit action",
+      "scene": "FigPad SVG editor",
+      "visible_objects": [
+        "editable scientific figure",
+        "text/shape editing",
+        "canvas"
+      ],
+      "emotion": "proof of editability",
+      "best_use": [
+        "online editing proof",
+        "edit labels",
+        "edit generated SVG"
+      ],
+      "not_good_for": [
+        "landing CTA",
+        "converter proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 3.2,
+          "reason": "Shows generated figure inside the editor."
+        }
+      ],
+      "text_overlay_safe_area": "upper center or side; avoid blocking edited element",
+      "audio_quality": "not needed",
+      "recommended_speed": 1
+    },
+    {
+      "clip_id": "07_svg_editor_edit_demo_2",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/07_svg_editor_edit_demo_2.mov",
+      "duration": 4.908,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "SVG editor second edit demo",
+      "camera_motion": "handheld edit action",
+      "scene": "FigPad SVG editor / editable figure",
+      "visible_objects": [
+        "editable scientific figure",
+        "selected element",
+        "editor controls"
+      ],
+      "emotion": "hands-on editor proof",
+      "best_use": [
+        "stronger editability proof",
+        "free edit demo",
+        "SVG editor detail"
+      ],
+      "not_good_for": [
+        "initial product reveal"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 4.7,
+          "reason": "Shows active editing on the generated figure."
+        }
+      ],
+      "text_overlay_safe_area": "center top or lower center depending on selected element",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25
+    },
+    {
+      "clip_id": "08_svg_canvas_zoom",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/08_svg_canvas_zoom.mov",
+      "duration": 5.288,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "SVG editor canvas zoom demo",
+      "camera_motion": "handheld with zoom/pan action",
+      "scene": "zoomable/infinite SVG canvas",
+      "visible_objects": [
+        "figure canvas",
+        "zoomed figure",
+        "editor workspace"
+      ],
+      "emotion": "control / flexible workspace",
+      "best_use": [
+        "infinite canvas proof",
+        "zoomable canvas",
+        "editor flexibility"
+      ],
+      "not_good_for": [
+        "landing CTA",
+        "prompt input"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 5,
+          "reason": "Shows the canvas scale changing, proving the editor workspace."
+        }
+      ],
+      "text_overlay_safe_area": "top center or lower center; avoid covering figure center during zoom",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.5,
+      "speed_reason": "Zoom and pan action can be faster without losing meaning."
+    },
+    {
+      "clip_id": "09_export_ppt_workflow",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/09_export_ppt_workflow.mov",
+      "duration": 5.68,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "export editable PPT workflow",
+      "camera_motion": "handheld click action",
+      "scene": "FigPad generated figure page opening the Export dialog and choosing downloadable formats",
+      "visible_objects": [
+        "generated scientific figure",
+        "Export button",
+        "Export dialog",
+        "PNG option",
+        "JPG option",
+        "SVG Vector option",
+        "Editable PPTX option",
+        "Responsive SVG option"
+      ],
+      "emotion": "workflow completion / portability",
+      "best_use": [
+        "export PPTX proof",
+        "download workflow",
+        "format choice proof",
+        "end beat for editable figure workflow"
+      ],
+      "not_good_for": [
+        "opening hook",
+        "SVG converter upload workflow",
+        "image-to-image feature"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 5.4,
+          "reason": "Shows the Export button, export modal, and PPTX/SVG format options clearly."
+        }
+      ],
+      "text_overlay_safe_area": "center top; keep export dialog visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.5,
+      "feature_group": "export_to_ppt",
+      "function_label": "export generated figure to PPTX / SVG formats",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/contact_sheets/timelines/09_export_ppt_workflow_timeline.jpg",
+      "notes": "Clean re-recorded finger/cursor workflow for export. Use this over the rebuilt fallback when showing PPTX or SVG export from a generated figure."
+    },
+    {
+      "clip_id": "10_ppt_export_result",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/10_ppt_export_result.mov",
+      "duration": 2.918,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "exported PPT result in PowerPoint",
+      "camera_motion": "handheld hold",
+      "scene": "Office PowerPoint / exported figure",
+      "visible_objects": [
+        "PowerPoint window",
+        "editable figure result",
+        "exported file"
+      ],
+      "emotion": "final proof / usable output",
+      "best_use": [
+        "final proof",
+        "editable PowerPoint result",
+        "CTA ending"
+      ],
+      "not_good_for": [
+        "prompt input",
+        "converter input"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 2.8,
+          "reason": "Short but clear proof that the output continues in PowerPoint."
+        }
+      ],
+      "text_overlay_safe_area": "center; avoid covering main exported figure",
+      "audio_quality": "not needed",
+      "recommended_speed": 1
+    },
+    {
+      "clip_id": "11_svg_converter_page",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/11_svg_converter_page.mov",
+      "duration": 1.272,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 7,
+      "shot_type": "SVG Converter page reveal",
+      "camera_motion": "brief handheld hold",
+      "scene": "FigPad SVG Converter page",
+      "visible_objects": [
+        "SVG Converter title",
+        "upload area",
+        "converter page"
+      ],
+      "emotion": "feature intro",
+      "best_use": [
+        "SVG Converter intro",
+        "very short transition"
+      ],
+      "not_good_for": [
+        "full proof",
+        "long CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 1.2,
+          "reason": "Very short page reveal; use only as a transition."
+        }
+      ],
+      "text_overlay_safe_area": "center or lower center",
+      "audio_quality": "not needed",
+      "recommended_speed": 1
+    },
+    {
+      "clip_id": "12_svg_converter_upload_convert",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/12_svg_converter_upload_convert.mov",
+      "duration": 4.512,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "bitmap upload and SVG conversion",
+      "camera_motion": "handheld workflow action",
+      "scene": "FigPad SVG Converter",
+      "visible_objects": [
+        "uploaded bitmap",
+        "converter controls",
+        "conversion preview"
+      ],
+      "emotion": "practical conversion proof",
+      "best_use": [
+        "upload bitmap",
+        "convert to SVG",
+        "bitmap-to-vector workflow"
+      ],
+      "not_good_for": [
+        "generate figure result",
+        "PowerPoint export"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 4.3,
+          "reason": "Shows the actual conversion setup and action."
+        }
+      ],
+      "text_overlay_safe_area": "top center; avoid blocking preview/result area",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25
+    },
+    {
+      "clip_id": "13_svg_converter_download_svg",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/13_svg_converter_download_svg.mov",
+      "duration": 4.22,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "download converted SVG result",
+      "camera_motion": "handheld click action",
+      "scene": "FigPad SVG Converter result page",
+      "visible_objects": [
+        "conversion result",
+        "download button",
+        "SVG output"
+      ],
+      "emotion": "conversion result proof",
+      "best_use": [
+        "download SVG",
+        "converted result proof",
+        "final converter CTA"
+      ],
+      "not_good_for": [
+        "generation prompt",
+        "SVG editor canvas proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "reason": "Shows final conversion result and download action."
+        }
+      ],
+      "text_overlay_safe_area": "center top; keep conversion result visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25
+    },
+    {
+      "clip_id": "14_image_to_image_workflow",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/14_image_to_image_workflow.mov",
+      "duration": 9.023,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "image-to-image scientific figure workflow",
+      "camera_motion": "handheld workflow action",
+      "scene": "FigPad image-to-image workflow",
+      "visible_objects": [
+        "reference image",
+        "generated alternatives",
+        "scientific visual examples"
+      ],
+      "emotion": "separate feature workflow",
+      "best_use": [
+        "image-to-image feature video",
+        "reference image to figure",
+        "separate A/B video candidate"
+      ],
+      "not_good_for": [
+        "same video as SVG editor if time is limited"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.3,
+          "end": 8.7,
+          "reason": "Contains enough of its own workflow to become a separate feature video."
+        }
+      ],
+      "text_overlay_safe_area": "upper center or lower center depending on result layout",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.5,
+      "speed_reason": "Longer workflow should be compressed if used in a short TikTok cut."
+    },
+    {
+      "clip_id": "15_svg_editor_new_project",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/15_svg_editor_new_project.mov",
+      "duration": 3.87,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 7,
+      "shot_type": "SVG editor new project setup",
+      "camera_motion": "handheld workflow action",
+      "scene": "FigPad SVG Editor project creation",
+      "visible_objects": [
+        "SVG editor",
+        "new project flow",
+        "editable workspace"
+      ],
+      "emotion": "editor entry / workflow setup",
+      "best_use": [
+        "start SVG editor workflow",
+        "new editable project beat",
+        "bridge into online text editing"
+      ],
+      "not_good_for": [
+        "opening hook",
+        "final result proof",
+        "SVG converter proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 3.7,
+          "reason": "Shows the SVG editor new-project workflow as a separate action beat."
+        }
+      ],
+      "text_overlay_safe_area": "upper center or lower center depending on editor controls",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "notes": "Moved from repository root during cleanup; use when the script needs a dedicated SVG Editor project-entry beat."
+    },
+    {
+      "clip_id": "09_export_ppt_workflow_rebuilt",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/derived/09_export_ppt_workflow_rebuilt.mp4",
+      "duration": 4,
+      "orientation": "vertical_derived_from_timeline_still",
+      "quality_score": 4,
+      "shot_type": "derived export PPT still clip",
+      "camera_motion": "static rebuilt still",
+      "scene": "FigPad export dialog / PPT option",
+      "visible_objects": [
+        "Export dialog",
+        "Editable PPT option",
+        "generated figure"
+      ],
+      "emotion": "workflow completion / portability",
+      "best_use": [
+        "fallback only if the clean raw export clip is unavailable"
+      ],
+      "not_good_for": [
+        "primary export proof",
+        "dynamic product demo",
+        "new edits when raw 09_export_ppt_workflow.mov is available"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 4,
+          "reason": "Rebuilt from previously generated timeline sheet because the raw MOV has a missing moov atom."
+        }
+      ],
+      "text_overlay_safe_area": "upper center; keep export dialog visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1,
+      "notes": "Obsolete fallback from an older broken export recording. Prefer raw 09_export_ppt_workflow.mov now that the clean re-recorded clip is present."
+    }
+  ]
+}

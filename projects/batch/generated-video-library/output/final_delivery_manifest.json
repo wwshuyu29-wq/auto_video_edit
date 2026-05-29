@@ -1,0 +1,461 @@
+{
+  "status": "ready",
+  "label": "Generated Video Library by Template and Product",
+  "imported_at": "2026-05-28T11:09:15.866Z",
+  "total_count": 40,
+  "grouping": "template_id/product/video",
+  "templates": {
+    "ariana_764391_ai_hook_4_products": {
+      "template_label": "Ariana 764391 AI Hook 4 Products",
+      "count": 8,
+      "products": {
+        "Citely": 2,
+        "Clearfy": 2,
+        "FigPad": 2,
+        "Literfy": 2
+      }
+    },
+    "ariana_764391_main_v2": {
+      "template_label": "Ariana 764391 Main V2",
+      "count": 8,
+      "products": {
+        "Citely": 2,
+        "Clearfy": 2,
+        "FigPad": 2,
+        "Literfy": 2
+      }
+    },
+    "ai_human_hook_function_demo": {
+      "template_label": "AI Human Hook Function Demo",
+      "count": 4,
+      "products": {
+        "Citely": 1,
+        "Clearfy": 1,
+        "FigPad": 1,
+        "Literfy": 1
+      }
+    },
+    "xiaoyu_hook_function_demo": {
+      "template_label": "Xiaoyu Hook Function Demo",
+      "count": 4,
+      "products": {
+        "Citely": 1,
+        "Clearfy": 1,
+        "FigPad": 1,
+        "Literfy": 1
+      }
+    },
+    "ariana_763797_16_ai_humans": {
+      "template_label": "Ariana 763797 16 AI Humans",
+      "count": 16,
+      "products": {
+        "Literfy": 4,
+        "FigPad": 4,
+        "Clearfy": 4,
+        "Citely": 4
+      }
+    }
+  },
+  "deliverables": [
+    {
+      "template_id": "ariana_764391_ai_hook_4_products",
+      "template_label": "Ariana 764391 AI Hook 4 Products",
+      "product": "Citely",
+      "asset_type": "final_video",
+      "variant": "Ariana 764391 AI Hook 4 Products / Citely / citely_citely_ariana_764391_ai_hook_video",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products/citely/citely_citely_ariana_764391_ai_hook_video.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Citely/Citely_ariana_764391_ai_hook_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_764391_ai_hook_4_products",
+      "template_label": "Ariana 764391 AI Hook 4 Products",
+      "product": "Citely",
+      "asset_type": "raw_ai_human_hook",
+      "variant": "Ariana 764391 AI Hook 4 Products / Citely / citely_citely_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products/citely/citely_citely_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Citely/Citely_raw_ai_human_hook.mp4",
+      "duration_seconds": 4
+    },
+    {
+      "template_id": "ariana_764391_ai_hook_4_products",
+      "template_label": "Ariana 764391 AI Hook 4 Products",
+      "product": "Clearfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 764391 AI Hook 4 Products / Clearfy / clearfy_clearfy_ariana_764391_ai_hook_video",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products/clearfy/clearfy_clearfy_ariana_764391_ai_hook_video.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Clearfy/Clearfy_ariana_764391_ai_hook_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_764391_ai_hook_4_products",
+      "template_label": "Ariana 764391 AI Hook 4 Products",
+      "product": "Clearfy",
+      "asset_type": "raw_ai_human_hook",
+      "variant": "Ariana 764391 AI Hook 4 Products / Clearfy / clearfy_clearfy_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products/clearfy/clearfy_clearfy_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Clearfy/Clearfy_raw_ai_human_hook.mp4",
+      "duration_seconds": 4
+    },
+    {
+      "template_id": "ariana_764391_ai_hook_4_products",
+      "template_label": "Ariana 764391 AI Hook 4 Products",
+      "product": "FigPad",
+      "asset_type": "final_video",
+      "variant": "Ariana 764391 AI Hook 4 Products / FigPad / figpad_figpad_ariana_764391_ai_hook_video",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products/figpad/figpad_figpad_ariana_764391_ai_hook_video.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/FigPad/FigPad_ariana_764391_ai_hook_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_764391_ai_hook_4_products",
+      "template_label": "Ariana 764391 AI Hook 4 Products",
+      "product": "FigPad",
+      "asset_type": "raw_ai_human_hook",
+      "variant": "Ariana 764391 AI Hook 4 Products / FigPad / figpad_figpad_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products/figpad/figpad_figpad_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/FigPad/FigPad_raw_ai_human_hook.mp4",
+      "duration_seconds": 4
+    },
+    {
+      "template_id": "ariana_764391_ai_hook_4_products",
+      "template_label": "Ariana 764391 AI Hook 4 Products",
+      "product": "Literfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 764391 AI Hook 4 Products / Literfy / literfy_literfy_ariana_764391_ai_hook_video",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products/literfy/literfy_literfy_ariana_764391_ai_hook_video.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Literfy/Literfy_ariana_764391_ai_hook_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_764391_ai_hook_4_products",
+      "template_label": "Ariana 764391 AI Hook 4 Products",
+      "product": "Literfy",
+      "asset_type": "raw_ai_human_hook",
+      "variant": "Ariana 764391 AI Hook 4 Products / Literfy / literfy_literfy_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products/literfy/literfy_literfy_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Literfy/Literfy_raw_ai_human_hook.mp4",
+      "duration_seconds": 4
+    },
+    {
+      "template_id": "ariana_764391_main_v2",
+      "template_label": "Ariana 764391 Main V2",
+      "product": "Citely",
+      "asset_type": "raw_ai_human_hook",
+      "variant": "Ariana 764391 Main V2 / Citely / citely_citely_main_v2_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_main_v2/citely/citely_citely_main_v2_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/main/Citely/Citely_main_v2_raw_ai_human_hook.mp4",
+      "duration_seconds": 4
+    },
+    {
+      "template_id": "ariana_764391_main_v2",
+      "template_label": "Ariana 764391 Main V2",
+      "product": "Citely",
+      "asset_type": "final_video",
+      "variant": "Ariana 764391 Main V2 / Citely / citely_citely_main_v2_video",
+      "video": "output/final_delivery/ariana_764391_main_v2/citely/citely_citely_main_v2_video.mp4",
+      "source_path": "/Users/kk/Desktop/main/Citely/Citely_main_v2_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_764391_main_v2",
+      "template_label": "Ariana 764391 Main V2",
+      "product": "Clearfy",
+      "asset_type": "raw_ai_human_hook",
+      "variant": "Ariana 764391 Main V2 / Clearfy / clearfy_clearfy_main_v2_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_main_v2/clearfy/clearfy_clearfy_main_v2_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/main/Clearfy/Clearfy_main_v2_raw_ai_human_hook.mp4",
+      "duration_seconds": 4
+    },
+    {
+      "template_id": "ariana_764391_main_v2",
+      "template_label": "Ariana 764391 Main V2",
+      "product": "Clearfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 764391 Main V2 / Clearfy / clearfy_clearfy_main_v2_video",
+      "video": "output/final_delivery/ariana_764391_main_v2/clearfy/clearfy_clearfy_main_v2_video.mp4",
+      "source_path": "/Users/kk/Desktop/main/Clearfy/Clearfy_main_v2_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_764391_main_v2",
+      "template_label": "Ariana 764391 Main V2",
+      "product": "FigPad",
+      "asset_type": "raw_ai_human_hook",
+      "variant": "Ariana 764391 Main V2 / FigPad / figpad_figpad_main_v2_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_main_v2/figpad/figpad_figpad_main_v2_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/main/FigPad/FigPad_main_v2_raw_ai_human_hook.mp4",
+      "duration_seconds": 4
+    },
+    {
+      "template_id": "ariana_764391_main_v2",
+      "template_label": "Ariana 764391 Main V2",
+      "product": "FigPad",
+      "asset_type": "final_video",
+      "variant": "Ariana 764391 Main V2 / FigPad / figpad_figpad_main_v2_video",
+      "video": "output/final_delivery/ariana_764391_main_v2/figpad/figpad_figpad_main_v2_video.mp4",
+      "source_path": "/Users/kk/Desktop/main/FigPad/FigPad_main_v2_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_764391_main_v2",
+      "template_label": "Ariana 764391 Main V2",
+      "product": "Literfy",
+      "asset_type": "raw_ai_human_hook",
+      "variant": "Ariana 764391 Main V2 / Literfy / literfy_literfy_main_v2_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_main_v2/literfy/literfy_literfy_main_v2_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/main/Literfy/Literfy_main_v2_raw_ai_human_hook.mp4",
+      "duration_seconds": 4
+    },
+    {
+      "template_id": "ariana_764391_main_v2",
+      "template_label": "Ariana 764391 Main V2",
+      "product": "Literfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 764391 Main V2 / Literfy / literfy_literfy_main_v2_video",
+      "video": "output/final_delivery/ariana_764391_main_v2/literfy/literfy_literfy_main_v2_video.mp4",
+      "source_path": "/Users/kk/Desktop/main/Literfy/Literfy_main_v2_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ai_human_hook_function_demo",
+      "template_label": "AI Human Hook Function Demo",
+      "product": "Citely",
+      "asset_type": "final_video",
+      "variant": "AI Human Hook Function Demo / Citely / citely_citely_ai_human_hook_function_demo",
+      "video": "output/final_delivery/ai_human_hook_function_demo/citely/citely_citely_ai_human_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Citely/Citely_ai_human_hook_function_demo.mp4",
+      "duration_seconds": 16.2
+    },
+    {
+      "template_id": "xiaoyu_hook_function_demo",
+      "template_label": "Xiaoyu Hook Function Demo",
+      "product": "Citely",
+      "asset_type": "final_video",
+      "variant": "Xiaoyu Hook Function Demo / Citely / citely_citely_xiaoyu_hook_function_demo",
+      "video": "output/final_delivery/xiaoyu_hook_function_demo/citely/citely_citely_xiaoyu_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Citely/Citely_xiaoyu_hook_function_demo.mp4",
+      "duration_seconds": 16.2
+    },
+    {
+      "template_id": "ai_human_hook_function_demo",
+      "template_label": "AI Human Hook Function Demo",
+      "product": "Clearfy",
+      "asset_type": "final_video",
+      "variant": "AI Human Hook Function Demo / Clearfy / clearfy_clearfy_ai_human_hook_function_demo",
+      "video": "output/final_delivery/ai_human_hook_function_demo/clearfy/clearfy_clearfy_ai_human_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Clearfy/Clearfy_ai_human_hook_function_demo.mp4",
+      "duration_seconds": 10.7
+    },
+    {
+      "template_id": "xiaoyu_hook_function_demo",
+      "template_label": "Xiaoyu Hook Function Demo",
+      "product": "Clearfy",
+      "asset_type": "final_video",
+      "variant": "Xiaoyu Hook Function Demo / Clearfy / clearfy_clearfy_xiaoyu_hook_function_demo",
+      "video": "output/final_delivery/xiaoyu_hook_function_demo/clearfy/clearfy_clearfy_xiaoyu_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Clearfy/Clearfy_xiaoyu_hook_function_demo.mp4",
+      "duration_seconds": 10.7
+    },
+    {
+      "template_id": "ai_human_hook_function_demo",
+      "template_label": "AI Human Hook Function Demo",
+      "product": "FigPad",
+      "asset_type": "final_video",
+      "variant": "AI Human Hook Function Demo / FigPad / figpad_figpad_ai_human_hook_function_demo",
+      "video": "output/final_delivery/ai_human_hook_function_demo/figpad/figpad_figpad_ai_human_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/FigPad/FigPad_ai_human_hook_function_demo.mp4",
+      "duration_seconds": 15.2
+    },
+    {
+      "template_id": "xiaoyu_hook_function_demo",
+      "template_label": "Xiaoyu Hook Function Demo",
+      "product": "FigPad",
+      "asset_type": "final_video",
+      "variant": "Xiaoyu Hook Function Demo / FigPad / figpad_figpad_xiaoyu_hook_function_demo",
+      "video": "output/final_delivery/xiaoyu_hook_function_demo/figpad/figpad_figpad_xiaoyu_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/FigPad/FigPad_xiaoyu_hook_function_demo.mp4",
+      "duration_seconds": 14.9
+    },
+    {
+      "template_id": "ai_human_hook_function_demo",
+      "template_label": "AI Human Hook Function Demo",
+      "product": "Literfy",
+      "asset_type": "final_video",
+      "variant": "AI Human Hook Function Demo / Literfy / literfy_literfy_ai_human_hook_function_demo",
+      "video": "output/final_delivery/ai_human_hook_function_demo/literfy/literfy_literfy_ai_human_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Literfy/Literfy_ai_human_hook_function_demo.mp4",
+      "duration_seconds": 19.4
+    },
+    {
+      "template_id": "xiaoyu_hook_function_demo",
+      "template_label": "Xiaoyu Hook Function Demo",
+      "product": "Literfy",
+      "asset_type": "final_video",
+      "variant": "Xiaoyu Hook Function Demo / Literfy / literfy_literfy_xiaoyu_hook_function_demo",
+      "video": "output/final_delivery/xiaoyu_hook_function_demo/literfy/literfy_literfy_xiaoyu_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Literfy/Literfy_xiaoyu_hook_function_demo.mp4",
+      "duration_seconds": 19.4
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Literfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Literfy / literfy_human_01",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/literfy/literfy_human_01.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_01/output/literfy_human_01_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Literfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Literfy / literfy_human_02",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/literfy/literfy_human_02.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_02/output/literfy_human_02_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Literfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Literfy / literfy_human_03",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/literfy/literfy_human_03.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_03/output/literfy_human_03_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Literfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Literfy / literfy_human_04",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/literfy/literfy_human_04.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_04/output/literfy_human_04_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "FigPad",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / FigPad / figpad_human_01",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/figpad/figpad_human_01.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_01/output/figpad_human_01_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "FigPad",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / FigPad / figpad_human_02",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/figpad/figpad_human_02.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_02/output/figpad_human_02_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "FigPad",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / FigPad / figpad_human_03",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/figpad/figpad_human_03.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_03/output/figpad_human_03_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "FigPad",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / FigPad / figpad_human_04",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/figpad/figpad_human_04.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_04/output/figpad_human_04_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Clearfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Clearfy / clearfy_human_01",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/clearfy/clearfy_human_01.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_01/output/clearfy_human_01_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Clearfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Clearfy / clearfy_human_02",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/clearfy/clearfy_human_02.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_02/output/clearfy_human_02_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Clearfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Clearfy / clearfy_human_03",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/clearfy/clearfy_human_03.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_03/output/clearfy_human_03_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Clearfy",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Clearfy / clearfy_human_04",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/clearfy/clearfy_human_04.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/clearfy/clearfy_human_04/output/clearfy_human_04_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Citely",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Citely / citely_human_01",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/citely/citely_human_01.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_01/output/citely_human_01_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Citely",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Citely / citely_human_02",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/citely/citely_human_02.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_02/output/citely_human_02_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Citely",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Citely / citely_human_03",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/citely/citely_human_03.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_03/output/citely_human_03_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    },
+    {
+      "template_id": "ariana_763797_16_ai_humans",
+      "template_label": "Ariana 763797 16 AI Humans",
+      "product": "Citely",
+      "asset_type": "final_video",
+      "variant": "Ariana 763797 16 AI Humans / Citely / citely_human_04",
+      "video": "output/final_delivery/ariana_763797_16_ai_humans/citely/citely_human_04.mp4",
+      "source_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_04/output/citely_human_04_ariana_763797_ai_human_video.mp4",
+      "duration_seconds": 20.8
+    }
+  ]
+}

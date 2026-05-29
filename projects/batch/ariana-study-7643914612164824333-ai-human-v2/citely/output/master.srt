@@ -1,0 +1,25 @@
+1
+00:00:00,000 --> 00:00:04,000
+AI gave me citations 😳
+the confidence was high
+the sources were not
+
+2
+00:00:04,000 --> 00:00:07,000
+so I check the citation trail first
+
+3
+00:00:07,000 --> 00:00:11,000
+paste the reference that feels suspicious
+
+4
+00:00:11,000 --> 00:00:15,000
+then see what actually matches
+
+5
+00:00:15,000 --> 00:00:18,000
+and trace claims to real sources
+
+6
+00:00:18,000 --> 00:00:21,000
+before I trust the bibliography

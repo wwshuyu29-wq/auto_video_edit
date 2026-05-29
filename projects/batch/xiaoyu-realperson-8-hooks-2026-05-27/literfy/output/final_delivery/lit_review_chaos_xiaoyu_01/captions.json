@@ -1,0 +1,207 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.6,
+      "duration": 2.6,
+      "text": "WAIT why is this site lowkey saving my lit review chaos 😭",
+      "beat": "hook",
+      "clip_id": "04_xiaoyu_laptop_library_explain",
+      "clip_start": 0.0,
+      "clip_end": 2.42,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "WAIT why is this site",
+          "lowkey saving my",
+          "lit review chaos 😭"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "lit",
+          "review"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.6,
+      "end": 5.2,
+      "duration": 2.6,
+      "text": "go to Literfy",
+      "beat": "reveal",
+      "clip_id": "01_literfy_landing_page",
+      "clip_start": 0.3,
+      "clip_end": 3.8,
+      "playback_speed": 1.35,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "go to",
+          "Literfy"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Literfy"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.2,
+      "end": 8.6,
+      "duration": 3.3999999999999995,
+      "text": "type your topic",
+      "beat": "input",
+      "clip_id": "02_review_input_topic",
+      "clip_start": 0.4,
+      "clip_end": 5.6,
+      "playback_speed": 1.55,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "type your topic"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.6,
+      "end": 12.0,
+      "duration": 3.4000000000000004,
+      "text": "it finds real papers first",
+      "beat": "papers",
+      "clip_id": "03_paper_list_results",
+      "clip_start": 0.2,
+      "clip_end": 5.4,
+      "playback_speed": 1.55,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "it finds",
+          "real papers first"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "real"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 4,
+      "start": 12.0,
+      "end": 15.8,
+      "duration": 3.8000000000000007,
+      "text": "then builds an outline from what you picked",
+      "beat": "outline",
+      "clip_id": "06_literature_review_outline",
+      "clip_start": 0.05,
+      "clip_end": 3.15,
+      "playback_speed": 0.85,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "then builds an outline",
+          "from what you picked"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 5,
+      "start": 15.8,
+      "end": 19.2,
+      "duration": 3.3999999999999986,
+      "text": "it is called Literfy btw",
+      "beat": "ending",
+      "clip_id": "08_generated_review",
+      "clip_start": 3.0,
+      "clip_end": 9.0,
+      "playback_speed": 1.75,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "it is called",
+          "Literfy btw"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Literfy"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    }
+  ]
+}

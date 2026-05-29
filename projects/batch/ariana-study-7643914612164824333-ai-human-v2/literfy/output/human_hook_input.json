@@ -1,0 +1,192 @@
+{
+  "account_url": "https://www.tiktok.com/@ariana.study/video/7643914612164824333",
+  "reference_hook_summary": "V2 adaptation of Ariana 764391: tired facepalm StudyTok selfie, hand on forehead, bad workflow consequence, then cut to product proof. Preserve emotion and rhythm, change identity/scene/gesture/product pain.",
+  "product": {
+    "product_name": "Literfy",
+    "one_liner": "Literfy is an AI academic research tool that helps students and researchers find papers, organize sources, and start literature reviews faster.",
+    "target_users": [
+      "graduate students",
+      "PhD students",
+      "Master students",
+      "researchers",
+      "students writing literature reviews",
+      "academic writers"
+    ],
+    "core_features": [
+      {
+        "feature_name": "Find Papers",
+        "description": "Search and discover academic papers based on a research topic.",
+        "user_benefit": "Helps users find relevant papers faster instead of opening many random tabs.",
+        "visual_need": "Screen recording of typing a research topic and getting paper results."
+      },
+      {
+        "feature_name": "Paper Discovery / Related Papers",
+        "description": "Help users discover relevant or related papers for a research topic.",
+        "user_benefit": "Helps users avoid missing useful papers during early research.",
+        "visual_need": "Screen recording of paper result list, related papers, or ranked results."
+      },
+      {
+        "feature_name": "Literature Review Outline",
+        "description": "Generate a structured outline for a literature review based on selected papers.",
+        "user_benefit": "Helps users stop staring at a blank page and start with a clear structure.",
+        "visual_need": "Screen recording of selected papers turning into an outline."
+      },
+      {
+        "feature_name": "AI Literature Review Draft",
+        "description": "Generate a structured literature review draft based on collected papers.",
+        "user_benefit": "Helps users move from paper collection to a draftable structure faster.",
+        "visual_need": "Screen recording of a review draft or editable review sections."
+      },
+      {
+        "feature_name": "Citation / Export Workflow",
+        "description": "Export citations or research materials into downstream writing workflows.",
+        "user_benefit": "Helps users organize and move research materials into writing tools.",
+        "visual_need": "Screen recording of export options, citation export, or document export."
+      }
+    ],
+    "most_painful_user_scenarios": [
+      "A student starts a literature review and opens 30-50 random tabs.",
+      "A PhD or Master student does not know which papers are worth reading first.",
+      "A researcher has papers but does not know how to organize them into a review structure.",
+      "A student wastes hours before actually writing anything."
+    ],
+    "forbidden_claims": [
+      "Do not say Literfy writes a perfect literature review.",
+      "Do not say Literfy replaces real research.",
+      "Do not say citations are always 100% correct.",
+      "Do not tell users to submit AI output directly.",
+      "Do not claim guaranteed acceptance by journals or professors.",
+      "Do not claim the output is publication-ready without human review."
+    ],
+    "good_tiktok_angles": [
+      "If your literature review starts with 50 random tabs open, this is for you.",
+      "This is how I start a literature review now.",
+      "I stopped staring at a blank page before writing my literature review.",
+      "Stop searching papers manually like this."
+    ],
+    "source_grounding_note": "Literfy generates literature review outlines and drafts based on real academic papers selected or discovered in the workflow.",
+    "allowed_claim_boundaries": [
+      "Can say Literfy works from real academic papers in the workflow.",
+      "Can say Literfy helps generate a structured literature review draft based on selected/collected papers.",
+      "Can say Literfy helps users move from real papers to an organized review starting point.",
+      "Should still say users need to review, edit, and verify the output."
+    ]
+  },
+  "product_name": "Literfy",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "human_hook_observation": {
+    "status": "vision_structured_from_contact_sheet",
+    "detected": true,
+    "frame_index": {
+      "reference_video": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human-v2/references/7643914612164824333/reference.mp4",
+      "raw_reference": "https://www.tiktok.com/@ariana.study/video/7643914612164824333",
+      "hook_window_s": [
+        0,
+        4
+      ],
+      "fps": 2,
+      "frames_dir": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human-v2/references/7643914612164824333/frames",
+      "frames": [
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_01.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_02.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_03.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_04.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_05.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_06.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_07.jpg",
+        "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human/references/7643914612164824333/frames/frame_08.jpg"
+      ],
+      "contact_sheet": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7643914612164824333-ai-human-v2/references/7643914612164824333/hook_0_4s_sheet.jpg"
+    },
+    "observation": {
+      "reference_caption_visible": "Just saw a guy run his essay through an AI detector first. Not naturalwrite. Straight to the detector. Score: 97% AI. Now he is panicking.",
+      "visual_summary": "Close vertical selfie at a study desk. Student keeps one hand pressed to forehead with eyes closed or downcast, looking tired and disappointed. A pink checkered notebook/paper repeatedly moves close to the lens on the right side, creating a casual handheld StudyTok feel. Low motion, facepalm energy, indoor ceiling/ring light, desk edge visible.",
+      "hook_mechanism": "Someone uses the risky/wrong workflow first, gets a scary score or proof problem, then panic becomes the reason to show a safer product workflow.",
+      "person": {
+        "framing": "vertical 9:16 smartphone selfie, close-up face and upper torso, desk-level angle"
+      },
+      "environment": "quiet library table with laptop, highlighted PDFs, sticky notes, and a messy half-written literature review outline",
+      "expression": "tired realization after doing the research workflow backwards",
+      "action": "presses fingers to forehead, looks down at a messy draft, then slides a highlighted paper into view near the lens",
+      "atmosphere": "creator-native StudyTok, lightly dramatic, not polished ad footage",
+      "camera": "front-facing phone camera, static desk-level selfie with subtle handheld movement",
+      "lighting_color": "soft indoor light with slight phone-camera realism",
+      "prompt_inputs": {
+        "scene": "quiet library table with laptop, highlighted PDFs, sticky notes, and a messy half-written literature review outline",
+        "emotion": "tired realization after doing the research workflow backwards",
+        "motion": "presses fingers to forehead, looks down at a messy draft, then slides a highlighted paper into view near the lens",
+        "atmosphere": "authentic StudyTok reaction, lightly dramatic and creator-native",
+        "camera_motion": "subtle phone selfie movement, desk-level angle",
+        "framing": "vertical 9:16 smartphone selfie, close-up to medium close-up",
+        "must_change": [
+          "face",
+          "outfit",
+          "prop color",
+          "desk layout",
+          "camera distance",
+          "gesture timing"
+        ]
+      }
+    }
+  },
+  "viral_pattern_card": {
+    "template_id": "ariana-study-professors-evolving-human-hook",
+    "main_content_logic": "[close selfie academic panic] + [professors are evolving caption] + [hard cut to product proof]",
+    "caption_logic": {
+      "visible_sequence": [
+        "bro... advisors are checking sources now...",
+        "so I keep the paper trail in Literfy"
+      ],
+      "sentence_roles": [
+        "panic hook adapted from reference",
+        "product proof reveal"
+      ]
+    },
+    "viral_patterns": [
+      {
+        "opening_0_3s": "bro... advisors are checking sources now...",
+        "hook_type": "academic panic / professors are evolving",
+        "visual_style": {
+          "person": {
+            "count": 1,
+            "role": "student creator / academic studytok creator",
+            "framing": "vertical 9:16 close-up selfie, face in the upper half with space for captions in the lower-middle",
+            "identity_policy": "do not copy the reference creator face, identity, clothing, or exact likeness"
+          },
+          "action": "covers part of the mouth for a beat, raises eyebrows, glances sideways toward the laptop, then makes a small pointing gesture toward the screen",
+          "expression": "anxious but slightly amused, caught-off-guard study panic",
+          "atmosphere": "late-night literature review panic, creator-native and confessional",
+          "environment": "a different cozy student desk with a laptop, notebook, and scattered research papers, not the reference room",
+          "camera": "vertical 9:16 phone selfie; subtle handheld phone drift with a tiny lean-in",
+          "lighting_color": "natural indoor study lighting, changed from reference lighting",
+          "differentiation_rule": "reuse only emotional function, close-selfie grammar, and hard-cut-to-proof rhythm; change face, outfit, room layout, props, lighting, camera distance, and gesture timing",
+          "text_overlay": {
+            "visible": true,
+            "style": "large white TikTok caption with black outline, lower-middle placement",
+            "summary": "caption should be burned during render, not generated inside AI video",
+            "safe_area": "lower-middle; avoid covering eyes and mouth-covering hand"
+          },
+          "prompt_inputs": {
+            "scene": "a different cozy student desk with a laptop, notebook, and scattered research papers, not the reference room",
+            "emotion": "anxious but slightly amused, caught-off-guard study panic",
+            "motion": "covers part of the mouth for a beat, raises eyebrows, glances sideways toward the laptop, then makes a small pointing gesture toward the screen",
+            "atmosphere": "late-night literature review panic, creator-native and confessional",
+            "framing": "vertical 9:16 close-up selfie, face in the upper half with space for captions in the lower-middle",
+            "camera_motion": "subtle handheld phone drift with a tiny lean-in",
+            "must_change": [
+              "face",
+              "outfit",
+              "desk layout",
+              "props",
+              "lighting",
+              "gesture timing"
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

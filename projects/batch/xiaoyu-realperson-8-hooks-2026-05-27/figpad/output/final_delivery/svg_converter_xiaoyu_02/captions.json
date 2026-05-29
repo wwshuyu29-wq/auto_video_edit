@@ -1,0 +1,209 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.4,
+      "duration": 2.4,
+      "text": "WAIT this turns a flat image into SVG?? 🤯",
+      "beat": "hook",
+      "clip_id": "03_xiaoyu_cover_mouth_side_crop",
+      "clip_start": 0.0,
+      "clip_end": 1.28,
+      "playback_speed": 0.8,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "WAIT this turns a",
+          "flat image into SVG?? 🤯"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "flat",
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.4,
+      "end": 4.8,
+      "duration": 2.4,
+      "text": "open SVG Converter",
+      "beat": "reveal",
+      "clip_id": "11_svg_converter_page",
+      "clip_start": 0.0,
+      "clip_end": 1.2,
+      "playback_speed": 0.55,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "open",
+          "SVG Converter"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 2,
+      "start": 4.8,
+      "end": 8.8,
+      "duration": 4.000000000000001,
+      "text": "upload the image",
+      "beat": "upload",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 0.2,
+      "clip_end": 4.2,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "upload",
+          "the image"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "image"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.8,
+      "end": 12.6,
+      "duration": 3.799999999999999,
+      "text": "convert it into SVG",
+      "beat": "convert",
+      "clip_id": "12_svg_converter_upload_convert",
+      "clip_start": 2.2,
+      "clip_end": 4.4,
+      "playback_speed": 0.65,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "convert it",
+          "into SVG"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "SVG"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 4,
+      "start": 12.6,
+      "end": 16.4,
+      "duration": 3.799999999999999,
+      "text": "download the editable file",
+      "beat": "download",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 0.2,
+      "clip_end": 4.1,
+      "playback_speed": 1.05,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "download the",
+          "editable file"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "editable"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 5,
+      "start": 16.4,
+      "end": 19.5,
+      "duration": 3.1000000000000014,
+      "text": "it is called FigPad btw",
+      "beat": "ending",
+      "clip_id": "13_svg_converter_download_svg",
+      "clip_start": 1.2,
+      "clip_end": 4.1,
+      "playback_speed": 0.9,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "it is called",
+          "FigPad btw"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "FigPad"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    }
+  ]
+}

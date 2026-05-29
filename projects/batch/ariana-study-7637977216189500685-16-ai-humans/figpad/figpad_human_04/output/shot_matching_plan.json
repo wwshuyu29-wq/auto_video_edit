@@ -1,0 +1,127 @@
+{
+  "product_name": "FigPad",
+  "template_id": "studyingwithyun_teacher_accusation_proof_report",
+  "edit_plan": [
+    {
+      "time": "0-4s",
+      "beat": "hook",
+      "voiceover": "when a diagram can't just be a flat image anymore...",
+      "on_screen_text": "when a diagram can't just be a flat image anymore...",
+      "clip_id": "ai_human_hook",
+      "clip_start": 0,
+      "clip_end": 4,
+      "playback_speed": 1,
+      "reason": "Unique AI silent selfie reaction for this exact variant; not reused across the batch.",
+      "transition": "hard cut",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.54,
+        "line_gap": 5
+      }
+    },
+    {
+      "time": "4-7s",
+      "beat": "generated_result",
+      "voiceover": "so I keep the FigPad edit trail visible",
+      "on_screen_text": "so I keep the FigPad edit trail visible",
+      "clip_id": "04_text_to_figure_result",
+      "clip_start": 0,
+      "clip_end": 3.1,
+      "playback_speed": 1.1,
+      "reason": "generated figure result proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "time": "7-10s",
+      "beat": "edit_entry",
+      "voiceover": "then I open it in SVG Edit",
+      "on_screen_text": "then I open it in SVG Edit",
+      "clip_id": "05_click_svg_edit",
+      "clip_start": 0.1,
+      "clip_end": 3.4,
+      "playback_speed": 1.25,
+      "reason": "click SVG Edit workflow",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "time": "10-14s",
+      "beat": "edit_proof",
+      "voiceover": "and keep editing the labels myself",
+      "on_screen_text": "and keep editing the labels myself",
+      "clip_id": "07_svg_editor_edit_demo_2",
+      "clip_start": 0.2,
+      "clip_end": 4.7,
+      "playback_speed": 1.35,
+      "reason": "editable SVG canvas proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "time": "14-18s",
+      "beat": "export",
+      "voiceover": "then I export it as PPTX or SVG",
+      "on_screen_text": "then I export it as PPTX or SVG",
+      "clip_id": "09_export_ppt_workflow",
+      "clip_start": 0.2,
+      "clip_end": 5.4,
+      "playback_speed": 1.55,
+      "reason": "export format modal proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    },
+    {
+      "time": "18-21s",
+      "beat": "result",
+      "voiceover": "so it is not just a flat AI image",
+      "on_screen_text": "so it is not just a flat AI image",
+      "clip_id": "10_ppt_export_result",
+      "clip_start": 0,
+      "clip_end": 2.8,
+      "playback_speed": 1,
+      "reason": "PowerPoint result proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6
+      }
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "Opening AI hook must be an original fictional student, not the reference creator likeness.",
+    "Claims are framed as workflow proof, not guarantees or misconduct encouragement."
+  ],
+  "reference_template": "ariana-study-professors-evolving-human-hook",
+  "variant_id": "figpad_human_04"
+}

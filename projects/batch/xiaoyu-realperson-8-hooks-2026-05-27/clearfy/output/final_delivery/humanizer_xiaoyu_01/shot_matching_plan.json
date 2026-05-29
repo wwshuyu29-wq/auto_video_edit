@@ -1,0 +1,232 @@
+{
+  "source_template": "studywithcc_7468211521600949510",
+  "reference_url": "https://www.tiktok.com/@stud.ywithcc/video/7468211521600949510",
+  "product": "Clearfy",
+  "variant_id": "humanizer_xiaoyu_01",
+  "title": "my paragraph had robot posture",
+  "template_logic": "real-person reaction hook -> product reveal -> simple action -> result proof -> tool-name ending",
+  "editing_style": {
+    "pace": "fast TikTok creator demo",
+    "aspect_ratio": "9:16",
+    "caption_style": "bold white text with black outline, safe center width, selected yellow highlights, restrained emoji"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-2.4s",
+      "voiceover": "WAIT why does my paragraph sound like a robot 😭",
+      "clip_id": "05_xiaoyu_cover_mouth_soft_gasp",
+      "clip_start": 0,
+      "clip_end": 1.31,
+      "playback_speed": 0.8,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "WAIT why does my paragraph sound like a robot 😭",
+      "caption_style": {
+        "lines": [
+          "WAIT why does my paragraph",
+          "sound like a robot 😭"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "robot"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "reveal",
+      "time": "2.4-5.0s",
+      "voiceover": "open Clearfy",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.2,
+      "clip_end": 3,
+      "playback_speed": 1.1,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "open Clearfy",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Clearfy"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Clearfy"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "humanizer",
+      "time": "5.0-8.0s",
+      "voiceover": "go to AI humanizer",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 2.4,
+      "playback_speed": 0.75,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "go to AI humanizer",
+      "caption_style": {
+        "lines": [
+          "go to",
+          "AI humanizer"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "humanizer"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "paste",
+      "time": "8.0-11.5s",
+      "voiceover": "paste the stiff paragraph",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 2.4,
+      "clip_end": 5.8,
+      "playback_speed": 1,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "paste the stiff paragraph",
+      "caption_style": {
+        "lines": [
+          "paste the",
+          "stiff paragraph"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "stiff"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "mode",
+      "time": "11.5-15.0s",
+      "voiceover": "choose the rewrite strength",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 0.2,
+      "clip_end": 2.9,
+      "playback_speed": 0.75,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "choose the rewrite strength",
+      "caption_style": {
+        "lines": [
+          "choose the",
+          "rewrite strength"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "rewrite"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "15.0-19.0s",
+      "voiceover": "edit the result so it still sounds like you",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.2,
+      "clip_end": 4,
+      "playback_speed": 0.95,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "edit the result so it still sounds like you",
+      "caption_style": {
+        "lines": [
+          "edit the result",
+          "so it still sounds like you"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "edit"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "needs_script_revision": false,
+  "risk_notes": [
+    "Hook video is silent reaction footage; subtitles are not presented as spoken dialogue.",
+    "Claims avoid guaranteed academic outcomes and product overpromises.",
+    "Caption max_width kept in 680-720 safe area to avoid side edges and TikTok UI."
+  ]
+}

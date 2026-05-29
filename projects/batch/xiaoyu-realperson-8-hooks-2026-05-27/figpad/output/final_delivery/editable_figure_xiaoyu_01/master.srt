@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:02,400
+WAIT why are we accepting flat AI figures 😭
+
+2
+00:00:02,400 --> 00:00:05,200
+open FigPad
+
+3
+00:00:05,200 --> 00:00:08,600
+type the figure idea
+
+4
+00:00:08,600 --> 00:00:12,000
+generate a figure draft
+
+5
+00:00:12,000 --> 00:00:15,800
+then open SVG editor
+
+6
+00:00:15,800 --> 00:00:19,200
+now I can fix labels like a normal person

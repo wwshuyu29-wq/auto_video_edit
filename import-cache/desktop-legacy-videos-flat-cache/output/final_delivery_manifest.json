@@ -1,0 +1,207 @@
+{
+  "status": "ready",
+  "label": "Desktop legacy generated videos",
+  "imported_at": "2026-05-28T09:40:11.619Z",
+  "source_roots": [
+    "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27",
+    "/Users/kk/Desktop/main",
+    "/Users/kk/Desktop/product_video_deliverables_2026-05-25"
+  ],
+  "excluded": [
+    "_reference_hook/reference.mp4"
+  ],
+  "deliverables": [
+    {
+      "variant": "Citely / Citely_ariana_764391_ai_hook_video",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products_2026_05_27__citely__citely_ariana_764391_ai_hook_video.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Citely/Citely_ariana_764391_ai_hook_video.mp4",
+      "collection": "ariana_764391_ai_hook_4_products_2026-05-27",
+      "product": "Citely",
+      "duration_seconds": 20.8
+    },
+    {
+      "variant": "Citely / Citely_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products_2026_05_27__citely__citely_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Citely/Citely_raw_ai_human_hook.mp4",
+      "collection": "ariana_764391_ai_hook_4_products_2026-05-27",
+      "product": "Citely",
+      "duration_seconds": 4
+    },
+    {
+      "variant": "Clearfy / Clearfy_ariana_764391_ai_hook_video",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products_2026_05_27__clearfy__clearfy_ariana_764391_ai_hook_video.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Clearfy/Clearfy_ariana_764391_ai_hook_video.mp4",
+      "collection": "ariana_764391_ai_hook_4_products_2026-05-27",
+      "product": "Clearfy",
+      "duration_seconds": 20.8
+    },
+    {
+      "variant": "Clearfy / Clearfy_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products_2026_05_27__clearfy__clearfy_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Clearfy/Clearfy_raw_ai_human_hook.mp4",
+      "collection": "ariana_764391_ai_hook_4_products_2026-05-27",
+      "product": "Clearfy",
+      "duration_seconds": 4
+    },
+    {
+      "variant": "FigPad / FigPad_ariana_764391_ai_hook_video",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products_2026_05_27__figpad__figpad_ariana_764391_ai_hook_video.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/FigPad/FigPad_ariana_764391_ai_hook_video.mp4",
+      "collection": "ariana_764391_ai_hook_4_products_2026-05-27",
+      "product": "FigPad",
+      "duration_seconds": 20.8
+    },
+    {
+      "variant": "FigPad / FigPad_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products_2026_05_27__figpad__figpad_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/FigPad/FigPad_raw_ai_human_hook.mp4",
+      "collection": "ariana_764391_ai_hook_4_products_2026-05-27",
+      "product": "FigPad",
+      "duration_seconds": 4
+    },
+    {
+      "variant": "Literfy / Literfy_ariana_764391_ai_hook_video",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products_2026_05_27__literfy__literfy_ariana_764391_ai_hook_video.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Literfy/Literfy_ariana_764391_ai_hook_video.mp4",
+      "collection": "ariana_764391_ai_hook_4_products_2026-05-27",
+      "product": "Literfy",
+      "duration_seconds": 20.8
+    },
+    {
+      "variant": "Literfy / Literfy_raw_ai_human_hook",
+      "video": "output/final_delivery/ariana_764391_ai_hook_4_products_2026_05_27__literfy__literfy_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/ariana_764391_ai_hook_4_products_2026-05-27/Literfy/Literfy_raw_ai_human_hook.mp4",
+      "collection": "ariana_764391_ai_hook_4_products_2026-05-27",
+      "product": "Literfy",
+      "duration_seconds": 4
+    },
+    {
+      "variant": "Citely / Citely_main_v2_raw_ai_human_hook",
+      "video": "output/final_delivery/main__citely__citely_main_v2_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/main/Citely/Citely_main_v2_raw_ai_human_hook.mp4",
+      "collection": "main",
+      "product": "Citely",
+      "duration_seconds": 4
+    },
+    {
+      "variant": "Citely / Citely_main_v2_video",
+      "video": "output/final_delivery/main__citely__citely_main_v2_video.mp4",
+      "source_path": "/Users/kk/Desktop/main/Citely/Citely_main_v2_video.mp4",
+      "collection": "main",
+      "product": "Citely",
+      "duration_seconds": 20.8
+    },
+    {
+      "variant": "Clearfy / Clearfy_main_v2_raw_ai_human_hook",
+      "video": "output/final_delivery/main__clearfy__clearfy_main_v2_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/main/Clearfy/Clearfy_main_v2_raw_ai_human_hook.mp4",
+      "collection": "main",
+      "product": "Clearfy",
+      "duration_seconds": 4
+    },
+    {
+      "variant": "Clearfy / Clearfy_main_v2_video",
+      "video": "output/final_delivery/main__clearfy__clearfy_main_v2_video.mp4",
+      "source_path": "/Users/kk/Desktop/main/Clearfy/Clearfy_main_v2_video.mp4",
+      "collection": "main",
+      "product": "Clearfy",
+      "duration_seconds": 20.8
+    },
+    {
+      "variant": "FigPad / FigPad_main_v2_raw_ai_human_hook",
+      "video": "output/final_delivery/main__figpad__figpad_main_v2_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/main/FigPad/FigPad_main_v2_raw_ai_human_hook.mp4",
+      "collection": "main",
+      "product": "FigPad",
+      "duration_seconds": 4
+    },
+    {
+      "variant": "FigPad / FigPad_main_v2_video",
+      "video": "output/final_delivery/main__figpad__figpad_main_v2_video.mp4",
+      "source_path": "/Users/kk/Desktop/main/FigPad/FigPad_main_v2_video.mp4",
+      "collection": "main",
+      "product": "FigPad",
+      "duration_seconds": 20.8
+    },
+    {
+      "variant": "Literfy / Literfy_main_v2_raw_ai_human_hook",
+      "video": "output/final_delivery/main__literfy__literfy_main_v2_raw_ai_human_hook.mp4",
+      "source_path": "/Users/kk/Desktop/main/Literfy/Literfy_main_v2_raw_ai_human_hook.mp4",
+      "collection": "main",
+      "product": "Literfy",
+      "duration_seconds": 4
+    },
+    {
+      "variant": "Literfy / Literfy_main_v2_video",
+      "video": "output/final_delivery/main__literfy__literfy_main_v2_video.mp4",
+      "source_path": "/Users/kk/Desktop/main/Literfy/Literfy_main_v2_video.mp4",
+      "collection": "main",
+      "product": "Literfy",
+      "duration_seconds": 20.8
+    },
+    {
+      "variant": "Citely / Citely_ai_human_hook_function_demo",
+      "video": "output/final_delivery/product_video_deliverables_2026_05_25__citely__citely_ai_human_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Citely/Citely_ai_human_hook_function_demo.mp4",
+      "collection": "product_video_deliverables_2026-05-25",
+      "product": "Citely",
+      "duration_seconds": 16.2
+    },
+    {
+      "variant": "Citely / Citely_xiaoyu_hook_function_demo",
+      "video": "output/final_delivery/product_video_deliverables_2026_05_25__citely__citely_xiaoyu_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Citely/Citely_xiaoyu_hook_function_demo.mp4",
+      "collection": "product_video_deliverables_2026-05-25",
+      "product": "Citely",
+      "duration_seconds": 16.2
+    },
+    {
+      "variant": "Clearfy / Clearfy_ai_human_hook_function_demo",
+      "video": "output/final_delivery/product_video_deliverables_2026_05_25__clearfy__clearfy_ai_human_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Clearfy/Clearfy_ai_human_hook_function_demo.mp4",
+      "collection": "product_video_deliverables_2026-05-25",
+      "product": "Clearfy",
+      "duration_seconds": 10.7
+    },
+    {
+      "variant": "Clearfy / Clearfy_xiaoyu_hook_function_demo",
+      "video": "output/final_delivery/product_video_deliverables_2026_05_25__clearfy__clearfy_xiaoyu_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Clearfy/Clearfy_xiaoyu_hook_function_demo.mp4",
+      "collection": "product_video_deliverables_2026-05-25",
+      "product": "Clearfy",
+      "duration_seconds": 10.7
+    },
+    {
+      "variant": "FigPad / FigPad_ai_human_hook_function_demo",
+      "video": "output/final_delivery/product_video_deliverables_2026_05_25__figpad__figpad_ai_human_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/FigPad/FigPad_ai_human_hook_function_demo.mp4",
+      "collection": "product_video_deliverables_2026-05-25",
+      "product": "FigPad",
+      "duration_seconds": 15.2
+    },
+    {
+      "variant": "FigPad / FigPad_xiaoyu_hook_function_demo",
+      "video": "output/final_delivery/product_video_deliverables_2026_05_25__figpad__figpad_xiaoyu_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/FigPad/FigPad_xiaoyu_hook_function_demo.mp4",
+      "collection": "product_video_deliverables_2026-05-25",
+      "product": "FigPad",
+      "duration_seconds": 14.9
+    },
+    {
+      "variant": "Literfy / Literfy_ai_human_hook_function_demo",
+      "video": "output/final_delivery/product_video_deliverables_2026_05_25__literfy__literfy_ai_human_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Literfy/Literfy_ai_human_hook_function_demo.mp4",
+      "collection": "product_video_deliverables_2026-05-25",
+      "product": "Literfy",
+      "duration_seconds": 19.4
+    },
+    {
+      "variant": "Literfy / Literfy_xiaoyu_hook_function_demo",
+      "video": "output/final_delivery/product_video_deliverables_2026_05_25__literfy__literfy_xiaoyu_hook_function_demo.mp4",
+      "source_path": "/Users/kk/Desktop/product_video_deliverables_2026-05-25/Literfy/Literfy_xiaoyu_hook_function_demo.mp4",
+      "collection": "product_video_deliverables_2026-05-25",
+      "product": "Literfy",
+      "duration_seconds": 19.4
+    }
+  ]
+}

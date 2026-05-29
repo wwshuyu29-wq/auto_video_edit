@@ -1,0 +1,208 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 2.8,
+      "duration": 2.8,
+      "text": "WAIT this finds sources for a claim?? 👀",
+      "beat": "hook",
+      "clip_id": "02_xiaoyu_cover_mouth_double_take",
+      "clip_start": 0.0,
+      "clip_end": 2.2,
+      "playback_speed": 0.85,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "WAIT this finds",
+          "sources for a claim?? 👀"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "sources",
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 1,
+      "start": 2.8,
+      "end": 5.3,
+      "duration": 2.5,
+      "text": "open Citely",
+      "beat": "reveal",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.1,
+      "clip_end": 3.0,
+      "playback_speed": 1.2,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Citely"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Citely"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 2,
+      "start": 5.3,
+      "end": 8.1,
+      "duration": 2.8,
+      "text": "click Find Sources",
+      "beat": "entry",
+      "clip_id": "02_click_find_sources",
+      "clip_start": 0.2,
+      "clip_end": 3.4,
+      "playback_speed": 1.15,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "click",
+          "Find Sources"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "Find"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 3,
+      "start": 8.1,
+      "end": 11.7,
+      "duration": 3.5999999999999996,
+      "text": "paste the claim",
+      "beat": "paste",
+      "clip_id": "03_find_sources_input_claim",
+      "clip_start": 0.2,
+      "clip_end": 5.8,
+      "playback_speed": 1.55,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "paste the claim"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 4,
+      "start": 11.7,
+      "end": 15.6,
+      "duration": 3.9000000000000004,
+      "text": "papers connected to it show up",
+      "beat": "proof",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 0.85,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "lines": [
+          "papers connected to it",
+          "show up"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "papers"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    },
+    {
+      "index": 5,
+      "start": 15.6,
+      "end": 19.0,
+      "duration": 3.4000000000000004,
+      "text": "source trail found. my tabs can rest.",
+      "beat": "ending",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 1.0,
+      "clip_end": 3.0,
+      "playback_speed": 0.65,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "lines": [
+          "source trail found.",
+          "my tabs can rest."
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "source"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      }
+    }
+  ]
+}

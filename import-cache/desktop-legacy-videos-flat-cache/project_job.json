@@ -1,0 +1,11 @@
+{
+  "project_id": "desktop-legacy-videos",
+  "project_dir": "projects/batch/desktop-legacy-videos",
+  "product_name": "Desktop Legacy Videos",
+  "workflow_mode": "mixed",
+  "stages": [],
+  "delivery": {
+    "mode": "imported_desktop_archive",
+    "render_report": "output/final_delivery_manifest.json"
+  }
+}

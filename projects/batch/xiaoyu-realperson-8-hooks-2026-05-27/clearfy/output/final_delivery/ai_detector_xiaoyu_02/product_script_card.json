@@ -1,0 +1,18 @@
+{
+  "product": "Clearfy",
+  "variant_id": "ai_detector_xiaoyu_02",
+  "template": "studywithcc reaction product demo",
+  "title": "the detector saw my draft and chose violence",
+  "script_lines": [
+    "WAIT the detector highlights the AI-looking parts?? 😳",
+    "open Clearfy",
+    "paste the draft into AI detector",
+    "let it scan the writing",
+    "review the highlighted sentences",
+    "now I know what to edit first ✅"
+  ],
+  "caption": "Before submitting, I would check which sentences sound AI-heavy and review those parts instead of guessing.",
+  "hashtags": "#essaywriting #aichecker #studytok #writingtools #clearfy",
+  "pinned_comment": "my draft thought it was slick. it was not slick.",
+  "why": "Direct gasp hook into Clearfy AI detector workflow."
+}

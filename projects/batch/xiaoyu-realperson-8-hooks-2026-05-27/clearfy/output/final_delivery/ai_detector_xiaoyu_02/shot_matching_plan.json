@@ -1,0 +1,232 @@
+{
+  "source_template": "studywithcc_7468211521600949510",
+  "reference_url": "https://www.tiktok.com/@stud.ywithcc/video/7468211521600949510",
+  "product": "Clearfy",
+  "variant_id": "ai_detector_xiaoyu_02",
+  "title": "the detector saw my draft and chose violence",
+  "template_logic": "real-person reaction hook -> product reveal -> simple action -> result proof -> tool-name ending",
+  "editing_style": {
+    "pace": "fast TikTok creator demo",
+    "aspect_ratio": "9:16",
+    "caption_style": "bold white text with black outline, safe center width, selected yellow highlights, restrained emoji"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-2.4s",
+      "voiceover": "WAIT the detector highlights the AI-looking parts?? 😳",
+      "clip_id": "06_xiaoyu_cover_mouth_direct_gasp",
+      "clip_start": 0,
+      "clip_end": 1.28,
+      "playback_speed": 0.8,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "WAIT the detector highlights the AI-looking parts?? 😳",
+      "caption_style": {
+        "lines": [
+          "WAIT the detector highlights",
+          "the AI-looking parts?? 😳"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "AI-looking"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "reveal",
+      "time": "2.4-5.0s",
+      "voiceover": "open Clearfy",
+      "clip_id": "00_clearfy_landing_page_empty_state",
+      "clip_start": 0.2,
+      "clip_end": 2.5,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "open Clearfy",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Clearfy"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Clearfy"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "detector",
+      "time": "5.0-8.5s",
+      "voiceover": "paste the draft into AI detector",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 0.5,
+      "clip_end": 5,
+      "playback_speed": 1.3,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "paste the draft into AI detector",
+      "caption_style": {
+        "lines": [
+          "paste the draft",
+          "into AI detector"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "AI"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "scan",
+      "time": "8.5-12.2s",
+      "voiceover": "let it scan the writing",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 5,
+      "clip_end": 9.5,
+      "playback_speed": 1.2,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "let it scan the writing",
+      "caption_style": {
+        "lines": [
+          "let it scan",
+          "the writing"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "scan"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "proof",
+      "time": "12.2-16.2s",
+      "voiceover": "review the highlighted sentences",
+      "clip_id": "04_clearfy_detector_to_ai_result",
+      "clip_start": 5,
+      "clip_end": 9.8,
+      "playback_speed": 1.2,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "review the highlighted sentences",
+      "caption_style": {
+        "lines": [
+          "review the",
+          "highlighted sentences"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "highlighted"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "16.2-19.2s",
+      "voiceover": "now I know what to edit first ✅",
+      "clip_id": "04_clearfy_detector_to_ai_result",
+      "clip_start": 7,
+      "clip_end": 9.8,
+      "playback_speed": 0.9,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "now I know what to edit first ✅",
+      "caption_style": {
+        "lines": [
+          "now I know what",
+          "to edit first ✅"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "edit"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "needs_script_revision": false,
+  "risk_notes": [
+    "Hook video is silent reaction footage; subtitles are not presented as spoken dialogue.",
+    "Claims avoid guaranteed academic outcomes and product overpromises.",
+    "Caption max_width kept in 680-720 safe area to avoid side edges and TikTok UI."
+  ]
+}

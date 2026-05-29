@@ -1,0 +1,293 @@
+{
+  "template": "xiaoyu_realperson_hook_library_2026_05_27",
+  "asset_library": [
+    {
+      "clip_id": "00_xiaoyu_cover_mouth_wide_eye",
+      "source_filename": "IMG_9906.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/00_xiaoyu_cover_mouth_wide_eye.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/00_xiaoyu_cover_mouth_wide_eye.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/00_xiaoyu_cover_mouth_wide_eye_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/00_xiaoyu_cover_mouth_wide_eye_sheet.jpg",
+      "duration": 1.866667,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_shock",
+      "emotion": "wide-eye shock / caught off guard",
+      "action": "close-up hand-over-mouth reaction",
+      "best_use": [
+        "AI reference risk",
+        "fake citation scare",
+        "bad source discovery"
+      ],
+      "product_fit": [
+        "Citely"
+      ],
+      "assigned_product": "Citely",
+      "assigned_angle": "AI reference risk / citation looked real but needs checking",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 1.817,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "01_xiaoyu_cover_mouth_close_crop",
+      "source_filename": "IMG_9907 2.MOV",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/01_xiaoyu_cover_mouth_close_crop.MOV",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/01_xiaoyu_cover_mouth_close_crop.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/01_xiaoyu_cover_mouth_close_crop_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/01_xiaoyu_cover_mouth_close_crop_sheet.jpg",
+      "duration": 1.266667,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_mystery",
+      "emotion": "quiet gasp / secret reveal",
+      "action": "tight hand-over-mouth crop",
+      "best_use": [
+        "flat image frustration",
+        "tool reveal setup",
+        "short hook before visual workflow"
+      ],
+      "product_fit": [
+        "FigPad"
+      ],
+      "assigned_product": "FigPad",
+      "assigned_angle": "flat image needs editable workflow",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 1.217,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "02_xiaoyu_cover_mouth_double_take",
+      "source_filename": "IMG_9907.MOV",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/02_xiaoyu_cover_mouth_double_take.MOV",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/02_xiaoyu_cover_mouth_double_take.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/02_xiaoyu_cover_mouth_double_take_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/02_xiaoyu_cover_mouth_double_take_sheet.jpg",
+      "duration": 2.266667,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_double_take",
+      "emotion": "disbelief / double take",
+      "action": "hand-over-mouth close-up with slight movement",
+      "best_use": [
+        "missing source trail",
+        "citation panic",
+        "research workflow surprise"
+      ],
+      "product_fit": [
+        "Citely"
+      ],
+      "assigned_product": "Citely",
+      "assigned_angle": "find sources / source trail discovery",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 2.217,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "03_xiaoyu_cover_mouth_side_crop",
+      "source_filename": "IMG_9908.MOV",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/03_xiaoyu_cover_mouth_side_crop.MOV",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/03_xiaoyu_cover_mouth_side_crop.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/03_xiaoyu_cover_mouth_side_crop_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/03_xiaoyu_cover_mouth_side_crop_sheet.jpg",
+      "duration": 1.333333,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_side_crop",
+      "emotion": "embarrassed shock / why did nobody tell me",
+      "action": "side-cropped hand-over-mouth reaction",
+      "best_use": [
+        "editable figure reveal",
+        "SVG converter surprise",
+        "before-after product reveal"
+      ],
+      "product_fit": [
+        "FigPad"
+      ],
+      "assigned_product": "FigPad",
+      "assigned_angle": "SVG converter or editable figure reveal",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 1.283,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "04_xiaoyu_laptop_library_explain",
+      "source_filename": "IMG_9914.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/04_xiaoyu_laptop_library_explain.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/04_xiaoyu_laptop_library_explain.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/04_xiaoyu_laptop_library_explain_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/04_xiaoyu_laptop_library_explain_sheet.jpg",
+      "duration": 2.466667,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "library_deadpan_explain",
+      "emotion": "deadpan study frustration",
+      "action": "library/laptop setup, creator looks at camera",
+      "best_use": [
+        "research chaos",
+        "literature review panic",
+        "workflow explanation"
+      ],
+      "product_fit": [
+        "Literfy"
+      ],
+      "assigned_product": "Literfy",
+      "assigned_angle": "literature review starting point / real paper workflow",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 2.417,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "05_xiaoyu_cover_mouth_soft_gasp",
+      "source_filename": "IMG_9917.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/05_xiaoyu_cover_mouth_soft_gasp.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/05_xiaoyu_cover_mouth_soft_gasp.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/05_xiaoyu_cover_mouth_soft_gasp_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/05_xiaoyu_cover_mouth_soft_gasp_sheet.jpg",
+      "duration": 1.366016,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_soft_gasp",
+      "emotion": "soft gasp / draft embarrassment",
+      "action": "hand-over-mouth close-up, softer expression",
+      "best_use": [
+        "robotic writing",
+        "AI-heavy draft worry",
+        "humanizer setup"
+      ],
+      "product_fit": [
+        "Clearfy"
+      ],
+      "assigned_product": "Clearfy",
+      "assigned_angle": "humanizer for stiff/robotic paragraph",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 1.316,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "06_xiaoyu_cover_mouth_direct_gasp",
+      "source_filename": "IMG_9918.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/06_xiaoyu_cover_mouth_direct_gasp.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/06_xiaoyu_cover_mouth_direct_gasp.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/06_xiaoyu_cover_mouth_direct_gasp_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/06_xiaoyu_cover_mouth_direct_gasp_sheet.jpg",
+      "duration": 1.333333,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "cover_mouth_direct_gasp",
+      "emotion": "direct gasp / caught by detector",
+      "action": "direct eye contact with hand over mouth",
+      "best_use": [
+        "AI detector panic",
+        "draft before submitting",
+        "highlighted AI-heavy text"
+      ],
+      "product_fit": [
+        "Clearfy"
+      ],
+      "assigned_product": "Clearfy",
+      "assigned_angle": "AI detector finds AI-heavy sentences",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 1.283,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    },
+    {
+      "clip_id": "07_xiaoyu_library_side_eye",
+      "source_filename": "IMG_9919.mov",
+      "raw_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/raw/07_xiaoyu_library_side_eye.mov",
+      "file_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/clean_vertical/07_xiaoyu_library_side_eye.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/keyframes/07_xiaoyu_library_side_eye_mid.jpg",
+      "timeline_sheet_path": "/Users/kk/Desktop/auto video/projects/hook-library/xiaoyu-realperson-hooks-2026-05-27/materials/contact_sheets/clean_vertical/07_xiaoyu_library_side_eye_sheet.jpg",
+      "duration": 1.6,
+      "width": 1080,
+      "height": 1920,
+      "orientation": "vertical_clean_9_16",
+      "category": "library_side_eye",
+      "emotion": "side-eye / skeptical study mood",
+      "action": "library side glance, no hand cover",
+      "best_use": [
+        "too many papers",
+        "blank doc dread",
+        "research tabs roast"
+      ],
+      "product_fit": [
+        "Literfy"
+      ],
+      "assigned_product": "Literfy",
+      "assigned_angle": "too many tabs / organize papers into review workflow",
+      "caption_safe_area": {
+        "recommended_max_width": 720,
+        "notes": "Use centered short lines; avoid covering eyes in the top half and avoid TikTok right action rail."
+      },
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 1.55,
+          "reason": "Use full short reaction hook; trim only if beat needs a faster cut."
+        }
+      ]
+    }
+  ]
+}

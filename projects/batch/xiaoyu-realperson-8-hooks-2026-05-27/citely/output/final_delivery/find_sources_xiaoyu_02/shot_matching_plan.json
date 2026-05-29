@@ -1,0 +1,232 @@
+{
+  "source_template": "studywithcc_7468211521600949510",
+  "reference_url": "https://www.tiktok.com/@stud.ywithcc/video/7468211521600949510",
+  "product": "Citely",
+  "variant_id": "find_sources_xiaoyu_02",
+  "title": "the source trail was missing and I took that personally",
+  "template_logic": "real-person reaction hook -> product reveal -> simple action -> result proof -> tool-name ending",
+  "editing_style": {
+    "pace": "fast TikTok creator demo",
+    "aspect_ratio": "9:16",
+    "caption_style": "bold white text with black outline, safe center width, selected yellow highlights, restrained emoji"
+  },
+  "edit_plan": [
+    {
+      "beat": "hook",
+      "time": "0-2.8s",
+      "voiceover": "WAIT this finds sources for a claim?? 👀",
+      "clip_id": "02_xiaoyu_cover_mouth_double_take",
+      "clip_start": 0,
+      "clip_end": 2.2,
+      "playback_speed": 0.85,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "WAIT this finds sources for a claim?? 👀",
+      "caption_style": {
+        "lines": [
+          "WAIT this finds",
+          "sources for a claim?? 👀"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 7,
+        "y_ratio": 0.62,
+        "max_width": 700,
+        "highlight_terms": [
+          "sources",
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    },
+    {
+      "beat": "reveal",
+      "time": "2.8-5.3s",
+      "voiceover": "open Citely",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.1,
+      "clip_end": 3,
+      "playback_speed": 1.2,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "open Citely",
+      "caption_style": {
+        "lines": [
+          "open",
+          "Citely"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "Citely"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "entry",
+      "time": "5.3-8.1s",
+      "voiceover": "click Find Sources",
+      "clip_id": "02_click_find_sources",
+      "clip_start": 0.2,
+      "clip_end": 3.4,
+      "playback_speed": 1.15,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "click Find Sources",
+      "caption_style": {
+        "lines": [
+          "click",
+          "Find Sources"
+        ],
+        "font_size": 54,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.34,
+        "max_width": 720,
+        "highlight_terms": [
+          "Find"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "paste",
+      "time": "8.1-11.7s",
+      "voiceover": "paste the claim",
+      "clip_id": "03_find_sources_input_claim",
+      "clip_start": 0.2,
+      "clip_end": 5.8,
+      "playback_speed": 1.55,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "paste the claim",
+      "caption_style": {
+        "lines": [
+          "paste the claim"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "proof",
+      "time": "11.7-15.6s",
+      "voiceover": "papers connected to it show up",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 0,
+      "clip_end": 3,
+      "playback_speed": 0.85,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "papers connected to it show up",
+      "caption_style": {
+        "lines": [
+          "papers connected to it",
+          "show up"
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "papers"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "normal"
+    },
+    {
+      "beat": "ending",
+      "time": "15.6-19.0s",
+      "voiceover": "source trail found. my tabs can rest.",
+      "clip_id": "04_find_sources_results",
+      "clip_start": 1,
+      "clip_end": 3,
+      "playback_speed": 0.65,
+      "speed_reason": "Fit source clip into studywithcc-style fast product demo beat.",
+      "reason": "Maps Xiaoyu reaction hook and product proof to the reference structure.",
+      "on_screen_text": "source trail found. my tabs can rest.",
+      "caption_style": {
+        "lines": [
+          "source trail found.",
+          "my tabs can rest."
+        ],
+        "font_size": 56,
+        "min_font_size": 40,
+        "line_gap": 8,
+        "y_ratio": 0.58,
+        "max_width": 720,
+        "highlight_terms": [
+          "source"
+        ],
+        "highlight_fill": [
+          255,
+          235,
+          112,
+          255
+        ],
+        "stroke_width": 7
+      },
+      "transition": "hard cut",
+      "subtitle_priority": "large"
+    }
+  ],
+  "missing_assets": [],
+  "needs_script_revision": false,
+  "risk_notes": [
+    "Hook video is silent reaction footage; subtitles are not presented as spoken dialogue.",
+    "Claims avoid guaranteed academic outcomes and product overpromises.",
+    "Caption max_width kept in 680-720 safe area to avoid side edges and TikTok UI."
+  ]
+}

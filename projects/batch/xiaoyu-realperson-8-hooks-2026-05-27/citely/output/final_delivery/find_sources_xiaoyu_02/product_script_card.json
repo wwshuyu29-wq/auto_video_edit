@@ -1,0 +1,18 @@
+{
+  "product": "Citely",
+  "variant_id": "find_sources_xiaoyu_02",
+  "template": "studywithcc reaction product demo",
+  "title": "the source trail was missing and I took that personally",
+  "script_lines": [
+    "WAIT this finds sources for a claim?? 👀",
+    "open Citely",
+    "click Find Sources",
+    "paste the claim",
+    "papers connected to it show up",
+    "source trail found. my tabs can rest."
+  ],
+  "caption": "When a claim has no clear source trail, I would paste the claim and check which papers are actually connected.",
+  "hashtags": "#researchtools #citations #studytok #sourcecheck #citely",
+  "pinned_comment": "the claim said “trust me bro” and I said absolutely not",
+  "why": "Double-take hook into Find Sources claim-to-papers workflow."
+}
