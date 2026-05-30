@@ -1,0 +1,19 @@
+{
+  "created": 1780066438,
+  "id": "task-unified-1780066438-qb82i8ho",
+  "model": "seedance-2.0-text-to-video",
+  "object": "video.generation.task",
+  "progress": 1,
+  "status": "processing",
+  "task_info": {
+    "can_cancel": true,
+    "estimated_time": 332,
+    "video_duration": 4
+  },
+  "type": "video",
+  "usage": {
+    "billing_rule": "per_second",
+    "credits_reserved": 44,
+    "user_group": "vip"
+  }
+}

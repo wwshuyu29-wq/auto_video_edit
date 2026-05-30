@@ -1,0 +1,213 @@
+{
+  "product_name": "Literfy",
+  "template_id": "studyingwithyun_teacher_accusation_proof_report",
+  "edit_plan": [
+    {
+      "time": "0-4s",
+      "beat": "hook",
+      "voiceover": "my paper tabs were chaos 😭",
+      "on_screen_text": "my paper tabs were chaos 😭",
+      "clip_id": "ai_human_hook",
+      "clip_start": 0,
+      "clip_end": 4,
+      "playback_speed": 1,
+      "reason": "Today's same-girl mouth-cover desk/laptop AI human hook; unique within the batch.",
+      "transition": "hard cut",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 56,
+        "max_width": 900,
+        "y_ratio": 0.56,
+        "line_gap": 5,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ],
+        "max_height": 360
+      }
+    },
+    {
+      "time": "4-8s",
+      "beat": "proof_reveal",
+      "voiceover": "so I keep the paper trail in Literfy 👀",
+      "on_screen_text": "so I keep the paper trail in Literfy 👀",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 8.5,
+      "clip_end": 12.5,
+      "playback_speed": 1.25,
+      "reason": "handheld Literfy paper search proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.5,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "time": "8-11s",
+      "beat": "real_papers",
+      "voiceover": "real papers, not random tabs 👀",
+      "on_screen_text": "real papers, not random tabs 👀",
+      "clip_id": "03_paper_list_results",
+      "clip_start": 0.3,
+      "clip_end": 3.3,
+      "playback_speed": 1.15,
+      "reason": "paper result list proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "time": "11-14s",
+      "beat": "selection",
+      "voiceover": "I can pick the papers I actually used 👀",
+      "on_screen_text": "I can pick the papers I actually used 👀",
+      "clip_id": "04_select_papers_to_outline",
+      "clip_start": 0.3,
+      "clip_end": 3.3,
+      "playback_speed": 1.15,
+      "reason": "selected papers before outline",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "time": "14-18s",
+      "beat": "citation_proof",
+      "voiceover": "and save the sources before I start writing ✅",
+      "on_screen_text": "and save the sources before I start writing ✅",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 12,
+      "clip_end": 17.8,
+      "playback_speed": 1.45,
+      "reason": "citation/save workflow proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.5,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "time": "18-21s",
+      "beat": "result",
+      "voiceover": "then I turn it into an outline I still review ✅",
+      "on_screen_text": "then I turn it into an outline I still review ✅",
+      "clip_id": "06_literature_review_outline",
+      "clip_start": 0.3,
+      "clip_end": 3.05,
+      "playback_speed": 1,
+      "reason": "literature review outline proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.5,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "Claims are framed as workflow proof, not guarantees or misconduct encouragement.",
+    "Opening AI hook uses today's same-girl fictional student clip and is not reused within this 16-video batch.",
+    "Product claims remain inherited from the previous approved product-proof plan."
+  ],
+  "reference_template": "same-girl-mouth-cover-desk-laptop-hook",
+  "variant_id": "literfy_girl_02"
+}

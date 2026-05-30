@@ -1,0 +1,203 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.0,
+      "text": "bro... advisors check sources now 😳",
+      "beat": "hook",
+      "clip_id": "ai_human_hook",
+      "clip_start": 0.0,
+      "clip_end": 4.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 56,
+        "max_width": 900,
+        "y_ratio": 0.56,
+        "line_gap": 5,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ],
+        "max_height": 360
+      }
+    },
+    {
+      "index": 1,
+      "start": 4.0,
+      "end": 8.0,
+      "duration": 4.0,
+      "text": "so I keep the paper trail in Literfy",
+      "beat": "proof_reveal",
+      "clip_id": "10_find_papers_search_topic",
+      "clip_start": 8.5,
+      "clip_end": 12.5,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 8.0,
+      "end": 11.0,
+      "duration": 3.0,
+      "text": "real papers, not random tabs",
+      "beat": "real_papers",
+      "clip_id": "03_paper_list_results",
+      "clip_start": 0.3,
+      "clip_end": 3.3,
+      "playback_speed": 1.15,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 11.0,
+      "end": 14.0,
+      "duration": 3.0,
+      "text": "I can pick the papers I actually used",
+      "beat": "selection",
+      "clip_id": "04_select_papers_to_outline",
+      "clip_start": 0.3,
+      "clip_end": 3.3,
+      "playback_speed": 1.15,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "start": 14.0,
+      "end": 18.0,
+      "duration": 4.0,
+      "text": "and save the sources before I start writing",
+      "beat": "citation_proof",
+      "clip_id": "12_save_and_citation_export_workflow",
+      "clip_start": 12.0,
+      "clip_end": 17.8,
+      "playback_speed": 1.45,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "start": 18.0,
+      "end": 21.0,
+      "duration": 3.0,
+      "text": "then I turn it into an outline I still review",
+      "beat": "result",
+      "clip_id": "06_literature_review_outline",
+      "clip_start": 0.3,
+      "clip_end": 3.05,
+      "playback_speed": 1.0,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "sources",
+          "paper",
+          "papers",
+          "trail",
+          "Literfy",
+          "outline"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "generated",
+  "prompt": "Realistic vertical 9:16 smartphone selfie video, 4 seconds. Same fictional young adult college student creator as the reference: long straight light-brown hair with a middle part, fair skin, soft round face, brown eyes, natural no-makeup look, wearing a light gray or white sweatshirt. She sits at a small dorm desk beside a silver laptop showing a blurred document, with an open notebook on the desk and warm beige room lighting. Close-up face first, laptop visible on the side. She covers part of her mouth with one hand, raises her eyebrows with caught-off-guard academic panic, glances down at the laptop, then gives a tiny point toward the screen. Natural handheld front-facing phone camera, authentic TikTok studytok style, slight lean-in, warm indoor light, no logos, no readable text, no subtitles baked into the video. Silent reaction only: no speaking, no lip-sync, no dialogue. The moment should feel like a student reacting before showing a useful Clearfy workflow.",
+  "negative_prompt": "No speaking, no talking mouth, no lip-sync, no dialogue, no voiceover. No watermark, no logo, no readable on-screen text, no distorted hands, no extra limbs, no uncanny face, no product UI, no subtitles baked into the video.",
+  "task_id": "task-unified-1780059479-27r2r8iv",
+  "video_path": "/Users/kk/Desktop/auto video/projects/generated/same-girl-clearfy-preview/output/generated_hooks/same_girl_clearfy_ai_hook_preview.mp4",
+  "thumbnail_path": "/Users/kk/Desktop/auto video/projects/generated/same-girl-clearfy-preview/output/same_girl_clearfy_ai_hook_preview.jpg"
+}
