@@ -1,0 +1,78 @@
+{
+  "status": "generated",
+  "detected": true,
+  "analysis": {
+    "duration_s": 4,
+    "character": "young adult student/creator, original fictional person, not the reference creator",
+    "framing": "vertical 9:16 smartphone selfie, extreme close-up face, forehead or chin slightly cropped, no perfect centered composition",
+    "action": "starts with face very close to the selfie camera, looks down at phone or laptop, slowly lifts eyes to the camera, gives a tiny helpless head shake, swallows or sniffles, then leans even closer with a silent cry-laugh reaction",
+    "emotion": "tearful, embarrassed, overwhelmed academic panic; eyes wet and puffy, brows pinched upward, red nose, lips trembling, trying not to fully sob",
+    "atmosphere": "raw Snapchat-style private meltdown, painfully relatable but slightly funny, not polished, not glamorous",
+    "environment": "dim dorm bedroom or study corner at night, plain wall, desk just below frame, messy but realistic student setting",
+    "camera": "front-facing phone camera, extreme close-up selfie, face partly cropped, subtle shaky handheld movement, low-resolution native UGC feel, subtle shaky handheld phone movement, imperfect selfie framing",
+    "lighting_color": "soft dim warm indoor light with phone-camera noise and natural skin shine",
+    "must_change": [
+      "face",
+      "hair style",
+      "outfit color",
+      "room layout",
+      "lighting",
+      "gesture timing"
+    ],
+    "overlay_policy": "generate clean silent reaction video without baked-in text; renderer will add hook copy as captions later",
+    "speech_policy": "no speaking, no lip-sync, no dialogue; use only facial expression, posture, glance, and hand gesture",
+    "identity_policy": "do not copy the reference person's face, identity, clothing, or exact likeness",
+    "differentiation_policy": "do not remake the reference one-to-one; change at least 3 visible attributes while preserving only emotional function and hook rhythm"
+  },
+  "text_to_video_prompt": "Realistic vertical 9:16 smartphone selfie video, 4 seconds. An original young adult student creator sits at a dim dorm bedroom or study corner at night, plain wall, desk just below frame, messy but realistic student setting. The creator looks tearful, embarrassed, overwhelmed academic panic; eyes wet and puffy, brows pinched upward, red nose, lips trembling, trying not to fully sob, starts with face very close to the selfie camera, looks down at phone or laptop, slowly lifts eyes to the camera, gives a tiny helpless head shake, swallows or sniffles, then leans even closer with a silent cry-laugh reaction. soft dim warm indoor light with phone-camera noise and natural skin shine, raw Snapchat-style private meltdown, painfully relatable but slightly funny, not polished, not glamorous. Natural handheld phone motion, authentic TikTok studytok style, close-up face first, laptop visible but not brand-specific, no logos, no readable text, no subtitles baked into the video. Silent reaction only: the creator does not speak, does not lip-sync, and communicates through facial expression, posture, glances, and a small gesture. Do not remake the reference video exactly; use a different face, outfit, room layout, props, lighting variation, and gesture timing. The moment should feel like a peer reacting before showing a useful Clearfy workflow.",
+  "negative_prompt": "Do not imitate or recreate the reference creator's face or identity. No speaking, no talking mouth, no lip-sync, no dialogue, no voiceover. No one-to-one remake of the reference video, no same outfit, no same room, no same exact pose sequence. No watermark, no logo, no readable on-screen text, no distorted hands, no extra limbs, no uncanny face, no product UI.",
+  "generation": {
+    "provider": "evolink",
+    "model": "seedance-2.0-text-to-video",
+    "dry_run": false,
+    "attempted": true,
+    "status": "completed",
+    "task_id": "task-unified-1780292413-3fnyredz",
+    "task_create_path": "projects/generated/2026-06-01_crying-selfie-hook-test/output/generated_hooks/evolink_task_create.json",
+    "task_status_path": "projects/generated/2026-06-01_crying-selfie-hook-test/output/generated_hooks/evolink_task_status.json",
+    "video_path": "projects/generated/2026-06-01_crying-selfie-hook-test/output/generated_hooks/crying_selfie_hook.mp4"
+  },
+  "asset": {
+    "clip_id": "ai_human_hook",
+    "file_path": "/Users/kk/Desktop/auto video/projects/generated/2026-06-01_crying-selfie-hook-test/output/generated_hooks/crying_selfie_hook.mp4",
+    "thumbnail_path": "/Users/kk/Desktop/auto video/projects/generated/2026-06-01_crying-selfie-hook-test/materials/contact_sheets/ai_human_hook.jpg",
+    "duration": 4.042,
+    "orientation": "vertical_ai_selfie_intro",
+    "quality_score": 8,
+    "shot_type": "AI generated human selfie hook",
+    "camera_motion": "subtle handheld selfie movement",
+    "scene": "dim dorm bedroom or study corner at night, plain wall, desk just below frame, messy but realistic student setting",
+    "visible_objects": [
+      "student creator",
+      "laptop",
+      "study desk"
+    ],
+    "emotion": "tearful, embarrassed, overwhelmed academic panic; eyes wet and puffy, brows pinched upward, red nose, lips trembling, trying not to fully sob",
+    "best_use": [
+      "human hook",
+      "opening hook",
+      "creator reaction",
+      "student anxiety setup"
+    ],
+    "not_good_for": [
+      "product proof",
+      "final result proof"
+    ],
+    "usable_segments": [
+      {
+        "start": 0,
+        "end": 4.0,
+        "reason": "AI-generated opening human hook based on reference hook analysis."
+      }
+    ],
+    "text_overlay_safe_area": "lower center; keep face readable",
+    "audio_quality": "not needed",
+    "notes": "Generated from human_hook_generation; use only as the opening hook."
+  },
+  "evidence_gaps": []
+}

@@ -1,0 +1,44 @@
+{
+  "account_url": "https://x.com/i/status/2060472085382823973",
+  "reference_hook_summary": "Opening-only adaptation of a viral split-screen crying selfie hook: an ordinary young student films herself extremely close to the front phone camera at night, visibly overwhelmed and crying about an academic/productivity pain point. Preserve the emotional grammar, selfie roughness, close-up framing, and hook rhythm, but use an original fictional person and changed room, outfit, props, and gesture timing.",
+  "product": {
+    "product_name": "Clearfy",
+    "one_liner": "Clearfy checks AI-likeness and helps humanize academic writing."
+  },
+  "product_name": "Clearfy",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "human_hook_observation": {
+    "status": "manual_structured_from_downloaded_reference",
+    "detected": true,
+    "observation": {
+      "environment": "dim dorm bedroom or study corner at night, plain wall, desk just below frame, messy but realistic student setting",
+      "expression": "tearful, embarrassed, overwhelmed academic panic; eyes wet and puffy, brows pinched upward, red nose, lips trembling, trying not to fully sob",
+      "action": "starts with face very close to the selfie camera, looks down at phone or laptop, slowly lifts eyes to the camera, gives a tiny helpless head shake, swallows or sniffles, then leans even closer with a silent cry-laugh reaction",
+      "atmosphere": "raw Snapchat-style private meltdown, painfully relatable but slightly funny, not polished, not glamorous",
+      "camera": "front-facing phone camera, extreme close-up selfie, face partly cropped, subtle shaky handheld movement, low-resolution native UGC feel",
+      "lighting_color": "soft dim warm indoor light with phone-camera noise and natural skin shine",
+      "person": {
+        "framing": "vertical 9:16 smartphone selfie, extreme close-up face, forehead or chin slightly cropped, no perfect centered composition"
+      },
+      "prompt_inputs": {
+        "scene": "dim dorm bedroom or study corner at night, plain wall, desk just below frame, messy but realistic student setting",
+        "emotion": "tearful, embarrassed, overwhelmed academic panic; eyes wet and puffy, brows pinched upward, red nose, lips trembling, trying not to fully sob",
+        "motion": "starts with face very close to the selfie camera, looks down at phone or laptop, slowly lifts eyes to the camera, gives a tiny helpless head shake, swallows or sniffles, then leans even closer with a silent cry-laugh reaction",
+        "atmosphere": "raw Snapchat-style private meltdown, painfully relatable but slightly funny, not polished, not glamorous",
+        "camera_motion": "subtle shaky handheld phone movement, imperfect selfie framing",
+        "framing": "vertical 9:16 smartphone selfie, extreme close-up face, forehead or chin slightly cropped, no perfect centered composition",
+        "must_change": [
+          "face",
+          "hair style",
+          "outfit color",
+          "room layout",
+          "lighting",
+          "gesture timing"
+        ]
+      }
+    }
+  }
+}

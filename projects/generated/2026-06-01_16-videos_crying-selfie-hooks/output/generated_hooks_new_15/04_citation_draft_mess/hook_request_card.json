@@ -1,0 +1,9 @@
+{
+  "index": 4,
+  "slug": "citation_draft_mess",
+  "task_id": "task-unified-1780296185-6g8rw9xw",
+  "prompt": "Realistic vertical 9:16 smartphone selfie video, 4 seconds. An original fictional young Asian woman student, age 20-26, films herself with a front phone camera at night. She is in quiet bedroom desk with laptop glow on one side, no readable text. Extreme close-up face first, forehead or chin slightly cropped, imperfect Snapchat-style selfie framing. She is crying quietly from research-paper panic because the draft sounds unnatural and stiff: wet puffy eyes, red nose, pinched eyebrows, trembling lips, glossy natural skin, one visible tear track on her cheek, no glamorous makeup. Appearance: navy sweatshirt, damp-looking loose hair strands near face. Motion: keeps her eyes lowered, wipes one cheek with the back of her hand, then looks into the camera embarrassed. Raw private UGC feeling, painfully relatable and slightly funny, subtle shaky handheld motion, phone camera noise, warm low indoor light. No readable text, no captions baked in, no logos, no product UI, no speaking, no lip-sync, no dialogue.",
+  "negative_prompt": "male, man, boy, beard, mustache, masculine face, fashion model, glamour beauty, perfect studio lighting, commercial ad, cinematic shot, professional camera, readable text, subtitles, watermark, logo, product UI, speaking, talking mouth, lip-sync, dialogue, voiceover, exaggerated horror crying, distorted hands, extra limbs, uncanny face, plastic skin, one-to-one copy of the reference person's face or identity",
+  "variant_dir": "/Users/kk/Desktop/auto video/projects/generated/2026-06-01_16-videos_crying-selfie-hooks/output/generated_hooks_new_15/04_citation_draft_mess",
+  "video_path": "/Users/kk/Desktop/auto video/projects/generated/2026-06-01_16-videos_crying-selfie-hooks/output/generated_hooks_new_15/04_citation_draft_mess/ai_human_hook.mp4"
+}

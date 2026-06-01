@@ -1,0 +1,9 @@
+{
+  "index": 14,
+  "slug": "humanize_deadline",
+  "task_id": "task-unified-1780296189-ianknj31",
+  "prompt": "Realistic vertical 9:16 smartphone selfie video, 4 seconds. An original fictional young Asian woman student, age 20-26, films herself with a front phone camera at night. She is in dim dorm corner, plain wall, notebook stack behind her. Extreme close-up face first, forehead or chin slightly cropped, imperfect Snapchat-style selfie framing. She is crying quietly from needing to humanize a draft before deadline: wet puffy eyes, red nose, pinched eyebrows, trembling lips, glossy natural skin, one visible tear track on her cheek, no glamorous makeup. Appearance: dark oversized sweatshirt, loose messy hair, natural skin texture. Motion: holds still for a beat, eyes wet, lowers her chin, then leans toward the camera as if asking for help. Raw private UGC feeling, painfully relatable and slightly funny, subtle shaky handheld motion, phone camera noise, warm low indoor light. No readable text, no captions baked in, no logos, no product UI, no speaking, no lip-sync, no dialogue.",
+  "negative_prompt": "male, man, boy, beard, mustache, masculine face, fashion model, glamour beauty, perfect studio lighting, commercial ad, cinematic shot, professional camera, readable text, subtitles, watermark, logo, product UI, speaking, talking mouth, lip-sync, dialogue, voiceover, exaggerated horror crying, distorted hands, extra limbs, uncanny face, plastic skin, one-to-one copy of the reference person's face or identity",
+  "variant_dir": "/Users/kk/Desktop/auto video/projects/generated/2026-06-01_16-videos_crying-selfie-hooks/output/generated_hooks_new_15/14_humanize_deadline",
+  "video_path": "/Users/kk/Desktop/auto video/projects/generated/2026-06-01_16-videos_crying-selfie-hooks/output/generated_hooks_new_15/14_humanize_deadline/ai_human_hook.mp4"
+}

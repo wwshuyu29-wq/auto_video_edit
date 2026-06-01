@@ -1,0 +1,9 @@
+{
+  "index": 9,
+  "slug": "midnight_check",
+  "task_id": "task-unified-1780296187-uvmgtv59",
+  "prompt": "Realistic vertical 9:16 smartphone selfie video, 4 seconds. An original fictional young Asian woman student, age 20-26, films herself with a front phone camera at night. She is in dark dorm bedroom with only desk lamp lighting her face. Extreme close-up face first, forehead or chin slightly cropped, imperfect Snapchat-style selfie framing. She is crying quietly from midnight AI check panic: wet puffy eyes, red nose, pinched eyebrows, trembling lips, glossy natural skin, one visible tear track on her cheek, no glamorous makeup. Appearance: oversized gray t-shirt, messy half-up hair, red nose. Motion: looks exhausted, sniffles silently, presses lips together, then gives a tiny embarrassed cry-smile. Raw private UGC feeling, painfully relatable and slightly funny, subtle shaky handheld motion, phone camera noise, warm low indoor light. No readable text, no captions baked in, no logos, no product UI, no speaking, no lip-sync, no dialogue.",
+  "negative_prompt": "male, man, boy, beard, mustache, masculine face, fashion model, glamour beauty, perfect studio lighting, commercial ad, cinematic shot, professional camera, readable text, subtitles, watermark, logo, product UI, speaking, talking mouth, lip-sync, dialogue, voiceover, exaggerated horror crying, distorted hands, extra limbs, uncanny face, plastic skin, one-to-one copy of the reference person's face or identity",
+  "variant_dir": "/Users/kk/Desktop/auto video/projects/generated/2026-06-01_16-videos_crying-selfie-hooks/output/generated_hooks_new_15/09_midnight_check",
+  "video_path": "/Users/kk/Desktop/auto video/projects/generated/2026-06-01_16-videos_crying-selfie-hooks/output/generated_hooks_new_15/09_midnight_check/ai_human_hook.mp4"
+}
