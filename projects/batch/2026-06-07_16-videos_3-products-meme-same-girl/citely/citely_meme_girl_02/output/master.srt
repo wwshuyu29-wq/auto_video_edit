@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:04,000
+fake citation jumpscare? no thank you
+
+2
+00:00:04,000 --> 00:00:07,000
+open Citely before trusting it
+
+3
+00:00:07,000 --> 00:00:10,000
+verify the reference
+
+4
+00:00:10,000 --> 00:00:14,000
+trace it back to real sources

@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:04,000
+when the figure looks like it survived a group chat
+
+2
+00:00:04,000 --> 00:00:07,000
+FigPad turns the idea into a figure
+
+3
+00:00:07,000 --> 00:00:10,000
+open it in SVG edit
+
+4
+00:00:10,000 --> 00:00:14,000
+fix labels like a normal person

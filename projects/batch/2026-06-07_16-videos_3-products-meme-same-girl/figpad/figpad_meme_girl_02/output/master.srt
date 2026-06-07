@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:04,000
+my chart was giving screenshot energy
+
+2
+00:00:04,000 --> 00:00:07,000
+FigPad makes it editable
+
+3
+00:00:07,000 --> 00:00:10,000
+labels are still changeable
+
+4
+00:00:10,000 --> 00:00:14,000
+PPTX export saves the day

@@ -1,0 +1,191 @@
+{
+  "status": "prepared",
+  "target_date": "2026-06-07",
+  "rule": "16 unique same-girl hooks; products distributed as Literfy 6, FigPad 5, Citely 5; Clearfy excluded.",
+  "products": [
+    "literfy",
+    "figpad",
+    "citely"
+  ],
+  "excluded_products": [
+    "clearfy"
+  ],
+  "assignments": [
+    {
+      "index": 1,
+      "product": "literfy",
+      "variant_id": "literfy_meme_girl_01",
+      "source_variant_id": "literfy_human_01",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/01_new_same_girl_01_01_close_coy_mouth_cover.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_01/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_01/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_01/output/literfy_meme_girl_01_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_01/output/render_report.json"
+    },
+    {
+      "index": 2,
+      "product": "literfy",
+      "variant_id": "literfy_meme_girl_02",
+      "source_variant_id": "literfy_human_02",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/02_new_same_girl_02_02_notebook_peek.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_02/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_02/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_02/output/literfy_meme_girl_02_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_02/output/render_report.json"
+    },
+    {
+      "index": 3,
+      "product": "literfy",
+      "variant_id": "literfy_meme_girl_03",
+      "source_variant_id": "literfy_human_03",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/03_new_same_girl_03_03_laptop_side_eye.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_03/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_03/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_03/output/literfy_meme_girl_03_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_03/output/render_report.json"
+    },
+    {
+      "index": 4,
+      "product": "literfy",
+      "variant_id": "literfy_meme_girl_04",
+      "source_variant_id": "literfy_human_04",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/04_new_same_girl_04_04_pencil_freeze.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_04/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_04/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_04/output/literfy_meme_girl_04_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_04/output/render_report.json"
+    },
+    {
+      "index": 5,
+      "product": "literfy",
+      "variant_id": "literfy_meme_girl_05",
+      "source_variant_id": "literfy_human_01",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/05_new_same_girl_05_05_screen_present.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_05/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_05/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_05/output/literfy_meme_girl_05_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_05/output/render_report.json"
+    },
+    {
+      "index": 6,
+      "product": "literfy",
+      "variant_id": "literfy_meme_girl_06",
+      "source_variant_id": "literfy_human_02",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/06_new_same_girl_06_06_forehead_hold.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_06/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_06/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_06/output/literfy_meme_girl_06_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/literfy/literfy_meme_girl_06/output/render_report.json"
+    },
+    {
+      "index": 7,
+      "product": "figpad",
+      "variant_id": "figpad_meme_girl_01",
+      "source_variant_id": "figpad_human_01",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/07_new_same_girl_07_07_draft_reveal.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_01/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_01/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_01/output/figpad_meme_girl_01_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_01/output/render_report.json"
+    },
+    {
+      "index": 8,
+      "product": "figpad",
+      "variant_id": "figpad_meme_girl_02",
+      "source_variant_id": "figpad_human_02",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/08_new_same_girl_08_08_chin_hand_smile.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_02/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_02/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_02/output/figpad_meme_girl_02_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_02/output/render_report.json"
+    },
+    {
+      "index": 9,
+      "product": "figpad",
+      "variant_id": "figpad_meme_girl_03",
+      "source_variant_id": "figpad_human_03",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/09_new_same_girl_09_09_window_turn.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_03/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_03/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_03/output/figpad_meme_girl_03_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_03/output/render_report.json"
+    },
+    {
+      "index": 10,
+      "product": "figpad",
+      "variant_id": "figpad_meme_girl_04",
+      "source_variant_id": "figpad_human_04",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/10_new_same_girl_10_10_mug_pause.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_04/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_04/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_04/output/figpad_meme_girl_04_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_04/output/render_report.json"
+    },
+    {
+      "index": 11,
+      "product": "figpad",
+      "variant_id": "figpad_meme_girl_05",
+      "source_variant_id": "figpad_human_01",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/11_new_same_girl_11_11_earbud_glance.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_05/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_05/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_05/output/figpad_meme_girl_05_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/figpad/figpad_meme_girl_05/output/render_report.json"
+    },
+    {
+      "index": 12,
+      "product": "citely",
+      "variant_id": "citely_meme_girl_01",
+      "source_variant_id": "citely_human_01",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/12_new_same_girl_12_12_printed_pages.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_01/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_01/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_01/output/citely_meme_girl_01_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_01/output/render_report.json"
+    },
+    {
+      "index": 13,
+      "product": "citely",
+      "variant_id": "citely_meme_girl_02",
+      "source_variant_id": "citely_human_02",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/13_new_same_girl_13_13_sticky_note_raise.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_02/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_02/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_02/output/citely_meme_girl_02_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_02/output/render_report.json"
+    },
+    {
+      "index": 14,
+      "product": "citely",
+      "variant_id": "citely_meme_girl_03",
+      "source_variant_id": "citely_human_03",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/14_new_same_girl_14_14_over_shoulder_check.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_03/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_03/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_03/output/citely_meme_girl_03_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_03/output/render_report.json"
+    },
+    {
+      "index": 15,
+      "product": "citely",
+      "variant_id": "citely_meme_girl_04",
+      "source_variant_id": "citely_human_04",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/15_new_same_girl_15_15_tab_chaos.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_04/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_04/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_04/output/citely_meme_girl_04_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_04/output/render_report.json"
+    },
+    {
+      "index": 16,
+      "product": "citely",
+      "variant_id": "citely_meme_girl_05",
+      "source_variant_id": "citely_human_01",
+      "hook_video": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16/16_new_same_girl_16_16_final_soft_reveal.mp4",
+      "shot_plan": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_05/output/shot_matching_plan.json",
+      "asset_library": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_05/output/asset_library.json",
+      "video": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_05/output/citely_meme_girl_05_meme_product_video.mp4",
+      "report": "/Users/kk/Desktop/auto video/projects/batch/2026-06-07_16-videos_3-products-meme-same-girl/citely/citely_meme_girl_05/output/render_report.json"
+    }
+  ]
+}

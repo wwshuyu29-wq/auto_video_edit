@@ -1,0 +1,46 @@
+{
+  "variant_id": "new_same_girl_16",
+  "product_name": "study workflow tool",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "reference_hook_summary": "same small StudyTok girl template: coy mouth-cover reaction at a desk, laptop proof reveal after the hook",
+  "reference_variation_rule": "This must be a newly generated AI real-person opening, not copied from yesterday's same-girl batch. Keep the template mood but change visible motion, outfit, prop layout, and camera angle.",
+  "human_hook_observation": {
+    "detected": true,
+    "status": "vision_analyzed",
+    "observation": {
+      "person": {
+        "count": 1,
+        "role": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy",
+        "framing": "vertical 9:16 close selfie, face centered, laptop behind and slightly blurred",
+        "identity_policy": "fictional AI student only; do not copy a real creator or any previously generated face"
+      },
+      "environment": "cozy dorm desk, laptop centered behind her, open notebook, pastel pen, lamp and window",
+      "expression": "soft impressed smile, quiet confidence",
+      "action": "starts with a neutral face, notices the laptop result, smiles, lightly covers mouth, then presents the laptop with a small palm-up gesture",
+      "camera": "front-facing phone, gentle handheld drift, native TikTok feel",
+      "lighting_color": "soft warm daylight with clean face light",
+      "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, creator-native study panic before a useful product workflow reveal, wearing pale yellow sweatshirt",
+      "differentiation_rule": "New 2026-06-07 generation 16: 16_final_soft_reveal. Do not reuse yesterday's generated clip, exact pose timing, room layout, or outfit.",
+      "prompt_inputs": {
+        "scene": "cozy dorm desk, laptop centered behind her, open notebook, pastel pen, lamp and window",
+        "emotion": "soft impressed smile, quiet confidence",
+        "motion": "starts with a neutral face, notices the laptop result, smiles, lightly covers mouth, then presents the laptop with a small palm-up gesture",
+        "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing pale yellow sweatshirt, creator-native and natural",
+        "framing": "vertical 9:16 close selfie, face centered, laptop behind and slightly blurred",
+        "camera_motion": "front-facing phone, gentle handheld drift, native TikTok feel",
+        "must_change": [
+          "new generated clip",
+          "gesture timing",
+          "camera angle",
+          "outfit",
+          "desk layout",
+          "props",
+          "lighting balance"
+        ]
+      }
+    }
+  }
+}

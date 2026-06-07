@@ -1,0 +1,200 @@
+{
+  "segments": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 4.0,
+      "duration": 4.0,
+      "text": "fake citation jumpscare? no thank you",
+      "beat": "hook",
+      "clip_id": "ai_human_hook",
+      "clip_start": 0.0,
+      "clip_end": 4.0,
+      "playback_speed": 1.0,
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 54,
+        "min_font_size": 40,
+        "max_width": 720,
+        "max_height": 320,
+        "y_ratio": 0.55,
+        "line_gap": 6,
+        "fill": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_fill": [
+          0,
+          0,
+          0,
+          245
+        ],
+        "highlight_terms": [
+          "Citely",
+          "citation",
+          "citations",
+          "reference",
+          "references",
+          "sources",
+          "source",
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "start": 4.0,
+      "end": 7.0,
+      "duration": 3.0,
+      "text": "open Citely before trusting it",
+      "beat": "product_reveal",
+      "clip_id": "01_citely_landing_page",
+      "clip_start": 0.0,
+      "clip_end": 3.0,
+      "playback_speed": 1.1,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "min_font_size": 40,
+        "max_width": 720,
+        "max_height": 320,
+        "y_ratio": 0.5,
+        "line_gap": 6,
+        "fill": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_fill": [
+          0,
+          0,
+          0,
+          245
+        ],
+        "highlight_terms": [
+          "Citely",
+          "citation",
+          "citations",
+          "reference",
+          "references",
+          "sources",
+          "source",
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "start": 7.0,
+      "end": 10.0,
+      "duration": 3.0,
+      "text": "verify the reference",
+      "beat": "verify_entry",
+      "clip_id": "05_click_verify_references",
+      "clip_start": 0.2,
+      "clip_end": 3.2,
+      "playback_speed": 1.35,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "min_font_size": 40,
+        "max_width": 720,
+        "max_height": 320,
+        "y_ratio": 0.5,
+        "line_gap": 6,
+        "fill": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_fill": [
+          0,
+          0,
+          0,
+          245
+        ],
+        "highlight_terms": [
+          "Citely",
+          "citation",
+          "citations",
+          "reference",
+          "references",
+          "sources",
+          "source",
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "start": 10.0,
+      "end": 14.0,
+      "duration": 4.0,
+      "text": "trace it back to real sources",
+      "beat": "input",
+      "clip_id": "06_verify_references_input",
+      "clip_start": 0.1,
+      "clip_end": 3.6,
+      "playback_speed": 1.25,
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 56,
+        "min_font_size": 40,
+        "max_width": 720,
+        "max_height": 320,
+        "y_ratio": 0.5,
+        "line_gap": 6,
+        "fill": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_fill": [
+          0,
+          0,
+          0,
+          245
+        ],
+        "highlight_terms": [
+          "Citely",
+          "citation",
+          "citations",
+          "reference",
+          "references",
+          "sources",
+          "source",
+          "claim"
+        ],
+        "highlight_fill": [
+          255,
+          232,
+          105,
+          255
+        ]
+      }
+    }
+  ]
+}
