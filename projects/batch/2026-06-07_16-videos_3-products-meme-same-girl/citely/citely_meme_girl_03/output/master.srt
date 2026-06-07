@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:04,000
+me trusting a random reference like it raised me
+
+2
+00:00:04,000 --> 00:00:07,000
+Citely makes me verify first
+
+3
+00:00:07,000 --> 00:00:10,000
+check the claim
+
+4
+00:00:10,000 --> 00:00:14,000
+then follow the source trail

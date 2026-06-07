@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:04,000
+me making a science figure with pure hope
+
+2
+00:00:04,000 --> 00:00:07,000
+FigPad does the heavy layout
+
+3
+00:00:07,000 --> 00:00:10,000
+then I tweak the details
+
+4
+00:00:10,000 --> 00:00:14,000
+editable figure, less suffering

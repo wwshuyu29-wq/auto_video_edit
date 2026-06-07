@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:04,000
+that figure was not conference-ready, be serious
+
+2
+00:00:04,000 --> 00:00:07,000
+FigPad gets the layout started
+
+3
+00:00:07,000 --> 00:00:10,000
+edit the labels after
+
+4
+00:00:10,000 --> 00:00:14,000
+export as SVG or PPTX

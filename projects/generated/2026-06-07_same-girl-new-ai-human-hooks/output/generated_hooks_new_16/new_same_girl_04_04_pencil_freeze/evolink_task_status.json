@@ -1,0 +1,24 @@
+{
+  "created": 1780811692,
+  "duration": 368,
+  "id": "task-unified-1780811692-4aebch6a",
+  "model": "seedance-2.0-text-to-video",
+  "object": "video.generation.task",
+  "progress": 100,
+  "result_data": [
+    {
+      "url": "https://files.evolink.ai/003WE840ZDYX6V00VD/videos/2026/06/07/508c094a3a19457186a3379a3a6fdc81.mp4"
+    }
+  ],
+  "results": [
+    "https://files.evolink.ai/003WE840ZDYX6V00VD/videos/2026/06/07/508c094a3a19457186a3379a3a6fdc81.mp4"
+  ],
+  "status": "completed",
+  "task_info": {
+    "can_cancel": false
+  },
+  "type": "video",
+  "usage": {
+    "credits_used": 44
+  }
+}

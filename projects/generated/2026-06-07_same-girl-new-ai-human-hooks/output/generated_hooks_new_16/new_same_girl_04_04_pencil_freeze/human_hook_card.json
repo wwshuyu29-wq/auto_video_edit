@@ -1,0 +1,43 @@
+{
+  "status": "generated",
+  "detected": true,
+  "analysis": {
+    "duration_s": 4,
+    "character": "young adult student/creator, original fictional person, not the reference creator",
+    "framing": "vertical 9:16 close-up selfie, face clear, desk visible at bottom edge",
+    "action": "holds a pencil near her lips, freezes, widens eyes, then slowly points the pencil toward the laptop",
+    "emotion": "frozen realization, anxious but funny",
+    "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing soft green cardigan over a plain shirt, creator-native and natural",
+    "environment": "quiet library table with laptop, pencil, yellow highlighter, water bottle, printed draft pages",
+    "camera": "front-facing phone selfie, mostly steady with natural hand movement",
+    "lighting_color": "neutral library lighting with soft shadows",
+    "must_change": [
+      "new generated clip",
+      "gesture timing",
+      "camera angle",
+      "outfit",
+      "desk layout",
+      "props",
+      "lighting balance"
+    ],
+    "overlay_policy": "generate clean silent reaction video without baked-in text; renderer will add hook copy as captions later",
+    "speech_policy": "no speaking, no lip-sync, no dialogue; use only facial expression, posture, glance, and hand gesture",
+    "identity_policy": "do not copy the reference person's face, identity, clothing, or exact likeness",
+    "differentiation_policy": "do not remake the reference one-to-one; change at least 3 visible attributes while preserving only emotional function and hook rhythm"
+  },
+  "text_to_video_prompt": "Realistic vertical 9:16 smartphone selfie video, 4 seconds. An original young adult student creator sits at a quiet library table with laptop, pencil, yellow highlighter, water bottle, printed draft pages. The creator looks frozen realization, anxious but funny, holds a pencil near her lips, freezes, widens eyes, then slowly points the pencil toward the laptop. neutral library lighting with soft shadows, a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing soft green cardigan over a plain shirt, creator-native and natural. Natural handheld phone motion, authentic TikTok studytok style, close-up face first, laptop visible but not brand-specific, no logos, no readable text, no subtitles baked into the video. Silent reaction only: the creator does not speak, does not lip-sync, and communicates through facial expression, posture, glances, and a small gesture. Do not remake the reference video exactly; use a different face, outfit, room layout, props, lighting variation, and gesture timing. The moment should feel like a peer reacting before showing a useful study workflow tool workflow.",
+  "negative_prompt": "Do not imitate or recreate the reference creator's face or identity. No speaking, no talking mouth, no lip-sync, no dialogue, no voiceover. No one-to-one remake of the reference video, no same outfit, no same room, no same exact pose sequence. No watermark, no logo, no readable on-screen text, no distorted hands, no extra limbs, no uncanny face, no product UI.",
+  "generation": {
+    "provider": "evolink",
+    "model": "seedance-2.0-text-to-video",
+    "dry_run": false,
+    "attempted": true,
+    "status": "completed",
+    "task_id": "task-unified-1780811692-4aebch6a",
+    "provider_status": "completed",
+    "video_path": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/generated_hooks_new_16/new_same_girl_04_04_pencil_freeze/ai_human_hook.mp4"
+  },
+  "asset": null,
+  "evidence_gaps": [],
+  "thumbnail_path": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/generated_hooks_new_16/new_same_girl_04_04_pencil_freeze/ai_human_hook.jpg"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "batch": "2026-06-07_16-videos_3-products-meme-same-girl",
+  "checked_at": "2026-06-07T00:00:00+08:00",
+  "deliverable_count": 16,
+  "expected_deliverable_count": 16,
+  "products": {
+    "literfy": 6,
+    "figpad": 5,
+    "citely": 5
+  },
+  "expected_products": {
+    "literfy": 6,
+    "figpad": 5,
+    "citely": 5,
+    "clearfy": 0
+  },
+  "unique_hook_count": 16,
+  "expected_unique_hook_count": 16,
+  "hook_source_directory": "/Users/kk/Desktop/auto video/projects/generated/2026-06-07_same-girl-new-ai-human-hooks/output/final_16",
+  "wrong_hook_references": [],
+  "dimensions": [
+    "1080x1920"
+  ],
+  "duration_seconds_range": [
+    13.865,
+    13.867
+  ],
+  "main_dir_exists": false,
+  "main_references": [],
+  "missing_files": [],
+  "caption_color_errors": [],
+  "visual_spot_check": {
+    "hook_montage": "/tmp/2026-06-07_three_product_meme_hook_montage.jpg",
+    "result": "new same-girl hooks are visible for Literfy/FigPad/Citely; meme captions are readable; no Clearfy sample included"
+  }
+}

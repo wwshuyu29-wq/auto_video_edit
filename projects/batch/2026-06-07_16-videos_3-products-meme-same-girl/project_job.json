@@ -1,0 +1,11 @@
+{
+  "project_id": "2026-06-07_16-videos_3-products-meme-same-girl",
+  "project_dir": "projects/batch/2026-06-07_16-videos_3-products-meme-same-girl",
+  "product_name": "Same-girl meme 3 products 16 videos",
+  "workflow_mode": "mixed",
+  "stages": [],
+  "delivery": {
+    "mode": "batch_manifest_import",
+    "render_report": "output/final_delivery_manifest.json"
+  }
+}

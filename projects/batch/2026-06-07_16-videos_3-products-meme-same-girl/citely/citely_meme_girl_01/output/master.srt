@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:04,000
+when the citation looks a little too confident
+
+2
+00:00:04,000 --> 00:00:07,000
+Citely checks the reference trail
+
+3
+00:00:07,000 --> 00:00:10,000
+paste the suspicious citation
+
+4
+00:00:10,000 --> 00:00:14,000
+see what actually matches

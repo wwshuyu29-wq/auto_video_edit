@@ -1,0 +1,46 @@
+{
+  "variant_id": "new_same_girl_12",
+  "product_name": "study workflow tool",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "reference_hook_summary": "same small StudyTok girl template: coy mouth-cover reaction at a desk, laptop proof reveal after the hook",
+  "reference_variation_rule": "This must be a newly generated AI real-person opening, not copied from yesterday's same-girl batch. Keep the template mood but change visible motion, outfit, prop layout, and camera angle.",
+  "human_hook_observation": {
+    "detected": true,
+    "status": "vision_analyzed",
+    "observation": {
+      "person": {
+        "count": 1,
+        "role": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy",
+        "framing": "vertical 9:16 close-to-medium selfie, printed pages in foreground, lower-center caption room",
+        "identity_policy": "fictional AI student only; do not copy a real creator or any previously generated face"
+      },
+      "environment": "library study table, laptop, annotated printed pages, pen and clear folder",
+      "expression": "academic panic softened by relief",
+      "action": "fans two printed pages briefly, grimaces, then lowers them and points to the laptop with a relieved smile",
+      "camera": "front-facing phone, stable with slight handheld drift",
+      "lighting_color": "neutral library overhead softened by window light",
+      "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, creator-native study panic before a useful product workflow reveal, wearing brown cardigan and simple white tee",
+      "differentiation_rule": "New 2026-06-07 generation 12: 12_printed_pages. Do not reuse yesterday's generated clip, exact pose timing, room layout, or outfit.",
+      "prompt_inputs": {
+        "scene": "library study table, laptop, annotated printed pages, pen and clear folder",
+        "emotion": "academic panic softened by relief",
+        "motion": "fans two printed pages briefly, grimaces, then lowers them and points to the laptop with a relieved smile",
+        "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing brown cardigan and simple white tee, creator-native and natural",
+        "framing": "vertical 9:16 close-to-medium selfie, printed pages in foreground, lower-center caption room",
+        "camera_motion": "front-facing phone, stable with slight handheld drift",
+        "must_change": [
+          "new generated clip",
+          "gesture timing",
+          "camera angle",
+          "outfit",
+          "desk layout",
+          "props",
+          "lighting balance"
+        ]
+      }
+    }
+  }
+}
