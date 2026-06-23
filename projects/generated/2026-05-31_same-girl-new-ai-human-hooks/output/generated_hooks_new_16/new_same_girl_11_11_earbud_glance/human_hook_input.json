@@ -1,0 +1,46 @@
+{
+  "variant_id": "new_same_girl_11",
+  "product_name": "study workflow tool",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "reference_hook_summary": "same small StudyTok girl template: coy mouth-cover reaction at a desk, laptop proof reveal after the hook",
+  "reference_variation_rule": "This must be a newly generated AI real-person opening, not copied from yesterday's same-girl batch. Keep the template mood but change visible motion, outfit, prop layout, and camera angle.",
+  "human_hook_observation": {
+    "detected": true,
+    "status": "vision_analyzed",
+    "observation": {
+      "person": {
+        "count": 1,
+        "role": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy",
+        "framing": "vertical 9:16 close-up selfie, face upper center, laptop blurred behind",
+        "identity_policy": "fictional AI student only; do not copy a real creator or any previously generated face"
+      },
+      "environment": "clean study desk, laptop, wireless earbuds case, planner, and one highlighter",
+      "expression": "secretive useful-tip energy",
+      "action": "adjusts one earbud, glances at the laptop, covers a grin, then gives a quick tiny thumbs-up",
+      "camera": "front-facing phone with gentle handheld movement",
+      "lighting_color": "soft warm indoor daylight",
+      "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, creator-native study panic before a useful product workflow reveal, wearing soft pink hoodie",
+      "differentiation_rule": "New 2026-05-31 generation 11: 11_earbud_glance. Do not reuse yesterday's generated clip, exact pose timing, room layout, or outfit.",
+      "prompt_inputs": {
+        "scene": "clean study desk, laptop, wireless earbuds case, planner, and one highlighter",
+        "emotion": "secretive useful-tip energy",
+        "motion": "adjusts one earbud, glances at the laptop, covers a grin, then gives a quick tiny thumbs-up",
+        "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing soft pink hoodie, creator-native and natural",
+        "framing": "vertical 9:16 close-up selfie, face upper center, laptop blurred behind",
+        "camera_motion": "front-facing phone with gentle handheld movement",
+        "must_change": [
+          "new generated clip",
+          "gesture timing",
+          "camera angle",
+          "outfit",
+          "desk layout",
+          "props",
+          "lighting balance"
+        ]
+      }
+    }
+  }
+}

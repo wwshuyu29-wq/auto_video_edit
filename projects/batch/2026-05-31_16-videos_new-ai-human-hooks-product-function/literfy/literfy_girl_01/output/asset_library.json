@@ -1,0 +1,277 @@
+{
+  "library_id": "literfy-studyingwithyun-template-assets",
+  "library_name": "Literfy assets for studyingwithyun proof-report template",
+  "asset_type": "ai_human_hook_plus_handheld_product_proof",
+  "usage_rule": "Use ai_human_hook only as the opening student reaction. Use handheld product clips for proof/report/workflow beats. Keep each video focused on one product proof path.",
+  "assets": [
+    {
+      "clip_id": "ai_human_hook",
+      "file_path": "/Users/kk/Desktop/auto video/projects/generated/2026-05-31_same-girl-new-ai-human-hooks/output/final_16/01_new_same_girl_01_01_close_coy_mouth_cover.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/literfy/literfy_human_01/materials/contact_sheets/ai_human_hook.jpg",
+      "duration": 4.042,
+      "orientation": "vertical_ai_same_girl_selfie_intro",
+      "quality_score": 8,
+      "shot_type": "AI generated human selfie hook",
+      "camera_motion": "subtle handheld selfie movement",
+      "scene": "warm dorm desk, laptop draft, notebook, coy smiling student covering mouth then presenting screen",
+      "visible_objects": [
+        "student creator",
+        "laptop",
+        "study desk"
+      ],
+      "emotion": "shy proud StudyTok reveal",
+      "best_use": [
+        "human hook",
+        "opening hook",
+        "creator reaction",
+        "student anxiety setup"
+      ],
+      "not_good_for": [
+        "product proof",
+        "final result proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 4.0,
+          "reason": "AI-generated opening human hook based on reference hook analysis."
+        }
+      ],
+      "text_overlay_safe_area": "lower center; keep face readable",
+      "audio_quality": "not needed",
+      "notes": "Unique newly generated 2026-05-31 same-girl AI opening hook assigned from the new final_16 folder."
+    },
+    {
+      "clip_id": "10_find_papers_search_topic",
+      "file_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/10_find_papers_search_topic.mov",
+      "duration": 13.697,
+      "orientation": "landscape",
+      "display_note": "MOV may contain rotation metadata; visual content appears vertical in extracted frames.",
+      "quality_score": 8,
+      "shot_type": "handheld Literfy Find Papers search workflow",
+      "camera_motion": "handheld slight movement",
+      "scene": "Find Papers topic input, source selection, academic database search, paper results",
+      "visible_objects": [
+        "Find Papers",
+        "topic input",
+        "source selector",
+        "PubMed",
+        "Google Scholar",
+        "Wanfang",
+        "search button",
+        "paper results",
+        "paper titles"
+      ],
+      "emotion": "paper discovery proof",
+      "best_use": [
+        "Find Papers",
+        "search topic",
+        "source selection",
+        "real papers proof",
+        "paper discovery",
+        "product proof"
+      ],
+      "not_good_for": [
+        "citation export",
+        "favorites proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.3,
+          "end": 3.8,
+          "reason": "Typing/searching a paper topic in Find Papers."
+        },
+        {
+          "start": 4.0,
+          "end": 8.2,
+          "reason": "Selecting academic source databases such as PubMed / Google Scholar / Wanfang."
+        },
+        {
+          "start": 8.5,
+          "end": 13.5,
+          "reason": "Shows searching/loading and then paper result list."
+        }
+      ],
+      "text_overlay_safe_area": "center and lower center",
+      "audio_quality": "not needed",
+      "notes": "Use as the main proof that Find Papers searches real academic sources and returns paper results."
+    },
+    {
+      "clip_id": "03_paper_list_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/03_paper_list_results.mov",
+      "duration": 6.205,
+      "orientation": "landscape",
+      "display_note": "MOV may contain rotation metadata; visual content appears vertical in extracted frames.",
+      "quality_score": 9,
+      "shot_type": "handheld Literfy paper results list",
+      "camera_motion": "handheld slight movement",
+      "scene": "paper list results",
+      "visible_objects": [
+        "paper titles",
+        "authors",
+        "case zone tags",
+        "paper list",
+        "selected paper checkboxes"
+      ],
+      "emotion": "real papers proof",
+      "best_use": [
+        "Find Papers",
+        "paper discovery",
+        "real papers proof",
+        "product proof"
+      ],
+      "not_good_for": [
+        "opening hook only"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.3,
+          "end": 3.3,
+          "reason": "Key proof that Literfy works from real papers."
+        }
+      ],
+      "text_overlay_safe_area": "upper right and lower center",
+      "audio_quality": "not needed",
+      "notes": "Key proof that Literfy works from real papers."
+    },
+    {
+      "clip_id": "04_select_papers_to_outline",
+      "file_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/04_select_papers_to_outline.mov",
+      "duration": 6.205,
+      "orientation": "landscape",
+      "display_note": "MOV may contain rotation metadata; visual content appears vertical in extracted frames.",
+      "quality_score": 9,
+      "shot_type": "handheld selecting/filtering papers for outline",
+      "camera_motion": "handheld slight movement",
+      "scene": "select papers before generating outline",
+      "visible_objects": [
+        "paper list",
+        "selected papers",
+        "checkboxes",
+        "real paper results"
+      ],
+      "emotion": "user control",
+      "best_use": [
+        "select papers",
+        "real papers proof",
+        "workflow proof",
+        "before outline"
+      ],
+      "not_good_for": [
+        "final CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.3,
+          "end": 3.3,
+          "reason": "Shows the important step: user chooses real papers before generating outline."
+        }
+      ],
+      "text_overlay_safe_area": "right side and lower center",
+      "audio_quality": "not needed",
+      "notes": "Shows the important step: user chooses real papers before generating outline."
+    },
+    {
+      "clip_id": "12_save_and_citation_export_workflow",
+      "file_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/12_save_and_citation_export_workflow.mov",
+      "duration": 17.95,
+      "orientation": "landscape",
+      "display_note": "MOV may contain rotation metadata; visual content appears vertical in extracted frames.",
+      "quality_score": 8,
+      "shot_type": "handheld Literfy save paper and citation export workflow",
+      "camera_motion": "handheld slight movement",
+      "scene": "paper result list, save to folder, citation modal, copy citation",
+      "visible_objects": [
+        "paper list",
+        "bookmark/save icon",
+        "add to folder dialog",
+        "confirm button",
+        "citation icon",
+        "Cite modal",
+        "APA citation",
+        "MLA citation",
+        "copy button",
+        "copied toast"
+      ],
+      "emotion": "organize and cite proof",
+      "best_use": [
+        "save paper",
+        "favorites",
+        "citation export",
+        "copy citation",
+        "research organization",
+        "final proof"
+      ],
+      "not_good_for": [
+        "opening hook",
+        "topic input"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 4.5,
+          "reason": "Paper list with save/bookmark controls visible."
+        },
+        {
+          "start": 4.8,
+          "end": 8.7,
+          "reason": "Add paper to folder / favorites and confirm save."
+        },
+        {
+          "start": 9.0,
+          "end": 11.8,
+          "reason": "Saved paper state and transition toward citation controls."
+        },
+        {
+          "start": 12.0,
+          "end": 17.8,
+          "reason": "Citation modal with formatted citations and copy/download action."
+        }
+      ],
+      "text_overlay_safe_area": "center and upper center",
+      "audio_quality": "not needed",
+      "notes": "Single uploaded video split into favorites/save and citation/export proof segments."
+    },
+    {
+      "clip_id": "06_literature_review_outline",
+      "file_path": "/Users/kk/Desktop/auto video/projects/literfy/research-connect-7633832153922489621/materials/raw/06_literature_review_outline.mov",
+      "duration": 3.253,
+      "orientation": "landscape",
+      "display_note": "MOV may contain rotation metadata; visual content appears vertical in extracted frames.",
+      "quality_score": 9,
+      "shot_type": "handheld generated literature review outline",
+      "camera_motion": "handheld slight movement",
+      "scene": "generated review outline page",
+      "visible_objects": [
+        "Review Outline",
+        "structured outline",
+        "sections",
+        "generate full review button"
+      ],
+      "emotion": "structured starting point",
+      "best_use": [
+        "Literature Review Outline",
+        "proof",
+        "clear structure",
+        "no blank page"
+      ],
+      "not_good_for": [
+        "opening pain"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.3,
+          "end": 3.05,
+          "reason": "Strong proof for outline feature."
+        }
+      ],
+      "text_overlay_safe_area": "upper right and lower center",
+      "audio_quality": "not needed",
+      "notes": "Strong proof for outline feature."
+    }
+  ],
+  "asset_count": 6,
+  "status": "indexed",
+  "updated_at": "2026-05-31T00:00:00+08:00",
+  "note": "AI hook replaced with unique newly generated same-girl mouth-cover desk/laptop clip."
+}

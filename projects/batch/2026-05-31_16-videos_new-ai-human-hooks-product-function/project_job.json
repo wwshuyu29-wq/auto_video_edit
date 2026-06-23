@@ -1,0 +1,11 @@
+{
+  "project_id": "2026-05-31_16-videos_new-ai-human-hooks-product-function",
+  "project_dir": "projects/batch/2026-05-31_16-videos_new-ai-human-hooks-product-function",
+  "product_name": "Same-girl 4 products 16 videos",
+  "workflow_mode": "mixed",
+  "stages": [],
+  "delivery": {
+    "mode": "batch_manifest_import",
+    "render_report": "output/final_delivery_manifest.json"
+  }
+}

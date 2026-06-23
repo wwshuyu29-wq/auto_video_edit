@@ -1,0 +1,230 @@
+{
+  "library_id": "citely-studyingwithyun-template-assets",
+  "library_name": "Citely assets for studyingwithyun proof-report template",
+  "asset_type": "ai_human_hook_plus_handheld_product_proof",
+  "usage_rule": "Use ai_human_hook only as the opening student reaction. Use handheld product clips for proof/report/workflow beats. Keep each video focused on one product proof path.",
+  "assets": [
+    {
+      "clip_id": "ai_human_hook",
+      "file_path": "/Users/kk/Desktop/auto video/projects/generated/2026-05-31_same-girl-new-ai-human-hooks/output/final_16/16_new_same_girl_16_16_final_soft_reveal.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/citely/citely_human_04/materials/contact_sheets/ai_human_hook.jpg",
+      "duration": 4.042,
+      "orientation": "vertical_ai_same_girl_selfie_intro",
+      "quality_score": 8,
+      "shot_type": "AI generated human selfie hook",
+      "camera_motion": "subtle handheld selfie movement",
+      "scene": "warm dorm desk, laptop draft, notebook, coy smiling student covering mouth then presenting screen",
+      "visible_objects": [
+        "student creator",
+        "laptop",
+        "study desk"
+      ],
+      "emotion": "shy proud StudyTok reveal",
+      "best_use": [
+        "human hook",
+        "opening hook",
+        "creator reaction",
+        "student anxiety setup"
+      ],
+      "not_good_for": [
+        "product proof",
+        "final result proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 4.0,
+          "reason": "AI-generated opening human hook based on reference hook analysis."
+        }
+      ],
+      "text_overlay_safe_area": "lower center; keep face readable",
+      "audio_quality": "not needed",
+      "notes": "Unique newly generated 2026-05-31 same-girl AI opening hook assigned from the new final_16 folder."
+    },
+    {
+      "clip_id": "01_citely_landing_page",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/01_citely_landing_page.mov",
+      "duration": 3.118,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Citely landing page reveal",
+      "camera_motion": "handheld hold",
+      "scene": "Citely homepage / landing page",
+      "visible_objects": [
+        "Citely page",
+        "Find Sources CTA",
+        "Verify References CTA"
+      ],
+      "emotion": "website reveal / CTA",
+      "best_use": [
+        "strong CTA",
+        "website reveal",
+        "Just go to this website style beat"
+      ],
+      "not_good_for": [
+        "source result proof",
+        "citation verification result proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 3.0,
+          "reason": "Landing page and Citely feature entry points are visible long enough for CTA."
+        }
+      ],
+      "text_overlay_safe_area": "center or lower center; preserve top-left logo/brand when visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.0,
+      "notes": "Hold this beat long enough for the Citely brand/page context before cutting."
+    },
+    {
+      "clip_id": "05_click_verify_references",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/05_click_verify_references.mov",
+      "duration": 6.408,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 7,
+      "shot_type": "click Verify References workflow entry",
+      "camera_motion": "handheld click and navigation",
+      "scene": "Citely interface / Verify References entry",
+      "visible_objects": [
+        "Verify References option",
+        "navigation/sidebar",
+        "verification page transition"
+      ],
+      "emotion": "workflow switch / second feature reveal",
+      "best_use": [
+        "Click Verify References",
+        "switch from source-finding to reference checking",
+        "feature entry"
+      ],
+      "not_good_for": [
+        "Find Sources proof",
+        "final results proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 6.1,
+          "reason": "Shows navigation into Verify References; can be split or sped up if only the click is needed."
+        }
+      ],
+      "text_overlay_safe_area": "center; keep clicked menu/button visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.5,
+      "speed_reason": "Navigation footage is longer than a typical command beat and should be compressed."
+    },
+    {
+      "clip_id": "06_verify_references_input",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/06_verify_references_input.mov",
+      "duration": 4.542,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Verify References input",
+      "camera_motion": "handheld hold with text/reference entry",
+      "scene": "Citely Verify References page",
+      "visible_objects": [
+        "reference text",
+        "verification input",
+        "submit/check action"
+      ],
+      "emotion": "citation checking setup",
+      "best_use": [
+        "paste reference",
+        "check AI-generated reference",
+        "verify before submission"
+      ],
+      "not_good_for": [
+        "source search result",
+        "landing page CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 4.4,
+          "reason": "Shows the reference-checking input step clearly."
+        }
+      ],
+      "text_overlay_safe_area": "upper center or lower center depending on visible reference text",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "speed_reason": "Input/readability needs some time, but still should move faster than raw screen recording."
+    },
+    {
+      "clip_id": "07_verify_references_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/07_verify_references_results.mov",
+      "duration": 5.297,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Verify References result proof",
+      "camera_motion": "handheld hold and slight movement",
+      "scene": "Citely verification results page",
+      "visible_objects": [
+        "verification results",
+        "citation metadata",
+        "source/reference status"
+      ],
+      "emotion": "proof / risk check",
+      "best_use": [
+        "verification result proof",
+        "citation metadata checking",
+        "catch fake or mismatched references"
+      ],
+      "not_good_for": [
+        "opening hook",
+        "landing page CTA"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 5.1,
+          "reason": "Shows final verification output and metadata/result context."
+        }
+      ],
+      "text_overlay_safe_area": "center top; avoid blocking status/result area",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25,
+      "speed_reason": "Result proof should stay readable but can be lightly sped up for 25s pacing.",
+      "notes": "Do not claim 100% accuracy. Phrase proof as checking, tracing, or catching risk."
+    },
+    {
+      "clip_id": "04_find_sources_results",
+      "file_path": "/Users/kk/Desktop/auto video/projects/citely/research-connect-google-scholar-template/materials/raw/04_find_sources_results.mov",
+      "duration": 3.072,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "Find Sources results proof",
+      "camera_motion": "handheld hold",
+      "scene": "Citely source results page",
+      "visible_objects": [
+        "source result cards",
+        "paper/source details",
+        "research result list"
+      ],
+      "emotion": "proof / source traceability",
+      "best_use": [
+        "source result proof",
+        "trace claim to sources",
+        "find original sources"
+      ],
+      "not_good_for": [
+        "click Find Sources",
+        "verify references input"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.0,
+          "end": 3.0,
+          "reason": "Results are visible and directly prove the Find Sources feature."
+        }
+      ],
+      "text_overlay_safe_area": "center top; avoid covering result cards if possible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.0,
+      "notes": "Use as a distinct proof beat. Do not reuse Find Sources input footage for this result line."
+    }
+  ],
+  "asset_count": 6,
+  "status": "indexed",
+  "updated_at": "2026-05-31T00:00:00+08:00",
+  "note": "AI hook replaced with unique newly generated same-girl mouth-cover desk/laptop clip."
+}

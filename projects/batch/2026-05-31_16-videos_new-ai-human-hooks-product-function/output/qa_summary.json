@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "batch": "2026-05-31_16-videos_new-ai-human-hooks-product-function",
+  "checked_at": "2026-06-01T00:00:00+08:00",
+  "folder_date": "2026-05-31",
+  "deliverable_count": 16,
+  "expected_deliverable_count": 16,
+  "products": {
+    "literfy": 4,
+    "figpad": 4,
+    "clearfy": 4,
+    "citely": 4
+  },
+  "expected_products": {
+    "literfy": 4,
+    "figpad": 4,
+    "clearfy": 4,
+    "citely": 4
+  },
+  "unique_hook_count": 16,
+  "expected_unique_hook_count": 16,
+  "hook_source_directory": "/Users/kk/Desktop/auto video/projects/generated/2026-05-31_same-girl-new-ai-human-hooks/output/final_16",
+  "old_hook_references": [],
+  "wrong_date_hook_references": [],
+  "dimensions": [
+    "1080x1920"
+  ],
+  "duration_seconds_range": [
+    20.798,
+    20.8
+  ],
+  "main_dir_exists": false,
+  "main_references": [],
+  "missing_files": [],
+  "visual_spot_check": {
+    "hook_montage": "/tmp/2026-05-31_new_ai_hook_montage.jpg",
+    "result": "new 2026-05-31 AI human hook frames are nonblank; captions visible in central safe area"
+  }
+}

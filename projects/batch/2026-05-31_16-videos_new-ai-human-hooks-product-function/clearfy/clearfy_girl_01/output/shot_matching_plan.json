@@ -1,0 +1,213 @@
+{
+  "product_name": "Clearfy",
+  "template_id": "studyingwithyun_teacher_accusation_proof_report",
+  "edit_plan": [
+    {
+      "time": "0-4s",
+      "beat": "hook",
+      "voiceover": "showing the draft I reviewed before submitting 😳",
+      "on_screen_text": "showing the draft I reviewed before submitting 😳",
+      "clip_id": "ai_human_hook",
+      "clip_start": 0,
+      "clip_end": 4,
+      "playback_speed": 1,
+      "reason": "Newly generated 2026-05-31 same-girl mouth-cover desk/laptop AI human hook; unique within the batch.",
+      "transition": "hard cut",
+      "subtitle_priority": "large",
+      "caption_style": {
+        "font_size": 56,
+        "max_width": 900,
+        "y_ratio": 0.56,
+        "line_gap": 5,
+        "highlight_terms": [
+          "draft",
+          "AI",
+          "AI-ish",
+          "reviewed",
+          "cleanup",
+          "Clearfy"
+        ],
+        "highlight_fill": [
+          162,
+          255,
+          178,
+          255
+        ],
+        "max_height": 360
+      }
+    },
+    {
+      "time": "4-7s",
+      "beat": "product_reveal",
+      "voiceover": "so I check the draft in Clearfy first",
+      "on_screen_text": "so I check the draft in Clearfy first",
+      "clip_id": "05_clearfy_homepage_input_empty",
+      "clip_start": 0.3,
+      "clip_end": 3.6,
+      "playback_speed": 1.25,
+      "reason": "Clearfy homepage/input setup",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "draft",
+          "AI",
+          "AI-ish",
+          "reviewed",
+          "cleanup",
+          "Clearfy"
+        ],
+        "highlight_fill": [
+          162,
+          255,
+          178,
+          255
+        ]
+      }
+    },
+    {
+      "time": "7-11s",
+      "beat": "detector",
+      "voiceover": "it shows which sentences look AI-heavy",
+      "on_screen_text": "it shows which sentences look AI-heavy",
+      "clip_id": "01_clearfy_ai_detector_scan_results",
+      "clip_start": 5,
+      "clip_end": 9.5,
+      "playback_speed": 1.2,
+      "reason": "AI detector scan proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "draft",
+          "AI",
+          "AI-ish",
+          "reviewed",
+          "cleanup",
+          "Clearfy"
+        ],
+        "highlight_fill": [
+          162,
+          255,
+          178,
+          255
+        ]
+      }
+    },
+    {
+      "time": "11-15s",
+      "beat": "result_bridge",
+      "voiceover": "then I review the flagged parts",
+      "on_screen_text": "then I review the flagged parts",
+      "clip_id": "04_clearfy_detector_to_ai_result",
+      "clip_start": 5.5,
+      "clip_end": 9.5,
+      "playback_speed": 1.15,
+      "reason": "detector result plus highlighted sentences",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "draft",
+          "AI",
+          "AI-ish",
+          "reviewed",
+          "cleanup",
+          "Clearfy"
+        ],
+        "highlight_fill": [
+          162,
+          255,
+          178,
+          255
+        ]
+      }
+    },
+    {
+      "time": "15-18s",
+      "beat": "humanizer",
+      "voiceover": "and rewrite the parts that sound robotic",
+      "on_screen_text": "and rewrite the parts that sound robotic",
+      "clip_id": "02_clearfy_humanizer_input_mode",
+      "clip_start": 0.4,
+      "clip_end": 5.8,
+      "playback_speed": 1.8,
+      "reason": "humanizer input mode proof",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "draft",
+          "AI",
+          "AI-ish",
+          "reviewed",
+          "cleanup",
+          "Clearfy"
+        ],
+        "highlight_fill": [
+          162,
+          255,
+          178,
+          255
+        ]
+      }
+    },
+    {
+      "time": "18-21s",
+      "beat": "action",
+      "voiceover": "then I still read it before using it",
+      "on_screen_text": "then I still read it before using it",
+      "clip_id": "03_clearfy_humanizer_closeup",
+      "clip_start": 0.2,
+      "clip_end": 2.8,
+      "playback_speed": 1,
+      "reason": "humanize action close-up",
+      "transition": "hard cut",
+      "subtitle_priority": "normal",
+      "caption_style": {
+        "font_size": 58,
+        "max_width": 900,
+        "y_ratio": 0.48,
+        "line_gap": 6,
+        "highlight_terms": [
+          "draft",
+          "AI",
+          "AI-ish",
+          "reviewed",
+          "cleanup",
+          "Clearfy"
+        ],
+        "highlight_fill": [
+          162,
+          255,
+          178,
+          255
+        ]
+      }
+    }
+  ],
+  "missing_assets": [],
+  "risk_notes": [
+    "Claims are framed as workflow proof, not guarantees or misconduct encouragement.",
+    "Opening AI hook uses a newly generated 2026-05-31 same-girl fictional student clip and is not reused within this 16-video batch.",
+    "Product claims remain inherited from the previous approved product-proof plan."
+  ],
+  "reference_template": "same-girl-mouth-cover-desk-laptop-hook",
+  "variant_id": "clearfy_girl_01"
+}

@@ -1,0 +1,120 @@
+{
+  "status": "ready",
+  "count": 16,
+  "folder_rule": "This main folder is the single delivery location. The 16 fixed videos appear only once in this batch folder.",
+  "caption_fix": "Snapchat hook caption moved from top strip to upper-middle strip; source overlay y=532-595 on 720x1280 hooks.",
+  "items": [
+    {
+      "product": "citely",
+      "file": "citely_crying_selfie_01_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.8
+    },
+    {
+      "product": "citely",
+      "file": "citely_crying_selfie_02_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.8
+    },
+    {
+      "product": "citely",
+      "file": "citely_crying_selfie_03_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.8
+    },
+    {
+      "product": "citely",
+      "file": "citely_crying_selfie_04_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.8
+    },
+    {
+      "product": "clearfy",
+      "file": "clearfy_crying_selfie_01_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.8
+    },
+    {
+      "product": "clearfy",
+      "file": "clearfy_crying_selfie_02_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.799
+    },
+    {
+      "product": "clearfy",
+      "file": "clearfy_crying_selfie_03_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.8
+    },
+    {
+      "product": "clearfy",
+      "file": "clearfy_crying_selfie_04_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.8
+    },
+    {
+      "product": "figpad",
+      "file": "figpad_crying_selfie_01_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.8
+    },
+    {
+      "product": "figpad",
+      "file": "figpad_crying_selfie_02_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.799
+    },
+    {
+      "product": "figpad",
+      "file": "figpad_crying_selfie_03_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.799
+    },
+    {
+      "product": "figpad",
+      "file": "figpad_crying_selfie_04_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.799
+    },
+    {
+      "product": "literfy",
+      "file": "literfy_crying_selfie_01_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.798
+    },
+    {
+      "product": "literfy",
+      "file": "literfy_crying_selfie_02_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.798
+    },
+    {
+      "product": "literfy",
+      "file": "literfy_crying_selfie_03_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.798
+    },
+    {
+      "product": "literfy",
+      "file": "literfy_crying_selfie_04_crying_selfie_product_video.mp4",
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 20.797
+    }
+  ]
+}

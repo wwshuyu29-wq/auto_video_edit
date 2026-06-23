@@ -1,0 +1,12 @@
+[
+  {
+    "attempt": 1,
+    "variant_id": "new_same_girl_02_02_notebook_peek",
+    "error": "new_same_girl_02_02_notebook_peek hook generation failed: {'provider': 'evolink', 'model': 'seedance-2.0-text-to-video', 'dry_run': False, 'attempted': True, 'status': 'failed', 'message': '<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>'}"
+  },
+  {
+    "attempt": 1,
+    "variant_id": "new_same_girl_03_03_laptop_side_eye",
+    "error": "new_same_girl_03_03_laptop_side_eye hook generation failed: {'provider': 'evolink', 'model': 'seedance-2.0-text-to-video', 'dry_run': False, 'attempted': True, 'status': 'failed', 'message': '<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>'}"
+  }
+]

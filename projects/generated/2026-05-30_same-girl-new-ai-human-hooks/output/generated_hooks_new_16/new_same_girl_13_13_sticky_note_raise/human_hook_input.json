@@ -1,0 +1,46 @@
+{
+  "variant_id": "new_same_girl_13",
+  "product_name": "study workflow tool",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "reference_hook_summary": "same small StudyTok girl template: coy mouth-cover reaction at a desk, laptop proof reveal after the hook",
+  "reference_variation_rule": "This must be a newly generated AI real-person opening, not copied from yesterday's same-girl batch. Keep the template mood but change visible motion, outfit, prop layout, and camera angle.",
+  "human_hook_observation": {
+    "detected": true,
+    "status": "vision_analyzed",
+    "observation": {
+      "person": {
+        "count": 1,
+        "role": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy",
+        "framing": "vertical 9:16 close-up selfie, face slightly right of center, desk visible lower left",
+        "identity_policy": "fictional AI student only; do not copy a real creator or any previously generated face"
+      },
+      "environment": "warm dorm desk, laptop, notebook, three colorful sticky notes, no readable text",
+      "expression": "playful 'you need to see this' excitement",
+      "action": "raises a blank sticky note, hides a smile behind it for a beat, then lowers it and gestures to the laptop",
+      "camera": "front-facing phone selfie, casual close framing",
+      "lighting_color": "warm desk lamp with soft ambient room light",
+      "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, creator-native study panic before a useful product workflow reveal, wearing light oatmeal sweater",
+      "differentiation_rule": "New 2026-05-30 generation 13: 13_sticky_note_raise. Do not reuse yesterday's generated clip, exact pose timing, room layout, or outfit.",
+      "prompt_inputs": {
+        "scene": "warm dorm desk, laptop, notebook, three colorful sticky notes, no readable text",
+        "emotion": "playful 'you need to see this' excitement",
+        "motion": "raises a blank sticky note, hides a smile behind it for a beat, then lowers it and gestures to the laptop",
+        "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing light oatmeal sweater, creator-native and natural",
+        "framing": "vertical 9:16 close-up selfie, face slightly right of center, desk visible lower left",
+        "camera_motion": "front-facing phone selfie, casual close framing",
+        "must_change": [
+          "new generated clip",
+          "gesture timing",
+          "camera angle",
+          "outfit",
+          "desk layout",
+          "props",
+          "lighting balance"
+        ]
+      }
+    }
+  }
+}

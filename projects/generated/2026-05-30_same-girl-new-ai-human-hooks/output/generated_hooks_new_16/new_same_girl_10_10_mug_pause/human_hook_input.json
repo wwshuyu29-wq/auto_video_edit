@@ -1,0 +1,46 @@
+{
+  "variant_id": "new_same_girl_10",
+  "product_name": "study workflow tool",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "reference_hook_summary": "same small StudyTok girl template: coy mouth-cover reaction at a desk, laptop proof reveal after the hook",
+  "reference_variation_rule": "This must be a newly generated AI real-person opening, not copied from yesterday's same-girl batch. Keep the template mood but change visible motion, outfit, prop layout, and camera angle.",
+  "human_hook_observation": {
+    "detected": true,
+    "status": "vision_analyzed",
+    "observation": {
+      "person": {
+        "count": 1,
+        "role": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy",
+        "framing": "vertical 9:16 medium close-up, mug at lower edge, laptop visible at side",
+        "identity_policy": "fictional AI student only; do not copy a real creator or any previously generated face"
+      },
+      "environment": "messy thesis desk with laptop, open notebook, coffee mug, tabs and printed paper edges",
+      "expression": "caught mid-scroll, amused disbelief",
+      "action": "holds a mug near her chest, pauses, looks at camera with raised eyebrows, then points the mug slightly toward the laptop",
+      "camera": "front-facing phone selfie, casual hand-held desk angle",
+      "lighting_color": "warm evening desk lighting",
+      "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, creator-native study panic before a useful product workflow reveal, wearing charcoal oversized sweatshirt",
+      "differentiation_rule": "New 2026-05-30 generation 10: 10_mug_pause. Do not reuse yesterday's generated clip, exact pose timing, room layout, or outfit.",
+      "prompt_inputs": {
+        "scene": "messy thesis desk with laptop, open notebook, coffee mug, tabs and printed paper edges",
+        "emotion": "caught mid-scroll, amused disbelief",
+        "motion": "holds a mug near her chest, pauses, looks at camera with raised eyebrows, then points the mug slightly toward the laptop",
+        "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing charcoal oversized sweatshirt, creator-native and natural",
+        "framing": "vertical 9:16 medium close-up, mug at lower edge, laptop visible at side",
+        "camera_motion": "front-facing phone selfie, casual hand-held desk angle",
+        "must_change": [
+          "new generated clip",
+          "gesture timing",
+          "camera angle",
+          "outfit",
+          "desk layout",
+          "props",
+          "lighting balance"
+        ]
+      }
+    }
+  }
+}

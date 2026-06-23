@@ -1,0 +1,46 @@
+{
+  "variant_id": "new_same_girl_09",
+  "product_name": "study workflow tool",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "reference_hook_summary": "same small StudyTok girl template: coy mouth-cover reaction at a desk, laptop proof reveal after the hook",
+  "reference_variation_rule": "This must be a newly generated AI real-person opening, not copied from yesterday's same-girl batch. Keep the template mood but change visible motion, outfit, prop layout, and camera angle.",
+  "human_hook_observation": {
+    "detected": true,
+    "status": "vision_analyzed",
+    "observation": {
+      "person": {
+        "count": 1,
+        "role": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy",
+        "framing": "vertical 9:16 side-angle selfie, face three-quarter view, laptop behind shoulder",
+        "identity_policy": "fictional AI student only; do not copy a real creator or any previously generated face"
+      },
+      "environment": "desk beside a window, laptop open, notebook and gel pens neatly arranged",
+      "expression": "soft surprised oh-wait moment",
+      "action": "turns from the laptop back to camera, covers a smile with fingertips, then lifts eyebrows like she found something useful",
+      "camera": "front-facing phone held at a slight side angle",
+      "lighting_color": "cool daylight from window plus warm desk lamp accent",
+      "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, creator-native study panic before a useful product workflow reveal, wearing beige knit sweater",
+      "differentiation_rule": "New 2026-05-31 generation 09: 09_window_turn. Do not reuse yesterday's generated clip, exact pose timing, room layout, or outfit.",
+      "prompt_inputs": {
+        "scene": "desk beside a window, laptop open, notebook and gel pens neatly arranged",
+        "emotion": "soft surprised oh-wait moment",
+        "motion": "turns from the laptop back to camera, covers a smile with fingertips, then lifts eyebrows like she found something useful",
+        "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing beige knit sweater, creator-native and natural",
+        "framing": "vertical 9:16 side-angle selfie, face three-quarter view, laptop behind shoulder",
+        "camera_motion": "front-facing phone held at a slight side angle",
+        "must_change": [
+          "new generated clip",
+          "gesture timing",
+          "camera angle",
+          "outfit",
+          "desk layout",
+          "props",
+          "lighting balance"
+        ]
+      }
+    }
+  }
+}
