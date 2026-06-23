@@ -1,0 +1,46 @@
+{
+  "variant_id": "new_same_girl_15",
+  "product_name": "study workflow tool",
+  "human_hook_duration_s": 4,
+  "human_hook": {
+    "enabled": true
+  },
+  "reference_hook_summary": "same small StudyTok girl template: coy mouth-cover reaction at a desk, laptop proof reveal after the hook",
+  "reference_variation_rule": "This must be a newly generated AI real-person opening, not copied from yesterday's same-girl batch. Keep the template mood but change visible motion, outfit, prop layout, and camera angle.",
+  "human_hook_observation": {
+    "detected": true,
+    "status": "vision_analyzed",
+    "observation": {
+      "person": {
+        "count": 1,
+        "role": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy",
+        "framing": "vertical 9:16 medium close-up, face upper third, desk chaos at bottom edge",
+        "identity_policy": "fictional AI student only; do not copy a real creator or any previously generated face"
+      },
+      "environment": "busy study desk, laptop, notebook with tabs, several loose papers, clear caption space",
+      "expression": "overwhelmed for one second, then relieved",
+      "action": "looks down at papers, makes a tiny panic face, then looks back at camera and sweeps one hand toward the laptop",
+      "camera": "front-facing phone, small natural shake like a real TikTok clip",
+      "lighting_color": "mixed daylight and warm lamp, realistic student room",
+      "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, creator-native study panic before a useful product workflow reveal, wearing black sweatshirt with no logo",
+      "differentiation_rule": "New 2026-05-30 generation 15: 15_tab_chaos. Do not reuse yesterday's generated clip, exact pose timing, room layout, or outfit.",
+      "prompt_inputs": {
+        "scene": "busy study desk, laptop, notebook with tabs, several loose papers, clear caption space",
+        "emotion": "overwhelmed for one second, then relieved",
+        "motion": "looks down at papers, makes a tiny panic face, then looks back at camera and sweeps one hand toward the laptop",
+        "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing black sweatshirt with no logo, creator-native and natural",
+        "framing": "vertical 9:16 medium close-up, face upper third, desk chaos at bottom edge",
+        "camera_motion": "front-facing phone, small natural shake like a real TikTok clip",
+        "must_change": [
+          "new generated clip",
+          "gesture timing",
+          "camera angle",
+          "outfit",
+          "desk layout",
+          "props",
+          "lighting balance"
+        ]
+      }
+    }
+  }
+}

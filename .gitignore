@@ -8,6 +8,12 @@ __pycache__/
 .venv/
 **/node_modules/
 **/.next/
+.analysis_*/
+tmp_figpad_*
+*.baiduyun.uploading*.cfg
+* 2.json
+* 2.tsx
+projects/batch/2026-05-29_16-videos_same-girl-mouth-cover/main/
 
 # Raw and downloaded media
 **/materials/raw/**
@@ -48,6 +54,7 @@ source-skills/**/.git/
 # Keep structured project artifacts in Git when needed.
 !**/output/**/*.json
 !**/output/**/*.md
+* 2.json
 **/output/worker_run_status.json
 **/output/worker_run.log
 **/output/final_delivery/worker_render_report.json

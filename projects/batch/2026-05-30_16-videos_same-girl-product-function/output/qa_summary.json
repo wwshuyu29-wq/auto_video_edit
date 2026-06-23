@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "batch": "2026-05-30_16-videos_same-girl-product-function",
+  "checked_at": "2026-05-30T00:00:00+08:00",
+  "deliverable_count": 16,
+  "expected_deliverable_count": 16,
+  "products": {
+    "literfy": 4,
+    "figpad": 4,
+    "clearfy": 4,
+    "citely": 4
+  },
+  "expected_products": {
+    "literfy": 4,
+    "figpad": 4,
+    "clearfy": 4,
+    "citely": 4
+  },
+  "unique_hook_count": 16,
+  "expected_unique_hook_count": 16,
+  "dimensions": [
+    "1080x1920"
+  ],
+  "duration_seconds_range": [
+    20.798,
+    20.8
+  ],
+  "main_dir_exists": false,
+  "main_references": [],
+  "missing_files": [],
+  "visual_spot_check": {
+    "hook_frame": "/tmp/literfy_girl_01_hook_frame.jpg",
+    "midpoint_montage": "/tmp/2026-05-30_same_girl_batch_midpoint_montage.jpg",
+    "result": "hook frame and product proof frames are nonblank; captions visible in safe central area"
+  }
+}

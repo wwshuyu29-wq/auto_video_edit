@@ -1,0 +1,233 @@
+{
+  "library_id": "figpad-studyingwithyun-template-assets",
+  "library_name": "FigPad assets for studyingwithyun proof-report template",
+  "asset_type": "ai_human_hook_plus_handheld_product_proof",
+  "usage_rule": "Use ai_human_hook only as the opening student reaction. Use handheld product clips for proof/report/workflow beats. Keep each video focused on one product proof path.",
+  "assets": [
+    {
+      "clip_id": "ai_human_hook",
+      "file_path": "/Users/kk/Desktop/auto video/projects/generated/2026-05-30_same-girl-new-ai-human-hooks/output/final_16/07_new_same_girl_07_07_draft_reveal.mp4",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/batch/ariana-study-7637977216189500685-16-ai-humans/figpad/figpad_human_03/materials/contact_sheets/ai_human_hook.jpg",
+      "duration": 4.042,
+      "orientation": "vertical_ai_same_girl_selfie_intro",
+      "quality_score": 8,
+      "shot_type": "AI generated human selfie hook",
+      "camera_motion": "subtle handheld selfie movement",
+      "scene": "warm dorm desk, laptop draft, notebook, coy smiling student covering mouth then presenting screen",
+      "visible_objects": [
+        "student creator",
+        "laptop",
+        "study desk"
+      ],
+      "emotion": "shy proud StudyTok reveal",
+      "best_use": [
+        "human hook",
+        "opening hook",
+        "creator reaction",
+        "student anxiety setup"
+      ],
+      "not_good_for": [
+        "product proof",
+        "final result proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 4.0,
+          "reason": "AI-generated opening human hook based on reference hook analysis."
+        }
+      ],
+      "text_overlay_safe_area": "lower center; keep face readable",
+      "audio_quality": "not needed",
+      "notes": "Unique newly generated 2026-05-30 same-girl AI opening hook assigned from the new final_16 folder."
+    },
+    {
+      "clip_id": "04_text_to_figure_result",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/04_text_to_figure_result.mov",
+      "duration": 3.257,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "generated scientific figure result",
+      "camera_motion": "handheld hold",
+      "scene": "FigPad generated result page",
+      "visible_objects": [
+        "generated scientific figure",
+        "result panel",
+        "figure preview"
+      ],
+      "emotion": "result proof",
+      "best_use": [
+        "generated figure proof",
+        "before SVG Edit",
+        "result reveal"
+      ],
+      "not_good_for": [
+        "landing CTA",
+        "input step"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 3.1,
+          "reason": "Generated figure result is visible and supports the first proof beat."
+        }
+      ],
+      "text_overlay_safe_area": "center top; avoid covering figure if possible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1
+    },
+    {
+      "clip_id": "05_click_svg_edit",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/05_click_svg_edit.mov",
+      "duration": 3.597,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "click SVG Edit after generation",
+      "camera_motion": "handheld click action",
+      "scene": "generated figure page to SVG editor",
+      "visible_objects": [
+        "SVG Edit button",
+        "generated figure",
+        "cursor"
+      ],
+      "emotion": "editability reveal",
+      "best_use": [
+        "click SVG Edit",
+        "transition from generation to editing",
+        "creator surprise beat"
+      ],
+      "not_good_for": [
+        "standalone final proof"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.1,
+          "end": 3.4,
+          "reason": "Shows the exact action that turns the generated figure into an editable workflow."
+        }
+      ],
+      "text_overlay_safe_area": "center or lower center; keep SVG Edit button visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25
+    },
+    {
+      "clip_id": "07_svg_editor_edit_demo_2",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/07_svg_editor_edit_demo_2.mov",
+      "duration": 4.908,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "SVG editor second edit demo",
+      "camera_motion": "handheld edit action",
+      "scene": "FigPad SVG editor / editable figure",
+      "visible_objects": [
+        "editable scientific figure",
+        "selected element",
+        "editor controls"
+      ],
+      "emotion": "hands-on editor proof",
+      "best_use": [
+        "stronger editability proof",
+        "free edit demo",
+        "SVG editor detail"
+      ],
+      "not_good_for": [
+        "initial product reveal"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 4.7,
+          "reason": "Shows active editing on the generated figure."
+        }
+      ],
+      "text_overlay_safe_area": "center top or lower center depending on selected element",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.25
+    },
+    {
+      "clip_id": "09_export_ppt_workflow",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/09_export_ppt_workflow.mov",
+      "duration": 5.68,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "export editable PPT workflow",
+      "camera_motion": "handheld click action",
+      "scene": "FigPad generated figure page opening the Export dialog and choosing downloadable formats",
+      "visible_objects": [
+        "generated scientific figure",
+        "Export button",
+        "Export dialog",
+        "PNG option",
+        "JPG option",
+        "SVG Vector option",
+        "Editable PPTX option",
+        "Responsive SVG option"
+      ],
+      "emotion": "workflow completion / portability",
+      "best_use": [
+        "export PPTX proof",
+        "download workflow",
+        "format choice proof",
+        "end beat for editable figure workflow"
+      ],
+      "not_good_for": [
+        "opening hook",
+        "SVG converter upload workflow",
+        "image-to-image feature"
+      ],
+      "usable_segments": [
+        {
+          "start": 0.2,
+          "end": 5.4,
+          "reason": "Shows the Export button, export modal, and PPTX/SVG format options clearly."
+        }
+      ],
+      "text_overlay_safe_area": "center top; keep export dialog visible",
+      "audio_quality": "not needed",
+      "recommended_speed": 1.5,
+      "feature_group": "export_to_ppt",
+      "function_label": "export generated figure to PPTX / SVG formats",
+      "thumbnail_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/contact_sheets/timelines/09_export_ppt_workflow_timeline.jpg",
+      "notes": "Clean re-recorded finger/cursor workflow for export. Use this over the rebuilt fallback when showing PPTX or SVG export from a generated figure."
+    },
+    {
+      "clip_id": "10_ppt_export_result",
+      "file_path": "/Users/kk/Desktop/auto video/projects/figpad/research-connect-google-scholar-template/materials/raw/10_ppt_export_result.mov",
+      "duration": 2.918,
+      "orientation": "landscape_source_for_vertical_crop",
+      "quality_score": 8,
+      "shot_type": "exported PPT result in PowerPoint",
+      "camera_motion": "handheld hold",
+      "scene": "Office PowerPoint / exported figure",
+      "visible_objects": [
+        "PowerPoint window",
+        "editable figure result",
+        "exported file"
+      ],
+      "emotion": "final proof / usable output",
+      "best_use": [
+        "final proof",
+        "editable PowerPoint result",
+        "CTA ending"
+      ],
+      "not_good_for": [
+        "prompt input",
+        "converter input"
+      ],
+      "usable_segments": [
+        {
+          "start": 0,
+          "end": 2.8,
+          "reason": "Short but clear proof that the output continues in PowerPoint."
+        }
+      ],
+      "text_overlay_safe_area": "center; avoid covering main exported figure",
+      "audio_quality": "not needed",
+      "recommended_speed": 1
+    }
+  ],
+  "asset_count": 6,
+  "status": "indexed",
+  "updated_at": "2026-05-30T00:00:00+08:00",
+  "note": "AI hook replaced with unique newly generated same-girl mouth-cover desk/laptop clip."
+}

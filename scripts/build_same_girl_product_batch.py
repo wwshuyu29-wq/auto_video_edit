@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Build 16 product videos using today's same-girl AI hook clips."""
+"""Build 16 product videos using newly generated same-girl AI hook clips."""
 
 from __future__ import annotations
 
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -14,8 +15,9 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 OLD_BATCH = REPO / "projects/batch/ariana-study-7637977216189500685-16-ai-humans"
-HOOK_DIR = REPO / "projects/generated/same-girl-clearfy-preview/output/final_16"
-NEW_BATCH = REPO / "projects/batch/same-girl-mouth-cover-4-products-16-videos"
+TARGET_DATE = os.environ.get("SAME_GIRL_BATCH_DATE", "2026-05-31")
+HOOK_DIR = REPO / f"projects/generated/{TARGET_DATE}_same-girl-new-ai-human-hooks/output/final_16"
+NEW_BATCH = REPO / f"projects/batch/{TARGET_DATE}_16-videos_new-ai-human-hooks-product-function"
 RENDERER = REPO / "skills/tk-video-editor/modules/video_rendering/run.py"
 PYTHON = REPO / ".venv/bin/python3"
 
@@ -157,7 +159,7 @@ def make_variant(product: str, variant_index: int, hook_path: Path) -> dict:
     plan["risk_notes"] = [
         note for note in plan["risk_notes"] if "Opening AI hook" not in str(note)
     ] + [
-        "Opening AI hook uses today's same-girl fictional student clip and is not reused within this 16-video batch.",
+        f"Opening AI hook uses a newly generated {TARGET_DATE} same-girl fictional student clip and is not reused within this 16-video batch.",
         "Product claims remain inherited from the previous approved product-proof plan.",
     ]
 
@@ -169,7 +171,7 @@ def make_variant(product: str, variant_index: int, hook_path: Path) -> dict:
         edit_plan[0]["clip_start"] = 0
         edit_plan[0]["clip_end"] = 4
         edit_plan[0]["playback_speed"] = 1
-        edit_plan[0]["reason"] = "Today's same-girl mouth-cover desk/laptop AI human hook; unique within the batch."
+        edit_plan[0]["reason"] = f"Newly generated {TARGET_DATE} same-girl mouth-cover desk/laptop AI human hook; unique within the batch."
     for item in edit_plan:
         tune_caption_style(product, item, variant_index)
         add_light_emoji(product, item, variant_index)
@@ -182,11 +184,11 @@ def make_variant(product: str, variant_index: int, hook_path: Path) -> dict:
             asset["orientation"] = "vertical_ai_same_girl_selfie_intro"
             asset["scene"] = "warm dorm desk, laptop draft, notebook, coy smiling student covering mouth then presenting screen"
             asset["emotion"] = "shy proud StudyTok reveal"
-            asset["notes"] = "Unique same-girl AI opening hook assigned from today's final_16 folder."
+            asset["notes"] = f"Unique newly generated {TARGET_DATE} same-girl AI opening hook assigned from the new final_16 folder."
 
     if isinstance(assets, dict):
-        assets["updated_at"] = "2026-05-29T00:00:00Z"
-        assets["note"] = "AI hook replaced with unique same-girl mouth-cover desk/laptop clip."
+        assets["updated_at"] = f"{TARGET_DATE}T00:00:00+08:00"
+        assets["note"] = "AI hook replaced with unique newly generated same-girl mouth-cover desk/laptop clip."
 
     write_json(new_output / "shot_matching_plan.json", plan)
     write_json(new_output / "asset_library.json", assets)
@@ -248,7 +250,7 @@ def main() -> None:
 
     write_json(NEW_BATCH / "hook_assignment_manifest.json", {
         "status": "prepared",
-        "rule": "Each of today's 16 same-girl opening clips is used once; no repeated hook video.",
+        "rule": f"Each newly generated {TARGET_DATE} same-girl opening clip is used once; no repeated hook video.",
         "products": PRODUCTS,
         "variants_per_product": 4,
         "assignments": assignments,
@@ -264,18 +266,13 @@ def main() -> None:
 
     rendered.sort(key=lambda item: (PRODUCTS.index(item["product"]), item["variant_id"]))
 
-    main_dir = NEW_BATCH / "main"
-    main_dir.mkdir(parents=True, exist_ok=True)
     deliverables = []
     for index, item in enumerate(rendered, 1):
-        src = Path(item["video"])
-        dest = main_dir / src.name
-        shutil.copy2(src, dest)
         deliverables.append({
             "index": index,
             "variant": f"{item['product']} / {item['variant_id']}",
             "product": item["product"],
-            "video": str(dest),
+            "video": item["video"],
             "source_video": item["video"],
             "cover": item.get("cover"),
             "midpoint_sheet": item.get("midpoint_sheet"),
@@ -285,6 +282,7 @@ def main() -> None:
             "height": item["height"],
             "template_label": "Same-girl mouth-cover hook + product function proof",
             "asset_type": "captioned product video",
+            "folder_layout": "product/variant/output",
         })
 
     batch_manifest = {
@@ -292,12 +290,11 @@ def main() -> None:
         "requested_count": 16,
         "products": PRODUCTS,
         "variants_per_product": 4,
-        "rule": "4 products x 4 videos; the first 4 seconds use today's 16 same-girl AI hooks with no repeats.",
+        "rule": f"4 products x 4 videos; the first 4 seconds use 16 newly generated {TARGET_DATE} same-girl AI hooks with no repeats.",
         "render_results": rendered,
         "deliverables": deliverables,
     }
     write_json(NEW_BATCH / "batch_manifest.json", batch_manifest)
-    write_json(main_dir / "batch_manifest.json", batch_manifest)
     write_json(NEW_BATCH / "output/final_delivery_manifest.json", {
         "status": "ready",
         "label": "Same-girl mouth-cover 4 products x 4 videos",

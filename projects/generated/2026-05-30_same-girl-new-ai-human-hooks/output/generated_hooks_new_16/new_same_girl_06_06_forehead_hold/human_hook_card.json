@@ -1,0 +1,43 @@
+{
+  "status": "generated",
+  "detected": true,
+  "analysis": {
+    "duration_s": 4,
+    "character": "young adult student/creator, original fictional person, not the reference creator",
+    "framing": "vertical 9:16 medium close-up selfie, shoulders visible, caption-safe lower center",
+    "action": "presses fingertips to her forehead, looks into camera, looks sideways at the laptop, then exhales with a small hand flip",
+    "emotion": "stressed but trying not to laugh",
+    "atmosphere": "a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing lavender crewneck sweatshirt and thin glasses, creator-native and natural",
+    "environment": "student room near a window, laptop on a clean desk, loose paper stack on one side",
+    "camera": "front-facing phone camera, held slightly below eye level",
+    "lighting_color": "soft daylight from a side window",
+    "must_change": [
+      "new generated clip",
+      "gesture timing",
+      "camera angle",
+      "outfit",
+      "desk layout",
+      "props",
+      "lighting balance"
+    ],
+    "overlay_policy": "generate clean silent reaction video without baked-in text; renderer will add hook copy as captions later",
+    "speech_policy": "no speaking, no lip-sync, no dialogue; use only facial expression, posture, glance, and hand gesture",
+    "identity_policy": "do not copy the reference person's face, identity, clothing, or exact likeness",
+    "differentiation_policy": "do not remake the reference one-to-one; change at least 3 visible attributes while preserving only emotional function and hook rhythm"
+  },
+  "text_to_video_prompt": "Realistic vertical 9:16 smartphone selfie video, 4 seconds. An original young adult student creator sits at a student room near a window, laptop on a clean desk, loose paper stack on one side. The creator looks stressed but trying not to laugh, presses fingertips to her forehead, looks into camera, looks sideways at the laptop, then exhales with a small hand flip. soft daylight from a side window, a petite fictional young adult college student creator, soft round face, long light-brown hair, natural no-makeup look, cozy StudyTok energy, wearing lavender crewneck sweatshirt and thin glasses, creator-native and natural. Natural handheld phone motion, authentic TikTok studytok style, close-up face first, laptop visible but not brand-specific, no logos, no readable text, no subtitles baked into the video. Silent reaction only: the creator does not speak, does not lip-sync, and communicates through facial expression, posture, glances, and a small gesture. Do not remake the reference video exactly; use a different face, outfit, room layout, props, lighting variation, and gesture timing. The moment should feel like a peer reacting before showing a useful study workflow tool workflow.",
+  "negative_prompt": "Do not imitate or recreate the reference creator's face or identity. No speaking, no talking mouth, no lip-sync, no dialogue, no voiceover. No one-to-one remake of the reference video, no same outfit, no same room, no same exact pose sequence. No watermark, no logo, no readable on-screen text, no distorted hands, no extra limbs, no uncanny face, no product UI.",
+  "generation": {
+    "provider": "evolink",
+    "model": "seedance-2.0-text-to-video",
+    "dry_run": false,
+    "attempted": true,
+    "status": "completed",
+    "task_id": "task-unified-1780156808-pmbhfttx",
+    "provider_status": "completed",
+    "video_path": "/Users/kk/Desktop/auto video/projects/generated/2026-05-30_same-girl-new-ai-human-hooks/output/generated_hooks_new_16/new_same_girl_06_06_forehead_hold/ai_human_hook.mp4"
+  },
+  "asset": null,
+  "evidence_gaps": [],
+  "thumbnail_path": "/Users/kk/Desktop/auto video/projects/generated/2026-05-30_same-girl-new-ai-human-hooks/output/generated_hooks_new_16/new_same_girl_06_06_forehead_hold/ai_human_hook.jpg"
+}
